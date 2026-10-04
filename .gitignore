@@ -1,0 +1,3 @@
+# downloaded sources cached by scripts/pilot_sources.py
+.cache/
+__pycache__/

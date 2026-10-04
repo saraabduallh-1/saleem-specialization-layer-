@@ -1,0 +1,3696 @@
+[
+  {
+    "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "نموذج",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "تمثيل لما تعلمته خوارزمية تعلُّم الآلة من بيانات التدريب. ويُطلق عليه أيضًا \"نموذج تعلُّم الآلة\".",
+    "english_term": "Model",
+    "abbreviations": [],
+    "aliases": [
+      "نموذج تعلُّم الآلة"
+    ],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "هدفت هذه الدراسة إلى تقييم كفاءة نماذج التعلم الآلي في التنبؤ بالتضخم في الجزائر ومقارنتها بالنماذج القياسية التقليدية.",
+        "source_title": "استخدام نماذج التعلم الآلي في التنبؤ بالتضخم في الجزائر: دراسة مقارنة بين النماذج القياسية التقليدية وخوارزميات التعلم الآلي خلال الفترة 1990–2025",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "كمال الدين أبا سفيان",
+          "بن البار امحمد"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/303277",
+        "venue": {
+          "journal": "مجلة إضافات إقتصادية",
+          "volume": "10",
+          "issue": "2",
+          "article_pages": "350–365",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "هدفت هذه الدراسة إلى التنبؤ بأسعار الإغلاق اليومية لسهم شركة Apple بإستخدام أحد نماذج التعلم الآلي والمتمثل في خوارزمية XGBoost لمساعدة المستثمرين على إتخاذ قرار الاستثمار في مجال الأسهم.",
+        "source_title": "استخدام خوارزمية XGBOOST للتنبؤ بأسعار الإغلاق لسهم شركة Apple",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "روابة محمد"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/254844",
+        "venue": {
+          "journal": "مجلة إقتصاد المال والأعمال",
+          "volume": "9",
+          "issue": "2",
+          "article_pages": "287–296",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "يلتزم كل صاحب عمل بإعداد لائحة لتنظيم العمل في منشأته وفق النموذج المعد من الوزارة، ويجوز للوزير الاستثناء من ذلك.",
+        "contrast_type": "different_sense",
+        "intended_sense": "نموذج = قالب/صيغة إدارية موحدة (Template/Form) تعدّه الوزارة",
+        "why_not_this_term": "المقصود وثيقة نموذجية تُتّبع في إعداد لائحة العمل، لا تمثيل تعلّمته خوارزمية تعلُّم الآلة من بيانات التدريب.",
+        "source_title": "نظام العمل",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2005,
+        "page_or_section": "المادة الثالثة عشرة (الفقرة 1، بنصها المعدَّل)",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/08381293-6388-48e2-8ad2-a9a700f2aa94/1",
+        "issue_date": {
+          "hijri": "1426/08/23",
+          "gregorian": "27/09/2005"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "c33c453c-367b-452a-8763-7ba23871b01f",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "وكيل",
+    "lemma_type": "singleWord",
+    "pos": "AA",
+    "definition": "كيان مادي أو برمجي يمكنه إدراك بيئته، والعمل بتحكم ذاتي لتحقيق هدف.",
+    "english_term": "",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "ومن بين أهم التطوُّرات التكنولوجيَّة التي شهدها هذا المجال استخدام تقنيَّة الوكيل الذكي والقادرة على البحث عن المعلومات عبر الشبكة العنكبوتية بصورة فاعلة وسريعة ودقيقة مقارنةّ بالبرمجيَّات التقليدية",
+        "source_title": "استخدام الوكيل الذكي في التجارة الإلكترونية \"دراسة قانونية مقارنة في إطار ماهيته ونفاذ تصرفاته\"",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "أحمـــد قاســـم فــــرح"
+        ],
+        "year": 2018,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/131961",
+        "venue": {
+          "journal": "مجلة المفكر",
+          "volume": "13",
+          "issue": "2",
+          "article_pages": "10–43",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "أصبحت الأسواق الإلكترونية فضاءات تعجّ بكيانات ذكية مستقلة ذاتيًا تمثل مستخدميها أو مالكيها، وتُجري المعاملات نيابةً عنهم وقد عرفت هده الكيانات بالوكلاء الإلكترونيين.",
+        "source_title": "الوكيل الإلكتروني ومركزه القانوني في المعاملات الرقمية: دراسة تحليلية مقارنة",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بوزيد خالد"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/302303",
+        "venue": {
+          "journal": "مجلة البحوث القانونية و الاقتصادية",
+          "volume": "9",
+          "issue": "3",
+          "article_pages": "1238–1266",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "لا يجوز أن يقوم بعمل الوكيل التجاري إلا من كان مقيدًا في السجل المعد لهذا الغرض في وزارة التجارة والصناعة ، ويصدر وزير التجارة والصناعة قرارًا بإنشاء هذا السجل، وتشتمل بيانات السجل المذكور على اسم التاجر أو الشركة، ونوع البضاعة الموكل فيها، والشركة والمؤسسة الموكلة، وتاريخ التوكيل، ومدته إن كانت الوكالة محددة بأجل.",
+        "contrast_type": "different_domain",
+        "intended_sense": "وكيل تجاري = شخص طبيعي أو اعتباري يمثّل المنتج/الموكِّل تجاريًا (Commercial Agent)",
+        "why_not_this_term": "المقصود صفة قانونية تجارية لشخص مسجَّل، لا كيان مادي أو برمجي يدرك بيئته ويعمل بتحكم ذاتي.",
+        "source_title": "نظام الوكالات التجارية",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 1962,
+        "page_or_section": "المادة (3)",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/b19a8aa6-7b50-43f0-ab8c-a9a700f1a446/1",
+        "issue_date": {
+          "hijri": "1382/01/01",
+          "gregorian": "03/06/1962"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "هلوسة",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "ظاهرة يُنتج فيها نموذج الذكاء الاصطناعي معلومات تبدو معقولة، لكنها خاطئة أو مصطنعة أو غير مدعومة بالسياق أو الأدلة المتاحة.",
+    "english_term": "Hallucination",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "قد تُنتج أنظمة الذكاء الاصطناعي التوليدي مخرجات تبدو سليمة ومقنعة من حيث الصياغة، لكنها غير صحيحة من الناحية الواقعية أو مختلقة بالكامل. ويمكن أن تؤدي هذه \"الهلوسة\" إلى تضليل المستخدمين إذا تم الاعتماد عليها دون تحقق.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص ٢٠ (صفحة PDF رقم 24) — 5.2 أبرز المخاوف من نماذج الذكاء الاصطناعي التوليدي — البند 3 (الهلوسة)",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      },
+      {
+        "text": "تفترض الإرشادات أن الذكاء الاصطناعي التوليدي يفرض تحديات فريدة، مثل الهلوسة والتزييف العميق وانتشار المعلومات المضللة على نطاق واسع وغموض بيانات التدريب، مما يستلزم تدابير سياسات وآليات حوكمة مخصصة إلى جانب المبادئ العامة للذكاء الاصطناعي.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص ١٧ (صفحة PDF رقم 21) — 3.2 الافتراضات — البند 2",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "وقد تصاحب بعض الاضطرابات الخطيرة للمسن نتيجة لمجموعة من احباطات والاهمال من قبل الأهل ،منها الفصام الذي يعتبر من الأمراض الذهانية الخطيرة ،والمعقدة والتي تمس جميع جوانب الشخصية من انشطار التفكير والمشاعر و السلوك متبوعا من مجموعة من الأعراض من بينها الهلاوس والهذاءات متعددة المواضيع .",
+        "contrast_type": "different_domain",
+        "intended_sense": "هلاوس = عَرَض نفسي/طبي (إدراك حسي بلا مثير خارجي) لدى مرضى الفصام",
+        "why_not_this_term": "المقصود عَرَض مرضي لدى الإنسان، لا مخرجات خاطئة أو مختلقة ينتجها نموذج ذكاء اصطناعي.",
+        "source_title": "اضطراب الفصام لدى المسن (مدخل نظري تحليلي)",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "مليوح خليدة"
+        ],
+        "year": 2022,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/188476",
+        "venue": {
+          "journal": "مجلة الرسالة للدراسات والبحوث الإنسانية",
+          "volume": "7",
+          "issue": "3",
+          "article_pages": "108–120",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "09f1271f-d76e-471c-a05b-426b911ae194",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "بيئة",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "عالم في التعلُّم التعزيزي يشتمل على الوكيل ويسمح له برصد حالة ذلك العالم.",
+    "english_term": "Environment",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "قطاع البيئة: يشمل الأوساط البيئية والأنشطة والبرامج المتعلقة بها، والتي تهدف إلى ضمان حماية البيئة وسلامتها، وتنمية الأوساط البيئية لضمان استدامتها وحمايتها من أي مصدر للتلوث.",
+        "contrast_type": "different_domain",
+        "intended_sense": "بيئة = المحيط الطبيعي (هواء وماء وتربة وكائنات) موضوع الحماية من التلوث",
+        "why_not_this_term": "المقصود البيئة الطبيعية في التشريع البيئي، لا العالم الذي يتفاعل معه الوكيل في التعلُّم التعزيزي.",
+        "source_title": "نظام البيئة",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2020,
+        "page_or_section": "المادة الأولى (التعريفات)",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/63831ff6-63d9-4212-8b54-abf800e146bd/1",
+        "issue_date": {
+          "hijri": "1441/11/19",
+          "gregorian": "10/07/2020"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "في التعلُّم التعزيزي يرصد الوكيل حالة البيئة عند كل خطوة، ثم يختار فعلًا فتنتقل البيئة إلى حالة جديدة وتعيد إليه إشارة المكافأة.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 1,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "سياسة",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "الربط الاحتمالي للوكيل من الحالات إلى الأفعال في التعلُّم التعزيزي.",
+    "english_term": "Policy",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "يهدف النظام إلى تنظيم نشاط الإعلام المرئي والمسموع داخل المملكة، وتطويره، والعمل على توفير البيئة الاستثمارية الملائمة له، والعمل على أن يكون محتواه متسقاً والسياسة الإعلامية للمملكة.",
+        "contrast_type": "different_domain",
+        "intended_sense": "سياسة = توجّه حكومي عام يحكم قطاعًا (Public/Media Policy)",
+        "why_not_this_term": "المقصود السياسة الإعلامية للدولة، لا الربط الاحتمالي من الحالات إلى الأفعال لدى الوكيل في التعلُّم التعزيزي.",
+        "source_title": "نظام الإعلام المرئي والمسموع",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2017,
+        "page_or_section": "المادة الثانية",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/ed5fdbc0-c183-4a8a-a8b7-a9ed004b5900/1",
+        "issue_date": {
+          "hijri": "1439/03/25",
+          "gregorian": "13/12/2017"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "وخلصت هذه الدراسة إلى العديد من النتائج أهمها أن السياسة النقدية في الجزائر خلال الفترة 2000الى2017 عرفت العديد من الاصلاحات والتي بموجبها أصبح بنك يستعمل خليطا متجانسا من الادوات من أجل التأثير على النشاط الاقتصادي، بالإضافة الى عدم قدرة السياسة النقدية في هذه الفترة على تحقيق بعض أهداف السياسة الاقتصادية كالتشغيل الكامل والنمو الاقتصادي المرتفع والتوازن الخارجي، وذلك بسبب ارتباط بعض هذه المتغيرات بتغيرات الوضع الدولي.",
+        "contrast_type": "different_domain",
+        "intended_sense": "سياسة نقدية = مجموعة أدوات وإجراءات البنك المركزي (Monetary Policy)",
+        "why_not_this_term": "المقصود سياسة اقتصادية كلية، لا سياسة الوكيل في التعلُّم التعزيزي.",
+        "source_title": "السياسة النقدية كألية فعالة لتحقيق اهداف السياسة الاقتصادية في الجزائر دراسة تحليلية للفترة 2000-2017.",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "حمداني معمر",
+          "بناي مصطفى"
+        ],
+        "year": 2021,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/168604",
+        "venue": {
+          "journal": "مجلة المنتدى للدراسات والابحاث الاقتصادية",
+          "volume": "5",
+          "issue": "2",
+          "article_pages": "52–64",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "تُحدِّث خوارزمية تدرج السياسة مُعامِلات السياسة بحيث تزيد احتمال اختيار الأفعال التي أدّت إلى عائد أعلى في الحالات المشابهة.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 2,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "fa65c6dc-40ae-4fbe-8f5d-1721edd83752",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "طبقة",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "مجموعة من الخلايا العصبية في شبكة عصبية ما، تعالج خصائص المُدْخَلات أو مخرجات تلك الخلايا العصبية.",
+    "english_term": "Layer",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تم توظيف تقنية الانحدار المنتظم (Lasso) لاستخلاص المتغيرات الأكثر إسهامًا في التنبؤ، تلاها بناء نموذج شبكة عصبية اصطناعية متعددة الطبقات (Multilayer Perceptron) ذات طبقة مخفية واحدة.",
+        "source_title": "بناء نموذج تنبؤي تصنيفي باستخدام الشبكات العصبية الاصطناعية بدلالة بعض القابليات البيو حركية بسلاح الشيش للطلاب Development of a Predictive Classification Model Using Artificial Neural Networks Based on Selected Biomotor Abilities in Foil Fencing Students",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "حيدر قيس ناجي جليل"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/299180",
+        "venue": {
+          "journal": "مجلــة الأوراس لعلوم الرياضة",
+          "volume": "4",
+          "issue": "3",
+          "article_pages": "182–199",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "تم بناء نموذجين رئيسين: الأول يعتمد على بنية LSTM ثلاثي الطبقات، والثاني يعتمد على بنية Transformer مخصصة للبيانات المالية.",
+        "source_title": "اختبار قدرة نماذج التعلم العميق LSTM و Transformers على التنبؤ بالسلوك السعري لمؤشر S&amp;P 500: دراسة تجريبية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "صالحي محمد يزيد",
+          "كسري أسماء"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/292690",
+        "venue": {
+          "journal": "مجلة الدراسات الإقتصادية الكمية",
+          "volume": "12",
+          "issue": "1",
+          "article_pages": "379–391",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "على كل من يمارس أي نشاط يستخدم فيه مواد لها تأثير سلبي في جودة الهواء، أو مواد مستنفدة لطبقة الأوزون؛ اتخاذ ما يلزم من إجراءات لتنفيذ الخطط -التي تعدها الجهة المختصة- المتعلقة بالتخلص التدريجي من تلك المواد؛ وذلك وفقاً لما تحدده اللوائح.",
+        "contrast_type": "different_domain",
+        "intended_sense": "طبقة الأوزون = طبقة فيزيائية في الغلاف الجوي",
+        "why_not_this_term": "المقصود طبقة جوية طبيعية، لا مجموعة من الخلايا العصبية في شبكة عصبية.",
+        "source_title": "نظام البيئة",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2020,
+        "page_or_section": "المادة التاسعة",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/63831ff6-63d9-4212-8b54-abf800e146bd/1",
+        "issue_date": {
+          "hijri": "1441/11/19",
+          "gregorian": "10/07/2020"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "عرفت الطبقة الوسطى التونسية انكماشا حادا غداة الثورة التونسية 2011، بسبب تراجع النمو الاقتصادي والذي ترتب عليه انخفاض الأجور وتراجع القدرة الشرائية لمواطنين بالموازاة مع غلاء أسعار المواد الغذائية بسبب ارتفاع معدلات التضخم.",
+        "contrast_type": "different_sense",
+        "intended_sense": "الطبقة الوسطى = فئة اجتماعية-اقتصادية (Social Class)",
+        "why_not_this_term": "المقصود فئة اجتماعية، لا طبقة في شبكة عصبية.",
+        "source_title": "انكماش الطبقة الوسطى التونسية في ظل تراجع النمو الاقتصادي في الفترة 2011- 2015 وتداعياته السياسية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "خرباشي حنان"
+        ],
+        "year": 2022,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/207518",
+        "venue": {
+          "journal": "المجلة الجزائرية للدراسات السياسية",
+          "volume": "9",
+          "issue": "2",
+          "article_pages": "208–225",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 2,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "36b69371-37ef-4145-b219-3f24356df629",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "وزن",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "مُعامِل في الشبكة العصبية يُحدِّد قوة الاتصال بين الخلايا العصبية.",
+    "english_term": "Weight",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "فالمعطيات لوحدها لا تقوم بأي تأثير، أما إذا اتحدت هذه المعطيات مع الأوزان فإنها تؤدي في تحديد المهمة المطلوبة من الشبكة العصبية.",
+        "source_title": "دور تقنية الشبكات العصبية الاصطناعية في تسيير المخاطر في المؤسسات الصناعية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "لمجد بوزيدي",
+          "عيشوش رياض"
+        ],
+        "year": 2017,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/32100",
+        "venue": {
+          "journal": "مجلة اقتصاد المال و الأعمال",
+          "volume": "1",
+          "issue": "4",
+          "article_pages": "45–54",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "سيركز هذا البحث على دور الوزن والميزان الصرفيين في بناء المعجم الالكتروني للغة العربية، وكيف ان إغفال هذا المكون أو سوء تطبيقه أدى إلى ضعف الكثير من البرمجيات العربية، خاصة في بناء المحلل والمولد الصرفيين، وذلك على الرغم من الجهود الكبيرة التي أنفقت في حوسبت اللغة العربية.",
+        "contrast_type": "different_sense",
+        "intended_sense": "الوزن الصرفي = القالب الصرفي للكلمة العربية (فعل، فاعل، مفعول...)",
+        "why_not_this_term": "المقصود مفهوم صرفي لغوي، لا مُعامِل يحدّد قوة الاتصال بين الخلايا العصبية.",
+        "source_title": "دور المكون الصرفي في بناء المعجم الالكتروني للغة العربية -قاعدة بيانات المصادر-",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "الحناش محمد",
+          "القاسمي رشيدة محمد"
+        ],
+        "year": 2011,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/186470",
+        "venue": {
+          "journal": "AL-Lisaniyyat",
+          "volume": "17",
+          "issue": "2",
+          "article_pages": "18–31",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 1,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "a4e668fa-a99e-41be-9f93-c93643aeb39a",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تحيُّز",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "مُعامِل في الشبكة العصبية يُتيح للخلايا العصبية تحويل دالة التنشيط.",
+    "english_term": "Bias",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "ومن بين النتائج المتوصل اليها : ان التحيز الخوارزمي مظهر من مظاهر التحيزات الاجتماعية في نتائج الخوارزميات، يجعل النتيجة في النهاية موضع شك وغير موثوقة أو ضارة أو تمييزية .",
+        "contrast_type": "different_sense",
+        "intended_sense": "تحيُّز خوارزمي = انحياز اجتماعي/تمييزي في نتائج الخوارزميات (يقابله في سوار مدخل \"تحيُّز الذكاء الاصطناعي\")",
+        "why_not_this_term": "مدخل \"تحيُّز\" في سوار هو المُعامِل (Bias term) في الخلية العصبية؛ أما هنا فالمقصود الانحياز غير العادل في النتائج، وهو مفهوم آخر داخل المجال نفسه.",
+        "source_title": "اشكالية التحيز الخوارزمي للذكاء الاصطناعي في الخدمات المالية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "خالد سحنون",
+          "عصام بعلاش"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/257599",
+        "venue": {
+          "journal": "مجلة المنهل الاقتصادي",
+          "volume": "7",
+          "issue": "2",
+          "article_pages": "701–720",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "قد تعكس أنظمة الذكاء الاصطناعي التوليدي أو تُضخّم التحيزات الكامنة في بيانات التدريب، مما يؤدي إلى مخرجات غير عادلة أو تمييزية تؤثر على أفراد أو فئات معينة.",
+        "contrast_type": "different_sense",
+        "intended_sense": "تحيزات = انحيازات اجتماعية كامنة في البيانات تؤدي إلى مخرجات تمييزية",
+        "why_not_this_term": "المقصود الإنصاف وعدم التمييز، لا المُعامِل الذي يُزيح دالة التنشيط في الشبكة العصبية.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص ٢٠ (صفحة PDF رقم 24) — 5.2 أبرز المخاوف من نماذج الذكاء الاصطناعي التوليدي — البند 2 (التحيز)",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      },
+      {
+        "text": "هدف البحث الحالي الى تعرف : اولاً : التحيز المعرفي لدى طالبات قسم رياض الاطفال.",
+        "contrast_type": "different_sense",
+        "intended_sense": "التحيز المعرفي = ميل إدراكي منهجي في التفكير البشري (Cognitive Bias)",
+        "why_not_this_term": "المقصود ظاهرة نفسية لدى البشر، لا مُعامِلًا في شبكة عصبية.",
+        "source_title": "التحيز المعرفي لدى طالبات قسم رياض الأطفال",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "ضحى اللامي",
+          "ضحى محمود"
+        ],
+        "year": 2020,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/112395",
+        "venue": {
+          "journal": "دراسات نفسية وتربوية",
+          "volume": "13",
+          "issue": "1",
+          "article_pages": "408–431",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "تجمع كل خلية عصبية حاصل ضرب المُدخلات في الأوزان ثم تضيف إليه قيمة التحيُّز قبل تمرير الناتج إلى دالة التنشيط، ويُحدَّث التحيُّز مع الأوزان أثناء التدريب.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 3,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "مكافأة",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "نتيجة عددية في التعلُّم التعزيزي تحدده البيئة عند القيام بفعل في حالة ما.",
+    "english_term": "Reward",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "لا يجوز وضع العامل تحت التجربة أكثر من مرة واحدة لدى صاحب عمل واحد، واستثناء من ذلك يجوز باتفاق طرفي العقد إخضاع العامل لفترة تجربة ثانية لا تتجاوز مدتها تسعين يومًا، بشرط أن تكون في مهنة أخرى أو عمل آخر، وإذا أنهي العقد خلال فترة التجربة فإن أيًّا من الطرفين لا يستحق تعويضًا، كما لا يستحق العامل مكافأة نهاية الخدمة عن ذلك.",
+        "contrast_type": "different_domain",
+        "intended_sense": "مكافأة نهاية الخدمة = مستحق مالي للعامل عند انتهاء علاقة العمل",
+        "why_not_this_term": "المقصود حق مالي في نظام العمل، لا النتيجة العددية التي تعيدها البيئة للوكيل في التعلُّم التعزيزي.",
+        "source_title": "نظام العمل",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2005,
+        "page_or_section": "المادة الرابعة والخمسون (بنصها المعدَّل)",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/08381293-6388-48e2-8ad2-a9a700f2aa94/1",
+        "issue_date": {
+          "hijri": "1426/08/23",
+          "gregorian": "27/09/2005"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "صُمِّمت دالة المكافأة بحيث يحصل الوكيل على قيمة موجبة عند بلوغ الهدف وقيمة سالبة صغيرة عن كل خطوة إضافية، فيتعلّم أقصر مسار.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 1,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "دورة",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "عملية تدريب كاملة على مجموعة البيانات بأكملها أثناء تدريب النموذج.",
+    "english_term": "Epoch",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "توصلنا إلى نتيجة مفادها أن العجز الموازني يلعب دورا أساسيا في تحريك الدورة الاقتصادية، ويظهر هذا التأثير على الناتج المحلي الحقيقي.",
+        "contrast_type": "different_domain",
+        "intended_sense": "الدورة الاقتصادية = تقلّبات النشاط الاقتصادي بين الرواج والركود (Business Cycle)",
+        "why_not_this_term": "المقصود مفهوم اقتصادي كلي، لا مرورًا كاملًا على مجموعة بيانات التدريب.",
+        "source_title": "العجز الموازني كآلية للتأثير في إتجاه الدورة الإقتصادية في الجزائر: دراسة قياسية للفترة 2000-2015",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "محمد هاني",
+          "ياسين مراح"
+        ],
+        "year": 2018,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/122153",
+        "venue": {
+          "journal": "مجلة الدراسات التجارية والاقتصادية المعاصرة",
+          "volume": "1",
+          "issue": "2",
+          "article_pages": "77–90",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "دُرِّب النموذج عشرين دورة على مجموعة البيانات كاملة، وتوقّف التحسن في خسارة التحقق بعد الدورة الثانية عشرة.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 1,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "حُزمة",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "مجموعة من الأمثلة المستخدمة لتدريب النموذج.",
+    "english_term": "Batch",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "إضافة الى تسطير حزمة تدابير تحفيزية للنشاط الاقتصادي إبان أزمة كوفيد-19، أبرزها البرنامج الخاص بإعادة التمويل بغلاف مالي يقارب 2100 مليار دج خلال سنة 2021.",
+        "contrast_type": "different_domain",
+        "intended_sense": "حزمة تدابير = مجموعة إجراءات حكومية/اقتصادية تُطلق معًا (Stimulus Package)",
+        "why_not_this_term": "المقصود مجموعة سياسات اقتصادية، لا مجموعة أمثلة تُستخدم في خطوة تدريب واحدة.",
+        "source_title": "تقييم السياسة النقدية في ظل إصلاحات قانون النقد والقرض في الجزائر دراسة تحليلية للفترة 2000-2021",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "فاتح غطاس",
+          "ميلود جوهري"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/279195",
+        "venue": {
+          "journal": "المجلة الجزائرية للدراسات المحاسبية والمالية",
+          "volume": "10",
+          "issue": "2",
+          "article_pages": "41–50",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "قُسِّمت بيانات التدريب إلى حُزَم تضم كل منها 32 مثالًا، وتُحدَّث الأوزان مرة واحدة بعد معالجة كل حُزمة.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 1,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "أمر",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته.",
+    "english_term": "Prompt",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تعليمات واضحة: قدّم أوامر دقيقة للذكاء الاصطناعي حول المهمة، مثل «اكتب»، «صنّف»، «لخّص»، «ترجم»، «رتّب»، وغيرها.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص ٣٩ (صفحة PDF رقم 43) — الملحق (1): التوجيه الفعّال لمدخلات الذكاء الاصطناعي التوليدي — نصائح عامة لتصميم المدخلات، البند 1",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      },
+      {
+        "text": "تناول هذا المقال بشكل موجز خصائص الخطاب الفعال أو الذّكي مع الآلة أو أنظمة الذكاء الاصطناعي، فيما يعرف في لغة التوجيه بهندسة الأوامر أو المحفّزات (Prompt)",
+        "source_title": "الخطاب الذّكيّ أو كيف نتواصل مع الآلة؟ صياغة الأوامر الفعّالة في لغة التّوجيه الخاصّة بالذّكاء الاصطناعيّ",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بوراس ياسين"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/293149",
+        "venue": {
+          "journal": "الممارسات اللّغويّة",
+          "volume": "17",
+          "issue": "1",
+          "article_pages": "184–217",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "وبناء على المادة (العشرين) من نظام مجلس الوزراء، الصادر بالأمر الملكي رقم (أ/١٣) وتاريخ ٣/ ٣/ ١٤١٤هـ.",
+        "contrast_type": "different_domain",
+        "intended_sense": "الأمر الملكي = أداة تشريعية/تنفيذية تصدر عن الملك (Royal Order)",
+        "why_not_this_term": "المقصود صكّ قانوني رسمي، لا مُدخلات تُقدَّم للنموذج لتوجيه مخرجاته.",
+        "source_title": "نظام العمل",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2005,
+        "page_or_section": "ديباجة المرسوم الملكي رقم (م/51) بتاريخ 23/8/1426هـ الصادر به النظام",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/08381293-6388-48e2-8ad2-a9a700f2aa94/1",
+        "issue_date": {
+          "hijri": "1426/08/23",
+          "gregorian": "27/09/2005"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "والمتفق عليه أن الأوامر التشريعية لا يمكن أن تخالف الدستور ذاته، لأن هذا الأخير هو الذي ينظم إصدار هذه الأوامر، وبالتالي فإن صدورها بالمخالفة يجعلها قواعد غير دستورية يجب استبعادها من التطبيق، والقول بغير ذلك معناه أن تصبح الأوامر التشريعية سلطة تعسفية ومطلقة في يد رئيس الدولة، وعلى الرغم من ضرورة احترام الأوامر التشريعية لأحكام وقواعد الدستور يعد من المبادئ المنطقية المسلم بها، وإن كان الدستور أغفل الإشارة إلى وجوب احترام الأوامر التشريعية لقواعد الدستور، فإن ذلك يمكن تفسيره على أساس أن هذا الوضع من الأمور المنطقية التي لا تحتاج إلى نص صريح لإقرارها فالمعروف أن القانون لا يجوز له أن يخالف الدستور، وإذا كانت الأوامر التشريعية لها قوة القانون فحسب، فمن البديهي أن ما يعجز عنه القانون تعجز عنه أيضا هذه الأوامر.",
+        "contrast_type": "different_domain",
+        "intended_sense": "الأوامر التشريعية = نصوص لها قوة القانون يصدرها رئيس الجمهورية (Ordinances)",
+        "why_not_this_term": "المقصود أداة تشريع دستورية، لا الأوامر النصية الموجهة لنماذج الذكاء الاصطناعي.",
+        "source_title": "حدود ونطاق التشريع بأوامر في التعديل الدستوري لــ: 07/02/2016",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "فاروق خلف",
+          "فاروق خلف"
+        ],
+        "year": 2016,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/6293",
+        "venue": {
+          "journal": "مجلة العلوم القانونية و السياسية ",
+          "volume": "7",
+          "issue": "3",
+          "article_pages": "93–99",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 2,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "مُحوِّل",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "معمارية شبكة عصبية لمعالجة البيانات المتسلسلة بالاعتماد على آلية الانتباه الذاتي. ويُطلق عليها أيضًا \"شبكة المُحوِّلات العصبية\" أو \"نموذج مُحوِّل\".",
+    "english_term": "Transformer",
+    "abbreviations": [],
+    "aliases": [
+      "شبكة المُحوِّلات العصبية",
+      "نموذج مُحوِّل"
+    ],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "وتجمع معظم النماذج بين تقنيات الرؤية الحاسوبية والنمذجة التوليدية، مثل نماذج الانتشار أو الهياكل القائمة على المحوّلات لتوقع كيفية تطور المشهد عبر الزمن استنادًا إلى تعليمات أو مدخلات نصية أو صورة أو تسلسل محدد.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص ٧ (صفحة PDF رقم 11) — 4. آلية عمل نماذج الذكاء الاصطناعي التوليدي لإنشاء الفيديو والصوت والصور",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      },
+      {
+        "text": "استهدفت الدراسة رصد اتجاهات القائمين بالعلاقات العامة على مستوى عدد من الادرات والمؤسسات الجزائرية عبر 05 ولايات نحو توظيف المحولات التولدية المدربة مسبقا GPT في إطار عملهم",
+        "source_title": "ممارسة العلاقات العامة في عصر الذكاء الاصطناعي التوليدي - دراسة مسحية لاتجاهات المشتغلين بالمجال حول توظيف المحولات التولدية المدربة مسبقا",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "محمد عبد القادر"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/286453",
+        "venue": {
+          "journal": "مجلة المقدمة للدراسات الانسانية و الاجتماعية",
+          "volume": "10",
+          "issue": "2",
+          "article_pages": "497–521",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "ويتكون مجتمع البحث من مجموعة من العاملين في معمل المحولات الكهربائية التابع لشركة ديالى العامة احدى تشكيلات وزارة الصناعة والمعادن العراقية والبالغ عددهم ( 60 ) عامل",
+        "contrast_type": "different_domain",
+        "intended_sense": "محوّل كهربائي = جهاز لرفع الجهد الكهربائي أو خفضه (Electrical Transformer)",
+        "why_not_this_term": "المقصود معدّة كهربائية تُصنَّع في مصنع، لا معمارية شبكة عصبية قائمة على الانتباه الذاتي.",
+        "source_title": "الترتيب الداخلي للمصنع واثره في خفض تكاليف الإنتاج / دراسة ميدانية في معمل المحولات الكهربائية / شركة ديالى العامة - العراق",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "سعدي طالب مصطفى"
+        ],
+        "year": 2021,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/169128",
+        "venue": {
+          "journal": "مجلة الدراسات المحاسبية والمالية المتقدمة",
+          "volume": "5",
+          "issue": "2",
+          "article_pages": "57–78",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "aae33486-5e2e-4fc6-8d53-9ced81dad5a5",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "مُولِّد",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "جزء من شبكة توليدية تنافسية يُنشئ بيانات مزيفة.",
+    "english_term": "Generator",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "ان اغلب المناطق الريفية والصحراوية في العالم النامي وخاصة في الدولة العراقية, بعيدة عن انظار الدولة في توفر مصادر الطاقة اللازمة لسد الاحتياجات التي تعتمد عليها الزراعة وعلى جميع المستويات بعد سقوط النظام السابق 2003 وخاصة مصادر التقليدية للطاقة (مادة الديزل) للاعتماد في عملية الري, اذ انها امدادات غير منتظمة وتتعرض بين الحين والآخر الى تلكأ التجهيز من قبل شركة توزيع المنتجات النفطية لعدم كفاية منتج مادة الديزل المنتج محليا من شركات المصافي النفطية, لأسباب عديدة تتعلق بالزيادة المطردة للمركبات التي تعتمد على الديزل وتجهيز المولدات الكهربائية الاهلية نتيجة عدم كفاية الطاقة الكهربائية المجهزة للمناطق السكنية وغيرها من الأسباب التي تجعل قصور المزارعين في الريف ام المناطق الصحراوية في الحصول على مادة الديزل المستخدم في عمليات الري.",
+        "contrast_type": "different_domain",
+        "intended_sense": "مولّدات كهربائية = آلات تنتج الطاقة الكهربائية (Electric Generators)",
+        "why_not_this_term": "المقصود معدّات طاقة تعمل بالديزل، لا الجزء المولِّد للبيانات في شبكة توليدية تنافسية.",
+        "source_title": "استخدام الخلايا الشمسية ودورها في التنمية المستدامة للمناطق الصحراوية والريفية ( دراسة تحليلية مقارنة)",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "ا محمد عزيز عليوي",
+          "الشمري زينب حمزة كاظم"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/250855",
+        "venue": {
+          "journal": "المجلة الجزائرية للدراسات الاقتصادية والإدارية",
+          "volume": "4",
+          "issue": "1",
+          "article_pages": "49–68",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "في الشبكة التوليدية التنافسية يتعلّم المُولِّد إنتاج صور مزيفة تقترب تدريجيًا من الصور الحقيقية، بينما يحاول المُميِّز كشفها.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 1,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "عائد",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "إجمالي المكافآت في التعلُّم التعزيزي الذي يتوقعه الوكيل عند اتباع سياسة معينة.",
+    "english_term": "Return",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "يقدم هذا البحث دراسة تطبيقية في عينة من المشاريع الاستثمارية العاملة في ليبيا، والتي يهدف من خلالها إلى معرفة مدى تأثير تغير العائد المتحقق على العائد المطلوب من الاستثمار في ظل استخدام نموذج (CAPM).",
+        "contrast_type": "different_domain",
+        "intended_sense": "العائد = الربح أو المردود المالي للاستثمار (Financial Return)",
+        "why_not_this_term": "المقصود مردود مالي، لا إجمالي المكافآت المتوقعة للوكيل في التعلُّم التعزيزي.",
+        "source_title": "أثر تغير العائد المتحقق على العائد المطلوب في ظل نموذج(CAPM) دراسة تطبيقية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "قاسم نايف علوان",
+          "إبراهيم محمد الزعلوك"
+        ],
+        "year": 2005,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/6028",
+        "venue": {
+          "journal": "مجلة العلوم الاقتصادية وعلوم التسيير",
+          "volume": "5",
+          "issue": "5",
+          "article_pages": "1–21",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "ويعد عائدًا في أحكام النظام كل من ارتكب الجريمة ذاتها الصادر بشأنها حكم أو قرار نهائي بالإدانة خلال (ثلاث) سنوات من تاريخ صدور ذلك الحكم أو القرار.",
+        "contrast_type": "different_sense",
+        "intended_sense": "عائد = مرتكب الجريمة نفسها مرة أخرى (Recidivist)",
+        "why_not_this_term": "المقصود وصف قانوني للمكرِّر للمخالفة، ولا علاقة له بالمكافآت في التعلُّم التعزيزي.",
+        "source_title": "نظام الشركات",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2022,
+        "page_or_section": "المادة الثالثة والستون بعد المائتين",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/a8376aea-1bc3-49d4-9027-aed900b555af/1",
+        "issue_date": {
+          "hijri": "1443/12/01",
+          "gregorian": "30/06/2022"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "يُحسب العائد بجمع المكافآت المستقبلية مخصومةً بمعامل خصم، ويسعى الوكيل إلى اتباع السياسة التي تعظّم العائد المتوقع.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 2,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "اسم",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "جانب الإجابة أو النتيجة من مثال في التعلُّم الموجَّه.",
+    "english_term": "Label",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "يهدف هذا المقال إلى دراسة اسم الآلة في الفكر اللغوي العربي، من حيث المفهوم والوزن والاشتقاق.",
+        "contrast_type": "different_sense",
+        "intended_sense": "اسم الآلة = مصطلح صرفي نحوي لصيغ الاسم الدالة على الأداة (مِفْعَل، مِفْعَال...)",
+        "why_not_this_term": "المقصود قسم من أقسام الكلم في النحو والصرف، لا جانب الإجابة (Label) في مثال تعلُّم موجَّه.",
+        "source_title": "اسم الآلة بين القدماء والمحدثين",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "حسن العايب"
+        ],
+        "year": 2014,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/101880",
+        "venue": {
+          "journal": "الآداب",
+          "volume": "14",
+          "issue": "1",
+          "article_pages": "108–137",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "يجوز تعديل الاسم التجاري للشركة وفقًا للأوضاع المقررة لتعديل عقد تأسيس الشركة أو نظامها الأساس، ولا يترتب على التعديل المساس بحقوق الشركة أو التزاماتها أو الإجراءات النظامية التي اتخذتها أو اتخذت في مواجهتها قبل التعديل.",
+        "contrast_type": "different_domain",
+        "intended_sense": "الاسم التجاري = الاسم الذي تُعرف به المنشأة قانونيًا (Trade Name)",
+        "why_not_this_term": "المقصود تسمية قانونية لكيان تجاري، لا تسمية مثال في بيانات التدريب.",
+        "source_title": "نظام الشركات",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2022,
+        "page_or_section": "المادة الخامسة",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/a8376aea-1bc3-49d4-9027-aed900b555af/1",
+        "issue_date": {
+          "hijri": "1443/12/01",
+          "gregorian": "30/06/2022"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "يتكوّن كل مثال في مجموعة التدريب من خصائص البريد الإلكتروني ومن اسم يحدّد ما إذا كانت الرسالة مزعجة أو غير مزعجة.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 2,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "45590793-f757-41fc-8325-5ed6303f02a8",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "بث",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "طريقة في تعلُّم الآلة لمطابقة أبعاد المصفوفات ذات الأحجام المختلفة، وإتاحة إجراء عمليات حسابية بين تلك المصفوفات.",
+    "english_term": "Broadcasting",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "عملية بث محتوى إعلامي، أو إعادة بثه، أو إنتاجه للبث، أو توزيعه، أو بيعه ليصل إلى الجمهور، ولا يشمل ما يتصف بطابع المراسلات الخاصة.",
+        "contrast_type": "different_domain",
+        "intended_sense": "بث = إرسال المحتوى الإعلامي المرئي أو المسموع إلى الجمهور (Broadcast)",
+        "why_not_this_term": "المقصود إرسالًا إذاعيًا أو تلفزيونيًا، لا آلية مطابقة أبعاد المصفوفات في العمليات الحسابية.",
+        "source_title": "نظام الإعلام المرئي والمسموع",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2017,
+        "page_or_section": "المادة الأولى (التعريفات)، البند 11",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/ed5fdbc0-c183-4a8a-a8b7-a9ed004b5900/1",
+        "issue_date": {
+          "hijri": "1439/03/25",
+          "gregorian": "13/12/2017"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "لقد شهدت تكنولوجيا البث التلفزيوني في الآونة الأخيرة تقدما هائلا، حيث يمكن لكل أسرة أن تستمتع بمشاهدة جميع المباريات التي تقام داخل البلاد وخارجها.",
+        "contrast_type": "different_domain",
+        "intended_sense": "البث التلفزيوني = نقل المباريات والبرامج عبر التلفزيون",
+        "why_not_this_term": "المقصود وسيلة إعلامية، لا Broadcasting في تعلُّم الآلة.",
+        "source_title": "دور حقوق البث التلفزيوني في تمويل فرق كرة القدم المحترفة",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "فيصل قاسمي",
+          "محمود محفوظي"
+        ],
+        "year": 2013,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/14856",
+        "venue": {
+          "journal": "مجلة الابداع الرياضي",
+          "volume": "4",
+          "issue": "3",
+          "article_pages": "270–275",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "بفضل البث يمكن جمع مصفوفة أبعادها (3×4) مع متجه طوله 4 مباشرة، إذ يُكرَّر المتجه ضمنيًا على كل صف دون نسخه في الذاكرة.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 2,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "5882bfa5-3d27-4a19-877c-6c0cd90a73b3",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تأسيس",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "عملية ربط مخرجات نظام الذكاء الاصطناعي بمعلومات خارجية موثقة أو ببيانات من العالم الحقيقي؛ لتحسين دقتها الواقعية.",
+    "english_term": "Grounding",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "يقدم المؤسسون طلب تأسيس الشركة وقيدها إلى السجل التجاري، مرافقًا له عقد التأسيس أو النظام الأساس والبيانات والوثائق اللازمة وفقًا لشكل الشركة.",
+        "contrast_type": "different_sense",
+        "intended_sense": "تأسيس الشركة = إنشاؤها قانونيًا وتسجيلها (Incorporation)",
+        "why_not_this_term": "المقصود إجراء قانوني لإنشاء كيان تجاري، لا ربط مخرجات نظام الذكاء الاصطناعي بمعلومات خارجية موثقة.",
+        "source_title": "نظام الشركات",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2022,
+        "page_or_section": "المادة السادسة",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/a8376aea-1bc3-49d4-9027-aed900b555af/1",
+        "issue_date": {
+          "hijri": "1443/12/01",
+          "gregorian": "30/06/2022"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "هدفت هذه الدراسة الى التعرف على مستوى ومحددات توجه الطلبة الجامعيين تجاه تأسيس المؤسسات الناشئة في ظل قانون 1275، وقد اعتمد الباحثان المنهج الوصفي وتم استخدام أداة الاستبيان لمعرفة محددات نوجه آراء عينة الدراسة المكونة من 53 فردا اختيروا بطريقة عشوائية وتم تحليل النتائج باستخدام المتوسطات الحسابية والانحرافات المعيارية ومعاملات الاختلاف مستعينين بالبرنامج الاحصائي SPSS، ومن أهم النتائج التي توصلت اليها الدراسة لدى افراد العينة وجود مستوى مرتفع جدا على الموافقة عن قانون 1275 بين الطلاب فيما يتعلق بتوجههم نحو إنشاء المؤسسات الناشئة، كما أظهرت النتائج عن عدم وجود فروق في الجنس، التخصص، المستوى التعليمي في تحديد توجهات الطلاب نحو المؤسسات الناشئة ويعود ذلك الى أن كلا الجنسين ذكورا وإناث يظهرون مستويات متساوية من الطموح والرغبة في الاستقلالية في العمل ويسعون الى تحقيق الذات من خلال تأسيس هذه المؤسسات الناشئة.",
+        "contrast_type": "different_sense",
+        "intended_sense": "تأسيس المؤسسات الناشئة = إنشاء مشروعات ريادية",
+        "why_not_this_term": "المقصود ريادة الأعمال، لا Grounding في الذكاء الاصطناعي.",
+        "source_title": "اتجاه الطلبة الجامعيين نحو انشاء المؤسسات الناشئة في ظل قانون 1275.",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "ناصري حورية",
+          "جغبلو حمزة"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/263189",
+        "venue": {
+          "journal": "مجلة البحوث القانونية و الاقتصادية",
+          "volume": "8",
+          "issue": "1",
+          "article_pages": "115–148",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "يعتمد التأسيس على استرجاع مقاطع من وثائق موثقة وإلزام النموذج ببناء إجابته عليها، مما يقلّل الهلوسة ويتيح الإحالة إلى المصدر.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 2,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "605f7542-8289-4637-8cf8-0d6a16592e30",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "مواءمة",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "عملية ضمان توافق أهداف أنظمة الذكاء الاصطناعي وسلوكياتها مع القيم الإنسانية والنوايا البشرية ومتطلبات السلامة.",
+    "english_term": "Alignment",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "لا يتم قياس قيمة هذه الأنظمة بقدراتها التقنية فحسب، بل بمدى إدارتها بمسؤولية ودرجة مواءمتها مع القيم المجتمعية.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص ii (صفحة PDF رقم 3) — كلمة وزير الاتصالات وتكنولوجيا المعلومات",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "هدفت هذه الدراسة إلى تبيان وتقييم مدى مواءمة التشريع الجزائري الخاص بالأنظمة المعلوماتية، المستخدمة في مجال المحاسبة والتدقيق، للإصدارات الدولية، مقارنة بالتشريعات الفرنسية منها، بغية الوقوف على الجهود المبذولة من طرف الدولة الجزائرية للانتقال نحو بيئة محاسبية تعتمد على تكنولوجيا المعلومات.",
+        "contrast_type": "different_domain",
+        "intended_sense": "مواءمة التشريع = تكييف القوانين الوطنية لتتوافق مع المعايير الدولية (Legal Harmonization)",
+        "why_not_this_term": "المقصود ملاءمة نصوص قانونية، لا ضمان توافق أهداف أنظمة الذكاء الاصطناعي وسلوكها مع القيم الإنسانية.",
+        "source_title": "مواءمة التشريعات الجزائرية المنظمة لمهنة المحاسبة والتدقيق باستخدام تكنولوجيا المعلومات للإصدارات الدولية: دراسة مقارنة Compatibility of the Algerian legislation organising the accounting and auditing profession using information technology with international versions: a comparative study",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "لعلايبية مالك",
+          "محرز نورالدين"
+        ],
+        "year": 2021,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/168805",
+        "venue": {
+          "journal": "مجلة العلوم الانسانية",
+          "volume": "21",
+          "issue": "2",
+          "article_pages": "1027–1048",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "استنادًا إلى أفضل الممارسات المعترف بها دوليًا ومواءمةً مع التوجيهات الصادرة عن المنظمات والهيئات العالمية متعددة الأطراف ، بما في ذلك اليونسكو ومنظمة التعاون الاقتصادي والتنمية ومجلس أوروبا وعملية هيروشيما التابعة لمجموعة السبع، تعتمد الإرشادات الوطنية المصرية منهجية تركز على الإنسان وتتناسب مع حجم المخاطر.",
+        "contrast_type": "different_domain",
+        "intended_sense": "مواءمةً مع = اتساقًا مع (معنى لغوي عام: التوافق مع وثائق مرجعية)",
+        "why_not_this_term": "المقصود اتساق وثيقة الإرشادات مع توجيهات دولية، لا مواءمة سلوك نظام ذكاء اصطناعي مع القيم الإنسانية.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص iii (صفحة PDF رقم 4) — الملخص التنفيذي",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 1,
+      "n_real_negative": 2,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تدريب",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "عملية تحديد أو تحسين المُعامِلات التي تشكل نموذجًا يعتمد على خوارزمية تعلُّم الآلة باستخدام بيانات التدريب. ويُطلق عليها أيضًا \"تدريب النموذج\".",
+    "english_term": "Training",
+    "abbreviations": [],
+    "aliases": [
+      "تدريب النموذج"
+    ],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "وباستخدام التعزيز التدريجي الفائق كأحد تقنيات تعلم الآلة، تم تدريب واختبار نموذجين أحدهما قائم على خمس سمات كبرى والآخر قائم على 15 سمة فرعية، ومقارنة قيم معامل التحديد والجذر التربيعي لمتوسط الأخطاء بين القيم الواقعية والقيم المتنبئ بها، لتحديد النموذج الأقوى أداء.",
+        "source_title": "سمات الشخصية وإدمان مواقع التواصل الاجتماعي لدى المراهقين: مقارنة القوة التنبؤية للسمات الكبرى والفرعية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "زغماتي إيمان",
+          "علي تودرت نسيمة"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/282146",
+        "venue": {
+          "journal": "مجلة الروائز",
+          "volume": "9",
+          "issue": "2",
+          "article_pages": "116–137",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "ومن أبرز النتائج التي تم التوصل إليها أن بعض النماذج أظهرت تفوقا في رصد الأخطاء مثل Chatgpt وClaude وDeepseek قياسا بـــ Gemini وGrok مع ضعف عام في دقة التفسيرات النحوية، كما بينت أن جودة بيانات التدريب تؤثر بشكل كبير على أداء تلك النماذج.",
+        "source_title": "كفاءة نماذج التوليد اللغوي LLMs في اكتشاف الأخطاء النحوية لدى متعلمي اللغة العربية كلغة ثانية وتصويبها: نحو تصميم نظام قائم على تحليل الأخطاء المتكررة.",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بريحة عثمان"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/289490",
+        "venue": {
+          "journal": "اللّغة العربية",
+          "volume": "28",
+          "issue": "1",
+          "article_pages": "33–56",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "تقديم النصح والمعونة إلى طالبي العمل فيما يختص بالتأهيل والتدريب المهني، أو بإعادة التدريب اللازم للحصول على الأعمال الشاغرة.",
+        "contrast_type": "different_domain",
+        "intended_sense": "التدريب المهني = تأهيل الأشخاص وإكسابهم مهارات العمل (Vocational Training)",
+        "why_not_this_term": "المقصود تدريب البشر، لا تحديد مُعامِلات نموذج تعلُّم الآلة باستخدام البيانات.",
+        "source_title": "نظام العمل",
+        "source_type": "official_legislation",
+        "authors_or_org": [
+          "المملكة العربية السعودية — هيئة الخبراء بمجلس الوزراء (منصة الأنظمة السعودية)"
+        ],
+        "year": 2005,
+        "page_or_section": "المادة الثانية والعشرون (البند 3/4)",
+        "url_or_doi": "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/08381293-6388-48e2-8ad2-a9a700f2aa94/1",
+        "issue_date": {
+          "hijri": "1426/08/23",
+          "gregorian": "27/09/2005"
+        },
+        "text_version_note": "نص النظام كما يظهر في منصة الأنظمة السعودية بتاريخ الاسترجاع (قد يتضمن تعديلات لاحقة على تاريخ الإصدار).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "ambiguous",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "99686190-8f2a-474a-9159-ace5fd8f07ad",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تجذيع",
+    "lemma_type": "singleWord",
+    "pos": "NA",
+    "definition": "عملية إعادة الكلمات إلى شكلها الأساسي، عن طريق إزالة السوابق واللواحق.",
+    "english_term": "Stemming",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "generated_examples": [
+      {
+        "text": "يزيل التجذيع السوابق واللواحق من الكلمات، فتُردّ «المعلمون» و«معلمين» و«المعلمات» إلى جذع واحد قبل بناء فهرس البحث.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 0,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تعلُّم عميق",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "مجال فرعي من تعلُّم الآلة يستخدم عدة طبقات مخفية في الشبكات العصبية لحل المشكلات المعقدة عن طريق تحديد أهم الخصائص الأساسية للبيانات المُدْخَلة.",
+    "english_term": "Deep Learning",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تنبئ تقنية التزييف العميق والتي تعد أحد افرازات الذكاء الاصطناعي، بتحولات مهمة في تعامل الناس مع الصور والفيديوهات والتي تشكل أساسا جزءا من الحياة اليومية لهم، وقد ساهمت عوامل عديدة في نشأة وتطور هذه التقنية المبتكرة، أبرزها مهارات التعلم العميق، والتطور في أنظمة المعالجة الرقمية، وازدياد سرعتها، بالإضافة إلى توفر البيئة الرقمية التي تسمح لها بالانتشار الواسع عبر شبكات التواصل الاجتماعي ووصولها للملايين من الأشخاص عبر العالم.",
+        "source_title": "التزيف العميق: نشأة التقنية وتأثيراتها",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "غديري كريمة"
+        ],
+        "year": 2021,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/175671",
+        "venue": {
+          "journal": "مجلة الرسالة للدراسات الإعلامية",
+          "volume": "5",
+          "issue": "4",
+          "article_pages": "122–133",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "تهدف هذه الدراسة إلى اختبار قدرة نماذج التعلم العميق LSTM و Transformers على التنبؤ بالسلوك السعري لمؤشر S&P 500، مع التركيز على مقارنة أداء النموذجين في ظل سيناريوهات السوق المختلفة.",
+        "source_title": "اختبار قدرة نماذج التعلم العميق LSTM و Transformers على التنبؤ بالسلوك السعري لمؤشر S&amp;P 500: دراسة تجريبية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "صالحي محمد يزيد",
+          "كسري أسماء"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/292690",
+        "venue": {
+          "journal": "مجلة الدراسات الإقتصادية الكمية",
+          "volume": "12",
+          "issue": "1",
+          "article_pages": "379–391",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "أظهرت النتائج أن مستوى التعلم العميق لدى التلاميذ المتفوقين كان مرتفعا، في حين كان مستوى العبء المعرفي مرتفعًا نسبيًا.",
+        "contrast_type": "different_domain",
+        "intended_sense": "التعلم العميق = مقاربة تربوية/نفسية في التعلّم تقوم على الفهم المتعمّق (Deep Approach to Learning)",
+        "why_not_this_term": "المقصود نمط تعلّم بشري يُقاس لدى التلاميذ، لا فرعًا من تعلُّم الآلة يعتمد على الشبكات العصبية متعددة الطبقات.",
+        "source_title": "مستويات التعلم العميق والعبء المعرفي لدى تلاميذ السنة الثالثة ثانوي المتفوقين في ظل الدروس الخصوصية المكثفة: دراسة ميدانية على عينة من التلاميذ المتفوقين بمدينة باتنة.Levels of Deep Learning and Cognitive Load among High-Achieving Third-Year Secondary School Students in the Context of Intensive Private Tutoring: A Field Study of a Sample of High-Achieving Students in the City of Batna.",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بن لغريب نجاة"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/291255",
+        "venue": {
+          "journal": "مجلة علوم الإنسان والمجتمع",
+          "volume": "15",
+          "issue": "1",
+          "article_pages": "472–500",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تعلُّم موجَّه",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نوع من تعلُّم الآلة يستخدم مجموعة بيانات مُسمّاة لتدريب نموذج للتنبؤ أو التصنيف.",
+    "english_term": "Supervised Learning",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تقدم هذه الدراسة نموذج تعلم آلي ذكي يعتمد على خوارزمية الغابة العشوائية، أحد أهم خوارزميات تعلم الآلة بالإشراف، وهي فرع من فروع الذكاء الاصطناعي، حيث تُستخدم الخوارزمية في الكثير من مجالات المالية والاقتصاد.",
+        "source_title": "نموذج تعلم آلي ذكي لكشف الاحتيال في بطاقة الائتمان - تطبيق عملي على منصة تفاعلية -",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "فراحي فضيلة"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/267093",
+        "venue": {
+          "journal": "مجلة دفاتر اقتصادية",
+          "volume": "16",
+          "issue": "1",
+          "article_pages": "507–524",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "شهد عالم التكنولوجيا والرقمة وتيرة متسارعة في عصرنا الحالي ما عزز مسار التعلم سواءً التعليم الأكاديمي أو التعلم الموجه ذاتيًا الذي يعتبر كفاءة حاسمة للعيش والعمل في عالمنا المعقد بشكل متزايد والذي لا يمكن التنبؤ به ولا حصره، بل رقعته تتزايد تسارعا يوما بعد يوم، والمشهد التكنولوجي سريع التطور اليوم، ظهر الذكاء الاصطناعي كقوة دافعة تعيد تشكيل جوانب مختلفة من حياتنا، ويحدث الذكاء الاصطناعي ثورة في الحياة اليومية للفرد في جميع المجالات.",
+        "contrast_type": "different_domain",
+        "intended_sense": "التعلم الموجه ذاتيًا = قدرة المتعلّم البشري على إدارة تعلّمه بنفسه (Self-Directed Learning)",
+        "why_not_this_term": "المقصود مفهوم تربوي، لا تعلُّم الآلة من بيانات موسومة.",
+        "source_title": "دور التكنولوجيا الرقمية في تسهيل عملية التدريس",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "زوينة لعروس",
+          "عمار سويسي"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/303176",
+        "venue": {
+          "journal": "Educ recherche",
+          "volume": "15",
+          "issue": "1",
+          "article_pages": "102–114",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 1,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تعلُّم غير موجَّه",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نوع من تعلُّم الآلة يكتشف الأنماط في مجموعة بيانات غير مُسمَّاة.",
+    "english_term": "Unsupervised Learning",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "generated_examples": [
+      {
+        "text": "استُخدم التعلُّم غير الموجَّه لتجميع العملاء في مجموعات متشابهة السلوك دون الاعتماد على أي تصنيف مسبق للبيانات.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 0,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "فرط التخصيص",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "مشكلة في تعلُّم الآلة تحدث عند إنشاء نموذج يطابق بيانات التدريب بصورة كبيرة تجعله يفشل في التعميم على البيانات الجديدة.",
+    "english_term": "Overfitting",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "generated_examples": [
+      {
+        "text": "حقّق النموذج دقة شبه كاملة على بيانات التدريب لكنه أخفق على بيانات الاختبار، وهي علامة واضحة على فرط التخصيص.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 0,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "37bde43b-0b34-457b-a23b-9aecf4a44fd9",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "دالة تنشيط",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "صيغة رياضية تُستخدم في الشبكة العصبية الاصطناعية؛ لمعالجة المُدْخَلات الموزونة للعُقَد وتوليد المخرجات.",
+    "english_term": "Activation Function",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "generated_examples": [
+      {
+        "text": "تُطبَّق دالة تنشيط غير خطية مثل ReLU على ناتج كل خلية عصبية، فتمكّن الشبكة من تمثيل علاقات غير خطية بين المدخلات والمخرجات.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 0,
+      "n_real_negative": 0,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "انتشار عكسي",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "خوارزمية تُستخدم عند تدريب الشبكات العصبية الاصطناعية لتقليل الأخطاء عن طريق إيجاد قيمة التدرج المطلوب لحساب أوزان الشبكة.",
+    "english_term": "Backpropagation",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "وذلك بالاعتماد على قاعدة بيانات أسعار الإغلاق اليومية لمؤشر سوق قطر للأوراق المالية من 11/11/2019 الى 09/12/2021 ،وذلك باستعمال خوارزمية الانتشار الخلفي في التدريب وشبكة بيرسبيرتون في التنبؤ .",
+        "source_title": "كفاءة النماذج الذكية في التنبؤ بمؤشرات الأسواق المالية في ظل جائحة كورونا –مؤشر سوق قطر المالي نموذجا-",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "دربال امينة",
+          "حكوم ليلى"
+        ],
+        "year": 2022,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/198000",
+        "venue": {
+          "journal": "مجلة الدراسات التجارية والاقتصادية المعاصرة",
+          "volume": "5",
+          "issue": "3",
+          "article_pages": "551–570",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 1,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "ذكاء اصطناعي توليدي",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نوع من الذكاء الاصطناعي يمكنه إنشاء محتوى جديد، مثل: النصوص والصور والأصوات والفيديوهات والأكواد البرمجية.",
+    "english_term": "Generative Artificial Intelligence",
+    "abbreviations": [
+      "GenAI"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "من خلال منهجية المراجعة الاستكشافية(Scoping Review)، أظهرت النتائج، أن الذكاء الاصطناعي التوليدي يحمل إمكانات كبيرة لتعزيز العلم المفتوح، خاصة في مجالات الترجمة والتلخيص والتيسير المعرفي؛ لكنه يثير في الوقت نفسه مخاطر تتعلق بالسرقة العلمية والإسناد الأخلاقي وظهور فجوات رقمية وثقافية جديدة.",
+        "source_title": "الذكاء الاصطناعي التوليدي يعزز أم يقوض أهداف العلم المفتوح؟",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "تيتيلة سارة"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/298340",
+        "venue": {
+          "journal": "الزهير للدراسات والبحوث الاتصالية والإعلامية",
+          "volume": "5",
+          "issue": "2",
+          "article_pages": "72–92",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "استهدفت الدراسة تسليط الضوء على الممارسة الإعلامية في ظل توظيف أحد أبرز أدوات الذكاء الاصطناعي التوليدي ممثلا في chat GPT في انتاج المحتوى الإعلامي، و ذلك بالتركيز على استكشاف عادات ودوافع توظيفه والفائدة المحققة من وراء ذلك، إضافة إلى رصد الاتجاهات نحو إيجابيات وتحديات هذا التوظيف، واستشراف مستقبل الممارسة الاعلامية في ظل توسع الاعتماد على أدوات الذكاء الاصطناعي التوليدي .",
+        "source_title": "الممارسة الاعلامية في عصر الذكاء الاصطناعي التوليدي - دراسة مسحية لاتجاهات المشتغلين بالاعلام حول تطبيقات chat GPT في انتاج المحتوى الاعلامي",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "محمد عبد القادر"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/273491",
+        "venue": {
+          "journal": "مجلة الرسالة للدراسات الإعلامية",
+          "volume": "9",
+          "issue": "2",
+          "article_pages": "201–219",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تزييف عميق",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نوع من الوسائط المصطنعة التي توضع فيها صورة شخص أو صوته بدلًا من صورة شخص آخر أو صوته.",
+    "english_term": "",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "التزييف العميق هو تقنية تستخدم الذكاء الاصطناعي والتعلم العميق لإنشاء محتوى وسائط متعددة (مثل الفيديو والصوت والصور) تبدو واقعيًا، ولكنه في الحقيقة مزيف.",
+        "source_title": "التزييف العميق في التشريع العماني",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "الشحري جابر"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/268687",
+        "venue": {
+          "journal": "مجلة البحوث القانونية و الاقتصادية",
+          "volume": "8",
+          "issue": "2",
+          "article_pages": "500–529",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "تعتمد المنهجية على تقنيات تحليل محتوى الفيديوهات المزيفة والمفبركة للكشف عن علامات التزييف العميق.",
+        "source_title": "التأثير السلبي لتقنية التزييف العميق على سمعة الشخصيات البارزة على منصات التواصل الإجتماعي دراسة تحليلية على عينة من الفيديوهات المفبركة The Negative Impact of Deepfake Technology on the Reputation of Prominent Figures on Social Media Platforms: An Analytical Study on a Sample of Fabricated Videos.",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "قادم جميلة",
+          "لصوان محمد طيب كافية"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/248277",
+        "venue": {
+          "journal": "مجلة العلوم وافاق المعارف",
+          "volume": "4",
+          "issue": "1",
+          "article_pages": "510–532",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تقسيم النصوص",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "عملية تقسيم النص إلى وحدات صغيرة تُسمَّى وحدات لغوية، ويطلق عليها أيضاً \"تقسيم\"",
+    "english_term": "Text Tokenization",
+    "abbreviations": [],
+    "aliases": [
+      "تقسيم"
+    ],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "يلي ذلك تقسيم النصوص الى مجموعتين احداهما تستخدم لتدريب البرنامج والثانية لاختباره.",
+        "contrast_type": "different_sense",
+        "intended_sense": "تقسيم النصوص = تقسيم مجموعة الوثائق إلى مجموعة تدريب ومجموعة اختبار (Dataset Split)",
+        "why_not_this_term": "المقصود تقسيم المدونة على مستوى الوثائق لأغراض التقييم، لا تقسيم النص الواحد إلى وحدات لغوية (Tokens).",
+        "source_title": "مبادئ التصنيف الآلي للنصوص العربية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بوعلام العربي بوعمران"
+        ],
+        "year": 2017,
+        "page_or_section": "ص 34 من النص الكامل (PDF)",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/70166",
+        "venue": {
+          "journal": "مجلة الحكمة للدراسات الأدبية واللغوية",
+          "volume": "5",
+          "issue": "3",
+          "article_pages": "29–39",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "full_text_url": "https://asjp.cerist.dz/en/downArticle/199/5/3/70166",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا)؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام. الإملاء كما في الأصل.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "قبل تمرير الجملة إلى النموذج اللغوي يجري تقسيم النصوص إلى وحدات لغوية فرعية، فتُجزّأ الكلمة النادرة إلى أكثر من وحدة.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 0,
+      "n_real_negative": 1,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "784fb957-1319-4ce8-afd7-10fd35512749",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تحليل المشاعر",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "عملية استخدام الخوارزميات الإحصائية أو خوارزميات تعلُّم الآلة لتحديد المشاعر والآراء المضمنة في نص أو صورة.",
+    "english_term": "Sentiment Analysis",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تهدف هذه الدراسة إلى تبيان أهمية تحليل المشاعر والآراء في التدوينات المصغرة وبخاصة التويتر كأداة منهجية جديدة في الدراسات المرتبطة بالشبكات الاجتماعية، وتبسيط طرق وكيفية التحليل الآلي.",
+        "source_title": "تحليل المشاعر والآراء في التدوينات المصغرة كأداة منهجية جديدة",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "كوبيبي حفصة"
+        ],
+        "year": 2022,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/184067",
+        "venue": {
+          "journal": "المجلة الدولية للاتصال الاجتماعي",
+          "volume": "9",
+          "issue": "1",
+          "article_pages": "225–237",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "شملت منهجية البحث جمع وتحليل التغريدات والمنشورات المتعلقة بالفيلم باستخدام خوارزميات تحليل المشاعر وتصنيف الآراء إلى إيجابية سلبية ومحايدة.",
+        "source_title": "إتجاهات الرأي العام العربي على مواقع التواصل الاجتماعي حول فيلم (حياة الماعز): دراسة استكشافية باستخدام تقنيات تحليل المشاعر",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "الزهيري طلال ناظم"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/259955",
+        "venue": {
+          "journal": "مجلة رقمنة للدراسات الإعلامية والاتصالية",
+          "volume": "4",
+          "issue": "2",
+          "article_pages": "76–87",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "ترجمة الآلة",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "فرع من اللغويات الحوسبية يهتم بترجمة النص أو الكلام من لغة إلى أخرى.",
+    "english_term": "Machine Translation",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تعتبر الترجمة الآلية الذكية من أبرز مجالات الذكاء الاصطناعي خلال السنوات الأخيرة، حيث بدأ البحث في هذا المجال بالأساليب الإحصائية التي تعتمد على نمذجة البيانات اللفظية من خلال تحليل الإحصائيات اللغوية، ثم انتقل إلى أساليب الترجمة العصبية التي تعتمد على الشبكات العصبية العميقة، حيث تقدم هذه الأخيرة العصبية تحسينات ملحوظة في جودة الترجمة من حيث الدقة والسلاسة، وتتيح التعلم المستمر من البيانات الجديدة، مما يجعلها أكثر مرونة.",
+        "source_title": "نحو الترجمة الذكية: رهانات التحول من أساليب الترجمة الإحصائية إلى الترجمة العصبية وما بعد العصبية وتحدياتها المستقبلية _ قراءة استشرافية_",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "قرة عائشة"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/292827",
+        "venue": {
+          "journal": "المعيار",
+          "volume": "17",
+          "issue": "1",
+          "article_pages": "839–853",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "ومع التقدم التكنولوجي ازداد الطلب - أكثر من أي وقت مضى - على الترجمة الآلية التي تستخدم التكنولوجيا الرقمية والذكاء الاصطناعي، وعلاوة على ذلك فإن الترجمة الآلية العصبية، التي تستخدم شبكات عصبية اصطناعية معقدة لمحاكاة الدماغ البشري متقدمة لأنها تتفوق على الترجمة البشرية من حيث السرعة والقدرة على تخزين المعلومات واسترجاعها.",
+        "source_title": "الترجمة الآلية العصبية: بين الذكاء الاصطناعي والعقل البشري -تطبيق DeepL Translator أنموذجا-",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بودراع مبارك",
+          "مخلوفي زكرياء"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/261665",
+        "venue": {
+          "journal": "معالم",
+          "volume": "15",
+          "issue": "2",
+          "article_pages": "41–61",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "شجرة القرار",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "خوارزمية تعلُّم موجَّه تستخدم رسومًا بيانية شجرية؛ لإجراء عمليات تحليل القرار.",
+    "english_term": "Decision Tree",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "كما كشفت الدراسة عن هيمنة نماذج أشجار القرار والانحدار اللوجيستي التي وصلت نسبة استخدامها الى83.3% في البنوك الاوروبية، مع تفضيلها للنماذج المطورة داخليا لضمان السيطرة الكاملة على قواعد بياناتها وأنظمتها الأساسية.",
+        "source_title": "دور الذكاء الاصطناعي في تعزيز التقييم الائتماني واكتشاف الاحتيال في القطاع البنكي الأوروبي",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "قروي عبد الله"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/292187",
+        "venue": {
+          "journal": "مجلة المنهل الاقتصادي",
+          "volume": "9",
+          "issue": "1",
+          "article_pages": "211–226",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [
+      {
+        "text": "تهدف هذه الدراسة إلى التعرف على أسلوب شجرة القرار ودورها في اتخاذ القرارات التسويقية،وذلك من خلال تحديدمفهومهاوأهدافها، وكذا مراحل تطبيقها،والحالات الممكنة لتطبيق هذا الأسلوب، مع التركيز على الاستخدام التسويقي لهذا الأسلوب في مؤسسةانتاجية وتسويقية، كما حاولنا تطبيق أسلوب شجرة القرار التسويقية في مؤسسة رائدة لصناعة وتسويق المشروبات الغازية.",
+        "contrast_type": "different_domain",
+        "intended_sense": "شجرة القرار = أداة لتحليل القرار في بحوث العمليات والإدارة (رسم بدائل واحتمالات وعوائد يدويًا)",
+        "why_not_this_term": "المقصود أسلوب كمي للمفاضلة بين قرارات إدارية، لا خوارزمية تعلُّم موجَّه تُبنى تلقائيًا من البيانات.",
+        "source_title": "دور شجرة القرار في تحسين القرارات التسويقية دراسة حالة شركة الأصنامية الخاصة بتصنيع وتسويق المشروبات الغازية لسنة 2015",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بوعلام  بنزخروفة",
+          "العربي عطية"
+        ],
+        "year": 2017,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/17865",
+        "venue": {
+          "journal": "مجلة العلوم الاقتصادية والتسيير والعلوم التجارية",
+          "volume": "10",
+          "issue": "17",
+          "article_pages": "469–477",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 1,
+      "n_real_negative": 1,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تنقيب في البيانات",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "عملية اكتشاف الأنماط في كمية كبيرة من البيانات، واستخراج المعلومات المفيدة.",
+    "english_term": "Data Mining",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تهدف الدراسة الى استخدام الانحدار الخطي كتقنية من تقنيات التنقيب في البيانات للتنبؤ بالطاقة الانتاجية والتكاليف لمؤسسة اسمنت جزائرية، وذلك عن طريق استخدام برنامج التنقيب weka، وذلك لتمكين المؤسسة من وضع تحليل منطقي للوضعية المالية المستقبلية لها لتحسين جودة ومسار القرارات المتخذة.",
+        "source_title": "التنبؤ باستخدام التنقيب في البيانات لتحسين عملية اتخاذ القرار",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "العيفة اصالة"
+        ],
+        "year": 2023,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/239708",
+        "venue": {
+          "journal": "مجلة الباحث الاقتصادي - Economics Researcher’s Journal -",
+          "volume": "10",
+          "issue": "1",
+          "article_pages": "92–102",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "نهدف من خلال هذا المقال إلى كشف الغطاء على عملية التنقيب في البيانات من خلال تطبيقها في أحد البنوك الجزائرية \" بنك الفلاحة والتنمية الريفية\" - وكالة تيارت - بهدف تخفيض خسارة القروض الممنوحة بما يضمن اختيار أفضل لقرار الإقراض، ليتم في الأخير التوصل إلى أنها أحد الأساليب التي تهدف إلى تحسين فهم البيانات المتراكمة واستخلاص الثروة الموجودة فيها من أجل استثمارها بالشكل الذي يؤدي إلى إتخاذ القرار الأمثل.",
+        "source_title": "محاولة تسيير خطر منح القروض البنكية باستخدام عملية التنقيب في البيانات دراسة حالة بنك الفلاحة والتنمية الريفية – وكالة تيارت",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "عابد شريط",
+          "عابد شريط",
+          "خالدية بوجنان"
+        ],
+        "year": 2013,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/54547",
+        "venue": {
+          "journal": "مجلة معهد العلوم الإقتصادية",
+          "volume": "17",
+          "issue": "5",
+          "article_pages": "53–76",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "بيانات ضخمة",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "مجموعة بيانات كبيرة تتطلب تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها؛ نظرًا لخصائص حجمها وتنوعها وسرعتها وتباينها.",
+    "english_term": "Big Data",
+    "abbreviations": [],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تهدف هذه الدراسة إلى إبراز مختلف الجوانب النظرية المتعلقة بالذكاء الاصطناعي والبيانات الضخمة، الفرص والتحديات التي تواجههما، بالإضافة إلى إظهار العلاقة بينهما، وقد تم التوصل إلى هناك علاقة تبادلية بين الذكاء الاصطناعي والبيانات الضخمة، فالذكاء الاصطناعي يحتاج إلى التعلم من البيانات الضخمة حتى يتمكن من أداء وظيفته ويكون أكثر ذكاء، في حين أن البيانات الضخمة تزداد فائدتها إذا تم استخدامها في خوارزميات الذكاء الاصطناعي.",
+        "source_title": "الذكاء الاصطناعي مع البيانات الضخمة، الفرص والتحديات، والعلاقة بينهما",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "نور الهدى إشراق راجع",
+          "سمية بوران"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/300123",
+        "venue": {
+          "journal": "مجلة أراء للدراسات الاقتصادية والادارية",
+          "volume": "6",
+          "issue": "1",
+          "article_pages": "44–58",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "technical",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": false,
+      "n_real_positive": 1,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "0acee532-2840-4a67-a98f-2522447757e0",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "ذكاء اصطناعي",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "مجال من مجالات علوم الحاسب يركز على بناء أنظمة قادرة على أداء مهام تتطلب عادةً ذكاءً بشريًّا، مثل: التعلُّم والاستدلال والتطوير الذاتي. ويُطلق عليه أيضًا \"ذكاء الآلة\".",
+    "english_term": "Artificial Intelligence",
+    "abbreviations": [
+      "AI"
+    ],
+    "aliases": [
+      "ذكاء الآلة"
+    ],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "يتناول هذا البحث العلاقة المحورية والتكاملية بين الذكاء الاصطناعي (AI) واللغة البشرية، مؤكداً على الأهمية القصوى لتقنيات معالجة اللغات الطبيعية (NLP) كجسر يُمكّن الأنظمة الحاسوبية من فهم وتحليل النصوص والكلام البشري على مستويات متعددة (نحوية، دلالية، وعملية).",
+        "source_title": "معالجة اللغة البشرية الآليات والتقنيات والمبادئ Human Language Processing: Mechanisms, Techniques, and Principles",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "شنان chenene",
+          "غيلوس ghilous"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/279404",
+        "venue": {
+          "journal": "مجلة العَدْوِي للسانيات العرفنية وتعليمية اللغات",
+          "volume": "5",
+          "issue": "1",
+          "article_pages": "26–33",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "في عالم أصبح فيه الذكاء الاصطناعي يطال مختلف أوجه حياتنا، مثل التوظيف والمهارات المطلوبة للعمل على المستوى العالمي، من المتوقع أن يظهر تأثيره جلياً في قطاع التعليم العالي، وذلك نتيجة للدور الذي يلعبه الذكاء الاصطناعي وتطبيقاته المبتكرة ضمن مختلف المجالات، حيث لا يقتصر تأثيره على تخصصات العلوم والتكنولوجيا والهندسة والرياضيات.",
+        "source_title": "مستقبل التعليم العالي في ضوء الذكاء الاصطناعي – مؤشر الابتكار العالمي لعام 2022 وموقع العراق فيه",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "عبيدي احمد ابراهيم حسين",
+          "بدراوي د.سمير"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/271791",
+        "venue": {
+          "journal": "المجلة العلمية للحوار الاقتصادي",
+          "volume": "4",
+          "issue": "1",
+          "article_pages": "01–26",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تعلُّم الآلة",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "مجال فرعي من الذكاء الاصطناعي يركز على تمكين الآلات من التعلُّم من البيانات وتحسين أدائها في مهام محددة دون الحاجة إلى برمجة صريحة.",
+    "english_term": "Machine Learning",
+    "abbreviations": [
+      "ML"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "بعد مراجعة وتحليل أدبيات الموضوع، أظهرت النتائج أن التعلم الآلي يوفر إمكانات متقدمة للكشف عن التهديدات والاستجابة لها في الوقت الفعلي، ويتفوق على الأساليب التقليدية القائمة على التوقيعات الثابتة، ومع ذلك يشدد المقال على ضرورة تطوير استراتيجيات تكيف متقدمة لمواجهة التحديات الناشئة وضمان الاستخدام الأخلاقي والفعال للتعلم الآلي في مجال الأمن السيبراني",
+        "source_title": "تعزيز الأمن السيبراني باستخدام التعلم الآلي دراسة مقارنة للأساليب التقليدية والتقنيات الذكية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "إبراهيم بختي"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/300491",
+        "venue": {
+          "journal": "المجلة الجزائرية للدراسات في الأمن الوطني",
+          "volume": "2",
+          "issue": "1",
+          "article_pages": "45–70",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "توصلت هذه الأخيرة لرسم خريطة باستخدام نظم المعلومات الجغرافية تحدد المناطق الأكثر عرضة لخطر الفيضانات في مدينة المسيلة وتحقيق الهدف المطلوب، وذلك بعد المقارنة بين نتائج 3 خوارزميات تعلم آلة ML، هي نموذج تعزيز التدرج الشديد xGboost، خوارزمية الغابة العشوائية Random Forest، وخوارزمية الجار الأقرب K Nearest Neighbor، حيث أعطت كل من هذه الخوارزميات معدل دقة معين Accuracy ، بلغ هذا الأخير على التوالي % 97.92 ، 95 %، 93,75 %، أخيرا تم الاعتماد في عملية رسم الخريطة النهائية على النموذج الأول والذي أعطى أكبر دقة وهو نموذج xGboost.",
+        "source_title": "تقنيات تعلم الآلة ML ونظم المعلومات الجغرافية GIS في رسم خرائط مخاطر الفيضانات- حالة المسيلة. Machine learning and GIS techniques in flood Risk mapping-Case stady of M’sila.",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "تاهمي صادق"
+        ],
+        "year": 2023,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/230777",
+        "venue": {
+          "journal": " مجلة العمارة وبيئة الطفل",
+          "volume": "8",
+          "issue": "2",
+          "article_pages": "04–14",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "معالجة اللغات الطبيعية",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "فرع من فروع الذكاء الاصطناعي يهتم بفهم أو توليد اللغة البشرية سواءٌ كانت على شكل نص أو كلام.",
+    "english_term": "Natural Language Processing",
+    "abbreviations": [
+      "NLP"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "لم تعد تطبيقات معالجة اللغة الطبيعية (NLP) مجرد ترف تكنولوجي أو موضوع أكاديمي محدود التأثير.",
+        "source_title": "معالجة اللغة الطبيعية والبرمجة اللغوية العصبية (NLP) : Natural Language Processing and Neuro-Linguistic Programming (NLP)",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "غيلوس صالح",
+          "عريوة إيمان"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/279405",
+        "venue": {
+          "journal": "مجلة العَدْوِي للسانيات العرفنية وتعليمية اللغات",
+          "volume": "5",
+          "issue": "1",
+          "article_pages": "34–46",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "يناقش المقال التحديات المختلفة التي تواجه معالجة اللغات الطبيعية في اللغة ويقدم بعض الحلول التي من شأنها توجيه الممارسين الحاليين والمستقبليين في مجال معالجة اللغة الطبيعية.",
+        "source_title": "معالجة اللغة الطبيعية في ضوء البرمجة اللغوية العصبية؛ التحديات والحلول حلول اللغة العربية أنموذجا",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "مزهود سليم"
+        ],
+        "year": 2023,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/210678",
+        "venue": {
+          "journal": "مجلة نوميروس الأكاديمية",
+          "volume": "4",
+          "issue": "1",
+          "article_pages": "31–45",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "نموذج لغوي كبير",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نموذج لغوي مُكوَّن من عدد كبير من المُعامِلات.",
+    "english_term": "Large Language Model",
+    "abbreviations": [
+      "LLM"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "يهدف هذا البحث إلى استقصاء الفجوة بين المعالجة الإحصائية والنمذجة اللسانية العميقة في النماذج اللغوية الكبيرة (LLMs) تجاه اللغة العربية، حيث تتبلور مشكلة البحث في عجز هذه النماذج عن تجاوز مستوى \"النمذجة التركيبية\" للوصول إلى \"الإدراك السياقي\" وتأويل المعنى الدلالي الدقيق.",
+        "source_title": "إشكالية تأويل السياق والدلالة في النماذج اللغوية الكبيرة: دراسة لسانية حاسوبية في ضوء المعالجة الآلية للغة العربية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "Hadji, choumaissa"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/302037",
+        "venue": {
+          "journal": "مجلة إشكالات في اللغة و الأدب",
+          "volume": "15",
+          "issue": "3",
+          "article_pages": "267–276",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "يوضح هذا المقال أن وكلاء الترجمة المدعومين بالنماذج اللغوية الكبيرة يمثلون نقلة نوعية في مجالات حساسة مثل الدبلوماسية، والعلوم، والهندسة، والقانون، والطب، والأعمال.",
+        "source_title": "Translation in the Age of AI Agents",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بوسطوان فؤاد"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/299291",
+        "venue": {
+          "journal": "معالم",
+          "volume": "17",
+          "issue": "1",
+          "article_pages": "11–24",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "شبكة عصبية اصطناعية",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نموذج حوسبي في الذكاء الاصطناعي مستوحى من الشبكات العصبية البيولوجية لأدمغة الحيوانات. ويُطلق عليه أيضًا \"شبكة عصبية\".",
+    "english_term": "Artificial Neural Network",
+    "abbreviations": [
+      "ANN"
+    ],
+    "aliases": [
+      "شبكة عصبية"
+    ],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تعتبر الشبكات العصبية الاصطناعية (artificial neural network) كأحد مجالات الذكاء الاصطناعي تعمل على تمثيل عقل الإنسان عن طريق شبكة من المعطيات الرقمية (التي تمثل الخلية العصبية) متصلة بروابط موزونة (التي تمثل الروابط بين الخلايا) والتي يتم معالجتها بواسطة نموذج رياضي محدد.",
+        "source_title": "دور تقنية الشبكات العصبية الاصطناعية في تسيير المخاطر في المؤسسات الصناعية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "لمجد بوزيدي",
+          "عيشوش رياض"
+        ],
+        "year": 2017,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/32100",
+        "venue": {
+          "journal": "مجلة اقتصاد المال و الأعمال",
+          "volume": "1",
+          "issue": "4",
+          "article_pages": "45–54",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "توصلت الدراسة إلى أن نموذج الشبكات العصبية الاصطناعية ANN لديه قدرة أكبر على التنبؤ مقارنة بنموذج الانحدار الذاتي و المتوسطات المتحركة ذات التفاضل الكسري ARFIMA بالنسبة لسعر صرف الدينار الجزائري مقابل الدولار الأمريكي و مقابل الأورو",
+        "source_title": "دراسة مقارنة بين نماذج الذاكرة الطويلة ARFIMA و الشبكات العصبية الاصطناعية للتنبؤ بسعر صرف الدينار الجزائري",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "مدوري حادة",
+          "مكيديش محمد",
+          "مكيديش محمد",
+          "مكيديش محمد"
+        ],
+        "year": 2017,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/34422",
+        "venue": {
+          "journal": "مجلة الباحث",
+          "volume": "17",
+          "issue": "17",
+          "article_pages": "159–171",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "شبكة عصبية ترشيحية",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نوع من الشبكات العصبية العميقة المستخدمة في إنشاء نماذج لتحليل الصور والفيديوهات ومعالجتها.",
+    "english_term": "Convolutional Neural Network",
+    "abbreviations": [
+      "CNN"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [
+      {
+        "text": "تهتم الدراسة بتحليل الأبعاد القيمية لمضمون التغطية الإعلامية لقناة CNN بالعربية للحرب على غزة، بهدف الوقوف على القيم التي تتضمنها هذه التغطية، وذلك بالاستناد إلى نظرية الحتمية القيمية التي تفترض أن القيم معيار لوسائل الاعلام.",
+        "contrast_type": "abbreviation_collision",
+        "intended_sense": "CNN = اسم قناة إخبارية (Cable News Network)",
+        "why_not_this_term": "الاختصار نفسه يطابق اختصار المصطلح (CNN) لكن المقصود مؤسسة إعلامية، لا شبكة عصبية ترشيحية.",
+        "source_title": "«الأبعاد القيمية في التغطية الإعلامية للحرب على غزة لقناة سي إن إن بالعربية »",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "جودي سارة",
+          "ساحل عبد الحميد"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/276467",
+        "venue": {
+          "journal": "المجلة الدولية للاتصال الاجتماعي",
+          "volume": "12",
+          "issue": "3",
+          "article_pages": "245–268",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "generated_examples": [
+      {
+        "text": "استُخدمت شبكة عصبية ترشيحية (CNN) لاستخراج الخصائص البصرية من صور الأشعة، ثم صُنّفت الصور إلى سليمة ومصابة.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": true,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 0,
+      "n_real_negative": 1,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "شبكة عصبية تكرارية",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نوع من الشبكات العصبية يُستخدم لفهم المعلومات المتسلسلة، وتحديد الأنماط عن طريق التشغيل عدة مرات.",
+    "english_term": "Recurrent Neural Network",
+    "abbreviations": [
+      "RNN"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "generated_examples": [
+      {
+        "text": "تعالج الشبكة العصبية التكرارية (RNN) الجملة كلمةً بعد كلمة، وتحتفظ بحالة مخفية تنقل معلومات الكلمات السابقة إلى الخطوة التالية.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 0,
+      "n_real_negative": 0,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "ذاكرة قصيرة المدى مُطَوَّلة",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نوع من الشبكات العصبية التكرارية التي تعالج تسلسل البيانات بأداء مقبول لكل التوابع الطويلة والقصيرة.",
+    "english_term": "Long Short-Term Memory",
+    "abbreviations": [
+      "LSTM"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "حيث تم بناء نموذج شبكة الذاكرة طويلة قصيرة المدى على منصة google Colab بواسطة لغة البرمجة Python من خلال مجموعة من المكتبات التابعة لهذه اللغة.",
+        "source_title": "استخدام شبكة الذاكرة طويلة قصيرة المدى للتنبؤ بأسعار عملة البيتكوين",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "روابة محمد"
+        ],
+        "year": 2024,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/257562",
+        "venue": {
+          "journal": "مجلة المنهل الاقتصادي",
+          "volume": "7",
+          "issue": "2",
+          "article_pages": "113–122",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "أظهرت النتائج تفوق النموذج الهجين (GARCH-LSTM) في القدرة التنبؤية ، مما يبرز فاعلية دمج النمذجة القياسية مع التعلم العميق في تحليل تقلبات الأسواق الناشئة ودعم إدارة المخاطر والاستثمار.",
+        "source_title": "الكفاءة التنبؤية للنماذج الهجينة في أسواق المال الناشئة: نموذج GARCH-LSTM وتطبيقه على بيانات عائدات الاسواق الخليجية للفترة 2020-2024؛ The Predictive Efficiency of Hybrid Models in Emerging Financial Markets: A GARCH–LSTM Model and Its Application to Gulf Market Return Data for the Period 2020–2024",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "معروف جيلالي"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/293553",
+        "venue": {
+          "journal": "Revue Les Cahiers du POIDEX",
+          "volume": "15",
+          "issue": "1",
+          "article_pages": "198–214",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "آلة المُتَّجهات الداعمة",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "نموذج تعلُّم آلة موجَّه يُستخدم في تصنيف البيانات وتحليل الانحدار؛ لإيجاد حدود قرار ذات هوامش قصوى.",
+    "english_term": "Support Vector Machine",
+    "abbreviations": [
+      "SVM"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تناول هذا البحث بناء عدة نماذج من نماذج (SVM) المختلفة للحصول على أفضل نموذج يساعد على التنبؤ في الأجل القصير بأسعار الذهب العالمية، بالاعتماد على بيانات السلسلة الزمنية الشهرية لأسعار الذهب العالمية للفترة الزمنية الممتدة من شهر يناير 2000 حتى شهر سبتمبر 2022 بواقع 273 مشاهدة، وذلك من خلال المفاضلة بين هذه النماذج حسب أقل قيم للمعايير وهما خطأ التدريب وعدد متجهات الدعم، لإيجاد أنسب نموذج لتحليل البيانات محل الاهتمام",
+        "source_title": "استخدام نموذج SVM في التنبؤ بالسلاسل الزمنية",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "أبو دحروج أبو دحروج"
+        ],
+        "year": 2023,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/228025",
+        "venue": {
+          "journal": "الدراسات الإستراتيجية والبحوث السياسية",
+          "volume": "2",
+          "issue": "1",
+          "article_pages": "105–119",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 1,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تعرُّف على الكيانات المُسمّاة",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "عملية تحديد أسماء الكيانات وفئاتها في النص أو الكلام.",
+    "english_term": "Named-Entity Recognition",
+    "abbreviations": [
+      "NER"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "generated_examples": [
+      {
+        "text": "يحدّد نظام التعرُّف على الكيانات المُسمّاة (NER) في الخبر أسماء الأشخاص والمنظمات والأماكن، مثل «الرياض» بوصفها اسم مكان.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 0,
+      "n_real_negative": 0,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "a338b836-30ee-471a-a164-f09c919243ce",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "توليد مُعَزَّز بالاسترجاع",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "إطار للذكاء الاصطناعي يدمج بين استرجاع المعلومات الخارجية والنماذج التوليدية لإنتاج استجابات أكثر دقة وملاءمة للسياق.",
+    "english_term": "Retrieval-Augmented Generation",
+    "abbreviations": [
+      "RAG"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "generated_examples": [
+      {
+        "text": "في التوليد المُعزَّز بالاسترجاع (RAG) يسترجع النظام أولًا المقاطع الأكثر صلة من قاعدة المعرفة، ثم يمرّرها إلى النموذج اللغوي ليبني إجابته عليها.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 0,
+      "n_real_negative": 0,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "تحليل المُكوِّن الرئيس",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "أسلوب يُستخدم لإزالة تكرار المعلومات وتقليل خصائص مجموعة البيانات إلى مُكوِّناتها الرئيسة.",
+    "english_term": "Principal Component Analysis",
+    "abbreviations": [
+      "PCA"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [
+      {
+        "value": "ACP",
+        "type": "abbreviation",
+        "source": "أمثلة محكمة من ASJP (233843، 254014) تستعمل الاختصار الفرنسي ACP (Analyse en Composantes Principales) مع المصطلح العربي",
+        "evidence": [
+          "https://asjp.cerist.dz/en/article/233843",
+          "https://asjp.cerist.dz/en/article/254014"
+        ],
+        "data_origin": "source_derived"
+      }
+    ],
+    "positive_examples": [
+      {
+        "text": "تم استخدام تحليل المكونات الرئيسية (PCA) لاستنباط المؤشر بناءً على مجموعة من المتغيرات التي تعكس مختلف جوانب الخدمات البنكية الرقمية.",
+        "source_title": "نحو تطوير مؤشر كمي لقياس الرقمنة والتكنولوجيا المالية في القطاع البنكي الجزائري دراسة تطبيقية خلال الفترة (2016-2024)",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "دوش ليلى"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/281484",
+        "venue": {
+          "journal": "مجلة الاقتصاد وادارة الاعمال",
+          "volume": "9",
+          "issue": "2",
+          "article_pages": "321–337",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "تهدف الدراسة تحليل مؤشرات الاستقرار الاقتصادي في دول البريكس وهذا باستعمال طريقة تحليل المركبات الأساسية ACP من خلال تحليل ارتباط المتغيرات الممثلة في المؤشرات الأربعة المكونة للاستقرار الاقتصادي في هذا التكتل من خلال حساب المتوسطات الحسابية وكذا مصفوفة الارتباط، بالإضافة إلى تحديد المركبات الأساسية التي تمثل تلك المتغيرات والعينة أحسن تمثيل وتفسر النسبة الأكبر من الجمود الكلي.",
+        "source_title": "دراسة تحليلية لمؤشرات الاستقرار الاقتصادي في دول البريكس باستعمال طريقة تحليل المركبات الرئيسية الأساسية ACP",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "شريط فيروز"
+        ],
+        "year": 2023,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/233843",
+        "venue": {
+          "journal": "مجلة إيليزا للبحوث والدراسات",
+          "volume": "8",
+          "issue": "1",
+          "article_pages": "182–199",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "متوسط الخطأ التربيعي",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "متوسط الخسارة التربيعية لكل مثال، محسوبًا بقسمة الخسارة التربيعية على عدد الأمثلة.",
+    "english_term": "Mean Squared Error",
+    "abbreviations": [
+      "MSE"
+    ],
+    "aliases": [],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "أظهرت النتائج أن نموذجRandom Forest حقق أفضل أداء تنبئي، حيث سجل أقل متوسط مربع للخطأ (MSE=4.1257) وأعلى معامل تحديد (R²=0.3422)، في حين سجل نموذج الانحدارالخطي المتعدد أضعف النتائج.",
+        "source_title": "استخدام نماذج التعلم الآلي في التنبؤ بالتضخم في الجزائر: دراسة مقارنة بين النماذج القياسية التقليدية وخوارزميات التعلم الآلي خلال الفترة 1990–2025",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "كمال الدين أبا سفيان",
+          "بن البار امحمد"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/303277",
+        "venue": {
+          "journal": "مجلة إضافات إقتصادية",
+          "volume": "10",
+          "issue": "2",
+          "article_pages": "350–365",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      },
+      {
+        "text": "توصلت الدراسة إلى أن الشبكات العصبية العميقة لها دور فعال في إعطاء صورة مستقبلية على الوضع الاستهلاكي للكهرباء من 2023Q4 إلى غاية 2025Q4، حيث يعطي معامل القوة التفسيرية 〖 R〗^2 نسبة%75 ومعامل متوسط مربع الأخطاء MSE نسبة %25، أي أن الاختلاف بين القيم الفعلية والقيم المتوقعة قليل ما يعطي دقة أعلى.",
+        "source_title": "التنبؤ بالإستهلاك المنزلي للطاقة الكهربائية باستخدام تقنيات التنقيب في البيانات -الشبكات العصبية العميقة LSTM -",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "بن سعدي فتيحة"
+        ],
+        "year": 2025,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/286125",
+        "venue": {
+          "journal": "مجلة الدراسات الاقتصادية المعاصرة",
+          "volume": "10",
+          "issue": "2",
+          "article_pages": "25–38",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 2,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "رؤية الحاسب",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "مجال في الذكاء الاصطناعي يركز على تحليل البيانات المرئية (صور وفيديوهات) وفهم محتواها. ويُطلق عليه أيضًا \"رؤية الآلة\".",
+    "english_term": "Computer Vision",
+    "abbreviations": [],
+    "aliases": [
+      "رؤية الآلة"
+    ],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [
+      {
+        "text": "تهدف هذه الدراسة إلى معرفة التجارب الرائدة في توظيف الذكاء الاصطناعي (Artificial Intelligence) في تحليل الأداء الرياضي مع التركيز على الأدوات المتقدمة مثل رؤية الحاسوب ، تحليل البيانات الكبيرة وأنظمة التنبؤ الذكية ، كما تهدف إلى معرفة اثر هذه التقنيات على جودة التغطية الإعلامية وسرعة نشر الأخبار ودقة التحليل ورضا الجماهير ، كما نتطرق إلى التحديات الأخلاقية والتقنية .",
+        "source_title": "تجربة توظيف الذكاء الاصطناعي في تحليل الأداء الرياضي : نحو إعلام رياضي ذكي",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "فايد عبد الرزاق",
+          "بن دقفل رشيد",
+          "بكة فارس"
+        ],
+        "year": 2026,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://asjp.cerist.dz/en/article/288902",
+        "venue": {
+          "journal": "مجلة روافد للدراسات والابحاث في علوم الرياضة",
+          "volume": "6",
+          "issue": "1",
+          "article_pages": "188–193",
+          "platform": "ASJP — Algerian Scientific Journal Platform (CERIST)"
+        },
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-04",
+        "verification": "exact_substring_of_source"
+      }
+    ],
+    "negative_examples": [],
+    "generated_examples": [],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 1,
+      "n_real_negative": 0,
+      "n_synthetic": 0,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  },
+  {
+    "id": "51f2785a-f64c-4198-9c18-c93e04853146",
+    "source": "siwar",
+    "source_dictionary": "data_ai",
+    "domain": "data_ai",
+    "term": "دالة الخسارة",
+    "lemma_type": "MWE",
+    "pos": null,
+    "definition": "دالة تُستخدم لتحديد الخطأ بين مخرجات الخوارزمية والقيمة المستهدفة. ويُطلق عليها أيضًا \"دالة التكلفة\".",
+    "english_term": "Loss Function",
+    "abbreviations": [],
+    "aliases": [
+      "دالة التكلفة"
+    ],
+    "canonical_term": null,
+    "canonical_term_id": null,
+    "variants": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "generated_examples": [
+      {
+        "text": "تُستخدم دالة الخسارة لقياس الفرق بين تنبؤات النموذج والقيم الحقيقية، ويعمل المُحسِّن على تقليل قيمتها في كل تكرار.",
+        "example_type": "positive",
+        "source_type": "synthetic",
+        "data_origin": "generated",
+        "generated_by": "Claude (claude-opus-5-5)",
+        "generated_at": "2026-10-04",
+        "reason": "لم يُعثر على مثال عربي حقيقي موثّق وقابل للتحقق لهذا المعنى ضمن المصادر المتاحة في هذه الجولة.",
+        "do_not_use_as": [
+          "gold_test_query",
+          "source_derived_evidence",
+          "main_retrieval_experiment"
+        ]
+      }
+    ],
+    "pilot": {
+      "selection_category": "abbreviation_alias",
+      "has_documented_competing_sense": false,
+      "has_abbreviation_or_alias": true,
+      "n_real_positive": 0,
+      "n_real_negative": 0,
+      "n_synthetic": 1,
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+    }
+  }
+]
