@@ -1,0 +1,3609 @@
+{
+  "analysis": "error_analysis_e5_48",
+  "source_results": "results/retrieval_e5_48_ablation.json",
+  "source_timestamp_utc": "2026-10-05T11:42:35+00:00",
+  "model_name": "intfloat/multilingual-e5-large",
+  "n_queries": 48,
+  "excluded_entries": [
+    {
+      "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+      "term": "حُزمة",
+      "reason": "terminological_mismatch"
+    },
+    {
+      "id": "45590793-f757-41fc-8325-5ed6303f02a8",
+      "term": "بث",
+      "reason": "source_scarcity"
+    }
+  ],
+  "method_notes": [
+    "Descriptive analysis of stored results; no retrieval model was run and no embeddings were computed.",
+    "Metrics per subgroup are recomputed from stored ranks; overall metrics reconcile exactly with the source file.",
+    "error_categories, specificity and attractor inspection notes are manual, exploratory annotations.",
+    "Literal pilot-term matches use the pilot's clitic-tolerant regex on diacritic-stripped text; a literal match does not imply the same sense.",
+    "example_multiple_technical_concepts = the example literally matches two or more pilot terms (target included)."
+  ],
+  "category_definitions": {
+    "1": "general_example_language",
+    "2": "competing_terminology",
+    "3": "semantically_broad_target_term",
+    "4": "example_definition_mismatch",
+    "5": "lexical_mismatch_or_synonym",
+    "6": "query_ambiguity",
+    "7": "neighbor_attraction",
+    "8": "source_domain_style_effect",
+    "9": "no_clear_cause"
+  },
+  "overall_metrics": {
+    "term_only": {
+      "top1_accuracy": 0.25,
+      "top3_accuracy": 0.4375,
+      "top5_accuracy": 0.5833333333333334,
+      "mrr": 0.39405380789918293
+    },
+    "definition": {
+      "top1_accuracy": 0.5,
+      "top3_accuracy": 0.75,
+      "top5_accuracy": 0.8333333333333334,
+      "mrr": 0.6372114704467645
+    },
+    "example": {
+      "top1_accuracy": 0.4583333333333333,
+      "top3_accuracy": 0.6875,
+      "top5_accuracy": 0.7916666666666666,
+      "mrr": 0.6140041093166092
+    }
+  },
+  "outcome_groups": {
+    "outcome": {
+      "improved_with_example": {
+        "n": 11,
+        "pct": 22.9
+      },
+      "unchanged_with_example": {
+        "n": 24,
+        "pct": 50.0
+      },
+      "worsened_with_example": {
+        "n": 13,
+        "pct": 27.1
+      }
+    },
+    "top1_status": {
+      "dropped_from_top1": {
+        "n": 4,
+        "pct": 8.3
+      },
+      "newly_reached_top1": {
+        "n": 2,
+        "pct": 4.2
+      },
+      "remained_correct_top1": {
+        "n": 20,
+        "pct": 41.7
+      },
+      "remained_incorrect": {
+        "n": 22,
+        "pct": 45.8
+      }
+    }
+  },
+  "error_category_counts": {
+    "general_example_language": 2,
+    "competing_terminology": 3,
+    "semantically_broad_target_term": 2,
+    "example_definition_mismatch": 5,
+    "lexical_mismatch_or_synonym": 3,
+    "query_ambiguity": 3,
+    "neighbor_attraction": 3,
+    "source_domain_style_effect": 5,
+    "no_clear_cause": 1
+  },
+  "attraction": {
+    "top1_by_term": {
+      "term_only": {
+        "عائد": {
+          "correct_top1": 0,
+          "incorrect_top1": 5,
+          "incorrect_queries": [
+            "GOLD_001",
+            "GOLD_003",
+            "GOLD_007",
+            "GOLD_009",
+            "GOLD_031"
+          ]
+        },
+        "شجرة القرار": {
+          "correct_top1": 1,
+          "incorrect_top1": 4,
+          "incorrect_queries": [
+            "GOLD_002",
+            "GOLD_005",
+            "GOLD_015",
+            "GOLD_019"
+          ]
+        },
+        "بيانات ضخمة": {
+          "correct_top1": 1,
+          "incorrect_top1": 4,
+          "incorrect_queries": [
+            "GOLD_020",
+            "GOLD_025",
+            "GOLD_028",
+            "GOLD_034"
+          ]
+        },
+        "شبكة عصبية تكرارية": {
+          "correct_top1": 1,
+          "incorrect_top1": 3,
+          "incorrect_queries": [
+            "GOLD_006",
+            "GOLD_008",
+            "GOLD_026"
+          ]
+        },
+        "تقسيم النصوص": {
+          "correct_top1": 1,
+          "incorrect_top1": 3,
+          "incorrect_queries": [
+            "GOLD_041",
+            "GOLD_044",
+            "GOLD_045"
+          ]
+        },
+        "تعلُّم موجَّه": {
+          "correct_top1": 1,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_004",
+            "GOLD_040"
+          ]
+        },
+        "توليد مُعَزَّز بالاسترجاع": {
+          "correct_top1": 1,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_018",
+            "GOLD_043"
+          ]
+        },
+        "تدريب": {
+          "correct_top1": 0,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_010",
+            "GOLD_016"
+          ]
+        },
+        "تعرُّف على الكيانات المُسمّاة": {
+          "correct_top1": 0,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_013",
+            "GOLD_049"
+          ]
+        },
+        "شبكة عصبية اصطناعية": {
+          "correct_top1": 0,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_014",
+            "GOLD_022"
+          ]
+        },
+        "معالجة اللغات الطبيعية": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_021"
+          ]
+        },
+        "متوسط الخطأ التربيعي": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_027"
+          ]
+        },
+        "نموذج": {
+          "correct_top1": 0,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_037",
+            "GOLD_050"
+          ]
+        },
+        "أمر": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تنقيب في البيانات": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_024"
+          ]
+        },
+        "تزييف عميق": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "ترجمة الآلة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تعلُّم الآلة": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_036"
+          ]
+        },
+        "نموذج لغوي كبير": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "مُحوِّل": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_047"
+          ]
+        }
+      },
+      "definition": {
+        "أمر": {
+          "correct_top1": 1,
+          "incorrect_top1": 3,
+          "incorrect_queries": [
+            "GOLD_001",
+            "GOLD_033",
+            "GOLD_042"
+          ]
+        },
+        "تعرُّف على الكيانات المُسمّاة": {
+          "correct_top1": 1,
+          "incorrect_top1": 3,
+          "incorrect_queries": [
+            "GOLD_013",
+            "GOLD_044",
+            "GOLD_049"
+          ]
+        },
+        "شجرة القرار": {
+          "correct_top1": 0,
+          "incorrect_top1": 3,
+          "incorrect_queries": [
+            "GOLD_005",
+            "GOLD_015",
+            "GOLD_037"
+          ]
+        },
+        "تحيُّز": {
+          "correct_top1": 1,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_006",
+            "GOLD_040"
+          ]
+        },
+        "دورة": {
+          "correct_top1": 1,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_016",
+            "GOLD_025"
+          ]
+        },
+        "وكيل": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_004"
+          ]
+        },
+        "اسم": {
+          "correct_top1": 0,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_003",
+            "GOLD_031"
+          ]
+        },
+        "مُولِّد": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_050"
+          ]
+        },
+        "تأسيس": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_043"
+          ]
+        },
+        "تعلُّم غير موجَّه": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_047"
+          ]
+        },
+        "دالة تنشيط": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_007"
+          ]
+        },
+        "مكافأة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "مواءمة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "دالة الخسارة": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_020"
+          ]
+        },
+        "تجذيع": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تعلُّم عميق": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تعلُّم موجَّه": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "شبكة عصبية تكرارية": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_026"
+          ]
+        },
+        "انتشار عكسي": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "ذكاء اصطناعي توليدي": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تزييف عميق": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تقسيم النصوص": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "ترجمة الآلة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تنقيب في البيانات": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "بيانات ضخمة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تعلُّم الآلة": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_036"
+          ]
+        },
+        "معالجة اللغات الطبيعية": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "نموذج لغوي كبير": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تحليل المشاعر": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_041"
+          ]
+        },
+        "توليد مُعَزَّز بالاسترجاع": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "متوسط الخطأ التربيعي": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        }
+      },
+      "example": {
+        "اسم": {
+          "correct_top1": 0,
+          "incorrect_top1": 5,
+          "incorrect_queries": [
+            "GOLD_001",
+            "GOLD_028",
+            "GOLD_031",
+            "GOLD_033",
+            "GOLD_041"
+          ]
+        },
+        "مُولِّد": {
+          "correct_top1": 1,
+          "incorrect_top1": 4,
+          "incorrect_queries": [
+            "GOLD_003",
+            "GOLD_025",
+            "GOLD_044",
+            "GOLD_050"
+          ]
+        },
+        "سياسة": {
+          "correct_top1": 1,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_004",
+            "GOLD_040"
+          ]
+        },
+        "تعرُّف على الكيانات المُسمّاة": {
+          "correct_top1": 1,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_013",
+            "GOLD_049"
+          ]
+        },
+        "تعلُّم موجَّه": {
+          "correct_top1": 1,
+          "incorrect_top1": 2,
+          "incorrect_queries": [
+            "GOLD_016",
+            "GOLD_037"
+          ]
+        },
+        "مُحوِّل": {
+          "correct_top1": 0,
+          "incorrect_top1": 3,
+          "incorrect_queries": [
+            "GOLD_026",
+            "GOLD_042",
+            "GOLD_047"
+          ]
+        },
+        "تحيُّز": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_007"
+          ]
+        },
+        "تأسيس": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_043"
+          ]
+        },
+        "انتشار عكسي": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_020"
+          ]
+        },
+        "تنقيب في البيانات": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_024"
+          ]
+        },
+        "معالجة اللغات الطبيعية": {
+          "correct_top1": 1,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_032"
+          ]
+        },
+        "وكيل": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "طبقة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "مكافأة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "دورة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "أمر": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "آلة المُتَّجهات الداعمة": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_015"
+          ]
+        },
+        "مواءمة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تجذيع": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "شبكة عصبية تكرارية": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_022"
+          ]
+        },
+        "تزييف عميق": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تقسيم النصوص": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "بيانات ضخمة": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "تعلُّم الآلة": {
+          "correct_top1": 0,
+          "incorrect_top1": 1,
+          "incorrect_queries": [
+            "GOLD_036"
+          ]
+        },
+        "نموذج لغوي كبير": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "توليد مُعَزَّز بالاسترجاع": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        },
+        "متوسط الخطأ التربيعي": {
+          "correct_top1": 1,
+          "incorrect_top1": 0,
+          "incorrect_queries": []
+        }
+      }
+    },
+    "incorrect_top1_shift_definition_to_example": [
+      {
+        "term": "اسم",
+        "incorrect_top1_definition": 2,
+        "incorrect_top1_example": 5,
+        "change": 3
+      },
+      {
+        "term": "مُحوِّل",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 3,
+        "change": 3
+      },
+      {
+        "term": "مُولِّد",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 4,
+        "change": 3
+      },
+      {
+        "term": "تعلُّم موجَّه",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 2,
+        "change": 2
+      },
+      {
+        "term": "سياسة",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 2,
+        "change": 2
+      },
+      {
+        "term": "آلة المُتَّجهات الداعمة",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 1,
+        "change": 1
+      },
+      {
+        "term": "انتشار عكسي",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 1,
+        "change": 1
+      },
+      {
+        "term": "تنقيب في البيانات",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 1,
+        "change": 1
+      },
+      {
+        "term": "معالجة اللغات الطبيعية",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 1,
+        "change": 1
+      },
+      {
+        "term": "بيانات ضخمة",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "تأسيس",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 1,
+        "change": 0
+      },
+      {
+        "term": "تجذيع",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "ترجمة الآلة",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "تزييف عميق",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "تعلُّم الآلة",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 1,
+        "change": 0
+      },
+      {
+        "term": "تعلُّم عميق",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "تقسيم النصوص",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "توليد مُعَزَّز بالاسترجاع",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "ذكاء اصطناعي توليدي",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "شبكة عصبية تكرارية",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 1,
+        "change": 0
+      },
+      {
+        "term": "طبقة",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "متوسط الخطأ التربيعي",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "مكافأة",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "مواءمة",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "نموذج لغوي كبير",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 0,
+        "change": 0
+      },
+      {
+        "term": "تحليل المشاعر",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 0,
+        "change": -1
+      },
+      {
+        "term": "تحيُّز",
+        "incorrect_top1_definition": 2,
+        "incorrect_top1_example": 1,
+        "change": -1
+      },
+      {
+        "term": "تعرُّف على الكيانات المُسمّاة",
+        "incorrect_top1_definition": 3,
+        "incorrect_top1_example": 2,
+        "change": -1
+      },
+      {
+        "term": "تعلُّم غير موجَّه",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 0,
+        "change": -1
+      },
+      {
+        "term": "دالة الخسارة",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 0,
+        "change": -1
+      },
+      {
+        "term": "دالة تنشيط",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 0,
+        "change": -1
+      },
+      {
+        "term": "وكيل",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 0,
+        "change": -1
+      },
+      {
+        "term": "دورة",
+        "incorrect_top1_definition": 2,
+        "incorrect_top1_example": 0,
+        "change": -2
+      },
+      {
+        "term": "أمر",
+        "incorrect_top1_definition": 3,
+        "incorrect_top1_example": 0,
+        "change": -3
+      },
+      {
+        "term": "شجرة القرار",
+        "incorrect_top1_definition": 3,
+        "incorrect_top1_example": 0,
+        "change": -3
+      }
+    ],
+    "major_attractors": [
+      {
+        "term": "اسم",
+        "incorrect_top1_definition": 2,
+        "incorrect_top1_example": 5,
+        "change": 3,
+        "incorrect_queries_example": [
+          "GOLD_001",
+          "GOLD_028",
+          "GOLD_031",
+          "GOLD_033",
+          "GOLD_041"
+        ],
+        "definition": "جانب الإجابة أو النتيجة من مثال في التعلُّم الموجَّه.",
+        "example": "بمجرد إنشاء مجموعة بيانات ذات تسمية فئوية، تكون المرحلة الكبرى في إنشاء نموذج التصنيف هي استخدام خوارزمية تعلُّم آلة لإنشاء النموذج.",
+        "example_other_pilot_terms": [
+          "تعلُّم الآلة",
+          "نموذج"
+        ],
+        "example_general_ml_vocabulary": [
+          "التصنيف",
+          "بيانات",
+          "تصنيف",
+          "خوارزمية",
+          "نموذج"
+        ],
+        "example_chars": 132,
+        "inspection_note": "Example describes building a classification model from a labelled dataset with a machine-learning algorithm («مجموعة بيانات»، «نموذج التصنيف»، «خوارزمية تعلُّم آلة»، «إنشاء النموذج»): generic model-building vocabulary; it literally contains other pilot terms (نموذج، تعلُّم الآلة)."
+      },
+      {
+        "term": "مُحوِّل",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 3,
+        "change": 3,
+        "incorrect_queries_example": [
+          "GOLD_026",
+          "GOLD_042",
+          "GOLD_047"
+        ],
+        "definition": "معمارية شبكة عصبية لمعالجة البيانات المتسلسلة بالاعتماد على آلية الانتباه الذاتي. ويُطلق عليها أيضًا \"شبكة المُحوِّلات العصبية\" أو \"نموذج مُحوِّل\".",
+        "example": "وتجمع معظم النماذج بين تقنيات الرؤية الحاسوبية والنمذجة التوليدية، مثل نماذج الانتشار أو الهياكل القائمة على المحوّلات لتوقع كيفية تطور المشهد عبر الزمن استنادًا إلى تعليمات أو مدخلات نصية أو صورة أو تسلسل محدد.",
+        "example_other_pilot_terms": [],
+        "example_general_ml_vocabulary": [
+          "نماذج"
+        ],
+        "example_chars": 211,
+        "inspection_note": "Example (Egypt GenAI guidelines) mentions computer vision, generative modelling, diffusion models and «تسلسل محدد»: several concepts in one sentence, including sequence vocabulary relevant to RNN/LSTM queries."
+      },
+      {
+        "term": "مُولِّد",
+        "incorrect_top1_definition": 1,
+        "incorrect_top1_example": 4,
+        "change": 3,
+        "incorrect_queries_example": [
+          "GOLD_003",
+          "GOLD_025",
+          "GOLD_044",
+          "GOLD_050"
+        ],
+        "definition": "جزء من شبكة توليدية تنافسية يُنشئ بيانات مزيفة.",
+        "example": "يعد تدريب GANs أمرًا صعبًا بسبب الحاجة إلى تحقيق توازن دقيق بين المولد (Generator) و المميز (Discriminator) إذا لم يتم تحقيق هذا التوازن، فقد يؤدي ذلك إلى مشاكل مثل عدم الاستقرار أثناء التدريب أو إنتاج صور ذات جودة منخفضة [23].",
+        "example_other_pilot_terms": [
+          "أمر",
+          "تدريب"
+        ],
+        "example_general_ml_vocabulary": [
+          "التدريب",
+          "تدريب"
+        ],
+        "example_chars": 227,
+        "inspection_note": "Example describes GAN training difficulty («تدريب»، «التدريب»، «عدم الاستقرار»، «إنتاج صور ذات جودة منخفضة»): training and output-quality vocabulary shared with many queries; it contains the pilot term تدريب. مُولِّد was already an incorrect Top-1 once under B (GOLD_050)."
+      },
+      {
+        "term": "تعلُّم موجَّه",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 2,
+        "change": 2,
+        "incorrect_queries_example": [
+          "GOLD_016",
+          "GOLD_037"
+        ],
+        "definition": "نوع من تعلُّم الآلة يستخدم مجموعة بيانات مُسمّاة لتدريب نموذج للتنبؤ أو التصنيف.",
+        "example": "تقدم هذه الدراسة نموذج تعلم آلي ذكي يعتمد على خوارزمية الغابة العشوائية، أحد أهم خوارزميات تعلم الآلة بالإشراف، وهي فرع من فروع الذكاء الاصطناعي، حيث تُستخدم الخوارزمية في الكثير من مجالات المالية والاقتصاد.",
+        "example_other_pilot_terms": [
+          "تعلُّم الآلة",
+          "ذكاء اصطناعي",
+          "نموذج"
+        ],
+        "example_general_ml_vocabulary": [
+          "الذكاء الاصطناعي",
+          "تعلم آلي",
+          "تعلم الآلة",
+          "خوارزميات",
+          "خوارزمية",
+          "نموذج"
+        ],
+        "example_chars": 207,
+        "inspection_note": "Example describes a random-forest model presented as supervised machine learning in finance; it contains broad terms (تعلم آلي، الذكاء الاصطناعي) and attracts the label (اسم) and machine learning (تعلُّم الآلة) queries."
+      },
+      {
+        "term": "سياسة",
+        "incorrect_top1_definition": 0,
+        "incorrect_top1_example": 2,
+        "change": 2,
+        "incorrect_queries_example": [
+          "GOLD_004",
+          "GOLD_040"
+        ],
+        "definition": "الربط الاحتمالي للوكيل من الحالات إلى الأفعال في التعلُّم التعزيزي.",
+        "example": "تُستخدم خوارزمية التعلم Q-learning لحالات منتهية وإجراءات متقطعة لتحديد السياسة الأمثل في عملية ماركوف MDP من خلال الحفاظ على جدول Q-Table بجميع الحالات والإجراءات الممكنة، وتحديث قيم Q بشكل متكرر لكل زوج من الحالات والإجراءات باستخدام معادلة بيلمان حتى يتقارب التابع Q من القيمة Q الأمثل.",
+        "example_other_pilot_terms": [],
+        "example_general_ml_vocabulary": [
+          "خوارزمية"
+        ],
+        "example_chars": 289,
+        "inspection_note": "Example is a long technical Q-learning/MDP sentence (states, actions, Q-table, Bellman update); it attracts the other RL query (بيئة) and شبكة عصبية اصطناعية (already a deep failure)."
+      }
+    ]
+  },
+  "example_properties_by_outcome": {
+    "improved_with_example": {
+      "n": 11,
+      "example_chars": {
+        "n": 11,
+        "mean": 189.73,
+        "median": 182
+      },
+      "example_tokens": {
+        "n": 11,
+        "mean": 61.73,
+        "median": 60
+      },
+      "exact_siwar_term_present": 9,
+      "other_pilot_term_present": 6,
+      "multiple_technical_concepts": 6,
+      "general_ml_vocabulary_items": {
+        "n": 11,
+        "mean": 1.64,
+        "median": 1
+      },
+      "source_types": {
+        "peer_reviewed_journal_article": 5,
+        "official_government_guideline": 2,
+        "university_thesis": 2,
+        "published_book_translation": 2
+      }
+    },
+    "worsened_with_example": {
+      "n": 13,
+      "example_chars": {
+        "n": 13,
+        "mean": 262.54,
+        "median": 272
+      },
+      "example_tokens": {
+        "n": 13,
+        "mean": 78.46,
+        "median": 84
+      },
+      "exact_siwar_term_present": 4,
+      "other_pilot_term_present": 7,
+      "multiple_technical_concepts": 4,
+      "general_ml_vocabulary_items": {
+        "n": 13,
+        "mean": 2.38,
+        "median": 2
+      },
+      "source_types": {
+        "peer_reviewed_journal_article": 8,
+        "published_book_translation": 5
+      }
+    },
+    "unchanged_with_example": {
+      "n": 24,
+      "example_chars": {
+        "n": 24,
+        "mean": 197.04,
+        "median": 190.5
+      },
+      "example_tokens": {
+        "n": 24,
+        "mean": 62.88,
+        "median": 61.0
+      },
+      "exact_siwar_term_present": 13,
+      "other_pilot_term_present": 15,
+      "multiple_technical_concepts": 10,
+      "general_ml_vocabulary_items": {
+        "n": 24,
+        "mean": 1.67,
+        "median": 1.0
+      },
+      "source_types": {
+        "peer_reviewed_journal_article": 13,
+        "published_book_translation": 3,
+        "university_thesis": 3,
+        "official_government_guideline": 4,
+        "official_technical_documentation": 1
+      }
+    }
+  },
+  "specificity": {
+    "classification": {
+      "broad": [
+        "نموذج",
+        "ذكاء اصطناعي",
+        "تعلُّم الآلة",
+        "تعلُّم عميق",
+        "شبكة عصبية اصطناعية",
+        "تدريب",
+        "بيانات ضخمة",
+        "معالجة اللغات الطبيعية",
+        "ذكاء اصطناعي توليدي",
+        "تنقيب في البيانات"
+      ],
+      "moderately_general": [
+        "وكيل",
+        "هلوسة",
+        "بيئة",
+        "طبقة",
+        "أمر",
+        "تأسيس",
+        "مواءمة",
+        "تعلُّم موجَّه",
+        "تعلُّم غير موجَّه",
+        "فرط التخصيص",
+        "رؤية الحاسب",
+        "تحليل المشاعر",
+        "ترجمة الآلة",
+        "نموذج لغوي كبير",
+        "شبكة عصبية ترشيحية",
+        "شبكة عصبية تكرارية",
+        "توليد مُعَزَّز بالاسترجاع",
+        "مكافأة",
+        "سياسة",
+        "دالة الخسارة",
+        "تزييف عميق"
+      ],
+      "specific": [
+        "وزن",
+        "تحيُّز",
+        "دورة",
+        "مُحوِّل",
+        "مُولِّد",
+        "عائد",
+        "اسم",
+        "تجذيع",
+        "دالة تنشيط",
+        "انتشار عكسي",
+        "تقسيم النصوص",
+        "شجرة القرار",
+        "ذاكرة قصيرة المدى مُطَوَّلة",
+        "آلة المُتَّجهات الداعمة",
+        "تعرُّف على الكيانات المُسمّاة",
+        "تحليل المُكوِّن الرئيس",
+        "متوسط الخطأ التربيعي"
+      ]
+    },
+    "by_class": {
+      "broad": {
+        "n": 10,
+        "term_only": {
+          "top1_accuracy": 0.2,
+          "top3_accuracy": 0.4,
+          "top5_accuracy": 0.8,
+          "mrr": 0.380530303030303
+        },
+        "definition": {
+          "top1_accuracy": 0.5,
+          "top3_accuracy": 0.5,
+          "top5_accuracy": 0.6,
+          "mrr": 0.5383697478991596
+        },
+        "example": {
+          "top1_accuracy": 0.3,
+          "top3_accuracy": 0.5,
+          "top5_accuracy": 0.6,
+          "mrr": 0.4113431013431013
+        },
+        "definition_to_example": {
+          "improved_with_example": 3,
+          "worsened_with_example": 4,
+          "unchanged_with_example": 3
+        }
+      },
+      "moderately_general": {
+        "n": 21,
+        "term_only": {
+          "top1_accuracy": 0.3333333333333333,
+          "top3_accuracy": 0.47619047619047616,
+          "top5_accuracy": 0.5714285714285714,
+          "mrr": 0.4422913365429502
+        },
+        "definition": {
+          "top1_accuracy": 0.5238095238095238,
+          "top3_accuracy": 0.9047619047619048,
+          "top5_accuracy": 0.9523809523809523,
+          "mrr": 0.7052910052910053
+        },
+        "example": {
+          "top1_accuracy": 0.5238095238095238,
+          "top3_accuracy": 0.7619047619047619,
+          "top5_accuracy": 0.8095238095238095,
+          "mrr": 0.6817666460523603
+        },
+        "definition_to_example": {
+          "unchanged_with_example": 11,
+          "improved_with_example": 3,
+          "worsened_with_example": 7
+        }
+      },
+      "specific": {
+        "n": 17,
+        "term_only": {
+          "top1_accuracy": 0.17647058823529413,
+          "top3_accuracy": 0.4117647058823529,
+          "top5_accuracy": 0.47058823529411764,
+          "mrr": 0.34242127537975287
+        },
+        "definition": {
+          "top1_accuracy": 0.47058823529411764,
+          "top3_accuracy": 0.7058823529411765,
+          "top5_accuracy": 0.8235294117647058,
+          "mrr": 0.6112554112554113
+        },
+        "example": {
+          "top1_accuracy": 0.47058823529411764,
+          "top3_accuracy": 0.7058823529411765,
+          "top5_accuracy": 0.8823529411764706,
+          "mrr": 0.6495098039215687
+        },
+        "definition_to_example": {
+          "unchanged_with_example": 10,
+          "improved_with_example": 5,
+          "worsened_with_example": 2
+        }
+      }
+    }
+  },
+  "language_style": {
+    "arabic_english_mixed": {
+      "n": 4,
+      "term_only": {
+        "top1_accuracy": 0.75,
+        "top3_accuracy": 0.75,
+        "top5_accuracy": 0.75,
+        "mrr": 0.7564102564102564
+      },
+      "definition": {
+        "top1_accuracy": 0.75,
+        "top3_accuracy": 0.75,
+        "top5_accuracy": 0.75,
+        "mrr": 0.7777777777777778
+      },
+      "example": {
+        "top1_accuracy": 0.75,
+        "top3_accuracy": 0.75,
+        "top5_accuracy": 0.75,
+        "mrr": 0.7727272727272727
+      },
+      "definition_to_example": {
+        "unchanged_with_example": 3,
+        "worsened_with_example": 1
+      }
+    },
+    "msa": {
+      "n": 37,
+      "term_only": {
+        "top1_accuracy": 0.24324324324324326,
+        "top3_accuracy": 0.3783783783783784,
+        "top5_accuracy": 0.5405405405405406,
+        "mrr": 0.3719578572519749
+      },
+      "definition": {
+        "top1_accuracy": 0.5405405405405406,
+        "top3_accuracy": 0.7567567567567568,
+        "top5_accuracy": 0.8378378378378378,
+        "mrr": 0.6632893550540608
+      },
+      "example": {
+        "top1_accuracy": 0.4864864864864865,
+        "top3_accuracy": 0.7297297297297297,
+        "top5_accuracy": 0.8648648648648649,
+        "mrr": 0.64511847011847
+      },
+      "definition_to_example": {
+        "improved_with_example": 10,
+        "unchanged_with_example": 19,
+        "worsened_with_example": 8
+      }
+    },
+    "saudi_colloquial": {
+      "n": 7,
+      "term_only": {
+        "top1_accuracy": 0.0,
+        "top3_accuracy": 0.5714285714285714,
+        "top5_accuracy": 0.7142857142857143,
+        "mrr": 0.3037858621709553
+      },
+      "definition": {
+        "top1_accuracy": 0.14285714285714285,
+        "top3_accuracy": 0.7142857142857143,
+        "top5_accuracy": 0.8571428571428571,
+        "mrr": 0.41904761904761906
+      },
+      "example": {
+        "top1_accuracy": 0.14285714285714285,
+        "top3_accuracy": 0.42857142857142855,
+        "top5_accuracy": 0.42857142857142855,
+        "mrr": 0.358843537414966
+      },
+      "definition_to_example": {
+        "improved_with_example": 1,
+        "unchanged_with_example": 2,
+        "worsened_with_example": 4
+      }
+    }
+  },
+  "definition_contribution": {
+    "improved": 28,
+    "worsened": 8,
+    "unchanged": 12,
+    "largest_gains": [
+      {
+        "query_id": "GOLD_004",
+        "expected_term": "بيئة",
+        "selection_category": "ambiguous",
+        "rank_term_only": 45,
+        "rank_definition": 2
+      },
+      {
+        "query_id": "GOLD_003",
+        "expected_term": "هلوسة",
+        "selection_category": "ambiguous",
+        "rank_term_only": 46,
+        "rank_definition": 5
+      },
+      {
+        "query_id": "GOLD_016",
+        "expected_term": "اسم",
+        "selection_category": "ambiguous",
+        "rank_term_only": 40,
+        "rank_definition": 5
+      },
+      {
+        "query_id": "GOLD_008",
+        "expected_term": "تحيُّز",
+        "selection_category": "ambiguous",
+        "rank_term_only": 33,
+        "rank_definition": 1
+      },
+      {
+        "query_id": "GOLD_041",
+        "expected_term": "شبكة عصبية ترشيحية",
+        "selection_category": "abbreviation_alias",
+        "rank_term_only": 39,
+        "rank_definition": 9
+      },
+      {
+        "query_id": "GOLD_014",
+        "expected_term": "مُولِّد",
+        "selection_category": "ambiguous",
+        "rank_term_only": 30,
+        "rank_definition": 1
+      },
+      {
+        "query_id": "GOLD_002",
+        "expected_term": "وكيل",
+        "selection_category": "ambiguous",
+        "rank_term_only": 27,
+        "rank_definition": 1
+      },
+      {
+        "query_id": "GOLD_013",
+        "expected_term": "مُحوِّل",
+        "selection_category": "ambiguous",
+        "rank_term_only": 34,
+        "rank_definition": 11
+      },
+      {
+        "query_id": "GOLD_019",
+        "expected_term": "مواءمة",
+        "selection_category": "ambiguous",
+        "rank_term_only": 18,
+        "rank_definition": 1
+      },
+      {
+        "query_id": "GOLD_018",
+        "expected_term": "تأسيس",
+        "selection_category": "ambiguous",
+        "rank_term_only": 17,
+        "rank_definition": 1
+      }
+    ],
+    "largest_losses": [
+      {
+        "query_id": "GOLD_001",
+        "expected_term": "نموذج",
+        "selection_category": "ambiguous",
+        "rank_term_only": 3,
+        "rank_definition": 21
+      },
+      {
+        "query_id": "GOLD_040",
+        "expected_term": "شبكة عصبية اصطناعية",
+        "selection_category": "abbreviation_alias",
+        "rank_term_only": 24,
+        "rank_definition": 34
+      },
+      {
+        "query_id": "GOLD_037",
+        "expected_term": "تعلُّم الآلة",
+        "selection_category": "abbreviation_alias",
+        "rank_term_only": 5,
+        "rank_definition": 15
+      },
+      {
+        "query_id": "GOLD_015",
+        "expected_term": "عائد",
+        "selection_category": "ambiguous",
+        "rank_term_only": 4,
+        "rank_definition": 11
+      },
+      {
+        "query_id": "GOLD_033",
+        "expected_term": "شجرة القرار",
+        "selection_category": "technical",
+        "rank_term_only": 1,
+        "rank_definition": 5
+      }
+    ],
+    "by_pilot_selection_category": {
+      "ambiguous": {
+        "n": 18,
+        "median_rank_gain": 13.5,
+        "top1_term_only": 1,
+        "top1_definition": 8
+      },
+      "technical": {
+        "n": 15,
+        "median_rank_gain": 1,
+        "top1_term_only": 6,
+        "top1_definition": 11
+      },
+      "abbreviation_alias": {
+        "n": 15,
+        "median_rank_gain": 0,
+        "top1_term_only": 5,
+        "top1_definition": 5
+      }
+    },
+    "previously_noted_terms": [
+      {
+        "expected_term": "وكيل",
+        "rank_term_only": 27,
+        "rank_definition": 1
+      },
+      {
+        "expected_term": "هلوسة",
+        "rank_term_only": 46,
+        "rank_definition": 5
+      },
+      {
+        "expected_term": "بيئة",
+        "rank_term_only": 45,
+        "rank_definition": 2
+      },
+      {
+        "expected_term": "تحيُّز",
+        "rank_term_only": 33,
+        "rank_definition": 1
+      }
+    ]
+  },
+  "per_query": [
+    {
+      "query_id": "GOLD_001",
+      "query": "بعد ضبط معاملات الخوارزمية على مجموعة من الأمثلة السابقة، أمكن استخدام الناتج المتعلَّم لإجراء تنبؤات على مدخلات جديدة.",
+      "language_style": "msa",
+      "expected_term": "نموذج",
+      "expected_id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+      "selection_category": "ambiguous",
+      "specificity": "broad",
+      "rank_term_only": 3,
+      "rank_definition": 21,
+      "rank_example": 13,
+      "rank_change_term_to_definition": -18,
+      "rank_change_definition_to_example": 8,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": false,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "هدفت هذه الدراسة إلى تقييم كفاءة نماذج التعلم الآلي في التنبؤ بالتضخم في الجزائر ومقارنتها بالنماذج القياسية التقليدية.",
+      "example_source_title": "استخدام نماذج التعلم الآلي في التنبؤ بالتضخم في الجزائر: دراسة مقارنة بين النماذج القياسية التقليدية وخوارزميات التعلم الآلي خلال الفترة 1990–2025",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/303277",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 119,
+      "example_tokens": 39,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "التعلم الآلي",
+        "التنبؤ",
+        "نماذج"
+      ],
+      "top1_definition": "أمر",
+      "top1_example": "اسم",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_002",
+      "query": "ينفّذ الكيان البرمجي مهامًا بصورة مستقلة، ويتخذ قرارات ويتفاعل مع الأنظمة المحيطة لتحقيق هدف محدد.",
+      "language_style": "msa",
+      "expected_term": "وكيل",
+      "expected_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 27,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 26,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "ومن بين أهم التطوُّرات التكنولوجيَّة التي شهدها هذا المجال استخدام تقنيَّة الوكيل الذكي والقادرة على البحث عن المعلومات عبر الشبكة العنكبوتية بصورة فاعلة وسريعة ودقيقة مقارنةّ بالبرمجيَّات التقليدية",
+      "example_source_title": "استخدام الوكيل الذكي في التجارة الإلكترونية \"دراسة قانونية مقارنة في إطار ماهيته ونفاذ تصرفاته\"",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/131961",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 198,
+      "example_tokens": 59,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "وكيل",
+      "top1_example": "وكيل",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_003",
+      "query": "المودل عطاني جواب شكله مقنع، بس لما شيكت عليه لقيت معلومات مو صحيحة وما لها مصدر.",
+      "language_style": "saudi_colloquial",
+      "expected_term": "هلوسة",
+      "expected_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 46,
+      "rank_definition": 5,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 41,
+      "rank_change_definition_to_example": 3,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "قد تُنتج أنظمة الذكاء الاصطناعي التوليدي مخرجات تبدو سليمة ومقنعة من حيث الصياغة، لكنها غير صحيحة من الناحية الواقعية أو مختلقة بالكامل. ويمكن أن تؤدي هذه \"الهلوسة\" إلى تضليل المستخدمين إذا تم الاعتماد عليها دون تحقق.",
+      "example_source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+      "example_source_type": "official_government_guideline",
+      "example_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 217,
+      "example_tokens": 72,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي",
+        "ذكاء اصطناعي توليدي"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "الذكاء الاصطناعي"
+      ],
+      "top1_definition": "اسم",
+      "top1_example": "مُولِّد",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_004",
+      "query": "يتعلم الكيان المستقل من التفاعل مع العالم الذي يعمل داخله، حيث تتغير الحالة بعد كل إجراء يتخذه.",
+      "language_style": "msa",
+      "expected_term": "بيئة",
+      "expected_id": "09f1271f-d76e-471c-a05b-426b911ae194",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 45,
+      "rank_definition": 2,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 43,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "وتتعلَّم خوارزميات التَّعلُّم المُعزَّز من الخبرات المُباشرة لإشارات المُكافأة في البيئة المُحيطة، تمامًا كما يتعلَّم الطفل الرضيع الوقوف على قدميه من المكافأة الإيجابية لكونه يقف مُعتدلًا ومن المكافأة السَّلبيَّة للوقوع أرضًا.",
+      "example_source_title": "ذكاء اصطناعي متوافق مع البشر: حتى لا تفرض الآلات سيطرتها على العالم",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/25350464/2/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 227,
+      "example_tokens": 92,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "مكافأة"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "خوارزميات"
+      ],
+      "top1_definition": "وكيل",
+      "top1_example": "سياسة",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_005",
+      "query": "تربط آلية اتخاذ القرار الحالات التي يلاحظها النظام بالإجراءات التي يختارها في كل حالة.",
+      "language_style": "msa",
+      "expected_term": "سياسة",
+      "expected_id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 14,
+      "rank_definition": 3,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 11,
+      "rank_change_definition_to_example": 2,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تُستخدم خوارزمية التعلم Q-learning لحالات منتهية وإجراءات متقطعة لتحديد السياسة الأمثل في عملية ماركوف MDP من خلال الحفاظ على جدول Q-Table بجميع الحالات والإجراءات الممكنة، وتحديث قيم Q بشكل متكرر لكل زوج من الحالات والإجراءات باستخدام معادلة بيلمان حتى يتقارب التابع Q من القيمة Q الأمثل.",
+      "example_source_title": "دراسة وتحسين أداء النفاذ المتعدد في منظومات الاتصالات اللاسلكية الخاصة بشبكات الطيران المسير",
+      "example_source_type": "university_thesis",
+      "example_url": "https://hiast.edu.sy/sites/default/files/MasterPHD/69314dafa640d.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 289,
+      "example_tokens": 86,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": "السياسة الأمثل",
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "خوارزمية"
+      ],
+      "top1_definition": "شجرة القرار",
+      "top1_example": "سياسة",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "newly_reached_top1"
+    },
+    {
+      "query_id": "GOLD_006",
+      "query": "تنتقل الإشارات في البنية العصبية من وحدات الإدخال عبر مستويات وسيطة من الخلايا قبل الوصول إلى المخرجات.",
+      "language_style": "msa",
+      "expected_term": "طبقة",
+      "expected_id": "fa65c6dc-40ae-4fbe-8f5d-1721edd83752",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 11,
+      "rank_definition": 2,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 9,
+      "rank_change_definition_to_example": 1,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تم توظيف تقنية الانحدار المنتظم (Lasso) لاستخلاص المتغيرات الأكثر إسهامًا في التنبؤ، تلاها بناء نموذج شبكة عصبية اصطناعية متعددة الطبقات (Multilayer Perceptron) ذات طبقة مخفية واحدة.",
+      "example_source_title": "بناء نموذج تنبؤي تصنيفي باستخدام الشبكات العصبية الاصطناعية بدلالة بعض القابليات البيو حركية بسلاح الشيش للطلاب Development of a Predictive Classification Model Using Artificial Neural Networks Based on Selected Biomotor Abilities in Foil Fencing Students",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/299180",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 182,
+      "example_tokens": 60,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "شبكة عصبية اصطناعية",
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "التنبؤ",
+        "نموذج"
+      ],
+      "top1_definition": "تحيُّز",
+      "top1_example": "طبقة",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "newly_reached_top1"
+    },
+    {
+      "query_id": "GOLD_007",
+      "query": "يملك كل اتصال بين خليتين معاملًا قابلًا للتعديل يحدد مقدار تأثير الإشارة القادمة في الحساب اللاحق.",
+      "language_style": "msa",
+      "expected_term": "وزن",
+      "expected_id": "36b69371-37ef-4145-b219-3f24356df629",
+      "selection_category": "ambiguous",
+      "specificity": "specific",
+      "rank_term_only": 9,
+      "rank_definition": 2,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 7,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "فالمعطيات لوحدها لا تقوم بأي تأثير، أما إذا اتحدت هذه المعطيات مع الأوزان فإنها تؤدي في تحديد المهمة المطلوبة من الشبكة العصبية.",
+      "example_source_title": "دور تقنية الشبكات العصبية الاصطناعية في تسيير المخاطر في المؤسسات الصناعية",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/32100",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 128,
+      "example_tokens": 38,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "الشبكة العصبية"
+      ],
+      "top1_definition": "دالة تنشيط",
+      "top1_example": "تحيُّز",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_008",
+      "query": "تضيف الخلية العصبية ثابتًا قابلًا للتعلم إلى مجموع المدخلات المضروبة في معاملاتها قبل التحويل غير الخطي.",
+      "language_style": "msa",
+      "expected_term": "تحيُّز",
+      "expected_id": "a4e668fa-a99e-41be-9f93-c93643aeb39a",
+      "selection_category": "ambiguous",
+      "specificity": "specific",
+      "rank_term_only": 33,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 32,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "فنحن نُحدِّث قيم الأوزان والانحياز بطريقةٍ تجعل الخلية العصبية تقلِّل من أخطائها.",
+      "example_source_title": "الخوارزميات",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/13139359/6/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 81,
+      "example_tokens": 31,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "تحيُّز",
+      "top1_example": "تحيُّز",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_009",
+      "query": "يتلقى النظام قيمة عددية بعد تنفيذ إجراء ما، ويستخدم هذه الإشارة لتفضيل السلوك الذي يقوده إلى نتائج أفضل.",
+      "language_style": "msa",
+      "expected_term": "مكافأة",
+      "expected_id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 4,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 3,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "وكما في خوارزميات البرمجة الديناميكيَّة، تكون الغاية الموضُوعة في خوارزمية التَّعلُّم المُعزَّز هي دالَّة المكافأة، ثمَّ تتعلَّم الخوارزمية قاعدة لتقدير قيم الأوضاع (أو أحيانًا قيم التَّصرُّفات).",
+      "example_source_title": "ذكاء اصطناعي متوافق مع البشر: حتى لا تفرض الآلات سيطرتها على العالم",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/25350464/2/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 195,
+      "example_tokens": 79,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "خوارزميات",
+        "خوارزمية"
+      ],
+      "top1_definition": "مكافأة",
+      "top1_example": "مكافأة",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_010",
+      "query": "بعد ما خلص المودل مرور كامل على كل بيانات التدريب، بدأ مرور ثاني عشان يحسّن المعاملات مرة ثانية.",
+      "language_style": "saudi_colloquial",
+      "expected_term": "دورة",
+      "expected_id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+      "selection_category": "ambiguous",
+      "specificity": "specific",
+      "rank_term_only": 2,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 1,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "نُفّذ التدريب حتى 80 دورة تدريبية (Epochs) كما يبين الشكل (9.4)،حيث يُلاحظ انخفاض خسارة التدريب انخفضت بشكلٍ مطّرد، مما يشير إلى قدرة النموذج على التعلّم الفعّال من المعطيات.",
+      "example_source_title": "حذف الصدى الصوتي لتحسين دقة أنظمة تعرّف الكلام آلياً",
+      "example_source_type": "university_thesis",
+      "example_url": "https://hiast.edu.sy/sites/default/files/MasterPHD/697b1952dff04.pdf",
+      "example_verification": "image_transcribed_manual_visual_verification",
+      "example_chars": 174,
+      "example_tokens": 67,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": "دورة تدريبية",
+      "example_other_pilot_terms": [
+        "تدريب",
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "التدريب",
+        "تدريب",
+        "نموذج"
+      ],
+      "top1_definition": "دورة",
+      "top1_example": "دورة",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_012",
+      "query": "كتبت للـAI تعليمات فيها المهمة والسياق والقيود عشان يطلع لي استجابة أدق.",
+      "language_style": "arabic_english_mixed",
+      "expected_term": "أمر",
+      "expected_id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تعليمات واضحة: قدّم أوامر دقيقة للذكاء الاصطناعي حول المهمة، مثل «اكتب»، «صنّف»، «لخّص»، «ترجم»، «رتّب»، وغيرها.",
+      "example_source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+      "example_source_type": "official_government_guideline",
+      "example_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 112,
+      "example_tokens": 48,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي"
+      ],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "أمر",
+      "top1_example": "أمر",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_013",
+      "query": "تعالج هذه البنية عناصر التسلسل بالاعتماد على الانتباه لتحديد العلاقات بينها بدل الاعتماد على المعالجة المتكررة خطوة بخطوة.",
+      "language_style": "msa",
+      "expected_term": "مُحوِّل",
+      "expected_id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+      "selection_category": "ambiguous",
+      "specificity": "specific",
+      "rank_term_only": 34,
+      "rank_definition": 11,
+      "rank_example": 4,
+      "rank_change_term_to_definition": 23,
+      "rank_change_definition_to_example": 7,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": false,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": true,
+      "example_text": "وتجمع معظم النماذج بين تقنيات الرؤية الحاسوبية والنمذجة التوليدية، مثل نماذج الانتشار أو الهياكل القائمة على المحوّلات لتوقع كيفية تطور المشهد عبر الزمن استنادًا إلى تعليمات أو مدخلات نصية أو صورة أو تسلسل محدد.",
+      "example_source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+      "example_source_type": "official_government_guideline",
+      "example_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 211,
+      "example_tokens": 71,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "نماذج"
+      ],
+      "top1_definition": "تعرُّف على الكيانات المُسمّاة",
+      "top1_example": "تعرُّف على الكيانات المُسمّاة",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_014",
+      "query": "في بنية تنافسية تنشئ إحدى الشبكتين عينات اصطناعية تحاول محاكاة البيانات الحقيقية، بينما تقيّمها شبكة أخرى.",
+      "language_style": "msa",
+      "expected_term": "مُولِّد",
+      "expected_id": "aae33486-5e2e-4fc6-8d53-9ced81dad5a5",
+      "selection_category": "ambiguous",
+      "specificity": "specific",
+      "rank_term_only": 30,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 29,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "يعد تدريب GANs أمرًا صعبًا بسبب الحاجة إلى تحقيق توازن دقيق بين المولد (Generator) و المميز (Discriminator) إذا لم يتم تحقيق هذا التوازن، فقد يؤدي ذلك إلى مشاكل مثل عدم الاستقرار أثناء التدريب أو إنتاج صور ذات جودة منخفضة [23].",
+      "example_source_title": "نموذج لتحسين دقة الفيديو اعتماداً على الشبكات العصبونية العُقدية",
+      "example_source_type": "university_thesis",
+      "example_url": "https://hiast.edu.sy/sites/default/files/MasterPHD/67d2b9af62c9b.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 227,
+      "example_tokens": 69,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": "المولد",
+      "example_other_pilot_terms": [
+        "أمر",
+        "تدريب"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "التدريب",
+        "تدريب"
+      ],
+      "top1_definition": "مُولِّد",
+      "top1_example": "مُولِّد",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_015",
+      "query": "يقيّم النظام مسار القرارات من خلال القيمة التراكمية للإشارات المستقبلية، مع إمكان تقليل أثر القيم البعيدة زمنيًا.",
+      "language_style": "msa",
+      "expected_term": "عائد",
+      "expected_id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+      "selection_category": "ambiguous",
+      "specificity": "specific",
+      "rank_term_only": 4,
+      "rank_definition": 11,
+      "rank_example": 4,
+      "rank_change_term_to_definition": -7,
+      "rank_change_definition_to_example": 7,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": false,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": true,
+      "example_text": "الهدف الجوهري لخوارزميّة التعلم المعزز هو البحث التكراري عن السّياسة المثلى التي تعظّم العائد التراكمي المتوقّع (المكافأة التراكميّة الإجماليّة).",
+      "example_source_title": "استخدام تقنيات التعلّم المعزّز لتحقيق النفاذ الديناميكي للطيف في شبكات الراديو الإدراكي",
+      "example_source_type": "university_thesis",
+      "example_url": "https://hiast.edu.sy/sites/default/files/MasterPHD/695cf4182740b.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 145,
+      "example_tokens": 56,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": "العائد التراكمي المتوقّع",
+      "example_other_pilot_terms": [
+        "سياسة",
+        "مكافأة"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "خوارزمية"
+      ],
+      "top1_definition": "شجرة القرار",
+      "top1_example": "آلة المُتَّجهات الداعمة",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_016",
+      "query": "في مسألة تصنيف خاضعة للإشراف، يقترن كل مثال تدريبي بفئة صحيحة تمثل المخرج المرجعي المطلوب تعلمه.",
+      "language_style": "msa",
+      "expected_term": "اسم",
+      "expected_id": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+      "selection_category": "ambiguous",
+      "specificity": "specific",
+      "rank_term_only": 40,
+      "rank_definition": 5,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 35,
+      "rank_change_definition_to_example": 3,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "بمجرد إنشاء مجموعة بيانات ذات تسمية فئوية، تكون المرحلة الكبرى في إنشاء نموذج التصنيف هي استخدام خوارزمية تعلُّم آلة لإنشاء النموذج.",
+      "example_source_title": "علم البيانات",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/72952028/5/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 132,
+      "example_tokens": 39,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "تعلُّم الآلة",
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "التصنيف",
+        "بيانات",
+        "تصنيف",
+        "خوارزمية",
+        "نموذج"
+      ],
+      "top1_definition": "دورة",
+      "top1_example": "تعلُّم موجَّه",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_018",
+      "query": "تُدعَّم إجابة النظام بمعلومات مسترجعة من قاعدة معرفة خارجية حتى تعتمد الاستجابة على سياق موثوق ذي صلة.",
+      "language_style": "msa",
+      "expected_term": "تأسيس",
+      "expected_id": "5882bfa5-3d27-4a19-877c-6c0cd90a73b3",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 17,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 16,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "يتمثل أحد عوامل التخفيف المهمة في Microsoft Copilot في تأسيس المحتوى الذي تم إنشاؤه بواسطة الذكاء الاصطناعي في بيانات الأعمال ذات الصلة والتي يمكن للمستخدم الوصول إليها استنادا إلى أذوناته.",
+      "example_source_title": "بطاقة التطبيق: Microsoft Copilot (للمؤسسات)",
+      "example_source_type": "official_technical_documentation",
+      "example_url": "https://learn.microsoft.com/ar-sa/copilot/microsoft-365/microsoft-365-copilot-transparency-note",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 189,
+      "example_tokens": 53,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": "تأسيس",
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "الذكاء الاصطناعي",
+        "بيانات"
+      ],
+      "top1_definition": "تأسيس",
+      "top1_example": "تأسيس",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_019",
+      "query": "يُضبط سلوك النظام بحيث تكون أهدافه وقراراته أقرب إلى القيم والنوايا البشرية المقصودة وأكثر أمانًا وموثوقية.",
+      "language_style": "msa",
+      "expected_term": "مواءمة",
+      "expected_id": "605f7542-8289-4637-8cf8-0d6a16592e30",
+      "selection_category": "ambiguous",
+      "specificity": "moderately_general",
+      "rank_term_only": 18,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 17,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "لا يتم قياس قيمة هذه الأنظمة بقدراتها التقنية فحسب، بل بمدى إدارتها بمسؤولية ودرجة مواءمتها مع القيم المجتمعية.",
+      "example_source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+      "example_source_type": "official_government_guideline",
+      "example_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 111,
+      "example_tokens": 35,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "مواءمة",
+      "top1_example": "مواءمة",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_020",
+      "query": "تُعدَّل معاملات الخوارزمية بصورة متكررة باستخدام أمثلة البيانات وقياس الخطأ حتى تتحسن قدرتها على التنبؤ.",
+      "language_style": "msa",
+      "expected_term": "تدريب",
+      "expected_id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+      "selection_category": "ambiguous",
+      "specificity": "broad",
+      "rank_term_only": 33,
+      "rank_definition": 25,
+      "rank_example": 18,
+      "rank_change_term_to_definition": 8,
+      "rank_change_definition_to_example": 7,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": false,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "وباستخدام التعزيز التدريجي الفائق كأحد تقنيات تعلم الآلة، تم تدريب واختبار نموذجين أحدهما قائم على خمس سمات كبرى والآخر قائم على 15 سمة فرعية، ومقارنة قيم معامل التحديد والجذر التربيعي لمتوسط الأخطاء بين القيم الواقعية والقيم المتنبئ بها، لتحديد النموذج الأقوى أداء.",
+      "example_source_title": "سمات الشخصية وإدمان مواقع التواصل الاجتماعي لدى المراهقين: مقارنة القوة التنبؤية للسمات الكبرى والفرعية",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/282146",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 266,
+      "example_tokens": 88,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "تعلُّم الآلة",
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "تدريب",
+        "تعلم الآلة",
+        "نموذج"
+      ],
+      "top1_definition": "دالة الخسارة",
+      "top1_example": "انتشار عكسي",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_021",
+      "query": "تُختزل الصيغ المصرفة المختلفة للكلمة إلى شكل مبسط مشترك بهدف تسهيل المعالجة والاسترجاع النصي.",
+      "language_style": "msa",
+      "expected_term": "تجذيع",
+      "expected_id": "99686190-8f2a-474a-9159-ace5fd8f07ad",
+      "selection_category": "technical",
+      "specificity": "specific",
+      "rank_term_only": 7,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 6,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "يتم ضمن مكوّن معالجة السؤال تصنيفه أولاً لأحد الأصناف الأربعة التي يعتمدها النظام ومن ثم إجراء مراحل المعالجة اللغوية النحوية على كلمات السؤال (التجذيع واستخراج نمط الكلام).",
+      "example_source_title": "نظام إجابة آلية باللغة العربية",
+      "example_source_type": "university_thesis",
+      "example_url": "https://hiast.edu.sy/sites/default/files/MasterPHD/615567d649579.pdf",
+      "example_verification": "image_transcribed_manual_visual_verification",
+      "example_chars": 173,
+      "example_tokens": 54,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": "التجذيع",
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "تصنيف"
+      ],
+      "top1_definition": "تجذيع",
+      "top1_example": "تجذيع",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_022",
+      "query": "تعتمد الطريقة على شبكة عصبية متعددة المستويات تتعلم تمثيلات متدرجة للبيانات بدل الاكتفاء بطبقة حسابية بسيطة.",
+      "language_style": "msa",
+      "expected_term": "تعلُّم عميق",
+      "expected_id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+      "selection_category": "technical",
+      "specificity": "broad",
+      "rank_term_only": 4,
+      "rank_definition": 1,
+      "rank_example": 4,
+      "rank_change_term_to_definition": 3,
+      "rank_change_definition_to_example": -3,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": true,
+      "example_text": "تنبئ تقنية التزييف العميق والتي تعد أحد افرازات الذكاء الاصطناعي، بتحولات مهمة في تعامل الناس مع الصور والفيديوهات والتي تشكل أساسا جزءا من الحياة اليومية لهم، وقد ساهمت عوامل عديدة في نشأة وتطور هذه التقنية المبتكرة، أبرزها مهارات التعلم العميق، والتطور في أنظمة المعالجة الرقمية، وازدياد سرعتها، بالإضافة إلى توفر البيئة الرقمية التي تسمح لها بالانتشار الواسع عبر شبكات التواصل الاجتماعي ووصولها للملايين من الأشخاص عبر العالم.",
+      "example_source_title": "التزيف العميق: نشأة التقنية وتأثيراتها",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/175671",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 429,
+      "example_tokens": 120,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "بيئة",
+        "تزييف عميق",
+        "ذكاء اصطناعي"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "الذكاء الاصطناعي"
+      ],
+      "top1_definition": "تعلُّم عميق",
+      "top1_example": "شبكة عصبية تكرارية",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "dropped_from_top1",
+      "error_categories": [
+        "competing_terminology",
+        "example_definition_mismatch",
+        "source_domain_style_effect"
+      ],
+      "error_rationale": "The example is mainly about deepfakes (another pilot term, تزييف عميق) and its social/media spread; التعلم العميق is mentioned once as a contributing factor, not described."
+    },
+    {
+      "query_id": "GOLD_023",
+      "query": "تتعلم الخوارزمية من مجموعة أمثلة يرافق كل منها المخرج الصحيح المعروف مسبقًا، ثم تستخدم ما تعلمته على حالات جديدة.",
+      "language_style": "msa",
+      "expected_term": "تعلُّم موجَّه",
+      "expected_id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+      "selection_category": "technical",
+      "specificity": "moderately_general",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تقدم هذه الدراسة نموذج تعلم آلي ذكي يعتمد على خوارزمية الغابة العشوائية، أحد أهم خوارزميات تعلم الآلة بالإشراف، وهي فرع من فروع الذكاء الاصطناعي، حيث تُستخدم الخوارزمية في الكثير من مجالات المالية والاقتصاد.",
+      "example_source_title": "نموذج تعلم آلي ذكي لكشف الاحتيال في بطاقة الائتمان - تطبيق عملي على منصة تفاعلية -",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/267093",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 207,
+      "example_tokens": 66,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "تعلُّم الآلة",
+        "ذكاء اصطناعي",
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "الذكاء الاصطناعي",
+        "تعلم آلي",
+        "تعلم الآلة",
+        "خوارزميات",
+        "خوارزمية",
+        "نموذج"
+      ],
+      "top1_definition": "تعلُّم موجَّه",
+      "top1_example": "تعلُّم موجَّه",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_024",
+      "query": "تبحث الخوارزمية عن أنماط وتجميعات داخل بيانات لا تحتوي على فئات صحيحة محددة مسبقًا.",
+      "language_style": "msa",
+      "expected_term": "تعلُّم غير موجَّه",
+      "expected_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+      "selection_category": "technical",
+      "specificity": "moderately_general",
+      "rank_term_only": 4,
+      "rank_definition": 1,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 3,
+      "rank_change_definition_to_example": -1,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "توجد تطبيقات مهمة للتعلم غير الموجَّه، ومنها على سبيل المثال تجميع الملاحظات في مجموعات مختلفة (لا يوجد حل مسبق يشير إلى ماهية المجموعة الصحيحة).",
+      "example_source_title": "الخوارزميات",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/13139359/6/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 145,
+      "example_tokens": 41,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "تعلُّم غير موجَّه",
+      "top1_example": "تنقيب في البيانات",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "dropped_from_top1",
+      "error_categories": [
+        "query_ambiguity"
+      ],
+      "error_rationale": "Query (finding patterns/groupings in unlabelled data) also fits تنقيب في البيانات; drop is 1->2 with a small score margin (0.795 vs 0.791)."
+    },
+    {
+      "query_id": "GOLD_025",
+      "query": "المودل ممتاز على بيانات التدريب، بس أول ما نجربه على بيانات جديدة يطيح أداؤه بشكل واضح.",
+      "language_style": "saudi_colloquial",
+      "expected_term": "فرط التخصيص",
+      "expected_id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+      "selection_category": "technical",
+      "specificity": "moderately_general",
+      "rank_term_only": 14,
+      "rank_definition": 3,
+      "rank_example": 6,
+      "rank_change_term_to_definition": 11,
+      "rank_change_definition_to_example": -3,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "أما التدريب المفرط فيؤدي إلى ما يسمَّى «فرط الاستعداد»: أي الإتيان بأداء ممتاز في مجموعة بيانات التدريب وأداء سيئ في مجموعة بيانات الاختبار.",
+      "example_source_title": "الخوارزميات",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/13139359/6/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 140,
+      "example_tokens": 43,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "تدريب"
+      ],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "التدريب",
+        "بيانات",
+        "تدريب"
+      ],
+      "top1_definition": "دورة",
+      "top1_example": "مُولِّد",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "lexical_mismatch_or_synonym",
+        "neighbor_attraction"
+      ],
+      "error_rationale": "The example uses the translator's term «فرط الاستعداد», not فرط التخصيص; مُولِّد (whose example discusses training instability and output quality) moves to Top-1."
+    },
+    {
+      "query_id": "GOLD_026",
+      "query": "تمرر الخلية العصبية مجموع مدخلاتها الموزونة عبر تحويل غير خطي مثل ReLU كي تتمكن الشبكة من تمثيل علاقات معقدة.",
+      "language_style": "msa",
+      "expected_term": "دالة تنشيط",
+      "expected_id": "37bde43b-0b34-457b-a23b-9aecf4a44fd9",
+      "selection_category": "technical",
+      "specificity": "specific",
+      "rank_term_only": 13,
+      "rank_definition": 7,
+      "rank_example": 6,
+      "rank_change_term_to_definition": 6,
+      "rank_change_definition_to_example": 1,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": false,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "ومع ذلك، فإن تنفيذ دالة التنشيط غير الخطية في الخلايا العصبية الخاصة بالشبكة تُتيح للشبكة تعلُّم الدوالِّ الأكثر تعقيدًا (غير الخطية).",
+      "example_source_title": "علم البيانات",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/72952028/4/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 134,
+      "example_tokens": 47,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "شبكة عصبية تكرارية",
+      "top1_example": "مُحوِّل",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_027",
+      "query": "يبدأ حساب المشتقات من خطأ المخرجات ثم يتحرك عكسيًا عبر الشبكة لتحديد كيفية تعديل كل معامل وتقليل الخطأ.",
+      "language_style": "msa",
+      "expected_term": "انتشار عكسي",
+      "expected_id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+      "selection_category": "technical",
+      "specificity": "specific",
+      "rank_term_only": 2,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 1,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "وذلك بالاعتماد على قاعدة بيانات أسعار الإغلاق اليومية لمؤشر سوق قطر للأوراق المالية من 11/11/2019 الى 09/12/2021 ،وذلك باستعمال خوارزمية الانتشار الخلفي في التدريب وشبكة بيرسبيرتون في التنبؤ .",
+      "example_source_title": "كفاءة النماذج الذكية في التنبؤ بمؤشرات الأسواق المالية في ظل جائحة كورونا –مؤشر سوق قطر المالي نموذجا-",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/198000",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 192,
+      "example_tokens": 56,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "تدريب"
+      ],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "التدريب",
+        "التنبؤ",
+        "بيانات",
+        "تدريب",
+        "خوارزمية"
+      ],
+      "top1_definition": "انتشار عكسي",
+      "top1_example": "انتشار عكسي",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_028",
+      "query": "يستطيع النظام إنشاء محتوى جديد مثل النصوص أو الصور استنادًا إلى الأنماط التي تعلمها من كميات كبيرة من البيانات.",
+      "language_style": "msa",
+      "expected_term": "ذكاء اصطناعي توليدي",
+      "expected_id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+      "selection_category": "technical",
+      "specificity": "broad",
+      "rank_term_only": 5,
+      "rank_definition": 1,
+      "rank_example": 3,
+      "rank_change_term_to_definition": 4,
+      "rank_change_definition_to_example": -2,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "من خلال منهجية المراجعة الاستكشافية(Scoping Review)، أظهرت النتائج، أن الذكاء الاصطناعي التوليدي يحمل إمكانات كبيرة لتعزيز العلم المفتوح، خاصة في مجالات الترجمة والتلخيص والتيسير المعرفي؛ لكنه يثير في الوقت نفسه مخاطر تتعلق بالسرقة العلمية والإسناد الأخلاقي وظهور فجوات رقمية وثقافية جديدة.",
+      "example_source_title": "الذكاء الاصطناعي التوليدي يعزز أم يقوض أهداف العلم المفتوح؟",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/298340",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 290,
+      "example_tokens": 91,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "الذكاء الاصطناعي"
+      ],
+      "top1_definition": "ذكاء اصطناعي توليدي",
+      "top1_example": "اسم",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "dropped_from_top1",
+      "error_categories": [
+        "example_definition_mismatch",
+        "source_domain_style_effect",
+        "neighbor_attraction"
+      ],
+      "error_rationale": "The example discusses generative AI's implications for open science and plagiarism, not content generation; اسم (example: «إنشاء ... نموذج») and مُولِّد rise above the target."
+    },
+    {
+      "query_id": "GOLD_029",
+      "query": "جعلت تقنيات حديثة الصور ومقاطع الفيديو المفبركة شديدة الواقعية إلى درجة يصعب معها أحيانًا تمييزها عن المحتوى الحقيقي.",
+      "language_style": "msa",
+      "expected_term": "تزييف عميق",
+      "expected_id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+      "selection_category": "technical",
+      "specificity": "moderately_general",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "التزييف العميق هو تقنية تستخدم الذكاء الاصطناعي والتعلم العميق لإنشاء محتوى وسائط متعددة (مثل الفيديو والصوت والصور) تبدو واقعيًا، ولكنه في الحقيقة مزيف.",
+      "example_source_title": "التزييف العميق في التشريع العماني",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/268687",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 153,
+      "example_tokens": 48,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "تعلُّم عميق",
+        "ذكاء اصطناعي"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "الذكاء الاصطناعي"
+      ],
+      "top1_definition": "تزييف عميق",
+      "top1_example": "تزييف عميق",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_030",
+      "query": "تُجزَّأ الجملة أو الفقرة إلى وحدات أصغر، مثل الكلمات أو أجزاء الكلمات، قبل أن تعالجها الخوارزمية اللغوية.",
+      "language_style": "msa",
+      "expected_term": "تقسيم النصوص",
+      "expected_id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+      "selection_category": "technical",
+      "specificity": "specific",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "وعندما يقدم المستخدم مدخلًا نصيًا، يقوم النموذج أولًا بتحويل النص إلى وحدات رقمية تُعرف باسم الرموز، ثم تُعالج هذه الرموز بواسطة شبكة عصبية، غالبًا ما تعتمد على هيكل المحوّلات، وتستخدم آليات الانتباه الذاتي لتحليل العلاقات بين الكلمات عبر السياق الكامل للنص.",
+      "example_source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+      "example_source_type": "official_government_guideline",
+      "example_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 258,
+      "example_tokens": 80,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "اسم",
+        "مُحوِّل",
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "نموذج"
+      ],
+      "top1_definition": "تقسيم النصوص",
+      "top1_example": "تقسيم النصوص",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_031",
+      "query": "نبغى نعرف من تعليقات العملاء إذا رأيهم عن المنتج إيجابي أو سلبي بدون ما نقرأ كل تعليق يدويًا.",
+      "language_style": "saudi_colloquial",
+      "expected_term": "تحليل المشاعر",
+      "expected_id": "784fb957-1319-4ce8-afd7-10fd35512749",
+      "selection_category": "technical",
+      "specificity": "moderately_general",
+      "rank_term_only": 2,
+      "rank_definition": 2,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تهدف هذه الدراسة إلى تبيان أهمية تحليل المشاعر والآراء في التدوينات المصغرة وبخاصة التويتر كأداة منهجية جديدة في الدراسات المرتبطة بالشبكات الاجتماعية، وتبسيط طرق وكيفية التحليل الآلي.",
+      "example_source_title": "تحليل المشاعر والآراء في التدوينات المصغرة كأداة منهجية جديدة",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/184067",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 184,
+      "example_tokens": 56,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "اسم",
+      "top1_example": "اسم",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_032",
+      "query": "يحوّل النظام النص تلقائيًا من لغة مصدر إلى لغة هدف مع محاولة الحفاظ على المعنى المقصود.",
+      "language_style": "msa",
+      "expected_term": "ترجمة الآلة",
+      "expected_id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+      "selection_category": "technical",
+      "specificity": "moderately_general",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": -1,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تعتبر الترجمة الآلية الذكية من أبرز مجالات الذكاء الاصطناعي خلال السنوات الأخيرة، حيث بدأ البحث في هذا المجال بالأساليب الإحصائية التي تعتمد على نمذجة البيانات اللفظية من خلال تحليل الإحصائيات اللغوية، ثم انتقل إلى أساليب الترجمة العصبية التي تعتمد على الشبكات العصبية العميقة، حيث تقدم هذه الأخيرة العصبية تحسينات ملحوظة في جودة الترجمة من حيث الدقة والسلاسة، وتتيح التعلم المستمر من البيانات الجديدة، مما يجعلها أكثر مرونة.",
+      "example_source_title": "نحو الترجمة الذكية: رهانات التحول من أساليب الترجمة الإحصائية إلى الترجمة العصبية وما بعد العصبية وتحدياتها المستقبلية _ قراءة استشرافية_",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/292827",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 425,
+      "example_tokens": 117,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي"
+      ],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "البيانات",
+        "الذكاء الاصطناعي",
+        "الشبكات العصبية",
+        "بيانات"
+      ],
+      "top1_definition": "ترجمة الآلة",
+      "top1_example": "معالجة اللغات الطبيعية",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "dropped_from_top1",
+      "error_categories": [
+        "general_example_language"
+      ],
+      "error_rationale": "Long example listing statistical and neural approaches and 'deep neural networks'; the broader neighbour معالجة اللغات الطبيعية overtakes the target by a small margin."
+    },
+    {
+      "query_id": "GOLD_033",
+      "query": "يصل المصنف إلى النتيجة عبر سلسلة من الشروط المتفرعة على السمات حتى ينتهي إلى قرار في عقدة نهائية.",
+      "language_style": "msa",
+      "expected_term": "شجرة القرار",
+      "expected_id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+      "selection_category": "technical",
+      "specificity": "specific",
+      "rank_term_only": 1,
+      "rank_definition": 5,
+      "rank_example": 8,
+      "rank_change_term_to_definition": -4,
+      "rank_change_definition_to_example": -3,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "كما كشفت الدراسة عن هيمنة نماذج أشجار القرار والانحدار اللوجيستي التي وصلت نسبة استخدامها الى83.3% في البنوك الاوروبية، مع تفضيلها للنماذج المطورة داخليا لضمان السيطرة الكاملة على قواعد بياناتها وأنظمتها الأساسية.",
+      "example_source_title": "دور الذكاء الاصطناعي في تعزيز التقييم الائتماني واكتشاف الاحتيال في القطاع البنكي الأوروبي",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/292187",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 213,
+      "example_tokens": 64,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "بيانات",
+        "نماذج"
+      ],
+      "top1_definition": "أمر",
+      "top1_example": "اسم",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "competing_terminology",
+        "example_definition_mismatch",
+        "source_domain_style_effect"
+      ],
+      "error_rationale": "The example is a banking-sector finding that pairs decision trees with logistic regression; it does not describe branching on features, which is what the query describes."
+    },
+    {
+      "query_id": "GOLD_034",
+      "query": "تُحلل مجموعات كبيرة من السجلات لاكتشاف أنماط وعلاقات خفية يمكن استخدامها في التنبؤ ودعم القرار.",
+      "language_style": "msa",
+      "expected_term": "تنقيب في البيانات",
+      "expected_id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+      "selection_category": "technical",
+      "specificity": "broad",
+      "rank_term_only": 2,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 1,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تهدف الدراسة الى استخدام الانحدار الخطي كتقنية من تقنيات التنقيب في البيانات للتنبؤ بالطاقة الانتاجية والتكاليف لمؤسسة اسمنت جزائرية، وذلك عن طريق استخدام برنامج التنقيب weka، وذلك لتمكين المؤسسة من وضع تحليل منطقي للوضعية المالية المستقبلية لها لتحسين جودة ومسار القرارات المتخذة.",
+      "example_source_title": "التنبؤ باستخدام التنقيب في البيانات لتحسين عملية اتخاذ القرار",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/239708",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 281,
+      "example_tokens": 84,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "اسم"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "البيانات",
+        "بيانات"
+      ],
+      "top1_definition": "تنقيب في البيانات",
+      "top1_example": "تنقيب في البيانات",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_035",
+      "query": "تتطلب مجموعات شديدة الحجم والتنوع وسرعة التدفق أدوات تحليل قادرة على التعامل مع هذا الحجم والتعقيد بكفاءة.",
+      "language_style": "msa",
+      "expected_term": "بيانات ضخمة",
+      "expected_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+      "selection_category": "technical",
+      "specificity": "broad",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تهدف هذه الدراسة إلى إبراز مختلف الجوانب النظرية المتعلقة بالذكاء الاصطناعي والبيانات الضخمة، الفرص والتحديات التي تواجههما، بالإضافة إلى إظهار العلاقة بينهما، وقد تم التوصل إلى هناك علاقة تبادلية بين الذكاء الاصطناعي والبيانات الضخمة، فالذكاء الاصطناعي يحتاج إلى التعلم من البيانات الضخمة حتى يتمكن من أداء وظيفته ويكون أكثر ذكاء، في حين أن البيانات الضخمة تزداد فائدتها إذا تم استخدامها في خوارزميات الذكاء الاصطناعي.",
+      "example_source_title": "الذكاء الاصطناعي مع البيانات الضخمة، الفرص والتحديات، والعلاقة بينهما",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/300123",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 419,
+      "example_tokens": 130,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "البيانات",
+        "الذكاء الاصطناعي",
+        "بيانات",
+        "خوارزميات"
+      ],
+      "top1_definition": "بيانات ضخمة",
+      "top1_example": "بيانات ضخمة",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_036",
+      "query": "تمكّن التقنية الحواسيب والآلات من محاكاة قدرات مثل الفهم والتعلم وحل المشكلات واتخاذ القرارات بدرجات متفاوتة من الاستقلالية.",
+      "language_style": "msa",
+      "expected_term": "ذكاء اصطناعي",
+      "expected_id": "0acee532-2840-4a67-a98f-2522447757e0",
+      "selection_category": "abbreviation_alias",
+      "specificity": "broad",
+      "rank_term_only": 4,
+      "rank_definition": 5,
+      "rank_example": 3,
+      "rank_change_term_to_definition": -1,
+      "rank_change_definition_to_example": 2,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "يتناول هذا البحث العلاقة المحورية والتكاملية بين الذكاء الاصطناعي (AI) واللغة البشرية، مؤكداً على الأهمية القصوى لتقنيات معالجة اللغات الطبيعية (NLP) كجسر يُمكّن الأنظمة الحاسوبية من فهم وتحليل النصوص والكلام البشري على مستويات متعددة (نحوية، دلالية، وعملية).",
+      "example_source_title": "معالجة اللغة البشرية الآليات والتقنيات والمبادئ Human Language Processing: Mechanisms, Techniques, and Principles",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/279404",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 259,
+      "example_tokens": 85,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "معالجة اللغات الطبيعية"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "الذكاء الاصطناعي"
+      ],
+      "top1_definition": "تعلُّم الآلة",
+      "top1_example": "تعلُّم الآلة",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_037",
+      "query": "الخوارزمية تتعلم من أمثلة قديمة، وبعدها نجربها على بيانات ما شافتها قبل عشان تتنبأ بالنتيجة.",
+      "language_style": "saudi_colloquial",
+      "expected_term": "تعلُّم الآلة",
+      "expected_id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+      "selection_category": "abbreviation_alias",
+      "specificity": "broad",
+      "rank_term_only": 5,
+      "rank_definition": 15,
+      "rank_example": 28,
+      "rank_change_term_to_definition": -10,
+      "rank_change_definition_to_example": -13,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": false,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "بعد مراجعة وتحليل أدبيات الموضوع، أظهرت النتائج أن التعلم الآلي يوفر إمكانات متقدمة للكشف عن التهديدات والاستجابة لها في الوقت الفعلي، ويتفوق على الأساليب التقليدية القائمة على التوقيعات الثابتة، ومع ذلك يشدد المقال على ضرورة تطوير استراتيجيات تكيف متقدمة لمواجهة التحديات الناشئة وضمان الاستخدام الأخلاقي والفعال للتعلم الآلي في مجال الأمن السيبراني",
+      "example_source_title": "تعزيز الأمن السيبراني باستخدام التعلم الآلي دراسة مقارنة للأساليب التقليدية والتقنيات الذكية",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/300491",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 350,
+      "example_tokens": 102,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "التعلم الآلي"
+      ],
+      "top1_definition": "شجرة القرار",
+      "top1_example": "تعلُّم موجَّه",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "semantically_broad_target_term",
+        "example_definition_mismatch",
+        "source_domain_style_effect"
+      ],
+      "error_rationale": "Broad target term; the example is about machine learning in cybersecurity threat detection, while the query describes generic learn-from-examples-then-predict."
+    },
+    {
+      "query_id": "GOLD_038",
+      "query": "تستخدم الحواسيب تقنيات لتحليل اللغة البشرية وفهم النصوص وتنفيذ مهام لغوية مثل التصنيف واستخراج المعلومات.",
+      "language_style": "msa",
+      "expected_term": "معالجة اللغات الطبيعية",
+      "expected_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+      "selection_category": "abbreviation_alias",
+      "specificity": "broad",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "لم تعد تطبيقات معالجة اللغة الطبيعية (NLP) مجرد ترف تكنولوجي أو موضوع أكاديمي محدود التأثير.",
+      "example_source_title": "معالجة اللغة الطبيعية والبرمجة اللغوية العصبية (NLP) : Natural Language Processing and Neuro-Linguistic Programming (NLP)",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/279405",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 92,
+      "example_tokens": 26,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "معالجة اللغات الطبيعية",
+      "top1_example": "معالجة اللغات الطبيعية",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_039",
+      "query": "النظام اللغوي فيه عدد ضخم من parameters وتعلّم أنماط اللغة من كمية كبيرة جدًا من النصوص.",
+      "language_style": "arabic_english_mixed",
+      "expected_term": "نموذج لغوي كبير",
+      "expected_id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+      "selection_category": "abbreviation_alias",
+      "specificity": "moderately_general",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "يهدف هذا البحث إلى استقصاء الفجوة بين المعالجة الإحصائية والنمذجة اللسانية العميقة في النماذج اللغوية الكبيرة (LLMs) تجاه اللغة العربية، حيث تتبلور مشكلة البحث في عجز هذه النماذج عن تجاوز مستوى \"النمذجة التركيبية\" للوصول إلى \"الإدراك السياقي\" وتأويل المعنى الدلالي الدقيق.",
+      "example_source_title": "إشكالية تأويل السياق والدلالة في النماذج اللغوية الكبيرة: دراسة لسانية حاسوبية في ضوء المعالجة الآلية للغة العربية",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/302037",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 272,
+      "example_tokens": 91,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "نماذج"
+      ],
+      "top1_definition": "نموذج لغوي كبير",
+      "top1_example": "نموذج لغوي كبير",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_040",
+      "query": "تتكون البنية من عقد مترابطة مرتبة في مستويات، وتنتقل القيم بينها عبر معاملات تتغير أثناء التعلم.",
+      "language_style": "msa",
+      "expected_term": "شبكة عصبية اصطناعية",
+      "expected_id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+      "selection_category": "abbreviation_alias",
+      "specificity": "broad",
+      "rank_term_only": 24,
+      "rank_definition": 34,
+      "rank_example": 35,
+      "rank_change_term_to_definition": -10,
+      "rank_change_definition_to_example": -1,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": false,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "تعتبر الشبكات العصبية الاصطناعية (artificial neural network) كأحد مجالات الذكاء الاصطناعي تعمل على تمثيل عقل الإنسان عن طريق شبكة من المعطيات الرقمية (التي تمثل الخلية العصبية) متصلة بروابط موزونة (التي تمثل الروابط بين الخلايا) والتي يتم معالجتها بواسطة نموذج رياضي محدد.",
+      "example_source_title": "دور تقنية الشبكات العصبية الاصطناعية في تسيير المخاطر في المؤسسات الصناعية",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/32100",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 272,
+      "example_tokens": 84,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي",
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "الذكاء الاصطناعي",
+        "الشبكات العصبية",
+        "نموذج"
+      ],
+      "top1_definition": "تحيُّز",
+      "top1_example": "سياسة",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "semantically_broad_target_term",
+        "no_clear_cause"
+      ],
+      "error_rationale": "Already a failure under B (rank 34) and C (35); a one-place change on a broad term is not attributable to the example."
+    },
+    {
+      "query_id": "GOLD_041",
+      "query": "استخدمنا filters تتحرك على أجزاء صغيرة من الصورة عشان تستخرج الحواف والملامح البصرية المهمة.",
+      "language_style": "arabic_english_mixed",
+      "expected_term": "شبكة عصبية ترشيحية",
+      "expected_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+      "selection_category": "abbreviation_alias",
+      "specificity": "moderately_general",
+      "rank_term_only": 39,
+      "rank_definition": 9,
+      "rank_example": 11,
+      "rank_change_term_to_definition": 30,
+      "rank_change_definition_to_example": -2,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": false,
+      "definition_hit@5": false,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "وفي الشبكة العصبية الالتفافية، تُرتَّب الخلايا العصبية داخل كل مجموعةٍ بحيث تفحص كل خليةٍ موضعًا مختلفًا في الصورة، وتُغطي المجموعة الصورة بأكملها.",
+      "example_source_title": "علم البيانات",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/72952028/4/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 147,
+      "example_tokens": 49,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "الشبكة العصبية"
+      ],
+      "top1_definition": "تحليل المشاعر",
+      "top1_example": "اسم",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "lexical_mismatch_or_synonym"
+      ],
+      "error_rationale": "The example uses «الشبكة العصبية الالتفافية» rather than the Siwar term «ترشيحية»; small change (9->11) on an already-missed mixed-language query."
+    },
+    {
+      "query_id": "GOLD_042",
+      "query": "تعالج البنية عناصر التسلسل بالتتابع مع تمرير حالة داخلية تحمل معلومات من الخطوات السابقة إلى اللاحقة.",
+      "language_style": "msa",
+      "expected_term": "شبكة عصبية تكرارية",
+      "expected_id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+      "selection_category": "abbreviation_alias",
+      "specificity": "moderately_general",
+      "rank_term_only": 1,
+      "rank_definition": 2,
+      "rank_example": 4,
+      "rank_change_term_to_definition": -1,
+      "rank_change_definition_to_example": -2,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": true,
+      "example_text": "ونتيجة لذلك، تُعد الشبكات العصبية التكرارية مناسبةً لمعالجة البيانات المتسلسلة مثل اللغة.",
+      "example_source_title": "علم البيانات",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/72952028/4/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 89,
+      "example_tokens": 29,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "البيانات",
+        "الشبكات العصبية",
+        "بيانات"
+      ],
+      "top1_definition": "أمر",
+      "top1_example": "مُحوِّل",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "query_ambiguity",
+        "neighbor_attraction"
+      ],
+      "error_rationale": "The query (sequential processing with a carried state) also fits مُحوِّل and LSTM; مُحوِّل, whose example mentions «تسلسل محدد», moves to Top-1."
+    },
+    {
+      "query_id": "GOLD_043",
+      "query": "تستخدم البنية بوابات تتحكم فيما يُحفظ ويُنسى من الحالة الداخلية، ما يساعد على تتبع الاعتماد البعيد في التسلسل.",
+      "language_style": "msa",
+      "expected_term": "ذاكرة قصيرة المدى مُطَوَّلة",
+      "expected_id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+      "selection_category": "abbreviation_alias",
+      "specificity": "specific",
+      "rank_term_only": 2,
+      "rank_definition": 2,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "حيث تم بناء نموذج شبكة الذاكرة طويلة قصيرة المدى على منصة google Colab بواسطة لغة البرمجة Python من خلال مجموعة من المكتبات التابعة لهذه اللغة.",
+      "example_source_title": "استخدام شبكة الذاكرة طويلة قصيرة المدى للتنبؤ بأسعار عملة البيتكوين",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/257562",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 143,
+      "example_tokens": 36,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "نموذج"
+      ],
+      "top1_definition": "تأسيس",
+      "top1_example": "تأسيس",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_044",
+      "query": "يبحث المصنف عن حد فاصل بين الفئات يحقق أكبر هامش ممكن، وتؤثر أقرب نقاط إلى هذا الحد في تحديده.",
+      "language_style": "msa",
+      "expected_term": "آلة المُتَّجهات الداعمة",
+      "expected_id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+      "selection_category": "abbreviation_alias",
+      "specificity": "specific",
+      "rank_term_only": 18,
+      "rank_definition": 3,
+      "rank_example": 4,
+      "rank_change_term_to_definition": 15,
+      "rank_change_definition_to_example": -1,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": true,
+      "example_text": "تناول هذا البحث بناء عدة نماذج من نماذج (SVM) المختلفة للحصول على أفضل نموذج يساعد على التنبؤ في الأجل القصير بأسعار الذهب العالمية، بالاعتماد على بيانات السلسلة الزمنية الشهرية لأسعار الذهب العالمية للفترة الزمنية الممتدة من شهر يناير 2000 حتى شهر سبتمبر 2022 بواقع 273 مشاهدة، وذلك من خلال المفاضلة بين هذه النماذج حسب أقل قيم للمعايير وهما خطأ التدريب وعدد متجهات الدعم، لإيجاد أنسب نموذج لتحليل البيانات محل الاهتمام",
+      "example_source_title": "استخدام نموذج SVM في التنبؤ بالسلاسل الزمنية",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/228025",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 420,
+      "example_tokens": 118,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "تدريب",
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "البيانات",
+        "التدريب",
+        "التنبؤ",
+        "بيانات",
+        "تدريب",
+        "نماذج",
+        "نموذج"
+      ],
+      "top1_definition": "تعرُّف على الكيانات المُسمّاة",
+      "top1_example": "مُولِّد",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "source_domain_style_effect"
+      ],
+      "error_rationale": "Long example about forecasting gold prices with SVM model comparison; it does not mention margins or support vectors' role, which the query describes."
+    },
+    {
+      "query_id": "GOLD_045",
+      "query": "يستخرج النظام من النص إشارات إلى الأشخاص والمنظمات والأماكن وغيرها، ثم يصنف كل إشارة بحسب نوعها.",
+      "language_style": "msa",
+      "expected_term": "تعرُّف على الكيانات المُسمّاة",
+      "expected_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+      "selection_category": "abbreviation_alias",
+      "specificity": "specific",
+      "rank_term_only": 2,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 1,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "والهدف الرئيسي من هذا العمل البحثي هو تقديم منهجية شاملة لاستخراج المعلومات وتمييز الكيانات المسماة من النصوص العربية غير المهيكلة باستخدام تقنيات معالجة اللغات الطبيعية التي ثبتت فعاليتها في حل معظم مشاكل التصنيف من أجل تحسين عملية استخراج المعلومات من الوثائق ذات الصلة بالمجال الجغرافي تحديدا.",
+      "example_source_title": "التعرف على الكيانات المسماة في المجال الجغرافي للوثائق العربية غير المهيكلة",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://journals.asmarya.edu.ly/jbs/index.php/jbs/article/view/104",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 296,
+      "example_tokens": 75,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "معالجة اللغات الطبيعية"
+      ],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "التصنيف",
+        "تصنيف"
+      ],
+      "top1_definition": "تعرُّف على الكيانات المُسمّاة",
+      "top1_example": "تعرُّف على الكيانات المُسمّاة",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_046",
+      "query": "النظام يسوي retrieval من قاعدة معرفة خارجية أول، وبعدها يمرر المعلومات للمكوّن التوليدي عشان يبني جوابه عليها.",
+      "language_style": "arabic_english_mixed",
+      "expected_term": "توليد مُعَزَّز بالاسترجاع",
+      "expected_id": "a338b836-30ee-471a-a164-f09c919243ce",
+      "selection_category": "abbreviation_alias",
+      "specificity": "moderately_general",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "عند استخدام الذكاء الاصطناعي التوليدي مع البيانات الخاصة أو الملكية أو المؤسسية يجب استخدام تقنيات الاسترجاع القائمة على التمثيلات المضمنة (مثل التوليد المعزز بالاسترجاع) لتأصيل مخرجات النموذج في مصادر داخلية موثوقة وتقليل خطر الهلوسة.",
+      "example_source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+      "example_source_type": "official_government_guideline",
+      "example_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "example_verification": "page_image_transcription+fuzzy_text_layer_match",
+      "example_chars": 235,
+      "example_tokens": 73,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي",
+        "ذكاء اصطناعي توليدي",
+        "نموذج",
+        "هلوسة"
+      ],
+      "example_multiple_technical_concepts": true,
+      "example_general_ml_vocabulary": [
+        "البيانات",
+        "الذكاء الاصطناعي",
+        "بيانات",
+        "نموذج"
+      ],
+      "top1_definition": "توليد مُعَزَّز بالاسترجاع",
+      "top1_example": "توليد مُعَزَّز بالاسترجاع",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_047",
+      "query": "تُحوَّل المتغيرات المترابطة إلى محاور جديدة غير مترابطة تُرتب بحسب مقدار التباين الذي تفسره.",
+      "language_style": "msa",
+      "expected_term": "تحليل المُكوِّن الرئيس",
+      "expected_id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+      "selection_category": "abbreviation_alias",
+      "specificity": "specific",
+      "rank_term_only": 15,
+      "rank_definition": 3,
+      "rank_example": 2,
+      "rank_change_term_to_definition": 12,
+      "rank_change_definition_to_example": 1,
+      "term_only_hit@1": false,
+      "term_only_hit@3": false,
+      "term_only_hit@5": false,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "تم استخدام تحليل المكونات الرئيسية (PCA) لاستنباط المؤشر بناءً على مجموعة من المتغيرات التي تعكس مختلف جوانب الخدمات البنكية الرقمية.",
+      "example_source_title": "نحو تطوير مؤشر كمي لقياس الرقمنة والتكنولوجيا المالية في القطاع البنكي الجزائري دراسة تطبيقية خلال الفترة (2016-2024)",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/281484",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 133,
+      "example_tokens": 36,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [],
+      "top1_definition": "تعلُّم غير موجَّه",
+      "top1_example": "مُحوِّل",
+      "top1_changed_with_example": true,
+      "outcome_definition_to_example": "improved_with_example",
+      "top1_status": "remained_incorrect"
+    },
+    {
+      "query_id": "GOLD_048",
+      "query": "يُقاس أداء التنبؤ بأخذ متوسط مربعات الفروق بين القيم المتوقعة والقيم الحقيقية.",
+      "language_style": "msa",
+      "expected_term": "متوسط الخطأ التربيعي",
+      "expected_id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+      "selection_category": "abbreviation_alias",
+      "specificity": "specific",
+      "rank_term_only": 1,
+      "rank_definition": 1,
+      "rank_example": 1,
+      "rank_change_term_to_definition": 0,
+      "rank_change_definition_to_example": 0,
+      "term_only_hit@1": true,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": true,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": true,
+      "example_hit@3": true,
+      "example_hit@5": true,
+      "example_text": "أظهرت النتائج أن نموذجRandom Forest حقق أفضل أداء تنبئي، حيث سجل أقل متوسط مربع للخطأ (MSE=4.1257) وأعلى معامل تحديد (R²=0.3422)، في حين سجل نموذج الانحدارالخطي المتعدد أضعف النتائج.",
+      "example_source_title": "استخدام نماذج التعلم الآلي في التنبؤ بالتضخم في الجزائر: دراسة مقارنة بين النماذج القياسية التقليدية وخوارزميات التعلم الآلي خلال الفترة 1990–2025",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/303277",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 182,
+      "example_tokens": 63,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "نموذج"
+      ],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "نموذج"
+      ],
+      "top1_definition": "متوسط الخطأ التربيعي",
+      "top1_example": "متوسط الخطأ التربيعي",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "unchanged_with_example",
+      "top1_status": "remained_correct_top1"
+    },
+    {
+      "query_id": "GOLD_049",
+      "query": "نبغى النظام يفهم وش موجود في الصور والفيديو، مثل الأجسام والأشخاص والأنماط البصرية.",
+      "language_style": "saudi_colloquial",
+      "expected_term": "رؤية الحاسب",
+      "expected_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+      "selection_category": "abbreviation_alias",
+      "specificity": "moderately_general",
+      "rank_term_only": 2,
+      "rank_definition": 3,
+      "rank_example": 6,
+      "rank_change_term_to_definition": -1,
+      "rank_change_definition_to_example": -3,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "تهدف هذه الدراسة إلى معرفة التجارب الرائدة في توظيف الذكاء الاصطناعي (Artificial Intelligence) في تحليل الأداء الرياضي مع التركيز على الأدوات المتقدمة مثل رؤية الحاسوب ، تحليل البيانات الكبيرة وأنظمة التنبؤ الذكية ، كما تهدف إلى معرفة اثر هذه التقنيات على جودة التغطية الإعلامية وسرعة نشر الأخبار ودقة التحليل ورضا الجماهير ، كما نتطرق إلى التحديات الأخلاقية والتقنية .",
+      "example_source_title": "تجربة توظيف الذكاء الاصطناعي في تحليل الأداء الرياضي : نحو إعلام رياضي ذكي",
+      "example_source_type": "peer_reviewed_journal_article",
+      "example_url": "https://asjp.cerist.dz/en/article/288902",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 369,
+      "example_tokens": 103,
+      "example_exact_siwar_term": false,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [
+        "ذكاء اصطناعي"
+      ],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "البيانات",
+        "التنبؤ",
+        "الذكاء الاصطناعي",
+        "بيانات"
+      ],
+      "top1_definition": "تعرُّف على الكيانات المُسمّاة",
+      "top1_example": "تعرُّف على الكيانات المُسمّاة",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "general_example_language",
+        "competing_terminology",
+        "example_definition_mismatch",
+        "lexical_mismatch_or_synonym"
+      ],
+      "error_rationale": "Multi-topic example (sports media, big-data analysis, prediction systems) that mentions «رؤية الحاسوب» only as one tool; it also names بيانات ضخمة (as «البيانات الكبيرة»)."
+    },
+    {
+      "query_id": "GOLD_050",
+      "query": "المودل يحسب رقم يوضح قد إيش ناتجه بعيد عن القيمة الصحيحة، وبعدها يستخدمه عشان يعدّل نفسه.",
+      "language_style": "saudi_colloquial",
+      "expected_term": "دالة الخسارة",
+      "expected_id": "51f2785a-f64c-4198-9c18-c93e04853146",
+      "selection_category": "abbreviation_alias",
+      "specificity": "moderately_general",
+      "rank_term_only": 3,
+      "rank_definition": 2,
+      "rank_example": 7,
+      "rank_change_term_to_definition": 1,
+      "rank_change_definition_to_example": -5,
+      "term_only_hit@1": false,
+      "term_only_hit@3": true,
+      "term_only_hit@5": true,
+      "definition_hit@1": false,
+      "definition_hit@3": true,
+      "definition_hit@5": true,
+      "example_hit@1": false,
+      "example_hit@3": false,
+      "example_hit@5": false,
+      "example_text": "وأخيرًا، في علم الإحصاء، تُصمم خوارزميات التَّعلُّم لتقليل قيمة «دالة خسارة» متوقعةٍ؛ تُعرِّف كُلفة الوقوع في أخطاءٍ تنبؤية.",
+      "example_source_title": "ذكاء اصطناعي متوافق مع البشر: حتى لا تفرض الآلات سيطرتها على العالم",
+      "example_source_type": "published_book_translation",
+      "example_url": "https://www.hindawi.org/books/25350464/1/",
+      "example_verification": "exact_substring_of_source",
+      "example_chars": 124,
+      "example_tokens": 59,
+      "example_exact_siwar_term": true,
+      "example_lexical_form_used": null,
+      "example_other_pilot_terms": [],
+      "example_multiple_technical_concepts": false,
+      "example_general_ml_vocabulary": [
+        "خوارزميات"
+      ],
+      "top1_definition": "مُولِّد",
+      "top1_example": "مُولِّد",
+      "top1_changed_with_example": false,
+      "outcome_definition_to_example": "worsened_with_example",
+      "top1_status": "remained_incorrect",
+      "error_categories": [
+        "query_ambiguity"
+      ],
+      "error_rationale": "The query (a number measuring distance from the correct value, used to adjust the model) also fits متوسط الخطأ التربيعي, which rises to rank 2; مُولِّد is Top-1 under both B and C."
+    }
+  ]
+}
