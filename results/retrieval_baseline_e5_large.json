@@ -1,0 +1,2238 @@
+{
+  "run": {
+    "baseline": "pure_e5_term_only",
+    "model_name": "intfloat/multilingual-e5-large",
+    "timestamp_utc": "2026-10-05T10:01:17+00:00",
+    "term_text": "passage: + term (Arabic term field only)",
+    "query_text": "query: + query",
+    "similarity": "cosine (L2-normalized dot product)",
+    "terms_file": "data/processed/data_ai/terminology_pilot_50.json",
+    "gold_file": "data/gold_test/data_ai_retrieval_gold_50.json",
+    "gold_version": "pilot_v2_language_diverse",
+    "n_terms": 50,
+    "n_queries": 50,
+    "batch_size": 32
+  },
+  "environment": {
+    "python": "3.11.9",
+    "torch": "2.9.1+cu130",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "transformers": "5.18.0",
+    "sentence_transformers": "6.1.0"
+  },
+  "timing_seconds": {
+    "model_load": 59.023,
+    "encode_terms": 0.195,
+    "encode_queries": 0.105,
+    "search": 0.013
+  },
+  "metrics": {
+    "top1_accuracy": 0.24,
+    "top3_accuracy": 0.42,
+    "top5_accuracy": 0.56,
+    "mrr": 0.3850569570615626
+  },
+  "per_query": [
+    {
+      "query_id": "GOLD_001",
+      "query": "بعد ضبط معاملات الخوارزمية على مجموعة من الأمثلة السابقة، أمكن استخدام الناتج المتعلَّم لإجراء تنبؤات على مدخلات جديدة.",
+      "language_style": "msa",
+      "expected_id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+      "expected_term": "نموذج",
+      "expected_rank": 3,
+      "expected_score": 0.815369,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.829945
+        },
+        {
+          "rank": 2,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.817769
+        },
+        {
+          "rank": 3,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.815369
+        },
+        {
+          "rank": 4,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.814175
+        },
+        {
+          "rank": 5,
+          "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+          "term": "حُزمة",
+          "score": 0.813195
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_002",
+      "query": "ينفّذ الكيان البرمجي مهامًا بصورة مستقلة، ويتخذ قرارات ويتفاعل مع الأنظمة المحيطة لتحقيق هدف محدد.",
+      "language_style": "msa",
+      "expected_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+      "expected_term": "وكيل",
+      "expected_rank": 28,
+      "expected_score": 0.799685,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.831756
+        },
+        {
+          "rank": 2,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.822506
+        },
+        {
+          "rank": 3,
+          "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+          "term": "آلة المُتَّجهات الداعمة",
+          "score": 0.81944
+        },
+        {
+          "rank": 4,
+          "id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+          "term": "رؤية الحاسب",
+          "score": 0.816747
+        },
+        {
+          "rank": 5,
+          "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "term": "أمر",
+          "score": 0.813984
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_003",
+      "query": "المودل عطاني جواب شكله مقنع، بس لما شيكت عليه لقيت معلومات مو صحيحة وما لها مصدر.",
+      "language_style": "saudi_colloquial",
+      "expected_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+      "expected_term": "هلوسة",
+      "expected_rank": 48,
+      "expected_score": 0.785239,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.817234
+        },
+        {
+          "rank": 2,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.81622
+        },
+        {
+          "rank": 3,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.816029
+        },
+        {
+          "rank": 4,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.811637
+        },
+        {
+          "rank": 5,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.810222
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_004",
+      "query": "يتعلم الكيان المستقل من التفاعل مع العالم الذي يعمل داخله، حيث تتغير الحالة بعد كل إجراء يتخذه.",
+      "language_style": "msa",
+      "expected_id": "09f1271f-d76e-471c-a05b-426b911ae194",
+      "expected_term": "بيئة",
+      "expected_rank": 47,
+      "expected_score": 0.780948,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.817569
+        },
+        {
+          "rank": 2,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.814145
+        },
+        {
+          "rank": 3,
+          "id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+          "term": "تعلُّم الآلة",
+          "score": 0.811753
+        },
+        {
+          "rank": 4,
+          "id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+          "term": "مُحوِّل",
+          "score": 0.80954
+        },
+        {
+          "rank": 5,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.807273
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_005",
+      "query": "تربط آلية اتخاذ القرار الحالات التي يلاحظها النظام بالإجراءات التي يختارها في كل حالة.",
+      "language_style": "msa",
+      "expected_id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+      "expected_term": "سياسة",
+      "expected_rank": 14,
+      "expected_score": 0.805778,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.84787
+        },
+        {
+          "rank": 2,
+          "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "term": "أمر",
+          "score": 0.823647
+        },
+        {
+          "rank": 3,
+          "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+          "term": "آلة المُتَّجهات الداعمة",
+          "score": 0.821135
+        },
+        {
+          "rank": 4,
+          "id": "784fb957-1319-4ce8-afd7-10fd35512749",
+          "term": "تحليل المشاعر",
+          "score": 0.818716
+        },
+        {
+          "rank": 5,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.816767
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_006",
+      "query": "تنتقل الإشارات في البنية العصبية من وحدات الإدخال عبر مستويات وسيطة من الخلايا قبل الوصول إلى المخرجات.",
+      "language_style": "msa",
+      "expected_id": "fa65c6dc-40ae-4fbe-8f5d-1721edd83752",
+      "expected_term": "طبقة",
+      "expected_rank": 12,
+      "expected_score": 0.816405,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+          "term": "شبكة عصبية تكرارية",
+          "score": 0.838137
+        },
+        {
+          "rank": 2,
+          "id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "term": "شبكة عصبية ترشيحية",
+          "score": 0.8323
+        },
+        {
+          "rank": 3,
+          "id": "45590793-f757-41fc-8325-5ed6303f02a8",
+          "term": "بث",
+          "score": 0.831053
+        },
+        {
+          "rank": 4,
+          "id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+          "term": "شبكة عصبية اصطناعية",
+          "score": 0.8273
+        },
+        {
+          "rank": 5,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.822741
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_007",
+      "query": "يملك كل اتصال بين خليتين معاملًا قابلًا للتعديل يحدد مقدار تأثير الإشارة القادمة في الحساب اللاحق.",
+      "language_style": "msa",
+      "expected_id": "36b69371-37ef-4145-b219-3f24356df629",
+      "expected_term": "وزن",
+      "expected_rank": 10,
+      "expected_score": 0.808792,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.828025
+        },
+        {
+          "rank": 2,
+          "id": "37bde43b-0b34-457b-a23b-9aecf4a44fd9",
+          "term": "دالة تنشيط",
+          "score": 0.827881
+        },
+        {
+          "rank": 3,
+          "id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+          "term": "مُحوِّل",
+          "score": 0.825235
+        },
+        {
+          "rank": 4,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.824908
+        },
+        {
+          "rank": 5,
+          "id": "45590793-f757-41fc-8325-5ed6303f02a8",
+          "term": "بث",
+          "score": 0.818898
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_008",
+      "query": "تضيف الخلية العصبية ثابتًا قابلًا للتعلم إلى مجموع المدخلات المضروبة في معاملاتها قبل التحويل غير الخطي.",
+      "language_style": "msa",
+      "expected_id": "a4e668fa-a99e-41be-9f93-c93643aeb39a",
+      "expected_term": "تحيُّز",
+      "expected_rank": 35,
+      "expected_score": 0.801113,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+          "term": "شبكة عصبية تكرارية",
+          "score": 0.840694
+        },
+        {
+          "rank": 2,
+          "id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+          "term": "شبكة عصبية اصطناعية",
+          "score": 0.832568
+        },
+        {
+          "rank": 3,
+          "id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "term": "شبكة عصبية ترشيحية",
+          "score": 0.831445
+        },
+        {
+          "rank": 4,
+          "id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+          "term": "مُحوِّل",
+          "score": 0.826768
+        },
+        {
+          "rank": 5,
+          "id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+          "term": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "score": 0.82522
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_009",
+      "query": "يتلقى النظام قيمة عددية بعد تنفيذ إجراء ما، ويستخدم هذه الإشارة لتفضيل السلوك الذي يقوده إلى نتائج أفضل.",
+      "language_style": "msa",
+      "expected_id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+      "expected_term": "مكافأة",
+      "expected_rank": 4,
+      "expected_score": 0.82439,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.833768
+        },
+        {
+          "rank": 2,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.828785
+        },
+        {
+          "rank": 3,
+          "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "term": "أمر",
+          "score": 0.82576
+        },
+        {
+          "rank": 4,
+          "id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+          "term": "مكافأة",
+          "score": 0.82439
+        },
+        {
+          "rank": 5,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.82301
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_010",
+      "query": "بعد ما خلص المودل مرور كامل على كل بيانات التدريب، بدأ مرور ثاني عشان يحسّن المعاملات مرة ثانية.",
+      "language_style": "saudi_colloquial",
+      "expected_id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+      "expected_term": "دورة",
+      "expected_rank": 2,
+      "expected_score": 0.821742,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+          "term": "تدريب",
+          "score": 0.826192
+        },
+        {
+          "rank": 2,
+          "id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+          "term": "دورة",
+          "score": 0.821742
+        },
+        {
+          "rank": 3,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.818592
+        },
+        {
+          "rank": 4,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.81655
+        },
+        {
+          "rank": 5,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.810753
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_011",
+      "query": "عولجت مجموعة صغيرة من أمثلة التعلم معًا قبل إجراء تحديث واحد لمعاملات الخوارزمية.",
+      "language_style": "msa",
+      "expected_id": "28c82b94-8d47-4728-b819-1544d54b9103",
+      "expected_term": "حُزمة",
+      "expected_rank": 4,
+      "expected_score": 0.816619,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.819479
+        },
+        {
+          "rank": 2,
+          "id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+          "term": "تعلُّم الآلة",
+          "score": 0.81861
+        },
+        {
+          "rank": 3,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.818477
+        },
+        {
+          "rank": 4,
+          "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+          "term": "حُزمة",
+          "score": 0.816619
+        },
+        {
+          "rank": 5,
+          "id": "99686190-8f2a-474a-9159-ace5fd8f07ad",
+          "term": "تجذيع",
+          "score": 0.815437
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_012",
+      "query": "كتبت للـAI تعليمات فيها المهمة والسياق والقيود عشان يطلع لي استجابة أدق.",
+      "language_style": "arabic_english_mixed",
+      "expected_id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+      "expected_term": "أمر",
+      "expected_rank": 1,
+      "expected_score": 0.837093,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "term": "أمر",
+          "score": 0.837093
+        },
+        {
+          "rank": 2,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.825833
+        },
+        {
+          "rank": 3,
+          "id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+          "term": "ترجمة الآلة",
+          "score": 0.821769
+        },
+        {
+          "rank": 4,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.821635
+        },
+        {
+          "rank": 5,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.819747
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_013",
+      "query": "تعالج هذه البنية عناصر التسلسل بالاعتماد على الانتباه لتحديد العلاقات بينها بدل الاعتماد على المعالجة المتكررة خطوة بخطوة.",
+      "language_style": "msa",
+      "expected_id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+      "expected_term": "مُحوِّل",
+      "expected_rank": 36,
+      "expected_score": 0.799405,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.828712
+        },
+        {
+          "rank": 2,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.827729
+        },
+        {
+          "rank": 3,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.825565
+        },
+        {
+          "rank": 4,
+          "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "term": "معالجة اللغات الطبيعية",
+          "score": 0.824989
+        },
+        {
+          "rank": 5,
+          "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+          "term": "شبكة عصبية تكرارية",
+          "score": 0.823519
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_014",
+      "query": "في بنية تنافسية تنشئ إحدى الشبكتين عينات اصطناعية تحاول محاكاة البيانات الحقيقية، بينما تقيّمها شبكة أخرى.",
+      "language_style": "msa",
+      "expected_id": "aae33486-5e2e-4fc6-8d53-9ced81dad5a5",
+      "expected_term": "مُولِّد",
+      "expected_rank": 32,
+      "expected_score": 0.801477,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+          "term": "شبكة عصبية اصطناعية",
+          "score": 0.837135
+        },
+        {
+          "rank": 2,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.830398
+        },
+        {
+          "rank": 3,
+          "id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "term": "شبكة عصبية ترشيحية",
+          "score": 0.828435
+        },
+        {
+          "rank": 4,
+          "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+          "term": "شبكة عصبية تكرارية",
+          "score": 0.82623
+        },
+        {
+          "rank": 5,
+          "id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+          "term": "ذكاء اصطناعي توليدي",
+          "score": 0.825272
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_015",
+      "query": "يقيّم النظام مسار القرارات من خلال القيمة التراكمية للإشارات المستقبلية، مع إمكان تقليل أثر القيم البعيدة زمنيًا.",
+      "language_style": "msa",
+      "expected_id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+      "expected_term": "عائد",
+      "expected_rank": 4,
+      "expected_score": 0.823454,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.838328
+        },
+        {
+          "rank": 2,
+          "id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+          "term": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "score": 0.831455
+        },
+        {
+          "rank": 3,
+          "id": "784fb957-1319-4ce8-afd7-10fd35512749",
+          "term": "تحليل المشاعر",
+          "score": 0.824678
+        },
+        {
+          "rank": 4,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.823454
+        },
+        {
+          "rank": 5,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.819745
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_016",
+      "query": "في مسألة تصنيف خاضعة للإشراف، يقترن كل مثال تدريبي بفئة صحيحة تمثل المخرج المرجعي المطلوب تعلمه.",
+      "language_style": "msa",
+      "expected_id": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+      "expected_term": "اسم",
+      "expected_rank": 42,
+      "expected_score": 0.790972,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+          "term": "تدريب",
+          "score": 0.838009
+        },
+        {
+          "rank": 2,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.835546
+        },
+        {
+          "rank": 3,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.834015
+        },
+        {
+          "rank": 4,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.816606
+        },
+        {
+          "rank": 5,
+          "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+          "term": "آلة المُتَّجهات الداعمة",
+          "score": 0.816011
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_017",
+      "query": "عندي مصفوفتين أبعادهم مختلفة بس متوافقة، والنظام وسّع البعد الأصغر تلقائيًا عشان يقدر يسوي الحساب بينهم.",
+      "language_style": "saudi_colloquial",
+      "expected_id": "45590793-f757-41fc-8325-5ed6303f02a8",
+      "expected_term": "بث",
+      "expected_rank": 6,
+      "expected_score": 0.819576,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+          "term": "آلة المُتَّجهات الداعمة",
+          "score": 0.832857
+        },
+        {
+          "rank": 2,
+          "id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+          "term": "متوسط الخطأ التربيعي",
+          "score": 0.823983
+        },
+        {
+          "rank": 3,
+          "id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+          "term": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "score": 0.82155
+        },
+        {
+          "rank": 4,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.820513
+        },
+        {
+          "rank": 5,
+          "id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+          "term": "انتشار عكسي",
+          "score": 0.819917
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_018",
+      "query": "تُدعَّم إجابة النظام بمعلومات مسترجعة من قاعدة معرفة خارجية حتى تعتمد الاستجابة على سياق موثوق ذي صلة.",
+      "language_style": "msa",
+      "expected_id": "5882bfa5-3d27-4a19-877c-6c0cd90a73b3",
+      "expected_term": "تأسيس",
+      "expected_rank": 18,
+      "expected_score": 0.806576,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.831918
+        },
+        {
+          "rank": 2,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.830261
+        },
+        {
+          "rank": 3,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.822282
+        },
+        {
+          "rank": 4,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.820692
+        },
+        {
+          "rank": 5,
+          "id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+          "term": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "score": 0.817075
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_019",
+      "query": "يُضبط سلوك النظام بحيث تكون أهدافه وقراراته أقرب إلى القيم والنوايا البشرية المقصودة وأكثر أمانًا وموثوقية.",
+      "language_style": "msa",
+      "expected_id": "605f7542-8289-4637-8cf8-0d6a16592e30",
+      "expected_term": "مواءمة",
+      "expected_rank": 18,
+      "expected_score": 0.801927,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.819344
+        },
+        {
+          "rank": 2,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.81581
+        },
+        {
+          "rank": 3,
+          "id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+          "term": "سياسة",
+          "score": 0.815376
+        },
+        {
+          "rank": 4,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.813042
+        },
+        {
+          "rank": 5,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.812856
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_020",
+      "query": "تُعدَّل معاملات الخوارزمية بصورة متكررة باستخدام أمثلة البيانات وقياس الخطأ حتى تتحسن قدرتها على التنبؤ.",
+      "language_style": "msa",
+      "expected_id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+      "expected_term": "تدريب",
+      "expected_rank": 35,
+      "expected_score": 0.799047,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "term": "بيانات ضخمة",
+          "score": 0.819857
+        },
+        {
+          "rank": 2,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.819237
+        },
+        {
+          "rank": 3,
+          "id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+          "term": "متوسط الخطأ التربيعي",
+          "score": 0.818586
+        },
+        {
+          "rank": 4,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.817992
+        },
+        {
+          "rank": 5,
+          "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+          "term": "حُزمة",
+          "score": 0.817637
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_021",
+      "query": "تُختزل الصيغ المصرفة المختلفة للكلمة إلى شكل مبسط مشترك بهدف تسهيل المعالجة والاسترجاع النصي.",
+      "language_style": "msa",
+      "expected_id": "99686190-8f2a-474a-9159-ace5fd8f07ad",
+      "expected_term": "تجذيع",
+      "expected_rank": 7,
+      "expected_score": 0.821526,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "term": "معالجة اللغات الطبيعية",
+          "score": 0.847459
+        },
+        {
+          "rank": 2,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.843102
+        },
+        {
+          "rank": 3,
+          "id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+          "term": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "score": 0.8279
+        },
+        {
+          "rank": 4,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.825073
+        },
+        {
+          "rank": 5,
+          "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "term": "نموذج لغوي كبير",
+          "score": 0.824944
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_022",
+      "query": "تعتمد الطريقة على شبكة عصبية متعددة المستويات تتعلم تمثيلات متدرجة للبيانات بدل الاكتفاء بطبقة حسابية بسيطة.",
+      "language_style": "msa",
+      "expected_id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+      "expected_term": "تعلُّم عميق",
+      "expected_rank": 4,
+      "expected_score": 0.835459,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+          "term": "شبكة عصبية اصطناعية",
+          "score": 0.852554
+        },
+        {
+          "rank": 2,
+          "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+          "term": "شبكة عصبية تكرارية",
+          "score": 0.846629
+        },
+        {
+          "rank": 3,
+          "id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "term": "شبكة عصبية ترشيحية",
+          "score": 0.841782
+        },
+        {
+          "rank": 4,
+          "id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+          "term": "تعلُّم عميق",
+          "score": 0.835459
+        },
+        {
+          "rank": 5,
+          "id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+          "term": "تزييف عميق",
+          "score": 0.831106
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_023",
+      "query": "تتعلم الخوارزمية من مجموعة أمثلة يرافق كل منها المخرج الصحيح المعروف مسبقًا، ثم تستخدم ما تعلمته على حالات جديدة.",
+      "language_style": "msa",
+      "expected_id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+      "expected_term": "تعلُّم موجَّه",
+      "expected_rank": 1,
+      "expected_score": 0.835427,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.835427
+        },
+        {
+          "rank": 2,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.828277
+        },
+        {
+          "rank": 3,
+          "id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+          "term": "تعلُّم الآلة",
+          "score": 0.821882
+        },
+        {
+          "rank": 4,
+          "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+          "term": "حُزمة",
+          "score": 0.815522
+        },
+        {
+          "rank": 5,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.815417
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_024",
+      "query": "تبحث الخوارزمية عن أنماط وتجميعات داخل بيانات لا تحتوي على فئات صحيحة محددة مسبقًا.",
+      "language_style": "msa",
+      "expected_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+      "expected_term": "تعلُّم غير موجَّه",
+      "expected_rank": 4,
+      "expected_score": 0.815817,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.83539
+        },
+        {
+          "rank": 2,
+          "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "term": "بيانات ضخمة",
+          "score": 0.825302
+        },
+        {
+          "rank": 3,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.818038
+        },
+        {
+          "rank": 4,
+          "id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+          "term": "تعلُّم غير موجَّه",
+          "score": 0.815817
+        },
+        {
+          "rank": 5,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.8142
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_025",
+      "query": "المودل ممتاز على بيانات التدريب، بس أول ما نجربه على بيانات جديدة يطيح أداؤه بشكل واضح.",
+      "language_style": "saudi_colloquial",
+      "expected_id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+      "expected_term": "فرط التخصيص",
+      "expected_rank": 15,
+      "expected_score": 0.80871,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "term": "بيانات ضخمة",
+          "score": 0.830931
+        },
+        {
+          "rank": 2,
+          "id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+          "term": "تدريب",
+          "score": 0.827194
+        },
+        {
+          "rank": 3,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.822963
+        },
+        {
+          "rank": 4,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.820923
+        },
+        {
+          "rank": 5,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.81993
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_026",
+      "query": "تمرر الخلية العصبية مجموع مدخلاتها الموزونة عبر تحويل غير خطي مثل ReLU كي تتمكن الشبكة من تمثيل علاقات معقدة.",
+      "language_style": "msa",
+      "expected_id": "37bde43b-0b34-457b-a23b-9aecf4a44fd9",
+      "expected_term": "دالة تنشيط",
+      "expected_rank": 13,
+      "expected_score": 0.817785,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+          "term": "شبكة عصبية تكرارية",
+          "score": 0.853754
+        },
+        {
+          "rank": 2,
+          "id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "term": "شبكة عصبية ترشيحية",
+          "score": 0.84402
+        },
+        {
+          "rank": 3,
+          "id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+          "term": "شبكة عصبية اصطناعية",
+          "score": 0.842956
+        },
+        {
+          "rank": 4,
+          "id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+          "term": "مُحوِّل",
+          "score": 0.827395
+        },
+        {
+          "rank": 5,
+          "id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+          "term": "تزييف عميق",
+          "score": 0.825736
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_027",
+      "query": "يبدأ حساب المشتقات من خطأ المخرجات ثم يتحرك عكسيًا عبر الشبكة لتحديد كيفية تعديل كل معامل وتقليل الخطأ.",
+      "language_style": "msa",
+      "expected_id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+      "expected_term": "انتشار عكسي",
+      "expected_rank": 2,
+      "expected_score": 0.829339,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+          "term": "متوسط الخطأ التربيعي",
+          "score": 0.835879
+        },
+        {
+          "rank": 2,
+          "id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+          "term": "انتشار عكسي",
+          "score": 0.829339
+        },
+        {
+          "rank": 3,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.828158
+        },
+        {
+          "rank": 4,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.827482
+        },
+        {
+          "rank": 5,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.817134
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_028",
+      "query": "يستطيع النظام إنشاء محتوى جديد مثل النصوص أو الصور استنادًا إلى الأنماط التي تعلمها من كميات كبيرة من البيانات.",
+      "language_style": "msa",
+      "expected_id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+      "expected_term": "ذكاء اصطناعي توليدي",
+      "expected_rank": 5,
+      "expected_score": 0.823104,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "term": "بيانات ضخمة",
+          "score": 0.843881
+        },
+        {
+          "rank": 2,
+          "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "term": "نموذج لغوي كبير",
+          "score": 0.83204
+        },
+        {
+          "rank": 3,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.831539
+        },
+        {
+          "rank": 4,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.825815
+        },
+        {
+          "rank": 5,
+          "id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+          "term": "ذكاء اصطناعي توليدي",
+          "score": 0.823104
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_029",
+      "query": "جعلت تقنيات حديثة الصور ومقاطع الفيديو المفبركة شديدة الواقعية إلى درجة يصعب معها أحيانًا تمييزها عن المحتوى الحقيقي.",
+      "language_style": "msa",
+      "expected_id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+      "expected_term": "تزييف عميق",
+      "expected_rank": 1,
+      "expected_score": 0.837002,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+          "term": "تزييف عميق",
+          "score": 0.837002
+        },
+        {
+          "rank": 2,
+          "id": "45590793-f757-41fc-8325-5ed6303f02a8",
+          "term": "بث",
+          "score": 0.816018
+        },
+        {
+          "rank": 3,
+          "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "term": "بيانات ضخمة",
+          "score": 0.815727
+        },
+        {
+          "rank": 4,
+          "id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+          "term": "ذكاء اصطناعي توليدي",
+          "score": 0.812867
+        },
+        {
+          "rank": 5,
+          "id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+          "term": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "score": 0.811981
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_030",
+      "query": "تُجزَّأ الجملة أو الفقرة إلى وحدات أصغر، مثل الكلمات أو أجزاء الكلمات، قبل أن تعالجها الخوارزمية اللغوية.",
+      "language_style": "msa",
+      "expected_id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+      "expected_term": "تقسيم النصوص",
+      "expected_rank": 1,
+      "expected_score": 0.856472,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.856472
+        },
+        {
+          "rank": 2,
+          "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "term": "معالجة اللغات الطبيعية",
+          "score": 0.844069
+        },
+        {
+          "rank": 3,
+          "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+          "term": "حُزمة",
+          "score": 0.831459
+        },
+        {
+          "rank": 4,
+          "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "term": "نموذج لغوي كبير",
+          "score": 0.824605
+        },
+        {
+          "rank": 5,
+          "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "term": "أمر",
+          "score": 0.822686
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_031",
+      "query": "نبغى نعرف من تعليقات العملاء إذا رأيهم عن المنتج إيجابي أو سلبي بدون ما نقرأ كل تعليق يدويًا.",
+      "language_style": "saudi_colloquial",
+      "expected_id": "784fb957-1319-4ce8-afd7-10fd35512749",
+      "expected_term": "تحليل المشاعر",
+      "expected_rank": 2,
+      "expected_score": 0.815618,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.817224
+        },
+        {
+          "rank": 2,
+          "id": "784fb957-1319-4ce8-afd7-10fd35512749",
+          "term": "تحليل المشاعر",
+          "score": 0.815618
+        },
+        {
+          "rank": 3,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.812459
+        },
+        {
+          "rank": 4,
+          "id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+          "term": "رؤية الحاسب",
+          "score": 0.809841
+        },
+        {
+          "rank": 5,
+          "id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+          "term": "تحليل المُكوِّن الرئيس",
+          "score": 0.809449
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_032",
+      "query": "يحوّل النظام النص تلقائيًا من لغة مصدر إلى لغة هدف مع محاولة الحفاظ على المعنى المقصود.",
+      "language_style": "msa",
+      "expected_id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+      "expected_term": "ترجمة الآلة",
+      "expected_rank": 1,
+      "expected_score": 0.841247,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+          "term": "ترجمة الآلة",
+          "score": 0.841247
+        },
+        {
+          "rank": 2,
+          "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "term": "معالجة اللغات الطبيعية",
+          "score": 0.839456
+        },
+        {
+          "rank": 3,
+          "id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+          "term": "مُحوِّل",
+          "score": 0.831655
+        },
+        {
+          "rank": 4,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.827985
+        },
+        {
+          "rank": 5,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.82241
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_033",
+      "query": "يصل المصنف إلى النتيجة عبر سلسلة من الشروط المتفرعة على السمات حتى ينتهي إلى قرار في عقدة نهائية.",
+      "language_style": "msa",
+      "expected_id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+      "expected_term": "شجرة القرار",
+      "expected_rank": 1,
+      "expected_score": 0.83738,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.83738
+        },
+        {
+          "rank": 2,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.828401
+        },
+        {
+          "rank": 3,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.82742
+        },
+        {
+          "rank": 4,
+          "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+          "term": "حُزمة",
+          "score": 0.82205
+        },
+        {
+          "rank": 5,
+          "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "term": "أمر",
+          "score": 0.819713
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_034",
+      "query": "تُحلل مجموعات كبيرة من السجلات لاكتشاف أنماط وعلاقات خفية يمكن استخدامها في التنبؤ ودعم القرار.",
+      "language_style": "msa",
+      "expected_id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+      "expected_term": "تنقيب في البيانات",
+      "expected_rank": 2,
+      "expected_score": 0.838777,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "term": "بيانات ضخمة",
+          "score": 0.848831
+        },
+        {
+          "rank": 2,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.838777
+        },
+        {
+          "rank": 3,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.823404
+        },
+        {
+          "rank": 4,
+          "id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+          "term": "تزييف عميق",
+          "score": 0.820866
+        },
+        {
+          "rank": 5,
+          "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "term": "نموذج لغوي كبير",
+          "score": 0.820843
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_035",
+      "query": "تتطلب مجموعات شديدة الحجم والتنوع وسرعة التدفق أدوات تحليل قادرة على التعامل مع هذا الحجم والتعقيد بكفاءة.",
+      "language_style": "msa",
+      "expected_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+      "expected_term": "بيانات ضخمة",
+      "expected_rank": 1,
+      "expected_score": 0.853101,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "term": "بيانات ضخمة",
+          "score": 0.853101
+        },
+        {
+          "rank": 2,
+          "id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+          "term": "تحليل المُكوِّن الرئيس",
+          "score": 0.82668
+        },
+        {
+          "rank": 3,
+          "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+          "term": "آلة المُتَّجهات الداعمة",
+          "score": 0.821443
+        },
+        {
+          "rank": 4,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.820899
+        },
+        {
+          "rank": 5,
+          "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "term": "نموذج لغوي كبير",
+          "score": 0.820182
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_036",
+      "query": "تمكّن التقنية الحواسيب والآلات من محاكاة قدرات مثل الفهم والتعلم وحل المشكلات واتخاذ القرارات بدرجات متفاوتة من الاستقلالية.",
+      "language_style": "msa",
+      "expected_id": "0acee532-2840-4a67-a98f-2522447757e0",
+      "expected_term": "ذكاء اصطناعي",
+      "expected_rank": 4,
+      "expected_score": 0.835949,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+          "term": "تعلُّم الآلة",
+          "score": 0.842833
+        },
+        {
+          "rank": 2,
+          "id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+          "term": "رؤية الحاسب",
+          "score": 0.84195
+        },
+        {
+          "rank": 3,
+          "id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+          "term": "ذكاء اصطناعي توليدي",
+          "score": 0.839045
+        },
+        {
+          "rank": 4,
+          "id": "0acee532-2840-4a67-a98f-2522447757e0",
+          "term": "ذكاء اصطناعي",
+          "score": 0.835949
+        },
+        {
+          "rank": 5,
+          "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+          "term": "آلة المُتَّجهات الداعمة",
+          "score": 0.831949
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_037",
+      "query": "الخوارزمية تتعلم من أمثلة قديمة، وبعدها نجربها على بيانات ما شافتها قبل عشان تتنبأ بالنتيجة.",
+      "language_style": "saudi_colloquial",
+      "expected_id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+      "expected_term": "تعلُّم الآلة",
+      "expected_rank": 6,
+      "expected_score": 0.81942,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.828895
+        },
+        {
+          "rank": 2,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.824781
+        },
+        {
+          "rank": 3,
+          "id": "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+          "term": "شجرة القرار",
+          "score": 0.823831
+        },
+        {
+          "rank": 4,
+          "id": "28c82b94-8d47-4728-b819-1544d54b9103",
+          "term": "حُزمة",
+          "score": 0.819779
+        },
+        {
+          "rank": 5,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.819768
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_038",
+      "query": "تستخدم الحواسيب تقنيات لتحليل اللغة البشرية وفهم النصوص وتنفيذ مهام لغوية مثل التصنيف واستخراج المعلومات.",
+      "language_style": "msa",
+      "expected_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+      "expected_term": "معالجة اللغات الطبيعية",
+      "expected_rank": 1,
+      "expected_score": 0.859887,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "term": "معالجة اللغات الطبيعية",
+          "score": 0.859887
+        },
+        {
+          "rank": 2,
+          "id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+          "term": "ترجمة الآلة",
+          "score": 0.841162
+        },
+        {
+          "rank": 3,
+          "id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+          "term": "رؤية الحاسب",
+          "score": 0.84011
+        },
+        {
+          "rank": 4,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.83825
+        },
+        {
+          "rank": 5,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.834769
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_039",
+      "query": "النظام اللغوي فيه عدد ضخم من parameters وتعلّم أنماط اللغة من كمية كبيرة جدًا من النصوص.",
+      "language_style": "arabic_english_mixed",
+      "expected_id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+      "expected_term": "نموذج لغوي كبير",
+      "expected_rank": 1,
+      "expected_score": 0.871021,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "term": "نموذج لغوي كبير",
+          "score": 0.871021
+        },
+        {
+          "rank": 2,
+          "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "term": "بيانات ضخمة",
+          "score": 0.83686
+        },
+        {
+          "rank": 3,
+          "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "term": "معالجة اللغات الطبيعية",
+          "score": 0.832922
+        },
+        {
+          "rank": 4,
+          "id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+          "term": "تعلُّم عميق",
+          "score": 0.831359
+        },
+        {
+          "rank": 5,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.829362
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_040",
+      "query": "تتكون البنية من عقد مترابطة مرتبة في مستويات، وتنتقل القيم بينها عبر معاملات تتغير أثناء التعلم.",
+      "language_style": "msa",
+      "expected_id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+      "expected_term": "شبكة عصبية اصطناعية",
+      "expected_rank": 24,
+      "expected_score": 0.806831,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.832428
+        },
+        {
+          "rank": 2,
+          "id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+          "term": "تعلُّم عميق",
+          "score": 0.828847
+        },
+        {
+          "rank": 3,
+          "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+          "term": "شبكة عصبية تكرارية",
+          "score": 0.821216
+        },
+        {
+          "rank": 4,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.818959
+        },
+        {
+          "rank": 5,
+          "id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+          "term": "دورة",
+          "score": 0.818598
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_041",
+      "query": "استخدمنا filters تتحرك على أجزاء صغيرة من الصورة عشان تستخرج الحواف والملامح البصرية المهمة.",
+      "language_style": "arabic_english_mixed",
+      "expected_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+      "expected_term": "شبكة عصبية ترشيحية",
+      "expected_rank": 41,
+      "expected_score": 0.792447,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.823779
+        },
+        {
+          "rank": 2,
+          "id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+          "term": "تزييف عميق",
+          "score": 0.81958
+        },
+        {
+          "rank": 3,
+          "id": "45590793-f757-41fc-8325-5ed6303f02a8",
+          "term": "بث",
+          "score": 0.818762
+        },
+        {
+          "rank": 4,
+          "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+          "term": "آلة المُتَّجهات الداعمة",
+          "score": 0.818218
+        },
+        {
+          "rank": 5,
+          "id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+          "term": "مُحوِّل",
+          "score": 0.816341
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_042",
+      "query": "تعالج البنية عناصر التسلسل بالتتابع مع تمرير حالة داخلية تحمل معلومات من الخطوات السابقة إلى اللاحقة.",
+      "language_style": "msa",
+      "expected_id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+      "expected_term": "شبكة عصبية تكرارية",
+      "expected_rank": 1,
+      "expected_score": 0.823647,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "00713a01-8add-47eb-bb34-f3d7c90a481b",
+          "term": "شبكة عصبية تكرارية",
+          "score": 0.823647
+        },
+        {
+          "rank": 2,
+          "id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+          "term": "دورة",
+          "score": 0.823247
+        },
+        {
+          "rank": 3,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.822124
+        },
+        {
+          "rank": 4,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.821978
+        },
+        {
+          "rank": 5,
+          "id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "term": "تعلُّم موجَّه",
+          "score": 0.820632
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_043",
+      "query": "تستخدم البنية بوابات تتحكم فيما يُحفظ ويُنسى من الحالة الداخلية، ما يساعد على تتبع الاعتماد البعيد في التسلسل.",
+      "language_style": "msa",
+      "expected_id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+      "expected_term": "ذاكرة قصيرة المدى مُطَوَّلة",
+      "expected_rank": 2,
+      "expected_score": 0.821662,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.821938
+        },
+        {
+          "rank": 2,
+          "id": "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+          "term": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "score": 0.821662
+        },
+        {
+          "rank": 3,
+          "id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+          "term": "آلة المُتَّجهات الداعمة",
+          "score": 0.818767
+        },
+        {
+          "rank": 4,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.816671
+        },
+        {
+          "rank": 5,
+          "id": "3ab189dc-93d3-4140-947a-d46677ca17ff",
+          "term": "تزييف عميق",
+          "score": 0.816459
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_044",
+      "query": "يبحث المصنف عن حد فاصل بين الفئات يحقق أكبر هامش ممكن، وتؤثر أقرب نقاط إلى هذا الحد في تحديده.",
+      "language_style": "msa",
+      "expected_id": "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+      "expected_term": "آلة المُتَّجهات الداعمة",
+      "expected_rank": 20,
+      "expected_score": 0.801411,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.821373
+        },
+        {
+          "rank": 2,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.8168
+        },
+        {
+          "rank": 3,
+          "id": "fa65c6dc-40ae-4fbe-8f5d-1721edd83752",
+          "term": "طبقة",
+          "score": 0.816032
+        },
+        {
+          "rank": 4,
+          "id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+          "term": "فرط التخصيص",
+          "score": 0.814593
+        },
+        {
+          "rank": 5,
+          "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "term": "نموذج لغوي كبير",
+          "score": 0.810318
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_045",
+      "query": "يستخرج النظام من النص إشارات إلى الأشخاص والمنظمات والأماكن وغيرها، ثم يصنف كل إشارة بحسب نوعها.",
+      "language_style": "msa",
+      "expected_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+      "expected_term": "تعرُّف على الكيانات المُسمّاة",
+      "expected_rank": 2,
+      "expected_score": 0.834046,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.841463
+        },
+        {
+          "rank": 2,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.834046
+        },
+        {
+          "rank": 3,
+          "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "term": "معالجة اللغات الطبيعية",
+          "score": 0.826004
+        },
+        {
+          "rank": 4,
+          "id": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+          "term": "اسم",
+          "score": 0.816017
+        },
+        {
+          "rank": 5,
+          "id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+          "term": "ترجمة الآلة",
+          "score": 0.812944
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_046",
+      "query": "النظام يسوي retrieval من قاعدة معرفة خارجية أول، وبعدها يمرر المعلومات للمكوّن التوليدي عشان يبني جوابه عليها.",
+      "language_style": "arabic_english_mixed",
+      "expected_id": "a338b836-30ee-471a-a164-f09c919243ce",
+      "expected_term": "توليد مُعَزَّز بالاسترجاع",
+      "expected_rank": 1,
+      "expected_score": 0.843034,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.843034
+        },
+        {
+          "rank": 2,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.832867
+        },
+        {
+          "rank": 3,
+          "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "term": "تنقيب في البيانات",
+          "score": 0.832301
+        },
+        {
+          "rank": 4,
+          "id": "aae33486-5e2e-4fc6-8d53-9ced81dad5a5",
+          "term": "مُولِّد",
+          "score": 0.826881
+        },
+        {
+          "rank": 5,
+          "id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+          "term": "ذكاء اصطناعي توليدي",
+          "score": 0.823653
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_047",
+      "query": "تُحوَّل المتغيرات المترابطة إلى محاور جديدة غير مترابطة تُرتب بحسب مقدار التباين الذي تفسره.",
+      "language_style": "msa",
+      "expected_id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+      "expected_term": "تحليل المُكوِّن الرئيس",
+      "expected_rank": 15,
+      "expected_score": 0.814672,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+          "term": "مُحوِّل",
+          "score": 0.832865
+        },
+        {
+          "rank": 2,
+          "id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+          "term": "انتشار عكسي",
+          "score": 0.832627
+        },
+        {
+          "rank": 3,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.828505
+        },
+        {
+          "rank": 4,
+          "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "term": "تقسيم النصوص",
+          "score": 0.826274
+        },
+        {
+          "rank": 5,
+          "id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+          "term": "تعلُّم غير موجَّه",
+          "score": 0.825444
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_048",
+      "query": "يُقاس أداء التنبؤ بأخذ متوسط مربعات الفروق بين القيم المتوقعة والقيم الحقيقية.",
+      "language_style": "msa",
+      "expected_id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+      "expected_term": "متوسط الخطأ التربيعي",
+      "expected_rank": 1,
+      "expected_score": 0.844355,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+          "term": "متوسط الخطأ التربيعي",
+          "score": 0.844355
+        },
+        {
+          "rank": 2,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.831387
+        },
+        {
+          "rank": 3,
+          "id": "784fb957-1319-4ce8-afd7-10fd35512749",
+          "term": "تحليل المشاعر",
+          "score": 0.823063
+        },
+        {
+          "rank": 4,
+          "id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+          "term": "تحليل المُكوِّن الرئيس",
+          "score": 0.822198
+        },
+        {
+          "rank": 5,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.818985
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_049",
+      "query": "نبغى النظام يفهم وش موجود في الصور والفيديو، مثل الأجسام والأشخاص والأنماط البصرية.",
+      "language_style": "saudi_colloquial",
+      "expected_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+      "expected_term": "رؤية الحاسب",
+      "expected_rank": 2,
+      "expected_score": 0.833606,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "term": "تعرُّف على الكيانات المُسمّاة",
+          "score": 0.838073
+        },
+        {
+          "rank": 2,
+          "id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+          "term": "رؤية الحاسب",
+          "score": 0.833606
+        },
+        {
+          "rank": 3,
+          "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "term": "أمر",
+          "score": 0.820927
+        },
+        {
+          "rank": 4,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.8207
+        },
+        {
+          "rank": 5,
+          "id": "784fb957-1319-4ce8-afd7-10fd35512749",
+          "term": "تحليل المشاعر",
+          "score": 0.820677
+        }
+      ]
+    },
+    {
+      "query_id": "GOLD_050",
+      "query": "المودل يحسب رقم يوضح قد إيش ناتجه بعيد عن القيمة الصحيحة، وبعدها يستخدمه عشان يعدّل نفسه.",
+      "language_style": "saudi_colloquial",
+      "expected_id": "51f2785a-f64c-4198-9c18-c93e04853146",
+      "expected_term": "دالة الخسارة",
+      "expected_rank": 3,
+      "expected_score": 0.829819,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "top5": [
+        {
+          "rank": 1,
+          "id": "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+          "term": "نموذج",
+          "score": 0.834655
+        },
+        {
+          "rank": 2,
+          "id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+          "term": "متوسط الخطأ التربيعي",
+          "score": 0.830122
+        },
+        {
+          "rank": 3,
+          "id": "51f2785a-f64c-4198-9c18-c93e04853146",
+          "term": "دالة الخسارة",
+          "score": 0.829819
+        },
+        {
+          "rank": 4,
+          "id": "129bbd2c-97f6-46b6-84da-179e936d9188",
+          "term": "عائد",
+          "score": 0.829732
+        },
+        {
+          "rank": 5,
+          "id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "term": "توليد مُعَزَّز بالاسترجاع",
+          "score": 0.829164
+        }
+      ]
+    }
+  ]
+}
