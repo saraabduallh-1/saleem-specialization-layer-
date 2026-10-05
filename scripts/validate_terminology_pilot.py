@@ -6,7 +6,9 @@ Checks:
   2. Real vs synthetic separation: positive/negative examples are all source_derived; synthetic text
      appears only in generated_examples and never duplicates a real example.
   3. Every negative example has a valid contrast_type, intended_sense and why_not_this_term.
-  4. Every source-derived quote is re-found in its (cached) source.
+  4. Every source-derived quote is re-found in its (cached) source. Quotes marked
+     image_transcribed_manual_visual_verification (corrupted PDF text layer) are a separate mode: only their
+     recorded anchor is machine-checked; the full text was compared by eye with the rendered page.
   5. With --check-urls: every cited URL answers HTTP 200.
 
 usage: python scripts/validate_terminology_pilot.py [--check-urls]
@@ -15,6 +17,7 @@ import json
 import re
 import sys
 
+from build_terminology_pilot import IMAGE_TRANSCRIBED
 from pilot_curation import EGYPT
 from pilot_sources import (PROJECT_ROOT, asjp_abstract, asjp_article_url, fuzzy, get, pdf_page_text,
                            url_status)
@@ -36,6 +39,14 @@ def quote_found(e):
             return e["text"] in (asjp_abstract(get(url)) or "")
         # Saudi laws and other web pages (e.g. Hindawi books, journal pages): whitespace-collapsed page text
         return e["text"] in re.sub(r"\s+", " ", get(url))
+    if e["verification"] == IMAGE_TRANSCRIBED:
+        # Separate mode (text layer too corrupted for a full match): the quote was checked by eye against the
+        # rendered page; here only the recorded anchor is checked against the text layer and the quote.
+        anchor = e.get("text_layer_anchor") or ""
+        return bool(anchor and e.get("manual_verification") and e.get("pdf_page")) \
+            and fuzzy(anchor) in fuzzy(e["text"]) and fuzzy(anchor) in fuzzy(pdf_page_text(url, e["pdf_page"]))
+    if e.get("pdf_page"):  # PDF quote whose record stores its PDF page (e.g. HIAST theses)
+        return fuzzy(e["text"]) in fuzzy(pdf_page_text(url, e["pdf_page"]))
     pdf_url = e.get("full_text_url") or EGYPT
     page = int(re.search(r"PDF رقم (\d+)", e["page_or_section"]).group(1)) if url == EGYPT \
         else _asjp_pdf_page(e)

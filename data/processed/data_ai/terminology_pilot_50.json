@@ -380,7 +380,36 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "تُستخدم خوارزمية التعلم Q-learning لحالات منتهية وإجراءات متقطعة لتحديد السياسة الأمثل في عملية ماركوف MDP من خلال الحفاظ على جدول Q-Table بجميع الحالات والإجراءات الممكنة، وتحديث قيم Q بشكل متكرر لكل زوج من الحالات والإجراءات باستخدام معادلة بيلمان حتى يتقارب التابع Q من القيمة Q الأمثل.",
+        "source_title": "دراسة وتحسين أداء النفاذ المتعدد في منظومات الاتصالات اللاسلكية الخاصة بشبكات الطيران المسير",
+        "source_type": "university_thesis",
+        "authors_or_org": [
+          "أسامة محمود"
+        ],
+        "year": 2025,
+        "page_or_section": "ص 40 (صفحة PDF رقم 61) — الفصل الثالث: النفاذ المتعدد",
+        "url_or_doi": "https://hiast.edu.sy/sites/default/files/MasterPHD/69314dafa640d.pdf",
+        "institution": "المعهد العالي للعلوم التطبيقية والتكنولوجيا (HIAST)، الجمهورية العربية السورية",
+        "degree": "أطروحة دكتوراه في هندسة الاتصالات",
+        "supervisors": [
+          "د. خلدون خرزم",
+          "د. وسام التبان"
+        ],
+        "pdf_page": 61,
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "page_image_transcription+fuzzy_text_layer_match",
+        "audit": {
+          "exact_siwar_term_present": true,
+          "max_gold_similarity": 0.316,
+          "closest_gold_query": "GOLD_015",
+          "checked_at": "2026-10-05",
+          "lexical_form_used": "السياسة الأمثل"
+        }
+      }
+    ],
     "negative_examples": [
       {
         "text": "يهدف النظام إلى تنظيم نشاط الإعلام المرئي والمسموع داخل المملكة، وتطويره، والعمل على توفير البيئة الاستثمارية الملائمة له، والعمل على أن يكون محتواه متسقاً والسياسة الإعلامية للمملكة.",
@@ -450,7 +479,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 2,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -891,7 +920,38 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "نُفّذ التدريب حتى 80 دورة تدريبية (Epochs) كما يبين الشكل (9.4)،حيث يُلاحظ انخفاض خسارة التدريب انخفضت بشكلٍ مطّرد، مما يشير إلى قدرة النموذج على التعلّم الفعّال من المعطيات.",
+        "source_title": "حذف الصدى الصوتي لتحسين دقة أنظمة تعرّف الكلام آلياً",
+        "source_type": "university_thesis",
+        "authors_or_org": [
+          "عبير عبدالله"
+        ],
+        "year": 2025,
+        "page_or_section": "ص 69 (صفحة PDF رقم 85) — 6.4 تدريب النموذج",
+        "url_or_doi": "https://hiast.edu.sy/sites/default/files/MasterPHD/697b1952dff04.pdf",
+        "institution": "المعهد العالي للعلوم التطبيقية والتكنولوجيا (HIAST)، الجمهورية العربية السورية",
+        "degree": "رسالة ماجستير في هندسة الاتصالات",
+        "supervisors": [
+          "د. أميمة الدكاك",
+          "د. آصف جعفر"
+        ],
+        "pdf_page": 85,
+        "text_layer_anchor": "80 دورة تدريبية (Epochs)",
+        "manual_verification": "نُقل النص حرفيًا من صورة الصفحة المعروضة (PDF ص 85) وقورن بها بصريًا كلمةً كلمة؛ طبقة النص في الملف تُفسد ترميز بعض الحروف (مثل «حىت» بدل «حتى» و«يشري» بدل «يشير») فلا يمكن مطابقة النص كاملًا آليًا. الإملاء والتركيب كما في الأصل (بما في ذلك «انخفاض خسارة التدريب انخفضت» وغياب المسافة بعد الفاصلة).",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "image_transcribed_manual_visual_verification",
+        "audit": {
+          "exact_siwar_term_present": true,
+          "max_gold_similarity": 0.368,
+          "closest_gold_query": "GOLD_028",
+          "checked_at": "2026-10-05",
+          "lexical_form_used": "دورة تدريبية"
+        }
+      }
+    ],
     "negative_examples": [
       {
         "text": "توصلنا إلى نتيجة مفادها أن العجز الموازني يلعب دورا أساسيا في تحريك الدورة الاقتصادية، ويظهر هذا التأثير على الناتج المحلي الحقيقي.",
@@ -939,7 +999,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 1,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -1011,7 +1071,32 @@
       "n_real_positive": 0,
       "n_real_negative": 1,
       "n_synthetic": 1,
-      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment.",
+      "positive_example_unresolved": {
+        "reason": "terminological_mismatch",
+        "checked_at": "2026-10-05",
+        "siwar_forms": [
+          "حُزمة",
+          "حجم الحُزمة",
+          "حُزمة صغيرة",
+          "تسوية الحُزمة"
+        ],
+        "observed_variants": [
+          "دفعة",
+          "حجم الدفعة",
+          "دفعة مصغرة"
+        ],
+        "note": "لم يُعثر على مصدر عربي موثوق يستعمل «حُزمة» بمعنى Batch في تدريب النماذج. المصادر العربية الموثوقة التي فُحصت تستعمل باطّراد «دفعة/حجم الدفعة/دفعة مصغّرة» (كتاب الذكاء الاصطناعي لوزارة التعليم السعودية 1448هـ ص 214، وخمس رسائل جامعية من المعهد العالي للعلوم التطبيقية والتكنولوجيا). ورود «حُزم» في المصادر المفحوصة كان بمعنى حزم الطيف/الترددات أو حزم الشبكات. لا تُعامل «دفعة» على أنها الوحدة المعجمية نفسها.",
+        "sources_checked": [
+          "Saudi MoE AI textbook (1448 AH)",
+          "HIAST theses (13 checked)",
+          "ASJP abstracts",
+          "SDAIA publications",
+          "KSAA publications",
+          "Hindawi AI collection",
+          "Egypt national GenAI guidelines"
+        ]
+      }
     }
   },
   {
@@ -1237,7 +1322,36 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "يعد تدريب GANs أمرًا صعبًا بسبب الحاجة إلى تحقيق توازن دقيق بين المولد (Generator) و المميز (Discriminator) إذا لم يتم تحقيق هذا التوازن، فقد يؤدي ذلك إلى مشاكل مثل عدم الاستقرار أثناء التدريب أو إنتاج صور ذات جودة منخفضة [23].",
+        "source_title": "نموذج لتحسين دقة الفيديو اعتماداً على الشبكات العصبونية العُقدية",
+        "source_type": "university_thesis",
+        "authors_or_org": [
+          "هيلدا زاهر"
+        ],
+        "year": 2024,
+        "page_or_section": "ص 9 (صفحة PDF رقم 23) — سلبيات الشبكات الخصومة التوليدية (GANs) — البند 1: تحديات التوازن في التدريب",
+        "url_or_doi": "https://hiast.edu.sy/sites/default/files/MasterPHD/67d2b9af62c9b.pdf",
+        "institution": "المعهد العالي للعلوم التطبيقية والتكنولوجيا (HIAST)، الجمهورية العربية السورية",
+        "degree": "رسالة ماجستير في الهندسة المعلوماتية، اختصاص نظم المعطيات الكبيرة",
+        "supervisors": [
+          "د. آصف جعفر",
+          "د. باسم السهوة"
+        ],
+        "pdf_page": 23,
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "page_image_transcription+fuzzy_text_layer_match",
+        "audit": {
+          "exact_siwar_term_present": true,
+          "max_gold_similarity": 0.317,
+          "closest_gold_query": "GOLD_033",
+          "checked_at": "2026-10-05",
+          "lexical_form_used": "المولد"
+        }
+      }
+    ],
     "negative_examples": [
       {
         "text": "ان اغلب المناطق الريفية والصحراوية في العالم النامي وخاصة في الدولة العراقية, بعيدة عن انظار الدولة في توفر مصادر الطاقة اللازمة لسد الاحتياجات التي تعتمد عليها الزراعة وعلى جميع المستويات بعد سقوط النظام السابق 2003 وخاصة مصادر التقليدية للطاقة (مادة الديزل) للاعتماد في عملية الري, اذ انها امدادات غير منتظمة وتتعرض بين الحين والآخر الى تلكأ التجهيز من قبل شركة توزيع المنتجات النفطية لعدم كفاية منتج مادة الديزل المنتج محليا من شركات المصافي النفطية, لأسباب عديدة تتعلق بالزيادة المطردة للمركبات التي تعتمد على الديزل وتجهيز المولدات الكهربائية الاهلية نتيجة عدم كفاية الطاقة الكهربائية المجهزة للمناطق السكنية وغيرها من الأسباب التي تجعل قصور المزارعين في الريف ام المناطق الصحراوية في الحصول على مادة الديزل المستخدم في عمليات الري.",
@@ -1285,7 +1399,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 1,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -1306,7 +1420,35 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "الهدف الجوهري لخوارزميّة التعلم المعزز هو البحث التكراري عن السّياسة المثلى التي تعظّم العائد التراكمي المتوقّع (المكافأة التراكميّة الإجماليّة).",
+        "source_title": "استخدام تقنيات التعلّم المعزّز لتحقيق النفاذ الديناميكي للطيف في شبكات الراديو الإدراكي",
+        "source_type": "university_thesis",
+        "authors_or_org": [
+          "ميّار منصور"
+        ],
+        "year": 2025,
+        "page_or_section": "ص 15 (صفحة PDF رقم 35) — 1-3-3 بنية التعلّم المعزّز",
+        "url_or_doi": "https://hiast.edu.sy/sites/default/files/MasterPHD/695cf4182740b.pdf",
+        "institution": "المعهد العالي للعلوم التطبيقية والتكنولوجيا (HIAST)، الجمهورية العربية السورية",
+        "degree": "رسالة ماجستير في نظم الاتصالات الراديوية والنقالة",
+        "supervisors": [
+          "د. وسام التبان"
+        ],
+        "pdf_page": 35,
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "page_image_transcription+fuzzy_text_layer_match",
+        "audit": {
+          "exact_siwar_term_present": true,
+          "max_gold_similarity": 0.352,
+          "closest_gold_query": "GOLD_048",
+          "checked_at": "2026-10-05",
+          "lexical_form_used": "العائد التراكمي المتوقّع"
+        }
+      }
+    ],
     "negative_examples": [
       {
         "text": "يقدم هذا البحث دراسة تطبيقية في عينة من المشاريع الاستثمارية العاملة في ليبيا، والتي يهدف من خلالها إلى معرفة مدى تأثير تغير العائد المتحقق على العائد المطلوب من الاستثمار في ظل استخدام نموذج (CAPM).",
@@ -1376,7 +1518,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 2,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -1583,7 +1725,24 @@
       "n_real_positive": 0,
       "n_real_negative": 2,
       "n_synthetic": 1,
-      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
+      "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment.",
+      "positive_example_unresolved": {
+        "reason": "source_scarcity",
+        "checked_at": "2026-10-05",
+        "note": "لم يُعثر على استعمال عربي موثوق ومستقل لـ«البث» بمعنى Broadcasting في المصفوفات/الموترات بعد البحث في المصادر الأكاديمية والرسمية والتقنية المتاحة. استُبعد توثيق OpenXLA (ومرآته على tensorflow.org/xla) لأنه مصدر اختبار Gold لهذا المصطلح. ما وُجد من «البث» كان بمعنى البث الإذاعي/الفضائي أو البث الشبكي (Network Broadcasting)، ودليل TensorFlow للموترات بالعربية غير مترجم.",
+        "excluded_sources": [
+          "https://openxla.org/xla/broadcasting?hl=ar (Gold source for this target)"
+        ],
+        "sources_checked": [
+          "Saudi MoE AI textbook (1448 AH)",
+          "HIAST theses",
+          "TensorFlow docs (hl=ar)",
+          "ASJP abstracts",
+          "Hindawi AI collection",
+          "KSAA publications",
+          "web search"
+        ]
+      }
     }
   },
   {
@@ -1601,7 +1760,31 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "يتمثل أحد عوامل التخفيف المهمة في Microsoft Copilot في تأسيس المحتوى الذي تم إنشاؤه بواسطة الذكاء الاصطناعي في بيانات الأعمال ذات الصلة والتي يمكن للمستخدم الوصول إليها استنادا إلى أذوناته.",
+        "source_title": "بطاقة التطبيق: Microsoft Copilot (للمؤسسات)",
+        "source_type": "official_technical_documentation",
+        "authors_or_org": [
+          "Microsoft — الترجمة العربية الرسمية على Microsoft Learn"
+        ],
+        "year": 2026,
+        "page_or_section": "عوامل تخفيف المخاطر — التزويد بالمصادر في بيانات الأعمال",
+        "url_or_doi": "https://learn.microsoft.com/ar-sa/copilot/microsoft-365/microsoft-365-copilot-transparency-note",
+        "document_date": "2026-08-18",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source",
+        "terminology_note": "يتفاوت الاستعمال العربي لمفهوم Grounding بين المصادر: «تأسيس» (هذا المصدر)، و«تأصيل» (المبادئ التوجيهية المصرية للذكاء الاصطناعي التوليدي)، و«مؤرض/غير مؤرض» و«التزويد بالمصادر» (في هذا المستند نفسه). لا تُعامل هذه الصيغ على أنها الوحدة المعجمية نفسها. «أذوناته» كما في الأصل. النطاق learn.microsoft.com مشترك مع مصدر Gold آخر (GOLD_028) لكن المستند والرابط مختلفان ولا تداخل نصي.",
+        "audit": {
+          "exact_siwar_term_present": true,
+          "max_gold_similarity": 0.363,
+          "closest_gold_query": "GOLD_006",
+          "checked_at": "2026-10-05",
+          "lexical_form_used": "تأسيس"
+        }
+      }
+    ],
     "negative_examples": [
       {
         "text": "يقدم المؤسسون طلب تأسيس الشركة وقيدها إلى السجل التجاري، مرافقًا له عقد التأسيس أو النظام الأساس والبيانات والوثائق اللازمة وفقًا لشكل الشركة.",
@@ -1671,7 +1854,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 2,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -1879,7 +2062,38 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "يتم ضمن مكوّن معالجة السؤال تصنيفه أولاً لأحد الأصناف الأربعة التي يعتمدها النظام ومن ثم إجراء مراحل المعالجة اللغوية النحوية على كلمات السؤال (التجذيع واستخراج نمط الكلام).",
+        "source_title": "نظام إجابة آلية باللغة العربية",
+        "source_type": "university_thesis",
+        "authors_or_org": [
+          "لانا الصّباغ"
+        ],
+        "year": 2021,
+        "page_or_section": "ص 44 (صفحة PDF رقم 45) — 2.1.2 SimBioNLQA – 2020 — آلية العمل المتّبعة",
+        "url_or_doi": "https://hiast.edu.sy/sites/default/files/MasterPHD/615567d649579.pdf",
+        "institution": "المعهد العالي للعلوم التطبيقية والتكنولوجيا (HIAST)، الجمهورية العربية السورية",
+        "degree": "رسالة ماجستير في نظم المعطيات الكبيرة",
+        "supervisors": [
+          "د. أميمة الدكاك",
+          "د. ندى غنيم"
+        ],
+        "pdf_page": 45,
+        "text_layer_anchor": "السؤال (التجذيع واستخراج",
+        "manual_verification": "نُقل النص حرفيًا من صورة الصفحة المعروضة (PDF ص 45) وقورن بها بصريًا كلمةً كلمة؛ طبقة النص تفسد ترميز بعض الكلمات (مثل «منط» بدل «نمط») وتعيد ترتيب الأسطر، فلا يمكن مطابقة النص كاملًا آليًا. لم يُعتمد مصدر مجمع الملك سلمان («مقدمة في حوسبة اللغة العربية» ص 55) لأن الاستعمال فيه بند في قائمة وطبقة نصه مفسدة أيضًا.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "image_transcribed_manual_visual_verification",
+        "audit": {
+          "exact_siwar_term_present": true,
+          "max_gold_similarity": 0.355,
+          "closest_gold_query": "GOLD_013",
+          "checked_at": "2026-10-05",
+          "lexical_form_used": "التجذيع"
+        }
+      }
+    ],
     "negative_examples": [],
     "generated_examples": [
       {
@@ -1901,7 +2115,7 @@
       "selection_category": "technical",
       "has_documented_competing_sense": false,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 0,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."

@@ -20,6 +20,9 @@ BASE = PROJECT_ROOT / "data/processed/data_ai/terminology_base.json"
 RAW = PROJECT_ROOT / "data/raw/data_ai/siwar_data_ai_dictionary.json"
 OUT = PROJECT_ROOT / "data/processed/data_ai/terminology_pilot_50.json"
 RETRIEVED = "2026-10-04"  # date the cited sources were retrieved and checked
+# Verification mode for quotes whose PDF text layer is too corrupted to match in full (kept separate from
+# exact_substring_of_source and from the fuzzy text-layer match).
+IMAGE_TRANSCRIBED = "image_transcribed_manual_visual_verification"
 
 problems = []
 
@@ -114,6 +117,24 @@ def resolve(ex, term):
             out["page_or_section"] = ex["section"]
             out["url_or_doi"] = ex["url"]
         verification = "exact_substring_of_source"
+    elif src in ("pdf", "image"):
+        layer = fuzzy(pdf_page_text(ex["url"], ex["pdf_page"]))
+        if src == "pdf":
+            ok = fuzzy(ex["manual_text"]) in layer
+            verification = "page_image_transcription+fuzzy_text_layer_match"
+        else:
+            # corrupted text layer: only the recorded anchor (also part of the quote) is machine-checked
+            ok = fuzzy(ex["anchor"]) in layer and fuzzy(ex["anchor"]) in fuzzy(ex["manual_text"])
+            verification = IMAGE_TRANSCRIBED
+        text = ex["manual_text"] if ok else None
+        if text:
+            out.update(copy.deepcopy(ex["meta"]))
+            out["page_or_section"] = f"ص {ex['printed_page']} (صفحة PDF رقم {ex['pdf_page']}) — {ex['section']}"
+            out["url_or_doi"] = ex["url"]
+            out["pdf_page"] = ex["pdf_page"]
+            if src == "image":
+                out["text_layer_anchor"] = ex["anchor"]
+                out["manual_verification"] = ex["manual_verification"]
     else:
         raise ValueError(src)
     if not text:
@@ -121,7 +142,7 @@ def resolve(ex, term):
         return None
     out.update({"text": text, "data_origin": "source_derived", "retrieved_at": ex.get("retrieved", RETRIEVED),
                 "verification": verification})
-    for k in ("intended_sense", "why_not_this_term", "contrast_type"):
+    for k in ("intended_sense", "why_not_this_term", "contrast_type", "terminology_note", "audit"):
         if k in ex:
             out[k] = ex[k]
     order = ["text", "contrast_type", "intended_sense", "why_not_this_term", "source_title", "source_type",
@@ -173,6 +194,10 @@ def main():
             "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. "
                                  "generated_examples are synthetic and must be excluded from the main retrieval experiment.",
         }
+        if "unresolved" in cur:
+            if rec["positive_examples"]:
+                problems.append(f"[{key}] marked unresolved but has positive examples")
+            rec["pilot"]["positive_example_unresolved"] = copy.deepcopy(cur["unresolved"])
         out.append(rec)
 
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -95,6 +95,64 @@ def R2(ex):
     return {**ex, "retrieved": ROUND2}
 
 
+# Third enrichment round (the 8 entries still without a positive example after round 2).
+ROUND3 = "2026-10-05"
+
+HIAST = "https://hiast.edu.sy/sites/default/files/MasterPHD/"
+_HIAST_ORG = "المعهد العالي للعلوم التطبيقية والتكنولوجيا (HIAST)، الجمهورية العربية السورية"
+
+
+def _thesis(title, author, degree, year, supervisors):
+    return {"source_title": title, "source_type": "university_thesis", "authors_or_org": [author], "year": year,
+            "institution": _HIAST_ORG, "degree": degree, "supervisors": supervisors}
+
+
+THESES = {
+    "uav_phd": _thesis("دراسة وتحسين أداء النفاذ المتعدد في منظومات الاتصالات اللاسلكية الخاصة بشبكات الطيران المسير",
+                       "أسامة محمود", "أطروحة دكتوراه في هندسة الاتصالات", 2025, ["د. خلدون خرزم", "د. وسام التبان"]),
+    "rl_spectrum": _thesis("استخدام تقنيات التعلّم المعزّز لتحقيق النفاذ الديناميكي للطيف في شبكات الراديو الإدراكي",
+                           "ميّار منصور", "رسالة ماجستير في نظم الاتصالات الراديوية والنقالة", 2025, ["د. وسام التبان"]),
+    "echo_asr": _thesis("حذف الصدى الصوتي لتحسين دقة أنظمة تعرّف الكلام آلياً", "عبير عبدالله",
+                        "رسالة ماجستير في هندسة الاتصالات", 2025, ["د. أميمة الدكاك", "د. آصف جعفر"]),
+    "video_sr": _thesis("نموذج لتحسين دقة الفيديو اعتماداً على الشبكات العصبونية العُقدية", "هيلدا زاهر",
+                        "رسالة ماجستير في الهندسة المعلوماتية، اختصاص نظم المعطيات الكبيرة", 2024,
+                        ["د. آصف جعفر", "د. باسم السهوة"]),
+    "arabic_qa": _thesis("نظام إجابة آلية باللغة العربية", "لانا الصّباغ", "رسالة ماجستير في نظم المعطيات الكبيرة", 2021,
+                         ["د. أميمة الدكاك", "د. ندى غنيم"]),
+}
+MS_COPILOT_NOTE = {
+    "source_title": "بطاقة التطبيق: Microsoft Copilot (للمؤسسات)",
+    "source_type": "official_technical_documentation",
+    "authors_or_org": ["Microsoft — الترجمة العربية الرسمية على Microsoft Learn"],
+    "year": 2026,
+    "document_date": "2026-08-18",
+}
+
+
+def audit(exact, max_gold_similarity, closest_gold, lexical_form=None):
+    """Round-3 audit record: exact Siwar term present?, form actually used, Gold-similarity check at curation time."""
+    a = {"exact_siwar_term_present": exact, "max_gold_similarity": max_gold_similarity,
+         "closest_gold_query": closest_gold, "checked_at": ROUND3}
+    if lexical_form:
+        a["lexical_form_used"] = lexical_form
+    return a
+
+
+def P(thesis, file_id, pdf_page, printed_page, section, text, **notes):
+    """PDF quote transcribed from the page image and fuzzily matched against the PDF text layer
+    (same verification as the Egypt / ASJP-PDF quotes)."""
+    return {"src": "pdf", "url": f"{HIAST}{file_id}.pdf", "meta": THESES[thesis], "pdf_page": pdf_page,
+            "printed_page": printed_page, "section": section, "manual_text": text, "retrieved": ROUND3, **notes}
+
+
+def IMG(thesis, file_id, pdf_page, printed_page, section, text, anchor, check, **notes):
+    """Image-transcribed quote whose PDF text layer is too corrupted to match the full text.
+    Separate verification mode: only `anchor` (a short span that is also in the quote) is checked against the
+    text layer; the full text was compared by eye with the rendered page (`check`)."""
+    return {**P(thesis, file_id, pdf_page, printed_page, section, text, **notes), "src": "image",
+            "anchor": anchor, "manual_verification": check}
+
+
 CONTRAST_TYPES = ("different_sense", "different_domain", "abbreviation_collision")
 
 
@@ -176,7 +234,11 @@ CURATION = {
     },
     "سياسة": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            P("uav_phd", "69314dafa640d", 61, "40", "الفصل الثالث: النفاذ المتعدد",
+              "تُستخدم خوارزمية التعلم Q-learning لحالات منتهية وإجراءات متقطعة لتحديد السياسة الأمثل في عملية ماركوف MDP من خلال الحفاظ على جدول Q-Table بجميع الحالات والإجراءات الممكنة، وتحديث قيم Q بشكل متكرر لكل زوج من الحالات والإجراءات باستخدام معادلة بيلمان حتى يتقارب التابع Q من القيمة Q الأمثل.",
+              audit=audit(True, 0.316, "GOLD_015", "السياسة الأمثل")),
+        ],
         "neg": [
             N(L("media", "يهدف النظام إلى تنظيم نشاط الإعلام المرئي والمسموع داخل المملكة", "والسياسة الإعلامية للمملكة.", "المادة الثانية"),
               "سياسة = توجّه حكومي عام يحكم قطاعًا (Public/Media Policy)",
@@ -261,7 +323,13 @@ CURATION = {
     },
     "دورة": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            IMG("echo_asr", "697b1952dff04", 85, "69", "6.4 تدريب النموذج",
+                "نُفّذ التدريب حتى 80 دورة تدريبية (Epochs) كما يبين الشكل (9.4)،حيث يُلاحظ انخفاض خسارة التدريب انخفضت بشكلٍ مطّرد، مما يشير إلى قدرة النموذج على التعلّم الفعّال من المعطيات.",
+                "80 دورة تدريبية (Epochs)",
+                "نُقل النص حرفيًا من صورة الصفحة المعروضة (PDF ص 85) وقورن بها بصريًا كلمةً كلمة؛ طبقة النص في الملف تُفسد ترميز بعض الحروف (مثل «حىت» بدل «حتى» و«يشري» بدل «يشير») فلا يمكن مطابقة النص كاملًا آليًا. الإملاء والتركيب كما في الأصل (بما في ذلك «انخفاض خسارة التدريب انخفضت» وغياب المسافة بعد الفاصلة).",
+                audit=audit(True, 0.368, "GOLD_028", "دورة تدريبية")),
+        ],
         "neg": [
             N(A(122153, "توصلنا إلى نتيجة مفادها أن العجز الموازني يلعب دورا أساسيا في تحريك الدورة الاقتصادية", None),
               "الدورة الاقتصادية = تقلّبات النشاط الاقتصادي بين الرواج والركود (Business Cycle)",
@@ -275,6 +343,16 @@ CURATION = {
     "حزمة": {
         "category": "ambiguous",
         "pos": [],
+        "unresolved": {
+            "reason": "terminological_mismatch",
+            "checked_at": ROUND3,
+            "siwar_forms": ["حُزمة", "حجم الحُزمة", "حُزمة صغيرة", "تسوية الحُزمة"],
+            "observed_variants": ["دفعة", "حجم الدفعة", "دفعة مصغرة"],
+            "note": "لم يُعثر على مصدر عربي موثوق يستعمل «حُزمة» بمعنى Batch في تدريب النماذج. المصادر العربية الموثوقة التي فُحصت تستعمل باطّراد «دفعة/حجم الدفعة/دفعة مصغّرة» (كتاب الذكاء الاصطناعي لوزارة التعليم السعودية 1448هـ ص 214، وخمس رسائل جامعية من المعهد العالي للعلوم التطبيقية والتكنولوجيا). ورود «حُزم» في المصادر المفحوصة كان بمعنى حزم الطيف/الترددات أو حزم الشبكات. لا تُعامل «دفعة» على أنها الوحدة المعجمية نفسها.",
+            "sources_checked": ["Saudi MoE AI textbook (1448 AH)", "HIAST theses (13 checked)", "ASJP abstracts",
+                                "SDAIA publications", "KSAA publications", "Hindawi AI collection",
+                                "Egypt national GenAI guidelines"],
+        },
         "neg": [
             N(A(279195, "إضافة الى تسطير حزمة تدابير تحفيزية للنشاط الاقتصادي", None),
               "حزمة تدابير = مجموعة إجراءات حكومية/اقتصادية تُطلق معًا (Stimulus Package)",
@@ -319,7 +397,11 @@ CURATION = {
     },
     "مولد": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            P("video_sr", "67d2b9af62c9b", 23, "9", "سلبيات الشبكات الخصومة التوليدية (GANs) — البند 1: تحديات التوازن في التدريب",
+              "يعد تدريب GANs أمرًا صعبًا بسبب الحاجة إلى تحقيق توازن دقيق بين المولد (Generator) و المميز (Discriminator) إذا لم يتم تحقيق هذا التوازن، فقد يؤدي ذلك إلى مشاكل مثل عدم الاستقرار أثناء التدريب أو إنتاج صور ذات جودة منخفضة [23].",
+              audit=audit(True, 0.317, "GOLD_033", "المولد")),
+        ],
         "neg": [
             N(A(250855, "ان اغلب المناطق الريفية والصحراوية في العالم النامي", "في عمليات الري."),
               "مولّدات كهربائية = آلات تنتج الطاقة الكهربائية (Electric Generators)",
@@ -332,7 +414,11 @@ CURATION = {
     },
     "عائد": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            P("rl_spectrum", "695cf4182740b", 35, "15", "1-3-3 بنية التعلّم المعزّز",
+              "الهدف الجوهري لخوارزميّة التعلم المعزز هو البحث التكراري عن السّياسة المثلى التي تعظّم العائد التراكمي المتوقّع (المكافأة التراكميّة الإجماليّة).",
+              audit=audit(True, 0.352, "GOLD_048", "العائد التراكمي المتوقّع")),
+        ],
         "neg": [
             N(A(6028, "يقدم هذا البحث دراسة تطبيقية في عينة من المشاريع الاستثمارية", None),
               "العائد = الربح أو المردود المالي للاستثمار (Financial Return)",
@@ -369,6 +455,14 @@ CURATION = {
     "بث": {
         "category": "ambiguous",
         "pos": [],
+        "unresolved": {
+            "reason": "source_scarcity",
+            "checked_at": ROUND3,
+            "note": "لم يُعثر على استعمال عربي موثوق ومستقل لـ«البث» بمعنى Broadcasting في المصفوفات/الموترات بعد البحث في المصادر الأكاديمية والرسمية والتقنية المتاحة. استُبعد توثيق OpenXLA (ومرآته على tensorflow.org/xla) لأنه مصدر اختبار Gold لهذا المصطلح. ما وُجد من «البث» كان بمعنى البث الإذاعي/الفضائي أو البث الشبكي (Network Broadcasting)، ودليل TensorFlow للموترات بالعربية غير مترجم.",
+            "excluded_sources": ["https://openxla.org/xla/broadcasting?hl=ar (Gold source for this target)"],
+            "sources_checked": ["Saudi MoE AI textbook (1448 AH)", "HIAST theses", "TensorFlow docs (hl=ar)",
+                                "ASJP abstracts", "Hindawi AI collection", "KSAA publications", "web search"],
+        },
         "neg": [
             N(L("media", "عملية بث محتوى إعلامي، أو إعادة بثه", "طابع المراسلات الخاصة.", "المادة الأولى (التعريفات)، البند 11"),
               "بث = إرسال المحتوى الإعلامي المرئي أو المسموع إلى الجمهور (Broadcast)",
@@ -385,7 +479,14 @@ CURATION = {
     },
     "تأسيس": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            {**W("https://learn.microsoft.com/ar-sa/copilot/microsoft-365/microsoft-365-copilot-transparency-note",
+                 MS_COPILOT_NOTE, "عوامل تخفيف المخاطر — التزويد بالمصادر في بيانات الأعمال",
+                 "يتمثل أحد عوامل التخفيف المهمة في Microsoft Copilot", "استنادا إلى أذوناته."),
+             "retrieved": ROUND3,
+             "terminology_note": "يتفاوت الاستعمال العربي لمفهوم Grounding بين المصادر: «تأسيس» (هذا المصدر)، و«تأصيل» (المبادئ التوجيهية المصرية للذكاء الاصطناعي التوليدي)، و«مؤرض/غير مؤرض» و«التزويد بالمصادر» (في هذا المستند نفسه). لا تُعامل هذه الصيغ على أنها الوحدة المعجمية نفسها. «أذوناته» كما في الأصل. النطاق learn.microsoft.com مشترك مع مصدر Gold آخر (GOLD_028) لكن المستند والرابط مختلفان ولا تداخل نصي.",
+             "audit": audit(True, 0.363, "GOLD_006", "تأسيس")},
+        ],
         "neg": [
             N(L("companies", "يقدم المؤسسون طلب تأسيس الشركة وقيدها إلى السجل التجاري", "وفقًا لشكل الشركة.", "المادة السادسة"),
               "تأسيس الشركة = إنشاؤها قانونيًا وتسجيلها (Incorporation)",
@@ -432,7 +533,12 @@ CURATION = {
         ],
     },
     # ------------------------------------------------------------ clear technical
-    "تجذيع": {"category": "technical", "pos": [], "neg": [],
+    "تجذيع": {"category": "technical", "neg": [],
+              "pos": [IMG("arabic_qa", "615567d649579", 45, "44", "2.1.2 SimBioNLQA – 2020 — آلية العمل المتّبعة",
+                          "يتم ضمن مكوّن معالجة السؤال تصنيفه أولاً لأحد الأصناف الأربعة التي يعتمدها النظام ومن ثم إجراء مراحل المعالجة اللغوية النحوية على كلمات السؤال (التجذيع واستخراج نمط الكلام).",
+                          "السؤال (التجذيع واستخراج",
+                          "نُقل النص حرفيًا من صورة الصفحة المعروضة (PDF ص 45) وقورن بها بصريًا كلمةً كلمة؛ طبقة النص تفسد ترميز بعض الكلمات (مثل «منط» بدل «نمط») وتعيد ترتيب الأسطر، فلا يمكن مطابقة النص كاملًا آليًا. لم يُعتمد مصدر مجمع الملك سلمان («مقدمة في حوسبة اللغة العربية» ص 55) لأن الاستعمال فيه بند في قائمة وطبقة نصه مفسدة أيضًا.",
+                          audit=audit(True, 0.355, "GOLD_013", "التجذيع"))],
               "synthetic": ["يزيل التجذيع السوابق واللواحق من الكلمات، فتُردّ «المعلمون» و«معلمين» و«المعلمات» إلى جذع واحد قبل بناء فهرس البحث."]},
     "تعلم عميق": {
         "category": "technical",
