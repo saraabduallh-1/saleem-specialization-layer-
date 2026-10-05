@@ -15,7 +15,7 @@ import json
 import re
 import sys
 
-from pilot_curation import EGYPT, LAW
+from pilot_curation import EGYPT
 from pilot_sources import (PROJECT_ROOT, asjp_abstract, asjp_article_url, fuzzy, get, pdf_page_text,
                            url_status)
 
@@ -34,9 +34,8 @@ def quote_found(e):
     if e["verification"] == "exact_substring_of_source":
         if url.startswith("https://asjp.cerist.dz/en/article/"):
             return e["text"] in (asjp_abstract(get(url)) or "")
-        if url in LAW.values():
-            return e["text"] in re.sub(r"\s+", " ", get(url))
-        return False
+        # Saudi laws and other web pages (e.g. Hindawi books, journal pages): whitespace-collapsed page text
+        return e["text"] in re.sub(r"\s+", " ", get(url))
     pdf_url = e.get("full_text_url") or EGYPT
     page = int(re.search(r"PDF رقم (\d+)", e["page_or_section"]).group(1)) if url == EGYPT \
         else _asjp_pdf_page(e)

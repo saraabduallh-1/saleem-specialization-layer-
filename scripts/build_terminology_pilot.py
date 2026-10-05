@@ -106,12 +106,21 @@ def resolve(ex, term):
             out["full_text_url"] = ex["pdf_url"]
             out["transcription_note"] = "طبقة النص في ملف PDF تُفسد ترميز (لا)؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام. الإملاء كما في الأصل."
         verification = "page_image_transcription+fuzzy_text_layer_match"
+    elif src == "web":
+        flat = re.sub(r"\s+", " ", get(ex["url"]))
+        text = span(flat, ex["start"], ex.get("end"))
+        if text:
+            out.update(copy.deepcopy(ex["meta"]))
+            out["page_or_section"] = ex["section"]
+            out["url_or_doi"] = ex["url"]
+        verification = "exact_substring_of_source"
     else:
         raise ValueError(src)
     if not text:
         problems.append(f"[{term}] quote not found/verified in {src}: {(ex.get('start') or ex.get('manual_text'))[:50]}")
         return None
-    out.update({"text": text, "data_origin": "source_derived", "retrieved_at": RETRIEVED, "verification": verification})
+    out.update({"text": text, "data_origin": "source_derived", "retrieved_at": ex.get("retrieved", RETRIEVED),
+                "verification": verification})
     for k in ("intended_sense", "why_not_this_term", "contrast_type"):
         if k in ex:
             out[k] = ex[k]

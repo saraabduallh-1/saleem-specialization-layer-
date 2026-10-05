@@ -291,7 +291,30 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "وتتعلَّم خوارزميات التَّعلُّم المُعزَّز من الخبرات المُباشرة لإشارات المُكافأة في البيئة المُحيطة، تمامًا كما يتعلَّم الطفل الرضيع الوقوف على قدميه من المكافأة الإيجابية لكونه يقف مُعتدلًا ومن المكافأة السَّلبيَّة للوقوع أرضًا.",
+        "source_title": "ذكاء اصطناعي متوافق مع البشر: حتى لا تفرض الآلات سيطرتها على العالم",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "ستيوارت راسل"
+        ],
+        "year": 2022,
+        "page_or_section": "الفصل 2: مفهوم الذكاء في البشر والآلات",
+        "url_or_doi": "https://www.hindawi.org/books/25350464/2/",
+        "translators": [
+          "مصطفى محمد فؤاد",
+          "أسامة إسماعيل عبد العليم"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "Stuart Russell, Human Compatible: Artificial Intelligence and the Problem of Control (2019)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [
       {
         "text": "قطاع البيئة: يشمل الأوساط البيئية والأنشطة والبرامج المتعلقة بها، والتي تهدف إلى ضمان حماية البيئة وسلامتها، وتنمية الأوساط البيئية لضمان استدامتها وحمايتها من أي مصدر للتلوث.",
@@ -336,7 +359,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 1,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -644,7 +667,29 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "فنحن نُحدِّث قيم الأوزان والانحياز بطريقةٍ تجعل الخلية العصبية تقلِّل من أخطائها.",
+        "source_title": "الخوارزميات",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "بانوس لوريداس"
+        ],
+        "year": 2022,
+        "page_or_section": "الفصل 6: التعلُّم العميق",
+        "url_or_doi": "https://www.hindawi.org/books/13139359/6/",
+        "translators": [
+          "إبراهيم سند أحمد"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "Panos Louridas, Algorithms (MIT Press Essential Knowledge, 2020)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [
       {
         "text": "ومن بين النتائج المتوصل اليها : ان التحيز الخوارزمي مظهر من مظاهر التحيزات الاجتماعية في نتائج الخوارزميات، يجعل النتيجة في النهاية موضع شك وغير موثوقة أو ضارة أو تمييزية .",
@@ -736,7 +781,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 3,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -757,7 +802,30 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "وكما في خوارزميات البرمجة الديناميكيَّة، تكون الغاية الموضُوعة في خوارزمية التَّعلُّم المُعزَّز هي دالَّة المكافأة، ثمَّ تتعلَّم الخوارزمية قاعدة لتقدير قيم الأوضاع (أو أحيانًا قيم التَّصرُّفات).",
+        "source_title": "ذكاء اصطناعي متوافق مع البشر: حتى لا تفرض الآلات سيطرتها على العالم",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "ستيوارت راسل"
+        ],
+        "year": 2022,
+        "page_or_section": "الفصل 2: مفهوم الذكاء في البشر والآلات",
+        "url_or_doi": "https://www.hindawi.org/books/25350464/2/",
+        "translators": [
+          "مصطفى محمد فؤاد",
+          "أسامة إسماعيل عبد العليم"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "Stuart Russell, Human Compatible: Artificial Intelligence and the Problem of Control (2019)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [
       {
         "text": "لا يجوز وضع العامل تحت التجربة أكثر من مرة واحدة لدى صاحب عمل واحد، واستثناء من ذلك يجوز باتفاق طرفي العقد إخضاع العامل لفترة تجربة ثانية لا تتجاوز مدتها تسعين يومًا، بشرط أن تكون في مهنة أخرى أو عمل آخر، وإذا أنهي العقد خلال فترة التجربة فإن أيًّا من الطرفين لا يستحق تعويضًا، كما لا يستحق العامل مكافأة نهاية الخدمة عن ذلك.",
@@ -802,7 +870,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 1,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -1329,7 +1397,30 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "بمجرد إنشاء مجموعة بيانات ذات تسمية فئوية، تكون المرحلة الكبرى في إنشاء نموذج التصنيف هي استخدام خوارزمية تعلُّم آلة لإنشاء النموذج.",
+        "source_title": "علم البيانات",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "جون دي كيليهر",
+          "بريندان تيرني"
+        ],
+        "year": 2025,
+        "page_or_section": "الفصل 5: مهام علم البيانات القياسية",
+        "url_or_doi": "https://www.hindawi.org/books/72952028/5/",
+        "translators": [
+          "رشا صلاح الدخاخني"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "John D. Kelleher and Brendan Tierney, Data Science (MIT Press Essential Knowledge, 2018)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [
       {
         "text": "يهدف هذا المقال إلى دراسة اسم الآلة في الفكر اللغوي العربي، من حيث المفهوم والوزن والاشتقاق.",
@@ -1398,7 +1489,7 @@
       "selection_category": "ambiguous",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 2,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -2004,7 +2095,29 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "توجد تطبيقات مهمة للتعلم غير الموجَّه، ومنها على سبيل المثال تجميع الملاحظات في مجموعات مختلفة (لا يوجد حل مسبق يشير إلى ماهية المجموعة الصحيحة).",
+        "source_title": "الخوارزميات",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "بانوس لوريداس"
+        ],
+        "year": 2022,
+        "page_or_section": "الفصل 6: التعلُّم العميق",
+        "url_or_doi": "https://www.hindawi.org/books/13139359/6/",
+        "translators": [
+          "إبراهيم سند أحمد"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "Panos Louridas, Algorithms (MIT Press Essential Knowledge, 2020)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [],
     "generated_examples": [
       {
@@ -2026,7 +2139,7 @@
       "selection_category": "technical",
       "has_documented_competing_sense": false,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 0,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -2047,7 +2160,29 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "أما التدريب المفرط فيؤدي إلى ما يسمَّى «فرط الاستعداد»: أي الإتيان بأداء ممتاز في مجموعة بيانات التدريب وأداء سيئ في مجموعة بيانات الاختبار.",
+        "source_title": "الخوارزميات",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "بانوس لوريداس"
+        ],
+        "year": 2022,
+        "page_or_section": "الفصل 6: التعلُّم العميق",
+        "url_or_doi": "https://www.hindawi.org/books/13139359/6/",
+        "translators": [
+          "إبراهيم سند أحمد"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "Panos Louridas, Algorithms (MIT Press Essential Knowledge, 2020)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [],
     "generated_examples": [
       {
@@ -2069,7 +2204,7 @@
       "selection_category": "technical",
       "has_documented_competing_sense": false,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 0,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -2090,7 +2225,30 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "ومع ذلك، فإن تنفيذ دالة التنشيط غير الخطية في الخلايا العصبية الخاصة بالشبكة تُتيح للشبكة تعلُّم الدوالِّ الأكثر تعقيدًا (غير الخطية).",
+        "source_title": "علم البيانات",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "جون دي كيليهر",
+          "بريندان تيرني"
+        ],
+        "year": 2025,
+        "page_or_section": "الفصل 4: أساسيات تعلُّم الآلة",
+        "url_or_doi": "https://www.hindawi.org/books/72952028/4/",
+        "translators": [
+          "رشا صلاح الدخاخني"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "John D. Kelleher and Brendan Tierney, Data Science (MIT Press Essential Knowledge, 2018)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [],
     "generated_examples": [
       {
@@ -2112,7 +2270,7 @@
       "selection_category": "technical",
       "has_documented_competing_sense": false,
       "has_abbreviation_or_alias": false,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 0,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -2331,7 +2489,24 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "وعندما يقدم المستخدم مدخلًا نصيًا، يقوم النموذج أولًا بتحويل النص إلى وحدات رقمية تُعرف باسم الرموز، ثم تُعالج هذه الرموز بواسطة شبكة عصبية، غالبًا ما تعتمد على هيكل المحوّلات، وتستخدم آليات الانتباه الذاتي لتحليل العلاقات بين الكلمات عبر السياق الكامل للنص.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص ٥ (صفحة PDF رقم 9) — الفصل الأول — ٢. كيف يعمل",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      }
+    ],
     "negative_examples": [
       {
         "text": "يلي ذلك تقسيم النصوص الى مجموعتين احداهما تستخدم لتدريب البرنامج والثانية لاختباره.",
@@ -2380,7 +2555,7 @@
       "selection_category": "technical",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": true,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 1,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -3122,7 +3297,30 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "وفي الشبكة العصبية الالتفافية، تُرتَّب الخلايا العصبية داخل كل مجموعةٍ بحيث تفحص كل خليةٍ موضعًا مختلفًا في الصورة، وتُغطي المجموعة الصورة بأكملها.",
+        "source_title": "علم البيانات",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "جون دي كيليهر",
+          "بريندان تيرني"
+        ],
+        "year": 2025,
+        "page_or_section": "الفصل 4: أساسيات تعلُّم الآلة",
+        "url_or_doi": "https://www.hindawi.org/books/72952028/4/",
+        "translators": [
+          "رشا صلاح الدخاخني"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "John D. Kelleher and Brendan Tierney, Data Science (MIT Press Essential Knowledge, 2018)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [
       {
         "text": "تهتم الدراسة بتحليل الأبعاد القيمية لمضمون التغطية الإعلامية لقناة CNN بالعربية للحرب على غزة، بهدف الوقوف على القيم التي تتضمنها هذه التغطية، وذلك بالاستناد إلى نظرية الحتمية القيمية التي تفترض أن القيم معيار لوسائل الاعلام.",
@@ -3170,7 +3368,7 @@
       "selection_category": "abbreviation_alias",
       "has_documented_competing_sense": true,
       "has_abbreviation_or_alias": true,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 1,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -3193,7 +3391,30 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "ونتيجة لذلك، تُعد الشبكات العصبية التكرارية مناسبةً لمعالجة البيانات المتسلسلة مثل اللغة.",
+        "source_title": "علم البيانات",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "جون دي كيليهر",
+          "بريندان تيرني"
+        ],
+        "year": 2025,
+        "page_or_section": "الفصل 4: أساسيات تعلُّم الآلة",
+        "url_or_doi": "https://www.hindawi.org/books/72952028/4/",
+        "translators": [
+          "رشا صلاح الدخاخني"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "John D. Kelleher and Brendan Tierney, Data Science (MIT Press Essential Knowledge, 2018)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [],
     "generated_examples": [
       {
@@ -3215,7 +3436,7 @@
       "selection_category": "abbreviation_alias",
       "has_documented_competing_sense": false,
       "has_abbreviation_or_alias": true,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 0,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -3363,7 +3584,32 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "والهدف الرئيسي من هذا العمل البحثي هو تقديم منهجية شاملة لاستخراج المعلومات وتمييز الكيانات المسماة من النصوص العربية غير المهيكلة باستخدام تقنيات معالجة اللغات الطبيعية التي ثبتت فعاليتها في حل معظم مشاكل التصنيف من أجل تحسين عملية استخراج المعلومات من الوثائق ذات الصلة بالمجال الجغرافي تحديدا.",
+        "source_title": "التعرف على الكيانات المسماة في المجال الجغرافي للوثائق العربية غير المهيكلة",
+        "source_type": "peer_reviewed_journal_article",
+        "authors_or_org": [
+          "حسين خليل خليل",
+          "يوسف عبدالرحمن أبوراوي",
+          "هبة محمد القليب",
+          "عائشة جمال معيتيق"
+        ],
+        "year": 2021,
+        "page_or_section": "الملخص العربي (Abstract) في صفحة المقال",
+        "url_or_doi": "https://journals.asmarya.edu.ly/jbs/index.php/jbs/article/view/104",
+        "venue": {
+          "journal": "Journal of Basic Sciences",
+          "volume": "34",
+          "issue": "1",
+          "platform": "الجامعة الأسمرية الإسلامية (Asmarya University) — OJS"
+        },
+        "doi": "https://doi.org/10.59743/jbs.v34i1.104",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [],
     "generated_examples": [
       {
@@ -3385,7 +3631,7 @@
       "selection_category": "abbreviation_alias",
       "has_documented_competing_sense": false,
       "has_abbreviation_or_alias": true,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 0,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -3408,7 +3654,24 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "عند استخدام الذكاء الاصطناعي التوليدي مع البيانات الخاصة أو الملكية أو المؤسسية يجب استخدام تقنيات الاسترجاع القائمة على التمثيلات المضمنة (مثل التوليد المعزز بالاسترجاع) لتأصيل مخرجات النموذج في مصادر داخلية موثوقة وتقليل خطر الهلوسة.",
+        "source_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي (الإصدار 1.0)",
+        "source_type": "official_government_guideline",
+        "authors_or_org": [
+          "جمهورية مصر العربية — المجلس الوطني للذكاء الاصطناعي والحوسبة الكمية والتكنولوجيات البازغة",
+          "المركز المصري للذكاء الاصطناعي المسؤول"
+        ],
+        "year": 2026,
+        "page_or_section": "ص ٢٣ (صفحة PDF رقم 27) — 6.2 إرشادات لتحقيق الموثوقية — تجنب الهلوسة، البند ١١",
+        "url_or_doi": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+        "transcription_note": "طبقة النص في ملف PDF تُفسد ترميز (لا) في وسط الكلمات؛ نُقل النص من صورة الصفحة المعروضة وطوبق آليًا مع طبقة النص بعد تطبيع الألف واللام.",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "page_image_transcription+fuzzy_text_layer_match"
+      }
+    ],
     "negative_examples": [],
     "generated_examples": [
       {
@@ -3430,7 +3693,7 @@
       "selection_category": "abbreviation_alias",
       "has_documented_competing_sense": false,
       "has_abbreviation_or_alias": true,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 0,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."
@@ -3665,7 +3928,30 @@
     "canonical_term": null,
     "canonical_term_id": null,
     "variants": [],
-    "positive_examples": [],
+    "positive_examples": [
+      {
+        "text": "وأخيرًا، في علم الإحصاء، تُصمم خوارزميات التَّعلُّم لتقليل قيمة «دالة خسارة» متوقعةٍ؛ تُعرِّف كُلفة الوقوع في أخطاءٍ تنبؤية.",
+        "source_title": "ذكاء اصطناعي متوافق مع البشر: حتى لا تفرض الآلات سيطرتها على العالم",
+        "source_type": "published_book_translation",
+        "authors_or_org": [
+          "ستيوارت راسل"
+        ],
+        "year": 2022,
+        "page_or_section": "الفصل 1: ماذا لو نجحنا؟",
+        "url_or_doi": "https://www.hindawi.org/books/25350464/1/",
+        "translators": [
+          "مصطفى محمد فؤاد",
+          "أسامة إسماعيل عبد العليم"
+        ],
+        "publisher": [
+          "مؤسسة هنداوي (ترجمة عربية مرخّصة)"
+        ],
+        "original_work": "Stuart Russell, Human Compatible: Artificial Intelligence and the Problem of Control (2019)",
+        "data_origin": "source_derived",
+        "retrieved_at": "2026-10-05",
+        "verification": "exact_substring_of_source"
+      }
+    ],
     "negative_examples": [],
     "generated_examples": [
       {
@@ -3687,7 +3973,7 @@
       "selection_category": "abbreviation_alias",
       "has_documented_competing_sense": false,
       "has_abbreviation_or_alias": true,
-      "n_real_positive": 0,
+      "n_real_positive": 1,
       "n_real_negative": 0,
       "n_synthetic": 1,
       "usage_restriction": "Pilot enrichment data only — must not be reused as Gold Test queries. generated_examples are synthetic and must be excluded from the main retrieval experiment."

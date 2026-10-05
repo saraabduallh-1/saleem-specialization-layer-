@@ -33,6 +33,68 @@ def E(pdf_page, printed_page, section, text):
     return {"src": "egypt", "pdf_page": pdf_page, "printed_page": printed_page, "section": section, "manual_text": text}
 
 
+# Second enrichment round (positive examples for the 21 entries that had none).
+ROUND2 = "2026-10-05"  # date these sources were retrieved and checked
+
+HINDAWI = "https://www.hindawi.org/books/"
+_HINDAWI_ORG = ["مؤسسة هنداوي (ترجمة عربية مرخّصة)"]
+BOOKS = {
+    "russell": ("25350464", {
+        "source_title": "ذكاء اصطناعي متوافق مع البشر: حتى لا تفرض الآلات سيطرتها على العالم",
+        "source_type": "published_book_translation",
+        "authors_or_org": ["ستيوارت راسل"],
+        "year": 2022,
+        "translators": ["مصطفى محمد فؤاد", "أسامة إسماعيل عبد العليم"],
+        "publisher": _HINDAWI_ORG,
+        "original_work": "Stuart Russell, Human Compatible: Artificial Intelligence and the Problem of Control (2019)",
+    }),
+    "kelleher": ("72952028", {
+        "source_title": "علم البيانات",
+        "source_type": "published_book_translation",
+        "authors_or_org": ["جون دي كيليهر", "بريندان تيرني"],
+        "year": 2025,
+        "translators": ["رشا صلاح الدخاخني"],
+        "publisher": _HINDAWI_ORG,
+        "original_work": "John D. Kelleher and Brendan Tierney, Data Science (MIT Press Essential Knowledge, 2018)",
+    }),
+    "louridas": ("13139359", {
+        "source_title": "الخوارزميات",
+        "source_type": "published_book_translation",
+        "authors_or_org": ["بانوس لوريداس"],
+        "year": 2022,
+        "translators": ["إبراهيم سند أحمد"],
+        "publisher": _HINDAWI_ORG,
+        "original_work": "Panos Louridas, Algorithms (MIT Press Essential Knowledge, 2020)",
+    }),
+}
+ASMARYA_NER = {
+    "source_title": "التعرف على الكيانات المسماة في المجال الجغرافي للوثائق العربية غير المهيكلة",
+    "source_type": "peer_reviewed_journal_article",
+    "authors_or_org": ["حسين خليل خليل", "يوسف عبدالرحمن أبوراوي", "هبة محمد القليب", "عائشة جمال معيتيق"],
+    "year": 2021,
+    "venue": {"journal": "Journal of Basic Sciences", "volume": "34", "issue": "1",
+              "platform": "الجامعة الأسمرية الإسلامية (Asmarya University) — OJS"},
+    "doi": "https://doi.org/10.59743/jbs.v34i1.104",
+}
+
+
+def W(url, meta, section, start, end=None):
+    """Exact span of a web page's text (HTML stripped, whitespace collapsed)."""
+    return {"src": "web", "url": url, "meta": meta, "section": section, "start": start, "end": end,
+            "retrieved": ROUND2}
+
+
+def H(book, chapter, chapter_title, start, end=None):
+    """Hindawi book chapter (HTML reading page)."""
+    bid, meta = BOOKS[book]
+    return W(f"{HINDAWI}{bid}/{chapter}/", meta, f"الفصل {chapter}: {chapter_title}", start, end)
+
+
+def R2(ex):
+    """Mark an example as retrieved in the second enrichment round."""
+    return {**ex, "retrieved": ROUND2}
+
+
 CONTRAST_TYPES = ("different_sense", "different_domain", "abbreviation_collision")
 
 
@@ -99,7 +161,9 @@ CURATION = {
     },
     "بيئة": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            H("russell", 2, "مفهوم الذكاء في البشر والآلات", "وتتعلَّم خوارزميات التَّعلُّم المُعزَّز من الخبرات", "للوقوع أرضًا."),
+        ],
         "neg": [
             N(L("environment", "قطاع البيئة: يشمل الأوساط البيئية والأنشطة والبرامج المتعلقة بها", "من أي مصدر للتلوث.", "المادة الأولى (التعريفات)"),
               "بيئة = المحيط الطبيعي (هواء وماء وتربة وكائنات) موضوع الحماية من التلوث",
@@ -158,7 +222,9 @@ CURATION = {
     },
     "تحيز": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            H("louridas", 6, "التعلُّم العميق", "فنحن نُحدِّث قيم الأوزان والانحياز"),
+        ],
         "neg": [
             N(A(257599, "ومن بين النتائج المتوصل اليها", None),
               "تحيُّز خوارزمي = انحياز اجتماعي/تمييزي في نتائج الخوارزميات (يقابله في سوار مدخل \"تحيُّز الذكاء الاصطناعي\")",
@@ -180,7 +246,9 @@ CURATION = {
     },
     "مكافأة": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            H("russell", 2, "مفهوم الذكاء في البشر والآلات", "وكما في خوارزميات البرمجة الديناميكيَّة"),
+        ],
         "neg": [
             N(L("labor", "لا يجوز وضع العامل تحت التجربة أكثر من مرة واحدة لدى صاحب عمل واحد، واستثناء من ذلك يجوز باتفاق طرفي العقد إخضاع العامل لفترة تجربة ثانية", "مكافأة نهاية الخدمة عن ذلك.", "المادة الرابعة والخمسون (بنصها المعدَّل)"),
               "مكافأة نهاية الخدمة = مستحق مالي للعامل عند انتهاء علاقة العمل",
@@ -281,7 +349,9 @@ CURATION = {
     },
     "اسم": {
         "category": "ambiguous",
-        "pos": [],
+        "pos": [
+            H("kelleher", 5, "مهام علم البيانات القياسية", "بمجرد إنشاء مجموعة بيانات ذات تسمية فئوية"),
+        ],
         "neg": [
             N(A(101880, "يهدف هذا المقال إلى دراسة اسم الآلة في الفكر اللغوي العربي", None),
               "اسم الآلة = مصطلح صرفي نحوي لصيغ الاسم الدالة على الأداة (مِفْعَل، مِفْعَال...)",
@@ -389,11 +459,14 @@ CURATION = {
               "different_domain"),
         ],
     },
-    "تعلم غير موجه": {"category": "technical", "pos": [], "neg": [],
+    "تعلم غير موجه": {"category": "technical", "neg": [],
+                      "pos": [H("louridas", 6, "التعلُّم العميق", "توجد تطبيقات مهمة للتعلم غير الموجَّه", "المجموعة الصحيحة).")],
                       "synthetic": ["استُخدم التعلُّم غير الموجَّه لتجميع العملاء في مجموعات متشابهة السلوك دون الاعتماد على أي تصنيف مسبق للبيانات."]},
-    "فرط التخصيص": {"category": "technical", "pos": [], "neg": [],
+    "فرط التخصيص": {"category": "technical", "neg": [],
+                    "pos": [H("louridas", 6, "التعلُّم العميق", "أما التدريب المفرط فيؤدي إلى ما يسمَّى")],
                     "synthetic": ["حقّق النموذج دقة شبه كاملة على بيانات التدريب لكنه أخفق على بيانات الاختبار، وهي علامة واضحة على فرط التخصيص."]},
-    "دالة تنشيط": {"category": "technical", "pos": [], "neg": [],
+    "دالة تنشيط": {"category": "technical", "neg": [],
+                   "pos": [H("kelleher", 4, "أساسيات تعلُّم الآلة", "ومع ذلك، فإن تنفيذ دالة التنشيط غير الخطية")],
                    "synthetic": ["تُطبَّق دالة تنشيط غير خطية مثل ReLU على ناتج كل خلية عصبية، فتمكّن الشبكة من تمثيل علاقات غير خطية بين المدخلات والمخرجات."]},
     "انتشار عكسي": {
         "category": "technical",
@@ -418,7 +491,10 @@ CURATION = {
     },
     "تقسيم النصوص": {
         "category": "technical",
-        "pos": [],
+        "pos": [
+            R2(E(9, "٥", "الفصل الأول — ٢. كيف يعمل",
+                 "وعندما يقدم المستخدم مدخلًا نصيًا، يقوم النموذج أولًا بتحويل النص إلى وحدات رقمية تُعرف باسم الرموز، ثم تُعالج هذه الرموز بواسطة شبكة عصبية، غالبًا ما تعتمد على هيكل المحوّلات، وتستخدم آليات الانتباه الذاتي لتحليل العلاقات بين الكلمات عبر السياق الكامل للنص.")),
+        ],
         "neg": [
             N({"src": "asjp_pdf", "id": "70166", "pdf_url": "https://asjp.cerist.dz/en/downArticle/199/5/3/70166",
                "printed_page": "34", "pdf_page": 6,
@@ -513,7 +589,9 @@ CURATION = {
     },
     "شبكة عصبية ترشيحية": {
         "category": "abbreviation_alias",
-        "pos": [],
+        "pos": [
+            H("kelleher", 4, "أساسيات تعلُّم الآلة", "وفي الشبكة العصبية الالتفافية، تُرتَّب"),
+        ],
         "neg": [
             N(A(276467, "تهتم الدراسة بتحليل الأبعاد القيمية لمضمون التغطية الإعلامية لقناة CNN بالعربية", None),
               "CNN = اسم قناة إخبارية (Cable News Network)",
@@ -522,7 +600,8 @@ CURATION = {
         ],
         "synthetic": ["استُخدمت شبكة عصبية ترشيحية (CNN) لاستخراج الخصائص البصرية من صور الأشعة، ثم صُنّفت الصور إلى سليمة ومصابة."],
     },
-    "شبكة عصبية تكرارية": {"category": "abbreviation_alias", "pos": [], "neg": [],
+    "شبكة عصبية تكرارية": {"category": "abbreviation_alias", "neg": [],
+                           "pos": [H("kelleher", 4, "أساسيات تعلُّم الآلة", "ونتيجة لذلك، تُعد الشبكات العصبية التكرارية")],
                            "synthetic": ["تعالج الشبكة العصبية التكرارية (RNN) الجملة كلمةً بعد كلمة، وتحتفظ بحالة مخفية تنقل معلومات الكلمات السابقة إلى الخطوة التالية."]},
     "ذاكرة قصيرة المدى مطولة": {
         "category": "abbreviation_alias",
@@ -537,9 +616,14 @@ CURATION = {
         "pos": [A(228025, "تناول هذا البحث بناء عدة نماذج من نماذج (SVM) المختلفة", "لتحليل البيانات محل الاهتمام")],
         "neg": [],
     },
-    "تعرف على الكيانات المسماة": {"category": "abbreviation_alias", "pos": [], "neg": [],
+    "تعرف على الكيانات المسماة": {"category": "abbreviation_alias", "neg": [],
+                                  "pos": [W("https://journals.asmarya.edu.ly/jbs/index.php/jbs/article/view/104", ASMARYA_NER,
+                                            "الملخص العربي (Abstract) في صفحة المقال",
+                                            "والهدف الرئيسي من هذا العمل البحثي", "بالمجال الجغرافي تحديدا.")],
                                   "synthetic": ["يحدّد نظام التعرُّف على الكيانات المُسمّاة (NER) في الخبر أسماء الأشخاص والمنظمات والأماكن، مثل «الرياض» بوصفها اسم مكان."]},
-    "توليد معزز بالاسترجاع": {"category": "abbreviation_alias", "pos": [], "neg": [],
+    "توليد معزز بالاسترجاع": {"category": "abbreviation_alias", "neg": [],
+                              "pos": [R2(E(27, "٢٣", "6.2 إرشادات لتحقيق الموثوقية — تجنب الهلوسة، البند ١١",
+                                           "عند استخدام الذكاء الاصطناعي التوليدي مع البيانات الخاصة أو الملكية أو المؤسسية يجب استخدام تقنيات الاسترجاع القائمة على التمثيلات المضمنة (مثل التوليد المعزز بالاسترجاع) لتأصيل مخرجات النموذج في مصادر داخلية موثوقة وتقليل خطر الهلوسة."))],
                               "synthetic": ["في التوليد المُعزَّز بالاسترجاع (RAG) يسترجع النظام أولًا المقاطع الأكثر صلة من قاعدة المعرفة، ثم يمرّرها إلى النموذج اللغوي ليبني إجابته عليها."]},
     "تحليل المكون الرئيس": {
         "category": "abbreviation_alias",
@@ -567,7 +651,8 @@ CURATION = {
         ],
         "neg": [],
     },
-    "دالة الخسارة": {"category": "abbreviation_alias", "pos": [], "neg": [],
+    "دالة الخسارة": {"category": "abbreviation_alias", "neg": [],
+                     "pos": [H("russell", 1, "ماذا لو نجحنا؟", "وأخيرًا، في علم الإحصاء، تُصمم خوارزميات")],
                      "synthetic": ["تُستخدم دالة الخسارة لقياس الفرق بين تنبؤات النموذج والقيم الحقيقية، ويعمل المُحسِّن على تقليل قيمتها في كل تكرار."]},
 }
 
