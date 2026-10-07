@@ -150,7 +150,10 @@ def call_once(
         },
         method="POST",
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
+    open_kwargs = {}
+    if timeout and timeout > 0:
+        open_kwargs["timeout"] = timeout
+    with urllib.request.urlopen(request, **open_kwargs) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
@@ -165,9 +168,11 @@ def call_with_retry(
     retries: int,
     retry_wait: int,
 ) -> dict[str, Any]:
-    attempts = retries + 1
+    """Retry transient failures. retries=-1 means retry forever."""
+    attempt = 0
 
-    for attempt in range(1, attempts + 1):
+    while True:
+        attempt += 1
         try:
             return call_once(
                 base_url=base_url,
@@ -178,25 +183,29 @@ def call_with_retry(
                 timeout=timeout,
             )
         except urllib.error.HTTPError as exc:
-            if exc.code in {401, 403}:
+            # Authentication/permission errors will not improve by retrying.
+            if exc.code in {400, 401, 403, 404}:
                 raise
             retryable = exc.code == 429 or 500 <= exc.code <= 599
-            if not retryable or attempt == attempts:
+            if not retryable:
                 raise
+            if retries >= 0 and attempt > retries:
+                raise
+            label = "forever" if retries < 0 else str(retries)
             print(
-                f"  transient HTTP {exc.code}; retry {attempt}/{attempts - 1} "
-                f"after {retry_wait}s"
+                f"  transient HTTP {exc.code}; retry attempt {attempt} "
+                f"(limit: {label}) after {retry_wait}s"
             )
         except (TimeoutError, socket.timeout, ConnectionResetError, urllib.error.URLError) as exc:
-            if attempt == attempts:
+            if retries >= 0 and attempt > retries:
                 raise
+            label = "forever" if retries < 0 else str(retries)
             print(
-                f"  temporary connection/timeout error: {exc}; "
-                f"retry {attempt}/{attempts - 1} after {retry_wait}s"
+                f"  temporary connection/timeout error: {exc}; retry attempt {attempt} "
+                f"(limit: {label}) after {retry_wait}s"
             )
 
         time.sleep(retry_wait)
-
 
 def extract_output(response: dict[str, Any]) -> str:
     choices = response.get("choices") or []
@@ -267,6 +276,7 @@ def new_result(
                 "Only injected domain context changes between conditions.",
                 "No terminology retrieval is injected in this experiment.",
                 "Checkpoint is saved after every successful condition.",
+                "Default runner uses no client-side timeout and retries transient failures indefinitely.",
             ],
         },
         "items": [
@@ -304,8 +314,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--temperature", type=float, default=0.0)
-    parser.add_argument("--timeout", type=int, default=1800)
-    parser.add_argument("--retries", type=int, default=3)
+    parser.add_argument("--timeout", type=int, default=0, help="0 = no client-side timeout")
+    parser.add_argument("--retries", type=int, default=-1, help="-1 = retry forever on transient errors")
     parser.add_argument("--retry-wait", type=int, default=20)
     parser.add_argument("--sleep", type=float, default=2.0)
     parser.add_argument("--dry-run", action="store_true")
