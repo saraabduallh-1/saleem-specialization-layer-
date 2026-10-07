@@ -24,6 +24,7 @@ import argparse
 import json
 import os
 import socket
+import subprocess
 import time
 import urllib.error
 import urllib.request
@@ -277,6 +278,7 @@ def new_result(
                 "No terminology retrieval is injected in this experiment.",
                 "Checkpoint is saved after every successful condition.",
                 "Default runner uses no client-side timeout and retries transient failures indefinitely.",
+                "Checkpoint is automatically committed and pushed to GitHub every five successful conditions by default.",
             ],
         },
         "items": [
@@ -310,6 +312,46 @@ def compatible_checkpoint(
     )
 
 
+
+def push_checkpoint(done: int, total: int) -> None:
+    """Commit and push only the experiment checkpoint. Failure does not stop the run."""
+    rel = CHECKPOINT_PATH.relative_to(ROOT)
+    try:
+        subprocess.run(
+            ["git", "add", str(rel)],
+            cwd=ROOT,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        diff = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"],
+            cwd=ROOT,
+        )
+        if diff.returncode == 0:
+            return
+        subprocess.run(
+            ["git", "commit", "-m", f"Checkpoint Qwen domain ablation {done}/{total}"],
+            cwd=ROOT,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        subprocess.run(
+            ["git", "push", "origin", "main"],
+            cwd=ROOT,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        print(f"  pushed checkpoint to GitHub ({done}/{total})")
+    except Exception as exc:
+        print(f"  WARNING: checkpoint saved locally but GitHub push failed: {exc}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=None)
@@ -319,6 +361,7 @@ def main() -> None:
     parser.add_argument("--retry-wait", type=int, default=20)
     parser.add_argument("--sleep", type=float, default=2.0)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--push-every", type=int, default=5, help="Push checkpoint every N successful conditions; 0 disables.")
     parser.add_argument(
         "--restart",
         action="store_true",
@@ -426,6 +469,9 @@ def main() -> None:
             # Save immediately so a later failure never loses completed work.
             save_json(result, CHECKPOINT_PATH)
             print(f"  saved checkpoint ({done}/{total})")
+
+            if args.push_every > 0 and (done % args.push_every == 0 or done == total):
+                push_checkpoint(done, total)
 
             if args.sleep:
                 time.sleep(args.sleep)
