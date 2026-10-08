@@ -305,7 +305,93 @@
     {
       "id": "P04",
       "input": "الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.",
-      "conditions": {}
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and use different tools to reach the required goal.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** الوكيل (The agent).\n    *   **Action 1:** يقدر ينفذ (can execute).\n    *   **Object 1:** مجموعة خطوات (a set of steps).\n    *   **Action 2:** يستخدم (uses).\n    *   **Object 2:** أدوات مختلفة (different tools).\n    *   **Purpose:**",
+          "api_metadata": {
+            "id": "chatcmpl-8b16664d0790c8a0",
+            "usage": {
+              "prompt_tokens": 83,
+              "total_tokens": 339,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.331,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate (أدق) while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and uses different tools to reach the required goal.)\n\n2.  **Analyze the Original Text:**\n    *   **Subject:** الوكيل (The agent).\n    *   **Action 1:** يقدر ينفذ مجموعة خطوات (can execute a set of steps).\n    *   **Action 2:** يستخدم أدوات مختلفة (uses different tools).\n    *   **Purpose:** عشان يوصل للهدف المطلوب (in order to reach the required goal",
+          "api_metadata": {
+            "id": "chatcmpl-a156a36d88656b7a",
+            "usage": {
+              "prompt_tokens": 92,
+              "total_tokens": 348,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.382,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Context:** The field is Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text to Improve:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and uses different tools to reach the required goal.)\n\n2.  **Analyze the Input Text:**\n    *   \"الوكيل\" (The agent): Refers to an AI agent.\n    *   \"يقدر ينفذ مجموعة خطوات\" (can execute a set of steps): Can perform a sequence of actions.\n    *   \"ويستخدم أدوات مختلفة\" (and uses different",
+          "api_metadata": {
+            "id": "chatcmpl-9d6fc3996406ad70",
+            "usage": {
+              "prompt_tokens": 153,
+              "total_tokens": 409,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.351,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and use different tools to reach the required goal.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear sentences, describe AI system capabilities accurately without overstating autonomy/uncertainty.\n\n2.  **Analyze the Input Text:**\n    *   \"الوكيل\" (The Agent): In the context of AI, \"Agent\" is a specific term. The input uses \"الوكيل\" which is correct.\n    *",
+          "api_metadata": {
+            "id": "chatcmpl-8d099a96c85f54c1",
+            "usage": {
+              "prompt_tokens": 352,
+              "total_tokens": 608,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.362,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and uses different tools to reach the required goal.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating autonomy or certainty.\n\n2.  **Analyze the Input Text:**\n    *   \"الوكيل\" (The Agent): In the context of AI guidelines provided in the prompt, \"Agents\" are mentioned in the examples (\"الوكلاء\").\n    *   \"",
+          "api_metadata": {
+            "id": "chatcmpl-a202f9db88cf7e1a",
+            "usage": {
+              "prompt_tokens": 506,
+              "total_tokens": 762,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.454,
+            "max_tokens": 256
+          }
+        }
+      }
     },
     {
       "id": "P05",
