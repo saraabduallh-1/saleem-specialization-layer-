@@ -1,0 +1,4077 @@
+{
+  "metadata": {
+    "experiment": "forced_rewrite_validator_v1",
+    "timestamp_utc": "20261008T104627Z",
+    "model": "Qwen/Qwen3.5-4B",
+    "temperature": 0.0,
+    "max_tokens": 256,
+    "max_rewrite_attempts": 2,
+    "selection_source": "results/semantic_selection_experiment/semantic_selection_experiment_20261008T102751Z.json",
+    "selection_experiment": "semantic_selection_top3_v1",
+    "notes": [
+      "Reuses fixed semantic-selector decisions from the previous Top-3 experiment.",
+      "Expected/Gold labels are never sent to the writer or validator.",
+      "Validator combines Qwen semantic checks with deterministic canonical-term presence and instruction-leak checks.",
+      "If the validator judges the selected term semantically wrong, retry abstains from forcing that term.",
+      "This is a follow-up ablation on the same 36 inputs, not a new held-out Gold test."
+    ]
+  },
+  "summary": {
+    "n_items": 36,
+    "initial_validation_pass": 16,
+    "initial_validation_pass_rate": 0.4444,
+    "final_validation_pass": 34,
+    "final_validation_pass_rate": 0.9444,
+    "retry_count": 20,
+    "selector_correct_positive_n": 23,
+    "canonical_term_used_after_pipeline_on_selector_correct": 12,
+    "canonical_term_use_rate_on_selector_correct": 0.5217,
+    "control_final_pass": 6,
+    "control_n": 6,
+    "control_final_pass_rate": 1.0
+  },
+  "items": [
+    {
+      "id": "F01",
+      "kind": "positive",
+      "input": "المودل صار يطلع معلومات تبدو صحيحة ومقنعة، لكن بعضها مختلق وما له أي مصدر.",
+      "expected_term_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+      "expected_term": "هلوسة",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+        "selected_term": "هلوسة",
+        "selected_definition": "ظاهرة يُنتج فيها نموذج الذكاء الاصطناعي معلومات تبدو معقولة، لكنها خاطئة أو مصطنعة أو غير مدعومة بالسياق أو الأدلة المتاحة.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.708,
+          "usage": {
+            "prompt_tokens": 277,
+            "total_tokens": 284,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "b814566f-c2a1-46cb-b258-0b56269b8539",
+          "selected": "b814566f-c2a1-46cb-b258-0b56269b8539"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+          "forced_term": "هلوسة",
+          "output": "يُظهر النموذج معلومات تبدو صحيحة ومقنعة، لكنها في بعض الأحيان تكون مختلقة ولا تستند إلى أي مصدر موثوق.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.745,
+            "usage": {
+              "prompt_tokens": 270,
+              "total_tokens": 303,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يظهر المصطلح المختار 'هلوسة' في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن التعريف المقدم للمصطلح يتضمن مفاهيم غير موجودة في النص الأصلي (مثل 'غير مدعومة بالسياق أو الأدلة المتاحة' و'مقنعة' مقابل 'مقنعة' فقط)، مما يعني أن المعنى الأصلي لم يحفظ بدقة، وتم إضافة تفاصيل غير مدعومة بالنص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.068,
+            "usage": {
+              "prompt_tokens": 297,
+              "total_tokens": 452,
+              "completion_tokens": 155,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "لم يظهر المصطلح المختار 'هلوسة' في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن التعريف المقدم للمصطلح يتضمن مفاهيم غير موجودة في النص الأصلي (مثل 'غير مدعومة بالسياق أو الأدلة المتاحة' و'مقنعة' مقابل 'مقنعة' فقط)، مما يعني أن المعنى الأصلي لم يحفظ بدقة، وتم إضافة تفاصيل غير مدعومة بالنص الأصلي."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "يُصدر النموذج معلومات تبدو صحيحة ومقنعة، إلا أن بعضها مزور ولا يملك أي مصدر.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.58,
+            "usage": {
+              "prompt_tokens": 248,
+              "total_tokens": 274,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل دون إضافة معلومات جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.196,
+            "usage": {
+              "prompt_tokens": 246,
+              "total_tokens": 346,
+              "completion_tokens": 100,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل دون إضافة معلومات جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "يُصدر النموذج معلومات تبدو صحيحة ومقنعة، إلا أن بعضها مزور ولا يملك أي مصدر.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل دون إضافة معلومات جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F02",
+      "kind": "positive",
+      "input": "المودل صار ممتاز على البيانات اللي تدرب عليها، لكن إذا جربناه على بيانات جديدة يطيح أداؤه بشكل واضح.",
+      "expected_term_id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+      "expected_term": "فرط التخصيص",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+        "selected_term": "فرط التخصيص",
+        "selected_definition": "مشكلة في تعلُّم الآلة تحدث عند إنشاء نموذج يطابق بيانات التدريب بصورة كبيرة تجعله يفشل في التعميم على البيانات الجديدة.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.688,
+          "usage": {
+            "prompt_tokens": 258,
+            "total_tokens": 265,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+          "selected": "13f39b3c-8c85-42a9-8766-4198c4139ef6"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+          "forced_term": "فرط التخصيص",
+          "output": "يتميز النموذج بأداء متميز على بيانات التدريب، إلا أن أدائه يتدهور بشكل ملحوظ عند تطبيقه على بيانات جديدة، وهو ما يُعرف بظاهرة فرط التخصيص.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.985,
+            "usage": {
+              "prompt_tokens": 272,
+              "total_tokens": 316,
+              "completion_tokens": 44,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n\"selected_term_fit\": true,\n\"term_present\": true,\n\"meaning_preserved\": true,\n\"unsupported_addition\": false,\n\"instruction_leak\": false,\n\"reason\": \"المصطلح 'فرط التخصيص' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف بدقة مفهوم الظاهرة المذكورة في النص الأصلي (فشل التعميم على البيانات الجديدة مقابل الأداء الجيد على بيانات التدريب)، ولا يضيف معلومات جديدة أو علاقات غير موجودة في النص الأصلي، ولا يحتوي على تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.463,
+            "usage": {
+              "prompt_tokens": 308,
+              "total_tokens": 428,
+              "completion_tokens": 120,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'فرط التخصيص' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف بدقة مفهوم الظاهرة المذكورة في النص الأصلي (فشل التعميم على البيانات الجديدة مقابل الأداء الجيد على بيانات التدريب)، ولا يضيف معلومات جديدة أو علاقات غير موجودة في النص الأصلي، ولا يحتوي على تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "يتميز النموذج بأداء متميز على بيانات التدريب، إلا أن أدائه يتدهور بشكل ملحوظ عند تطبيقه على بيانات جديدة، وهو ما يُعرف بظاهرة فرط التخصيص.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'فرط التخصيص' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف بدقة مفهوم الظاهرة المذكورة في النص الأصلي (فشل التعميم على البيانات الجديدة مقابل الأداء الجيد على بيانات التدريب)، ولا يضيف معلومات جديدة أو علاقات غير موجودة في النص الأصلي، ولا يحتوي على تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F03",
+      "kind": "positive",
+      "input": "البرنامج يراقب ما يحدث حوله، ويختار خطوات وينفذها بنفسه حتى يصل إلى الهدف المحدد.",
+      "expected_term_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+      "expected_term": "وكيل",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+        "selected_term": "وكيل",
+        "selected_definition": "كيان مادي أو برمجي يمكنه إدراك بيئته، والعمل بتحكم ذاتي لتحقيق هدف.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.685,
+          "usage": {
+            "prompt_tokens": 242,
+            "total_tokens": 249,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "c33c453c-367b-452a-8763-7ba23871b01f",
+          "selected": "c33c453c-367b-452a-8763-7ba23871b01f"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+          "forced_term": "وكيل",
+          "output": "يقوم البرنامج بمراقبة محيطه، ويختار الخطوات المنفذة ذاتيًا لتحقيق الهدف المحدد.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.238,
+            "usage": {
+              "prompt_tokens": 256,
+              "total_tokens": 279,
+              "completion_tokens": 23,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'وكيل' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم (كيان مادي أو برمجي، إدراك للبيئة، عمل ذاتي لتحقيق هدف) يتطابق تمامًا مع المعلومات الواردة في النص الأصلي (برنامج، مراقبة محيط، اختيار وتنفيذ خطوات ذاتي، تحقيق هدف)، دون إضافة أي حقائق أو علاقات جديدة.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.522,
+            "usage": {
+              "prompt_tokens": 274,
+              "total_tokens": 404,
+              "completion_tokens": 130,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'وكيل' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم (كيان مادي أو برمجي، إدراك للبيئة، عمل ذاتي لتحقيق هدف) يتطابق تمامًا مع المعلومات الواردة في النص الأصلي (برنامج، مراقبة محيط، اختيار وتنفيذ خطوات ذاتي، تحقيق هدف)، دون إضافة أي حقائق أو علاقات جديدة."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+          "forced_term": "وكيل",
+          "output": "يُعرّف «وكيل» في الذكاء الاصطناعي بأنه كيان برمجي أو مادي قادر على إدراك بيئته، حيث يقوم بمراقبة الأحداث المحيطة، واختيار الخطوات المناسبة، وتنفيذها ذاتيًا للوصول إلى الهدف المحدد.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.966,
+            "usage": {
+              "prompt_tokens": 283,
+              "total_tokens": 339,
+              "completion_tokens": 56,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n\"selected_term_fit\": true,\n\"term_present\": true,\n\"meaning_preserved\": true,\n\"unsupported_addition\": false,\n\"instruction_leak\": false,\n\"reason\": \"المصطلح 'وكيل' موجود في النص الأصلي ضمن سياق الوصف العام للبرنامج. التعريف الجديد يدمج بدقة جميع العناصر المذكورة في النص الأصلي (المراقبة، الاختيار، التنفيذ الذاتي، الوصول للهدف) مع إضافة صفة 'برمجي أو مادي' التي لا تتعارض مع النص الأصلي بل توضح طبيعة الكيان المذكور. لا توجد معلومات جديدة غير مدعومة، ولا تسرب تعليمات.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.704,
+            "usage": {
+              "prompt_tokens": 307,
+              "total_tokens": 446,
+              "completion_tokens": 139,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'وكيل' موجود في النص الأصلي ضمن سياق الوصف العام للبرنامج. التعريف الجديد يدمج بدقة جميع العناصر المذكورة في النص الأصلي (المراقبة، الاختيار، التنفيذ الذاتي، الوصول للهدف) مع إضافة صفة 'برمجي أو مادي' التي لا تتعارض مع النص الأصلي بل توضح طبيعة الكيان المذكور. لا توجد معلومات جديدة غير مدعومة، ولا تسرب تعليمات."
+          }
+        }
+      ],
+      "final_output": "يُعرّف «وكيل» في الذكاء الاصطناعي بأنه كيان برمجي أو مادي قادر على إدراك بيئته، حيث يقوم بمراقبة الأحداث المحيطة، واختيار الخطوات المناسبة، وتنفيذها ذاتيًا للوصول إلى الهدف المحدد.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'وكيل' موجود في النص الأصلي ضمن سياق الوصف العام للبرنامج. التعريف الجديد يدمج بدقة جميع العناصر المذكورة في النص الأصلي (المراقبة، الاختيار، التنفيذ الذاتي، الوصول للهدف) مع إضافة صفة 'برمجي أو مادي' التي لا تتعارض مع النص الأصلي بل توضح طبيعة الكيان المذكور. لا توجد معلومات جديدة غير مدعومة، ولا تسرب تعليمات."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F04",
+      "kind": "positive",
+      "input": "مررنا مجموعة البيانات كاملة على النموذج خمس مرات متتالية أثناء عملية الضبط.",
+      "expected_term_id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+      "expected_term": "دورة",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+        "selected_term": "دورة",
+        "selected_definition": "عملية تدريب كاملة على مجموعة البيانات بأكملها أثناء تدريب النموذج.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.688,
+          "usage": {
+            "prompt_tokens": 239,
+            "total_tokens": 246,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+          "selected": "cddea42e-e614-47ba-8275-dedd4c5938a0"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+          "forced_term": "دورة",
+          "output": "أجرينا تمرينًا كاملًا على النموذج باستخدام مجموعة البيانات بأكملها خمس مرات متتالية خلال عملية الضبط.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.649,
+            "usage": {
+              "prompt_tokens": 240,
+              "total_tokens": 268,
+              "completion_tokens": 28,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يظهر المصطلح 'دورة' في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن التعريف المقدم للمصطلح يضيف مفاهيم جديدة (مثل 'عملية تدريب كاملة' و'أثناء تدريب النموذج') لم تكن موجودة صراحةً في النص الأصلي الذي ذكر فقط 'مررنا مجموعة البيانات كاملة على النموذج'، مما يشكل إضافة غير مدعومة بالنص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.806,
+            "usage": {
+              "prompt_tokens": 262,
+              "total_tokens": 410,
+              "completion_tokens": 148,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "لم يظهر المصطلح 'دورة' في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن التعريف المقدم للمصطلح يضيف مفاهيم جديدة (مثل 'عملية تدريب كاملة' و'أثناء تدريب النموذج') لم تكن موجودة صراحةً في النص الأصلي الذي ذكر فقط 'مررنا مجموعة البيانات كاملة على النموذج'، مما يشكل إضافة غير مدعومة بالنص الأصلي."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "تم تمرير مجموعة البيانات كاملة على النموذج خمس مرات متتالية خلال عملية ضبطه.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.177,
+            "usage": {
+              "prompt_tokens": 243,
+              "total_tokens": 263,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (تمرير البيانات الكاملة، على النموذج، خمس مرات متتالية، خلال عملية الضبط) دون إضافة حقائق جديدة أو تغيير المعنى.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.965,
+            "usage": {
+              "prompt_tokens": 235,
+              "total_tokens": 365,
+              "completion_tokens": 130,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (تمرير البيانات الكاملة، على النموذج، خمس مرات متتالية، خلال عملية الضبط) دون إضافة حقائق جديدة أو تغيير المعنى."
+          }
+        }
+      ],
+      "final_output": "تم تمرير مجموعة البيانات كاملة على النموذج خمس مرات متتالية خلال عملية ضبطه.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (تمرير البيانات الكاملة، على النموذج، خمس مرات متتالية، خلال عملية الضبط) دون إضافة حقائق جديدة أو تغيير المعنى."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F05",
+      "kind": "positive",
+      "input": "الكلام اللي نعطيه للنموذج في البداية هو اللي يحدد له المهمة وطريقة الرد المطلوبة.",
+      "expected_term_id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+      "expected_term": "أمر",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+        "selected_term": "أمر",
+        "selected_definition": "المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.704,
+          "usage": {
+            "prompt_tokens": 229,
+            "total_tokens": 236,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "selected": "d42d69bd-b83d-4762-902c-7d6284f8dc86"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+          "forced_term": "أمر",
+          "output": "تُعد المدخلات المقدمة للنموذج، والمعروفة بـ«الأمر»، هي العامل الحاسم في تحديد المهمة المطلوبة منه وطريقة الرد المتوقعة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.698,
+            "usage": {
+              "prompt_tokens": 246,
+              "total_tokens": 282,
+              "completion_tokens": 36,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'الأمر' موجود في النص الأصلي ضمن سياق 'الكلام اللي نعطيه للنموذج في البداية'. التعريف المقدم ('المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته') يتطابق مع المعنى الأصلي للنص دون إضافة معلومات جديدة أو علاقات غير موجودة. الصياغة الجديدة تحافظ على جميع المعلومات الأساسية من النص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.696,
+            "usage": {
+              "prompt_tokens": 276,
+              "total_tokens": 411,
+              "completion_tokens": 135,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'الأمر' موجود في النص الأصلي ضمن سياق 'الكلام اللي نعطيه للنموذج في البداية'. التعريف المقدم ('المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته') يتطابق مع المعنى الأصلي للنص دون إضافة معلومات جديدة أو علاقات غير موجودة. الصياغة الجديدة تحافظ على جميع المعلومات الأساسية من النص الأصلي."
+          }
+        }
+      ],
+      "final_output": "تُعد المدخلات المقدمة للنموذج، والمعروفة بـ«الأمر»، هي العامل الحاسم في تحديد المهمة المطلوبة منه وطريقة الرد المتوقعة.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'الأمر' موجود في النص الأصلي ضمن سياق 'الكلام اللي نعطيه للنموذج في البداية'. التعريف المقدم ('المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته') يتطابق مع المعنى الأصلي للنص دون إضافة معلومات جديدة أو علاقات غير موجودة. الصياغة الجديدة تحافظ على جميع المعلومات الأساسية من النص الأصلي."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F06",
+      "kind": "positive",
+      "input": "تعتمد هذه المعمارية على الانتباه الذاتي لمعالجة الكلمات في التسلسل وربط كل كلمة ببقية السياق.",
+      "expected_term_id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+      "expected_term": "مُحوِّل",
+      "selection": {
+        "choice": "NONE",
+        "selected_term_id": null,
+        "selected_term": null,
+        "selected_definition": null,
+        "raw_output": "{\"choice\":\"NONE\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.652,
+          "usage": {
+            "prompt_tokens": 249,
+            "total_tokens": 255,
+            "completion_tokens": 6,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": false,
+          "expected": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+          "selected": null
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "تعتمد هذه المعمارية على الانتباه الذاتي لمعالجة الكلمات في التسلسل وربط كل كلمة بالسياق العام.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.709,
+            "usage": {
+              "prompt_tokens": 175,
+              "total_tokens": 201,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار مصطلح جديد في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو تحقق من وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث أن تغيير 'ربط كل كلمة ببقية السياق' إلى 'ربط كل كلمة بالسياق العام' يعكس نفس الفكرة دون إضافة معلومات جديدة أو تغيير جوهر النص.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.703,
+            "usage": {
+              "prompt_tokens": 247,
+              "total_tokens": 385,
+              "completion_tokens": 138,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار مصطلح جديد في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو تحقق من وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث أن تغيير 'ربط كل كلمة ببقية السياق' إلى 'ربط كل كلمة بالسياق العام' يعكس نفس الفكرة دون إضافة معلومات جديدة أو تغيير جوهر النص."
+          }
+        }
+      ],
+      "final_output": "تعتمد هذه المعمارية على الانتباه الذاتي لمعالجة الكلمات في التسلسل وربط كل كلمة بالسياق العام.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار مصطلح جديد في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو تحقق من وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث أن تغيير 'ربط كل كلمة ببقية السياق' إلى 'ربط كل كلمة بالسياق العام' يعكس نفس الفكرة دون إضافة معلومات جديدة أو تغيير جوهر النص."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F07",
+      "kind": "positive",
+      "input": "بعد كل فعل ينفذه النظام، ترسل له البيئة قيمة عددية موجبة أو سالبة توضح جودة ذلك الفعل.",
+      "expected_term_id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+      "expected_term": "مكافأة",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+        "selected_term": "مكافأة",
+        "selected_definition": "نتيجة عددية في التعلُّم التعزيزي تحدده البيئة عند القيام بفعل في حالة ما.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.837,
+          "usage": {
+            "prompt_tokens": 245,
+            "total_tokens": 252,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "4f581246-30fe-4570-8605-1c611eaf5d45",
+          "selected": "4f581246-30fe-4570-8605-1c611eaf5d45"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+          "forced_term": "مكافأة",
+          "output": "بعد كل إجراء يقوم به النظام، ترسل البيئة قيمة رقمية موجبة أو سالبة تعكس جودة هذا الإجراء.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.843,
+            "usage": {
+              "prompt_tokens": 259,
+              "total_tokens": 286,
+              "completion_tokens": 27,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'مكافأة' غير موجود في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن التعريف المقدم للمصطلح يشير إلى مفهوم 'التعزيز' في التعلم التعزيزي، وهو مفهوم غير موجود في النص الأصلي (الذي يتحدث فقط عن 'قيمة عددية' تعكس 'جودة الفعل')، مما يعني أن الصياغة الجديدة تسربت معلومات أو مفاهيم خارجية غير مدعومة بالنص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.977,
+            "usage": {
+              "prompt_tokens": 278,
+              "total_tokens": 434,
+              "completion_tokens": 156,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'مكافأة' غير موجود في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن التعريف المقدم للمصطلح يشير إلى مفهوم 'التعزيز' في التعلم التعزيزي، وهو مفهوم غير موجود في النص الأصلي (الذي يتحدث فقط عن 'قيمة عددية' تعكس 'جودة الفعل')، مما يعني أن الصياغة الجديدة تسربت معلومات أو مفاهيم خارجية غير مدعومة بالنص الأصلي."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "بعد تنفيذ كل فعل من قبل النظام، ترسل البيئة قيمة رقمية موجبة أو سالبة تعكس جودة هذا الفعل.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.666,
+            "usage": {
+              "prompt_tokens": 250,
+              "total_tokens": 277,
+              "completion_tokens": 27,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو الحفاظ على تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (نظام، بيئة، فعل، قيمة رقمية موجبة أو سالبة، جودة الفعل) دون إضافة حقائق جديدة أو تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.184,
+            "usage": {
+              "prompt_tokens": 249,
+              "total_tokens": 380,
+              "completion_tokens": 131,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو الحفاظ على تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (نظام، بيئة، فعل، قيمة رقمية موجبة أو سالبة، جودة الفعل) دون إضافة حقائق جديدة أو تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "بعد تنفيذ كل فعل من قبل النظام، ترسل البيئة قيمة رقمية موجبة أو سالبة تعكس جودة هذا الفعل.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو الحفاظ على تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (نظام، بيئة، فعل، قيمة رقمية موجبة أو سالبة، جودة الفعل) دون إضافة حقائق جديدة أو تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F08",
+      "kind": "positive",
+      "input": "في كل حالة، يحتفظ النظام بتوزيع احتمالي يحدد أي الأفعال يرجح أن يختارها.",
+      "expected_term_id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+      "expected_term": "سياسة",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+        "selected_term": "سياسة",
+        "selected_definition": "الربط الاحتمالي للوكيل من الحالات إلى الأفعال في التعلُّم التعزيزي.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.701,
+          "usage": {
+            "prompt_tokens": 240,
+            "total_tokens": 247,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+          "selected": "d7a6c3be-1c19-4fea-b888-4e827a9effbc"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+          "forced_term": "سياسة",
+          "output": "في كل حالة، يحتفظ النظام بتوزيع احتمالي يحدد أي الأفعال ترجح اختيارها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.204,
+            "usage": {
+              "prompt_tokens": 252,
+              "total_tokens": 274,
+              "completion_tokens": 22,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": null,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار مصطلح في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده أو الحفاظ على معناه.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.337,
+            "usage": {
+              "prompt_tokens": 268,
+              "total_tokens": 351,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": null,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "لم يتم اختيار مصطلح في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده أو الحفاظ على معناه."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "في كل حالة، يحافظ النظام على توزيع احتمالي يحدد الأفعال التي يُرجح أن يختارها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.412,
+            "usage": {
+              "prompt_tokens": 232,
+              "total_tokens": 257,
+              "completion_tokens": 25,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي بدقة حيث استبدل 'يحتفظ' بـ 'يحافظ' و'أي الأفعال' بـ 'الأفعال التي' دون إضافة معلومات جديدة أو تغيير المعنى الجوهري.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.36,
+            "usage": {
+              "prompt_tokens": 245,
+              "total_tokens": 374,
+              "completion_tokens": 129,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي بدقة حيث استبدل 'يحتفظ' بـ 'يحافظ' و'أي الأفعال' بـ 'الأفعال التي' دون إضافة معلومات جديدة أو تغيير المعنى الجوهري."
+          }
+        }
+      ],
+      "final_output": "في كل حالة، يحافظ النظام على توزيع احتمالي يحدد الأفعال التي يُرجح أن يختارها.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي بدقة حيث استبدل 'يحتفظ' بـ 'يحافظ' و'أي الأفعال' بـ 'الأفعال التي' دون إضافة معلومات جديدة أو تغيير المعنى الجوهري."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F09",
+      "kind": "positive",
+      "input": "نعدّل معاملات النموذج اعتمادًا على أمثلة البيانات حتى تتحسن قدرته على أداء المهمة.",
+      "expected_term_id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+      "expected_term": "تدريب",
+      "selection": {
+        "choice": "NONE",
+        "selected_term_id": null,
+        "selected_term": null,
+        "selected_definition": null,
+        "raw_output": "{\"choice\":\"NONE\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.611,
+          "usage": {
+            "prompt_tokens": 246,
+            "total_tokens": 252,
+            "completion_tokens": 6,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": false,
+          "expected": "f9244497-c14e-49d9-9074-1b431b3aff76",
+          "selected": null
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "يتم ضبط معاملات النموذج بناءً على بيانات التدريب لتحسين أدائه في إنجاز المهمة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.366,
+            "usage": {
+              "prompt_tokens": 171,
+              "total_tokens": 191,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث استُبدل 'معاملات النموذج' بـ 'معاملات النموذج' (ضمنياً في سياق الضبط) و'أمثلة البيانات' بـ 'بيانات التدريب' (مفهوم مكافئ في سياق التعلم الآلي) و'تتحسن قدرتها' بـ 'تحسين أدائه'. لم يتم إضافة معلومات جديدة أو تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.663,
+            "usage": {
+              "prompt_tokens": 237,
+              "total_tokens": 413,
+              "completion_tokens": 176,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث استُبدل 'معاملات النموذج' بـ 'معاملات النموذج' (ضمنياً في سياق الضبط) و'أمثلة البيانات' بـ 'بيانات التدريب' (مفهوم مكافئ في سياق التعلم الآلي) و'تتحسن قدرتها' بـ 'تحسين أدائه'. لم يتم إضافة معلومات جديدة أو تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "يتم ضبط معاملات النموذج بناءً على بيانات التدريب لتحسين أدائه في إنجاز المهمة.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث استُبدل 'معاملات النموذج' بـ 'معاملات النموذج' (ضمنياً في سياق الضبط) و'أمثلة البيانات' بـ 'بيانات التدريب' (مفهوم مكافئ في سياق التعلم الآلي) و'تتحسن قدرتها' بـ 'تحسين أدائه'. لم يتم إضافة معلومات جديدة أو تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F10",
+      "kind": "positive",
+      "input": "الحل يستخدم شبكة عصبية تحتوي عدة طبقات مخفية تتعلم تمثيلات معقدة من البيانات بصورة متدرجة.",
+      "expected_term_id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+      "expected_term": "تعلُّم عميق",
+      "selection": {
+        "choice": "C3",
+        "selected_term_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+        "selected_term": "شبكة عصبية ترشيحية",
+        "selected_definition": "نوع من الشبكات العصبية العميقة المستخدمة في إنشاء نماذج لتحليل الصور والفيديوهات ومعالجتها.",
+        "raw_output": "{\"choice\":\"C3\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.045,
+          "usage": {
+            "prompt_tokens": 301,
+            "total_tokens": 308,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": false,
+          "expected": "7653197c-feda-4347-8fee-90b5a4448c2e",
+          "selected": "9b2995b8-1593-401b-859e-a934ed1f2af0"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "forced_term": "شبكة عصبية ترشيحية",
+          "output": "يُستخدم الحل شبكة عصبية ترشيحية تتكون من عدة طبقات مخفية لتتعلم تمثيلات معقدة من البيانات بصورة متدرجة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.049,
+            "usage": {
+              "prompt_tokens": 272,
+              "total_tokens": 306,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'شبكة عصبية ترشيحية' غير موجود في النص الأصلي، والصياغة الجديدة أضفته دون أي أساس في النص الأصلي، مما ينتهك شرط التحقق من وجود المفهوم في النص الأصلي قبل إضافته.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.949,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 398,
+              "completion_tokens": 104,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": true,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'شبكة عصبية ترشيحية' غير موجود في النص الأصلي، والصياغة الجديدة أضفته دون أي أساس في النص الأصلي، مما ينتهك شرط التحقق من وجود المفهوم في النص الأصلي قبل إضافته."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "يعتمد الحل على شبكة عصبية تضم عدة طبقات مخفية تتعلم تمثيلات معقدة من البيانات عبر عملية تعلم متدرجة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.486,
+            "usage": {
+              "prompt_tokens": 250,
+              "total_tokens": 280,
+              "completion_tokens": 30,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (شبكة عصبية، عدة طبقات مخفية، تعلم تمثيلات معقدة، بيانات، تعلم متدرجة) دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.954,
+            "usage": {
+              "prompt_tokens": 252,
+              "total_tokens": 381,
+              "completion_tokens": 129,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (شبكة عصبية، عدة طبقات مخفية، تعلم تمثيلات معقدة، بيانات، تعلم متدرجة) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "يعتمد الحل على شبكة عصبية تضم عدة طبقات مخفية تتعلم تمثيلات معقدة من البيانات عبر عملية تعلم متدرجة.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (شبكة عصبية، عدة طبقات مخفية، تعلم تمثيلات معقدة، بيانات، تعلم متدرجة) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F11",
+      "kind": "positive",
+      "input": "عندنا أمثلة وكل مثال معها الإجابة الصحيحة، ونبي النظام يتعلم منها عشان يتوقع إجابات لأمثلة جديدة.",
+      "expected_term_id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+      "expected_term": "تعلُّم موجَّه",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+        "selected_term": "اسم",
+        "selected_definition": "جانب الإجابة أو النتيجة من مثال في التعلُّم الموجَّه.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.875,
+          "usage": {
+            "prompt_tokens": 237,
+            "total_tokens": 244,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": false,
+          "expected": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+          "selected": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+          "forced_term": "اسم",
+          "output": "في التعلُّم الموجَّه، يتعلَّم النظام من الأمثلة المصاحبة لها إجاباتها الصحيحة لتتنبأ بإجابات أمثلة جديدة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.927,
+            "usage": {
+              "prompt_tokens": 253,
+              "total_tokens": 290,
+              "completion_tokens": 37,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'اسم' غير موجود في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن الصياغة الجديدة أضفت مصطلحاً جديداً ('التعلُّم الموجَّه') وعرّفته ضمنياً، وهو مفهوم لم يكن موجوداً في النص الأصلي، مما ينتهك شرط عدم إضافة حقائق أو علاقات جديدة.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.454,
+            "usage": {
+              "prompt_tokens": 285,
+              "total_tokens": 422,
+              "completion_tokens": 137,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'اسم' غير موجود في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن الصياغة الجديدة أضفت مصطلحاً جديداً ('التعلُّم الموجَّه') وعرّفته ضمنياً، وهو مفهوم لم يكن موجوداً في النص الأصلي، مما ينتهك شرط عدم إضافة حقائق أو علاقات جديدة."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "نُقدم أمثلة متزامنة مع إجاباتها الصحيحة، حيث يتعلم النظام منها للتنبؤ بإجابات أمثلة جديدة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.517,
+            "usage": {
+              "prompt_tokens": 254,
+              "total_tokens": 284,
+              "completion_tokens": 30,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (وجود الأمثلة مع الإجابات الصحيحة، وتعلم النظام منها للتنبؤ بإجابات جديدة) دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.027,
+            "usage": {
+              "prompt_tokens": 256,
+              "total_tokens": 381,
+              "completion_tokens": 125,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (وجود الأمثلة مع الإجابات الصحيحة، وتعلم النظام منها للتنبؤ بإجابات جديدة) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "نُقدم أمثلة متزامنة مع إجاباتها الصحيحة، حيث يتعلم النظام منها للتنبؤ بإجابات أمثلة جديدة.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (وجود الأمثلة مع الإجابات الصحيحة، وتعلم النظام منها للتنبؤ بإجابات جديدة) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F12",
+      "kind": "positive",
+      "input": "البيانات لا تحتوي أي تسميات، ونريد من النظام أن يكتشف التجمعات والأنماط الموجودة فيها بنفسه.",
+      "expected_term_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+      "expected_term": "تعلُّم غير موجَّه",
+      "selection": {
+        "choice": "C3",
+        "selected_term_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+        "selected_term": "تعلُّم غير موجَّه",
+        "selected_definition": "نوع من تعلُّم الآلة يكتشف الأنماط في مجموعة بيانات غير مُسمَّاة.",
+        "raw_output": "{\"choice\":\"C3\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 2.264,
+          "usage": {
+            "prompt_tokens": 284,
+            "total_tokens": 291,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+          "selected": "07a64f78-42e0-42c8-bbe2-b6ab60286646"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+          "forced_term": "تعلُّم غير موجَّه",
+          "output": "تُعرّف عملية تعلُّم غير موجَّه بأنها نوع من تعلُّم الآلة الذي يكتشف الأنماط والتجمعات داخل مجموعة بيانات غير مُسمَّاة، حيث لا تحتوي البيانات على أي تسميات ويهدف النظام إلى استخلاص هذه الأنماط ذاتيًا.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.044,
+            "usage": {
+              "prompt_tokens": 271,
+              "total_tokens": 334,
+              "completion_tokens": 63,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n\"selected_term_fit\": true,\n\"term_present\": true,\n\"meaning_preserved\": true,\n\"unsupported_addition\": false,\n\"instruction_leak\": false,\n\"reason\": \"المصطلح 'تعلُّم غير موجَّه' موجود في النص الأصلي ضمن سياق وصف العملية التي يكتشف فيها النظام الأنماط في بيانات غير مسمّاة. التعريف المقدم في الصياغة الجديدة يعكس بدقة المعلومات الواردة في النص الأصلي (غياب التسميات، اكتشاف الأنماط والتجمعات، الطبيعة الذاتية للنظام) دون إضافة حقائق جديدة أو علاقات غير موجودة في المصدر.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.182,
+            "usage": {
+              "prompt_tokens": 324,
+              "total_tokens": 461,
+              "completion_tokens": 137,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'تعلُّم غير موجَّه' موجود في النص الأصلي ضمن سياق وصف العملية التي يكتشف فيها النظام الأنماط في بيانات غير مسمّاة. التعريف المقدم في الصياغة الجديدة يعكس بدقة المعلومات الواردة في النص الأصلي (غياب التسميات، اكتشاف الأنماط والتجمعات، الطبيعة الذاتية للنظام) دون إضافة حقائق جديدة أو علاقات غير موجودة في المصدر."
+          }
+        }
+      ],
+      "final_output": "تُعرّف عملية تعلُّم غير موجَّه بأنها نوع من تعلُّم الآلة الذي يكتشف الأنماط والتجمعات داخل مجموعة بيانات غير مُسمَّاة، حيث لا تحتوي البيانات على أي تسميات ويهدف النظام إلى استخلاص هذه الأنماط ذاتيًا.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'تعلُّم غير موجَّه' موجود في النص الأصلي ضمن سياق وصف العملية التي يكتشف فيها النظام الأنماط في بيانات غير مسمّاة. التعريف المقدم في الصياغة الجديدة يعكس بدقة المعلومات الواردة في النص الأصلي (غياب التسميات، اكتشاف الأنماط والتجمعات، الطبيعة الذاتية للنظام) دون إضافة حقائق جديدة أو علاقات غير موجودة في المصدر."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F13",
+      "kind": "positive",
+      "input": "بعد حساب الخطأ عند المخرج، نعيد الإشارة عبر طبقات الشبكة إلى الخلف لحساب مقدار تعديل الأوزان.",
+      "expected_term_id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+      "expected_term": "انتشار عكسي",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+        "selected_term": "انتشار عكسي",
+        "selected_definition": "خوارزمية تُستخدم عند تدريب الشبكات العصبية الاصطناعية لتقليل الأخطاء عن طريق إيجاد قيمة التدرج المطلوب لحساب أوزان الشبكة.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.716,
+          "usage": {
+            "prompt_tokens": 287,
+            "total_tokens": 294,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+          "selected": "c9a6ef27-e20f-4ced-91e2-6faefa356638"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+          "forced_term": "انتشار عكسي",
+          "output": "يتم بعد حساب الخطأ عند المخرج، إعادة الإشارة عبر طبقات الشبكة إلى الخلف باستخدام خوارزمية انتشار عكسي لتحديد مقدار تعديل الأوزان.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.588,
+            "usage": {
+              "prompt_tokens": 278,
+              "total_tokens": 315,
+              "completion_tokens": 37,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n\"selected_term_fit\": true,\n\"term_present\": true,\n\"meaning_preserved\": true,\n\"unsupported_addition\": false,\n\"instruction_leak\": false,\n\"reason\": \"المصطلح 'انتشار عكسي' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف العملية بدقة (تقليل الأخطاء، إيجاد التدرج، تعديل الأوزان) وهو متوافق مع السياق الموجود في النص الأصلي (حساب الخطأ، إعادة الإشارة للخلف، تعديل الأوزان) دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.96,
+            "usage": {
+              "prompt_tokens": 306,
+              "total_tokens": 436,
+              "completion_tokens": 130,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'انتشار عكسي' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف العملية بدقة (تقليل الأخطاء، إيجاد التدرج، تعديل الأوزان) وهو متوافق مع السياق الموجود في النص الأصلي (حساب الخطأ، إعادة الإشارة للخلف، تعديل الأوزان) دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي."
+          }
+        }
+      ],
+      "final_output": "يتم بعد حساب الخطأ عند المخرج، إعادة الإشارة عبر طبقات الشبكة إلى الخلف باستخدام خوارزمية انتشار عكسي لتحديد مقدار تعديل الأوزان.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'انتشار عكسي' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف العملية بدقة (تقليل الأخطاء، إيجاد التدرج، تعديل الأوزان) وهو متوافق مع السياق الموجود في النص الأصلي (حساب الخطأ، إعادة الإشارة للخلف، تعديل الأوزان) دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F14",
+      "kind": "positive",
+      "input": "الأداة قادرة على إنشاء نصوص وصور وصوت جديد بدل الاكتفاء بتصنيف المحتوى الموجود.",
+      "expected_term_id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+      "expected_term": "ذكاء اصطناعي توليدي",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+        "selected_term": "ذكاء اصطناعي توليدي",
+        "selected_definition": "نوع من الذكاء الاصطناعي يمكنه إنشاء محتوى جديد، مثل: النصوص والصور والأصوات والفيديوهات والأكواد البرمجية.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.179,
+          "usage": {
+            "prompt_tokens": 284,
+            "total_tokens": 291,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+          "selected": "d5b5392a-3a3b-4b08-be5d-f313f62dd170"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+          "forced_term": "ذكاء اصطناعي توليدي",
+          "output": "تتميز الأداة بقدرتها على إنشاء نصوص وصور وصوت جديد، متجاوزة بذلك الاكتفاء بتصنيف المحتوى الموجود.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.041,
+            "usage": {
+              "prompt_tokens": 271,
+              "total_tokens": 301,
+              "completion_tokens": 30,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يظهر المصطلح المختار 'ذكاء اصطناعي توليدي' في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن التعريف المقدم للمصطلح يذكر 'الفيديوهات والأكواد البرمجية'، وهي عناصر غير موجودة في النص الأصلي (الذي يذكر فقط النصوص والصور والصوت)، مما يشكل إضافة غير مدعومة للمعلومات الأصلية.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.65,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 434,
+              "completion_tokens": 144,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "لم يظهر المصطلح المختار 'ذكاء اصطناعي توليدي' في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. كما أن التعريف المقدم للمصطلح يذكر 'الفيديوهات والأكواد البرمجية'، وهي عناصر غير موجودة في النص الأصلي (الذي يذكر فقط النصوص والصور والصوت)، مما يشكل إضافة غير مدعومة للمعلومات الأصلية."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "تتمتع الأداة بقدرتها على توليد نصوص وصور وصوت جديد، متجاوزة بذلك الاكتفاء بتصنيف المحتوى الموجود.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.71,
+            "usage": {
+              "prompt_tokens": 244,
+              "total_tokens": 275,
+              "completion_tokens": 31,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الواردة في النص الأصلي (القدرة على إنشاء نصوص وصور وصوت جديد بدلاً من الاكتفاء بتصنيف المحتوى) دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.0,
+            "usage": {
+              "prompt_tokens": 247,
+              "total_tokens": 378,
+              "completion_tokens": 131,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الواردة في النص الأصلي (القدرة على إنشاء نصوص وصور وصوت جديد بدلاً من الاكتفاء بتصنيف المحتوى) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "تتمتع الأداة بقدرتها على توليد نصوص وصور وصوت جديد، متجاوزة بذلك الاكتفاء بتصنيف المحتوى الموجود.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الواردة في النص الأصلي (القدرة على إنشاء نصوص وصور وصوت جديد بدلاً من الاكتفاء بتصنيف المحتوى) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F15",
+      "kind": "positive",
+      "input": "قبل إدخال الجملة إلى النموذج، نقسمها إلى وحدات صغيرة حتى يستطيع النظام تمثيلها ومعالجتها.",
+      "expected_term_id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+      "expected_term": "تقسيم النصوص",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+        "selected_term": "تقسيم النصوص",
+        "selected_definition": "عملية تقسيم النص إلى وحدات صغيرة تُسمَّى وحدات لغوية، ويطلق عليها أيضاً \"تقسيم\"",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.079,
+          "usage": {
+            "prompt_tokens": 254,
+            "total_tokens": 261,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "selected": "746ab890-7dd4-4c39-8abc-9eba232dad3a"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+          "forced_term": "تقسيم النصوص",
+          "output": "قبل إدخال الجملة إلى النموذج، يتم تقسيمها إلى وحدات لغوية صغيرة تسمى \"تقسيم النصوص\"، لتمكين النظام من تمثيلها ومعالجتها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.958,
+            "usage": {
+              "prompt_tokens": 264,
+              "total_tokens": 303,
+              "completion_tokens": 39,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'تقسيم النصوص' غير موجود في النص الأصلي، كما أن التعريف المقدم يضيف معلومات غير موجودة أصلاً (مثل ذكر 'وحدات لغوية' و'تسمى تقسيم')، مما ينتهك شرط عدم إضافة حقائق أو علاقات جديدة.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.418,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 408,
+              "completion_tokens": 114,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": true,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'تقسيم النصوص' غير موجود في النص الأصلي، كما أن التعريف المقدم يضيف معلومات غير موجودة أصلاً (مثل ذكر 'وحدات لغوية' و'تسمى تقسيم')، مما ينتهك شرط عدم إضافة حقائق أو علاقات جديدة."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "قبل إدخال الجملة إلى النموذج، يتم تقسيمها إلى وحدات صغيرة لتمكين النظام من تمثيلها ومعالجتها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.793,
+            "usage": {
+              "prompt_tokens": 249,
+              "total_tokens": 277,
+              "completion_tokens": 28,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية دون إضافة حقائق جديدة أو تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.11,
+            "usage": {
+              "prompt_tokens": 249,
+              "total_tokens": 348,
+              "completion_tokens": 99,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية دون إضافة حقائق جديدة أو تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "قبل إدخال الجملة إلى النموذج، يتم تقسيمها إلى وحدات صغيرة لتمكين النظام من تمثيلها ومعالجتها.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية دون إضافة حقائق جديدة أو تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F16",
+      "kind": "positive",
+      "input": "نريد تصنيف مراجعات العملاء تلقائيًا لمعرفة إن كان الرأي إيجابيًا أو سلبيًا أو محايدًا.",
+      "expected_term_id": "784fb957-1319-4ce8-afd7-10fd35512749",
+      "expected_term": "تحليل المشاعر",
+      "selection": {
+        "choice": "C2",
+        "selected_term_id": "784fb957-1319-4ce8-afd7-10fd35512749",
+        "selected_term": "تحليل المشاعر",
+        "selected_definition": "عملية استخدام الخوارزميات الإحصائية أو خوارزميات تعلُّم الآلة لتحديد المشاعر والآراء المضمنة في نص أو صورة.",
+        "raw_output": "{\"choice\":\"C2\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.696,
+          "usage": {
+            "prompt_tokens": 262,
+            "total_tokens": 269,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "784fb957-1319-4ce8-afd7-10fd35512749",
+          "selected": "784fb957-1319-4ce8-afd7-10fd35512749"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "784fb957-1319-4ce8-afd7-10fd35512749",
+          "forced_term": "تحليل المشاعر",
+          "output": "يُستخدم تحليل المشاعر لتصنيف مراجعات العملاء تلقائيًا وتحديد ما إذا كان الرأي الإيجابي أو السلبي أو المحايد.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.885,
+            "usage": {
+              "prompt_tokens": 269,
+              "total_tokens": 298,
+              "completion_tokens": 29,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'تحليل المشاعر' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف العملية بدقة دون إضافة معلومات غير موجودة في النص الأصلي (مثل ذكر الصور أو الخوارزميات المحددة)، حيث أن النص الأصلي يشير فقط إلى التصنيف التلقائي للمراجعات بناءً على المشاعر، وهو ما يتوافق مع جوهر تحليل المشاعر دون تجاوز حدود النص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.639,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 427,
+              "completion_tokens": 137,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'تحليل المشاعر' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف العملية بدقة دون إضافة معلومات غير موجودة في النص الأصلي (مثل ذكر الصور أو الخوارزميات المحددة)، حيث أن النص الأصلي يشير فقط إلى التصنيف التلقائي للمراجعات بناءً على المشاعر، وهو ما يتوافق مع جوهر تحليل المشاعر دون تجاوز حدود النص الأصلي."
+          }
+        }
+      ],
+      "final_output": "يُستخدم تحليل المشاعر لتصنيف مراجعات العملاء تلقائيًا وتحديد ما إذا كان الرأي الإيجابي أو السلبي أو المحايد.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'تحليل المشاعر' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف العملية بدقة دون إضافة معلومات غير موجودة في النص الأصلي (مثل ذكر الصور أو الخوارزميات المحددة)، حيث أن النص الأصلي يشير فقط إلى التصنيف التلقائي للمراجعات بناءً على المشاعر، وهو ما يتوافق مع جوهر تحليل المشاعر دون تجاوز حدود النص الأصلي."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F17",
+      "kind": "positive",
+      "input": "النظام يحول الجملة تلقائيًا من العربية إلى الإنجليزية مع محاولة الحفاظ على معناها.",
+      "expected_term_id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+      "expected_term": "ترجمة الآلة",
+      "selection": {
+        "choice": "C2",
+        "selected_term_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+        "selected_term": "معالجة اللغات الطبيعية",
+        "selected_definition": "فرع من فروع الذكاء الاصطناعي يهتم بفهم أو توليد اللغة البشرية سواءٌ كانت على شكل نص أو كلام.",
+        "raw_output": "{\"choice\":\"C2\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.256,
+          "usage": {
+            "prompt_tokens": 255,
+            "total_tokens": 262,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": false,
+          "expected": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+          "selected": "cd950eb2-bfab-4200-a534-9e787a26e99e"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "forced_term": "معالجة اللغات الطبيعية",
+          "output": "يتمثل نظام معالجة اللغات الطبيعية في تحويل الجمل تلقائيًا من العربية إلى الإنجليزية مع الحفاظ على معناها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.718,
+            "usage": {
+              "prompt_tokens": 260,
+              "total_tokens": 286,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": true,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'معالجة اللغات الطبيعية' غير موجود في النص الأصلي، مما يجعله غير مناسب (selected_term_fit: false). كما أن التعريف المقدم يضيف معلومات جديدة (أنه فرع من الذكاء الاصطناعي، وأن اهتمامه بفهم أو توليد اللغة) لم تكن موجودة في النص الأصلي، مما ينتهك شرط الحفاظ على المعلومات وعدم إضافة حقائق جديدة (meaning_preserved: false, unsupported_addition: true).\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.75,
+            "usage": {
+              "prompt_tokens": 277,
+              "total_tokens": 424,
+              "completion_tokens": 147,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'معالجة اللغات الطبيعية' غير موجود في النص الأصلي، مما يجعله غير مناسب (selected_term_fit: false). كما أن التعريف المقدم يضيف معلومات جديدة (أنه فرع من الذكاء الاصطناعي، وأن اهتمامه بفهم أو توليد اللغة) لم تكن موجودة في النص الأصلي، مما ينتهك شرط الحفاظ على المعلومات وعدم إضافة حقائق جديدة (meaning_preserved: false, unsupported_addition: true)."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "يقوم النظام بتحويل الجمل تلقائيًا من العربية إلى الإنجليزية مع السعي للحفاظ على معناها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.245,
+            "usage": {
+              "prompt_tokens": 244,
+              "total_tokens": 267,
+              "completion_tokens": 23,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (التحويل التلقائي، اللغة العربية إلى الإنجليزية، والسعي للحفاظ على المعنى) دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.076,
+            "usage": {
+              "prompt_tokens": 239,
+              "total_tokens": 369,
+              "completion_tokens": 130,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (التحويل التلقائي، اللغة العربية إلى الإنجليزية، والسعي للحفاظ على المعنى) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "يقوم النظام بتحويل الجمل تلقائيًا من العربية إلى الإنجليزية مع السعي للحفاظ على معناها.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (التحويل التلقائي، اللغة العربية إلى الإنجليزية، والسعي للحفاظ على المعنى) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F18",
+      "kind": "positive",
+      "input": "لدينا ملايين السجلات ونبحث فيها لاكتشاف علاقات وأنماط مخفية يمكن الاستفادة منها.",
+      "expected_term_id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+      "expected_term": "تنقيب في البيانات",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+        "selected_term": "تنقيب في البيانات",
+        "selected_definition": "عملية اكتشاف الأنماط في كمية كبيرة من البيانات، واستخراج المعلومات المفيدة.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 2.692,
+          "usage": {
+            "prompt_tokens": 268,
+            "total_tokens": 275,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "selected": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+          "forced_term": "تنقيب في البيانات",
+          "output": "يُعدّ تنقيب في البيانات عملية استكشاف ملايين السجلات لاكتشاف العلاقات والأنماط المخفية التي يمكن استغلالها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.516,
+            "usage": {
+              "prompt_tokens": 251,
+              "total_tokens": 282,
+              "completion_tokens": 31,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n\"selected_term_fit\": true,\n\"term_present\": true,\n\"meaning_preserved\": true,\n\"unsupported_addition\": false,\n\"instruction_leak\": false,\n\"reason\": \"المصطلح 'تنقيب في البيانات' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يتطابق مع المعنى الضمني للنص الأصلي الذي يصف عملية استكشاف السجلات لاكتشاف الأنماط والعلاقات. لم يتم إضافة أي معلومات جديدة أو علاقات غير موجودة في النص الأصلي، ولا توجد أي تسريبات تعليمات.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.697,
+            "usage": {
+              "prompt_tokens": 274,
+              "total_tokens": 397,
+              "completion_tokens": 123,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'تنقيب في البيانات' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يتطابق مع المعنى الضمني للنص الأصلي الذي يصف عملية استكشاف السجلات لاكتشاف الأنماط والعلاقات. لم يتم إضافة أي معلومات جديدة أو علاقات غير موجودة في النص الأصلي، ولا توجد أي تسريبات تعليمات."
+          }
+        }
+      ],
+      "final_output": "يُعدّ تنقيب في البيانات عملية استكشاف ملايين السجلات لاكتشاف العلاقات والأنماط المخفية التي يمكن استغلالها.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'تنقيب في البيانات' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يتطابق مع المعنى الضمني للنص الأصلي الذي يصف عملية استكشاف السجلات لاكتشاف الأنماط والعلاقات. لم يتم إضافة أي معلومات جديدة أو علاقات غير موجودة في النص الأصلي، ولا توجد أي تسريبات تعليمات."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F19",
+      "kind": "positive",
+      "input": "نتعامل مع بيانات هائلة تصل بسرعة من مصادر متعددة وبأشكال مختلفة، لذلك نحتاج تقنيات قابلة للتوسع لتخزينها ومعالجتها.",
+      "expected_term_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+      "expected_term": "بيانات ضخمة",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+        "selected_term": "بيانات ضخمة",
+        "selected_definition": "مجموعة بيانات كبيرة تتطلب تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها؛ نظرًا لخصائص حجمها وتنوعها وسرعتها وتباينها.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.878,
+          "usage": {
+            "prompt_tokens": 301,
+            "total_tokens": 308,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "selected": "62c0c0e3-72db-40ae-9cec-616825860e73"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "forced_term": "بيانات ضخمة",
+          "output": "يتطلب التعامل مع البيانات الضخمة، التي تتدفق بسرعة من مصادر متعددة بأشكال متنوعة، اعتماد تقنيات قابلة للتوسع لتخزينها ومعالجتها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.253,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 325,
+              "completion_tokens": 38,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'بيانات ضخمة' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يضيف تفاصيل إضافية (مثل 'إدارها وتحليلها' و'تباينها') لم تكن صريحة في النص الأصلي الذي ركز فقط على 'تخزينها ومعالجتها' و'أشكال مختلفة' و'سرعة'. ومع ذلك، فإن هذه الإضافات لا تتعارض مع المعنى الأصلي ولا تضيف معلومات خاطئة، بل هي توسيع منطقي للمفهوم ضمن سياق البيانات الضخمة دون تغيير جوهر النص الأصلي أو إضافة علاقات جديدة غير مدعومة.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 9.48,
+            "usage": {
+              "prompt_tokens": 317,
+              "total_tokens": 501,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'بيانات ضخمة' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يضيف تفاصيل إضافية (مثل 'إدارها وتحليلها' و'تباينها') لم تكن صريحة في النص الأصلي الذي ركز فقط على 'تخزينها ومعالجتها' و'أشكال مختلفة' و'سرعة'. ومع ذلك، فإن هذه الإضافات لا تتعارض مع المعنى الأصلي ولا تضيف معلومات خاطئة، بل هي توسيع منطقي للمفهوم ضمن سياق البيانات الضخمة دون تغيير جوهر النص الأصلي أو إضافة علاقات جديدة غير مدعومة."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+          "forced_term": "بيانات ضخمة",
+          "output": "في سياق الذكاء الاصطناعي، نواجه بيانات ضخمة تصل بسرعة من مصادر متعددة بأشكال متنوعة، مما يستدعي اعتماد تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.698,
+            "usage": {
+              "prompt_tokens": 316,
+              "total_tokens": 365,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'بيانات ضخمة' غير موجود في الصياغة الجديدة (استُبدل بـ 'بيانات ضخمة' في بداية الجملة فقط، لكن التعريف المطروح في السؤال يشير إلى مصطلح مختلف أو غير موجود فعليًا في النص الجديد كما هو مطلوب). التعريف المقدم في السؤال يضيف معلومات غير موجودة في النص الأصلي (مثل 'تنوعها وسرعتها وتباينها' كسبب صريح، و'إدارتها وتحليلها' كجزء من التعريف وليس فقط في السياق). الصياغة الجديدة أضفت سياقًا جديدًا ('في سياق الذكاء الاصطناعي') لم يكن في النص الأصلي، مما ينتهك شرط عدم إضافة حقائق أو علاقات جديدة.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 9.523,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 536,
+              "completion_tokens": 208,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": true,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'بيانات ضخمة' غير موجود في الصياغة الجديدة (استُبدل بـ 'بيانات ضخمة' في بداية الجملة فقط، لكن التعريف المطروح في السؤال يشير إلى مصطلح مختلف أو غير موجود فعليًا في النص الجديد كما هو مطلوب). التعريف المقدم في السؤال يضيف معلومات غير موجودة في النص الأصلي (مثل 'تنوعها وسرعتها وتباينها' كسبب صريح، و'إدارتها وتحليلها' كجزء من التعريف وليس فقط في السياق). الصياغة الجديدة أضفت سياقًا جديدًا ('في سياق الذكاء الاصطناعي') لم يكن في النص الأصلي، مما ينتهك شرط عدم إضافة حقائق أو علاقات جديدة."
+          }
+        }
+      ],
+      "final_output": "في سياق الذكاء الاصطناعي، نواجه بيانات ضخمة تصل بسرعة من مصادر متعددة بأشكال متنوعة، مما يستدعي اعتماد تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها.",
+      "final_validation": {
+        "selected_term_fit": false,
+        "term_present_model": false,
+        "term_present_lexical": true,
+        "term_present": false,
+        "meaning_preserved": false,
+        "unsupported_addition": true,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": false,
+        "reason": "المصطلح 'بيانات ضخمة' غير موجود في الصياغة الجديدة (استُبدل بـ 'بيانات ضخمة' في بداية الجملة فقط، لكن التعريف المطروح في السؤال يشير إلى مصطلح مختلف أو غير موجود فعليًا في النص الجديد كما هو مطلوب). التعريف المقدم في السؤال يضيف معلومات غير موجودة في النص الأصلي (مثل 'تنوعها وسرعتها وتباينها' كسبب صريح، و'إدارتها وتحليلها' كجزء من التعريف وليس فقط في السياق). الصياغة الجديدة أضفت سياقًا جديدًا ('في سياق الذكاء الاصطناعي') لم يكن في النص الأصلي، مما ينتهك شرط عدم إضافة حقائق أو علاقات جديدة."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F20",
+      "kind": "positive",
+      "input": "بدل أن نكتب قاعدة برمجية لكل حالة، نجعل النظام يستفيد من البيانات السابقة لتحسين أدائه في المهمة.",
+      "expected_term_id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+      "expected_term": "تعلُّم الآلة",
+      "selection": {
+        "choice": "C2",
+        "selected_term_id": "a338b836-30ee-471a-a164-f09c919243ce",
+        "selected_term": "توليد مُعَزَّز بالاسترجاع",
+        "selected_definition": "إطار للذكاء الاصطناعي يدمج بين استرجاع المعلومات الخارجية والنماذج التوليدية لإنتاج استجابات أكثر دقة وملاءمة للسياق.",
+        "raw_output": "{\"choice\":\"C2\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.941,
+          "usage": {
+            "prompt_tokens": 300,
+            "total_tokens": 307,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": false,
+          "expected": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+          "selected": "a338b836-30ee-471a-a164-f09c919243ce"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "forced_term": "توليد مُعَزَّز بالاسترجاع",
+          "output": "بدلاً من صياغة قاعدة برمجية لكل حالة، يُمكن للنظام أن يستفيد من البيانات السابقة عبر توليد مُعزَّز بالاسترجاع لتحسين أدائه في المهمة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.913,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 332,
+              "completion_tokens": 42,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": true,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'توليد مُعزَّز بالاسترجاع' غير موجود في النص الأصلي، وهو إضافة غير مدعومة بالمعلومات الأصلية. كما أن التعريف المقدم للمصطلح يصف مفهومًا تقنيًا (دمج استرجاع المعلومات مع النماذج التوليدية) لم يكن موجودًا في النص الأصلي، مما يؤدي إلى تغيير المعنى وإضافة قدرات وعلاقات جديدة غير موجودة في المصدر.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.57,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 466,
+              "completion_tokens": 147,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'توليد مُعزَّز بالاسترجاع' غير موجود في النص الأصلي، وهو إضافة غير مدعومة بالمعلومات الأصلية. كما أن التعريف المقدم للمصطلح يصف مفهومًا تقنيًا (دمج استرجاع المعلومات مع النماذج التوليدية) لم يكن موجودًا في النص الأصلي، مما يؤدي إلى تغيير المعنى وإضافة قدرات وعلاقات جديدة غير موجودة في المصدر."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "بدلاً من صياغة قاعدة برمجية لكل حالة، نسمح للنظام بالاستفادة من البيانات السابقة لتحسين أدائه في إنجاز المهمة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.525,
+            "usage": {
+              "prompt_tokens": 251,
+              "total_tokens": 282,
+              "completion_tokens": 31,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي دون إضافة معلومات جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.889,
+            "usage": {
+              "prompt_tokens": 255,
+              "total_tokens": 354,
+              "completion_tokens": 99,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي دون إضافة معلومات جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "بدلاً من صياغة قاعدة برمجية لكل حالة، نسمح للنظام بالاستفادة من البيانات السابقة لتحسين أدائه في إنجاز المهمة.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على المعنى الأصلي دون إضافة معلومات جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F21",
+      "kind": "positive",
+      "input": "نحتاج نظامًا يتعامل مع اللغة البشرية، ويفهم النصوص ويستخرج منها المعنى والمعلومات.",
+      "expected_term_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+      "expected_term": "معالجة اللغات الطبيعية",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+        "selected_term": "معالجة اللغات الطبيعية",
+        "selected_definition": "فرع من فروع الذكاء الاصطناعي يهتم بفهم أو توليد اللغة البشرية سواءٌ كانت على شكل نص أو كلام.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.84,
+          "usage": {
+            "prompt_tokens": 262,
+            "total_tokens": 269,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "selected": "cd950eb2-bfab-4200-a534-9e787a26e99e"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+          "forced_term": "معالجة اللغات الطبيعية",
+          "output": "يُعد مجال معالجة اللغات الطبيعية، الذي يُعرّف كفرع من فروع الذكاء الاصطناعي يهتم بفهم أو توليد اللغة البشرية سواء كانت نصية أو كلامية، هو الأساس الذي يُبنى عليه نظام يفهم النصوص ويستخرج منها المعنى والمعلومات.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.57,
+            "usage": {
+              "prompt_tokens": 262,
+              "total_tokens": 323,
+              "completion_tokens": 61,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n\"selected_term_fit\": true,\n\"term_present\": true,\n\"meaning_preserved\": true,\n\"unsupported_addition\": false,\n\"instruction_leak\": false,\n\"reason\": \"المصطلح 'معالجة اللغات الطبيعية' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يتطابق مع المعلومات الموجودة في النص الأصلي (الذكاء الاصطناعي، فهم اللغة، النص والكلام). الصياغة الجديدة تحافظ على المعنى الأصلي (فهم النصوص واستخراج المعنى والمعلومات) دون إضافة حقائق أو قدرات جديدة غير موجودة في النص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.055,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 447,
+              "completion_tokens": 132,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'معالجة اللغات الطبيعية' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يتطابق مع المعلومات الموجودة في النص الأصلي (الذكاء الاصطناعي، فهم اللغة، النص والكلام). الصياغة الجديدة تحافظ على المعنى الأصلي (فهم النصوص واستخراج المعنى والمعلومات) دون إضافة حقائق أو قدرات جديدة غير موجودة في النص الأصلي."
+          }
+        }
+      ],
+      "final_output": "يُعد مجال معالجة اللغات الطبيعية، الذي يُعرّف كفرع من فروع الذكاء الاصطناعي يهتم بفهم أو توليد اللغة البشرية سواء كانت نصية أو كلامية، هو الأساس الذي يُبنى عليه نظام يفهم النصوص ويستخرج منها المعنى والمعلومات.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'معالجة اللغات الطبيعية' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يتطابق مع المعلومات الموجودة في النص الأصلي (الذكاء الاصطناعي، فهم اللغة، النص والكلام). الصياغة الجديدة تحافظ على المعنى الأصلي (فهم النصوص واستخراج المعنى والمعلومات) دون إضافة حقائق أو قدرات جديدة غير موجودة في النص الأصلي."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F22",
+      "kind": "positive",
+      "input": "نستخدم نموذجًا لغويًا يحتوي على عدد هائل من المعاملات وقد دُرّب على كميات كبيرة من النصوص.",
+      "expected_term_id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+      "expected_term": "نموذج لغوي كبير",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+        "selected_term": "نموذج لغوي كبير",
+        "selected_definition": "نموذج لغوي مُكوَّن من عدد كبير من المُعامِلات.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.298,
+          "usage": {
+            "prompt_tokens": 267,
+            "total_tokens": 274,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "selected": "c1daebbe-f861-4887-96c4-527daa4b4fd0"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+          "forced_term": "نموذج لغوي كبير",
+          "output": "نستخدم نموذجًا لغويًا كبيرًا، وهو يتكون من عدد هائل من المعاملات وقد تم تدريبه على كميات ضخمة من النصوص.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.672,
+            "usage": {
+              "prompt_tokens": 260,
+              "total_tokens": 295,
+              "completion_tokens": 35,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'نموذج لغوي كبير' غير موجود في النص الأصلي (الذي ذكر 'نموذجًا لغويًا' فقط)، كما أن التعريف المقدم يضيف معلومات غير موجودة أصلاً (مثل 'مُكوَّن من عدد كبير من المُعامِلات' بينما النص الأصلي ذكر 'عدد هائل من المعاملات' دون ربطها مباشرة بحجم النموذج كصفة رئيسية).\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.462,
+            "usage": {
+              "prompt_tokens": 285,
+              "total_tokens": 429,
+              "completion_tokens": 144,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'نموذج لغوي كبير' غير موجود في النص الأصلي (الذي ذكر 'نموذجًا لغويًا' فقط)، كما أن التعريف المقدم يضيف معلومات غير موجودة أصلاً (مثل 'مُكوَّن من عدد كبير من المُعامِلات' بينما النص الأصلي ذكر 'عدد هائل من المعاملات' دون ربطها مباشرة بحجم النموذج كصفة رئيسية)."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "نستخدم نموذجًا لغويًا يضم عددًا هائلاً من المعاملات وقد تم تدريبه على كميات ضخمة من النصوص.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.517,
+            "usage": {
+              "prompt_tokens": 252,
+              "total_tokens": 283,
+              "completion_tokens": 31,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (نموذج لغوي، عدد هائل من المعاملات، تدريب على كميات كبيرة من النصوص) دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.789,
+            "usage": {
+              "prompt_tokens": 256,
+              "total_tokens": 381,
+              "completion_tokens": 125,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (نموذج لغوي، عدد هائل من المعاملات، تدريب على كميات كبيرة من النصوص) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "نستخدم نموذجًا لغويًا يضم عددًا هائلاً من المعاملات وقد تم تدريبه على كميات ضخمة من النصوص.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (نموذج لغوي، عدد هائل من المعاملات، تدريب على كميات كبيرة من النصوص) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F23",
+      "kind": "positive",
+      "input": "البنية الحوسبية تتكون من وحدات مترابطة على شكل طبقات، وتنتقل الإشارات بينها عبر معاملات قابلة للتعديل.",
+      "expected_term_id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+      "expected_term": "شبكة عصبية اصطناعية",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "fa65c6dc-40ae-4fbe-8f5d-1721edd83752",
+        "selected_term": "طبقة",
+        "selected_definition": "مجموعة من الخلايا العصبية في شبكة عصبية ما، تعالج خصائص المُدْخَلات أو مخرجات تلك الخلايا العصبية.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 2.835,
+          "usage": {
+            "prompt_tokens": 285,
+            "total_tokens": 292,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": false,
+          "expected": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+          "selected": "fa65c6dc-40ae-4fbe-8f5d-1721edd83752"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "fa65c6dc-40ae-4fbe-8f5d-1721edd83752",
+          "forced_term": "طبقة",
+          "output": "تتكون البنية الحوسبية من وحدات مترابطة على شكل طبقات، حيث تنتقل الإشارات بينها عبر معاملات قابلة للتعديل.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.562,
+            "usage": {
+              "prompt_tokens": 272,
+              "total_tokens": 304,
+              "completion_tokens": 32,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح المختار 'طبقة' غير موجود في الصياغة الجديدة (حيث استخدمت صيغة 'على شكل طبقات'). كما أن التعريف المقدم للمصطلح يشير إلى 'شبكة عصبية' و'خلايا عصبية'، وهو مفهوم غير موجود في النص الأصلي الذي يتحدث فقط عن 'وحدات مترابطة' دون تحديد طبيعتها كخلايا عصبية أو شبكات، مما يعني أن التعريف يضيف معلومات غير مدعومة بالنص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.015,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 458,
+              "completion_tokens": 160,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح المختار 'طبقة' غير موجود في الصياغة الجديدة (حيث استخدمت صيغة 'على شكل طبقات'). كما أن التعريف المقدم للمصطلح يشير إلى 'شبكة عصبية' و'خلايا عصبية'، وهو مفهوم غير موجود في النص الأصلي الذي يتحدث فقط عن 'وحدات مترابطة' دون تحديد طبيعتها كخلايا عصبية أو شبكات، مما يعني أن التعريف يضيف معلومات غير مدعومة بالنص الأصلي."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "تتكون البنية الحوسبية من وحدات مترابطة على هيئة طبقات، حيث تنتقل الإشارات بينها عبر معاملات قابلة للتعديل.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.557,
+            "usage": {
+              "prompt_tokens": 255,
+              "total_tokens": 287,
+              "completion_tokens": 32,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الواردة في النص الأصلي دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.03,
+            "usage": {
+              "prompt_tokens": 259,
+              "total_tokens": 362,
+              "completion_tokens": 103,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الواردة في النص الأصلي دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "تتكون البنية الحوسبية من وحدات مترابطة على هيئة طبقات، حيث تنتقل الإشارات بينها عبر معاملات قابلة للتعديل.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الواردة في النص الأصلي دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F24",
+      "kind": "positive",
+      "input": "قبل أن يجيب النظام، يبحث في قاعدة معرفة خارجية عن المقاطع المرتبطة بالسؤال ثم يستخدمها عند توليد الإجابة.",
+      "expected_term_id": "a338b836-30ee-471a-a164-f09c919243ce",
+      "expected_term": "توليد مُعَزَّز بالاسترجاع",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "a338b836-30ee-471a-a164-f09c919243ce",
+        "selected_term": "توليد مُعَزَّز بالاسترجاع",
+        "selected_definition": "إطار للذكاء الاصطناعي يدمج بين استرجاع المعلومات الخارجية والنماذج التوليدية لإنتاج استجابات أكثر دقة وملاءمة للسياق.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.543,
+          "usage": {
+            "prompt_tokens": 285,
+            "total_tokens": 292,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "a338b836-30ee-471a-a164-f09c919243ce",
+          "selected": "a338b836-30ee-471a-a164-f09c919243ce"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "a338b836-30ee-471a-a164-f09c919243ce",
+          "forced_term": "توليد مُعَزَّز بالاسترجاع",
+          "output": "قبل أن يصوغ النظام إجابته، يقوم باسترجاع مقاطع ذات صلة من قاعدة معرفة خارجية، ثم يدمج هذه المعلومات في عملية التوليد لضمان دقة وملاءمة الرد للسياق.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.031,
+            "usage": {
+              "prompt_tokens": 291,
+              "total_tokens": 336,
+              "completion_tokens": 45,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'توليد مُعَزَّز بالاسترجاع' غير موجود في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. علاوة على ذلك، الصياغة الجديدة تضيف مفاهيم غير موجودة في النص الأصلي مثل 'ضمان دقة وملاءمة الرد للسياق'، مما يتجاوز المعلومات الأصلية التي تتحدث فقط عن البحث والاستخدام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.29,
+            "usage": {
+              "prompt_tokens": 321,
+              "total_tokens": 460,
+              "completion_tokens": 139,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'توليد مُعَزَّز بالاسترجاع' غير موجود في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده. علاوة على ذلك، الصياغة الجديدة تضيف مفاهيم غير موجودة في النص الأصلي مثل 'ضمان دقة وملاءمة الرد للسياق'، مما يتجاوز المعلومات الأصلية التي تتحدث فقط عن البحث والاستخدام."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "قبل إصدار الرد، يقوم النظام بالبحث في قاعدة معرفة خارجية عن المقاطع ذات الصلة بالسؤال، ثم يستند إليها أثناء توليد الإجابة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.002,
+            "usage": {
+              "prompt_tokens": 252,
+              "total_tokens": 285,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (البحث في قاعدة المعرفة الخارجية، استخدام المقاطع ذات الصلة، والتوليد) دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.735,
+            "usage": {
+              "prompt_tokens": 257,
+              "total_tokens": 380,
+              "completion_tokens": 123,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (البحث في قاعدة المعرفة الخارجية، استخدام المقاطع ذات الصلة، والتوليد) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "قبل إصدار الرد، يقوم النظام بالبحث في قاعدة معرفة خارجية عن المقاطع ذات الصلة بالسؤال، ثم يستند إليها أثناء توليد الإجابة.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (البحث في قاعدة المعرفة الخارجية، استخدام المقاطع ذات الصلة، والتوليد) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F25",
+      "kind": "positive",
+      "input": "لدينا عشرات المتغيرات المتداخلة، ونريد تمثيل البيانات بعدد أقل من الخصائص مع الاحتفاظ بأكبر قدر ممكن من المعلومات.",
+      "expected_term_id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+      "expected_term": "تحليل المُكوِّن الرئيس",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+        "selected_term": "تحليل المُكوِّن الرئيس",
+        "selected_definition": "أسلوب يُستخدم لإزالة تكرار المعلومات وتقليل خصائص مجموعة البيانات إلى مُكوِّناتها الرئيسة.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.878,
+          "usage": {
+            "prompt_tokens": 312,
+            "total_tokens": 319,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+          "selected": "9e116c6f-05ce-41e5-9551-77124d9038ad"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+          "forced_term": "تحليل المُكوِّن الرئيس",
+          "output": "في مواجهة عشرات المتغيرات المتداخلة، يُعتمد أسلوب تحليل المكوّن الرئيس لتمثيل البيانات بعدد أقل من الخصائص مع الحفاظ على أكبر قدر ممكن من المعلومات.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.137,
+            "usage": {
+              "prompt_tokens": 278,
+              "total_tokens": 316,
+              "completion_tokens": 38,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'تحليل المكوّن الرئيس' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف عملية تقليل عدد الخصائص مع الاحتفاظ بالمعلومات، وهو ما يتطابق تمامًا مع المعنى المذكور في النص الأصلي (تمثيل البيانات بعدد أقل من الخصائص مع الاحتفاظ بأكبر قدر ممكن من المعلومات). لم يتم إضافة أي معلومات جديدة أو علاقات غير موجودة في النص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.535,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 445,
+              "completion_tokens": 141,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'تحليل المكوّن الرئيس' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف عملية تقليل عدد الخصائص مع الاحتفاظ بالمعلومات، وهو ما يتطابق تمامًا مع المعنى المذكور في النص الأصلي (تمثيل البيانات بعدد أقل من الخصائص مع الاحتفاظ بأكبر قدر ممكن من المعلومات). لم يتم إضافة أي معلومات جديدة أو علاقات غير موجودة في النص الأصلي."
+          }
+        }
+      ],
+      "final_output": "في مواجهة عشرات المتغيرات المتداخلة، يُعتمد أسلوب تحليل المكوّن الرئيس لتمثيل البيانات بعدد أقل من الخصائص مع الحفاظ على أكبر قدر ممكن من المعلومات.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'تحليل المكوّن الرئيس' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم يصف عملية تقليل عدد الخصائص مع الاحتفاظ بالمعلومات، وهو ما يتطابق تمامًا مع المعنى المذكور في النص الأصلي (تمثيل البيانات بعدد أقل من الخصائص مع الاحتفاظ بأكبر قدر ممكن من المعلومات). لم يتم إضافة أي معلومات جديدة أو علاقات غير موجودة في النص الأصلي."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F26",
+      "kind": "positive",
+      "input": "نقيّم التنبؤات بحساب الفرق بينها وبين القيم الحقيقية، ثم نربّع كل فرق ونأخذ متوسط هذه القيم.",
+      "expected_term_id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+      "expected_term": "متوسط الخطأ التربيعي",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+        "selected_term": "متوسط الخطأ التربيعي",
+        "selected_definition": "متوسط الخسارة التربيعية لكل مثال، محسوبًا بقسمة الخسارة التربيعية على عدد الأمثلة.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.719,
+          "usage": {
+            "prompt_tokens": 279,
+            "total_tokens": 286,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+          "selected": "08176ed0-a78a-4909-9d97-cfb8ee956bb9"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+          "forced_term": "متوسط الخطأ التربيعي",
+          "output": "يُقيَّم التنبؤات بحساب الفرق بينها وبين القيم الحقيقية، ثم تُربَّع كل فرق ويُحسب متوسط هذه القيم.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 10.304,
+            "usage": {
+              "prompt_tokens": 270,
+              "total_tokens": 302,
+              "completion_tokens": 32,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": false,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح المختار 'متوسط الخطأ التربيعي' غير موجود في الصياغة الجديدة، ولا يتم تعريفه كما هو مطلوب. كما أن التعريف المقدم يتضمن مفاهيم غير موجودة في النص الأصلي (مثل 'الخسارة' و'عدد الأمثلة')، مما يمثل إضافة غير مدعومة بالنص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.729,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 417,
+              "completion_tokens": 123,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": false,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح المختار 'متوسط الخطأ التربيعي' غير موجود في الصياغة الجديدة، ولا يتم تعريفه كما هو مطلوب. كما أن التعريف المقدم يتضمن مفاهيم غير موجودة في النص الأصلي (مثل 'الخسارة' و'عدد الأمثلة')، مما يمثل إضافة غير مدعومة بالنص الأصلي."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "يتم تقييم التنبؤات بحساب الفرق بين القيم المتوقعة والقيم الفعلية، ثم رفع كل فرق إلى الأس الثاني وإيجاد متوسط هذه القيم.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.61,
+            "usage": {
+              "prompt_tokens": 252,
+              "total_tokens": 285,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (حساب الفرق، التربيع، والمتوسط) دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.156,
+            "usage": {
+              "prompt_tokens": 257,
+              "total_tokens": 369,
+              "completion_tokens": 112,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (حساب الفرق، التربيع، والمتوسط) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "يتم تقييم التنبؤات بحساب الفرق بين القيم المتوقعة والقيم الفعلية، ثم رفع كل فرق إلى الأس الثاني وإيجاد متوسط هذه القيم.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (حساب الفرق، التربيع، والمتوسط) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F27",
+      "kind": "positive",
+      "input": "النظام يحلل الصور والفيديو ليتعرف على الأشياء الظاهرة فيها ويفهم محتواها المرئي.",
+      "expected_term_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+      "expected_term": "رؤية الحاسب",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+        "selected_term": "رؤية الحاسب",
+        "selected_definition": "مجال في الذكاء الاصطناعي يركز على تحليل البيانات المرئية (صور وفيديوهات) وفهم محتواها. ويُطلق عليه أيضًا \"رؤية الآلة\".",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.945,
+          "usage": {
+            "prompt_tokens": 283,
+            "total_tokens": 290,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+          "selected": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+          "forced_term": "رؤية الحاسب",
+          "output": "يُعد مجال رؤية الحاسب، والمعروف أيضًا برؤية الآلة، تخصصًا في الذكاء الاصطناعي يهدف إلى تحليل الصور والفيديوهات لتحديد الأشياء الظاهرة فيها وفهم محتواها المرئي.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.088,
+            "usage": {
+              "prompt_tokens": 270,
+              "total_tokens": 317,
+              "completion_tokens": 47,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n\"selected_term_fit\": true,\n\"term_present\": true,\n\"meaning_preserved\": true,\n\"unsupported_addition\": false,\n\"instruction_leak\": false,\n\"reason\": \"المصطلح 'رؤية الحاسب' موجود في النص الأصلي ضمن سياق 'تحليل الصور والفيديو'. التعريف المقدم في الصياغة الجديدة يحافظ على المعنى الأصلي (تحليل الصور والفيديوهات وفهم محتواها المرئي) دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي، كما تم استخدام المصطلح بشكل طبيعي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.217,
+            "usage": {
+              "prompt_tokens": 310,
+              "total_tokens": 434,
+              "completion_tokens": 124,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'رؤية الحاسب' موجود في النص الأصلي ضمن سياق 'تحليل الصور والفيديو'. التعريف المقدم في الصياغة الجديدة يحافظ على المعنى الأصلي (تحليل الصور والفيديوهات وفهم محتواها المرئي) دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي، كما تم استخدام المصطلح بشكل طبيعي."
+          }
+        }
+      ],
+      "final_output": "يُعد مجال رؤية الحاسب، والمعروف أيضًا برؤية الآلة، تخصصًا في الذكاء الاصطناعي يهدف إلى تحليل الصور والفيديوهات لتحديد الأشياء الظاهرة فيها وفهم محتواها المرئي.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'رؤية الحاسب' موجود في النص الأصلي ضمن سياق 'تحليل الصور والفيديو'. التعريف المقدم في الصياغة الجديدة يحافظ على المعنى الأصلي (تحليل الصور والفيديوهات وفهم محتواها المرئي) دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي، كما تم استخدام المصطلح بشكل طبيعي."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F28",
+      "kind": "positive",
+      "input": "أثناء ضبط النموذج نحتاج قيمة عددية تعبّر عن مقدار اختلاف مخرجاته عن القيمة المستهدفة حتى نحاول تقليلها.",
+      "expected_term_id": "51f2785a-f64c-4198-9c18-c93e04853146",
+      "expected_term": "دالة الخسارة",
+      "selection": {
+        "choice": "C2",
+        "selected_term_id": "51f2785a-f64c-4198-9c18-c93e04853146",
+        "selected_term": "دالة الخسارة",
+        "selected_definition": "دالة تُستخدم لتحديد الخطأ بين مخرجات الخوارزمية والقيمة المستهدفة. ويُطلق عليها أيضًا \"دالة التكلفة\".",
+        "raw_output": "{\"choice\":\"C2\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.508,
+          "usage": {
+            "prompt_tokens": 280,
+            "total_tokens": 287,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "51f2785a-f64c-4198-9c18-c93e04853146",
+          "selected": "51f2785a-f64c-4198-9c18-c93e04853146"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "51f2785a-f64c-4198-9c18-c93e04853146",
+          "forced_term": "دالة الخسارة",
+          "output": "أثناء ضبط النموذج، نحتاج إلى قيمة عددية تعبر عن مقدار اختلاف مخرجاته عن القيمة المستهدفة، بهدف تقليل هذه القيمة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.827,
+            "usage": {
+              "prompt_tokens": 277,
+              "total_tokens": 310,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده أو الحفاظ على معناه.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.6,
+            "usage": {
+              "prompt_tokens": 302,
+              "total_tokens": 386,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": null,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا يمكن تقييم ملاءمته أو وجوده أو الحفاظ على معناه."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "خلال عملية ضبط النموذج، تُستخدم قيمة رقمية لتمثيل مقدار انحراف مخرجاته عن القيمة المستهدفة، بهدف تقليل هذا الانحراف.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.69,
+            "usage": {
+              "prompt_tokens": 224,
+              "total_tokens": 260,
+              "completion_tokens": 36,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (ضبط النموذج، القيمة العددية، مقدار الاختلاف/الانحراف، القيمة المستهدفة، والهدف من تقليلها) دون إضافة حقائق جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 7.676,
+            "usage": {
+              "prompt_tokens": 263,
+              "total_tokens": 396,
+              "completion_tokens": 133,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (ضبط النموذج، القيمة العددية، مقدار الاختلاف/الانحراف، القيمة المستهدفة، والهدف من تقليلها) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "خلال عملية ضبط النموذج، تُستخدم قيمة رقمية لتمثيل مقدار انحراف مخرجاته عن القيمة المستهدفة، بهدف تقليل هذا الانحراف.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (ضبط النموذج، القيمة العددية، مقدار الاختلاف/الانحراف، القيمة المستهدفة، والهدف من تقليلها) دون إضافة حقائق جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "F29",
+      "kind": "positive",
+      "input": "نريد من النظام أن يحدد داخل الخبر أسماء الأشخاص والشركات والمدن ويصنف كل اسم حسب نوعه.",
+      "expected_term_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+      "expected_term": "تعرُّف على الكيانات المُسمّاة",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+        "selected_term": "تعرُّف على الكيانات المُسمّاة",
+        "selected_definition": "عملية تحديد أسماء الكيانات وفئاتها في النص أو الكلام.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.748,
+          "usage": {
+            "prompt_tokens": 248,
+            "total_tokens": 255,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "selected": "4478af2d-bf49-4664-8213-8a8adf8a0a5e"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "forced_term": "تعرُّف على الكيانات المُسمّاة",
+          "output": "يهدف النظام إلى تحديد أسماء الكيانات المسمّاة، مثل الأشخاص والشركات والمدن، الواردة في الخبر وتصنيف كل اسم وفقًا لنوعه.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.814,
+            "usage": {
+              "prompt_tokens": 267,
+              "total_tokens": 301,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'تعرُّف على الكيانات المُسمّاة' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم (تحديد أسماء الكيانات وفئاتها) يطابق تمامًا المعنى الأصلي للنص (تحديد الأسماء وتصنيفها حسب نوعها)، ولا توجد أي إضافات غير مدعومة أو تسريب تعليمات.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.271,
+            "usage": {
+              "prompt_tokens": 285,
+              "total_tokens": 418,
+              "completion_tokens": 133,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'تعرُّف على الكيانات المُسمّاة' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم (تحديد أسماء الكيانات وفئاتها) يطابق تمامًا المعنى الأصلي للنص (تحديد الأسماء وتصنيفها حسب نوعها)، ولا توجد أي إضافات غير مدعومة أو تسريب تعليمات."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+          "forced_term": "تعرُّف على الكيانات المُسمّاة",
+          "output": "يهدف النظام إلى تحديد أسماء الأشخاص والشركات والمدن ضمن الخبر وتصنيف كل اسم وفقًا لنوعه، وذلك عبر عملية تعرف على الكيانات المُسمّاة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.684,
+            "usage": {
+              "prompt_tokens": 305,
+              "total_tokens": 341,
+              "completion_tokens": 36,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'تعرف على الكيانات المُسمّاة' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم ('عملية تحديد أسماء الكيانات وفئاتها في النص أو الكلام') يتطابق بدقة مع المعنى الأصلي للنص ('تحديد... وتصنيف كل اسم حسب نوعه') دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.495,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 422,
+              "completion_tokens": 134,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "المصطلح 'تعرف على الكيانات المُسمّاة' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم ('عملية تحديد أسماء الكيانات وفئاتها في النص أو الكلام') يتطابق بدقة مع المعنى الأصلي للنص ('تحديد... وتصنيف كل اسم حسب نوعه') دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي."
+          }
+        }
+      ],
+      "final_output": "يهدف النظام إلى تحديد أسماء الأشخاص والشركات والمدن ضمن الخبر وتصنيف كل اسم وفقًا لنوعه، وذلك عبر عملية تعرف على الكيانات المُسمّاة.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": true,
+        "term_present": true,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "المصطلح 'تعرف على الكيانات المُسمّاة' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المقدم ('عملية تحديد أسماء الكيانات وفئاتها في النص أو الكلام') يتطابق بدقة مع المعنى الأصلي للنص ('تحديد... وتصنيف كل اسم حسب نوعه') دون إضافة معلومات جديدة أو علاقات غير موجودة في النص الأصلي."
+      },
+      "final_term_usage": {
+        "canonical_term_used": true,
+        "accepted_lexicon_form_used": true
+      }
+    },
+    {
+      "id": "F30",
+      "kind": "positive",
+      "input": "لتحليل الصور، تستخدم الشبكة مرشحات صغيرة تتحرك فوق مناطق الصورة لاستخراج الأنماط المرئية تدريجيًا.",
+      "expected_term_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+      "expected_term": "شبكة عصبية ترشيحية",
+      "selection": {
+        "choice": "C1",
+        "selected_term_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+        "selected_term": "شبكة عصبية ترشيحية",
+        "selected_definition": "نوع من الشبكات العصبية العميقة المستخدمة في إنشاء نماذج لتحليل الصور والفيديوهات ومعالجتها.",
+        "raw_output": "{\"choice\":\"C1\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.714,
+          "usage": {
+            "prompt_tokens": 299,
+            "total_tokens": 306,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "selected": "9b2995b8-1593-401b-859e-a934ed1f2af0"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "forced_term": "شبكة عصبية ترشيحية",
+          "output": "في تحليل الصور، تعتمد الشبكة العصبية الترشيحية على مرشحات صغيرة تتحرك عبر مناطق الصورة لاستخراج الأنماط المرئية بشكل تدريجي.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.046,
+            "usage": {
+              "prompt_tokens": 273,
+              "total_tokens": 307,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'شبكة عصبية ترشيحية' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المرفق يوسع نطاق المفهوم ليشمل 'الفيديوهات' و'معالجتها'، وهو ما لم يكن موجودًا في النص الأصلي الذي ركز فقط على 'تحليل الصور'، مما يجعل الإضافة غير مدعومة بالنص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.878,
+            "usage": {
+              "prompt_tokens": 295,
+              "total_tokens": 431,
+              "completion_tokens": 136,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'شبكة عصبية ترشيحية' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المرفق يوسع نطاق المفهوم ليشمل 'الفيديوهات' و'معالجتها'، وهو ما لم يكن موجودًا في النص الأصلي الذي ركز فقط على 'تحليل الصور'، مما يجعل الإضافة غير مدعومة بالنص الأصلي."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+          "forced_term": "شبكة عصبية ترشيحية",
+          "output": "في تحليل الصور، تعتمد الشبكة العصبية الترشيحية على مرشحات صغيرة تتحرك عبر مناطق الصورة لاستخراج الأنماط المرئية بشكل تدريجي.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.493,
+            "usage": {
+              "prompt_tokens": 306,
+              "total_tokens": 340,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": true,\n  \"term_present\": true,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح 'شبكة عصبية ترشيحية' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المرفق يوسع نطاق المفهوم ليشمل 'الفيديوهات' و'معالجتها'، وهو ما لم يكن موجودًا في النص الأصلي الذي ركز فقط على 'تحليل الصور'، مما يجعل الإضافة غير مدعومة بالنص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 7.77,
+            "usage": {
+              "prompt_tokens": 295,
+              "total_tokens": 431,
+              "completion_tokens": 136,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": true,
+            "term_present_model": true,
+            "term_present_lexical": false,
+            "term_present": false,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح 'شبكة عصبية ترشيحية' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المرفق يوسع نطاق المفهوم ليشمل 'الفيديوهات' و'معالجتها'، وهو ما لم يكن موجودًا في النص الأصلي الذي ركز فقط على 'تحليل الصور'، مما يجعل الإضافة غير مدعومة بالنص الأصلي."
+          }
+        }
+      ],
+      "final_output": "في تحليل الصور، تعتمد الشبكة العصبية الترشيحية على مرشحات صغيرة تتحرك عبر مناطق الصورة لاستخراج الأنماط المرئية بشكل تدريجي.",
+      "final_validation": {
+        "selected_term_fit": true,
+        "term_present_model": true,
+        "term_present_lexical": false,
+        "term_present": false,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": false,
+        "reason": "المصطلح 'شبكة عصبية ترشيحية' موجود في الصياغة الجديدة بشكل طبيعي. التعريف المرفق يوسع نطاق المفهوم ليشمل 'الفيديوهات' و'معالجتها'، وهو ما لم يكن موجودًا في النص الأصلي الذي ركز فقط على 'تحليل الصور'، مما يجعل الإضافة غير مدعومة بالنص الأصلي."
+      },
+      "final_term_usage": {
+        "canonical_term_used": false,
+        "accepted_lexicon_form_used": false
+      }
+    },
+    {
+      "id": "C01",
+      "kind": "contrast_control",
+      "input": "سياسة الشركة تمنع مشاركة ملفات العملاء خارج الفريق.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "selection": {
+        "choice": "NONE",
+        "selected_term_id": null,
+        "selected_term": null,
+        "selected_definition": null,
+        "raw_output": "{\"choice\":\"NONE\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.836,
+          "usage": {
+            "prompt_tokens": 235,
+            "total_tokens": 241,
+            "completion_tokens": 6,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": null,
+          "selected": null
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "تُحظر سياسة الشركة مشاركة ملفات العملاء خارج نطاق الفريق.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.429,
+            "usage": {
+              "prompt_tokens": 161,
+              "total_tokens": 175,
+              "completion_tokens": 14,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث أن عبارة 'خارج الفريق' في النص الأصلي مكافئة لـ 'خارج نطاق الفريق' في الصياغة الجديدة دون إضافة معلومات جديدة أو تغيير المعنى.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.155,
+            "usage": {
+              "prompt_tokens": 221,
+              "total_tokens": 354,
+              "completion_tokens": 133,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث أن عبارة 'خارج الفريق' في النص الأصلي مكافئة لـ 'خارج نطاق الفريق' في الصياغة الجديدة دون إضافة معلومات جديدة أو تغيير المعنى."
+          }
+        }
+      ],
+      "final_output": "تُحظر سياسة الشركة مشاركة ملفات العملاء خارج نطاق الفريق.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث أن عبارة 'خارج الفريق' في النص الأصلي مكافئة لـ 'خارج نطاق الفريق' في الصياغة الجديدة دون إضافة معلومات جديدة أو تغيير المعنى."
+      },
+      "final_term_usage": null
+    },
+    {
+      "id": "C02",
+      "kind": "contrast_control",
+      "input": "نختبر النسخة الجديدة في بيئة منفصلة عن النظام المستخدم فعليًا.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "selection": {
+        "choice": "C3",
+        "selected_term_id": "09f1271f-d76e-471c-a05b-426b911ae194",
+        "selected_term": "بيئة",
+        "selected_definition": "عالم في التعلُّم التعزيزي يشتمل على الوكيل ويسمح له برصد حالة ذلك العالم.",
+        "raw_output": "{\"choice\":\"C3\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.875,
+          "usage": {
+            "prompt_tokens": 255,
+            "total_tokens": 262,
+            "completion_tokens": 7,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": false,
+          "expected": null,
+          "selected": "09f1271f-d76e-471c-a05b-426b911ae194"
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": "09f1271f-d76e-471c-a05b-426b911ae194",
+          "forced_term": "بيئة",
+          "output": "نختبر النسخة الجديدة في بيئة معزولة عن النظام المستخدم فعليًا.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.032,
+            "usage": {
+              "prompt_tokens": 247,
+              "total_tokens": 264,
+              "completion_tokens": 17,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": false,\n  \"term_present\": true,\n  \"meaning_preserved\": false,\n  \"unsupported_addition\": true,\n  \"instruction_leak\": false,\n  \"reason\": \"المصطلح المختار 'بيئة' في النص الأصلي يُستخدم في سياق اختبار برمجيات (بيئة منفصلة/معزولة)، بينما التعريف المقدم يشير إلى مفهوم تقني محدد في التعلم التعزيزي (عالم يشتمل على وكيل). التعريف لا يطابق السياق الأصلي ولا يضيف معلومات صحيحة للنص، بل يحل محل المفهوم الأصلي بمفهوم مختلف تمامًا، مما يجعل المصطلح غير مناسب وغير مدعوم في النص الأصلي.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.187,
+            "usage": {
+              "prompt_tokens": 261,
+              "total_tokens": 415,
+              "completion_tokens": 154,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": false,
+            "term_present_model": true,
+            "term_present_lexical": true,
+            "term_present": true,
+            "meaning_preserved": false,
+            "unsupported_addition": true,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": false,
+            "reason": "المصطلح المختار 'بيئة' في النص الأصلي يُستخدم في سياق اختبار برمجيات (بيئة منفصلة/معزولة)، بينما التعريف المقدم يشير إلى مفهوم تقني محدد في التعلم التعزيزي (عالم يشتمل على وكيل). التعريف لا يطابق السياق الأصلي ولا يضيف معلومات صحيحة للنص، بل يحل محل المفهوم الأصلي بمفهوم مختلف تمامًا، مما يجعل المصطلح غير مناسب وغير مدعوم في النص الأصلي."
+          }
+        },
+        {
+          "attempt": 2,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "نقوم باختبار النسخة الجديدة في بيئة معزولة عن النظام المستخدم فعليًا.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.547,
+            "usage": {
+              "prompt_tokens": 241,
+              "total_tokens": 259,
+              "completion_tokens": 18,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث أن استبدال 'بيئة منفصلة' بـ 'بيئة معزولة' يعكس نفس الفكرة دون إضافة معلومات جديدة أو تغيير المعنى الجوهري.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.998,
+            "usage": {
+              "prompt_tokens": 233,
+              "total_tokens": 364,
+              "completion_tokens": 131,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث أن استبدال 'بيئة منفصلة' بـ 'بيئة معزولة' يعكس نفس الفكرة دون إضافة معلومات جديدة أو تغيير المعنى الجوهري."
+          }
+        }
+      ],
+      "final_output": "نقوم باختبار النسخة الجديدة في بيئة معزولة عن النظام المستخدم فعليًا.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي حيث أن استبدال 'بيئة منفصلة' بـ 'بيئة معزولة' يعكس نفس الفكرة دون إضافة معلومات جديدة أو تغيير المعنى الجوهري."
+      },
+      "final_term_usage": null
+    },
+    {
+      "id": "C03",
+      "kind": "contrast_control",
+      "input": "وزن الجهاز أقل من كيلوغرام، لذلك يسهل حمله أثناء التنقل.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "selection": {
+        "choice": "NONE",
+        "selected_term_id": null,
+        "selected_term": null,
+        "selected_definition": null,
+        "raw_output": "{\"choice\":\"NONE\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.863,
+          "usage": {
+            "prompt_tokens": 254,
+            "total_tokens": 260,
+            "completion_tokens": 6,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": null,
+          "selected": null
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "يُعد وزن الجهاز أقل من كيلوغرام، مما يسهل حمله أثناء التنقل.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.354,
+            "usage": {
+              "prompt_tokens": 169,
+              "total_tokens": 191,
+              "completion_tokens": 22,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (الوزن أقل من كيلوغرام، سهولة الحمل أثناء التنقل) دون إضافة حقائق جديدة أو تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 8.645,
+            "usage": {
+              "prompt_tokens": 237,
+              "total_tokens": 353,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (الوزن أقل من كيلوغرام، سهولة الحمل أثناء التنقل) دون إضافة حقائق جديدة أو تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "يُعد وزن الجهاز أقل من كيلوغرام، مما يسهل حمله أثناء التنقل.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا يمكن تقييم ملاءمته أو وجوده. ومع ذلك، تم الحفاظ على جميع المعلومات الأصلية (الوزن أقل من كيلوغرام، سهولة الحمل أثناء التنقل) دون إضافة حقائق جديدة أو تعليمات النظام."
+      },
+      "final_term_usage": null
+    },
+    {
+      "id": "C04",
+      "kind": "contrast_control",
+      "input": "وقّع الوكيل عن الشركة على العقد بعد حصوله على التفويض الرسمي.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "selection": {
+        "choice": "NONE",
+        "selected_term_id": null,
+        "selected_term": null,
+        "selected_definition": null,
+        "raw_output": "{\"choice\":\"NONE\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.09,
+          "usage": {
+            "prompt_tokens": 247,
+            "total_tokens": 253,
+            "completion_tokens": 6,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": null,
+          "selected": null
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "وقّع الوكيل على العقد نيابة عن الشركة بعد استلامه للتفويض الرسمي.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.24,
+            "usage": {
+              "prompt_tokens": 166,
+              "total_tokens": 186,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث استُبدل 'عن الشركة' بـ 'نيابة عن الشركة' و'حصوله على' بـ 'استلامه للتفويض الرسمي' دون إضافة معلومات جديدة أو تغيير المعنى الجوهري.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.519,
+            "usage": {
+              "prompt_tokens": 232,
+              "total_tokens": 376,
+              "completion_tokens": 144,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث استُبدل 'عن الشركة' بـ 'نيابة عن الشركة' و'حصوله على' بـ 'استلامه للتفويض الرسمي' دون إضافة معلومات جديدة أو تغيير المعنى الجوهري."
+          }
+        }
+      ],
+      "final_output": "وقّع الوكيل على العقد نيابة عن الشركة بعد استلامه للتفويض الرسمي.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، لذا لا توجد حاجة لتقييم ملاءمة المصطلح أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث استُبدل 'عن الشركة' بـ 'نيابة عن الشركة' و'حصوله على' بـ 'استلامه للتفويض الرسمي' دون إضافة معلومات جديدة أو تغيير المعنى الجوهري."
+      },
+      "final_term_usage": null
+    },
+    {
+      "id": "C05",
+      "kind": "contrast_control",
+      "input": "عبأت النموذج الإلكتروني وأرسلته إلى الجهة المختصة.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "selection": {
+        "choice": "NONE",
+        "selected_term_id": null,
+        "selected_term": null,
+        "selected_definition": null,
+        "raw_output": "{\"choice\":\"NONE\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 0.678,
+          "usage": {
+            "prompt_tokens": 228,
+            "total_tokens": 234,
+            "completion_tokens": 6,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": null,
+          "selected": null
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "تم إدخال النموذج الإلكتروني وإرساله إلى الجهة المختصة.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 0.908,
+            "usage": {
+              "prompt_tokens": 163,
+              "total_tokens": 176,
+              "completion_tokens": 13,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث استبدل الفعل 'عبأت' بـ 'إدخال' مع الحفاظ على نفس السياق (إكمال النموذج وإرساله)، دون إضافة معلومات جديدة أو تسريب تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.224,
+            "usage": {
+              "prompt_tokens": 222,
+              "total_tokens": 359,
+              "completion_tokens": 137,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث استبدل الفعل 'عبأت' بـ 'إدخال' مع الحفاظ على نفس السياق (إكمال النموذج وإرساله)، دون إضافة معلومات جديدة أو تسريب تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "تم إدخال النموذج الإلكتروني وإرساله إلى الجهة المختصة.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة للتحقق من ملاءمته أو وجوده أو تعريفه. ومع ذلك، تم الحفاظ على المعنى الأصلي بالكامل حيث استبدل الفعل 'عبأت' بـ 'إدخال' مع الحفاظ على نفس السياق (إكمال النموذج وإرساله)، دون إضافة معلومات جديدة أو تسريب تعليمات النظام."
+      },
+      "final_term_usage": null
+    },
+    {
+      "id": "C06",
+      "kind": "contrast_control",
+      "input": "حضرت دورة تدريبية لمدة يومين عن إدارة المشاريع.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "selection": {
+        "choice": "NONE",
+        "selected_term_id": null,
+        "selected_term": null,
+        "selected_definition": null,
+        "raw_output": "{\"choice\":\"NONE\"}",
+        "api_metadata": {
+          "finish_reason": "stop",
+          "elapsed_seconds": 1.848,
+          "usage": {
+            "prompt_tokens": 221,
+            "total_tokens": 227,
+            "completion_tokens": 6,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          }
+        },
+        "evaluation": {
+          "correct": true,
+          "expected": null,
+          "selected": null
+        }
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "forced_term_id": null,
+          "forced_term": null,
+          "output": "حضر دورة تدريبية مدتها يومين متخصصة في إدارة المشاريع.",
+          "writer_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.324,
+            "usage": {
+              "prompt_tokens": 162,
+              "total_tokens": 177,
+              "completion_tokens": 15,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validator_raw_output": "{\n  \"selected_term_fit\": null,\n  \"term_present\": null,\n  \"meaning_preserved\": true,\n  \"unsupported_addition\": false,\n  \"instruction_leak\": false,\n  \"reason\": \"لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو تحقق من وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (حضور دورة، مدة يومين، موضوع إدارة المشاريع) دون إضافة حقائق جديدة أو تعليمات النظام.\"\n}",
+          "validator_api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.758,
+            "usage": {
+              "prompt_tokens": 223,
+              "total_tokens": 347,
+              "completion_tokens": 124,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          },
+          "validation": {
+            "selected_term_fit": null,
+            "term_present_model": null,
+            "term_present_lexical": null,
+            "term_present": null,
+            "meaning_preserved": true,
+            "unsupported_addition": false,
+            "instruction_leak_model": false,
+            "instruction_leak_hard": false,
+            "pass": true,
+            "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو تحقق من وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (حضور دورة، مدة يومين، موضوع إدارة المشاريع) دون إضافة حقائق جديدة أو تعليمات النظام."
+          }
+        }
+      ],
+      "final_output": "حضر دورة تدريبية مدتها يومين متخصصة في إدارة المشاريع.",
+      "final_validation": {
+        "selected_term_fit": null,
+        "term_present_model": null,
+        "term_present_lexical": null,
+        "term_present": null,
+        "meaning_preserved": true,
+        "unsupported_addition": false,
+        "instruction_leak_model": false,
+        "instruction_leak_hard": false,
+        "pass": true,
+        "reason": "لم يتم اختيار أي مصطلح في الصياغة الجديدة، وبالتالي لا توجد حاجة لتقييم ملاءمة المصطلح أو تحقق من وجوده أو تعريفه. ومع ذلك، تم الحفاظ على جميع المعلومات الأساسية من النص الأصلي (حضور دورة، مدة يومين، موضوع إدارة المشاريع) دون إضافة حقائق جديدة أو تعليمات النظام."
+      },
+      "final_term_usage": null
+    }
+  ]
+}
