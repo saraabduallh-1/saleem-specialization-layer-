@@ -942,7 +942,93 @@
     {
       "id": "P11",
       "input": "دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.",
-      "conditions": {}
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   Constraint 1: Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   Constraint 2: Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   Input Text: \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (The loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n\n2.  **Analyze the Input Text:**\n    *   Subject: دالة الخسارة (Loss function).\n    *   Action: تعطينا قيمة (gives us a value).\n    *   Purpose: تبين الفرق بين ناتج النموذج والنتيجة المطلوبة (shows the difference between the model's output and the desired result).\n    *   Context: أثناء التدريب (during training).\n    *   Meaning:",
+          "api_metadata": {
+            "id": "chatcmpl-94a289c0e417368e",
+            "usage": {
+              "prompt_tokens": 84,
+              "total_tokens": 340,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.329,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (The loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n\n2.  **Analyze the Original Text:**\n    *   \"دالة الخسارة\" (Loss function) - Correct term.\n    *   \"تعطينا قيمة\" (gives us a value) - A bit colloquial. \"تُقدّم قيمة\" or \"تُحسب قيمة\" might be",
+          "api_metadata": {
+            "id": "chatcmpl-8cfa59903086a5b6",
+            "usage": {
+              "prompt_tokens": 93,
+              "total_tokens": 349,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.327,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, without explanation.\n    *   **Input Text:** \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (The loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n    *   **Context:** The field is Artificial Intelligence (ذكاء اصطناعي), and there's a provided definition of the field at the beginning, but the specific text to rewrite is the sentence about the loss function.\n    *   **Goal:** Improve clarity and precision without altering the core meaning.\n\n2.  **Analyze the Input Text:**\n    *   \"دالة الخسارة\" (Loss function) - Correct term.\n    *   \"تعطينا قيمة\" (gives us a value) - A bit colloquial. \"تُقدّم قيمة\"",
+          "api_metadata": {
+            "id": "chatcmpl-bfaa95668bc3d079",
+            "usage": {
+              "prompt_tokens": 154,
+              "total_tokens": 410,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.329,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (Loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear sentences, describe capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   \"دالة الخسارة\" (Loss function) - Technical term, keep as is.\n    *   \"تعطينا قيمة\" (gives us a value) - Can be improved",
+          "api_metadata": {
+            "id": "chatcmpl-b861a51e51e2758b",
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 609,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.364,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise technical terminology, maintain consistency in terminology, improve phrasing without changing facts/relationships/uncertainty levels, do not add mechanisms/capabilities/results/technical numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating understanding/independence/uncertainty.\n    *   **Input Text:** \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (The loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** دالة الخسارة (Loss Function).\n    *   **Action:** تعطينا قيمة",
+          "api_metadata": {
+            "id": "chatcmpl-98c28599311a1e2b",
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 763,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.396,
+            "max_tokens": 256
+          }
+        }
+      }
     },
     {
       "id": "P12",
