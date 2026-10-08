@@ -396,7 +396,93 @@
     {
       "id": "P05",
       "input": "ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.",
-      "conditions": {}
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model was trained on was not balanced.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** The text discusses potential bias in model results due to unbalanced training data.\n    *   **Tone:** Informal/Colloquial (\"ممكن\" instead of \"قد\", \"اللي\" instead of \"التي/التي\", \"ما كانت\" instead of \"لم تكن\").\n    *   **Clarity:** It's understandable",
+          "api_metadata": {
+            "id": "chatcmpl-87dff67c248ce260",
+            "usage": {
+              "prompt_tokens": 84,
+              "total_tokens": 340,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.35,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model is trained on was not balanced.)\n\n2.  **Analyze the Original Text:**\n    *   **Meaning:** The model's results could be biased if the training data is unbalanced.\n    *   **Tone:** Informal (\"ممكن\", \"فيه\", \"اللي\").\n    *   **Clarity:** It's understandable but could be more formal and precise.",
+          "api_metadata": {
+            "id": "chatcmpl-b7c045b6997f8ebc",
+            "usage": {
+              "prompt_tokens": 93,
+              "total_tokens": 349,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.356,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model is trained on was not balanced.)\n    *   **Goal:** Improve clarity and accuracy (grammar, flow, vocabulary) without changing the core message.\n\n2.  **Analyze the Input Text:**\n    *   \"ممكن يكون فيه تحيز بالنتائج\" (It might have bias in the results) -> A bit colloquial (\"ممكن\" instead of \"قد\" or \"من الممكن\", \"فيه\" instead of \"فيها\" or \"فيها\").\n    *   \"إذا البيانات اللي تدرب عليها النموذج\" (If the data",
+          "api_metadata": {
+            "id": "chatcmpl-92cecff5831fe121",
+            "usage": {
+              "prompt_tokens": 154,
+              "total_tokens": 410,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.36,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model is trained on was not balanced.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts, use clear sentences, describe AI capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   \"ممكن يكون فيه تحيز بالنتائج\" (It might have bias in the results) -> This expresses uncertainty (\"might\").\n    *   \"إذا البيانات اللي تدرب عليها النموذج\" (If the data",
+          "api_metadata": {
+            "id": "chatcmpl-ac3d41ea189ca338",
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 609,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 10.361,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty levels, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear sentences, describe AI capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model was trained on was not balanced.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** The text states a potential issue (bias in results) arising from a specific condition (unbalanced training data).\n    *   **Tone:** Inform",
+          "api_metadata": {
+            "id": "chatcmpl-9bf20a97dacda39f",
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 763,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.384,
+            "max_tokens": 256
+          }
+        }
+      }
     },
     {
       "id": "P06",
