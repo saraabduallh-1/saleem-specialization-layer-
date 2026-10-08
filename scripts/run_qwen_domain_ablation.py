@@ -133,6 +133,7 @@ def call_once(
     model: str,
     messages: list[dict[str, str]],
     temperature: float,
+    max_tokens: int,
     timeout: int,
 ) -> dict[str, Any]:
     url = base_url.rstrip("/") + "/chat/completions"
@@ -140,6 +141,7 @@ def call_once(
         "model": model,
         "messages": messages,
         "temperature": temperature,
+        "max_tokens": max_tokens,
     }
     body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     request = urllib.request.Request(
@@ -165,6 +167,7 @@ def call_with_retry(
     model: str,
     messages: list[dict[str, str]],
     temperature: float,
+    max_tokens: int,
     timeout: int,
     retries: int,
     retry_wait: int,
@@ -181,6 +184,7 @@ def call_with_retry(
                 model=model,
                 messages=messages,
                 temperature=temperature,
+                max_tokens=max_tokens,
                 timeout=timeout,
             )
         except urllib.error.HTTPError as exc:
@@ -227,6 +231,7 @@ def write_markdown(result: dict[str, Any], path: Path) -> None:
         f"- Inputs: {result['metadata']['input_count']}",
         f"- Conditions: {', '.join(result['metadata']['conditions'])}",
         f"- Temperature: {result['metadata']['temperature']}",
+        f"- Max tokens: {result['metadata']['max_tokens']}",
         "",
     ]
 
@@ -256,6 +261,7 @@ def new_result(
     model: str,
     base_url: str,
     temperature: float,
+    max_tokens: int,
     inputs: list[dict[str, Any]],
 ) -> dict[str, Any]:
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -270,6 +276,7 @@ def new_result(
             "input_count": len(inputs),
             "conditions": CONDITIONS,
             "temperature": temperature,
+            "max_tokens": max_tokens,
             "base_instruction": BASE_INSTRUCTION,
             "notes": [
                 "Pilot only; not the final Gold evaluation.",
@@ -278,6 +285,7 @@ def new_result(
                 "No terminology retrieval is injected in this experiment.",
                 "Checkpoint is saved after every successful condition.",
                 "Default runner uses no client-side timeout and retries transient failures indefinitely.",
+                "Generation is capped at 256 output tokens by default, and per-request latency is recorded.",
                 "Checkpoint is automatically committed and pushed to GitHub every five successful conditions by default.",
             ],
         },
@@ -298,6 +306,7 @@ def compatible_checkpoint(
     model: str,
     base_url: str,
     temperature: float,
+    max_tokens: int,
     inputs: list[dict[str, Any]],
 ) -> bool:
     md = checkpoint.get("metadata", {})
@@ -307,6 +316,7 @@ def compatible_checkpoint(
         md.get("model") == model
         and md.get("base_url") == base_url
         and md.get("temperature") == temperature
+        and md.get("max_tokens") == max_tokens
         and md.get("conditions") == CONDITIONS
         and expected_ids == actual_ids
     )
@@ -356,6 +366,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--max-tokens", type=int, default=256)
     parser.add_argument("--timeout", type=int, default=0, help="0 = no client-side timeout")
     parser.add_argument("--retries", type=int, default=-1, help="-1 = retry forever on transient errors")
     parser.add_argument("--retry-wait", type=int, default=20)
@@ -397,6 +408,7 @@ def main() -> None:
             model=model,
             base_url=base_url,
             temperature=args.temperature,
+            max_tokens=args.max_tokens,
             inputs=inputs,
         ):
             result = checkpoint
@@ -411,6 +423,7 @@ def main() -> None:
             model=model,
             base_url=base_url,
             temperature=args.temperature,
+            max_tokens=args.max_tokens,
             inputs=inputs,
         )
         save_json(result, CHECKPOINT_PATH)
@@ -440,16 +453,19 @@ def main() -> None:
                 output = "[DRY RUN]"
                 raw = None
             else:
+                started_at = time.perf_counter()
                 response = call_with_retry(
                     base_url=base_url,
                     api_key=api_key,
                     model=model,
                     messages=messages,
                     temperature=args.temperature,
+                    max_tokens=args.max_tokens,
                     timeout=args.timeout,
                     retries=args.retries,
                     retry_wait=args.retry_wait,
                 )
+                elapsed_seconds = round(time.perf_counter() - started_at, 3)
                 output = extract_output(response)
                 raw = {
                     "id": response.get("id"),
@@ -457,7 +473,10 @@ def main() -> None:
                     "finish_reason": (response.get("choices") or [{}])[0].get(
                         "finish_reason"
                     ),
+                    "elapsed_seconds": elapsed_seconds,
+                    "max_tokens": args.max_tokens,
                 }
+                print(f"  API completed in {elapsed_seconds:.3f}s")
 
             row["conditions"][condition] = {
                 "context": context,
