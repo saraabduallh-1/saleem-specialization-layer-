@@ -187,6 +187,168 @@
       "text": "لدينا ملايين السجلات ونبحث فيها لاكتشاف علاقات وأنماط مخفية يمكن الاستفادة منها.",
       "expected_term_id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
       "expected_term": "تنقيب في البيانات"
+    },
+    {
+      "id": "F19",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "data_analysis",
+      "text": "نتعامل مع بيانات هائلة تصل بسرعة من مصادر متعددة وبأشكال مختلفة، لذلك نحتاج تقنيات قابلة للتوسع لتخزينها ومعالجتها.",
+      "expected_term_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+      "expected_term": "بيانات ضخمة"
+    },
+    {
+      "id": "F20",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "machine_learning",
+      "text": "بدل أن نكتب قاعدة برمجية لكل حالة، نجعل النظام يستفيد من البيانات السابقة لتحسين أدائه في المهمة.",
+      "expected_term_id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+      "expected_term": "تعلُّم الآلة"
+    },
+    {
+      "id": "F21",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "natural_language_processing",
+      "text": "نحتاج نظامًا يتعامل مع اللغة البشرية، ويفهم النصوص ويستخرج منها المعنى والمعلومات.",
+      "expected_term_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+      "expected_term": "معالجة اللغات الطبيعية"
+    },
+    {
+      "id": "F22",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "language_models",
+      "text": "نستخدم نموذجًا لغويًا يحتوي على عدد هائل من المعاملات وقد دُرّب على كميات كبيرة من النصوص.",
+      "expected_term_id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+      "expected_term": "نموذج لغوي كبير"
+    },
+    {
+      "id": "F23",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "deep_learning",
+      "text": "البنية الحوسبية تتكون من وحدات مترابطة على شكل طبقات، وتنتقل الإشارات بينها عبر معاملات قابلة للتعديل.",
+      "expected_term_id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+      "expected_term": "شبكة عصبية اصطناعية"
+    },
+    {
+      "id": "F24",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "generative_ai",
+      "text": "قبل أن يجيب النظام، يبحث في قاعدة معرفة خارجية عن المقاطع المرتبطة بالسؤال ثم يستخدمها عند توليد الإجابة.",
+      "expected_term_id": "a338b836-30ee-471a-a164-f09c919243ce",
+      "expected_term": "توليد مُعَزَّز بالاسترجاع"
+    },
+    {
+      "id": "F25",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "data_analysis",
+      "text": "لدينا عشرات المتغيرات المتداخلة، ونريد تمثيل البيانات بعدد أقل من الخصائص مع الاحتفاظ بأكبر قدر ممكن من المعلومات.",
+      "expected_term_id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+      "expected_term": "تحليل المُكوِّن الرئيس"
+    },
+    {
+      "id": "F26",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "evaluation",
+      "text": "نقيّم التنبؤات بحساب الفرق بينها وبين القيم الحقيقية، ثم نربّع كل فرق ونأخذ متوسط هذه القيم.",
+      "expected_term_id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+      "expected_term": "متوسط الخطأ التربيعي"
+    },
+    {
+      "id": "F27",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "computer_vision",
+      "text": "النظام يحلل الصور والفيديو ليتعرف على الأشياء الظاهرة فيها ويفهم محتواها المرئي.",
+      "expected_term_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+      "expected_term": "رؤية الحاسب"
+    },
+    {
+      "id": "F28",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "machine_learning",
+      "text": "أثناء ضبط النموذج نحتاج قيمة عددية تعبّر عن مقدار اختلاف مخرجاته عن القيمة المستهدفة حتى نحاول تقليلها.",
+      "expected_term_id": "51f2785a-f64c-4198-9c18-c93e04853146",
+      "expected_term": "دالة الخسارة"
+    },
+    {
+      "id": "F29",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "natural_language_processing",
+      "text": "نريد من النظام أن يحدد داخل الخبر أسماء الأشخاص والشركات والمدن ويصنف كل اسم حسب نوعه.",
+      "expected_term_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+      "expected_term": "تعرُّف على الكيانات المُسمّاة"
+    },
+    {
+      "id": "F30",
+      "kind": "positive",
+      "register": "msa",
+      "subdomain": "computer_vision",
+      "text": "لتحليل الصور، تستخدم الشبكة مرشحات صغيرة تتحرك فوق مناطق الصورة لاستخراج الأنماط المرئية تدريجيًا.",
+      "expected_term_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+      "expected_term": "شبكة عصبية ترشيحية"
+    },
+    {
+      "id": "C01",
+      "kind": "contrast_control",
+      "register": "msa",
+      "control_type": "ambiguous_general_sense",
+      "text": "سياسة الشركة تمنع مشاركة ملفات العملاء خارج الفريق.",
+      "expected_term_id": null,
+      "expected_term": null
+    },
+    {
+      "id": "C02",
+      "kind": "contrast_control",
+      "register": "msa",
+      "control_type": "ambiguous_general_sense",
+      "text": "نختبر النسخة الجديدة في بيئة منفصلة عن النظام المستخدم فعليًا.",
+      "expected_term_id": null,
+      "expected_term": null
+    },
+    {
+      "id": "C03",
+      "kind": "contrast_control",
+      "register": "msa",
+      "control_type": "ambiguous_general_sense",
+      "text": "وزن الجهاز أقل من كيلوغرام، لذلك يسهل حمله أثناء التنقل.",
+      "expected_term_id": null,
+      "expected_term": null
+    },
+    {
+      "id": "C04",
+      "kind": "contrast_control",
+      "register": "msa",
+      "control_type": "ambiguous_general_sense",
+      "text": "وقّع الوكيل عن الشركة على العقد بعد حصوله على التفويض الرسمي.",
+      "expected_term_id": null,
+      "expected_term": null
+    },
+    {
+      "id": "C05",
+      "kind": "contrast_control",
+      "register": "msa",
+      "control_type": "ambiguous_general_sense",
+      "text": "عبأت النموذج الإلكتروني وأرسلته إلى الجهة المختصة.",
+      "expected_term_id": null,
+      "expected_term": null
+    },
+    {
+      "id": "C06",
+      "kind": "contrast_control",
+      "register": "msa",
+      "control_type": "ambiguous_general_sense",
+      "text": "حضرت دورة تدريبية لمدة يومين عن إدارة المشاريع.",
+      "expected_term_id": null,
+      "expected_term": null
     }
   ]
 }
