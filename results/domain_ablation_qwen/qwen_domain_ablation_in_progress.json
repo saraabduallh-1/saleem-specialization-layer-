@@ -669,7 +669,93 @@
     {
       "id": "P08",
       "input": "معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.",
-      "conditions": {}
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** معالجة اللغة (Natural Language Processing - NLP).\n    *   **Action:** تساعد (helps).\n    *   **Object:** الكمبيوتر (the computer).\n    *   **Functions:** يفهم النصوص (understand texts), ويحلل معناها (analyze their meaning), ويستخرج منها معلومات (extract information from them).\n    *   **Grammar Issue:** \"",
+          "api_metadata": {
+            "id": "chatcmpl-830439e7facc4e52",
+            "usage": {
+              "prompt_tokens": 80,
+              "total_tokens": 336,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.326,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n\n2.  **Analyze the Original Text:**\n    *   **Subject:** معالجة اللغة (Natural Language Processing - NLP).\n    *   **Verb:** تساعد (helps).\n    *   **Object:** الكمبيوتر (the computer).\n    *   **Actions:** يفهم النصوص (understand texts), ويحلل معناها (analyze their meaning), ويستخرج منها",
+          "api_metadata": {
+            "id": "chatcmpl-99aef6f500125f85",
+            "usage": {
+              "prompt_tokens": 89,
+              "total_tokens": 345,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.382,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, without explanation.\n    *   **Input Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n    *   **Context:** The field is Artificial Intelligence (ذكاء اصطناعي).\n    *   **Goal:** Improve clarity and precision (أوضح وأدق).\n\n2.  **Analyze the Input Text:**\n    *   \"معالجة اللغة\" (Natural Language Processing - NLP): This is a field/technology.\n    *   \"تساعد الكمبيوتر\" (helps the computer): A bit informal. \"تساعد\" (helps) is okay, but \"تمنح\" (empowers) or \"تتيح\" (enables) might be better, but I must stick to the",
+          "api_metadata": {
+            "id": "chatcmpl-ac550d7d1ae7db0f",
+            "usage": {
+              "prompt_tokens": 150,
+              "total_tokens": 406,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.341,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between similar technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating understanding/independence/uncertainty.\n    *   **Input Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** معالجة اللغة (Natural Language Processing - NLP).\n    *   **Action:** تساعد (helps) -> This is a bit weak. In the context of",
+          "api_metadata": {
+            "id": "chatcmpl-b640e6f45753d90e",
+            "usage": {
+              "prompt_tokens": 349,
+              "total_tokens": 605,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.381,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear/direct sentences, describe capabilities accurately without overstating independence/uncertainty.\n    *   **Input Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** معالجة اللغة (Natural Language Processing - NLP).\n    *   **Action:** تساعد (helps) -> This is a bit informal. Better to say \"تهدف إلى\" (",
+          "api_metadata": {
+            "id": "chatcmpl-827446d896f9d7e2",
+            "usage": {
+              "prompt_tokens": 503,
+              "total_tokens": 759,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.45,
+            "max_tokens": 256
+          }
+        }
+      }
     },
     {
       "id": "P09",
