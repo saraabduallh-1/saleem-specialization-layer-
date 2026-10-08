@@ -254,7 +254,7 @@ def summarize(result: dict) -> dict:
         for x in selected_correct
     )
 
-    control_pass = sum(bool(x.get("final_validation", {}).get("pass")) for x in controls)
+    control_pass = sum(bool((x.get("final_validation") or {}).get("pass")) for x in controls)
 
     return {
         "n_items": len(items),
