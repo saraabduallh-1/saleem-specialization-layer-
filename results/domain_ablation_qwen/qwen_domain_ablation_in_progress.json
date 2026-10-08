@@ -578,7 +578,93 @@
     {
       "id": "P07",
       "input": "التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.",
-      "conditions": {}
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\"\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** Reinforcement learning relies on trial and feedback so the system learns the best action.\n    *   **Issues:**\n        *   \"عشان\" is colloquial (for \"لأنه\" or \"لكي\").\n        *   \"ش\" is colloquial (for \"أفضل\" or \"ما\").\n        *   \"التغذية الراجعة\" is correct but could be phrased more formally depending on context,",
+          "api_metadata": {
+            "id": "chatcmpl-85e82733c264c5ec",
+            "usage": {
+              "prompt_tokens": 84,
+              "total_tokens": 340,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.331,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\" (Reinforcement learning relies on trial and feedback so the system learns what the best action is.)\n\n2.  **Analyze the Original Text:**\n    *   **Meaning:** Reinforcement learning (RL) works through trial and feedback. The goal is for the system to learn the best action/behavior.\n    *   **Issues:**\n        *   \"عشان\" (Eshan) is colloquial/informal.\n        *",
+          "api_metadata": {
+            "id": "chatcmpl-a12fb1f7f85199af",
+            "usage": {
+              "prompt_tokens": 93,
+              "total_tokens": 349,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.379,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Context:** The field is Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\" (Reinforcement learning relies on trial and feedback for the system to learn what the best action is.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** التعلم المعزز (Reinforcement Learning).\n    *   **Mechanism:** المحاولة والتغذية الراجعة (Trial and feedback).\n    *   **Purpose/Goal:** يتعلم النظام وش التصرف الأفضل (The system learns what the best action is",
+          "api_metadata": {
+            "id": "chatcmpl-8c973eec3ee593b9",
+            "usage": {
+              "prompt_tokens": 154,
+              "total_tokens": 410,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.365,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\" (Reinforcement learning relies on trial and feedback for the system to learn and the best action.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear sentences, describe AI capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   \"التعلم المعزز\" (Reinforcement Learning - RL): This is a specific AI term.\n    *   \"يعتمد على المحاولة والتغذية الراجعة\" (relies on trial",
+          "api_metadata": {
+            "id": "chatcmpl-8888c3703a81efcd",
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 609,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.45,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear/direct sentences, describe AI capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\" (Reinforcement learning relies on trial and feedback so the system learns what the best action is.)\n\n2.  **Analyze the Input Text:**\n    *   **Content:** It describes Reinforcement Learning (RL).\n    *   **Key Concepts:** Trial and feedback (المحاولة والتغذية الراجعة), System learning (يت",
+          "api_metadata": {
+            "id": "chatcmpl-8f341c95413c7b70",
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 763,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.383,
+            "max_tokens": 256
+          }
+        }
+      }
     },
     {
       "id": "P08",
