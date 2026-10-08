@@ -123,7 +123,93 @@
     {
       "id": "P02",
       "input": "الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.",
-      "conditions": {}
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أعد صياغة النص العربي ليكون أوضح وأدق).\n    *   **Constraint 1:** Maintain the original meaning (مع الحفاظ على معناه).\n    *   **Constraint 2:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 3:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n\n2.  **Analyze the Original Text:**\n    *   Text: \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\"\n    *   Meaning: \"Hallucination occurs when the system provides information that appears correct but is either non-existent or inaccurate.\"\n    *   Issues/Improvements needed:\n        *   \"الهلوسة تصير\" (Hallucination becomes/happens) -> A bit colloquial or awkward. \"تحدث\" (happens) or \"تكون\" (is) or \"تظهر\" (appe",
+          "api_metadata": {
+            "id": "chatcmpl-b5cf58b8fb6d5f1c",
+            "usage": {
+              "prompt_tokens": 81,
+              "total_tokens": 337,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.338,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\" (Note: There's a typo in the original text \"تصير\" should be \"تُصير\" or \"تُعد\" or \"تكون\", but I need to focus on meaning and clarity).\n    *   **Meaning of Original:** Hallucination is when the system provides information that appears correct but is actually non-existent or inaccurate.\n\n2.  **Evaluate the Original Text:**\n    *   \"الهلوسة تصير لما النظام يع",
+          "api_metadata": {
+            "id": "chatcmpl-972aaaac8ce070a3",
+            "usage": {
+              "prompt_tokens": 90,
+              "total_tokens": 346,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.359,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:**\n        *   Definition of the field: \"مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\"\n        *   Target text to improve: \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\"\n\n2.  **Analyze the Input Text (Target Text):**\n    *   Original: \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\"\n    *   Issues:\n        *   \"الهلوسة تصير لما",
+          "api_metadata": {
+            "id": "chatcmpl-af2aec94ca46ff72",
+            "usage": {
+              "prompt_tokens": 151,
+              "total_tokens": 407,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.334,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\" (Note: There seems to be a typo in the input text \"الهلوسة تصير لما\" which likely means \"الهلوسة هي ما\" or \"الهلوسة تشير إلى ما\". I need to interpret the intended meaning based on context while staying true to the original meaning without adding external knowledge, though correcting obvious typos for clarity is usually expected in \"rewriting for clarity\". However, the instruction says \"preserve its meaning\". The original sentence is grammatically broken: \"الهلوسة تصير لما النظام يعطي...\" -> \"الهلوسة تصير\" is not standard Arabic. It likely means \"الهلوسة هي ما\" or \"الهلوسة تشير إلى",
+          "api_metadata": {
+            "id": "chatcmpl-81967214440be165",
+            "usage": {
+              "prompt_tokens": 350,
+              "total_tokens": 606,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.393,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the provided Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\" (Hallucination turns into what the system gives information that appears correct but is not present or inaccurate.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts, use clear sentences, describe capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   Sentence: \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\"\n    *   Meaning: Hallucination refers to when a system provides information that looks correct but is actually non-existent",
+          "api_metadata": {
+            "id": "chatcmpl-a5dbdf86b374734e",
+            "usage": {
+              "prompt_tokens": 504,
+              "total_tokens": 760,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.392,
+            "max_tokens": 256
+          }
+        }
+      }
     },
     {
       "id": "P03",
