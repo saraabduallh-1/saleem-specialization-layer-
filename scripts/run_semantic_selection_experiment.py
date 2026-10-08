@@ -48,19 +48,14 @@ def selector_messages(text, candidates):
 
 
 def parse_choice(raw):
-    cleaned = raw.strip()
-    if cleaned.startswith("```"):
-        cleaned = re.sub(r"^```(?:json)?\\s*", "", cleaned)
-        cleaned = re.sub(r"\\s*```$", "", cleaned)
+    cleaned = raw.strip().replace("```json", "").replace("```", "").strip()
     try:
         choice = str(json.loads(cleaned).get("choice", "")).upper()
     except Exception:
-        m = re.search(r"\\b(C1|C2|C3|NONE)\\b", cleaned.upper())
-        if not m:
-            raise ValueError(f"Cannot parse selector output: {raw}")
-        choice = m.group(1)
+        upper = cleaned.upper()
+        choice = next((x for x in ("C1", "C2", "C3", "NONE") if x in upper), "")
     if choice not in {"C1", "C2", "C3", "NONE"}:
-        raise ValueError(f"Invalid selector choice: {choice}")
+        raise ValueError(f"Invalid selector output: {raw}")
     return choice
 
 
