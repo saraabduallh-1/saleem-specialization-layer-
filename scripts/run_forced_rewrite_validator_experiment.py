@@ -94,27 +94,27 @@ def writer_messages(text: str, selected: dict | None, domain_name: str, correcti
             "لم يتم اختيار مصطلح معجمي مناسب. لا تفرض أي مصطلح من المعجم، وحسّن النص فقط."
         )
     if correction:
-        parts.append("ملاحظات التصحيح من المحاولة السابقة:\\n" + correction)
-    parts.append("النص الأصلي:\\n" + text)
+        parts.append("ملاحظات التصحيح من المحاولة السابقة:\n" + correction)
+    parts.append("النص الأصلي:\n" + text)
     return [
         {"role": "system", "content": WRITER_SYSTEM},
-        {"role": "user", "content": "\\n\\n".join(parts)},
+        {"role": "user", "content": "\n\n".join(parts)},
     ]
 
 def validator_messages(source: str, output: str, selected: dict | None):
     parts = [
-        "النص الأصلي:\\n" + source,
-        "الصياغة الجديدة:\\n" + output,
+        "النص الأصلي:\n" + source,
+        "الصياغة الجديدة:\n" + output,
     ]
     if selected:
         parts.append(
-            f"المصطلح المختار: {selected['term']}\\nتعريفه: {selected['definition']}"
+            f"المصطلح المختار: {selected['term']}\nتعريفه: {selected['definition']}"
         )
     else:
         parts.append("لا يوجد مصطلح مختار.")
     return [
         {"role": "system", "content": VALIDATOR_SYSTEM},
-        {"role": "user", "content": "\\n\\n".join(parts)},
+        {"role": "user", "content": "\n\n".join(parts)},
     ]
 
 def call_qwen(base_url, api_key, model, messages, args):
@@ -213,7 +213,7 @@ def correction_from_validation(v: dict, selected: dict | None) -> str:
         issues.append("احذف أي معلومة أو علاقة غير موجودة في النص الأصلي.")
     if v["instruction_leak_model"] or v["instruction_leak_hard"]:
         issues.append("احذف أي شرح للتعليمات أو حديث عن المصطلح المعتمد أو عملية التحقق.")
-    return "\\n".join(f"- {x}" for x in issues) or "- أعد الصياغة بدقة أكبر مع الالتزام بالتعليمات."
+    return "\n".join(f"- {x}" for x in issues) or "- أعد الصياغة بدقة أكبر مع الالتزام بالتعليمات."
 
 def effective_selected(selected: dict | None, validation: dict) -> dict | None:
     # If validation says the selector chose a semantically wrong term, abstain on retry.
