@@ -487,7 +487,93 @@
     {
       "id": "P06",
       "input": "النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.",
-      "conditions": {}
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** النماذج التوليدية (Generative models).\n    *   **Action:** تقدر تنتج (can produce) -> نصوص وصور ومحتوى جديد (texts, images, and new content).\n    *   **Condition/Basis:** اعتمادا على (based on) -> الأشياء اللي تعلمتها (the things they",
+          "api_metadata": {
+            "id": "chatcmpl-97bf65305ddd7f78",
+            "usage": {
+              "prompt_tokens": 88,
+              "total_tokens": 344,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.392,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n\n2.  **Analyze the Original Text:**\n    *   **Subject:** النماذج التوليدية (Generative models).\n    *   **Action:** تقدر تنتج (can produce) -> نصوص وصور ومحتوى جديد (texts, images, and new content).\n    *   **Condition/Basis:**",
+          "api_metadata": {
+            "id": "chatcmpl-b7a1155e0617af55",
+            "usage": {
+              "prompt_tokens": 97,
+              "total_tokens": 353,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.331,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Context:** The field is Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Input Text to Improve:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n\n2.  **Analyze the Input Text:**\n    *   *Subject:* النماذج التوليدية (Generative models).\n    *   *Action:* تقدر تنتج (can produce) -> نصوص وصور ومحتوى جديد (texts, images, and new content).\n    *",
+          "api_metadata": {
+            "id": "chatcmpl-92e8d591e47a2c58",
+            "usage": {
+              "prompt_tokens": 158,
+              "total_tokens": 414,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.382,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close concepts, use clear sentences, describe capabilities accurately without overstating autonomy/uncertainty.\n\n2.  **Analyze the Input Text:**\n    *   \"النماذج التوليدية\" (Generative models) - This is a specific AI term.\n    *   \"تقدر تنتج\" (can produce) - Slightly",
+          "api_metadata": {
+            "id": "chatcmpl-b1c74c0a593f2ee3",
+            "usage": {
+              "prompt_tokens": 357,
+              "total_tokens": 613,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.457,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/technical numbers, distinguish between close concepts based on context, use clear sentences, describe capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** النماذج التوليدية (Generative models).\n    *   **Action:** تقدر تنتج (can produce) -> نصوص وصور",
+          "api_metadata": {
+            "id": "chatcmpl-844efceb99813e86",
+            "usage": {
+              "prompt_tokens": 511,
+              "total_tokens": 767,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.458,
+            "max_tokens": 256
+          }
+        }
+      }
     },
     {
       "id": "P07",
