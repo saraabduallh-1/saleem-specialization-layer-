@@ -1,0 +1,1398 @@
+{
+  "metadata": {
+    "experiment": "qwen_domain_ablation_pilot",
+    "timestamp_utc": "20261008T074624Z",
+    "model": "Qwen/Qwen3.5-4B",
+    "base_url": "http://136.119.196.95:8000/v1",
+    "domain_dataset": "data/domain/saleem_domain_knowledge_v1.json",
+    "input_dataset": "data/evaluation/domain_ai_pilot_inputs.json",
+    "input_count": 15,
+    "conditions": [
+      "D0_saleem_only",
+      "D1_domain_name",
+      "D2_domain_name_definition",
+      "D3_domain_guidance",
+      "D4_domain_guidance_examples"
+    ],
+    "temperature": 0.0,
+    "max_tokens": 256,
+    "base_instruction": "أعد صياغة النص العربي ليكون أوضح وأدق مع الحفاظ على معناه. لا تضف حقائق أو معلومات غير موجودة في النص. أعد النص المصاغ فقط دون شرح.",
+    "notes": [
+      "Pilot only; not the final Gold evaluation.",
+      "Same model, inputs and generation settings across D0-D4.",
+      "Only injected domain context changes between conditions.",
+      "No terminology retrieval is injected in this experiment.",
+      "Checkpoint is saved after every successful condition.",
+      "Default runner uses no client-side timeout and retries transient failures indefinitely.",
+      "Generation is capped at 256 output tokens by default, and per-request latency is recorded.",
+      "Checkpoint is automatically committed and pushed to GitHub every five successful conditions by default."
+    ]
+  },
+  "items": [
+    {
+      "id": "P01",
+      "input": "النموذج يتعلم من البيانات وبعدها يقدر يتوقع نتائج لبيانات جديدة.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"النموذج يتعلم من البيانات وبعدها يقدر يتوقع نتائج لبيانات جديدة.\" (The model learns from data and then it can predict results for new data.)\n\n2.  **Analyze the Input Text:**\n    *   \"النموذج\" (The model)\n    *   \"يتعلم من البيانات\" (learns from data)\n    *   \"وبعدها\" (and then/afterwards)\n    *   \"يقدر\" (can/able to)\n    *   \"يتوقع\" (predict)\n    *   \"نتائج لبيانات جديدة\" (results for new",
+          "api_metadata": {
+            "id": "chatcmpl-9bdaa03eb5a34083",
+            "usage": {
+              "prompt_tokens": 82,
+              "total_tokens": 338,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.343,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"النموذج يتعلم من البيانات وبعدها يقدر يتوقع نتائج لبيانات جديدة.\" (The model learns from data and then it can predict results for new data.)\n\n2.  **Analyze the Original Text:**\n    *   \"النموذج\" (The model) - Subject.\n    *   \"يتعلم من البيانات\" (learns from data) - Action 1.\n    *   \"وبعدها\" (and then/afterwards) - Transition.\n    *   \"يقدر\" (can) - Ability.",
+          "api_metadata": {
+            "id": "chatcmpl-aeb4097c8772080a",
+            "usage": {
+              "prompt_tokens": 91,
+              "total_tokens": 347,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.396,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, without explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:**\n        *   Definition of the field: \"مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\"\n        *   Text to improve: \"النموذج يتعلم من البيانات وبعدها يقدر يتوقع نتائج لبيانات جديدة.\"\n\n2.  **Analyze the Input Text to be Improved:**\n    *   Original: \"النموذج يتعلم من البيانات وبعدها يقدر يتوقع نتائج لبيانات جديدة.\"\n    *   Issues:\n        *   \"بعدها\"",
+          "api_metadata": {
+            "id": "chatcmpl-8b223e36b60011e0",
+            "usage": {
+              "prompt_tokens": 152,
+              "total_tokens": 408,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.363,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"النموذج يتعلم من البيانات وبعدها يقدر يتوقع نتائج لبيانات جديدة.\" (The model learns from data and then estimates to predict results for new data.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close concepts, use clear sentences, describe capabilities accurately without overstating autonomy/uncertainty.\n\n2.  **Analyze the Input Text:**\n    *   \"النموذج يتعلم من البيانات\" (The model learns from data) - This is a standard description of training.\n    *   \"وبعدها\" (and then/afterwards) - Indicates sequence.\n    *",
+          "api_metadata": {
+            "id": "chatcmpl-9d877f00c5a09ade",
+            "usage": {
+              "prompt_tokens": 351,
+              "total_tokens": 607,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.461,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"النموذج يتعلم من البيانات وبعدها يقدر يتوقع نتائج لبيانات جديدة.\" (The model learns from data and then estimates to predict results for new data.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, avoid adding mechanisms/capabilities/results/numbers, distinguish between close concepts, use clear sentences, describe capabilities accurately without overstating autonomy/uncertainty.\n\n2.  **Analyze the Input Text:**\n    *   \"النموذج يتعلم من البيانات\" (The model learns from data) - This is a general statement about training.\n    *   \"وبعدها\" (and then/afterwards) - Indicates sequence.\n    *",
+          "api_metadata": {
+            "id": "chatcmpl-82c28127ffa37e84",
+            "usage": {
+              "prompt_tokens": 505,
+              "total_tokens": 761,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.461,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P02",
+      "input": "الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أعد صياغة النص العربي ليكون أوضح وأدق).\n    *   **Constraint 1:** Maintain the original meaning (مع الحفاظ على معناه).\n    *   **Constraint 2:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 3:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n\n2.  **Analyze the Original Text:**\n    *   Text: \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\"\n    *   Meaning: \"Hallucination occurs when the system provides information that appears correct but is either non-existent or inaccurate.\"\n    *   Issues/Improvements needed:\n        *   \"الهلوسة تصير\" (Hallucination becomes/happens) -> A bit colloquial or awkward. \"تحدث\" (happens) or \"تكون\" (is) or \"تظهر\" (appe",
+          "api_metadata": {
+            "id": "chatcmpl-b5cf58b8fb6d5f1c",
+            "usage": {
+              "prompt_tokens": 81,
+              "total_tokens": 337,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.338,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\" (Note: There's a typo in the original text \"تصير\" should be \"تُصير\" or \"تُعد\" or \"تكون\", but I need to focus on meaning and clarity).\n    *   **Meaning of Original:** Hallucination is when the system provides information that appears correct but is actually non-existent or inaccurate.\n\n2.  **Evaluate the Original Text:**\n    *   \"الهلوسة تصير لما النظام يع",
+          "api_metadata": {
+            "id": "chatcmpl-972aaaac8ce070a3",
+            "usage": {
+              "prompt_tokens": 90,
+              "total_tokens": 346,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.359,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:**\n        *   Definition of the field: \"مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\"\n        *   Target text to improve: \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\"\n\n2.  **Analyze the Input Text (Target Text):**\n    *   Original: \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\"\n    *   Issues:\n        *   \"الهلوسة تصير لما",
+          "api_metadata": {
+            "id": "chatcmpl-af2aec94ca46ff72",
+            "usage": {
+              "prompt_tokens": 151,
+              "total_tokens": 407,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.334,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\" (Note: There seems to be a typo in the input text \"الهلوسة تصير لما\" which likely means \"الهلوسة هي ما\" or \"الهلوسة تشير إلى ما\". I need to interpret the intended meaning based on context while staying true to the original meaning without adding external knowledge, though correcting obvious typos for clarity is usually expected in \"rewriting for clarity\". However, the instruction says \"preserve its meaning\". The original sentence is grammatically broken: \"الهلوسة تصير لما النظام يعطي...\" -> \"الهلوسة تصير\" is not standard Arabic. It likely means \"الهلوسة هي ما\" or \"الهلوسة تشير إلى",
+          "api_metadata": {
+            "id": "chatcmpl-81967214440be165",
+            "usage": {
+              "prompt_tokens": 350,
+              "total_tokens": 606,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.393,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the provided Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\" (Hallucination turns into what the system gives information that appears correct but is not present or inaccurate.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts, use clear sentences, describe capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   Sentence: \"الهلوسة تصير لما النظام يعطي معلومات تبدو صحيحة لكنها غير موجودة أو غير دقيقة.\"\n    *   Meaning: Hallucination refers to when a system provides information that looks correct but is actually non-existent",
+          "api_metadata": {
+            "id": "chatcmpl-a5dbdf86b374734e",
+            "usage": {
+              "prompt_tokens": 504,
+              "total_tokens": 760,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.392,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P03",
+      "input": "في التدريب نستخدم بيانات كثيرة عشان النموذج يتعلم الأنماط ويصير أداؤه أفضل.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"في التدريب نستخدم بيانات كثيرة عشان النموذج يتعلم الأنماط ويصير أداؤه أفضل.\" (In training we use a lot of data so the model learns patterns and becomes better performance.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** During the training phase, we utilize large amounts of data. The purpose is for the model to learn patterns, resulting in improved performance.\n    *   **Tone/Style:** Informal (colloquial Arabic). Words like \"عشان\" (so/for), \"يصير\" (becomes), \"بيكون\" (implied),",
+          "api_metadata": {
+            "id": "chatcmpl-9059fecf4f591586",
+            "usage": {
+              "prompt_tokens": 84,
+              "total_tokens": 340,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.368,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"في التدريب نستخدم بيانات كثيرة عشان النموذج يتعلم الأنماط ويصير أداؤه أفضل.\" (In training we use a lot of data so the model learns patterns and becomes better performance.)\n\n2.  **Analyze the Original Text:**\n    *   \"في التدريب\" (In training) - Context: AI training phase.\n    *   \"نستخدم بيانات كثيرة\" (we use a lot of data) - Action: Using large datasets.\n    *   \"عشان\" (so that/in order to) - Purpose/Reason.",
+          "api_metadata": {
+            "id": "chatcmpl-a509dce6703382f1",
+            "usage": {
+              "prompt_tokens": 93,
+              "total_tokens": 349,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.359,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:** \"في التدريب نستخدم بيانات كثيرة عشان النموذج يتعلم الأنماط ويصير أداؤه أفضل.\" (In training we use a lot of data so the model learns patterns and becomes better performance.)\n    *   **Context:** The input text is a sentence about AI training, likely part of a larger document about the AI field defined in the first paragraph.\n\n2.  **Analyze the Input Text:**\n    *   \"في التدريب\" (In training) - Context: AI model training.\n    *   \"نستخدم بيانات كثيرة\" (we use a lot of data) - Action: Using large datasets.\n    *   \"عشان\" (so that/in order to) - Purpose/Reason.\n    *   \"",
+          "api_metadata": {
+            "id": "chatcmpl-af8dab142b231129",
+            "usage": {
+              "prompt_tokens": 154,
+              "total_tokens": 410,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.359,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise technical terminology, maintain consistency in terminology, improve phrasing without changing facts/relationships/uncertainty levels, do not add mechanisms/capabilities/results/technical numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating understanding/independence/uncertainty.\n    *   **Input Text:** \"في التدريب نستخدم بيانات كثيرة عشان النموذج يتعلم الأنماط ويصير أداؤه أفضل.\" (In training we use a lot of data so the model learns patterns and becomes better performance.)\n\n2.  **Analyze the Input Text:**\n    *   **Content:** It describes the training process in AI/ML.\n    *   **Key Points:**\n        *   Action: Using a",
+          "api_metadata": {
+            "id": "chatcmpl-a611b53c5fd5279e",
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 609,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.357,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise technical terminology, maintain consistency in terminology, improve phrasing without changing facts/relationships/uncertainty levels, do not add mechanisms/capabilities/results/technical numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating understanding/independence/uncertainty.\n    *   **Input Text:** \"في التدريب نستخدم بيانات كثيرة عشان النموذج يتعلم الأنماط ويصير أداؤه أفضل.\" (In training we use a lot of data so the model learns patterns and becomes better performance.)\n\n2.  **Analyze the Input Text:**\n    *   **Content:** It describes the training process in AI/ML.\n    *   **Key Points:**\n        *   Action: Using a",
+          "api_metadata": {
+            "id": "chatcmpl-966430292b83ec61",
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 763,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.406,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P04",
+      "input": "الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and use different tools to reach the required goal.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** الوكيل (The agent).\n    *   **Action 1:** يقدر ينفذ (can execute).\n    *   **Object 1:** مجموعة خطوات (a set of steps).\n    *   **Action 2:** يستخدم (uses).\n    *   **Object 2:** أدوات مختلفة (different tools).\n    *   **Purpose:**",
+          "api_metadata": {
+            "id": "chatcmpl-8b16664d0790c8a0",
+            "usage": {
+              "prompt_tokens": 83,
+              "total_tokens": 339,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.331,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate (أدق) while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and uses different tools to reach the required goal.)\n\n2.  **Analyze the Original Text:**\n    *   **Subject:** الوكيل (The agent).\n    *   **Action 1:** يقدر ينفذ مجموعة خطوات (can execute a set of steps).\n    *   **Action 2:** يستخدم أدوات مختلفة (uses different tools).\n    *   **Purpose:** عشان يوصل للهدف المطلوب (in order to reach the required goal",
+          "api_metadata": {
+            "id": "chatcmpl-a156a36d88656b7a",
+            "usage": {
+              "prompt_tokens": 92,
+              "total_tokens": 348,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.382,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Context:** The field is Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text to Improve:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and uses different tools to reach the required goal.)\n\n2.  **Analyze the Input Text:**\n    *   \"الوكيل\" (The agent): Refers to an AI agent.\n    *   \"يقدر ينفذ مجموعة خطوات\" (can execute a set of steps): Can perform a sequence of actions.\n    *   \"ويستخدم أدوات مختلفة\" (and uses different",
+          "api_metadata": {
+            "id": "chatcmpl-9d6fc3996406ad70",
+            "usage": {
+              "prompt_tokens": 153,
+              "total_tokens": 409,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.351,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and use different tools to reach the required goal.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear sentences, describe AI system capabilities accurately without overstating autonomy/uncertainty.\n\n2.  **Analyze the Input Text:**\n    *   \"الوكيل\" (The Agent): In the context of AI, \"Agent\" is a specific term. The input uses \"الوكيل\" which is correct.\n    *",
+          "api_metadata": {
+            "id": "chatcmpl-8d099a96c85f54c1",
+            "usage": {
+              "prompt_tokens": 352,
+              "total_tokens": 608,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.362,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الوكيل يقدر ينفذ مجموعة خطوات ويستخدم أدوات مختلفة عشان يوصل للهدف المطلوب.\" (The agent can execute a set of steps and uses different tools to reach the required goal.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating autonomy or certainty.\n\n2.  **Analyze the Input Text:**\n    *   \"الوكيل\" (The Agent): In the context of AI guidelines provided in the prompt, \"Agents\" are mentioned in the examples (\"الوكلاء\").\n    *   \"",
+          "api_metadata": {
+            "id": "chatcmpl-a202f9db88cf7e1a",
+            "usage": {
+              "prompt_tokens": 506,
+              "total_tokens": 762,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.454,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P05",
+      "input": "ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model was trained on was not balanced.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** The text discusses potential bias in model results due to unbalanced training data.\n    *   **Tone:** Informal/Colloquial (\"ممكن\" instead of \"قد\", \"اللي\" instead of \"التي/التي\", \"ما كانت\" instead of \"لم تكن\").\n    *   **Clarity:** It's understandable",
+          "api_metadata": {
+            "id": "chatcmpl-87dff67c248ce260",
+            "usage": {
+              "prompt_tokens": 84,
+              "total_tokens": 340,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.35,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model is trained on was not balanced.)\n\n2.  **Analyze the Original Text:**\n    *   **Meaning:** The model's results could be biased if the training data is unbalanced.\n    *   **Tone:** Informal (\"ممكن\", \"فيه\", \"اللي\").\n    *   **Clarity:** It's understandable but could be more formal and precise.",
+          "api_metadata": {
+            "id": "chatcmpl-b7c045b6997f8ebc",
+            "usage": {
+              "prompt_tokens": 93,
+              "total_tokens": 349,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.356,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model is trained on was not balanced.)\n    *   **Goal:** Improve clarity and accuracy (grammar, flow, vocabulary) without changing the core message.\n\n2.  **Analyze the Input Text:**\n    *   \"ممكن يكون فيه تحيز بالنتائج\" (It might have bias in the results) -> A bit colloquial (\"ممكن\" instead of \"قد\" or \"من الممكن\", \"فيه\" instead of \"فيها\" or \"فيها\").\n    *   \"إذا البيانات اللي تدرب عليها النموذج\" (If the data",
+          "api_metadata": {
+            "id": "chatcmpl-92cecff5831fe121",
+            "usage": {
+              "prompt_tokens": 154,
+              "total_tokens": 410,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.36,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model is trained on was not balanced.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts, use clear sentences, describe AI capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   \"ممكن يكون فيه تحيز بالنتائج\" (It might have bias in the results) -> This expresses uncertainty (\"might\").\n    *   \"إذا البيانات اللي تدرب عليها النموذج\" (If the data",
+          "api_metadata": {
+            "id": "chatcmpl-ac3d41ea189ca338",
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 609,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 10.361,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty levels, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear sentences, describe AI capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"ممكن يكون فيه تحيز بالنتائج إذا البيانات اللي تدرب عليها النموذج ما كانت متوازنة.\" (It might have bias in the results if the data the model was trained on was not balanced.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** The text states a potential issue (bias in results) arising from a specific condition (unbalanced training data).\n    *   **Tone:** Inform",
+          "api_metadata": {
+            "id": "chatcmpl-9bf20a97dacda39f",
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 763,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.384,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P06",
+      "input": "النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** النماذج التوليدية (Generative models).\n    *   **Action:** تقدر تنتج (can produce) -> نصوص وصور ومحتوى جديد (texts, images, and new content).\n    *   **Condition/Basis:** اعتمادا على (based on) -> الأشياء اللي تعلمتها (the things they",
+          "api_metadata": {
+            "id": "chatcmpl-97bf65305ddd7f78",
+            "usage": {
+              "prompt_tokens": 88,
+              "total_tokens": 344,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.392,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n\n2.  **Analyze the Original Text:**\n    *   **Subject:** النماذج التوليدية (Generative models).\n    *   **Action:** تقدر تنتج (can produce) -> نصوص وصور ومحتوى جديد (texts, images, and new content).\n    *   **Condition/Basis:**",
+          "api_metadata": {
+            "id": "chatcmpl-b7a1155e0617af55",
+            "usage": {
+              "prompt_tokens": 97,
+              "total_tokens": 353,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.331,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Context:** The field is Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Input Text to Improve:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n\n2.  **Analyze the Input Text:**\n    *   *Subject:* النماذج التوليدية (Generative models).\n    *   *Action:* تقدر تنتج (can produce) -> نصوص وصور ومحتوى جديد (texts, images, and new content).\n    *",
+          "api_metadata": {
+            "id": "chatcmpl-92e8d591e47a2c58",
+            "usage": {
+              "prompt_tokens": 158,
+              "total_tokens": 414,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.382,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close concepts, use clear sentences, describe capabilities accurately without overstating autonomy/uncertainty.\n\n2.  **Analyze the Input Text:**\n    *   \"النماذج التوليدية\" (Generative models) - This is a specific AI term.\n    *   \"تقدر تنتج\" (can produce) - Slightly",
+          "api_metadata": {
+            "id": "chatcmpl-b1c74c0a593f2ee3",
+            "usage": {
+              "prompt_tokens": 357,
+              "total_tokens": 613,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.457,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/technical numbers, distinguish between close concepts based on context, use clear sentences, describe capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"النماذج التوليدية تقدر تنتج نصوص وصور ومحتوى جديد اعتمادا على الأشياء اللي تعلمتها.\" (Generative models can produce new texts, images, and content based on the things they learned.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** النماذج التوليدية (Generative models).\n    *   **Action:** تقدر تنتج (can produce) -> نصوص وصور",
+          "api_metadata": {
+            "id": "chatcmpl-844efceb99813e86",
+            "usage": {
+              "prompt_tokens": 511,
+              "total_tokens": 767,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.458,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P07",
+      "input": "التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\"\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** Reinforcement learning relies on trial and feedback so the system learns the best action.\n    *   **Issues:**\n        *   \"عشان\" is colloquial (for \"لأنه\" or \"لكي\").\n        *   \"ش\" is colloquial (for \"أفضل\" or \"ما\").\n        *   \"التغذية الراجعة\" is correct but could be phrased more formally depending on context,",
+          "api_metadata": {
+            "id": "chatcmpl-85e82733c264c5ec",
+            "usage": {
+              "prompt_tokens": 84,
+              "total_tokens": 340,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.331,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\" (Reinforcement learning relies on trial and feedback so the system learns what the best action is.)\n\n2.  **Analyze the Original Text:**\n    *   **Meaning:** Reinforcement learning (RL) works through trial and feedback. The goal is for the system to learn the best action/behavior.\n    *   **Issues:**\n        *   \"عشان\" (Eshan) is colloquial/informal.\n        *",
+          "api_metadata": {
+            "id": "chatcmpl-a12fb1f7f85199af",
+            "usage": {
+              "prompt_tokens": 93,
+              "total_tokens": 349,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.379,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Context:** The field is Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\" (Reinforcement learning relies on trial and feedback for the system to learn what the best action is.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** التعلم المعزز (Reinforcement Learning).\n    *   **Mechanism:** المحاولة والتغذية الراجعة (Trial and feedback).\n    *   **Purpose/Goal:** يتعلم النظام وش التصرف الأفضل (The system learns what the best action is",
+          "api_metadata": {
+            "id": "chatcmpl-8c973eec3ee593b9",
+            "usage": {
+              "prompt_tokens": 154,
+              "total_tokens": 410,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.365,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\" (Reinforcement learning relies on trial and feedback for the system to learn and the best action.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear sentences, describe AI capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   \"التعلم المعزز\" (Reinforcement Learning - RL): This is a specific AI term.\n    *   \"يعتمد على المحاولة والتغذية الراجعة\" (relies on trial",
+          "api_metadata": {
+            "id": "chatcmpl-8888c3703a81efcd",
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 609,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.45,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear/direct sentences, describe AI capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"التعلم المعزز يعتمد على المحاولة والتغذية الراجعة عشان يتعلم النظام وش التصرف الأفضل.\" (Reinforcement learning relies on trial and feedback so the system learns what the best action is.)\n\n2.  **Analyze the Input Text:**\n    *   **Content:** It describes Reinforcement Learning (RL).\n    *   **Key Concepts:** Trial and feedback (المحاولة والتغذية الراجعة), System learning (يت",
+          "api_metadata": {
+            "id": "chatcmpl-8f341c95413c7b70",
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 763,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.383,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P08",
+      "input": "معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** معالجة اللغة (Natural Language Processing - NLP).\n    *   **Action:** تساعد (helps).\n    *   **Object:** الكمبيوتر (the computer).\n    *   **Functions:** يفهم النصوص (understand texts), ويحلل معناها (analyze their meaning), ويستخرج منها معلومات (extract information from them).\n    *   **Grammar Issue:** \"",
+          "api_metadata": {
+            "id": "chatcmpl-830439e7facc4e52",
+            "usage": {
+              "prompt_tokens": 80,
+              "total_tokens": 336,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.326,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n\n2.  **Analyze the Original Text:**\n    *   **Subject:** معالجة اللغة (Natural Language Processing - NLP).\n    *   **Verb:** تساعد (helps).\n    *   **Object:** الكمبيوتر (the computer).\n    *   **Actions:** يفهم النصوص (understand texts), ويحلل معناها (analyze their meaning), ويستخرج منها",
+          "api_metadata": {
+            "id": "chatcmpl-99aef6f500125f85",
+            "usage": {
+              "prompt_tokens": 89,
+              "total_tokens": 345,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.382,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, without explanation.\n    *   **Input Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n    *   **Context:** The field is Artificial Intelligence (ذكاء اصطناعي).\n    *   **Goal:** Improve clarity and precision (أوضح وأدق).\n\n2.  **Analyze the Input Text:**\n    *   \"معالجة اللغة\" (Natural Language Processing - NLP): This is a field/technology.\n    *   \"تساعد الكمبيوتر\" (helps the computer): A bit informal. \"تساعد\" (helps) is okay, but \"تمنح\" (empowers) or \"تتيح\" (enables) might be better, but I must stick to the",
+          "api_metadata": {
+            "id": "chatcmpl-ac550d7d1ae7db0f",
+            "usage": {
+              "prompt_tokens": 150,
+              "total_tokens": 406,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.341,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between similar technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating understanding/independence/uncertainty.\n    *   **Input Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** معالجة اللغة (Natural Language Processing - NLP).\n    *   **Action:** تساعد (helps) -> This is a bit weak. In the context of",
+          "api_metadata": {
+            "id": "chatcmpl-b640e6f45753d90e",
+            "usage": {
+              "prompt_tokens": 349,
+              "total_tokens": 605,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.381,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear/direct sentences, describe capabilities accurately without overstating independence/uncertainty.\n    *   **Input Text:** \"معالجة اللغة تساعد الكمبيوتر يفهم النصوص ويحلل معناها ويستخرج منها معلومات.\" (Natural Language Processing helps the computer understand texts and analyze their meaning and extract information from them.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** معالجة اللغة (Natural Language Processing - NLP).\n    *   **Action:** تساعد (helps) -> This is a bit informal. Better to say \"تهدف إلى\" (",
+          "api_metadata": {
+            "id": "chatcmpl-827446d896f9d7e2",
+            "usage": {
+              "prompt_tokens": 503,
+              "total_tokens": 759,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.45,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P09",
+      "input": "الرؤية الحاسوبية تستخدم نماذج لتحليل الصور والتعرف على الأشياء الموجودة فيها.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"الرؤية الحاسوبية تستخدم نماذج لتحليل الصور والتعرف على الأشياء الموجودة فيها.\" (Computer vision uses models to analyze images and recognize the objects present in them.)\n\n2.  **Analyze the Input Text:**\n    *   Subject: الرؤية الحاسوبية (Computer Vision).\n    *   Action: تستخدم نماذج (uses models).\n    *   Purpose/Function: لتحليل الصور (to analyze images) والتعرف على الأشياء الموجودة فيها (and recognize the objects present in them).\n    *   Meaning: Computer vision employs models for image analysis and object recognition.\n\n3.  **Identify Areas for Improvement (Clarity & Precision",
+          "api_metadata": {
+            "id": "chatcmpl-9bbf2f9cae00f08e",
+            "usage": {
+              "prompt_tokens": 79,
+              "total_tokens": 335,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.332,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"الرؤية الحاسوبية تستخدم نماذج لتحليل الصور والتعرف على الأشياء الموجودة فيها.\" (Computer vision uses models to analyze images and recognize the objects present in them.)\n\n2.  **Analyze the Original Text:**\n    *   Subject: الرؤية الحاسوبية (Computer Vision).\n    *   Action: تستخدم نماذج (uses models).\n    *   Purpose/Function: لتحليل الصور (to analyze images) والتعرف على الأشياء الموجودة فيها (and recognize the objects present in them).\n    *   Meaning: Computer vision employs models for image analysis and object recognition",
+          "api_metadata": {
+            "id": "chatcmpl-9939130cb2eebbe4",
+            "usage": {
+              "prompt_tokens": 88,
+              "total_tokens": 344,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.328,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, without explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:**\n        *   Definition of the field: \"مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\"\n        *   Target Text to Improve: \"الرؤية الحاسوبية تستخدم نماذج لتحليل الصور والتعرف على الأشياء الموجودة فيها.\"\n\n2.  **Analyze the Input Text (Target Text):**\n    *   \"الرؤية الحاسوبية\" (Computer Vision)\n    *   \"تستخدم نماذج\" (uses models)\n    *   \"لتحليل الصور\" (to analyze images)",
+          "api_metadata": {
+            "id": "chatcmpl-8fed46a795cfc52a",
+            "usage": {
+              "prompt_tokens": 149,
+              "total_tokens": 405,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.378,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"الرؤية الحاسوبية تستخدم نماذج لتحليل الصور والتعرف على الأشياء الموجودة فيها.\" (Computer Vision uses models to analyze images and recognize objects present in them.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close concepts based on context, use clear sentences, describe capabilities accurately without overstating autonomy/uncertainty.\n\n2.  **Analyze the Input Text:**\n    *   \"الرؤية الحاسوبية\" (Computer Vision) - This is the domain/sub-field.\n    *   \"تستخدم نماذج\" (uses models) - General statement about methodology.\n    *   \"لتحليل الصور\"",
+          "api_metadata": {
+            "id": "chatcmpl-9e2c84a9cde218d3",
+            "usage": {
+              "prompt_tokens": 348,
+              "total_tokens": 604,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.457,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close concepts based on context, use clear sentences, describe capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"الرؤية الحاسوبية تستخدم نماذج لتحليل الصور والتعرف على الأشياء الموجودة فيها.\" (Computer Vision uses models to analyze images and recognize objects present in them.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** الرؤية الحاسوبية (Computer Vision).\n    *   **Action:** تستخدم نماذج (uses models).\n    *   **Purpose:** لتحليل الصور (to analyze images) والتعرف على الأشياء الموجودة فيها (and",
+          "api_metadata": {
+            "id": "chatcmpl-b9fc411b8bc9d548",
+            "usage": {
+              "prompt_tokens": 502,
+              "total_tokens": 758,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.46,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P10",
+      "input": "إذا حفظ النموذج بيانات التدريب بشكل كبير ممكن يصير ممتاز عليها لكن ضعيف على بيانات جديدة.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"إذا حفظ النموذج بيانات التدريب بشكل كبير ممكن يصير ممتاز عليها لكن ضعيف على بيانات جديدة.\" (If the model saves/learns training data significantly, it can be excellent on them but weak on new data.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** The text describes a phenomenon in machine learning (overfitting). If a model memorizes or learns training data very well, it performs well on that specific data but poorly on unseen/new data.\n    *   **Issues in Original:**\n        *   \"حفظ\" (save) is slightly inaccurate terminology for \"learning\" or \"memorizing",
+          "api_metadata": {
+            "id": "chatcmpl-9606dc647685e078",
+            "usage": {
+              "prompt_tokens": 81,
+              "total_tokens": 337,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.387,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"إذا حفظ النموذج بيانات التدريب بشكل كبير ممكن يصير ممتاز عليها لكن ضعيف على بيانات جديدة.\" (If the model saves/learns training data significantly, it can become excellent on them but weak on new data.)\n\n2.  **Analyze the Original Text:**\n    *   **Meaning:** When a machine learning model is trained extensively on a specific dataset, it performs well on that same data (overfitting implication) but performs poorly on unseen/new data (generalization problem).\n    *   **Issues:**\n        *   \"يحفظ\" (s",
+          "api_metadata": {
+            "id": "chatcmpl-8e33e43686aaf36c",
+            "usage": {
+              "prompt_tokens": 90,
+              "total_tokens": 346,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.357,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Context:** The field is Artificial Intelligence (AI).\n    *   **Input Text to Improve:** \"إذا حفظ النموذج بيانات التدريب بشكل كبير ممكن يصير ممتاز عليها لكن ضعيف على بيانات جديدة.\" (If the model saves training data significantly, it can become excellent on them but weak on new data.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** The sentence describes a phenomenon in machine learning (overfitting). It says if a model memorizes or stores training data extensively, it performs well on that specific data but poorly on new/unseen data.\n    *   **Issues:**\n        *   \"إذا حفظ النموذج بيانات التدريب بشكل كبير\" (If the model saves training data significantly): \"حفظ\" (save) is a bit colloquial or imprecise in this context. \"",
+          "api_metadata": {
+            "id": "chatcmpl-abfc8692f75ee9ea",
+            "usage": {
+              "prompt_tokens": 151,
+              "total_tokens": 407,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.354,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between similar technical concepts based on context, use clear sentences, describe AI capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"إذا حفظ النموذج بيانات التدريب بشكل كبير ممكن يصير ممتاز عليها لكن ضعيف على بيانات جديدة.\" (If the model saves training data significantly it can become excellent on them but weak on new data.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** The text describes a phenomenon in machine learning/AI where a model performs well on training data (memorization/overfitting) but poorly on new/unseen data (generalization",
+          "api_metadata": {
+            "id": "chatcmpl-87cb7ce0310b45c3",
+            "usage": {
+              "prompt_tokens": 350,
+              "total_tokens": 606,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.36,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between similar technical concepts based on context, use clear sentences, describe capabilities accurately without overstating independence/uncertainty.\n    *   **Input Text:** \"إذا حفظ النموذج بيانات التدريب بشكل كبير ممكن يصير ممتاز عليها لكن ضعيف على بيانات جديدة.\" (If the model saves training data significantly it can become excellent on them but weak on new data.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** The text describes a phenomenon where a model performs well on training data (if it memorizes/saves it) but poorly on new/unseen data. This is essentially describing overfitting (",
+          "api_metadata": {
+            "id": "chatcmpl-adfa75101e629dca",
+            "usage": {
+              "prompt_tokens": 504,
+              "total_tokens": 760,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.39,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P11",
+      "input": "دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Task: Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   Constraint 1: Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   Constraint 2: Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   Input Text: \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (The loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n\n2.  **Analyze the Input Text:**\n    *   Subject: دالة الخسارة (Loss function).\n    *   Action: تعطينا قيمة (gives us a value).\n    *   Purpose: تبين الفرق بين ناتج النموذج والنتيجة المطلوبة (shows the difference between the model's output and the desired result).\n    *   Context: أثناء التدريب (during training).\n    *   Meaning:",
+          "api_metadata": {
+            "id": "chatcmpl-94a289c0e417368e",
+            "usage": {
+              "prompt_tokens": 84,
+              "total_tokens": 340,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.329,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Original Text:** \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (The loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n\n2.  **Analyze the Original Text:**\n    *   \"دالة الخسارة\" (Loss function) - Correct term.\n    *   \"تعطينا قيمة\" (gives us a value) - A bit colloquial. \"تُقدّم قيمة\" or \"تُحسب قيمة\" might be",
+          "api_metadata": {
+            "id": "chatcmpl-8cfa59903086a5b6",
+            "usage": {
+              "prompt_tokens": 93,
+              "total_tokens": 349,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.327,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, without explanation.\n    *   **Input Text:** \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (The loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n    *   **Context:** The field is Artificial Intelligence (ذكاء اصطناعي), and there's a provided definition of the field at the beginning, but the specific text to rewrite is the sentence about the loss function.\n    *   **Goal:** Improve clarity and precision without altering the core meaning.\n\n2.  **Analyze the Input Text:**\n    *   \"دالة الخسارة\" (Loss function) - Correct term.\n    *   \"تعطينا قيمة\" (gives us a value) - A bit colloquial. \"تُقدّم قيمة\"",
+          "api_metadata": {
+            "id": "chatcmpl-bfaa95668bc3d079",
+            "usage": {
+              "prompt_tokens": 154,
+              "total_tokens": 410,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.329,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (Loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear sentences, describe capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   \"دالة الخسارة\" (Loss function) - Technical term, keep as is.\n    *   \"تعطينا قيمة\" (gives us a value) - Can be improved",
+          "api_metadata": {
+            "id": "chatcmpl-b861a51e51e2758b",
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 609,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.364,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise technical terminology, maintain consistency in terminology, improve phrasing without changing facts/relationships/uncertainty levels, do not add mechanisms/capabilities/results/technical numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating understanding/independence/uncertainty.\n    *   **Input Text:** \"دالة الخسارة تعطينا قيمة تبين الفرق بين ناتج النموذج والنتيجة المطلوبة أثناء التدريب.\" (The loss function gives us a value that shows the difference between the model's output and the desired result during training.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** دالة الخسارة (Loss Function).\n    *   **Action:** تعطينا قيمة",
+          "api_metadata": {
+            "id": "chatcmpl-98c28599311a1e2b",
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 763,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.396,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P12",
+      "input": "نحتاج نقيم النموذج بأكثر من مقياس لأن الدقة وحدها مو دائما كافية للحكم على الأداء.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"نحتاج نقيم النموذج بأكثر من مقياس لأن الدقة وحدها مو دائما كافية للحكم على الأداء.\"\n\n2.  **Analyze the Input Text:**\n    *   **Grammar/Spelling Errors:**\n        *   \"نحتاج نقيم\" -> Should be \"نحتاج أن نقيم\" or \"نحتاج إلى تقييم\".\n        *   \"مو\" -> Typo for \"مُ\" (مُ) or \"مُ\" (مُ). Context suggests \"مُ\" (not always).\n        *   \"أكثر من مقياس\" -> \"أكثر من مقياس\" is",
+          "api_metadata": {
+            "id": "chatcmpl-bbe85e569923ef3c",
+            "usage": {
+              "prompt_tokens": 87,
+              "total_tokens": 343,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.335,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"نحتاج نقيم النموذج بأكثر من مقياس لأن الدقة وحدها مو دائما كافية للحكم على الأداء.\" (Note: There are typos in the original text: \"نحتاج نقيم\" should be \"نحتاج أن نقيم\", \"مو\" should be \"مُ\").\n\n2.  **Analyze the Original Text:**\n    *   *Meaning:* We need to evaluate the model using multiple metrics because accuracy alone is not always sufficient to judge performance.\n    *   *Issues:*\n        *   Grammar: \"نحتاج نقيم\" -> \"نحتاج أن",
+          "api_metadata": {
+            "id": "chatcmpl-a83b372f5b2bcc46",
+            "usage": {
+              "prompt_tokens": 96,
+              "total_tokens": 352,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.334,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Input Text:**\n        *   Field: Artificial Intelligence (المجال: الذكاء الاصطناعي)\n        *   Definition: A field concerned with computer systems capable of inferring outputs, such as predictions, content, recommendations, or decisions, based on inputs they receive, and these systems may vary in levels of autonomy and adaptability after deployment. (المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.)\n        *   Text to Improve: We need to evaluate the model with more than one metric because accuracy alone is not always sufficient to judge performance. (نحتاج نقيم النموذج بأكثر من مقياس",
+          "api_metadata": {
+            "id": "chatcmpl-af63eb53ba35ebc2",
+            "usage": {
+              "prompt_tokens": 157,
+              "total_tokens": 413,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.332,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"نحتاج نقيم النموذج بأكثر من مقياس لأن الدقة وحدها مو دائما كافية للحكم على الأداء.\" (Note: There are typos in the input: \"نحتاج نقيم\" should be \"نحتاج أن نقيم\", \"مو\" should be \"مُ\").\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close concepts, use clear sentences, describe capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   \"نحتاج نقيم النموذج بأكثر من مقياس\" -> We need to evaluate the model with more than one metric.",
+          "api_metadata": {
+            "id": "chatcmpl-8aa7bb8c7d9544bf",
+            "usage": {
+              "prompt_tokens": 356,
+              "total_tokens": 612,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.367,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty levels, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe AI capabilities accurately without overstating understanding/independence/uncertainty.\n    *   **Input Text:** \"نحتاج نقيم النموذج بأكثر من مقياس لأن الدقة وحدها مو دائما كافية للحكم على الأداء.\" (Note: There are typos in the input: \"نحتاج نقيم\" should be \"نحتاج أن نقيم\", \"مو\" should be \"مُ\").\n\n2.  **Analyze the Input Text:**\n    *   Sentence 1: \"نحتاج نقيم النموذج بأكثر",
+          "api_metadata": {
+            "id": "chatcmpl-8e06384d04b31a41",
+            "usage": {
+              "prompt_tokens": 510,
+              "total_tokens": 766,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.389,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P13",
+      "input": "الشبكات العصبية فيها طبقات تعالج المدخلات بالتدريج إلى أن تنتج النتيجة النهائية.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"الشبكات العصبية فيها طبقات تعالج المدخلات بالتدريج إلى أن تنتج النتيجة النهائية.\" (Neural networks have layers that process inputs gradually to produce the final result.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** الشبكات العصبية (Neural networks).\n    *   **Structure:** فيها طبقات (have layers).\n    *   **Action:** تعالج المدخلات بالتدريج (process inputs gradually/step-by-step).\n    *   **Outcome:** إلى أن تنتج النتيجة النهائية (until they produce the final result).\n    *   **Issues/A",
+          "api_metadata": {
+            "id": "chatcmpl-8224c5482c9a0577",
+            "usage": {
+              "prompt_tokens": 85,
+              "total_tokens": 341,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.364,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"الشبكات العصبية فيها طبقات تعالج المدخلات بالتدريج إلى أن تنتج النتيجة النهائية.\" (Neural networks have layers that process inputs gradually until the final result is produced.)\n\n2.  **Analyze the Original Text:**\n    *   Subject: الشبكات العصبية (Neural networks).\n    *   Structure: فيها طبقات (have layers).\n    *   Action: تعالج المدخلات بالتدريج (process inputs gradually).\n    *   Outcome: إلى أن تنتج النتيجة النهائية (until the final result is",
+          "api_metadata": {
+            "id": "chatcmpl-abb7cfa6ce3a839c",
+            "usage": {
+              "prompt_tokens": 94,
+              "total_tokens": 350,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.345,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, without explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:** \"الشبكات العصبية فيها طبقات تعالج المدخلات بالتدريج إلى أن تنتج النتيجة النهائية.\" (Neural networks have layers that process inputs gradually to produce the final result.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** الشبكات العصبية (Neural Networks).\n    *   **Structure:** فيها طبقات (have layers).\n    *   **Action:** تعالج المدخلات بالتدريج (process inputs gradually/sequentially).\n    *   **Outcome:** إلى أن تنتج النتيجة النهائية (until they produce the final result).\n    *   **Issues:** The sentence is a bit colloquial (\"فيها طبقات\", \"إلى أن تنتج",
+          "api_metadata": {
+            "id": "chatcmpl-992a66dbb96dd665",
+            "usage": {
+              "prompt_tokens": 155,
+              "total_tokens": 411,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.341,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between similar technical concepts based on context, use clear/direct sentences, describe AI system capabilities accurately without overstating autonomy/uncertainty.\n    *   **Input Text:** \"الشبكات العصبية فيها طبقات تعالج المدخلات بالتدريج إلى أن تنتج النتيجة النهائية.\" (Neural networks have layers that process inputs gradually to produce the final result.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** الشبكات العصبية (Neural Networks).\n    *   **Structure:** فيها طبقات (have layers).\n    *   **Process:** تعالج المد",
+          "api_metadata": {
+            "id": "chatcmpl-b556940c211b5bcf",
+            "usage": {
+              "prompt_tokens": 354,
+              "total_tokens": 610,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.358,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close concepts based on context, use clear/direct sentences, describe capabilities accurately without overstating.\n    *   **Input Text:** \"الشبكات العصبية فيها طبقات تعالج المدخلات بالتدريج إلى أن تنتج النتيجة النهائية.\" (Neural networks have layers that process inputs gradually to produce the final result.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** الشبكات العصبية (Neural Networks).\n    *   **Structure:** فيها طبقات (have layers).\n    *   **Process:** تعالج المدخلات بالتدريج (process",
+          "api_metadata": {
+            "id": "chatcmpl-9c1978422bff3647",
+            "usage": {
+              "prompt_tokens": 508,
+              "total_tokens": 764,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.388,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P14",
+      "input": "النموذج اللغوي يتعامل مع السياق الموجود في النص عشان يولد تكملة مناسبة.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more accurate (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"النموذج اللغوي يتعامل مع السياق الموجود في النص عشان يولد تكملة مناسبة.\" (The language model deals with the context existing in the text so that it generates a suitable continuation.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** Language models process the context within a text to generate an appropriate continuation.\n    *   **Issues:**\n        *   \"عشان\" (Eshan) is colloquial/informal. It should be replaced with a formal equivalent like \"لكي\" (liki) or \"لأجل\" (la'jil).\n        *",
+          "api_metadata": {
+            "id": "chatcmpl-b3416ac8b626c149",
+            "usage": {
+              "prompt_tokens": 83,
+              "total_tokens": 339,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.335,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate (أدق) while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"النموذج اللغوي يتعامل مع السياق الموجود في النص عشان يولد تكملة مناسبة.\" (The language model deals with the context existing in the text so that it generates a suitable continuation.)\n\n2.  **Analyze the Original Text:**\n    *   **Meaning:** Language models process the context within a text to generate an appropriate continuation.\n    *   **Issues:**\n        *   \"عشان\" (Eshan) is colloquial/informal (meaning \"so that\" or \"in order to\"). It should be replaced with formal Arabic like \"لكي\" or \"لإنتاج\".\n        *   \"يتعامل مع\" (It deals with) is a bit generic.",
+          "api_metadata": {
+            "id": "chatcmpl-987718d0c7d05fb6",
+            "usage": {
+              "prompt_tokens": 92,
+              "total_tokens": 348,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.343,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Input Text:** \"النموذج اللغوي يتعامل مع السياق الموجود في النص عشان يولد تكملة مناسبة.\" (The language model deals with the context existing in the text to generate a suitable continuation.)\n\n2.  **Analyze the Input Text:**\n    *   **Subject:** النموذج اللغوي (Language Model).\n    *   **Action:** يتعامل مع (deals with/interacts with) -> السياق الموجود في النص (the context existing in the text).\n    *   **Purpose/Result:** عشان (in order to/so that) ->",
+          "api_metadata": {
+            "id": "chatcmpl-9cab717afd6a94ca",
+            "usage": {
+              "prompt_tokens": 153,
+              "total_tokens": 409,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.331,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"النموذج اللغوي يتعامل مع السياق الموجود في النص عشان يولد تكملة مناسبة.\" (The language model deals with the context existing in the text to generate a suitable continuation.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe capabilities accurately without overstating independence or certainty.\n\n2.  **Analyze the Input Text:**\n    *   \"النموذج اللغوي\" (Language Model) - Technical term, keep it.\n    *   \"يتعامل مع\" (deals with) - A bit informal. Better:",
+          "api_metadata": {
+            "id": "chatcmpl-b4d236a846dcaec6",
+            "usage": {
+              "prompt_tokens": 352,
+              "total_tokens": 608,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.364,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to be clearer and more accurate while preserving its meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"النموذج اللغوي يتعامل مع السياق الموجود في النص عشان يولد تكملة مناسبة.\" (The language model deals with the context existing in the text to generate a suitable continuation.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe capabilities accurately without overstating independence or certainty.\n\n2.  **Analyze the Input Text:**\n    *   \"النموذج اللغوي\" (Language Model) - Correct terminology.\n    *   \"يتعامل مع\" (deals with) - A bit informal. Better: \"يعتمد على",
+          "api_metadata": {
+            "id": "chatcmpl-b7eebdbf634bb9ac",
+            "usage": {
+              "prompt_tokens": 506,
+              "total_tokens": 762,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.387,
+            "max_tokens": 256
+          }
+        }
+      }
+    },
+    {
+      "id": "P15",
+      "input": "اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.",
+      "conditions": {
+        "D0_saleem_only": {
+          "context": "",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Input Text:** \"اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.\" (Choosing training data is important because data quality reflects on model output quality.)\n\n2.  **Analyze the Input Text:**\n    *   **Meaning:** Selecting training data is crucial because the quality of the data directly impacts the quality of the model's outputs.\n    *   **Tone:** Informative, technical (AI/ML context).\n    *   **Issues:** The sentence is grammatically correct but could be slightly more formal or precise. \"تنعكس على\" (reflects on) is okay, but \"تحدد",
+          "api_metadata": {
+            "id": "chatcmpl-b468b14b635a1632",
+            "usage": {
+              "prompt_tokens": 81,
+              "total_tokens": 337,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.365,
+            "max_tokens": 256
+          }
+        },
+        "D1_domain_name": {
+          "context": "المجال: الذكاء الاصطناعي",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Domain:** Artificial Intelligence (ذكاء اصطناعي).\n    *   **Original Text:** \"اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.\" (Choosing training data is important because the quality of data reflects on the quality of the model's outputs.)\n\n2.  **Analyze the Original Text:**\n    *   **Meaning:** Selecting training data is crucial because data quality directly impacts model output quality.\n    *   **Tone:** Informative, technical but simple.\n    *   **Issues:** The sentence is grammatically correct but could be slightly more formal or precise in the context of AI. \"تن",
+          "api_metadata": {
+            "id": "chatcmpl-824fe211d7f5cb8f",
+            "usage": {
+              "prompt_tokens": 90,
+              "total_tokens": 346,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.33,
+            "max_tokens": 256
+          }
+        },
+        "D2_domain_name_definition": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise (أوضح وأدق) while preserving its meaning (مع الحفاظ على معناه).\n    *   **Constraint 1:** Do not add facts or information not present in the original text (لا تضف حقائق أو معلومات غير موجودة في النص).\n    *   **Constraint 2:** Output only the rewritten text, no explanation (أعد النص المصاغ فقط دون شرح).\n    *   **Context:** The field is Artificial Intelligence (الذكاء الاصطناعي).\n    *   **Input Text to Improve:** \"اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.\" (Choosing training data is important because the quality of data reflects on the quality of the model's outputs.)\n\n2.  **Analyze the Input Text:**\n    *   Sentence: \"اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.\"\n    *   Meaning: Selecting training data is crucial because data quality impacts model output quality.\n    *   Issues/Opportunities for Improvement:",
+          "api_metadata": {
+            "id": "chatcmpl-b256fed4c4463c42",
+            "usage": {
+              "prompt_tokens": 151,
+              "total_tokens": 407,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.331,
+            "max_tokens": 256
+          }
+        },
+        "D3_domain_guidance": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanation.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Input Text:** \"اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.\" (Choosing training data is important because data quality reflects on model output quality.)\n    *   **Guidelines:** Use precise terminology, maintain consistency, improve phrasing without changing facts/relationships/uncertainty, do not add mechanisms/capabilities/results/numbers, distinguish between close technical concepts based on context, use clear/direct sentences, describe AI system capabilities accurately without overstating.\n\n2.  **Analyze the Input Text:**\n    *   Sentence: \"اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.\"\n    *   Meaning: Selecting training data is crucial because the quality of the data affects the quality of",
+          "api_metadata": {
+            "id": "chatcmpl-86ed11c3b80a90cd",
+            "usage": {
+              "prompt_tokens": 350,
+              "total_tokens": 606,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.36,
+            "max_tokens": 256
+          }
+        },
+        "D4_domain_guidance_examples": {
+          "context": "المجال: الذكاء الاصطناعي\n\nتعريف المجال: مجال يختص بالأنظمة الحاسوبية القادرة على استنتاج مخرجات، مثل التنبؤات أو المحتوى أو التوصيات أو القرارات، اعتمادًا على مدخلات تستقبلها، وقد تختلف هذه الأنظمة في مستويات الاستقلالية والتكيف بعد النشر.\n\nإرشادات الكتابة في المجال:\n- استخدم المصطلح التخصصي الأدق عندما يدل السياق على المفهوم التقني، وتجنب استبداله بلفظ عام يضعف المعنى.\n- حافظ على التسمية نفسها للمفهوم داخل النص ما لم يتطلب السياق تمييزًا آخر.\n- حسّن الصياغة دون تغيير الحقائق أو العلاقات أو درجة التأكد الواردة في النص الأصلي.\n- لا تضف آلية أو قدرة أو نتيجة أو رقمًا تقنيًا لم يقدمه النص أو السياق المتاح.\n- ميّز بين المفاهيم التقنية المتقاربة بالاعتماد على السياق والتعريف، ولا تعامل التشابه اللفظي على أنه تطابق في المعنى.\n- استخدم جملًا واضحة ومباشرة مع الحفاظ على التفاصيل اللازمة لفهم المفهوم التقني.\n- صف قدرات أنظمة الذكاء الاصطناعي بدقة وتجنب إسناد فهم أو استقلال أو يقين للنظام أكثر مما يسمح به السياق.\n\nأمثلة حقيقية على الكتابة في المجال:\n- النماذج اللغوية هي نماذج احتمالية تُستخدم نظرية الاحتمالية للتعامل مع اللغة الطبيعية.\n- تعرّف على الذكاء الاصطناعي التوليدي، وهي تقنية تستخدم نماذج التعلم الآلي لإنشاء محتوى أو أفكار أو حلول جديدة استناداً إلى البيانات الموجودة.\n- تدعم معالجة اللغة الطبيعية (NLP) تطبيقات يمكنها تحليل النص لاستنتاج المعنى الدلالي.\n- التعلم المعزز هو نهج في تعلم الآلة يتعلم السلوكيات من خلال الحصول على تغذية راجعة من استخدامه.\n- يتم تشغيل الوكلاء بواسطة نماذج اللغة والتكامل مع الأنظمة الموجودة لمساعدة المستخدمين على تحقيق أهداف خاصة بالمجال.",
+          "output": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Task:** Rewrite the given Arabic text to make it clearer and more precise while maintaining its original meaning.\n    *   **Constraint 1:** Do not add facts or information not present in the original text.\n    *   **Constraint 2:** Output only the rewritten text, no explanations.\n    *   **Domain:** Artificial Intelligence (AI).\n    *   **Guidelines:** Use precise technical terminology, maintain consistency in terminology, improve phrasing without changing facts/relationships/uncertainty levels, do not add mechanisms/capabilities/results/technical numbers, distinguish between close technical concepts based on context, use clear and direct sentences, describe AI system capabilities accurately without overstating understanding/independence/uncertainty.\n    *   **Input Text:** \"اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.\" (Choosing training data is important because data quality reflects on model output quality.)\n\n2.  **Analyze the Input Text:**\n    *   **Sentence:** \"اختيار بيانات التدريب مهم لأن جودة البيانات تنعكس على جودة مخرجات النموذج.\"\n    *   **Meaning:** Selecting",
+          "api_metadata": {
+            "id": "chatcmpl-a975473abcf6fde1",
+            "usage": {
+              "prompt_tokens": 504,
+              "total_tokens": 760,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            },
+            "finish_reason": "length",
+            "elapsed_seconds": 9.384,
+            "max_tokens": 256
+          }
+        }
+      }
+    }
+  ]
+}
