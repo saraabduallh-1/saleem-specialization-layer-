@@ -1,0 +1,2659 @@
+{
+  "metadata": {
+    "experiment": "final_saleem_specialization_layer_v1",
+    "timestamp_utc": "20261008T100947Z",
+    "model": "Qwen/Qwen3.5-4B",
+    "retrieval_model": "intfloat/multilingual-e5-large",
+    "retrieval_device": "cpu",
+    "top_k": 1,
+    "temperature": 0.0,
+    "max_tokens": 256,
+    "conditions": [
+      "T0_qwen_only",
+      "T1_terminology",
+      "T2_terminology_domain"
+    ],
+    "enable_thinking": false,
+    "input_dataset": "data/evaluation/ai_final_layer_eval_v1.json",
+    "terminology_dataset": "data/processed/data_ai/terminology_pilot_50.json",
+    "domain_dataset": "data/domain/saleem_domain_knowledge_v1.json"
+  },
+  "summary": {
+    "retrieval": {
+      "n_positive": 30,
+      "hit_at_1": 0.7333,
+      "hit_at_3": 0.8333,
+      "hit_at_5": 0.9333,
+      "mrr": 0.8014
+    },
+    "generation": {
+      "T0_qwen_only": {
+        "n_scored": 30,
+        "canonical_term_used": 0,
+        "canonical_term_use_rate": 0.0
+      },
+      "T1_terminology": {
+        "n_scored": 30,
+        "canonical_term_used": 8,
+        "canonical_term_use_rate": 0.2667
+      },
+      "T2_terminology_domain": {
+        "n_scored": 30,
+        "canonical_term_used": 9,
+        "canonical_term_use_rate": 0.3
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "F01",
+      "kind": "positive",
+      "input": "المودل صار يطلع معلومات تبدو صحيحة ومقنعة، لكن بعضها مختلق وما له أي مصدر.",
+      "expected_term_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+      "expected_term": "هلوسة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+            "term": "هلوسة",
+            "definition": "ظاهرة يُنتج فيها نموذج الذكاء الاصطناعي معلومات تبدو معقولة، لكنها خاطئة أو مصطنعة أو غير مدعومة بالسياق أو الأدلة المتاحة.",
+            "score": 0.811695
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يُصدر النموذج معلومات تبدو صحيحة ومقنعة، إلا أن بعضها مزور ولا يملك أي مصدر.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.365,
+            "usage": {
+              "prompt_tokens": 186,
+              "total_tokens": 212,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يُنتج النموذج معلومات تبدو صحيحة ومقنعة، لكنها خاطئة أو مصطنعة أو غير مدعومة بالسياق أو الأدلة المتاحة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.559,
+            "usage": {
+              "prompt_tokens": 260,
+              "total_tokens": 296,
+              "completion_tokens": 36,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يُظهر النموذج معلومات تبدو صحيحة ومقنعة، لكنها قد تكون خاطئة أو مصطنعة أو غير مدعومة بالسياق أو الأدلة المتاحة، وهي تُعرف بظاهرة الهلوسة.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.104,
+            "usage": {
+              "prompt_tokens": 531,
+              "total_tokens": 578,
+              "completion_tokens": 47,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F02",
+      "kind": "positive",
+      "input": "المودل صار ممتاز على البيانات اللي تدرب عليها، لكن إذا جربناه على بيانات جديدة يطيح أداؤه بشكل واضح.",
+      "expected_term_id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+      "expected_term": "فرط التخصيص",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+            "term": "فرط التخصيص",
+            "definition": "مشكلة في تعلُّم الآلة تحدث عند إنشاء نموذج يطابق بيانات التدريب بصورة كبيرة تجعله يفشل في التعميم على البيانات الجديدة.",
+            "score": 0.803066
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يتميز النموذج بأداء متميز على البيانات التي تم تدريبه عليها، إلا أن أدائه يتدهور بشكل ملحوظ عند تطبيقه على بيانات جديدة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.812,
+            "usage": {
+              "prompt_tokens": 191,
+              "total_tokens": 226,
+              "completion_tokens": 35,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يُظهر النموذج أداءً ممتازًا على بيانات التدريب، إلا أن أدائه يتدهور بشكل ملحوظ عند تطبيقه على بيانات جديدة، وهو ما يُعرف بـ فرط التخصيص.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 11.775,
+            "usage": {
+              "prompt_tokens": 259,
+              "total_tokens": 302,
+              "completion_tokens": 43,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يتميز النموذج بأداء متميز على بيانات التدريب، إلا أن أدائه يتدهور بشكل ملحوظ عند تطبيقه على بيانات جديدة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.847,
+            "usage": {
+              "prompt_tokens": 530,
+              "total_tokens": 561,
+              "completion_tokens": 31,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F03",
+      "kind": "positive",
+      "input": "البرنامج يراقب ما يحدث حوله، ويختار خطوات وينفذها بنفسه حتى يصل إلى الهدف المحدد.",
+      "expected_term_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+      "expected_term": "وكيل",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "c33c453c-367b-452a-8763-7ba23871b01f",
+            "term": "وكيل",
+            "definition": "كيان مادي أو برمجي يمكنه إدراك بيئته، والعمل بتحكم ذاتي لتحقيق هدف.",
+            "score": 0.79795
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يقوم البرنامج بمراقبة البيئة المحيطة، ويحدد الخطوات المنفذة ذاتيًا للوصول إلى الهدف المحدد.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.687,
+            "usage": {
+              "prompt_tokens": 188,
+              "total_tokens": 213,
+              "completion_tokens": 25,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يقوم البرنامج بمراقبة بيئته، ويختار خطوات التنفيذ، وينفذها ذاتيًا للوصول إلى الهدف المحدد.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.394,
+            "usage": {
+              "prompt_tokens": 246,
+              "total_tokens": 273,
+              "completion_tokens": 27,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يُعرّف الوكيل كيانًا برمجيًا قادرًا على إدراك بيئته، والعمل بتحكم ذاتي لتنفيذ خطوات محددة للوصول إلى هدف محدد.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.624,
+            "usage": {
+              "prompt_tokens": 517,
+              "total_tokens": 554,
+              "completion_tokens": 37,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F04",
+      "kind": "positive",
+      "input": "مررنا مجموعة البيانات كاملة على النموذج خمس مرات متتالية أثناء عملية الضبط.",
+      "expected_term_id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+      "expected_term": "دورة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+            "term": "دورة",
+            "definition": "عملية تدريب كاملة على مجموعة البيانات بأكملها أثناء تدريب النموذج.",
+            "score": 0.802578
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "تم تمرير مجموعة البيانات كاملة على النموذج خمس مرات متتالية ضمن عملية ضبط النموذج.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.761,
+            "usage": {
+              "prompt_tokens": 181,
+              "total_tokens": 202,
+              "completion_tokens": 21,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "قمنا بإجراء خمس دورات متتالية على النموذج باستخدام مجموعة البيانات الكاملة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.289,
+            "usage": {
+              "prompt_tokens": 230,
+              "total_tokens": 249,
+              "completion_tokens": 19,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "تم تمرير مجموعة البيانات الكاملة على النموذج خمس مرات متتالية خلال دورة التدريب.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.363,
+            "usage": {
+              "prompt_tokens": 501,
+              "total_tokens": 520,
+              "completion_tokens": 19,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F05",
+      "kind": "positive",
+      "input": "الكلام اللي نعطيه للنموذج في البداية هو اللي يحدد له المهمة وطريقة الرد المطلوبة.",
+      "expected_term_id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+      "expected_term": "أمر",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+            "term": "أمر",
+            "definition": "المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته.",
+            "score": 0.826308
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "المدخلات الموجهة للنموذج تحدد مهامه وطريقة الاستجابة المطلوبة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.07,
+            "usage": {
+              "prompt_tokens": 184,
+              "total_tokens": 205,
+              "completion_tokens": 21,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "المُدخلات المقدمة للنموذج هي التي تحدد مهمته وطريقة الرد المطلوبة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.205,
+            "usage": {
+              "prompt_tokens": 236,
+              "total_tokens": 256,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "المُدخلات المقدمة للنموذج هي التي تحدد مهامه وطريقة الرد المطلوبة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.381,
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 527,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F06",
+      "kind": "positive",
+      "input": "تعتمد هذه المعمارية على الانتباه الذاتي لمعالجة الكلمات في التسلسل وربط كل كلمة ببقية السياق.",
+      "expected_term_id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+      "expected_term": "مُحوِّل",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+            "term": "تعرُّف على الكيانات المُسمّاة",
+            "definition": "عملية تحديد أسماء الكيانات وفئاتها في النص أو الكلام.",
+            "score": 0.798794
+          }
+        ],
+        "expected_rank": 13
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "تعتمد هذه المعمارية على الانتباه الذاتي لمعالجة الكلمات في التسلسل وربط كل كلمة بالسياق العام.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.465,
+            "usage": {
+              "prompt_tokens": 187,
+              "total_tokens": 213,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "تعتمد هذه المعمارية على الانتباه الذاتي لمعالجة الكلمات في التسلسل وربط كل كلمة بالسياق.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.987,
+            "usage": {
+              "prompt_tokens": 247,
+              "total_tokens": 272,
+              "completion_tokens": 25,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "تعتمد هذه المعمارية على الانتباه الذاتي لمعالجة الكلمات في التسلسل وربط كل كلمة بالسياق العام.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.691,
+            "usage": {
+              "prompt_tokens": 518,
+              "total_tokens": 544,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F07",
+      "kind": "positive",
+      "input": "بعد كل فعل ينفذه النظام، ترسل له البيئة قيمة عددية موجبة أو سالبة توضح جودة ذلك الفعل.",
+      "expected_term_id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+      "expected_term": "مكافأة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+            "term": "مكافأة",
+            "definition": "نتيجة عددية في التعلُّم التعزيزي تحدده البيئة عند القيام بفعل في حالة ما.",
+            "score": 0.812659
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "بعد كل إجراء يقوم به النظام، ترسل البيئة قيمة رقمية موجبة أو سالبة تعبر عن جودة هذا الإجراء.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.251,
+            "usage": {
+              "prompt_tokens": 188,
+              "total_tokens": 215,
+              "completion_tokens": 27,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "بعد كل فعل ينفذه النظام، ترسل البيئة مكافأة (نتيجة عددية) موجبة أو سالبة تعبر عن جودة ذلك الفعل.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.999,
+            "usage": {
+              "prompt_tokens": 247,
+              "total_tokens": 280,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "بعد كل إجراء يقوم به النظام، ترسل البيئة قيمة رقمية (مكافأة) تعبر عن جودة هذا الإجراء.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.263,
+            "usage": {
+              "prompt_tokens": 518,
+              "total_tokens": 546,
+              "completion_tokens": 28,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F08",
+      "kind": "positive",
+      "input": "في كل حالة، يحتفظ النظام بتوزيع احتمالي يحدد أي الأفعال يرجح أن يختارها.",
+      "expected_term_id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+      "expected_term": "سياسة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+            "term": "سياسة",
+            "definition": "الربط الاحتمالي للوكيل من الحالات إلى الأفعال في التعلُّم التعزيزي.",
+            "score": 0.807174
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "في كل حالة، يحافظ النظام على توزيع احتمالي يحدد الأفعال المرجحة لاختيارها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.446,
+            "usage": {
+              "prompt_tokens": 185,
+              "total_tokens": 208,
+              "completion_tokens": 23,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "في كل حالة، يحتفظ النظام بتوزيع احتمالي يحدد الأفعال المرجحة للاختيار.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.362,
+            "usage": {
+              "prompt_tokens": 242,
+              "total_tokens": 263,
+              "completion_tokens": 21,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "في كل حالة، يحتفظ النظام بتوزيع احتمالي يحدد الأفعال التي يُرجح أن يقوم بها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.693,
+            "usage": {
+              "prompt_tokens": 513,
+              "total_tokens": 537,
+              "completion_tokens": 24,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F09",
+      "kind": "positive",
+      "input": "نعدّل معاملات النموذج اعتمادًا على أمثلة البيانات حتى تتحسن قدرته على أداء المهمة.",
+      "expected_term_id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+      "expected_term": "تدريب",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+            "term": "أمر",
+            "definition": "المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته.",
+            "score": 0.810654
+          }
+        ],
+        "expected_rank": 5
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يتم ضبط معاملات النموذج بناءً على أمثلة البيانات لتحسين أدائه في إنجاز المهمة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.41,
+            "usage": {
+              "prompt_tokens": 183,
+              "total_tokens": 204,
+              "completion_tokens": 21,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "نعدّل معاملات النموذج بناءً على المدخلات حتى تتحسن قدرته على أداء المهمة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.381,
+            "usage": {
+              "prompt_tokens": 235,
+              "total_tokens": 257,
+              "completion_tokens": 22,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "نُعدّل معاملات النموذج بناءً على المدخلات المقدمة لتوجيه مخرجاته، ما يحسّن من أدائه في إنجاز المهمة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.93,
+            "usage": {
+              "prompt_tokens": 506,
+              "total_tokens": 539,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F10",
+      "kind": "positive",
+      "input": "الحل يستخدم شبكة عصبية تحتوي عدة طبقات مخفية تتعلم تمثيلات معقدة من البيانات بصورة متدرجة.",
+      "expected_term_id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+      "expected_term": "تعلُّم عميق",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "7653197c-feda-4347-8fee-90b5a4448c2e",
+            "term": "تعلُّم عميق",
+            "definition": "مجال فرعي من تعلُّم الآلة يستخدم عدة طبقات مخفية في الشبكات العصبية لحل المشكلات المعقدة عن طريق تحديد أهم الخصائص الأساسية للبيانات المُدْخَلة.",
+            "score": 0.846181
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يستخدم الحل شبكة عصبية ذات طبقات مخفية متعددة تتعلم تمثيلات معقدة من البيانات عبر عملية تعلم متدرج.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.191,
+            "usage": {
+              "prompt_tokens": 188,
+              "total_tokens": 218,
+              "completion_tokens": 30,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يستخدم الحل شبكة عصبية متعددة الطبقات لتعلم تمثيلات معقدة من البيانات بشكل تدريجي.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.176,
+            "usage": {
+              "prompt_tokens": 270,
+              "total_tokens": 294,
+              "completion_tokens": 24,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يستخدم الحل شبكة عصبية ذات طبقات مخفية متعددة لتعلّم تمثيلات معقدة من البيانات عبر عملية متدرجة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.569,
+            "usage": {
+              "prompt_tokens": 541,
+              "total_tokens": 570,
+              "completion_tokens": 29,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F11",
+      "kind": "positive",
+      "input": "عندنا أمثلة وكل مثال معها الإجابة الصحيحة، ونبي النظام يتعلم منها عشان يتوقع إجابات لأمثلة جديدة.",
+      "expected_term_id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+      "expected_term": "تعلُّم موجَّه",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+            "term": "اسم",
+            "definition": "جانب الإجابة أو النتيجة من مثال في التعلُّم الموجَّه.",
+            "score": 0.811619
+          }
+        ],
+        "expected_rank": 5
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يحتوي النظام على مجموعة من الأمثلة المصاحبة لإجاباتها الصحيحة، حيث يتعلم منها للتنبؤ بإجابات أمثلة جديدة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.005,
+            "usage": {
+              "prompt_tokens": 192,
+              "total_tokens": 225,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يحتوي النظام على أمثلة مرفقة بإجاباتها الصحيحة، حيث يتعلم منها للتنبؤ بإجابات أمثلة جديدة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.537,
+            "usage": {
+              "prompt_tokens": 243,
+              "total_tokens": 273,
+              "completion_tokens": 30,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يتمتع النظام بقدرات استنتاج مخرجات مثل التنبؤات أو التوصيات أو القرارات، بناءً على مدخلات تستقبلها، وذلك باستخدام أمثلة مرفقة بإجاباتها الصحيحة لتعلم كيفية توقع إجابات لأمثلة جديدة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.447,
+            "usage": {
+              "prompt_tokens": 514,
+              "total_tokens": 570,
+              "completion_tokens": 56,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F12",
+      "kind": "positive",
+      "input": "البيانات لا تحتوي أي تسميات، ونريد من النظام أن يكتشف التجمعات والأنماط الموجودة فيها بنفسه.",
+      "expected_term_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+      "expected_term": "تعلُّم غير موجَّه",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+            "term": "تنقيب في البيانات",
+            "definition": "عملية اكتشاف الأنماط في كمية كبيرة من البيانات، واستخراج المعلومات المفيدة.",
+            "score": 0.794747
+          }
+        ],
+        "expected_rank": 3
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "لا تحتوي البيانات على تسميات، ويطلب من النظام اكتشاف التجمعات والأنماط الموجودة فيها ذاتيًا.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.352,
+            "usage": {
+              "prompt_tokens": 191,
+              "total_tokens": 216,
+              "completion_tokens": 25,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "البيانات غير مُعلَّمة، ويهدف النظام إلى اكتشاف التجمعات والأنماط الموجودة فيها ذاتيًا.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.614,
+            "usage": {
+              "prompt_tokens": 246,
+              "total_tokens": 272,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "تهدف العملية إلى اكتشاف الأنماط والتجمعات الموجودة في البيانات غير المصنفة تلقائيًا.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.746,
+            "usage": {
+              "prompt_tokens": 517,
+              "total_tokens": 541,
+              "completion_tokens": 24,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F13",
+      "kind": "positive",
+      "input": "بعد حساب الخطأ عند المخرج، نعيد الإشارة عبر طبقات الشبكة إلى الخلف لحساب مقدار تعديل الأوزان.",
+      "expected_term_id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+      "expected_term": "انتشار عكسي",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+            "term": "انتشار عكسي",
+            "definition": "خوارزمية تُستخدم عند تدريب الشبكات العصبية الاصطناعية لتقليل الأخطاء عن طريق إيجاد قيمة التدرج المطلوب لحساب أوزان الشبكة.",
+            "score": 0.810707
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "بعد حساب الخطأ عند المخرج، نعيد الإشارة عبر طبقات الشبكة إلى الخلف لحساب مقدار تعديل الأوزان.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.52,
+            "usage": {
+              "prompt_tokens": 188,
+              "total_tokens": 215,
+              "completion_tokens": 27,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "بعد حساب الخطأ عند المخرج، نعيد الإشارة عبر طبقات الشبكة إلى الخلف لحساب مقدار تعديل الأوزان.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.759,
+            "usage": {
+              "prompt_tokens": 265,
+              "total_tokens": 292,
+              "completion_tokens": 27,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "بعد حساب الخطأ عند المخرج، تُعاد الإشارة عبر طبقات الشبكة إلى الخلف لحساب مقدار تعديل الأوزان باستخدام خوارزمية الانتشار العكسي.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.479,
+            "usage": {
+              "prompt_tokens": 536,
+              "total_tokens": 573,
+              "completion_tokens": 37,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F14",
+      "kind": "positive",
+      "input": "الأداة قادرة على إنشاء نصوص وصور وصوت جديد بدل الاكتفاء بتصنيف المحتوى الموجود.",
+      "expected_term_id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+      "expected_term": "ذكاء اصطناعي توليدي",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+            "term": "ذكاء اصطناعي توليدي",
+            "definition": "نوع من الذكاء الاصطناعي يمكنه إنشاء محتوى جديد، مثل: النصوص والصور والأصوات والفيديوهات والأكواد البرمجية.",
+            "score": 0.801999
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "تتمتع الأداة بقدرات توليد نصوص وصور وصوت جديدة، تتجاوز مجرد تصنيف المحتوى الموجود.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 10.594,
+            "usage": {
+              "prompt_tokens": 182,
+              "total_tokens": 207,
+              "completion_tokens": 25,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "تتمتع الأداة بقدرات ذكاء اصطناعي توليدي، حيث يمكنها إنشاء نصوص وصور وصوت جديد، بدلاً من الاكتفاء بتصنيف المحتوى الموجود.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.734,
+            "usage": {
+              "prompt_tokens": 256,
+              "total_tokens": 293,
+              "completion_tokens": 37,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "تتجاوز الأداة قدرتها على تصنيف المحتوى لتصل إلى إنشاء نصوص وصور وصوت جديد.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 15.325,
+            "usage": {
+              "prompt_tokens": 527,
+              "total_tokens": 550,
+              "completion_tokens": 23,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F15",
+      "kind": "positive",
+      "input": "قبل إدخال الجملة إلى النموذج، نقسمها إلى وحدات صغيرة حتى يستطيع النظام تمثيلها ومعالجتها.",
+      "expected_term_id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+      "expected_term": "تقسيم النصوص",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+            "term": "تقسيم النصوص",
+            "definition": "عملية تقسيم النص إلى وحدات صغيرة تُسمَّى وحدات لغوية، ويطلق عليها أيضاً \"تقسيم\"",
+            "score": 0.817538
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "قبل إدخال الجملة إلى النموذج، نقوم بتقسيمها إلى وحدات لغوية صغيرة لتمكين النظام من تمثيلها ومعالجتها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.893,
+            "usage": {
+              "prompt_tokens": 187,
+              "total_tokens": 218,
+              "completion_tokens": 31,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "قبل إدخال الجملة إلى النموذج، نقوم بتقسيمها إلى وحدات لغوية لتمكين النظام من تمثيلها ومعالجتها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.493,
+            "usage": {
+              "prompt_tokens": 251,
+              "total_tokens": 281,
+              "completion_tokens": 30,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "قبل إدخال الجملة إلى النموذج، نقوم بتقسيمها إلى وحدات لغوية (تُعرف أيضًا بتقسيم النصوص) لتمكين النظام من تمثيلها ومعالجتها.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.497,
+            "usage": {
+              "prompt_tokens": 522,
+              "total_tokens": 563,
+              "completion_tokens": 41,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F16",
+      "kind": "positive",
+      "input": "نريد تصنيف مراجعات العملاء تلقائيًا لمعرفة إن كان الرأي إيجابيًا أو سلبيًا أو محايدًا.",
+      "expected_term_id": "784fb957-1319-4ce8-afd7-10fd35512749",
+      "expected_term": "تحليل المشاعر",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+            "term": "اسم",
+            "definition": "جانب الإجابة أو النتيجة من مثال في التعلُّم الموجَّه.",
+            "score": 0.801865
+          }
+        ],
+        "expected_rank": 2
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يهدف التصنيف الآلي لمراجعات العملاء إلى تحديد قطبيتها (إيجابية، سلبية، أو محايدة).",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.647,
+            "usage": {
+              "prompt_tokens": 187,
+              "total_tokens": 213,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يهدف إلى تصنيف مراجعات العملاء تلقائيًا لتحديد ما إذا كانت إيجابية أو سلبية أو محايدة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.774,
+            "usage": {
+              "prompt_tokens": 238,
+              "total_tokens": 263,
+              "completion_tokens": 25,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يهدف النظام إلى تصنيف مراجعات العملاء تلقائيًا لتحديد قطتها بين الإيجابية والسلبية والمحايدة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.203,
+            "usage": {
+              "prompt_tokens": 509,
+              "total_tokens": 534,
+              "completion_tokens": 25,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F17",
+      "kind": "positive",
+      "input": "النظام يحول الجملة تلقائيًا من العربية إلى الإنجليزية مع محاولة الحفاظ على معناها.",
+      "expected_term_id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+      "expected_term": "ترجمة الآلة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+            "term": "ترجمة الآلة",
+            "definition": "فرع من اللغويات الحوسبية يهتم بترجمة النص أو الكلام من لغة إلى أخرى.",
+            "score": 0.812102
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يقوم النظام بتحويل الجملة تلقائيًا من العربية إلى الإنجليزية مع الحفاظ على دلالتها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.772,
+            "usage": {
+              "prompt_tokens": 182,
+              "total_tokens": 203,
+              "completion_tokens": 21,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يقوم النظام بترجمة الجملة تلقائيًا من العربية إلى الإنجليزية مع الحفاظ على معناها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.385,
+            "usage": {
+              "prompt_tokens": 240,
+              "total_tokens": 262,
+              "completion_tokens": 22,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يقوم النظام بترجمة الآلة الجملة تلقائيًا من العربية إلى الإنجليزية مع الحفاظ على معناها.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.638,
+            "usage": {
+              "prompt_tokens": 511,
+              "total_tokens": 535,
+              "completion_tokens": 24,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F18",
+      "kind": "positive",
+      "input": "لدينا ملايين السجلات ونبحث فيها لاكتشاف علاقات وأنماط مخفية يمكن الاستفادة منها.",
+      "expected_term_id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+      "expected_term": "تنقيب في البيانات",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+            "term": "تنقيب في البيانات",
+            "definition": "عملية اكتشاف الأنماط في كمية كبيرة من البيانات، واستخراج المعلومات المفيدة.",
+            "score": 0.78878
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "نحوي ملايين السجلات لاكتشاف العلاقات والأنماط الكامنة ذات القيمة التطبيقية.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.397,
+            "usage": {
+              "prompt_tokens": 184,
+              "total_tokens": 205,
+              "completion_tokens": 21,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "نقصد هنا عملية تنقيب في البيانات، وهي عملية اكتشاف الأنماط في كميات كبيرة من البيانات واستخراج المعلومات المفيدة منها.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.29,
+            "usage": {
+              "prompt_tokens": 239,
+              "total_tokens": 269,
+              "completion_tokens": 30,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "نُجري تنقيبًا في البيانات عن الأنماط والعلاقات المخفية ضمن ملايين السجلات لاستخراج معلومات قابلة للاستفادة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.694,
+            "usage": {
+              "prompt_tokens": 510,
+              "total_tokens": 538,
+              "completion_tokens": 28,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F19",
+      "kind": "positive",
+      "input": "نتعامل مع بيانات هائلة تصل بسرعة من مصادر متعددة وبأشكال مختلفة، لذلك نحتاج تقنيات قابلة للتوسع لتخزينها ومعالجتها.",
+      "expected_term_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+      "expected_term": "بيانات ضخمة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+            "term": "بيانات ضخمة",
+            "definition": "مجموعة بيانات كبيرة تتطلب تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها؛ نظرًا لخصائص حجمها وتنوعها وسرعتها وتباينها.",
+            "score": 0.847336
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "نواجه تدفقًا هائلًا وسريعًا من البيانات عبر مصادر متعددة بأشكال متنوعة، مما يستدعي اعتماد تقنيات قابلة للتوسع لتخزينها ومعالجتها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.866,
+            "usage": {
+              "prompt_tokens": 196,
+              "total_tokens": 237,
+              "completion_tokens": 41,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "نواجه تدفقًا سريعًا لبيانات ضخمة (Big Data) من مصادر متعددة بأشكال متنوعة، مما يستدعي اعتماد تقنيات قابلة للتوسع لتخزينها ومعالجتها.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.347,
+            "usage": {
+              "prompt_tokens": 275,
+              "total_tokens": 319,
+              "completion_tokens": 44,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "نواجه تدفقًا سريعًا لبيانات ضخمة (Big Data) ذات أشكال متعددة من مصادر متنوعة، مما يستدعي اعتماد تقنيات قابلة للتوسع لتخزينها ومعالجتها.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 6.219,
+            "usage": {
+              "prompt_tokens": 546,
+              "total_tokens": 589,
+              "completion_tokens": 43,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F20",
+      "kind": "positive",
+      "input": "بدل أن نكتب قاعدة برمجية لكل حالة، نجعل النظام يستفيد من البيانات السابقة لتحسين أدائه في المهمة.",
+      "expected_term_id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+      "expected_term": "تعلُّم الآلة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "5882bfa5-3d27-4a19-877c-6c0cd90a73b3",
+            "term": "تأسيس",
+            "definition": "عملية ربط مخرجات نظام الذكاء الاصطناعي بمعلومات خارجية موثقة أو ببيانات من العالم الحقيقي؛ لتحسين دقتها الواقعية.",
+            "score": 0.786552
+          }
+        ],
+        "expected_rank": 5
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "بدلاً من صياغة قاعدة برمجية لكل حالة، نسمح للنظام بالاستفادة من البيانات السابقة لتحسين أدائه في المهمة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.784,
+            "usage": {
+              "prompt_tokens": 189,
+              "total_tokens": 219,
+              "completion_tokens": 30,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "بدلاً من كتابة قاعدة برمجية لكل حالة، نجعل النظام يستفيد من البيانات السابقة عبر عملية التأسيس لتحسين أدائه في المهمة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.921,
+            "usage": {
+              "prompt_tokens": 256,
+              "total_tokens": 287,
+              "completion_tokens": 31,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "بدلاً من كتابة قاعدة برمجية لكل حالة، نسمح للنظام بالاستفادة من البيانات السابقة عبر عملية التأسيس لتحسين أدائه في المهمة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.662,
+            "usage": {
+              "prompt_tokens": 527,
+              "total_tokens": 559,
+              "completion_tokens": 32,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F21",
+      "kind": "positive",
+      "input": "نحتاج نظامًا يتعامل مع اللغة البشرية، ويفهم النصوص ويستخرج منها المعنى والمعلومات.",
+      "expected_term_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+      "expected_term": "معالجة اللغات الطبيعية",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+            "term": "معالجة اللغات الطبيعية",
+            "definition": "فرع من فروع الذكاء الاصطناعي يهتم بفهم أو توليد اللغة البشرية سواءٌ كانت على شكل نص أو كلام.",
+            "score": 0.828071
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "نحتاج إلى نظام معالجة اللغة الطبيعية يفهم النصوص ويستخرج منها المعنى والمعلومات.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.515,
+            "usage": {
+              "prompt_tokens": 184,
+              "total_tokens": 204,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "نحتاج إلى نظام يُعنى بمعالجة اللغات الطبيعية، حيث يقوم بفهم النصوص واستخراج المعنى والمعلومات منها.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.415,
+            "usage": {
+              "prompt_tokens": 249,
+              "total_tokens": 277,
+              "completion_tokens": 28,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "نحتاج إلى نظام معالجة لغوية يهدف إلى فهم النصوص البشرية واستخراج المعنى والمعلومات منها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 10.794,
+            "usage": {
+              "prompt_tokens": 520,
+              "total_tokens": 543,
+              "completion_tokens": 23,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F22",
+      "kind": "positive",
+      "input": "نستخدم نموذجًا لغويًا يحتوي على عدد هائل من المعاملات وقد دُرّب على كميات كبيرة من النصوص.",
+      "expected_term_id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+      "expected_term": "نموذج لغوي كبير",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+            "term": "نموذج لغوي كبير",
+            "definition": "نموذج لغوي مُكوَّن من عدد كبير من المُعامِلات.",
+            "score": 0.862686
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "نستخدم نموذجًا لغويًا يتسم بكثافة المعاملات الضخمة وقد تم تدريبه على كميات ضخمة من النصوص.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.989,
+            "usage": {
+              "prompt_tokens": 190,
+              "total_tokens": 222,
+              "completion_tokens": 32,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "نستخدم نموذجًا لغويًا كبيرًا مُكوَّنًا من عدد هائل من المعاملات وقد تم تدريبه على كميات ضخمة من النصوص.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.069,
+            "usage": {
+              "prompt_tokens": 246,
+              "total_tokens": 281,
+              "completion_tokens": 35,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "نستخدم نموذجًا لغويًا كبيرًا (Large Language Model) مُكوَّنًا من عدد هائل من المعاملات وقد تم تدريبه على كميات ضخمة من النصوص.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.166,
+            "usage": {
+              "prompt_tokens": 517,
+              "total_tokens": 557,
+              "completion_tokens": 40,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F23",
+      "kind": "positive",
+      "input": "البنية الحوسبية تتكون من وحدات مترابطة على شكل طبقات، وتنتقل الإشارات بينها عبر معاملات قابلة للتعديل.",
+      "expected_term_id": "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+      "expected_term": "شبكة عصبية اصطناعية",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "fa65c6dc-40ae-4fbe-8f5d-1721edd83752",
+            "term": "طبقة",
+            "definition": "مجموعة من الخلايا العصبية في شبكة عصبية ما، تعالج خصائص المُدْخَلات أو مخرجات تلك الخلايا العصبية.",
+            "score": 0.803842
+          }
+        ],
+        "expected_rank": 32
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "تتكون البنية الحوسبية من طبقات مترابطة تنتقل عبرها الإشارات باستخدام معاملات قابلة للتعديل.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.599,
+            "usage": {
+              "prompt_tokens": 193,
+              "total_tokens": 221,
+              "completion_tokens": 28,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "تتكون البنية الحوسبية من طبقات من الوحدات المترابطة، تنتقل عبرها الإشارات باستخدام معاملات قابلة للتعديل.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.923,
+            "usage": {
+              "prompt_tokens": 262,
+              "total_tokens": 293,
+              "completion_tokens": 31,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "تتكون البنية الحوسبية من طبقات مترابطة من الخلايا العصبية، تنتقل عبرها الإشارات باستخدام معاملات قابلة للتعديل.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.897,
+            "usage": {
+              "prompt_tokens": 533,
+              "total_tokens": 567,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F24",
+      "kind": "positive",
+      "input": "قبل أن يجيب النظام، يبحث في قاعدة معرفة خارجية عن المقاطع المرتبطة بالسؤال ثم يستخدمها عند توليد الإجابة.",
+      "expected_term_id": "a338b836-30ee-471a-a164-f09c919243ce",
+      "expected_term": "توليد مُعَزَّز بالاسترجاع",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "a338b836-30ee-471a-a164-f09c919243ce",
+            "term": "توليد مُعَزَّز بالاسترجاع",
+            "definition": "إطار للذكاء الاصطناعي يدمج بين استرجاع المعلومات الخارجية والنماذج التوليدية لإنتاج استجابات أكثر دقة وملاءمة للسياق.",
+            "score": 0.805523
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "قبل الإجابة، يقوم النظام باستعلام قاعدة المعرفة الخارجية عن المقاطع ذات الصلة بالسؤال، ثم يستدعيها أثناء توليد الرد.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.563,
+            "usage": {
+              "prompt_tokens": 190,
+              "total_tokens": 222,
+              "completion_tokens": 32,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "قبل الإجابة، يقوم النظام باسترجاع مقاطع من قاعدة معرفة خارجية مرتبطة بالسؤال، ثم يدمج هذه المعلومات في توليد الاستجابة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.092,
+            "usage": {
+              "prompt_tokens": 272,
+              "total_tokens": 305,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "قبل الإجابة، يقوم النظام باسترجاع مقاطع من قاعدة معرفة خارجية مرتبطة بالسؤال، ثم يدمج هذه المعلومات في توليد الإجابة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.278,
+            "usage": {
+              "prompt_tokens": 543,
+              "total_tokens": 576,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F25",
+      "kind": "positive",
+      "input": "لدينا عشرات المتغيرات المتداخلة، ونريد تمثيل البيانات بعدد أقل من الخصائص مع الاحتفاظ بأكبر قدر ممكن من المعلومات.",
+      "expected_term_id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+      "expected_term": "تحليل المُكوِّن الرئيس",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+            "term": "تحليل المُكوِّن الرئيس",
+            "definition": "أسلوب يُستخدم لإزالة تكرار المعلومات وتقليل خصائص مجموعة البيانات إلى مُكوِّناتها الرئيسة.",
+            "score": 0.798067
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "نواجه مجموعة متداخلة من المتغيرات، ونهدف إلى تمثيل البيانات بعدد أقل من الخصائص مع الحفاظ على أكبر قدر ممكن من المعلومات.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.725,
+            "usage": {
+              "prompt_tokens": 195,
+              "total_tokens": 228,
+              "completion_tokens": 33,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يهدف تحليل المكون الرئيسي إلى تمثيل البيانات بعدد أقل من الخصائص مع الاحتفاظ بأقصى قدر ممكن من المعلومات، وذلك من خلال إزالة التكرار وتقليل خصائص مجموعة البيانات إلى مكوناتها الرئيسية.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.511,
+            "usage": {
+              "prompt_tokens": 262,
+              "total_tokens": 308,
+              "completion_tokens": 46,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يهدف تقليل أبعاد البيانات إلى تمثيل مجموعة المتغيرات المتداخلة بعدد أقل من الخصائص مع الحفاظ على أكبر قدر ممكن من المعلومات.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.121,
+            "usage": {
+              "prompt_tokens": 533,
+              "total_tokens": 565,
+              "completion_tokens": 32,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F26",
+      "kind": "positive",
+      "input": "نقيّم التنبؤات بحساب الفرق بينها وبين القيم الحقيقية، ثم نربّع كل فرق ونأخذ متوسط هذه القيم.",
+      "expected_term_id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+      "expected_term": "متوسط الخطأ التربيعي",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+            "term": "متوسط الخطأ التربيعي",
+            "definition": "متوسط الخسارة التربيعية لكل مثال، محسوبًا بقسمة الخسارة التربيعية على عدد الأمثلة.",
+            "score": 0.805566
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يُقيَّم التنبؤ بحساب الفرق بين القيم المتوقعة والقيم الفعلية، ثم يُربَّع كل فرق ويُحسب متوسط هذه القيم المربَّعة.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.811,
+            "usage": {
+              "prompt_tokens": 190,
+              "total_tokens": 229,
+              "completion_tokens": 39,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يُقيَّم التنبؤات بحساب متوسط الخطأ التربيعي (MSE)، وهو متوسط الخسارة التربيعية لكل مثال، حيث يُحسب بقسمة مجموع مربعات الفروقات بين القيم المتوقعة والقيم الحقيقية على عدد الأمثلة.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 17.973,
+            "usage": {
+              "prompt_tokens": 255,
+              "total_tokens": 312,
+              "completion_tokens": 57,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يُقيَّم التنبؤات من خلال حساب متوسط الخطأ التربيعي، وهو متوسط الخسارة التربيعية لكل مثال، ويُحسب بقسمة مجموع مربعات الفروق بين القيم المتوقعة والقيم الحقيقية على عدد الأمثلة.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 4.18,
+            "usage": {
+              "prompt_tokens": 526,
+              "total_tokens": 579,
+              "completion_tokens": 53,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F27",
+      "kind": "positive",
+      "input": "النظام يحلل الصور والفيديو ليتعرف على الأشياء الظاهرة فيها ويفهم محتواها المرئي.",
+      "expected_term_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+      "expected_term": "رؤية الحاسب",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+            "term": "رؤية الحاسب",
+            "definition": "مجال في الذكاء الاصطناعي يركز على تحليل البيانات المرئية (صور وفيديوهات) وفهم محتواها. ويُطلق عليه أيضًا \"رؤية الآلة\".",
+            "score": 0.809869
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يقوم النظام بتحليل الصور والفيديو لاكتشاف الكائنات الظاهرة therein وفهم محتواها البصري.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.574,
+            "usage": {
+              "prompt_tokens": 184,
+              "total_tokens": 210,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يقوم النظام بتحليل الصور والفيديو لتحديد الكائنات الظاهرة وفهم محتواها المرئي.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 10.007,
+            "usage": {
+              "prompt_tokens": 258,
+              "total_tokens": 282,
+              "completion_tokens": 24,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يقوم النظام بتحليل البيانات المرئية (الصور والفيديوهات) عبر تقنية الرؤية الحاسوبية، مما يتيح له التعرف على الكائنات الظاهرة وفهم محتواها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.376,
+            "usage": {
+              "prompt_tokens": 529,
+              "total_tokens": 568,
+              "completion_tokens": 39,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F28",
+      "kind": "positive",
+      "input": "أثناء ضبط النموذج نحتاج قيمة عددية تعبّر عن مقدار اختلاف مخرجاته عن القيمة المستهدفة حتى نحاول تقليلها.",
+      "expected_term_id": "51f2785a-f64c-4198-9c18-c93e04853146",
+      "expected_term": "دالة الخسارة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+            "term": "أمر",
+            "definition": "المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته.",
+            "score": 0.814991
+          }
+        ],
+        "expected_rank": 2
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "أثناء ضبط النموذج، نحتاج إلى قيمة رقمية تعبر عن مقدار انحراف مخرجاته عن القيمة المستهدفة، بهدف تقليلها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.521,
+            "usage": {
+              "prompt_tokens": 192,
+              "total_tokens": 226,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "أثناء ضبط النموذج، نحتاج إلى قيمة عددية تعبر عن مقدار اختلاف مخرجاته عن القيمة المستهدفة لتقليلها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.739,
+            "usage": {
+              "prompt_tokens": 244,
+              "total_tokens": 276,
+              "completion_tokens": 32,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "أثناء ضبط النموذج، نحتاج إلى قيمة عددية تعبر عن مقدار انحراف مخرجاته عن القيمة المستهدفة لتقليلها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 10.608,
+            "usage": {
+              "prompt_tokens": 515,
+              "total_tokens": 549,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F29",
+      "kind": "positive",
+      "input": "نريد من النظام أن يحدد داخل الخبر أسماء الأشخاص والشركات والمدن ويصنف كل اسم حسب نوعه.",
+      "expected_term_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+      "expected_term": "تعرُّف على الكيانات المُسمّاة",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+            "term": "تعرُّف على الكيانات المُسمّاة",
+            "definition": "عملية تحديد أسماء الكيانات وفئاتها في النص أو الكلام.",
+            "score": 0.802675
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يطلب من النظام استخراج الكيانات (الاسم، الشركة، المدينة) من الخبر وتصنيف كل كيان حسب نوعه.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.92,
+            "usage": {
+              "prompt_tokens": 186,
+              "total_tokens": 215,
+              "completion_tokens": 29,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "يهدف النظام إلى استخراج الكيانات المسمّاة من الخبر وتصنيفها حسب فئاتها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.066,
+            "usage": {
+              "prompt_tokens": 246,
+              "total_tokens": 269,
+              "completion_tokens": 23,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يهدف النظام إلى تنفيذ عملية تعرُّف على الكيانات المُسمّاة داخل الخبر، حيث يتم تحديد أسماء الأشخاص والشركات والمدن وتصنيف كل اسم وفقًا لفئته.",
+          "term_usage": {
+            "canonical_term_used": true,
+            "accepted_lexicon_form_used": true
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.082,
+            "usage": {
+              "prompt_tokens": 517,
+              "total_tokens": 557,
+              "completion_tokens": 40,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "F30",
+      "kind": "positive",
+      "input": "لتحليل الصور، تستخدم الشبكة مرشحات صغيرة تتحرك فوق مناطق الصورة لاستخراج الأنماط المرئية تدريجيًا.",
+      "expected_term_id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+      "expected_term": "شبكة عصبية ترشيحية",
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "9b2995b8-1593-401b-859e-a934ed1f2af0",
+            "term": "شبكة عصبية ترشيحية",
+            "definition": "نوع من الشبكات العصبية العميقة المستخدمة في إنشاء نماذج لتحليل الصور والفيديوهات ومعالجتها.",
+            "score": 0.811382
+          }
+        ],
+        "expected_rank": 1
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "تقوم الشبكة باستخراج الأنماط المرئية تدريجيًا عبر تحريك مرشحات صغيرة فوق مناطق الصورة لتحليلها.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.655,
+            "usage": {
+              "prompt_tokens": 189,
+              "total_tokens": 217,
+              "completion_tokens": 28,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "لتحليل الصور، تستخدم الشبكة العصبية المرشيحة مرشحات صغيرة تتحرك فوق مناطق الصورة لاستخراج الأنماط المرئية تدريجيًا.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.445,
+            "usage": {
+              "prompt_tokens": 257,
+              "total_tokens": 291,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "يستخدم تحليل الصور الشبكة العصبية الترشيحية، حيث تتحرك مرشحات صغيرة فوق مناطق الصورة لاستخراج الأنماط المرئية تدريجيًا.",
+          "term_usage": {
+            "canonical_term_used": false,
+            "accepted_lexicon_form_used": false
+          },
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.903,
+            "usage": {
+              "prompt_tokens": 528,
+              "total_tokens": 562,
+              "completion_tokens": 34,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "C01",
+      "kind": "contrast_control",
+      "input": "سياسة الشركة تمنع مشاركة ملفات العملاء خارج الفريق.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+            "term": "سياسة",
+            "definition": "الربط الاحتمالي للوكيل من الحالات إلى الأفعال في التعلُّم التعزيزي.",
+            "score": 0.784243
+          }
+        ],
+        "expected_rank": null
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "تُحظر سياسة الشركة مشاركة ملفات العملاء خارج نطاق الفريق.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.186,
+            "usage": {
+              "prompt_tokens": 173,
+              "total_tokens": 187,
+              "completion_tokens": 14,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "سياسة الشركة تمنع مشاركة ملفات العملاء خارج نطاق الفريق.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.932,
+            "usage": {
+              "prompt_tokens": 230,
+              "total_tokens": 243,
+              "completion_tokens": 13,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "تحدد سياسة الشركة منع مشاركة ملفات العملاء خارج نطاق الفريق.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.279,
+            "usage": {
+              "prompt_tokens": 501,
+              "total_tokens": 514,
+              "completion_tokens": 13,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "C02",
+      "kind": "contrast_control",
+      "input": "نختبر النسخة الجديدة في بيئة منفصلة عن النظام المستخدم فعليًا.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "5882bfa5-3d27-4a19-877c-6c0cd90a73b3",
+            "term": "تأسيس",
+            "definition": "عملية ربط مخرجات نظام الذكاء الاصطناعي بمعلومات خارجية موثقة أو ببيانات من العالم الحقيقي؛ لتحسين دقتها الواقعية.",
+            "score": 0.780605
+          }
+        ],
+        "expected_rank": null
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "نختبر النسخة الجديدة في بيئة معزولة عن النظام التشغيلي الفعلي.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.064,
+            "usage": {
+              "prompt_tokens": 179,
+              "total_tokens": 197,
+              "completion_tokens": 18,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "نختبر النسخة الجديدة في بيئة معزولة عن النظام التشغيلي الفعلي.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.281,
+            "usage": {
+              "prompt_tokens": 246,
+              "total_tokens": 264,
+              "completion_tokens": 18,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "نُجري اختبارات النسخة الجديدة في بيئة معزولة عن النظام المستخدم فعليًا.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 5.96,
+            "usage": {
+              "prompt_tokens": 517,
+              "total_tokens": 536,
+              "completion_tokens": 19,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "C03",
+      "kind": "contrast_control",
+      "input": "وزن الجهاز أقل من كيلوغرام، لذلك يسهل حمله أثناء التنقل.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "36b69371-37ef-4145-b219-3f24356df629",
+            "term": "وزن",
+            "definition": "مُعامِل في الشبكة العصبية يُحدِّد قوة الاتصال بين الخلايا العصبية.",
+            "score": 0.793359
+          }
+        ],
+        "expected_rank": null
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "يُعد وزن الجهاز أقل من كيلوغرام، مما يسهل نقله أثناء التنقل.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.2,
+            "usage": {
+              "prompt_tokens": 181,
+              "total_tokens": 203,
+              "completion_tokens": 22,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "وزن الجهاز أقل من كيلوغرام، مما يسهل حمله أثناء التنقل.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.14,
+            "usage": {
+              "prompt_tokens": 238,
+              "total_tokens": 258,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "وزن الجهاز أقل من كيلوغرام، مما يسهل حمله أثناء التنقل.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.767,
+            "usage": {
+              "prompt_tokens": 509,
+              "total_tokens": 529,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "C04",
+      "kind": "contrast_control",
+      "input": "وقّع الوكيل عن الشركة على العقد بعد حصوله على التفويض الرسمي.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "c33c453c-367b-452a-8763-7ba23871b01f",
+            "term": "وكيل",
+            "definition": "كيان مادي أو برمجي يمكنه إدراك بيئته، والعمل بتحكم ذاتي لتحقيق هدف.",
+            "score": 0.791172
+          }
+        ],
+        "expected_rank": null
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "أقر الوكيل الشركة على العقد بعد استلامه التفويض الرسمي.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 0.998,
+            "usage": {
+              "prompt_tokens": 178,
+              "total_tokens": 194,
+              "completion_tokens": 16,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "وقّع الوكيل عن الشركة على العقد بعد حصوله على التفويض الرسمي.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.248,
+            "usage": {
+              "prompt_tokens": 236,
+              "total_tokens": 253,
+              "completion_tokens": 17,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "وقع الوكيل على العقد بعد استلامه للتفويض الرسمي.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 2.455,
+            "usage": {
+              "prompt_tokens": 507,
+              "total_tokens": 522,
+              "completion_tokens": 15,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "C05",
+      "kind": "contrast_control",
+      "input": "عبأت النموذج الإلكتروني وأرسلته إلى الجهة المختصة.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+            "term": "أمر",
+            "definition": "المُدْخَلات المقدمة للنموذج لتوجيه مخرجاته.",
+            "score": 0.791299
+          }
+        ],
+        "expected_rank": null
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "تم تعبئة النموذج الإلكتروني وإرساله إلى الجهة المختصة.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.109,
+            "usage": {
+              "prompt_tokens": 175,
+              "total_tokens": 189,
+              "completion_tokens": 14,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "تم إدخال النموذج الإلكتروني إلى الجهة المختصة.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.492,
+            "usage": {
+              "prompt_tokens": 227,
+              "total_tokens": 237,
+              "completion_tokens": 10,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "أدخل المستخدم المدخلات المطلوبة للنموذج الإلكتروني وأرسلها إلى الجهة المختصة.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 1.174,
+            "usage": {
+              "prompt_tokens": 498,
+              "total_tokens": 518,
+              "completion_tokens": 20,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "C06",
+      "kind": "contrast_control",
+      "input": "حضرت دورة تدريبية لمدة يومين عن إدارة المشاريع.",
+      "expected_term_id": null,
+      "expected_term": null,
+      "retrieval": {
+        "top_k": [
+          {
+            "id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+            "term": "دورة",
+            "definition": "عملية تدريب كاملة على مجموعة البيانات بأكملها أثناء تدريب النموذج.",
+            "score": 0.799207
+          }
+        ],
+        "expected_rank": null
+      },
+      "conditions": {
+        "T0_qwen_only": {
+          "output": "حضر دورة تدريبية مدتها يومين في مجال إدارة المشاريع.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 0.96,
+            "usage": {
+              "prompt_tokens": 174,
+              "total_tokens": 189,
+              "completion_tokens": 15,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T1_terminology": {
+          "output": "حضر دورة تدريبية مدتها يومين في مجال إدارة المشاريع.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 0.981,
+            "usage": {
+              "prompt_tokens": 223,
+              "total_tokens": 238,
+              "completion_tokens": 15,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        },
+        "T2_terminology_domain": {
+          "output": "المستخدم شارك في دورة تدريبية مدتها يومين تركز على إدارة المشاريع.",
+          "term_usage": null,
+          "api_metadata": {
+            "finish_reason": "stop",
+            "elapsed_seconds": 3.325,
+            "usage": {
+              "prompt_tokens": 494,
+              "total_tokens": 512,
+              "completion_tokens": 18,
+              "prompt_tokens_details": null,
+              "completion_tokens_details": null
+            }
+          }
+        }
+      }
+    }
+  ]
+}
