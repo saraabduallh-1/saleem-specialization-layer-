@@ -40,6 +40,7 @@ CHECKPOINT_PATH = RESULTS_DIR / "qwen_domain_ablation_in_progress.json"
 
 DEFAULT_BASE_URL = "http://136.119.196.95:8000/v1"
 DEFAULT_MODEL = "Qwen/Qwen3.5-4B"
+ENABLE_THINKING = False
 
 CONDITIONS = [
     "D0_saleem_only",
@@ -142,6 +143,7 @@ def call_once(
         "messages": messages,
         "temperature": temperature,
         "max_tokens": max_tokens,
+        "chat_template_kwargs": {"enable_thinking": ENABLE_THINKING},
     }
     body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     request = urllib.request.Request(
@@ -232,6 +234,7 @@ def write_markdown(result: dict[str, Any], path: Path) -> None:
         f"- Conditions: {', '.join(result['metadata']['conditions'])}",
         f"- Temperature: {result['metadata']['temperature']}",
         f"- Max tokens: {result['metadata']['max_tokens']}",
+        f"- Thinking enabled: {result['metadata']['enable_thinking']}",
         "",
     ]
 
@@ -277,6 +280,7 @@ def new_result(
             "conditions": CONDITIONS,
             "temperature": temperature,
             "max_tokens": max_tokens,
+            "enable_thinking": ENABLE_THINKING,
             "base_instruction": BASE_INSTRUCTION,
             "notes": [
                 "Pilot only; not the final Gold evaluation.",
@@ -286,6 +290,7 @@ def new_result(
                 "Checkpoint is saved after every successful condition.",
                 "Default runner uses no client-side timeout and retries transient failures indefinitely.",
                 "Generation is capped at 256 output tokens by default, and per-request latency is recorded.",
+                "Thinking mode is disabled so the saved output is the final rewritten text rather than internal reasoning.",
                 "Checkpoint is automatically committed and pushed to GitHub every five successful conditions by default.",
             ],
         },
@@ -317,6 +322,7 @@ def compatible_checkpoint(
         and md.get("base_url") == base_url
         and md.get("temperature") == temperature
         and md.get("max_tokens") == max_tokens
+        and md.get("enable_thinking") == ENABLE_THINKING
         and md.get("conditions") == CONDITIONS
         and expected_ids == actual_ids
     )
@@ -360,6 +366,46 @@ def push_checkpoint(done: int, total: int) -> None:
         print(f"  pushed checkpoint to GitHub ({done}/{total})")
     except Exception as exc:
         print(f"  WARNING: checkpoint saved locally but GitHub push failed: {exc}")
+
+
+
+def push_final_results(json_path: Path, md_path: Path) -> None:
+    """Commit final result files and remove the tracked in-progress checkpoint."""
+    try:
+        subprocess.run(
+            ["git", "add", "-A", str(RESULTS_DIR.relative_to(ROOT))],
+            cwd=ROOT,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        diff = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"],
+            cwd=ROOT,
+        )
+        if diff.returncode == 0:
+            return
+        subprocess.run(
+            ["git", "commit", "-m", "Add completed Qwen domain ablation results"],
+            cwd=ROOT,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        subprocess.run(
+            ["git", "push", "origin", "main"],
+            cwd=ROOT,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        print("  pushed final Qwen domain ablation results to GitHub")
+    except Exception as exc:
+        print(f"  WARNING: final results saved locally but GitHub push failed: {exc}")
+        print(f"  Final files remain at: {json_path} and {md_path}")
 
 
 def main() -> None:
@@ -467,12 +513,22 @@ def main() -> None:
                 )
                 elapsed_seconds = round(time.perf_counter() - started_at, 3)
                 output = extract_output(response)
+                finish_reason = (response.get("choices") or [{}])[0].get("finish_reason")
+                if finish_reason == "length":
+                    raise RuntimeError(
+                        "Generation hit max_tokens before completing. "
+                        "Result was not saved; increase --max-tokens only before restarting the full experiment."
+                    )
+                normalized_output = output.lstrip().lower()
+                if normalized_output.startswith("thinking process:") or "<think>" in normalized_output:
+                    raise RuntimeError(
+                        "Thinking content leaked into the response. Result was not saved. "
+                        "Verify the server honors chat_template_kwargs.enable_thinking=false."
+                    )
                 raw = {
                     "id": response.get("id"),
                     "usage": response.get("usage"),
-                    "finish_reason": (response.get("choices") or [{}])[0].get(
-                        "finish_reason"
-                    ),
+                    "finish_reason": finish_reason,
                     "elapsed_seconds": elapsed_seconds,
                     "max_tokens": args.max_tokens,
                 }
@@ -504,6 +560,8 @@ def main() -> None:
 
     if CHECKPOINT_PATH.exists():
         CHECKPOINT_PATH.unlink()
+
+    push_final_results(json_path, md_path)
 
     print(f"\nCompleted all {total} runs.")
     print(f"Saved:\n- {json_path}\n- {md_path}")
