@@ -1,0 +1,138 @@
+{
+  "P50_orig_K3_selv3": {
+    "dev36": {
+      "avail": 25,
+      "correct": 25,
+      "wrong": 3,
+      "none": 2,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 36,
+      "correct": 32,
+      "wrong": 9,
+      "none": 9,
+      "n": 50
+    },
+    "neg_false_spec": "6/22"
+  },
+  "P50_orig_K3_selv3+gate": {
+    "dev36": {
+      "avail": 25,
+      "correct": 25,
+      "wrong": 3,
+      "none": 2,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 36,
+      "correct": 32,
+      "wrong": 9,
+      "none": 9,
+      "n": 50
+    },
+    "neg_false_spec": "3/22"
+  },
+  "P50_orig_K5_selv3": {
+    "dev36": {
+      "avail": 28,
+      "correct": 27,
+      "wrong": 2,
+      "none": 1,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 35,
+      "wrong": 12,
+      "none": 3,
+      "n": 50
+    },
+    "neg_false_spec": "9/22"
+  },
+  "P50_orig_K5_selv3+gate": {
+    "dev36": {
+      "avail": 28,
+      "correct": 27,
+      "wrong": 2,
+      "none": 1,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 35,
+      "wrong": 12,
+      "none": 3,
+      "n": 50
+    },
+    "neg_false_spec": "4/22"
+  },
+  "FULL_en_K5_selv3": {
+    "dev36": {
+      "avail": 24,
+      "correct": 20,
+      "wrong": 10,
+      "none": 0,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 35,
+      "correct": 18,
+      "wrong": 30,
+      "none": 2,
+      "n": 50
+    },
+    "neg_false_spec": "13/22"
+  },
+  "FULL_en_K5_selv3+gate": {
+    "dev36": {
+      "avail": 24,
+      "correct": 20,
+      "wrong": 10,
+      "none": 0,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 35,
+      "correct": 18,
+      "wrong": 30,
+      "none": 2,
+      "n": 50
+    },
+    "neg_false_spec": "6/22"
+  },
+  "FULL_en_K10_selv3": {
+    "dev36": {
+      "avail": 26,
+      "correct": 22,
+      "wrong": 8,
+      "none": 0,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 21,
+      "wrong": 28,
+      "none": 1,
+      "n": 50
+    },
+    "neg_false_spec": "16/22"
+  },
+  "FULL_en_K10_selv3+gate": {
+    "dev36": {
+      "avail": 26,
+      "correct": 22,
+      "wrong": 8,
+      "none": 0,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 21,
+      "wrong": 28,
+      "none": 1,
+      "n": 50
+    },
+    "neg_false_spec": "6/22"
+  }
+}

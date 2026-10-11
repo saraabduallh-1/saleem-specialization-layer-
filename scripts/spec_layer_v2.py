@@ -337,7 +337,7 @@ class Qwen:
         resp = call_with_retry(
             base_url=self.base_url, api_key=self.api_key, model=self.model,
             messages=messages, temperature=self.temperature,
-            max_tokens=self.max_tokens, timeout=180,
+            max_tokens=self.max_tokens, timeout=90,
             retries=self.retries, retry_wait=self.retry_wait)
         out = extract_output(resp)
         finish = (resp.get("choices") or [{}])[0].get("finish_reason")

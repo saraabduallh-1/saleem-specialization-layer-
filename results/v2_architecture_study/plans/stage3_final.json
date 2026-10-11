@@ -1,0 +1,6 @@
+[
+ {"name":"BASE_qwen_only","pool":"full","mode":"orig","k":1,"decision":"none","writer":null},
+ {"name":"R_full_K10_gate_agree_Wterm","pool":"full","mode":"orig+en","k":10,"decision":"sel_v2","gate":true,"agree":true,"writer":"W_term"},
+ {"name":"R_full_K10_gate_agree_Wterm+chk","pool":"full","mode":"orig+en","k":10,"decision":"sel_v2","gate":true,"agree":true,"writer":"W_term+chk"},
+ {"name":"R_full_K10_gate_noagree_Wterm+chk","pool":"full","mode":"orig+en","k":10,"decision":"sel_v2","gate":true,"writer":"W_term+chk"}
+]

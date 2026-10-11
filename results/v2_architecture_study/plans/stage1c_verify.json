@@ -1,0 +1,4 @@
+[
+ {"name":"P50_orig_K5_selv2+ver","pool":"pilot50","mode":"orig","k":5,"decision":"sel_v2+ver","writer":null},
+ {"name":"FULL_en_K10_selv2+ver","pool":"full","mode":"orig+en","k":10,"decision":"sel_v2+ver","writer":null}
+]

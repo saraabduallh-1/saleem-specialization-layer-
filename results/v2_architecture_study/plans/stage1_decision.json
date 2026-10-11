@@ -1,0 +1,11 @@
+[
+ {"name":"P50_orig_K3_selv1","pool":"pilot50","mode":"orig","k":3,"decision":"sel_v1","writer":null},
+ {"name":"P50_orig_K3_selv2","pool":"pilot50","mode":"orig","k":3,"decision":"sel_v2","writer":null},
+ {"name":"P50_orig_K5_selv2","pool":"pilot50","mode":"orig","k":5,"decision":"sel_v2","writer":null},
+ {"name":"FULL_orig_K10_selv2","pool":"full","mode":"orig","k":10,"decision":"sel_v2","writer":null},
+ {"name":"FULL_en_K3_selv2","pool":"full","mode":"orig+en","k":3,"decision":"sel_v2","writer":null},
+ {"name":"FULL_en_K5_selv2","pool":"full","mode":"orig+en","k":5,"decision":"sel_v2","writer":null},
+ {"name":"FULL_en_K10_selv2","pool":"full","mode":"orig+en","k":10,"decision":"sel_v2","writer":null},
+ {"name":"FULL_en_K5_selv1","pool":"full","mode":"orig+en","k":5,"decision":"sel_v1","writer":null},
+ {"name":"FULL_en_K10_selv1","pool":"full","mode":"orig+en","k":10,"decision":"sel_v1","writer":null}
+]

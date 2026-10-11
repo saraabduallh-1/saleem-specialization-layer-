@@ -1,0 +1,6 @@
+[
+ {"name":"P50_orig_K3_selv3","pool":"pilot50","mode":"orig","k":3,"decision":"sel_v3","writer":null},
+ {"name":"P50_orig_K5_selv3","pool":"pilot50","mode":"orig","k":5,"decision":"sel_v3","writer":null},
+ {"name":"FULL_en_K5_selv3","pool":"full","mode":"orig+en","k":5,"decision":"sel_v3","writer":null},
+ {"name":"FULL_en_K10_selv3","pool":"full","mode":"orig+en","k":10,"decision":"sel_v3","writer":null}
+]

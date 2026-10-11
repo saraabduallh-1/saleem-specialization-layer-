@@ -1,0 +1,70 @@
+{
+  "P50_orig_K5_selv2+ver": {
+    "dev36": {
+      "avail": 28,
+      "correct": 16,
+      "wrong": 0,
+      "none": 14,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 13,
+      "wrong": 1,
+      "none": 36,
+      "n": 50
+    },
+    "neg_false_spec": "0/22"
+  },
+  "P50_orig_K5_selv2+ver+gate": {
+    "dev36": {
+      "avail": 28,
+      "correct": 16,
+      "wrong": 0,
+      "none": 14,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 13,
+      "wrong": 1,
+      "none": 36,
+      "n": 50
+    },
+    "neg_false_spec": "0/22"
+  },
+  "FULL_en_K10_selv2+ver": {
+    "dev36": {
+      "avail": 26,
+      "correct": 13,
+      "wrong": 3,
+      "none": 14,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 11,
+      "wrong": 3,
+      "none": 36,
+      "n": 50
+    },
+    "neg_false_spec": "0/22"
+  },
+  "FULL_en_K10_selv2+ver+gate": {
+    "dev36": {
+      "avail": 26,
+      "correct": 13,
+      "wrong": 3,
+      "none": 14,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 11,
+      "wrong": 3,
+      "none": 36,
+      "n": 50
+    },
+    "neg_false_spec": "0/22"
+  }
+}

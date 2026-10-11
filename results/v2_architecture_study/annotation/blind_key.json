@@ -1,0 +1,4286 @@
+[
+  {
+    "blind_id": "5544beb72acc",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F01"
+  },
+  {
+    "blind_id": "66c6590c1e1e",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F02"
+  },
+  {
+    "blind_id": "c28580d3ec6c",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F03"
+  },
+  {
+    "blind_id": "39f36e3a99e5",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F04"
+  },
+  {
+    "blind_id": "463a24d43cb9",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F05"
+  },
+  {
+    "blind_id": "f0802efde0a2",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F06"
+  },
+  {
+    "blind_id": "f93d9ae5f01b",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F07"
+  },
+  {
+    "blind_id": "1435869ad341",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F08"
+  },
+  {
+    "blind_id": "e98d174a1712",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F09"
+  },
+  {
+    "blind_id": "151a59751828",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F10"
+  },
+  {
+    "blind_id": "6aa48c4df4ea",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F11"
+  },
+  {
+    "blind_id": "8f63b0ea8f93",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F12"
+  },
+  {
+    "blind_id": "83af496cee8e",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F13"
+  },
+  {
+    "blind_id": "d2e29d178216",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F14"
+  },
+  {
+    "blind_id": "a1e81f3dcab0",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F15"
+  },
+  {
+    "blind_id": "8b7faa53a27a",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F16"
+  },
+  {
+    "blind_id": "42bd48bd3ac1",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F17"
+  },
+  {
+    "blind_id": "9139bbf2eeca",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F18"
+  },
+  {
+    "blind_id": "86880f81a6c2",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F19"
+  },
+  {
+    "blind_id": "541e35f1742b",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F20"
+  },
+  {
+    "blind_id": "2462783ca6c2",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F21"
+  },
+  {
+    "blind_id": "0c01a4c62d3b",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F22"
+  },
+  {
+    "blind_id": "f4452342e5e2",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F23"
+  },
+  {
+    "blind_id": "e4f709836502",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F24"
+  },
+  {
+    "blind_id": "39972e1d1b46",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F25"
+  },
+  {
+    "blind_id": "f0ae8a23d36e",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F26"
+  },
+  {
+    "blind_id": "76364170fe73",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F27"
+  },
+  {
+    "blind_id": "cef6bec5f015",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F28"
+  },
+  {
+    "blind_id": "2d2ec5dff1d6",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F29"
+  },
+  {
+    "blind_id": "a4e936b57247",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "F30"
+  },
+  {
+    "blind_id": "560d0730b26f",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "C01"
+  },
+  {
+    "blind_id": "f4ae07ca9331",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "C02"
+  },
+  {
+    "blind_id": "3f78ff26c194",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "C03"
+  },
+  {
+    "blind_id": "9bda198f33a5",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "C04"
+  },
+  {
+    "blind_id": "138eeeaf4fca",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "C05"
+  },
+  {
+    "blind_id": "e1d80b9a314d",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "C06"
+  },
+  {
+    "blind_id": "247585efb6c7",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_001"
+  },
+  {
+    "blind_id": "4c0a5cd9dbb1",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_002"
+  },
+  {
+    "blind_id": "ffeadf524745",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_003"
+  },
+  {
+    "blind_id": "89ad622ed0d0",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_004"
+  },
+  {
+    "blind_id": "49ee58859af9",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_005"
+  },
+  {
+    "blind_id": "1b8cfb3d35d0",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_006"
+  },
+  {
+    "blind_id": "fea7cb0f66e9",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_007"
+  },
+  {
+    "blind_id": "c72212893cb8",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_008"
+  },
+  {
+    "blind_id": "8b9c6a13aaa9",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_009"
+  },
+  {
+    "blind_id": "254771eadebb",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_010"
+  },
+  {
+    "blind_id": "6bf5e0746fd4",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_011"
+  },
+  {
+    "blind_id": "51a3bd99ad13",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_012"
+  },
+  {
+    "blind_id": "644fe9c1504a",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_013"
+  },
+  {
+    "blind_id": "17e414944d5d",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_014"
+  },
+  {
+    "blind_id": "a0d9435b184a",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_015"
+  },
+  {
+    "blind_id": "f3eefb7dc162",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_016"
+  },
+  {
+    "blind_id": "285231a0dc1c",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_017"
+  },
+  {
+    "blind_id": "526576f7ce78",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_018"
+  },
+  {
+    "blind_id": "2383cc16c848",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_019"
+  },
+  {
+    "blind_id": "6677405a7da0",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_020"
+  },
+  {
+    "blind_id": "ff361958972b",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_021"
+  },
+  {
+    "blind_id": "f349c2c1dd03",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_022"
+  },
+  {
+    "blind_id": "bd0bfbf2c517",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_023"
+  },
+  {
+    "blind_id": "717cd9ff39da",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_024"
+  },
+  {
+    "blind_id": "2abfb09b0f19",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_025"
+  },
+  {
+    "blind_id": "acf8819c7044",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_026"
+  },
+  {
+    "blind_id": "6e81fb94c540",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_027"
+  },
+  {
+    "blind_id": "07df96341f6c",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_028"
+  },
+  {
+    "blind_id": "6c767cbde7d5",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_029"
+  },
+  {
+    "blind_id": "5cc88058a7a4",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_030"
+  },
+  {
+    "blind_id": "aa026468856f",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_031"
+  },
+  {
+    "blind_id": "e922a4ec03fe",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_032"
+  },
+  {
+    "blind_id": "2a798635b488",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_033"
+  },
+  {
+    "blind_id": "ce63748f5545",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_034"
+  },
+  {
+    "blind_id": "cb3194927562",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_035"
+  },
+  {
+    "blind_id": "55e2c3202fc8",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_036"
+  },
+  {
+    "blind_id": "3f0391bc2c28",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_037"
+  },
+  {
+    "blind_id": "c89562b9e430",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_038"
+  },
+  {
+    "blind_id": "1eb3c231fd94",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_039"
+  },
+  {
+    "blind_id": "0084ecddf7f8",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_040"
+  },
+  {
+    "blind_id": "5741149d01cf",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_041"
+  },
+  {
+    "blind_id": "3d71b0562426",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_042"
+  },
+  {
+    "blind_id": "666ce49880f5",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_043"
+  },
+  {
+    "blind_id": "4cd91a936ec2",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_044"
+  },
+  {
+    "blind_id": "0fa7e12258ee",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_045"
+  },
+  {
+    "blind_id": "b76d3e506867",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_046"
+  },
+  {
+    "blind_id": "e60eb59fd1a0",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_047"
+  },
+  {
+    "blind_id": "6898c9c49c33",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_048"
+  },
+  {
+    "blind_id": "8294daf3c5b2",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_049"
+  },
+  {
+    "blind_id": "0dc6e5bf6cc2",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "GOLD_050"
+  },
+  {
+    "blind_id": "ef2951a341be",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P01"
+  },
+  {
+    "blind_id": "4aead646c018",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P02"
+  },
+  {
+    "blind_id": "cc13b40cf32b",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P03"
+  },
+  {
+    "blind_id": "3693e3ce7ef3",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P04"
+  },
+  {
+    "blind_id": "5212e6ce5c19",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P05"
+  },
+  {
+    "blind_id": "ea4d52335477",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P06"
+  },
+  {
+    "blind_id": "9358e03db20f",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P07"
+  },
+  {
+    "blind_id": "6a9462135bae",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P08"
+  },
+  {
+    "blind_id": "e45489c9216a",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P09"
+  },
+  {
+    "blind_id": "72690fdae694",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P10"
+  },
+  {
+    "blind_id": "6e7e3df25e3a",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P11"
+  },
+  {
+    "blind_id": "5a65b32bb29b",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P12"
+  },
+  {
+    "blind_id": "f4c3fe55df95",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P13"
+  },
+  {
+    "blind_id": "0b5ab0447fad",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P14"
+  },
+  {
+    "blind_id": "424aff7717c9",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P15"
+  },
+  {
+    "blind_id": "40aac9c19a31",
+    "file": "exp_final_end_to_end.json",
+    "config": "BASE_qwen_only",
+    "item_id": "P16"
+  },
+  {
+    "blind_id": "5b906f08a9b3",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F01"
+  },
+  {
+    "blind_id": "3c0b7949eb2a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F02"
+  },
+  {
+    "blind_id": "c28580d3ec6c",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F03"
+  },
+  {
+    "blind_id": "39f36e3a99e5",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F04"
+  },
+  {
+    "blind_id": "463a24d43cb9",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F05"
+  },
+  {
+    "blind_id": "f0802efde0a2",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F06"
+  },
+  {
+    "blind_id": "f93d9ae5f01b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F07"
+  },
+  {
+    "blind_id": "1435869ad341",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F08"
+  },
+  {
+    "blind_id": "e98d174a1712",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F09"
+  },
+  {
+    "blind_id": "e6666aaed33d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F10"
+  },
+  {
+    "blind_id": "63e1ee52d86f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F11"
+  },
+  {
+    "blind_id": "31cbae137c75",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F12"
+  },
+  {
+    "blind_id": "67a53c81f8b8",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F13"
+  },
+  {
+    "blind_id": "d2e29d178216",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F14"
+  },
+  {
+    "blind_id": "a6d035cc485e",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F15"
+  },
+  {
+    "blind_id": "54f90b22e19f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F16"
+  },
+  {
+    "blind_id": "767d7f7e3f6a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F17"
+  },
+  {
+    "blind_id": "bd03b0241306",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F18"
+  },
+  {
+    "blind_id": "adfac49a3a71",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F19"
+  },
+  {
+    "blind_id": "999e18ca57c8",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F20"
+  },
+  {
+    "blind_id": "bf35d357452a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F21"
+  },
+  {
+    "blind_id": "0c01a4c62d3b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F22"
+  },
+  {
+    "blind_id": "26f1663084d6",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F23"
+  },
+  {
+    "blind_id": "48d3b26e7c79",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F24"
+  },
+  {
+    "blind_id": "39972e1d1b46",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F25"
+  },
+  {
+    "blind_id": "682f1cda7393",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F26"
+  },
+  {
+    "blind_id": "a0b1fc060c10",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F27"
+  },
+  {
+    "blind_id": "2fc4e40da97b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F28"
+  },
+  {
+    "blind_id": "0e00549a121a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F29"
+  },
+  {
+    "blind_id": "bb742ceb0d7a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "F30"
+  },
+  {
+    "blind_id": "560d0730b26f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "C01"
+  },
+  {
+    "blind_id": "f4ae07ca9331",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "C02"
+  },
+  {
+    "blind_id": "3f78ff26c194",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "C03"
+  },
+  {
+    "blind_id": "9bda198f33a5",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "C04"
+  },
+  {
+    "blind_id": "138eeeaf4fca",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "C05"
+  },
+  {
+    "blind_id": "e1d80b9a314d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "C06"
+  },
+  {
+    "blind_id": "247585efb6c7",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_001"
+  },
+  {
+    "blind_id": "4c0a5cd9dbb1",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_002"
+  },
+  {
+    "blind_id": "bcd8ac099c36",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_003"
+  },
+  {
+    "blind_id": "89ad622ed0d0",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_004"
+  },
+  {
+    "blind_id": "04ef83f77f3b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_005"
+  },
+  {
+    "blind_id": "1b8cfb3d35d0",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_006"
+  },
+  {
+    "blind_id": "1125b98e17ee",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_007"
+  },
+  {
+    "blind_id": "c72212893cb8",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_008"
+  },
+  {
+    "blind_id": "1fbeeafe258d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_009"
+  },
+  {
+    "blind_id": "254771eadebb",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_010"
+  },
+  {
+    "blind_id": "6bf5e0746fd4",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_011"
+  },
+  {
+    "blind_id": "51a3bd99ad13",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_012"
+  },
+  {
+    "blind_id": "19f43fa0a2a3",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_013"
+  },
+  {
+    "blind_id": "aca1f0f42e58",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_014"
+  },
+  {
+    "blind_id": "51164a575736",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_015"
+  },
+  {
+    "blind_id": "cd4250c0806d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_016"
+  },
+  {
+    "blind_id": "63140b3a8341",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_017"
+  },
+  {
+    "blind_id": "26f9a25afac6",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_018"
+  },
+  {
+    "blind_id": "2383cc16c848",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_019"
+  },
+  {
+    "blind_id": "6677405a7da0",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_020"
+  },
+  {
+    "blind_id": "ff361958972b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_021"
+  },
+  {
+    "blind_id": "aa26903b4c8e",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_022"
+  },
+  {
+    "blind_id": "eefc7cc36e03",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_023"
+  },
+  {
+    "blind_id": "4fa2072c2bda",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_024"
+  },
+  {
+    "blind_id": "3784fc8106b2",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_025"
+  },
+  {
+    "blind_id": "acf8819c7044",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_026"
+  },
+  {
+    "blind_id": "f6dc559fb088",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_027"
+  },
+  {
+    "blind_id": "07df96341f6c",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_028"
+  },
+  {
+    "blind_id": "6c767cbde7d5",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_029"
+  },
+  {
+    "blind_id": "2aaf3311be6f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_030"
+  },
+  {
+    "blind_id": "ca140cddc9b5",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_031"
+  },
+  {
+    "blind_id": "49a71c86e169",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_032"
+  },
+  {
+    "blind_id": "1a61d3bbdb14",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_033"
+  },
+  {
+    "blind_id": "ce63748f5545",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_034"
+  },
+  {
+    "blind_id": "cb3194927562",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_035"
+  },
+  {
+    "blind_id": "5ca7379e9f68",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_036"
+  },
+  {
+    "blind_id": "3f0391bc2c28",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_037"
+  },
+  {
+    "blind_id": "158b7af83781",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_038"
+  },
+  {
+    "blind_id": "791a0e00f2f2",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_039"
+  },
+  {
+    "blind_id": "4778ee1448df",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_040"
+  },
+  {
+    "blind_id": "a9a3b9342797",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_041"
+  },
+  {
+    "blind_id": "a6a7479cc08e",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_042"
+  },
+  {
+    "blind_id": "666ce49880f5",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_043"
+  },
+  {
+    "blind_id": "7eea2dc9f17c",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_044"
+  },
+  {
+    "blind_id": "0fa7e12258ee",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_045"
+  },
+  {
+    "blind_id": "236236ac2525",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_046"
+  },
+  {
+    "blind_id": "dbede760a0fc",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_047"
+  },
+  {
+    "blind_id": "9089c548a976",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_048"
+  },
+  {
+    "blind_id": "fb3a9bdbefc0",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_049"
+  },
+  {
+    "blind_id": "0dc6e5bf6cc2",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "GOLD_050"
+  },
+  {
+    "blind_id": "ef2951a341be",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P01"
+  },
+  {
+    "blind_id": "4aead646c018",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P02"
+  },
+  {
+    "blind_id": "cc13b40cf32b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P03"
+  },
+  {
+    "blind_id": "3693e3ce7ef3",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P04"
+  },
+  {
+    "blind_id": "5212e6ce5c19",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P05"
+  },
+  {
+    "blind_id": "ea4d52335477",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P06"
+  },
+  {
+    "blind_id": "9358e03db20f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P07"
+  },
+  {
+    "blind_id": "6a9462135bae",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P08"
+  },
+  {
+    "blind_id": "e45489c9216a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P09"
+  },
+  {
+    "blind_id": "72690fdae694",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P10"
+  },
+  {
+    "blind_id": "6e7e3df25e3a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P11"
+  },
+  {
+    "blind_id": "5a65b32bb29b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P12"
+  },
+  {
+    "blind_id": "f4c3fe55df95",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P13"
+  },
+  {
+    "blind_id": "724af9eb677c",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P14"
+  },
+  {
+    "blind_id": "424aff7717c9",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P15"
+  },
+  {
+    "blind_id": "40aac9c19a31",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_agree_Wterm+chk",
+    "item_id": "P16"
+  },
+  {
+    "blind_id": "5b906f08a9b3",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F01"
+  },
+  {
+    "blind_id": "3c0b7949eb2a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F02"
+  },
+  {
+    "blind_id": "fc49d3cead02",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F03"
+  },
+  {
+    "blind_id": "e18549a47996",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F04"
+  },
+  {
+    "blind_id": "506468755caf",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F05"
+  },
+  {
+    "blind_id": "91a91703c061",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F06"
+  },
+  {
+    "blind_id": "ebff73d3ffba",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F07"
+  },
+  {
+    "blind_id": "87d4f9481c98",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F08"
+  },
+  {
+    "blind_id": "581dc4e1acea",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F09"
+  },
+  {
+    "blind_id": "e6666aaed33d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F10"
+  },
+  {
+    "blind_id": "63e1ee52d86f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F11"
+  },
+  {
+    "blind_id": "31cbae137c75",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F12"
+  },
+  {
+    "blind_id": "67a53c81f8b8",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F13"
+  },
+  {
+    "blind_id": "bae43dda992c",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F14"
+  },
+  {
+    "blind_id": "a6d035cc485e",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F15"
+  },
+  {
+    "blind_id": "54f90b22e19f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F16"
+  },
+  {
+    "blind_id": "767d7f7e3f6a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F17"
+  },
+  {
+    "blind_id": "bd03b0241306",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F18"
+  },
+  {
+    "blind_id": "adfac49a3a71",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F19"
+  },
+  {
+    "blind_id": "999e18ca57c8",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F20"
+  },
+  {
+    "blind_id": "bf35d357452a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F21"
+  },
+  {
+    "blind_id": "5a1cf72c1189",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F22"
+  },
+  {
+    "blind_id": "26f1663084d6",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F23"
+  },
+  {
+    "blind_id": "48d3b26e7c79",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F24"
+  },
+  {
+    "blind_id": "b7783eff4d05",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F25"
+  },
+  {
+    "blind_id": "682f1cda7393",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F26"
+  },
+  {
+    "blind_id": "a0b1fc060c10",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F27"
+  },
+  {
+    "blind_id": "2fc4e40da97b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F28"
+  },
+  {
+    "blind_id": "0e00549a121a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F29"
+  },
+  {
+    "blind_id": "bb742ceb0d7a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "F30"
+  },
+  {
+    "blind_id": "560d0730b26f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "C01"
+  },
+  {
+    "blind_id": "d166a4240f07",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "C02"
+  },
+  {
+    "blind_id": "3f78ff26c194",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "C03"
+  },
+  {
+    "blind_id": "9bda198f33a5",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "C04"
+  },
+  {
+    "blind_id": "138eeeaf4fca",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "C05"
+  },
+  {
+    "blind_id": "e1d80b9a314d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "C06"
+  },
+  {
+    "blind_id": "0cdc25b813a4",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_001"
+  },
+  {
+    "blind_id": "363eddb67260",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_002"
+  },
+  {
+    "blind_id": "bcd8ac099c36",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_003"
+  },
+  {
+    "blind_id": "538b67b6605e",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_004"
+  },
+  {
+    "blind_id": "04ef83f77f3b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_005"
+  },
+  {
+    "blind_id": "b8d2d61f60d7",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_006"
+  },
+  {
+    "blind_id": "1125b98e17ee",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_007"
+  },
+  {
+    "blind_id": "3a820ea9eeee",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_008"
+  },
+  {
+    "blind_id": "1fbeeafe258d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_009"
+  },
+  {
+    "blind_id": "194e73302941",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_010"
+  },
+  {
+    "blind_id": "e85f11c2da32",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_011"
+  },
+  {
+    "blind_id": "d6ddc4246d48",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_012"
+  },
+  {
+    "blind_id": "19f43fa0a2a3",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_013"
+  },
+  {
+    "blind_id": "aca1f0f42e58",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_014"
+  },
+  {
+    "blind_id": "51164a575736",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_015"
+  },
+  {
+    "blind_id": "cd4250c0806d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_016"
+  },
+  {
+    "blind_id": "63140b3a8341",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_017"
+  },
+  {
+    "blind_id": "26f9a25afac6",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_018"
+  },
+  {
+    "blind_id": "46cd8e27ffbf",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_019"
+  },
+  {
+    "blind_id": "edb645c2e0f4",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_020"
+  },
+  {
+    "blind_id": "51cea51aaa03",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_021"
+  },
+  {
+    "blind_id": "aa26903b4c8e",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_022"
+  },
+  {
+    "blind_id": "eefc7cc36e03",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_023"
+  },
+  {
+    "blind_id": "4fa2072c2bda",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_024"
+  },
+  {
+    "blind_id": "3784fc8106b2",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_025"
+  },
+  {
+    "blind_id": "bd129c2bcc6f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_026"
+  },
+  {
+    "blind_id": "f6dc559fb088",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_027"
+  },
+  {
+    "blind_id": "420d7874df61",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_028"
+  },
+  {
+    "blind_id": "b86e72e85c1b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_029"
+  },
+  {
+    "blind_id": "2aaf3311be6f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_030"
+  },
+  {
+    "blind_id": "ca140cddc9b5",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_031"
+  },
+  {
+    "blind_id": "49a71c86e169",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_032"
+  },
+  {
+    "blind_id": "1a61d3bbdb14",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_033"
+  },
+  {
+    "blind_id": "09c53488c5d0",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_034"
+  },
+  {
+    "blind_id": "dbeff6733277",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_035"
+  },
+  {
+    "blind_id": "5ca7379e9f68",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_036"
+  },
+  {
+    "blind_id": "6408d21f03fd",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_037"
+  },
+  {
+    "blind_id": "158b7af83781",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_038"
+  },
+  {
+    "blind_id": "791a0e00f2f2",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_039"
+  },
+  {
+    "blind_id": "4778ee1448df",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_040"
+  },
+  {
+    "blind_id": "a9a3b9342797",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_041"
+  },
+  {
+    "blind_id": "a6a7479cc08e",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_042"
+  },
+  {
+    "blind_id": "fb68162a8d1d",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_043"
+  },
+  {
+    "blind_id": "7eea2dc9f17c",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_044"
+  },
+  {
+    "blind_id": "69b51edd6456",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_045"
+  },
+  {
+    "blind_id": "236236ac2525",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_046"
+  },
+  {
+    "blind_id": "dbede760a0fc",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_047"
+  },
+  {
+    "blind_id": "9089c548a976",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_048"
+  },
+  {
+    "blind_id": "fb3a9bdbefc0",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_049"
+  },
+  {
+    "blind_id": "ed955d0c1811",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "GOLD_050"
+  },
+  {
+    "blind_id": "ef2951a341be",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P01"
+  },
+  {
+    "blind_id": "4aead646c018",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P02"
+  },
+  {
+    "blind_id": "cc13b40cf32b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P03"
+  },
+  {
+    "blind_id": "3693e3ce7ef3",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P04"
+  },
+  {
+    "blind_id": "5212e6ce5c19",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P05"
+  },
+  {
+    "blind_id": "ea4d52335477",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P06"
+  },
+  {
+    "blind_id": "9358e03db20f",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P07"
+  },
+  {
+    "blind_id": "6a9462135bae",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P08"
+  },
+  {
+    "blind_id": "e45489c9216a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P09"
+  },
+  {
+    "blind_id": "72690fdae694",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P10"
+  },
+  {
+    "blind_id": "6e7e3df25e3a",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P11"
+  },
+  {
+    "blind_id": "5a65b32bb29b",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P12"
+  },
+  {
+    "blind_id": "f4c3fe55df95",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P13"
+  },
+  {
+    "blind_id": "724af9eb677c",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P14"
+  },
+  {
+    "blind_id": "424aff7717c9",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P15"
+  },
+  {
+    "blind_id": "7730b98938ee",
+    "file": "exp_final_end_to_end.json",
+    "config": "R_full_K10_gate_noagree_Wterm+chk",
+    "item_id": "P16"
+  },
+  {
+    "blind_id": "4b440b0bfba9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F01"
+  },
+  {
+    "blind_id": "5b9864a05e31",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F02"
+  },
+  {
+    "blind_id": "ac25844c7c60",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F03"
+  },
+  {
+    "blind_id": "d42a621497d3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F04"
+  },
+  {
+    "blind_id": "ea8881fbf1f5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F05"
+  },
+  {
+    "blind_id": "6298815f4eca",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F06"
+  },
+  {
+    "blind_id": "327eafa0dc2a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F07"
+  },
+  {
+    "blind_id": "1938a4c012e1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F08"
+  },
+  {
+    "blind_id": "3ed4e80e580f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F09"
+  },
+  {
+    "blind_id": "a433662f5a30",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F10"
+  },
+  {
+    "blind_id": "ccde19153187",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F11"
+  },
+  {
+    "blind_id": "5e771f56b746",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F12"
+  },
+  {
+    "blind_id": "61a60d8e9768",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F13"
+  },
+  {
+    "blind_id": "abe23099609d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F14"
+  },
+  {
+    "blind_id": "9b91f5238cdd",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F15"
+  },
+  {
+    "blind_id": "ff1a283bfc80",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F16"
+  },
+  {
+    "blind_id": "8068d0d3983e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F17"
+  },
+  {
+    "blind_id": "ea6a64bed9e2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F18"
+  },
+  {
+    "blind_id": "2c6006b58620",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F19"
+  },
+  {
+    "blind_id": "85299f1bfff6",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F20"
+  },
+  {
+    "blind_id": "1724b4675e01",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F21"
+  },
+  {
+    "blind_id": "7fe9a391ae15",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F22"
+  },
+  {
+    "blind_id": "46065942cbf2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F23"
+  },
+  {
+    "blind_id": "0f09b6dc9072",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F24"
+  },
+  {
+    "blind_id": "d6079e01bb3f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F25"
+  },
+  {
+    "blind_id": "72ab844c40cc",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F26"
+  },
+  {
+    "blind_id": "dc9b95e9a2ec",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F27"
+  },
+  {
+    "blind_id": "f481524b2697",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F28"
+  },
+  {
+    "blind_id": "719c2c077371",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F29"
+  },
+  {
+    "blind_id": "c56d4f3cd479",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "F30"
+  },
+  {
+    "blind_id": "560d0730b26f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "C01"
+  },
+  {
+    "blind_id": "f4ae07ca9331",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "C02"
+  },
+  {
+    "blind_id": "3f78ff26c194",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "C03"
+  },
+  {
+    "blind_id": "9bda198f33a5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "C04"
+  },
+  {
+    "blind_id": "138eeeaf4fca",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "C05"
+  },
+  {
+    "blind_id": "e1d80b9a314d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "C06"
+  },
+  {
+    "blind_id": "247585efb6c7",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_001"
+  },
+  {
+    "blind_id": "71f8fb5e98d4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_002"
+  },
+  {
+    "blind_id": "979c61e8153e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_003"
+  },
+  {
+    "blind_id": "e4224198013d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_004"
+  },
+  {
+    "blind_id": "d724039d90ac",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_005"
+  },
+  {
+    "blind_id": "1b8cfb3d35d0",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_006"
+  },
+  {
+    "blind_id": "8dcf58c82c9d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_007"
+  },
+  {
+    "blind_id": "50c922afe0bb",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_008"
+  },
+  {
+    "blind_id": "74a92e2feee8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_009"
+  },
+  {
+    "blind_id": "3b62903de1fa",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_010"
+  },
+  {
+    "blind_id": "42cbbac863e3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_011"
+  },
+  {
+    "blind_id": "a7dc8debfd1b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_012"
+  },
+  {
+    "blind_id": "010a65fc2e98",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_013"
+  },
+  {
+    "blind_id": "d17607585104",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_014"
+  },
+  {
+    "blind_id": "975e75553407",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_015"
+  },
+  {
+    "blind_id": "3f7e672fda49",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_016"
+  },
+  {
+    "blind_id": "43be74aded60",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_017"
+  },
+  {
+    "blind_id": "300f0a9e401f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_018"
+  },
+  {
+    "blind_id": "1fbbc40c8ab0",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_019"
+  },
+  {
+    "blind_id": "100e237aebd1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_020"
+  },
+  {
+    "blind_id": "516b43896bd6",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_021"
+  },
+  {
+    "blind_id": "071e7911cc4d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_022"
+  },
+  {
+    "blind_id": "f09df9195558",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_023"
+  },
+  {
+    "blind_id": "1a7340f694fc",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_024"
+  },
+  {
+    "blind_id": "3caccea25c7a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_025"
+  },
+  {
+    "blind_id": "05f8f11ddf22",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_026"
+  },
+  {
+    "blind_id": "f6dc559fb088",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_027"
+  },
+  {
+    "blind_id": "70cca5597d4d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_028"
+  },
+  {
+    "blind_id": "f91492e9ae39",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_029"
+  },
+  {
+    "blind_id": "04b0b0d2efc7",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_030"
+  },
+  {
+    "blind_id": "74e8bdfb0359",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_031"
+  },
+  {
+    "blind_id": "93ac5c89c96e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_032"
+  },
+  {
+    "blind_id": "2d0b1fe64edd",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_033"
+  },
+  {
+    "blind_id": "8f0c4f647399",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_034"
+  },
+  {
+    "blind_id": "ff492da64f20",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_035"
+  },
+  {
+    "blind_id": "55e2c3202fc8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_036"
+  },
+  {
+    "blind_id": "28f117d0c118",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_037"
+  },
+  {
+    "blind_id": "158b7af83781",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_038"
+  },
+  {
+    "blind_id": "6a35fc3ae2e3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_039"
+  },
+  {
+    "blind_id": "0084ecddf7f8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_040"
+  },
+  {
+    "blind_id": "5741149d01cf",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_041"
+  },
+  {
+    "blind_id": "c09fac20157b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_042"
+  },
+  {
+    "blind_id": "6b6b12ee7ba1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_043"
+  },
+  {
+    "blind_id": "c016e545cab5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_044"
+  },
+  {
+    "blind_id": "32641f730466",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_045"
+  },
+  {
+    "blind_id": "dc7c20a0441b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_046"
+  },
+  {
+    "blind_id": "4f6e44757ae1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_047"
+  },
+  {
+    "blind_id": "cfd1c47511ad",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_048"
+  },
+  {
+    "blind_id": "8294daf3c5b2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_049"
+  },
+  {
+    "blind_id": "5e861837f15f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "GOLD_050"
+  },
+  {
+    "blind_id": "ef2951a341be",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P01"
+  },
+  {
+    "blind_id": "28bfea805819",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P02"
+  },
+  {
+    "blind_id": "cc13b40cf32b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P03"
+  },
+  {
+    "blind_id": "3693e3ce7ef3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P04"
+  },
+  {
+    "blind_id": "5212e6ce5c19",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P05"
+  },
+  {
+    "blind_id": "ea4d52335477",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P06"
+  },
+  {
+    "blind_id": "9358e03db20f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P07"
+  },
+  {
+    "blind_id": "6a9462135bae",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P08"
+  },
+  {
+    "blind_id": "e45489c9216a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P09"
+  },
+  {
+    "blind_id": "4323d110493f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P10"
+  },
+  {
+    "blind_id": "6e7e3df25e3a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P11"
+  },
+  {
+    "blind_id": "5a65b32bb29b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P12"
+  },
+  {
+    "blind_id": "f4c3fe55df95",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P13"
+  },
+  {
+    "blind_id": "0b5ab0447fad",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P14"
+  },
+  {
+    "blind_id": "424aff7717c9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P15"
+  },
+  {
+    "blind_id": "40aac9c19a31",
+    "file": "exp_w_writer.json",
+    "config": "W|W_def",
+    "item_id": "P16"
+  },
+  {
+    "blind_id": "5b906f08a9b3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F01"
+  },
+  {
+    "blind_id": "3c0b7949eb2a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F02"
+  },
+  {
+    "blind_id": "f9e7644f2457",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F03"
+  },
+  {
+    "blind_id": "e18549a47996",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F04"
+  },
+  {
+    "blind_id": "506468755caf",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F05"
+  },
+  {
+    "blind_id": "2cca35a3c047",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F06"
+  },
+  {
+    "blind_id": "ebff73d3ffba",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F07"
+  },
+  {
+    "blind_id": "87d4f9481c98",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F08"
+  },
+  {
+    "blind_id": "0f1101c502ad",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F09"
+  },
+  {
+    "blind_id": "e6666aaed33d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F10"
+  },
+  {
+    "blind_id": "1bce70383bea",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F11"
+  },
+  {
+    "blind_id": "31cbae137c75",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F12"
+  },
+  {
+    "blind_id": "67a53c81f8b8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F13"
+  },
+  {
+    "blind_id": "bae43dda992c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F14"
+  },
+  {
+    "blind_id": "a6d035cc485e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F15"
+  },
+  {
+    "blind_id": "54f90b22e19f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F16"
+  },
+  {
+    "blind_id": "767d7f7e3f6a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F17"
+  },
+  {
+    "blind_id": "bd03b0241306",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F18"
+  },
+  {
+    "blind_id": "adfac49a3a71",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F19"
+  },
+  {
+    "blind_id": "999e18ca57c8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F20"
+  },
+  {
+    "blind_id": "bf35d357452a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F21"
+  },
+  {
+    "blind_id": "fd4f41e1c539",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F22"
+  },
+  {
+    "blind_id": "ca502a7058e1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F23"
+  },
+  {
+    "blind_id": "48d3b26e7c79",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F24"
+  },
+  {
+    "blind_id": "8f1131e481a5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F25"
+  },
+  {
+    "blind_id": "682f1cda7393",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F26"
+  },
+  {
+    "blind_id": "a0b1fc060c10",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F27"
+  },
+  {
+    "blind_id": "2fc4e40da97b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F28"
+  },
+  {
+    "blind_id": "0e00549a121a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F29"
+  },
+  {
+    "blind_id": "bb742ceb0d7a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "F30"
+  },
+  {
+    "blind_id": "560d0730b26f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "C01"
+  },
+  {
+    "blind_id": "f4ae07ca9331",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "C02"
+  },
+  {
+    "blind_id": "3f78ff26c194",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "C03"
+  },
+  {
+    "blind_id": "9bda198f33a5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "C04"
+  },
+  {
+    "blind_id": "138eeeaf4fca",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "C05"
+  },
+  {
+    "blind_id": "e1d80b9a314d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "C06"
+  },
+  {
+    "blind_id": "247585efb6c7",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_001"
+  },
+  {
+    "blind_id": "363eddb67260",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_002"
+  },
+  {
+    "blind_id": "bcd8ac099c36",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_003"
+  },
+  {
+    "blind_id": "bc5d11b8bb8c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_004"
+  },
+  {
+    "blind_id": "04ef83f77f3b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_005"
+  },
+  {
+    "blind_id": "1b8cfb3d35d0",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_006"
+  },
+  {
+    "blind_id": "1efa3319a144",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_007"
+  },
+  {
+    "blind_id": "c1b29653c30d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_008"
+  },
+  {
+    "blind_id": "6d9a971d4b26",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_009"
+  },
+  {
+    "blind_id": "194e73302941",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_010"
+  },
+  {
+    "blind_id": "42cbbac863e3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_011"
+  },
+  {
+    "blind_id": "9e88c24ab633",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_012"
+  },
+  {
+    "blind_id": "be73259db294",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_013"
+  },
+  {
+    "blind_id": "16c3284cdb8e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_014"
+  },
+  {
+    "blind_id": "ebf2910c7adf",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_015"
+  },
+  {
+    "blind_id": "cd4250c0806d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_016"
+  },
+  {
+    "blind_id": "63140b3a8341",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_017"
+  },
+  {
+    "blind_id": "26f9a25afac6",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_018"
+  },
+  {
+    "blind_id": "46cd8e27ffbf",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_019"
+  },
+  {
+    "blind_id": "29d364812179",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_020"
+  },
+  {
+    "blind_id": "51cea51aaa03",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_021"
+  },
+  {
+    "blind_id": "aa26903b4c8e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_022"
+  },
+  {
+    "blind_id": "eefc7cc36e03",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_023"
+  },
+  {
+    "blind_id": "4fa2072c2bda",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_024"
+  },
+  {
+    "blind_id": "3784fc8106b2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_025"
+  },
+  {
+    "blind_id": "feda3fceb00d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_026"
+  },
+  {
+    "blind_id": "f6dc559fb088",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_027"
+  },
+  {
+    "blind_id": "420d7874df61",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_028"
+  },
+  {
+    "blind_id": "c8decbc74fd4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_029"
+  },
+  {
+    "blind_id": "2aaf3311be6f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_030"
+  },
+  {
+    "blind_id": "ca140cddc9b5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_031"
+  },
+  {
+    "blind_id": "49a71c86e169",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_032"
+  },
+  {
+    "blind_id": "1a61d3bbdb14",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_033"
+  },
+  {
+    "blind_id": "2cd48bd1560a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_034"
+  },
+  {
+    "blind_id": "dbeff6733277",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_035"
+  },
+  {
+    "blind_id": "55e2c3202fc8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_036"
+  },
+  {
+    "blind_id": "cd3d07c6e2c8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_037"
+  },
+  {
+    "blind_id": "158b7af83781",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_038"
+  },
+  {
+    "blind_id": "791a0e00f2f2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_039"
+  },
+  {
+    "blind_id": "0084ecddf7f8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_040"
+  },
+  {
+    "blind_id": "5741149d01cf",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_041"
+  },
+  {
+    "blind_id": "a6a7479cc08e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_042"
+  },
+  {
+    "blind_id": "122b6c0f04bb",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_043"
+  },
+  {
+    "blind_id": "7eea2dc9f17c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_044"
+  },
+  {
+    "blind_id": "5db88cc6adba",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_045"
+  },
+  {
+    "blind_id": "236236ac2525",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_046"
+  },
+  {
+    "blind_id": "dbede760a0fc",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_047"
+  },
+  {
+    "blind_id": "9089c548a976",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_048"
+  },
+  {
+    "blind_id": "8294daf3c5b2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_049"
+  },
+  {
+    "blind_id": "c1428834ab96",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "GOLD_050"
+  },
+  {
+    "blind_id": "ef2951a341be",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P01"
+  },
+  {
+    "blind_id": "28bfea805819",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P02"
+  },
+  {
+    "blind_id": "cc13b40cf32b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P03"
+  },
+  {
+    "blind_id": "3693e3ce7ef3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P04"
+  },
+  {
+    "blind_id": "5212e6ce5c19",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P05"
+  },
+  {
+    "blind_id": "ea4d52335477",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P06"
+  },
+  {
+    "blind_id": "9358e03db20f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P07"
+  },
+  {
+    "blind_id": "6a9462135bae",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P08"
+  },
+  {
+    "blind_id": "e45489c9216a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P09"
+  },
+  {
+    "blind_id": "8dc5069207b4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P10"
+  },
+  {
+    "blind_id": "6e7e3df25e3a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P11"
+  },
+  {
+    "blind_id": "5a65b32bb29b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P12"
+  },
+  {
+    "blind_id": "f4c3fe55df95",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P13"
+  },
+  {
+    "blind_id": "0b5ab0447fad",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P14"
+  },
+  {
+    "blind_id": "424aff7717c9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P15"
+  },
+  {
+    "blind_id": "40aac9c19a31",
+    "file": "exp_w_writer.json",
+    "config": "W|W_term+chk",
+    "item_id": "P16"
+  },
+  {
+    "blind_id": "e68f7f532c24",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F01"
+  },
+  {
+    "blind_id": "0bcada02ddff",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F02"
+  },
+  {
+    "blind_id": "d423da7e41b1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F03"
+  },
+  {
+    "blind_id": "e004ca9aaad2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F04"
+  },
+  {
+    "blind_id": "8f83afb3a48b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F05"
+  },
+  {
+    "blind_id": "df87eaaf88ef",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F06"
+  },
+  {
+    "blind_id": "d48ef7bbea8c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F07"
+  },
+  {
+    "blind_id": "a705db333ed4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F08"
+  },
+  {
+    "blind_id": "47f86c632149",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F09"
+  },
+  {
+    "blind_id": "a0922e845210",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F10"
+  },
+  {
+    "blind_id": "5d7278829208",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F11"
+  },
+  {
+    "blind_id": "3517dcfa194a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F12"
+  },
+  {
+    "blind_id": "b544f48e76f4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F13"
+  },
+  {
+    "blind_id": "d857bfb5e2b5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F14"
+  },
+  {
+    "blind_id": "c61074782f68",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F15"
+  },
+  {
+    "blind_id": "cb668fd1520d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F16"
+  },
+  {
+    "blind_id": "703265c264c1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F17"
+  },
+  {
+    "blind_id": "0c6b79c4be5f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F18"
+  },
+  {
+    "blind_id": "bea5596ac741",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F19"
+  },
+  {
+    "blind_id": "b9b15ac8355a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F20"
+  },
+  {
+    "blind_id": "4112404c73bf",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F21"
+  },
+  {
+    "blind_id": "b03c5590ba96",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F22"
+  },
+  {
+    "blind_id": "68c9d3182dff",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F23"
+  },
+  {
+    "blind_id": "e10733b6d307",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F24"
+  },
+  {
+    "blind_id": "96dcb71f6d14",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F25"
+  },
+  {
+    "blind_id": "fa2cea4e95d5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F26"
+  },
+  {
+    "blind_id": "e813a8b6c931",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F27"
+  },
+  {
+    "blind_id": "4811b3b2d94e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F28"
+  },
+  {
+    "blind_id": "6c3a18871ac7",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F29"
+  },
+  {
+    "blind_id": "bb742ceb0d7a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "F30"
+  },
+  {
+    "blind_id": "560d0730b26f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "C01"
+  },
+  {
+    "blind_id": "f4ae07ca9331",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "C02"
+  },
+  {
+    "blind_id": "3f78ff26c194",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "C03"
+  },
+  {
+    "blind_id": "9bda198f33a5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "C04"
+  },
+  {
+    "blind_id": "138eeeaf4fca",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "C05"
+  },
+  {
+    "blind_id": "e1d80b9a314d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "C06"
+  },
+  {
+    "blind_id": "247585efb6c7",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_001"
+  },
+  {
+    "blind_id": "39cac239e800",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_002"
+  },
+  {
+    "blind_id": "3e8310749f15",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_003"
+  },
+  {
+    "blind_id": "449d17a68084",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_004"
+  },
+  {
+    "blind_id": "3b613ba15528",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_005"
+  },
+  {
+    "blind_id": "1b8cfb3d35d0",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_006"
+  },
+  {
+    "blind_id": "9761f3968947",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_007"
+  },
+  {
+    "blind_id": "4ef11721a4b9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_008"
+  },
+  {
+    "blind_id": "6d9a971d4b26",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_009"
+  },
+  {
+    "blind_id": "459fac2b2993",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_010"
+  },
+  {
+    "blind_id": "42cbbac863e3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_011"
+  },
+  {
+    "blind_id": "ea6ce2de6f2e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_012"
+  },
+  {
+    "blind_id": "49d07864a68d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_013"
+  },
+  {
+    "blind_id": "5144d9553076",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_014"
+  },
+  {
+    "blind_id": "6b399b389499",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_015"
+  },
+  {
+    "blind_id": "7e7abdb84747",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_016"
+  },
+  {
+    "blind_id": "2eb7d84963ef",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_017"
+  },
+  {
+    "blind_id": "300f0a9e401f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_018"
+  },
+  {
+    "blind_id": "5bf1336c21e4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_019"
+  },
+  {
+    "blind_id": "04620fbfa8b3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_020"
+  },
+  {
+    "blind_id": "936989290061",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_021"
+  },
+  {
+    "blind_id": "071e7911cc4d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_022"
+  },
+  {
+    "blind_id": "23db004683b8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_023"
+  },
+  {
+    "blind_id": "e2b080a69dd3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_024"
+  },
+  {
+    "blind_id": "73d419130f34",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_025"
+  },
+  {
+    "blind_id": "9c313e1877f2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_026"
+  },
+  {
+    "blind_id": "f6dc559fb088",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_027"
+  },
+  {
+    "blind_id": "3b913111fa0f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_028"
+  },
+  {
+    "blind_id": "f25af30de0ce",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_029"
+  },
+  {
+    "blind_id": "812dea66a3ba",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_030"
+  },
+  {
+    "blind_id": "a7ae4a895649",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_031"
+  },
+  {
+    "blind_id": "93ac5c89c96e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_032"
+  },
+  {
+    "blind_id": "2d0b1fe64edd",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_033"
+  },
+  {
+    "blind_id": "2df6a6ce59e1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_034"
+  },
+  {
+    "blind_id": "dbeff6733277",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_035"
+  },
+  {
+    "blind_id": "55e2c3202fc8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_036"
+  },
+  {
+    "blind_id": "6fb1d73a5ab4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_037"
+  },
+  {
+    "blind_id": "158b7af83781",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_038"
+  },
+  {
+    "blind_id": "d03821b462e8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_039"
+  },
+  {
+    "blind_id": "0084ecddf7f8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_040"
+  },
+  {
+    "blind_id": "5741149d01cf",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_041"
+  },
+  {
+    "blind_id": "b38013e44477",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_042"
+  },
+  {
+    "blind_id": "86ffc6b1fe1d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_043"
+  },
+  {
+    "blind_id": "c016e545cab5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_044"
+  },
+  {
+    "blind_id": "658f2aad7ba7",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_045"
+  },
+  {
+    "blind_id": "fbb0d5732ec8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_046"
+  },
+  {
+    "blind_id": "ec3cbfd4f225",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_047"
+  },
+  {
+    "blind_id": "2df42d47d59a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_048"
+  },
+  {
+    "blind_id": "8294daf3c5b2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_049"
+  },
+  {
+    "blind_id": "d599fb63fa8c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "GOLD_050"
+  },
+  {
+    "blind_id": "ef2951a341be",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P01"
+  },
+  {
+    "blind_id": "28bfea805819",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P02"
+  },
+  {
+    "blind_id": "cc13b40cf32b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P03"
+  },
+  {
+    "blind_id": "3693e3ce7ef3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P04"
+  },
+  {
+    "blind_id": "5212e6ce5c19",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P05"
+  },
+  {
+    "blind_id": "ea4d52335477",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P06"
+  },
+  {
+    "blind_id": "9358e03db20f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P07"
+  },
+  {
+    "blind_id": "6a9462135bae",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P08"
+  },
+  {
+    "blind_id": "e45489c9216a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P09"
+  },
+  {
+    "blind_id": "5cdf84e01ce6",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P10"
+  },
+  {
+    "blind_id": "6e7e3df25e3a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P11"
+  },
+  {
+    "blind_id": "5a65b32bb29b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P12"
+  },
+  {
+    "blind_id": "f4c3fe55df95",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P13"
+  },
+  {
+    "blind_id": "0b5ab0447fad",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P14"
+  },
+  {
+    "blind_id": "424aff7717c9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P15"
+  },
+  {
+    "blind_id": "40aac9c19a31",
+    "file": "exp_w_writer.json",
+    "config": "W|W_d3",
+    "item_id": "P16"
+  },
+  {
+    "blind_id": "64d8d17d074d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F01"
+  },
+  {
+    "blind_id": "9d36c895987f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F02"
+  },
+  {
+    "blind_id": "39952c18cef5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F03"
+  },
+  {
+    "blind_id": "53754ea95557",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F04"
+  },
+  {
+    "blind_id": "0d08d02b43b0",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F05"
+  },
+  {
+    "blind_id": "525a12208066",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F06"
+  },
+  {
+    "blind_id": "84bfaca182ca",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F07"
+  },
+  {
+    "blind_id": "463467b17726",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F08"
+  },
+  {
+    "blind_id": "ec7b0317789c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F09"
+  },
+  {
+    "blind_id": "e49a7c5925f6",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F10"
+  },
+  {
+    "blind_id": "78a5db9a8455",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F11"
+  },
+  {
+    "blind_id": "19ac76260c94",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F12"
+  },
+  {
+    "blind_id": "8ef1a006ca68",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F13"
+  },
+  {
+    "blind_id": "f6705375b51a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F14"
+  },
+  {
+    "blind_id": "bdc02581c2d4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F15"
+  },
+  {
+    "blind_id": "babdf5da3e1f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F16"
+  },
+  {
+    "blind_id": "3c096e53eb4e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F17"
+  },
+  {
+    "blind_id": "8c551fa1cd97",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F18"
+  },
+  {
+    "blind_id": "fac9ffae19a4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F19"
+  },
+  {
+    "blind_id": "74211eb618d1",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F20"
+  },
+  {
+    "blind_id": "a0b35c85ff43",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F21"
+  },
+  {
+    "blind_id": "2b40540f3c2e",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F22"
+  },
+  {
+    "blind_id": "41308fdfdbc5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F23"
+  },
+  {
+    "blind_id": "1c636521d350",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F24"
+  },
+  {
+    "blind_id": "dd8782174072",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F25"
+  },
+  {
+    "blind_id": "33ec3b73429c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F26"
+  },
+  {
+    "blind_id": "6357adb42a97",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F27"
+  },
+  {
+    "blind_id": "43b6c8f34952",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F28"
+  },
+  {
+    "blind_id": "d88731e8c18c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F29"
+  },
+  {
+    "blind_id": "25a4cffc4ad4",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "F30"
+  },
+  {
+    "blind_id": "560d0730b26f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "C01"
+  },
+  {
+    "blind_id": "f4ae07ca9331",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "C02"
+  },
+  {
+    "blind_id": "3f78ff26c194",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "C03"
+  },
+  {
+    "blind_id": "9bda198f33a5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "C04"
+  },
+  {
+    "blind_id": "138eeeaf4fca",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "C05"
+  },
+  {
+    "blind_id": "e1d80b9a314d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "C06"
+  },
+  {
+    "blind_id": "247585efb6c7",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_001"
+  },
+  {
+    "blind_id": "a1abda2e7cf9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_002"
+  },
+  {
+    "blind_id": "d439fe433586",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_003"
+  },
+  {
+    "blind_id": "817b5352e3fc",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_004"
+  },
+  {
+    "blind_id": "d02e129dbd91",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_005"
+  },
+  {
+    "blind_id": "1b8cfb3d35d0",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_006"
+  },
+  {
+    "blind_id": "a0a13fef0612",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_007"
+  },
+  {
+    "blind_id": "f411def529b5",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_008"
+  },
+  {
+    "blind_id": "160155f0388c",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_009"
+  },
+  {
+    "blind_id": "a07a8ffa3d8d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_010"
+  },
+  {
+    "blind_id": "92bf3b4bad3d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_011"
+  },
+  {
+    "blind_id": "bed3efe966a2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_012"
+  },
+  {
+    "blind_id": "be73259db294",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_013"
+  },
+  {
+    "blind_id": "2def4d42dddb",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_014"
+  },
+  {
+    "blind_id": "35b0d5dd3948",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_015"
+  },
+  {
+    "blind_id": "e3fa1d8fe0cd",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_016"
+  },
+  {
+    "blind_id": "5c761d0cff18",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_017"
+  },
+  {
+    "blind_id": "7a76456da8e9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_018"
+  },
+  {
+    "blind_id": "2462ba42ea2b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_019"
+  },
+  {
+    "blind_id": "9269e6e0ed17",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_020"
+  },
+  {
+    "blind_id": "51cea51aaa03",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_021"
+  },
+  {
+    "blind_id": "251002a18350",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_022"
+  },
+  {
+    "blind_id": "410dbf2aadfd",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_023"
+  },
+  {
+    "blind_id": "fb676fafbb05",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_024"
+  },
+  {
+    "blind_id": "ae06fbffb486",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_025"
+  },
+  {
+    "blind_id": "37c9098221f2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_026"
+  },
+  {
+    "blind_id": "f6dc559fb088",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_027"
+  },
+  {
+    "blind_id": "c91efdc11885",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_028"
+  },
+  {
+    "blind_id": "5612dab973c6",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_029"
+  },
+  {
+    "blind_id": "60b3e54a32ad",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_030"
+  },
+  {
+    "blind_id": "dad34531efa9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_031"
+  },
+  {
+    "blind_id": "575d0a3878aa",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_032"
+  },
+  {
+    "blind_id": "02ec72e2007b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_033"
+  },
+  {
+    "blind_id": "f473064674eb",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_034"
+  },
+  {
+    "blind_id": "34994c4f4b69",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_035"
+  },
+  {
+    "blind_id": "55e2c3202fc8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_036"
+  },
+  {
+    "blind_id": "4a0c969a61e7",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_037"
+  },
+  {
+    "blind_id": "158b7af83781",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_038"
+  },
+  {
+    "blind_id": "62a113dab9e0",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_039"
+  },
+  {
+    "blind_id": "0084ecddf7f8",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_040"
+  },
+  {
+    "blind_id": "5741149d01cf",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_041"
+  },
+  {
+    "blind_id": "72b0bb07da4b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_042"
+  },
+  {
+    "blind_id": "0a00588eb73d",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_043"
+  },
+  {
+    "blind_id": "5d61998d7030",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_044"
+  },
+  {
+    "blind_id": "7d2e3adc42cb",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_045"
+  },
+  {
+    "blind_id": "f05e489fd79a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_046"
+  },
+  {
+    "blind_id": "19e4513a21cd",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_047"
+  },
+  {
+    "blind_id": "ffb91334b339",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_048"
+  },
+  {
+    "blind_id": "8294daf3c5b2",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_049"
+  },
+  {
+    "blind_id": "e70aaa0f269f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "GOLD_050"
+  },
+  {
+    "blind_id": "ef2951a341be",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P01"
+  },
+  {
+    "blind_id": "28bfea805819",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P02"
+  },
+  {
+    "blind_id": "cc13b40cf32b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P03"
+  },
+  {
+    "blind_id": "3693e3ce7ef3",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P04"
+  },
+  {
+    "blind_id": "5212e6ce5c19",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P05"
+  },
+  {
+    "blind_id": "ea4d52335477",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P06"
+  },
+  {
+    "blind_id": "9358e03db20f",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P07"
+  },
+  {
+    "blind_id": "6a9462135bae",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P08"
+  },
+  {
+    "blind_id": "e45489c9216a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P09"
+  },
+  {
+    "blind_id": "d1f647e1f1f0",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P10"
+  },
+  {
+    "blind_id": "6e7e3df25e3a",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P11"
+  },
+  {
+    "blind_id": "5a65b32bb29b",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P12"
+  },
+  {
+    "blind_id": "f4c3fe55df95",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P13"
+  },
+  {
+    "blind_id": "0b5ab0447fad",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P14"
+  },
+  {
+    "blind_id": "424aff7717c9",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P15"
+  },
+  {
+    "blind_id": "40aac9c19a31",
+    "file": "exp_w_writer.json",
+    "config": "W|W_fs+chk",
+    "item_id": "P16"
+  }
+]

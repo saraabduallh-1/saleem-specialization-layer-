@@ -1,0 +1,232 @@
+{
+  "note": "Development evidence only.",
+  "naming_prompt": "أنت خبير في الذكاء الاصطناعي وعلم البيانات. اقرأ النص وحدد المفهوم التقني الذي يصفه النص فعلًا، إن وُجد. لا تعتمد على كلمة مفردة لها معنى عام، بل على المعنى الكامل للنص. أعد JSON فقط بالشكل: {\"concepts_en\": [\"...\"], \"description_ar\": \"...\"} حيث concepts_en قائمة من مصطلح إلى ثلاثة مصطلحات إنجليزية تقنية مرتبة من الأدق إلى الأعم، وdescription_ar وصف تقني موجز بالعربية الفصحى للمفهوم كما ورد في النص. إذا كان النص لا يصف مفهومًا تقنيًا في الذكاء الاصطناعي أو البيانات فأعد قائمة فارغة ووصفًا فارغًا.",
+  "qwen": {
+    "model": "Qwen/Qwen3.5-4B",
+    "temperature": 0.0,
+    "max_tokens": 200,
+    "enable_thinking": false
+  },
+  "results": {
+    "pilot50|orig": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.7333,
+        "hit_at_3": 0.8333,
+        "hit_at_5": 0.9333,
+        "hit_at_10": 0.9333,
+        "hit_at_20": 0.9667,
+        "mrr": 0.8014
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.72,
+        "hit_at_5": 0.78,
+        "hit_at_10": 0.9,
+        "hit_at_20": 0.94,
+        "mrr": 0.6353
+      }
+    },
+    "pilot50|desc": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.8333,
+        "hit_at_3": 0.9333,
+        "hit_at_5": 0.9333,
+        "hit_at_10": 1.0,
+        "hit_at_20": 1.0,
+        "mrr": 0.8875
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.6,
+        "hit_at_3": 0.84,
+        "hit_at_5": 0.9,
+        "hit_at_10": 0.98,
+        "hit_at_20": 1.0,
+        "mrr": 0.7233
+      }
+    },
+    "pilot50|orig+desc": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.8,
+        "hit_at_3": 0.9333,
+        "hit_at_5": 0.9333,
+        "hit_at_10": 0.9333,
+        "hit_at_20": 1.0,
+        "mrr": 0.8715
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.58,
+        "hit_at_3": 0.82,
+        "hit_at_5": 0.86,
+        "hit_at_10": 0.92,
+        "hit_at_20": 1.0,
+        "mrr": 0.7028
+      }
+    },
+    "pilot50|orig+en": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.9333,
+        "hit_at_3": 0.9333,
+        "hit_at_5": 0.9333,
+        "hit_at_10": 0.9667,
+        "hit_at_20": 1.0,
+        "mrr": 0.9415
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.66,
+        "hit_at_3": 0.88,
+        "hit_at_5": 0.88,
+        "hit_at_10": 0.94,
+        "hit_at_20": 0.96,
+        "mrr": 0.7708
+      }
+    },
+    "pilot50|all": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.9,
+        "hit_at_3": 0.9667,
+        "hit_at_5": 0.9667,
+        "hit_at_10": 0.9667,
+        "hit_at_20": 1.0,
+        "mrr": 0.9306
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.62,
+        "hit_at_3": 0.9,
+        "hit_at_5": 0.9,
+        "hit_at_10": 0.94,
+        "hit_at_20": 1.0,
+        "mrr": 0.756
+      }
+    },
+    "full|orig": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.1667,
+        "hit_at_3": 0.3333,
+        "hit_at_5": 0.5,
+        "hit_at_10": 0.6333,
+        "hit_at_20": 0.7333,
+        "mrr": 0.3088
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.16,
+        "hit_at_3": 0.3,
+        "hit_at_5": 0.38,
+        "hit_at_10": 0.5,
+        "hit_at_20": 0.54,
+        "mrr": 0.2706
+      }
+    },
+    "full|desc": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.3667,
+        "hit_at_3": 0.6,
+        "hit_at_5": 0.6333,
+        "hit_at_10": 0.7,
+        "hit_at_20": 0.8,
+        "mrr": 0.4996
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.26,
+        "hit_at_3": 0.46,
+        "hit_at_5": 0.5,
+        "hit_at_10": 0.6,
+        "hit_at_20": 0.72,
+        "mrr": 0.3742
+      }
+    },
+    "full|orig+desc": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.3333,
+        "hit_at_3": 0.4667,
+        "hit_at_5": 0.5333,
+        "hit_at_10": 0.6333,
+        "hit_at_20": 0.8333,
+        "mrr": 0.4479
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.22,
+        "hit_at_3": 0.32,
+        "hit_at_5": 0.42,
+        "hit_at_10": 0.56,
+        "hit_at_20": 0.68,
+        "mrr": 0.3278
+      }
+    },
+    "full|orig+en": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.6333,
+        "hit_at_3": 0.7667,
+        "hit_at_5": 0.8,
+        "hit_at_10": 0.8667,
+        "hit_at_20": 0.9,
+        "mrr": 0.7133
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.36,
+        "hit_at_3": 0.64,
+        "hit_at_5": 0.7,
+        "hit_at_10": 0.78,
+        "hit_at_20": 0.82,
+        "mrr": 0.5143
+      }
+    },
+    "full|all": {
+      "dev36": {
+        "n": 30,
+        "hit_at_1": 0.6333,
+        "hit_at_3": 0.7,
+        "hit_at_5": 0.7667,
+        "hit_at_10": 0.8333,
+        "hit_at_20": 0.9,
+        "mrr": 0.6998
+      },
+      "gold50": {
+        "n": 50,
+        "hit_at_1": 0.4,
+        "hit_at_3": 0.64,
+        "hit_at_5": 0.74,
+        "hit_at_10": 0.78,
+        "hit_at_20": 0.82,
+        "mrr": 0.5486
+      }
+    }
+  },
+  "abstention_signal": {
+    "dev36": {
+      "positives_named_empty": 0,
+      "n_positive": 30,
+      "negatives_named_empty": 5,
+      "n_negative": 6
+    },
+    "gold50": {
+      "positives_named_empty": 0,
+      "n_positive": 50,
+      "negatives_named_empty": 0,
+      "n_negative": 0
+    },
+    "probes": {
+      "positives_named_empty": 0,
+      "n_positive": 0,
+      "negatives_named_empty": 11,
+      "n_negative": 16
+    }
+  }
+}

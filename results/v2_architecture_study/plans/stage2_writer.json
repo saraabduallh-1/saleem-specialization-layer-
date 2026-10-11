@@ -1,0 +1,66 @@
+[
+ {
+  "pool": "pilot50",
+  "mode": "orig",
+  "k": 5,
+  "decision": "sel_v2",
+  "name": "W|W_def",
+  "writer": "W_def"
+ },
+ {
+  "pool": "pilot50",
+  "mode": "orig",
+  "k": 5,
+  "decision": "sel_v2",
+  "name": "W|W_term",
+  "writer": "W_term"
+ },
+ {
+  "pool": "pilot50",
+  "mode": "orig",
+  "k": 5,
+  "decision": "sel_v2",
+  "name": "W|W_dom",
+  "writer": "W_dom"
+ },
+ {
+  "pool": "pilot50",
+  "mode": "orig",
+  "k": 5,
+  "decision": "sel_v2",
+  "name": "W|W_d3",
+  "writer": "W_d3"
+ },
+ {
+  "pool": "pilot50",
+  "mode": "orig",
+  "k": 5,
+  "decision": "sel_v2",
+  "name": "W|W_fs",
+  "writer": "W_fs"
+ },
+ {
+  "pool": "pilot50",
+  "mode": "orig",
+  "k": 5,
+  "decision": "sel_v2",
+  "name": "W|W_term+chk",
+  "writer": "W_term+chk"
+ },
+ {
+  "pool": "pilot50",
+  "mode": "orig",
+  "k": 5,
+  "decision": "sel_v2",
+  "name": "W|W_fs+chk",
+  "writer": "W_fs+chk"
+ },
+ {
+  "pool": "pilot50",
+  "mode": "orig",
+  "k": 5,
+  "decision": "joint",
+  "name": "JOINT",
+  "writer": null
+ }
+]
