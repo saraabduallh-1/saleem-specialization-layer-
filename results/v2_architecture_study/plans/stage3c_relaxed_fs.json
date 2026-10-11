@@ -1,0 +1,12 @@
+[
+ {
+  "name": "R_full_K10_gate_agreeRelaxed_Wfs+chk",
+  "pool": "full",
+  "mode": "orig+en",
+  "k": 10,
+  "decision": "sel_v2",
+  "gate": true,
+  "agree": "relaxed",
+  "writer": "W_fs+chk"
+ }
+]

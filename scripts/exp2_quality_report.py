@@ -20,7 +20,9 @@ D = ROOT / "results/v2_architecture_study"
 def main():
     merged = load_json(D / "annotation/merged_labels.json")["labels_by_config"]
     files = {"exp_final_end_to_end.json": load_json(D / "exp_final_end_to_end.json"),
-             "exp_w_writer.json": load_json(D / "exp_w_writer.json")}
+             "exp_w_writer.json": load_json(D / "exp_w_writer.json"),
+             "exp_final_end_to_end_relaxed.json": load_json(D / "exp_final_end_to_end_relaxed.json"),
+             "exp_final_end_to_end_relaxed_fs.json": load_json(D / "exp_final_end_to_end_relaxed_fs.json")}
     rows_by_cfg = {}
     for f in files.values():
         for name, c in f["configs"].items():

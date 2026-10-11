@@ -173,6 +173,24 @@ def verify(call, text, sel):
     return ok, raw
 
 
+def _expand(name: str) -> str:
+    return " ".join("artificial intelligence" if w == "ai" else w for w in name.split())
+
+
+def relaxed_agree(siwar_en: set, named_en: set) -> bool:
+    """Exact match after expanding 'AI', or the Siwar English name is the head
+    (final tokens) of a named concept, i.e. the named concept is a modified
+    instance of the Siwar concept ("probabilistic policy" -> "policy")."""
+    S = {_expand(x) for x in siwar_en}
+    for n in (_expand(x) for x in named_en):
+        nt = n.split()
+        for s_ in S:
+            st = s_.split()
+            if st and nt[-len(st):] == st:
+                return True
+    return False
+
+
 def domain_block(kind):
     d = next(x for x in load_json(DOMAIN)["domains"] if x["domain_id"] == "artificial_intelligence")
     if kind == "label":
@@ -318,7 +336,11 @@ def run_config(cfg, items, retrievers, call, namings):
                 # deterministic agreement: the selected entry's Siwar English name must match
                 # one of the concepts named independently from the text alone
                 named_en = {en_norm(c) for c in namings.get(x["text"], {}).get("concepts_en", [])}
-                dmeta["agreement"] = bool(en_names.get(pool.resolve(sel["id"]), set()) & named_en)
+                siwar_en = en_names.get(pool.resolve(sel["id"]), set())
+                if cfg.get("agree") == "relaxed":
+                    dmeta["agreement"] = relaxed_agree(siwar_en, named_en)
+                else:
+                    dmeta["agreement"] = bool(siwar_en & named_en)
                 if not dmeta["agreement"]:
                     dmeta["rejected_term"] = sel["term"]
                     sel = None

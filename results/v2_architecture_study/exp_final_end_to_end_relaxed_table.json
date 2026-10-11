@@ -1,0 +1,36 @@
+{
+  "R_full_K10_gate_agreeRelaxed_Wterm+chk": {
+    "dev36": {
+      "avail": 26,
+      "correct": 22,
+      "wrong": 1,
+      "none": 7,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 23,
+      "wrong": 9,
+      "none": 18,
+      "n": 50
+    },
+    "neg_false_spec": "1/22"
+  },
+  "R_full_K10_gate_agreeRelaxed_Wterm+chk+gate": {
+    "dev36": {
+      "avail": 26,
+      "correct": 22,
+      "wrong": 1,
+      "none": 7,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 23,
+      "wrong": 9,
+      "none": 18,
+      "n": 50
+    },
+    "neg_false_spec": "1/22"
+  }
+}

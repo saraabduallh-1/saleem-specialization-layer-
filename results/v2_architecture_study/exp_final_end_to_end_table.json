@@ -1,0 +1,138 @@
+{
+  "BASE_qwen_only": {
+    "dev36": {
+      "avail": 5,
+      "correct": 0,
+      "wrong": 0,
+      "none": 30,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 8,
+      "correct": 0,
+      "wrong": 0,
+      "none": 50,
+      "n": 50
+    },
+    "neg_false_spec": "0/22"
+  },
+  "BASE_qwen_only+gate": {
+    "dev36": {
+      "avail": 5,
+      "correct": 0,
+      "wrong": 0,
+      "none": 30,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 8,
+      "correct": 0,
+      "wrong": 0,
+      "none": 50,
+      "n": 50
+    },
+    "neg_false_spec": "0/22"
+  },
+  "R_full_K10_gate_agree_Wterm": {
+    "dev36": {
+      "avail": 26,
+      "correct": 19,
+      "wrong": 1,
+      "none": 10,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 21,
+      "wrong": 9,
+      "none": 20,
+      "n": 50
+    },
+    "neg_false_spec": "1/22"
+  },
+  "R_full_K10_gate_agree_Wterm+gate": {
+    "dev36": {
+      "avail": 26,
+      "correct": 19,
+      "wrong": 1,
+      "none": 10,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 21,
+      "wrong": 9,
+      "none": 20,
+      "n": 50
+    },
+    "neg_false_spec": "1/22"
+  },
+  "R_full_K10_gate_agree_Wterm+chk": {
+    "dev36": {
+      "avail": 26,
+      "correct": 19,
+      "wrong": 1,
+      "none": 10,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 21,
+      "wrong": 9,
+      "none": 20,
+      "n": 50
+    },
+    "neg_false_spec": "1/22"
+  },
+  "R_full_K10_gate_agree_Wterm+chk+gate": {
+    "dev36": {
+      "avail": 26,
+      "correct": 19,
+      "wrong": 1,
+      "none": 10,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 21,
+      "wrong": 9,
+      "none": 20,
+      "n": 50
+    },
+    "neg_false_spec": "1/22"
+  },
+  "R_full_K10_gate_noagree_Wterm+chk": {
+    "dev36": {
+      "avail": 26,
+      "correct": 24,
+      "wrong": 6,
+      "none": 0,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 27,
+      "wrong": 23,
+      "none": 0,
+      "n": 50
+    },
+    "neg_false_spec": "3/22"
+  },
+  "R_full_K10_gate_noagree_Wterm+chk+gate": {
+    "dev36": {
+      "avail": 26,
+      "correct": 24,
+      "wrong": 6,
+      "none": 0,
+      "n": 30
+    },
+    "gold50": {
+      "avail": 39,
+      "correct": 27,
+      "wrong": 23,
+      "none": 0,
+      "n": 50
+    },
+    "neg_false_spec": "3/22"
+  }
+}
