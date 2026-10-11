@@ -1,0 +1,26 @@
+{
+  "experiment": "E8 source-grounded positive pilot (interim; not the formal held-out test)",
+  "code_commit": "4a1278ee834b07f9a46ce06e968bf17d7853220c",
+  "dataset": "evaluation/heldout_v1/source_grounded_draft/heldout_source_grounded_balanced_100_v1.json",
+  "dataset_sha256": "0ee19f4516df767ed2ff9bfbaf9e4cf41a5814f28724ce05e7e17d754a529151",
+  "model": "Qwen/Qwen3.5-4B",
+  "temperature": 0.0,
+  "enable_thinking": false,
+  "max_tokens": {
+    "qu": 300,
+    "decision": 60,
+    "rerank": 200,
+    "s2": 150
+  },
+  "retriever": "intfloat/multilingual-e5-large",
+  "prompt_sha256_16": {
+    "query_understanding": "ad00634d4db30221",
+    "joint_decision": "1da3dfabf85751ec",
+    "selector": "06fbf9f56f5d913b",
+    "listwise_rerank": "f1fd066fc5f84c70",
+    "s2_contrastive": "07431f335d144b16"
+  },
+  "s1_s2_implementation_commit": "3490f269ac954eef2daed2990ecf2b9fcc1559f5",
+  "scoring": "strict against unit_id; potential_acceptable_alternative = wrong pick among gold's 10 nearest units by dense_unit cosine (heuristic flag, never counted as correct)",
+  "false_specialization": "NOT reported: the pilot contains positives only"
+}
