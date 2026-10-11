@@ -13,13 +13,33 @@ must not give the answer away.
 
 Each item is one short text (1–3 sentences, **8–45 words**) plus a label.
 
+## 1A. Authoring method (Amendment A3)
+
+Items are **source-grounded, LLM-drafted, human-validated**:
+
+1. The target comes from `sampled_terms.json`.
+2. The meaning of each item is grounded, where reasonably possible, in an **independent
+   authoritative technical or scientific source** (official documentation, standards, textbooks,
+   peer-reviewed papers). Record it in the item (`semantic_source`: organisation, title, URL).
+3. The Arabic text may be **drafted or paraphrased with an LLM**. Record this in the item
+   (`authoring_method`). It must be a new paraphrase: never copy the source.
+4. Vary the writing context deliberately: formal technical/report writing; developer questions and
+   issues; social / Saudi conversational technical writing; product, support and workplace writing.
+   Record it in `style_profile`.
+5. Public human writing (Reddit, GitHub Issues, Stack Overflow, forums, …) may be used **only as a
+   style reference** (`style_reference`), never as the semantic source.
+6. Every item, and its label, must be validated by humans (ANNOTATION_GUIDE.md) before the set can be
+   frozen. LLM drafting must never be hidden.
+
 ## 2. Ground rules (apply to every item)
 
 1. **Never look at system outputs**, experiment results, or anything in the `results/` folder.
-   Use only: this guide, `sampled_terms.json` (your assignments), and
-   `dictionary_reference.csv` (the dictionary, for checking).
+   Use only: this guide, `sampled_terms.json` (your assignments), `dictionary_reference.csv`
+   (the dictionary, for checking), independent authoritative sources for meaning, and public human
+   writing for style only (§1A).
 2. **Write naturally.** Imagine a student, engineer, analyst, or journalist writing or speaking
-   about their work. Do not imitate dictionary definitions.
+   about their work. Do not imitate dictionary definitions. If an LLM drafts the text, the human
+   writer is responsible for every rule in this guide.
 3. **For positive items, never write the term itself**, its aliases, its abbreviation, or its
    English equivalent — not even in English inside an Arabic sentence. Describe the concept; do not
    name it. (The validation script rejects items that contain them.)
@@ -115,3 +135,5 @@ write another. Label: `NONE`; `source_unit_ids` = `[]`.
 ## 6. Hand-in
 Fill `items.json` following `items_template.json` (item ids: `PP-`, `NN-`, `AM-`, `EN-`, `VN-`
 + three digits). Leave `annotator_*` fields for the annotator. Hand in `skip_log.csv` too.
+Also include, per item, the provenance fields of §1A: `semantic_source`, `style_profile`,
+`style_reference` (if any) and `authoring_method`.

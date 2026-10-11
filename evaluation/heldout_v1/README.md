@@ -1,8 +1,10 @@
 # heldout_v1 — held-out evaluation framework
 
-Status: **framework only — no evaluation texts exist yet.** Texts and labels are written and reviewed
-by human domain experts. The specialization system must not be run on any item before the labels
-are frozen.
+Status: **framework only — no formal evaluation items exist yet.** Items are source-grounded,
+LLM-drafted and human-validated (Amendment A3, `DEVIATIONS.md` D3); labels are validated by human
+domain experts. The specialization system must not be run on any formal item before the labels are
+frozen. `source_grounded_draft/` holds a 100-item positive draft used only as the interim pilot E8;
+those items are excluded from the formal test (D3).
 
 | File | Purpose |
 |---|---|

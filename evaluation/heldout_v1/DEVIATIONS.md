@@ -34,3 +34,37 @@
   correct entry available to the decision in 69 vs 68 of 80 positives), whereas for P-full the extra
   reranker call was not justified (49 / 30 vs 48 / 31 for the one-call design, at about one third of
   the decision latency).
+
+## D3 — 2026-10-11 — Amendment A3: source-grounded, LLM-drafted, human-validated authoring; interim pilot E8
+
+- **When:** before the formal held-out set is frozen (`items.json` absent; no labels frozen; no split).
+- **Approved by:** the project owner.
+- **What changed:**
+  - Authoring method (§2, AUTHORING_GUIDE / ANNOTATION_GUIDE in English and Arabic): no longer
+    "human-authored from scratch" but **source-grounded, LLM-drafted, human-validated**. Targets still
+    come from `sampled_terms.json`; meaning is grounded in an independent authoritative source where
+    reasonably possible; the Arabic text may be LLM-drafted/paraphrased, must not copy the source and
+    must not leak the headword/alias/abbreviation/English equivalent; writing contexts vary (formal
+    technical/report, developer questions/issues, social/Saudi, product/support); public human writing
+    is a style reference only; LLM drafting and provenance are recorded per item; gold labels still
+    need human validation before freezing.
+  - §8: a 100-item source-grounded positive draft (`source_grounded_draft/`) is run once as an
+    **interim pilot (E8)** before freezing. These items are thereafter **excluded from the formal
+    frozen test** unless a further amendment decides otherwise, because §8 forbids running the system
+    on formal held-out items before freezing.
+- **What did not change:** S1, S2 (§4A), the registered P-full and P-def pipelines (§3, D2), metrics,
+  success criteria (§7), split procedure, sampled pools, and E1–E7.
+- **Observations about the draft recorded here for transparency:**
+  - All 100 targets come from the `plain_positive` primary pool (none from the excluded development
+    terms; independently re-checked: valid ids, no duplicates, no headword/alias/abbreviation/English
+    leakage, all with a source URL).
+  - The 100 were **selected from the 120 primary entries** "avoiding niche/unclear entries", not taken
+    in listed order with logged skip reasons (AUTHORING_GUIDE §3). The 20 unused entries include some
+    niche ones but also ordinary concepts (e.g. تعرُّف على الأنماط, نموذج فضاء الحالة, واحد مقابل الكل),
+    so the pilot may over-represent well-known concepts and give optimistic results.
+  - The draft contains positive items only; no new negatives, near-neighbour or ambiguous items, and no
+    independent blind gold annotation yet. E8 therefore cannot report a false-specialization rate and
+    cannot assess §7.
+- **Consequence for the formal set:** the formal plain-positive items must come from the remaining
+  `plain_positive` entries (20 primary + 60 reserve) in listed order with logged skips, or from a new
+  documented sample if more are needed.

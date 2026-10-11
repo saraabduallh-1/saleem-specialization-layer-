@@ -37,6 +37,9 @@ Compare your pass-1 label with the author's. Set:
 - Ambiguous item does not genuinely fit both entries.
 - Everyday negative admits an AI reading; vague negative identifies a specific concept.
 - Register tag or word count (8–45) wrong; unnatural Arabic.
+- (A3) The text is not faithful to the meaning in its cited `semantic_source`, or copies the source
+  verbatim, or provenance fields (`semantic_source`, `authoring_method`, `style_profile`) are missing.
+  LLM-drafted texts are allowed and must be validated with the same care as human-written ones.
 
 ## 3. Agreement to report (computed after pass 1, before reconciliation)
 - Cohen's κ on TERM vs NONE.

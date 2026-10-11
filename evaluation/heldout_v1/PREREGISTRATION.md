@@ -12,7 +12,16 @@ terminology and keep false specialization low, on texts never used in developmen
 loss of coverage?
 
 ## 2. Data
-- `heldout_v1`: about 290 items written by human domain experts (see AUTHORING_GUIDE.md),
+- **Authoring method (amended, A3 / D3):** items are **source-grounded, LLM-drafted,
+  human-validated**. Targets come from `sampled_terms.json`; each item's meaning is grounded in an
+  independent authoritative technical/scientific source where reasonably possible (provenance kept
+  in the item); the Arabic text may be drafted/paraphrased by an LLM, must not copy the source and
+  must not leak the target headword, alias, abbreviation or English equivalent; writing contexts vary
+  (formal technical/report, developer questions/issues, social/Saudi conversational technical,
+  product/support/workplace). Public human writing (Reddit, GitHub Issues, Stack Overflow, forums)
+  may serve only as a style reference, not as the semantic source. LLM drafting is disclosed per item.
+  Gold labels still require the human validation in ANNOTATION_GUIDE.md before the set is frozen.
+- `heldout_v1`: about 290 items drafted as above (see AUTHORING_GUIDE.md),
   second-annotated and adjudicated (see ANNOTATION_GUIDE.md):
   120 plain positives, 40 near-neighbour positives (20 pairs), 30 ambiguous positives
   (two acceptable entries), 50 everyday-sense negatives, 50 vague technical negatives.
@@ -164,3 +173,8 @@ Interpretation fixed in advance (applied to each mechanism):
 5. Report everything, including failures, drops, skips and deviations.
 
 The specialization system must not be run on any held-out item before step 1 is complete.
+
+**Interim pilot (A3 / D3).** The 100 source-grounded positive drafts in `source_grounded_draft/`
+are run once as an interim pilot (E8) before step 1. Because the system has then been run on them,
+these 100 items are **pilot items and are excluded from the formal frozen test** unless a further
+recorded amendment decides otherwise. E8 is not a test of the success criteria in §7.

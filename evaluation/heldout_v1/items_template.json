@@ -1,21 +1,37 @@
 {
   "dataset": "heldout_v1",
   "schema_version": "1.0",
-  "note": "Copy this file to items.json and replace the placeholder entries. One object per item. See AUTHORING_GUIDE.md and ANNOTATION_GUIDE.md. Placeholders below are NOT evaluation items.",
+  "note": "Copy this file to items.json and replace the placeholder entries. One object per item. See AUTHORING_GUIDE.md and ANNOTATION_GUIDE.md. Placeholders below are NOT evaluation items. Provenance fields (semantic_source, style_profile, style_reference, authoring_method) are required by Amendment A3.",
   "items": [
     {
       "item_id": "PP-001",
       "item_type": "plain_positive",
       "register": "msa",
       "text": "<<النص يكتبه الكاتب هنا>>",
-      "source_unit_ids": ["<<unit_id from sampled_terms.json>>"],
+      "source_unit_ids": [
+        "<<unit_id from sampled_terms.json>>"
+      ],
       "label": "TERM",
-      "acceptable_unit_ids": ["<<unit_id>>"],
+      "acceptable_unit_ids": [
+        "<<unit_id>>"
+      ],
       "preferred_unit_id": "<<unit_id>>",
       "author_id": "W1",
       "annotator_id": "A1",
       "annotator_agreed": true,
       "adjudicated": false,
+      "style_profile": "<<formal_technical | report_technical | developer_question | developer_issue | social_tech | social_saudi | product_support>>",
+      "semantic_source": {
+        "org": "<<organisation>>",
+        "title": "<<title>>",
+        "url": "<<url>>"
+      },
+      "style_reference": {
+        "platform": "<<optional>>",
+        "url": "<<optional>>",
+        "note": "<<optional>>"
+      },
+      "authoring_method": "<<human-written | source-grounded LLM draft>>",
       "notes": ""
     },
     {
@@ -23,7 +39,9 @@
       "item_type": "everyday_negative",
       "register": "saudi",
       "text": "<<نص يستعمل الكلمة بمعناها العام>>",
-      "source_unit_ids": ["<<unit_id of the headword used>>"],
+      "source_unit_ids": [
+        "<<unit_id of the headword used>>"
+      ],
       "label": "NONE",
       "acceptable_unit_ids": [],
       "preferred_unit_id": null,
@@ -31,6 +49,18 @@
       "annotator_id": "A1",
       "annotator_agreed": true,
       "adjudicated": false,
+      "style_profile": "<<formal_technical | report_technical | developer_question | developer_issue | social_tech | social_saudi | product_support>>",
+      "semantic_source": {
+        "org": "<<organisation>>",
+        "title": "<<title>>",
+        "url": "<<url>>"
+      },
+      "style_reference": {
+        "platform": "<<optional>>",
+        "url": "<<optional>>",
+        "note": "<<optional>>"
+      },
+      "authoring_method": "<<human-written | source-grounded LLM draft>>",
       "notes": ""
     }
   ]
