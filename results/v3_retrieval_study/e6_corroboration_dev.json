@@ -1,0 +1,3266 @@
+{
+  "note": "Development diagnostic on dev36/gold50/probes; decisions reused from E5; not used to choose the held-out k.",
+  "profiles": {
+    "P-full": {
+      "system": "C",
+      "results": {
+        "no_rule": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 21,
+            "wrong": 9,
+            "none": 0
+          },
+          "gold50": {
+            "n": 50,
+            "available": 46,
+            "correct": 27,
+            "wrong": 22,
+            "none": 1
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 48,
+            "wrong": 31,
+            "none": 1,
+            "accepted_precision_pos": 0.608,
+            "accepted_precision_incl_neg": 0.593,
+            "coverage": 0.6,
+            "available": 76,
+            "false_specialization": 2,
+            "n_neg": 22,
+            "fs_rate": 0.091,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 48,
+            "decision_failure_wrong": 27,
+            "gate_true_reject": 20,
+            "false_specialization": 2,
+            "retrieval_failure_wrong": 4,
+            "gate_false_reject": 1
+          }
+        },
+        "k=1": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 6,
+            "wrong": 1,
+            "none": 23
+          },
+          "gold50": {
+            "n": 50,
+            "available": 46,
+            "correct": 4,
+            "wrong": 3,
+            "none": 43
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 10,
+            "wrong": 4,
+            "none": 66,
+            "accepted_precision_pos": 0.714,
+            "accepted_precision_incl_neg": 0.714,
+            "coverage": 0.125,
+            "available": 76,
+            "false_specialization": 0,
+            "n_neg": 22,
+            "fs_rate": 0.0,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 10,
+            "corroboration_false_reject": 38,
+            "corroboration_true_reject": 29,
+            "decision_failure_wrong": 4,
+            "gate_true_reject": 20,
+            "gate_false_reject": 1
+          }
+        },
+        "k=3": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 11,
+            "wrong": 2,
+            "none": 17
+          },
+          "gold50": {
+            "n": 50,
+            "available": 46,
+            "correct": 11,
+            "wrong": 8,
+            "none": 31
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 22,
+            "wrong": 10,
+            "none": 48,
+            "accepted_precision_pos": 0.688,
+            "accepted_precision_incl_neg": 0.688,
+            "coverage": 0.275,
+            "available": 76,
+            "false_specialization": 0,
+            "n_neg": 22,
+            "fs_rate": 0.0,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 22,
+            "corroboration_false_reject": 26,
+            "corroboration_true_reject": 23,
+            "decision_failure_wrong": 9,
+            "gate_true_reject": 20,
+            "gate_false_reject": 1,
+            "retrieval_failure_wrong": 1
+          }
+        },
+        "k=5": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 14,
+            "wrong": 3,
+            "none": 13
+          },
+          "gold50": {
+            "n": 50,
+            "available": 46,
+            "correct": 14,
+            "wrong": 9,
+            "none": 27
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 28,
+            "wrong": 12,
+            "none": 40,
+            "accepted_precision_pos": 0.7,
+            "accepted_precision_incl_neg": 0.7,
+            "coverage": 0.35,
+            "available": 76,
+            "false_specialization": 0,
+            "n_neg": 22,
+            "fs_rate": 0.0,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 28,
+            "corroboration_false_reject": 20,
+            "corroboration_true_reject": 21,
+            "decision_failure_wrong": 11,
+            "gate_true_reject": 20,
+            "gate_false_reject": 1,
+            "retrieval_failure_wrong": 1
+          }
+        },
+        "k=10": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 20,
+            "wrong": 4,
+            "none": 6
+          },
+          "gold50": {
+            "n": 50,
+            "available": 46,
+            "correct": 15,
+            "wrong": 12,
+            "none": 23
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 35,
+            "wrong": 16,
+            "none": 29,
+            "accepted_precision_pos": 0.686,
+            "accepted_precision_incl_neg": 0.686,
+            "coverage": 0.438,
+            "available": 76,
+            "false_specialization": 0,
+            "n_neg": 22,
+            "fs_rate": 0.0,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 35,
+            "corroboration_true_reject": 17,
+            "decision_failure_wrong": 15,
+            "corroboration_false_reject": 13,
+            "gate_true_reject": 20,
+            "gate_false_reject": 1,
+            "retrieval_failure_wrong": 1
+          }
+        }
+      },
+      "per_item": {
+        "F01": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "هلوسة",
+          "selected": "هلوسة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F02": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "فرط التخصيص",
+          "selected": "فرط التخصيص",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 10,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F03": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "وكيل",
+          "selected": "وكيل",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 6,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F04": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "دورة",
+          "selected": "دورة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F05": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "أمر",
+          "selected": "أوامر وصفية",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 40,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F06": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "مُحوِّل",
+          "selected": "انتباه ذاتي (أو طبقة الانتباه الذاتي)",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F07": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "مكافأة",
+          "selected": "تعلُّم تعزيزي",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F08": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "سياسة",
+          "selected": "سياسة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F09": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تدريب",
+          "selected": "تحديث المُعامِلات",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 4,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F10": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعلُّم عميق",
+          "selected": "شبكة عصبية عميقة",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 8,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F11": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعلُّم موجَّه",
+          "selected": "تدريب",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F12": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعلُّم غير موجَّه",
+          "selected": "تعلُّم غير موجَّه",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F13": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "انتشار عكسي",
+          "selected": "انتشار عكسي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F14": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "ذكاء اصطناعي توليدي",
+          "selected": "ذكاء اصطناعي توليدي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F15": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تقسيم النصوص",
+          "selected": "تقطيع",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 21,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F16": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تحليل المشاعر",
+          "selected": "تحليل المشاعر",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 10,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F17": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "ترجمة الآلة",
+          "selected": "ترجمة الآلة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F18": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تنقيب في البيانات",
+          "selected": "تنقيب في البيانات",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F19": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "بيانات ضخمة",
+          "selected": "بيانات ضخمة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F20": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعلُّم الآلة",
+          "selected": "تعلُّم الآلة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F21": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "معالجة اللغات الطبيعية",
+          "selected": "معالجة اللغات الطبيعية",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F22": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "نموذج لغوي كبير",
+          "selected": "نموذج لغوي مُدرَّب سابقًا",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F23": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "شبكة عصبية اصطناعية",
+          "selected": "شبكة عصبية عميقة",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F24": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "توليد مُعَزَّز بالاسترجاع",
+          "selected": "توليد مُعَزَّز بالاسترجاع",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 5,
+            "interp": 3,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F25": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تحليل المُكوِّن الرئيس",
+          "selected": "تحليل المُكوِّن الرئيس",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 5,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F26": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "متوسط الخطأ التربيعي",
+          "selected": "متوسط الخطأ التربيعي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 9,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F27": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "رؤية الحاسب",
+          "selected": "رؤية الحاسب",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 7,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F28": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "دالة الخسارة",
+          "selected": "دالة الخسارة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 7,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F29": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعرُّف على الكيانات المُسمّاة",
+          "selected": "تعرُّف على الكيانات المُسمّاة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F30": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "شبكة عصبية ترشيحية",
+          "selected": "شبكة عصبية ترشيحية",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 4,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "C01": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "حوكمة أمن البيانات",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "C02": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "عزل التنفيذ",
+          "correct": null,
+          "available": null,
+          "technical": true,
+          "view_ranks": {
+            "text": 16,
+            "interp": 5,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "C03": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "جهاز إنترنت الأشياء",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "C04": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "مسؤولية",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "C05": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "تهيئة النماذج",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "C06": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "GOLD_001": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "نموذج",
+          "selected": "استنتاج",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_002": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "وكيل",
+          "selected": "وكيل",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_003": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "هلوسة",
+          "selected": "هلوسة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_004": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "بيئة",
+          "selected": "ذكاء اصطناعي مُجسَّد",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 7,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_005": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "سياسة",
+          "selected": "سياسة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 14,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_006": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "طبقة",
+          "selected": "شبكة عصبية ذات تغذية أمامية",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 3,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_007": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "وزن",
+          "selected": "وزن",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_008": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تحيُّز",
+          "selected": "دالة تنشيط",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 26,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_009": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "مكافأة",
+          "selected": "مكافأة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_010": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "دورة",
+          "selected": "ضبط دقيق",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 9,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_011": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "حُزمة",
+          "selected": "حُزمة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 4,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_012": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "أمر",
+          "selected": "هندسة الأوامر",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 8,
+            "interp": 17,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_013": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "مُحوِّل",
+          "selected": "مُحوِّل",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 17,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_014": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "مُولِّد",
+          "selected": "شبكة توليدية تنافسية",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_015": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "عائد",
+          "selected": "تحليل القرار",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 40,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_016": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "اسم",
+          "selected": "تعلُّم موجَّه",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 15,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_017": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "بث",
+          "selected": "بث",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_018": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تأسيس",
+          "selected": "توليد مُعَزَّز بالاسترجاع",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 3,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_019": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "مواءمة",
+          "selected": "مواءمة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_020": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تدريب",
+          "selected": "تدريب",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 7,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_021": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تجذيع",
+          "selected": "تجذيع",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_022": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعلُّم عميق",
+          "selected": "شبكة عصبية عميقة",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 40,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_023": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعلُّم موجَّه",
+          "selected": "تعلُّم موجَّه",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 33,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_024": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعلُّم غير موجَّه",
+          "selected": "تعلُّم غير موجَّه",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_025": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "فرط التخصيص",
+          "selected": "فرط التخصيص",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 4,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_026": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "دالة تنشيط",
+          "selected": "دالة تنشيط",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_027": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "انتشار عكسي",
+          "selected": "انتشار عكسي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_028": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "ذكاء اصطناعي توليدي",
+          "selected": "نموذج توليدي",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 9,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_029": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تزييف عميق",
+          "selected": "ذكاء اصطناعي توليدي",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 4,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_030": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تقسيم النصوص",
+          "selected": "تقسيم النصوص",
+          "correct": true,
+          "available": true,
+          "technical": false,
+          "view_ranks": null
+        },
+        "GOLD_031": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تحليل المشاعر",
+          "selected": "تحليل المشاعر",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 24,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_032": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "ترجمة الآلة",
+          "selected": "ترجمة الآلة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 4,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_033": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "شجرة القرار",
+          "selected": "شجرة القرار",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 40,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_034": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تنقيب في البيانات",
+          "selected": "تحليلات البيانات الضخمة",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 36,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_035": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "بيانات ضخمة",
+          "selected": "تحليلات البيانات الضخمة",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_036": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "ذكاء اصطناعي",
+          "selected": "نظام إدراكي",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 6,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_037": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعلُّم الآلة",
+          "selected": "تعلُّم موجَّه",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_038": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "معالجة اللغات الطبيعية",
+          "selected": "معالجة اللغات الطبيعية",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_039": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "نموذج لغوي كبير",
+          "selected": "نموذج لغوي مُدرَّب سابقًا",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_040": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "شبكة عصبية اصطناعية",
+          "selected": "شبكة عصبية متعددة الطبقات",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_041": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "شبكة عصبية ترشيحية",
+          "selected": "معالجة الصور",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_042": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "شبكة عصبية تكرارية",
+          "selected": "شبكة عصبية تكرارية",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 41,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_043": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "selected": "وحدة بوابة تكرارية",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_044": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "آلة المُتَّجهات الداعمة",
+          "selected": "آلة المُتَّجهات الداعمة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_045": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعرُّف على الكيانات المُسمّاة",
+          "selected": "توصيف الكيانات",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_046": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "توليد مُعَزَّز بالاسترجاع",
+          "selected": "توليد مُعَزَّز بالاسترجاع",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_047": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تحليل المُكوِّن الرئيس",
+          "selected": "تحليل المُكوِّن الرئيس",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_048": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "متوسط الخطأ التربيعي",
+          "selected": "متوسط الخطأ التربيعي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 17,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_049": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "رؤية الحاسب",
+          "selected": "رؤية الحاسب",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_050": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "دالة الخسارة",
+          "selected": "دالة الخسارة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "P01": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P02": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": "مكافأة",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P03": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": "صمود",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P04": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P05": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": "تأخير",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P06": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": "نموذج مُدرّب",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P07": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": "تحيُّز داخل المجموعة",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P08": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": "إدارة البيانات الرئيسة",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P09": {
+          "set": "probes",
+          "kind": "human_activity",
+          "expected": null,
+          "selected": "ترجمة الآلة",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P10": {
+          "set": "probes",
+          "kind": "human_activity",
+          "expected": null,
+          "selected": "تقطيع",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P11": {
+          "set": "probes",
+          "kind": "human_activity",
+          "expected": null,
+          "selected": "استخلاص البيانات",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P12": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "نموذج مُدرّب",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P13": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "بيانات مُخرَجة (أو مخرجات)",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P14": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "إعادة تدريب",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P15": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "مراجعة ذاتية",
+          "correct": null,
+          "available": null,
+          "technical": true,
+          "view_ranks": {
+            "text": 45,
+            "interp": 8,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "P16": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "جمع البيانات",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        }
+      }
+    },
+    "P-def": {
+      "system": "B",
+      "results": {
+        "no_rule": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 25,
+            "wrong": 5,
+            "none": 0
+          },
+          "gold50": {
+            "n": 50,
+            "available": 39,
+            "correct": 26,
+            "wrong": 23,
+            "none": 1
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 51,
+            "wrong": 28,
+            "none": 1,
+            "accepted_precision_pos": 0.646,
+            "accepted_precision_incl_neg": 0.63,
+            "coverage": 0.637,
+            "available": 69,
+            "false_specialization": 2,
+            "n_neg": 22,
+            "fs_rate": 0.091,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 51,
+            "decision_failure_wrong": 17,
+            "gate_true_reject": 20,
+            "false_specialization": 2,
+            "retrieval_failure_wrong": 11,
+            "gate_false_reject": 1
+          }
+        },
+        "k=1": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 6,
+            "wrong": 1,
+            "none": 23
+          },
+          "gold50": {
+            "n": 50,
+            "available": 39,
+            "correct": 5,
+            "wrong": 3,
+            "none": 42
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 11,
+            "wrong": 4,
+            "none": 65,
+            "accepted_precision_pos": 0.733,
+            "accepted_precision_incl_neg": 0.733,
+            "coverage": 0.138,
+            "available": 69,
+            "false_specialization": 0,
+            "n_neg": 22,
+            "fs_rate": 0.0,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 11,
+            "corroboration_false_reject": 40,
+            "corroboration_true_reject": 26,
+            "decision_failure_wrong": 3,
+            "gate_true_reject": 20,
+            "gate_false_reject": 1,
+            "retrieval_failure_wrong": 1
+          }
+        },
+        "k=3": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 14,
+            "wrong": 3,
+            "none": 13
+          },
+          "gold50": {
+            "n": 50,
+            "available": 39,
+            "correct": 11,
+            "wrong": 8,
+            "none": 31
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 25,
+            "wrong": 11,
+            "none": 44,
+            "accepted_precision_pos": 0.694,
+            "accepted_precision_incl_neg": 0.694,
+            "coverage": 0.312,
+            "available": 69,
+            "false_specialization": 0,
+            "n_neg": 22,
+            "fs_rate": 0.0,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 25,
+            "corroboration_false_reject": 26,
+            "decision_failure_wrong": 8,
+            "corroboration_true_reject": 19,
+            "gate_true_reject": 20,
+            "retrieval_failure_wrong": 3,
+            "gate_false_reject": 1
+          }
+        },
+        "k=5": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 18,
+            "wrong": 4,
+            "none": 8
+          },
+          "gold50": {
+            "n": 50,
+            "available": 39,
+            "correct": 14,
+            "wrong": 9,
+            "none": 27
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 32,
+            "wrong": 13,
+            "none": 35,
+            "accepted_precision_pos": 0.711,
+            "accepted_precision_incl_neg": 0.711,
+            "coverage": 0.4,
+            "available": 69,
+            "false_specialization": 0,
+            "n_neg": 22,
+            "fs_rate": 0.0,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 32,
+            "corroboration_false_reject": 19,
+            "decision_failure_wrong": 10,
+            "corroboration_true_reject": 17,
+            "gate_true_reject": 20,
+            "retrieval_failure_wrong": 3,
+            "gate_false_reject": 1
+          }
+        },
+        "k=10": {
+          "dev36": {
+            "n": 30,
+            "available": 30,
+            "correct": 21,
+            "wrong": 4,
+            "none": 5
+          },
+          "gold50": {
+            "n": 50,
+            "available": 39,
+            "correct": 15,
+            "wrong": 14,
+            "none": 21
+          },
+          "pooled": {
+            "n_pos": 80,
+            "correct": 36,
+            "wrong": 18,
+            "none": 26,
+            "accepted_precision_pos": 0.667,
+            "accepted_precision_incl_neg": 0.667,
+            "coverage": 0.45,
+            "available": 69,
+            "false_specialization": 0,
+            "n_neg": 22,
+            "fs_rate": 0.0,
+            "gate_failures_pos": 1,
+            "gate_failures_neg": 2
+          },
+          "categories": {
+            "correct": 36,
+            "decision_failure_wrong": 12,
+            "corroboration_false_reject": 15,
+            "corroboration_true_reject": 12,
+            "gate_true_reject": 20,
+            "retrieval_failure_wrong": 6,
+            "gate_false_reject": 1
+          }
+        }
+      },
+      "per_item": {
+        "F01": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "هلوسة",
+          "selected": "هلوسة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F02": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "فرط التخصيص",
+          "selected": "فرط التخصيص",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 10,
+            "interp": 9,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F03": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "وكيل",
+          "selected": "وكيل ذكي",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F04": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "دورة",
+          "selected": "دورة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F05": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "أمر",
+          "selected": "أمر",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F06": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "مُحوِّل",
+          "selected": "مُحوِّل",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 5,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F07": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "مكافأة",
+          "selected": "مكافأة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F08": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "سياسة",
+          "selected": "سياسة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F09": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تدريب",
+          "selected": "تدريب",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 16,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F10": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعلُّم عميق",
+          "selected": "تعلُّم عميق",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F11": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعلُّم موجَّه",
+          "selected": "تعلُّم موجَّه",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 4,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F12": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعلُّم غير موجَّه",
+          "selected": "تعلُّم غير موجَّه",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F13": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "انتشار عكسي",
+          "selected": "انتشار عكسي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F14": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "ذكاء اصطناعي توليدي",
+          "selected": "ذكاء اصطناعي توليدي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F15": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تقسيم النصوص",
+          "selected": "تقطيع",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 21,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F16": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تحليل المشاعر",
+          "selected": "تحليل المشاعر",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 10,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F17": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "ترجمة الآلة",
+          "selected": "ترجمة الآلة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F18": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تنقيب في البيانات",
+          "selected": "تنقيب في البيانات",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F19": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "بيانات ضخمة",
+          "selected": "بيانات ضخمة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F20": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعلُّم الآلة",
+          "selected": "تعلُّم الآلة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F21": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "معالجة اللغات الطبيعية",
+          "selected": "معالجة اللغات الطبيعية",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F22": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "نموذج لغوي كبير",
+          "selected": "نموذج لغوي مُدرَّب سابقًا",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F23": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "شبكة عصبية اصطناعية",
+          "selected": "شبكة الاعتقاد العميق",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 5,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F24": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "توليد مُعَزَّز بالاسترجاع",
+          "selected": "توليد مُعَزَّز بالاسترجاع",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 5,
+            "interp": 3,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F25": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تحليل المُكوِّن الرئيس",
+          "selected": "تقليص الأبعاد",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F26": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "متوسط الخطأ التربيعي",
+          "selected": "متوسط الخطأ التربيعي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 9,
+            "interp": 20,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F27": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "رؤية الحاسب",
+          "selected": "رؤية الحاسب",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 7,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F28": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "دالة الخسارة",
+          "selected": "دالة الخسارة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 5,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F29": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "تعرُّف على الكيانات المُسمّاة",
+          "selected": "تعرُّف على الكيانات المُسمّاة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "F30": {
+          "set": "dev36",
+          "kind": "positive",
+          "expected": "شبكة عصبية ترشيحية",
+          "selected": "شبكة عصبية ترشيحية",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 4,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "C01": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "حوكمة أمن البيانات",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "C02": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "عزل التنفيذ",
+          "correct": null,
+          "available": null,
+          "technical": true,
+          "view_ranks": {
+            "text": 16,
+            "interp": 5,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "C03": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "نموذج لغوي صغير",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "C04": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "حوكمة الوكيل",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "C05": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": "ترحيل البيانات",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "C06": {
+          "set": "dev36",
+          "kind": "contrast_control",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "GOLD_001": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "نموذج",
+          "selected": "نموذج مُدرّب",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 22,
+            "interp": 32,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_002": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "وكيل",
+          "selected": "وكيل",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_003": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "هلوسة",
+          "selected": "هلوسة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_004": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "بيئة",
+          "selected": "أخذ عيِّنات تومبسون",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 17,
+            "interp": 14,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_005": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "سياسة",
+          "selected": "سياسة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 14,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_006": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "طبقة",
+          "selected": "شبكة عصبية متعددة الطبقات",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 7,
+            "interp": 4,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_007": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "وزن",
+          "selected": "وزن",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_008": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تحيُّز",
+          "selected": "خلية عصبية",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 47,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_009": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "مكافأة",
+          "selected": "مكافأة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_010": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "دورة",
+          "selected": "دورة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 33,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_011": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "حُزمة",
+          "selected": "تكرار",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 8,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_012": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "أمر",
+          "selected": "أوامر صلبة",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_013": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "مُحوِّل",
+          "selected": "انتباه ذاتي (أو طبقة الانتباه الذاتي)",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_014": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "مُولِّد",
+          "selected": "شبكة توليدية تنافسية",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 5,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_015": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "عائد",
+          "selected": "معادلة بلمان",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 33,
+            "interp": 17,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_016": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "اسم",
+          "selected": "تعلُّم موجَّه",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 15,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_017": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "بث",
+          "selected": "بث",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_018": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تأسيس",
+          "selected": "توليد مُعَزَّز بالاسترجاع",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_019": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "مواءمة",
+          "selected": "مواءمة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 28,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_020": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تدريب",
+          "selected": "تدريب",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 7,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_021": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تجذيع",
+          "selected": "تجذيع",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 4,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_022": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعلُّم عميق",
+          "selected": "شبكة عصبية عميقة",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 40,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_023": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعلُّم موجَّه",
+          "selected": "تعلُّم موجَّه",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 33,
+            "interp": 7,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_024": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعلُّم غير موجَّه",
+          "selected": "تعلُّم غير موجَّه",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_025": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "فرط التخصيص",
+          "selected": "فرط التخصيص",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 4,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_026": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "دالة تنشيط",
+          "selected": "دالة تنشيط",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_027": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "انتشار عكسي",
+          "selected": "انتشار عكسي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_028": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "ذكاء اصطناعي توليدي",
+          "selected": "ذكاء اصطناعي توليدي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_029": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تزييف عميق",
+          "selected": "تزييف عميق",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 14,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_030": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تقسيم النصوص",
+          "selected": "تقسيم النصوص",
+          "correct": true,
+          "available": true,
+          "technical": false,
+          "view_ranks": null
+        },
+        "GOLD_031": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تحليل المشاعر",
+          "selected": "تحليل المشاعر",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 24,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_032": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "ترجمة الآلة",
+          "selected": "ترجمة الآلة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 4,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_033": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "شجرة القرار",
+          "selected": "مسار عمل الوكيل",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 11,
+            "interp": 1000000000,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_034": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تنقيب في البيانات",
+          "selected": "تنقيب في البيانات",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1000000000,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_035": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "بيانات ضخمة",
+          "selected": "بيانات ضخمة",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_036": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "ذكاء اصطناعي",
+          "selected": "نظام إدراكي",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 6,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_037": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعلُّم الآلة",
+          "selected": "نظام تنبؤي",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 7,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_038": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "معالجة اللغات الطبيعية",
+          "selected": "معالجة اللغات الطبيعية",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_039": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "نموذج لغوي كبير",
+          "selected": "نموذج لغوي مُدرَّب سابقًا",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_040": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "شبكة عصبية اصطناعية",
+          "selected": "تحديث المُعامِلات",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1000000000,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_041": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "شبكة عصبية ترشيحية",
+          "selected": "معالجة الصور",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_042": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "شبكة عصبية تكرارية",
+          "selected": "شبكة عصبية تكرارية",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 41,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_043": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "ذاكرة قصيرة المدى مُطَوَّلة",
+          "selected": "وحدة بوابة تكرارية",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_044": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "آلة المُتَّجهات الداعمة",
+          "selected": "حدود القرار",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 3,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_045": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تعرُّف على الكيانات المُسمّاة",
+          "selected": "توصيف الكيانات",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 2,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_046": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "توليد مُعَزَّز بالاسترجاع",
+          "selected": "توليد مُعَزَّز بالاسترجاع",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_047": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "تحليل المُكوِّن الرئيس",
+          "selected": "تضمين",
+          "correct": false,
+          "available": false,
+          "technical": true,
+          "view_ranks": {
+            "text": 8,
+            "interp": 5,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_048": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "متوسط الخطأ التربيعي",
+          "selected": "متوسط الخطأ التربيعي",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 16,
+            "interp": 21,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_049": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "رؤية الحاسب",
+          "selected": "رؤية الحاسب",
+          "correct": true,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1000000000,
+            "interp": 2,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "GOLD_050": {
+          "set": "gold50",
+          "kind": "positive",
+          "expected": "دالة الخسارة",
+          "selected": "خطأ التقريب",
+          "correct": false,
+          "available": true,
+          "technical": true,
+          "view_ranks": {
+            "text": 1,
+            "interp": 1,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "P01": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P02": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": "مكافأة",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P03": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": "صمود",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P04": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P05": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P06": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P07": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P08": {
+          "set": "probes",
+          "kind": "everyday_sense",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P09": {
+          "set": "probes",
+          "kind": "human_activity",
+          "expected": null,
+          "selected": null,
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P10": {
+          "set": "probes",
+          "kind": "human_activity",
+          "expected": null,
+          "selected": "تقطيع دلالي",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P11": {
+          "set": "probes",
+          "kind": "human_activity",
+          "expected": null,
+          "selected": "تحليلات وصفية",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P12": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "نموذج مُدرّب",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P13": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "قيمة شاذة",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P14": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "انحراف النموذج",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        },
+        "P15": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "مراجعة ذاتية",
+          "correct": null,
+          "available": null,
+          "technical": true,
+          "view_ranks": {
+            "text": 45,
+            "interp": 8,
+            "text_active": true,
+            "interp_active": true
+          }
+        },
+        "P16": {
+          "set": "probes",
+          "kind": "underspecified_ai",
+          "expected": null,
+          "selected": "جمع البيانات",
+          "correct": null,
+          "available": null,
+          "technical": false,
+          "view_ranks": null
+        }
+      }
+    }
+  }
+}
