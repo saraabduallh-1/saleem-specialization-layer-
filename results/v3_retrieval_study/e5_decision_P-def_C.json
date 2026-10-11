@@ -1,0 +1,2135 @@
+{
+  "profile": "P-def",
+  "system": "C",
+  "description": "top30 -> joint rerank+select",
+  "gated": {
+    "dev36": {
+      "n": 30,
+      "available": 29,
+      "correct": 23,
+      "wrong": 7,
+      "none": 0,
+      "coverage": 1.0,
+      "precision": 0.767
+    },
+    "gold50": {
+      "n": 50,
+      "available": 39,
+      "correct": 21,
+      "wrong": 28,
+      "none": 1,
+      "coverage": 0.98,
+      "precision": 0.429
+    },
+    "negatives": {
+      "n": 22,
+      "false_specialization": 2,
+      "items": {
+        "C02": "بيئة الوكيل المعزولة",
+        "P15": "أداء"
+      }
+    }
+  },
+  "ungated": {
+    "dev36": {
+      "n": 30,
+      "available": 29,
+      "correct": 23,
+      "wrong": 7,
+      "none": 0,
+      "coverage": 1.0,
+      "precision": 0.767
+    },
+    "gold50": {
+      "n": 50,
+      "available": 39,
+      "correct": 21,
+      "wrong": 29,
+      "none": 0,
+      "coverage": 1.0,
+      "precision": 0.42
+    },
+    "negatives": {
+      "n": 22,
+      "false_specialization": 19,
+      "items": {
+        "C01": "حوكمة أمن البيانات",
+        "C02": "بيئة الوكيل المعزولة",
+        "C03": "جهاز إنترنت الأشياء",
+        "C04": "مسؤولية",
+        "C05": "ترحيل البيانات",
+        "P02": "مكافأة",
+        "P03": "صمود",
+        "P05": "تأخير",
+        "P06": "نموذج مُدرّب",
+        "P07": "تحيُّز داخل المجموعة",
+        "P08": "استعلام قاعدة البيانات",
+        "P09": "ترجمة الآلة",
+        "P10": "تقطيع",
+        "P11": "استخلاص البيانات",
+        "P12": "تعلُّم غير موجَّه",
+        "P13": "بيانات مُخرَجة (أو مخرجات)",
+        "P14": "إعادة تدريب",
+        "P15": "أداء",
+        "P16": "تحليلات سلوكية"
+      }
+    }
+  },
+  "cost": {
+    "api_calls_per_query": {
+      "query_understanding": 1,
+      "decision_stage": 1
+    },
+    "decision_latency_s_mean": 0.986,
+    "decision_latency_s_p90": 1.065,
+    "decision_prompt_tokens_mean": 1588,
+    "queries_skipped_by_gate": 21,
+    "n_queries": 102
+  },
+  "rows": [
+    {
+      "id": "F01",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "هلوسة",
+      "selected_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+      "expected": "هلوسة",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.082,
+          "prompt_tokens": 1665,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F02",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "فرط التخصيص",
+      "selected_id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+      "expected": "فرط التخصيص",
+      "correct": true,
+      "raw": "{\"choice\": \"C6\"}",
+      "decision_calls": [
+        {
+          "latency": 0.937,
+          "prompt_tokens": 1491,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F03",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "مسار عمل ذاتي",
+      "selected_id": "fa3b369a-2b40-4df7-8906-6d3d72f2234e",
+      "expected": "وكيل",
+      "correct": false,
+      "raw": "{\"choice\": \"C7\"}",
+      "decision_calls": [
+        {
+          "latency": 0.908,
+          "prompt_tokens": 1513,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F04",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "دورة",
+      "selected_id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+      "expected": "دورة",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.888,
+          "prompt_tokens": 1408,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F05",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تصميم الأوامر",
+      "selected_id": "58584811-1818-442b-b92f-9dd70f7fb087",
+      "expected": "أمر",
+      "correct": false,
+      "raw": "{\"choice\": \"C23\"}",
+      "decision_calls": [
+        {
+          "latency": 1.023,
+          "prompt_tokens": 1456,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F06",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "مُحوِّل",
+      "selected_id": "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+      "expected": "مُحوِّل",
+      "correct": true,
+      "raw": "{\"choice\": \"C13\"}",
+      "decision_calls": [
+        {
+          "latency": 1.012,
+          "prompt_tokens": 1626,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F07",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "مكافأة",
+      "selected_id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+      "expected": "مكافأة",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.011,
+          "prompt_tokens": 1485,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F08",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "سياسة",
+      "selected_id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+      "expected": "سياسة",
+      "correct": true,
+      "raw": "{\"choice\": \"C4\"}",
+      "decision_calls": [
+        {
+          "latency": 0.925,
+          "prompt_tokens": 1512,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F09",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تدريب",
+      "selected_id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+      "expected": "تدريب",
+      "correct": true,
+      "raw": "{\"choice\": \"C14\"}",
+      "decision_calls": [
+        {
+          "latency": 1.152,
+          "prompt_tokens": 1430,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F10",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "شبكة عصبية عميقة",
+      "selected_id": "13c18d83-0fdd-4fad-a06f-8d9f54a7daec",
+      "expected": "تعلُّم عميق",
+      "correct": false,
+      "raw": "{\"choice\": \"C3\"}",
+      "decision_calls": [
+        {
+          "latency": 1.022,
+          "prompt_tokens": 1866,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F11",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "بيانات التدريب (أو مجموعة التدريب)",
+      "selected_id": "ad85f045-5aca-4c45-8992-31c99aa8e1bb",
+      "expected": "تعلُّم موجَّه",
+      "correct": false,
+      "raw": "{\"choice\": \"C10\"}",
+      "decision_calls": [
+        {
+          "latency": 1.03,
+          "prompt_tokens": 1421,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F12",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تعلُّم غير موجَّه",
+      "selected_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+      "expected": "تعلُّم غير موجَّه",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.007,
+          "prompt_tokens": 1602,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F13",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "انتشار عكسي",
+      "selected_id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+      "expected": "انتشار عكسي",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.914,
+          "prompt_tokens": 1566,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F14",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "ذكاء اصطناعي توليدي",
+      "selected_id": "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+      "expected": "ذكاء اصطناعي توليدي",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.955,
+          "prompt_tokens": 1633,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F15",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تقطيع",
+      "selected_id": "cc487462-eab8-4078-9e10-703208187a82",
+      "expected": "تقسيم النصوص",
+      "correct": false,
+      "raw": "{\"choice\": \"C23\"}",
+      "decision_calls": [
+        {
+          "latency": 0.947,
+          "prompt_tokens": 1524,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F16",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تحليل المشاعر",
+      "selected_id": "784fb957-1319-4ce8-afd7-10fd35512749",
+      "expected": "تحليل المشاعر",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.907,
+          "prompt_tokens": 1500,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F17",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "ترجمة الآلة",
+      "selected_id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+      "expected": "ترجمة الآلة",
+      "correct": true,
+      "raw": "{\"choice\": \"C3\"}",
+      "decision_calls": [
+        {
+          "latency": 1.007,
+          "prompt_tokens": 1517,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F18",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تنقيب في البيانات",
+      "selected_id": "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+      "expected": "تنقيب في البيانات",
+      "correct": true,
+      "raw": "{\"choice\": \"C3\"}",
+      "decision_calls": [
+        {
+          "latency": 1.106,
+          "prompt_tokens": 1588,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F19",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "بيانات ضخمة",
+      "selected_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+      "expected": "بيانات ضخمة",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.034,
+          "prompt_tokens": 1478,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F20",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تعلُّم الآلة",
+      "selected_id": "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+      "expected": "تعلُّم الآلة",
+      "correct": true,
+      "raw": "{\"choice\": \"C5\"}",
+      "decision_calls": [
+        {
+          "latency": 1.08,
+          "prompt_tokens": 1648,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F21",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "معالجة اللغات الطبيعية",
+      "selected_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+      "expected": "معالجة اللغات الطبيعية",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.915,
+          "prompt_tokens": 1538,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F22",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "نموذج لغوي كبير",
+      "selected_id": "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+      "expected": "نموذج لغوي كبير",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.909,
+          "prompt_tokens": 1527,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F23",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "شبكة عصبية متعددة الطبقات",
+      "selected_id": "e27b5cf6-ae3b-49f2-84ee-36a8584f5363",
+      "expected": "شبكة عصبية اصطناعية",
+      "correct": false,
+      "raw": "{\"choice\": \"C3\"}",
+      "decision_calls": [
+        {
+          "latency": 0.998,
+          "prompt_tokens": 1797,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F24",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "توليد مُعَزَّز بالاسترجاع",
+      "selected_id": "a338b836-30ee-471a-a164-f09c919243ce",
+      "expected": "توليد مُعَزَّز بالاسترجاع",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.01,
+          "prompt_tokens": 1580,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F25",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تحليل المُكوِّن الرئيس",
+      "selected_id": "9e116c6f-05ce-41e5-9551-77124d9038ad",
+      "expected": "تحليل المُكوِّن الرئيس",
+      "correct": true,
+      "raw": "{\"choice\": \"C2\"}",
+      "decision_calls": [
+        {
+          "latency": 1.005,
+          "prompt_tokens": 1518,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F26",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "متوسط الخطأ التربيعي",
+      "selected_id": "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+      "expected": "متوسط الخطأ التربيعي",
+      "correct": true,
+      "raw": "{\"choice\": \"C15\"}",
+      "decision_calls": [
+        {
+          "latency": 1.012,
+          "prompt_tokens": 1603,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F27",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "رؤية الحاسب",
+      "selected_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+      "expected": "رؤية الحاسب",
+      "correct": true,
+      "raw": "{\"choice\": \"C6\"}",
+      "decision_calls": [
+        {
+          "latency": 1.065,
+          "prompt_tokens": 1652,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F28",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "دالة الخسارة",
+      "selected_id": "51f2785a-f64c-4198-9c18-c93e04853146",
+      "expected": "دالة الخسارة",
+      "correct": true,
+      "raw": "{\"choice\": \"C2\"}",
+      "decision_calls": [
+        {
+          "latency": 0.966,
+          "prompt_tokens": 1503,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F29",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تعرُّف على الكيانات المُسمّاة",
+      "selected_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+      "expected": "تعرُّف على الكيانات المُسمّاة",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.017,
+          "prompt_tokens": 1412,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "F30",
+      "set": "dev36",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "مُحوِّل رؤية",
+      "selected_id": "d0d5af23-ed3b-488a-9bbe-ce241af30a90",
+      "expected": "شبكة عصبية ترشيحية",
+      "correct": false,
+      "raw": "{\"choice\": \"C15\"}",
+      "decision_calls": [
+        {
+          "latency": 1.189,
+          "prompt_tokens": 1628,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "C01",
+      "set": "dev36",
+      "kind": "contrast_control",
+      "technical": false,
+      "available": null,
+      "selected": "حوكمة أمن البيانات",
+      "selected_id": "f27193be-3d00-47e3-a426-2f363ce83c4b",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C6\"}",
+      "decision_calls": [
+        {
+          "latency": 0.894,
+          "prompt_tokens": 1429,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "C02",
+      "set": "dev36",
+      "kind": "contrast_control",
+      "technical": true,
+      "available": null,
+      "selected": "بيئة الوكيل المعزولة",
+      "selected_id": "ecd0fb05-e7f6-4c47-9459-0287d8c338f0",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.897,
+          "prompt_tokens": 1433,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "C03",
+      "set": "dev36",
+      "kind": "contrast_control",
+      "technical": false,
+      "available": null,
+      "selected": "جهاز إنترنت الأشياء",
+      "selected_id": "f3a22280-e9e6-460d-ba6b-65ac5c52c21b",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C7\"}",
+      "decision_calls": [
+        {
+          "latency": 0.896,
+          "prompt_tokens": 1438,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "C04",
+      "set": "dev36",
+      "kind": "contrast_control",
+      "technical": false,
+      "available": null,
+      "selected": "مسؤولية",
+      "selected_id": "2c8e4ff2-6754-4017-9a49-a6bb1e5df448",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C18\"}",
+      "decision_calls": [
+        {
+          "latency": 0.985,
+          "prompt_tokens": 1563,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "C05",
+      "set": "dev36",
+      "kind": "contrast_control",
+      "technical": false,
+      "available": null,
+      "selected": "ترحيل البيانات",
+      "selected_id": "4eac205d-3a0a-4d7e-9a53-3917608e2e70",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C10\"}",
+      "decision_calls": [
+        {
+          "latency": 0.971,
+          "prompt_tokens": 1369,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "C06",
+      "set": "dev36",
+      "kind": "contrast_control",
+      "technical": false,
+      "available": null,
+      "selected": null,
+      "selected_id": null,
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"NONE\"}",
+      "decision_calls": [
+        {
+          "latency": 0.871,
+          "prompt_tokens": 1491,
+          "completion_tokens": 7
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "GOLD_001",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "تعميم",
+      "selected_id": "53643d3e-c704-4b97-b6b1-9bec7c32701d",
+      "expected": "نموذج",
+      "correct": false,
+      "raw": "{\"choice\": \"C6\"}",
+      "decision_calls": [
+        {
+          "latency": 0.92,
+          "prompt_tokens": 1551,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_002",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "وكيل",
+      "selected_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+      "expected": "وكيل",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.162,
+          "prompt_tokens": 1686,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_003",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "هلوسة",
+      "selected_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
+      "expected": "هلوسة",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.91,
+          "prompt_tokens": 1460,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_004",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "وكيل",
+      "selected_id": "c33c453c-367b-452a-8763-7ba23871b01f",
+      "expected": "بيئة",
+      "correct": false,
+      "raw": "{\"choice\": \"C7\"}",
+      "decision_calls": [
+        {
+          "latency": 1.016,
+          "prompt_tokens": 1674,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_005",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "سياسة",
+      "selected_id": "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+      "expected": "سياسة",
+      "correct": true,
+      "raw": "{\"choice\": \"C14\"}",
+      "decision_calls": [
+        {
+          "latency": 0.979,
+          "prompt_tokens": 1602,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_006",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "شبكة عصبية متعددة الطبقات",
+      "selected_id": "e27b5cf6-ae3b-49f2-84ee-36a8584f5363",
+      "expected": "طبقة",
+      "correct": false,
+      "raw": "{\"choice\": \"C5\"}",
+      "decision_calls": [
+        {
+          "latency": 0.952,
+          "prompt_tokens": 1762,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_007",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "وزن",
+      "selected_id": "36b69371-37ef-4145-b219-3f24356df629",
+      "expected": "وزن",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.959,
+          "prompt_tokens": 1455,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_008",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "دالة تنشيط",
+      "selected_id": "37bde43b-0b34-457b-a23b-9aecf4a44fd9",
+      "expected": "تحيُّز",
+      "correct": false,
+      "raw": "{\"choice\": \"C13\"}",
+      "decision_calls": [
+        {
+          "latency": 1.013,
+          "prompt_tokens": 1837,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_009",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تعلُّم تعزيزي",
+      "selected_id": "1b59800d-49bb-4c9f-bd5d-d8c1b9f38a46",
+      "expected": "مكافأة",
+      "correct": false,
+      "raw": "{\"choice\": \"C4\"}",
+      "decision_calls": [
+        {
+          "latency": 1.106,
+          "prompt_tokens": 1687,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_010",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "دورة",
+      "selected_id": "cddea42e-e614-47ba-8275-dedd4c5938a0",
+      "expected": "دورة",
+      "correct": true,
+      "raw": "{\"choice\": \"C8\"}",
+      "decision_calls": [
+        {
+          "latency": 1.005,
+          "prompt_tokens": 1520,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_011",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "حُزمة صغيرة",
+      "selected_id": "2aab82fa-7139-49e5-8f5a-f5f27a8f1ef9",
+      "expected": "حُزمة",
+      "correct": false,
+      "raw": "{\"choice\": \"C16\"}",
+      "decision_calls": [
+        {
+          "latency": 1.007,
+          "prompt_tokens": 1524,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_012",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "أوامر صلبة",
+      "selected_id": "9983bdf0-0806-4a0a-ae1a-14fbc882cf83",
+      "expected": "أمر",
+      "correct": false,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.007,
+          "prompt_tokens": 1727,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_013",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "انتباه ذاتي (أو طبقة الانتباه الذاتي)",
+      "selected_id": "2a03a9fb-4b6d-4e75-bd99-c6c3d76d2d2a",
+      "expected": "مُحوِّل",
+      "correct": false,
+      "raw": "{\"choice\": \"C16\"}",
+      "decision_calls": [
+        {
+          "latency": 1.014,
+          "prompt_tokens": 1614,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_014",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "شبكة توليدية تنافسية",
+      "selected_id": "a2bf00ac-2352-4441-8a39-2f2754b15f9d",
+      "expected": "مُولِّد",
+      "correct": false,
+      "raw": "{\"choice\": \"C16\"}",
+      "decision_calls": [
+        {
+          "latency": 1.005,
+          "prompt_tokens": 1739,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_015",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "معادلة بلمان",
+      "selected_id": "16642413-9352-427b-8056-c528bb4fb4ad",
+      "expected": "عائد",
+      "correct": false,
+      "raw": "{\"choice\": \"C29\"}",
+      "decision_calls": [
+        {
+          "latency": 0.953,
+          "prompt_tokens": 1564,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_016",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "تعلُّم موجَّه",
+      "selected_id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+      "expected": "اسم",
+      "correct": false,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.908,
+          "prompt_tokens": 1540,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_017",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "بث",
+      "selected_id": "45590793-f757-41fc-8325-5ed6303f02a8",
+      "expected": "بث",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.907,
+          "prompt_tokens": 1495,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_018",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "توليد مُعَزَّز بالاسترجاع",
+      "selected_id": "a338b836-30ee-471a-a164-f09c919243ce",
+      "expected": "تأسيس",
+      "correct": false,
+      "raw": "{\"choice\": \"C6\"}",
+      "decision_calls": [
+        {
+          "latency": 0.938,
+          "prompt_tokens": 1603,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_019",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "مواءمة",
+      "selected_id": "605f7542-8289-4637-8cf8-0d6a16592e30",
+      "expected": "مواءمة",
+      "correct": true,
+      "raw": "{\"choice\": \"C2\"}",
+      "decision_calls": [
+        {
+          "latency": 1.024,
+          "prompt_tokens": 1614,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_020",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تدريب",
+      "selected_id": "f9244497-c14e-49d9-9074-1b431b3aff76",
+      "expected": "تدريب",
+      "correct": true,
+      "raw": "{\"choice\": \"C12\"}",
+      "decision_calls": [
+        {
+          "latency": 1.007,
+          "prompt_tokens": 1547,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_021",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تجذيع",
+      "selected_id": "99686190-8f2a-474a-9159-ace5fd8f07ad",
+      "expected": "تجذيع",
+      "correct": true,
+      "raw": "{\"choice\": \"C7\"}",
+      "decision_calls": [
+        {
+          "latency": 1.011,
+          "prompt_tokens": 1583,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_022",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "شبكة عصبية عميقة",
+      "selected_id": "13c18d83-0fdd-4fad-a06f-8d9f54a7daec",
+      "expected": "تعلُّم عميق",
+      "correct": false,
+      "raw": "{\"choice\": \"C11\"}",
+      "decision_calls": [
+        {
+          "latency": 1.005,
+          "prompt_tokens": 1881,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_023",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تعلُّم موجَّه",
+      "selected_id": "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+      "expected": "تعلُّم موجَّه",
+      "correct": true,
+      "raw": "{\"choice\": \"C16\"}",
+      "decision_calls": [
+        {
+          "latency": 1.011,
+          "prompt_tokens": 1543,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_024",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تعلُّم غير موجَّه",
+      "selected_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+      "expected": "تعلُّم غير موجَّه",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.947,
+          "prompt_tokens": 1711,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_025",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "فرط التخصيص",
+      "selected_id": "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+      "expected": "فرط التخصيص",
+      "correct": true,
+      "raw": "{\"choice\": \"C7\"}",
+      "decision_calls": [
+        {
+          "latency": 0.898,
+          "prompt_tokens": 1466,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_026",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "دالة تنشيط",
+      "selected_id": "37bde43b-0b34-457b-a23b-9aecf4a44fd9",
+      "expected": "دالة تنشيط",
+      "correct": true,
+      "raw": "{\"choice\": \"C3\"}",
+      "decision_calls": [
+        {
+          "latency": 0.954,
+          "prompt_tokens": 1825,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_027",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "انتشار عكسي",
+      "selected_id": "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+      "expected": "انتشار عكسي",
+      "correct": true,
+      "raw": "{\"choice\": \"C2\"}",
+      "decision_calls": [
+        {
+          "latency": 0.941,
+          "prompt_tokens": 1666,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_028",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "نموذج توليدي",
+      "selected_id": "3c049293-e72e-469e-8416-f5ce0d415c28",
+      "expected": "ذكاء اصطناعي توليدي",
+      "correct": false,
+      "raw": "{\"choice\": \"C7\"}",
+      "decision_calls": [
+        {
+          "latency": 0.912,
+          "prompt_tokens": 1543,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_029",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "بيانات مصطنعة",
+      "selected_id": "4876b622-3d03-43eb-ac86-88e282a25898",
+      "expected": "تزييف عميق",
+      "correct": false,
+      "raw": "{\"choice\": \"C9\"}",
+      "decision_calls": [
+        {
+          "latency": 0.968,
+          "prompt_tokens": 1739,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_030",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": false,
+      "available": true,
+      "selected": "تقطيع",
+      "selected_id": "cc487462-eab8-4078-9e10-703208187a82",
+      "expected": "تقسيم النصوص",
+      "correct": false,
+      "raw": "{\"choice\": \"C4\"}",
+      "decision_calls": [
+        {
+          "latency": 1.008,
+          "prompt_tokens": 1485,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "GOLD_031",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تحليل المشاعر",
+      "selected_id": "784fb957-1319-4ce8-afd7-10fd35512749",
+      "expected": "تحليل المشاعر",
+      "correct": true,
+      "raw": "{\"choice\": \"C2\"}",
+      "decision_calls": [
+        {
+          "latency": 0.908,
+          "prompt_tokens": 1487,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_032",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "ترجمة الآلة",
+      "selected_id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+      "expected": "ترجمة الآلة",
+      "correct": true,
+      "raw": "{\"choice\": \"C3\"}",
+      "decision_calls": [
+        {
+          "latency": 0.902,
+          "prompt_tokens": 1486,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_033",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تعلُّم شجرة القرار",
+      "selected_id": "565a5980-ec81-434e-bd90-61882ce3f0b0",
+      "expected": "شجرة القرار",
+      "correct": false,
+      "raw": "{\"choice\": \"C10\"}",
+      "decision_calls": [
+        {
+          "latency": 1.006,
+          "prompt_tokens": 1538,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_034",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تحليلات البيانات الضخمة",
+      "selected_id": "5909e0f9-aea9-4e9b-abe5-a4926530000d",
+      "expected": "تنقيب في البيانات",
+      "correct": false,
+      "raw": "{\"choice\": \"C3\"}",
+      "decision_calls": [
+        {
+          "latency": 0.942,
+          "prompt_tokens": 1689,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_035",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "بيانات ضخمة",
+      "selected_id": "62c0c0e3-72db-40ae-9cec-616825860e73",
+      "expected": "بيانات ضخمة",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.924,
+          "prompt_tokens": 1580,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_036",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "نظام إدراكي",
+      "selected_id": "aa29a31c-fcc1-4e19-94c3-03175f9d6be1",
+      "expected": "ذكاء اصطناعي",
+      "correct": false,
+      "raw": "{\"choice\": \"C4\"}",
+      "decision_calls": [
+        {
+          "latency": 0.947,
+          "prompt_tokens": 1746,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_037",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "نظام تنبؤي",
+      "selected_id": "2db9878d-1c0d-4fbc-a3fc-4868e646c58c",
+      "expected": "تعلُّم الآلة",
+      "correct": false,
+      "raw": "{\"choice\": \"C2\"}",
+      "decision_calls": [
+        {
+          "latency": 1.014,
+          "prompt_tokens": 1592,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_038",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "معالجة اللغات الطبيعية",
+      "selected_id": "cd950eb2-bfab-4200-a534-9e787a26e99e",
+      "expected": "معالجة اللغات الطبيعية",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.913,
+          "prompt_tokens": 1556,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_039",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "نموذج أساس",
+      "selected_id": "bedfc041-e663-44fe-b599-ad8b6a10dc71",
+      "expected": "نموذج لغوي كبير",
+      "correct": false,
+      "raw": "{\"choice\": \"C9\"}",
+      "decision_calls": [
+        {
+          "latency": 0.913,
+          "prompt_tokens": 1537,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_040",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "شبكة عصبية شبكية",
+      "selected_id": "f3f85a80-199c-4a4b-85fa-8464c23d1c03",
+      "expected": "شبكة عصبية اصطناعية",
+      "correct": false,
+      "raw": "{\"choice\": \"C13\"}",
+      "decision_calls": [
+        {
+          "latency": 1.062,
+          "prompt_tokens": 1737,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_041",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "معالجة الصور",
+      "selected_id": "e260de36-d9da-40b5-b345-58c014062aaa",
+      "expected": "شبكة عصبية ترشيحية",
+      "correct": false,
+      "raw": "{\"choice\": \"C19\"}",
+      "decision_calls": [
+        {
+          "latency": 1.133,
+          "prompt_tokens": 1522,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_042",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "شبكات عصبية سائلة",
+      "selected_id": "b2e59aa3-7ac6-4a81-8a8f-605739a225f9",
+      "expected": "شبكة عصبية تكرارية",
+      "correct": false,
+      "raw": "{\"choice\": \"C10\"}",
+      "decision_calls": [
+        {
+          "latency": 1.005,
+          "prompt_tokens": 1677,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_043",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "وحدة بوابة تكرارية",
+      "selected_id": "6bca9082-966a-4b68-b135-db216f6d080d",
+      "expected": "ذاكرة قصيرة المدى مُطَوَّلة",
+      "correct": false,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.013,
+          "prompt_tokens": 1652,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_044",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "حدود القرار",
+      "selected_id": "f123ed65-5cbf-4faa-a769-5cfed8e8e781",
+      "expected": "آلة المُتَّجهات الداعمة",
+      "correct": false,
+      "raw": "{\"choice\": \"C2\"}",
+      "decision_calls": [
+        {
+          "latency": 1.007,
+          "prompt_tokens": 1625,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_045",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "تعرُّف على الكيانات المُسمّاة",
+      "selected_id": "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+      "expected": "تعرُّف على الكيانات المُسمّاة",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.006,
+          "prompt_tokens": 1486,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_046",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "توليد مُعَزَّز بالاسترجاع",
+      "selected_id": "a338b836-30ee-471a-a164-f09c919243ce",
+      "expected": "توليد مُعَزَّز بالاسترجاع",
+      "correct": true,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 1.014,
+          "prompt_tokens": 1586,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_047",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "تقليص الأبعاد",
+      "selected_id": "9f6c85ea-15b0-4e40-a494-265a439622f7",
+      "expected": "تحليل المُكوِّن الرئيس",
+      "correct": false,
+      "raw": "{\"choice\": \"C13\"}",
+      "decision_calls": [
+        {
+          "latency": 1.017,
+          "prompt_tokens": 1516,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_048",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": false,
+      "selected": "متوسط الخطأ المطلق",
+      "selected_id": "4310bfb2-5046-4a96-8306-cc3504083268",
+      "expected": "متوسط الخطأ التربيعي",
+      "correct": false,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.936,
+          "prompt_tokens": 1594,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_049",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "رؤية الحاسب",
+      "selected_id": "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+      "expected": "رؤية الحاسب",
+      "correct": true,
+      "raw": "{\"choice\": \"C16\"}",
+      "decision_calls": [
+        {
+          "latency": 0.976,
+          "prompt_tokens": 1665,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "GOLD_050",
+      "set": "gold50",
+      "kind": "positive",
+      "technical": true,
+      "available": true,
+      "selected": "خطأ التقريب",
+      "selected_id": "fb384d22-1195-46b5-93dd-658d1e74ef33",
+      "expected": "دالة الخسارة",
+      "correct": false,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.907,
+          "prompt_tokens": 1519,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "P01",
+      "set": "probes",
+      "kind": "everyday_sense",
+      "technical": false,
+      "available": null,
+      "selected": null,
+      "selected_id": null,
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"NONE\"}",
+      "decision_calls": [
+        {
+          "latency": 0.854,
+          "prompt_tokens": 1404,
+          "completion_tokens": 7
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P02",
+      "set": "probes",
+      "kind": "everyday_sense",
+      "technical": false,
+      "available": null,
+      "selected": "مكافأة",
+      "selected_id": "4f581246-30fe-4570-8605-1c611eaf5d45",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C4\"}",
+      "decision_calls": [
+        {
+          "latency": 0.882,
+          "prompt_tokens": 1365,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P03",
+      "set": "probes",
+      "kind": "everyday_sense",
+      "technical": false,
+      "available": null,
+      "selected": "صمود",
+      "selected_id": "7a3a8e86-4f4c-437c-905d-d7f414c9ec29",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C3\"}",
+      "decision_calls": [
+        {
+          "latency": 0.883,
+          "prompt_tokens": 1340,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P04",
+      "set": "probes",
+      "kind": "everyday_sense",
+      "technical": false,
+      "available": null,
+      "selected": null,
+      "selected_id": null,
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"NONE\"}",
+      "decision_calls": [
+        {
+          "latency": 0.874,
+          "prompt_tokens": 1550,
+          "completion_tokens": 7
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P05",
+      "set": "probes",
+      "kind": "everyday_sense",
+      "technical": false,
+      "available": null,
+      "selected": "تأخير",
+      "selected_id": "8b6463ae-bf5e-41bb-a211-cb5742a8061c",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C5\"}",
+      "decision_calls": [
+        {
+          "latency": 0.884,
+          "prompt_tokens": 1356,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P06",
+      "set": "probes",
+      "kind": "everyday_sense",
+      "technical": false,
+      "available": null,
+      "selected": "نموذج مُدرّب",
+      "selected_id": "8deebe90-0a9c-4835-852d-e7ac83a07810",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C4\"}",
+      "decision_calls": [
+        {
+          "latency": 0.886,
+          "prompt_tokens": 1330,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P07",
+      "set": "probes",
+      "kind": "everyday_sense",
+      "technical": false,
+      "available": null,
+      "selected": "تحيُّز داخل المجموعة",
+      "selected_id": "d3d5364b-e224-4c4f-bc0a-357dbf2b7ff2",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C14\"}",
+      "decision_calls": [
+        {
+          "latency": 0.935,
+          "prompt_tokens": 1445,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P08",
+      "set": "probes",
+      "kind": "everyday_sense",
+      "technical": false,
+      "available": null,
+      "selected": "استعلام قاعدة البيانات",
+      "selected_id": "0b865e8e-90fc-474d-b1b7-eb4e834ba476",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C10\"}",
+      "decision_calls": [
+        {
+          "latency": 0.921,
+          "prompt_tokens": 1340,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P09",
+      "set": "probes",
+      "kind": "human_activity",
+      "technical": false,
+      "available": null,
+      "selected": "ترجمة الآلة",
+      "selected_id": "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C5\"}",
+      "decision_calls": [
+        {
+          "latency": 0.933,
+          "prompt_tokens": 1393,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P10",
+      "set": "probes",
+      "kind": "human_activity",
+      "technical": false,
+      "available": null,
+      "selected": "تقطيع",
+      "selected_id": "cc487462-eab8-4078-9e10-703208187a82",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C8\"}",
+      "decision_calls": [
+        {
+          "latency": 0.925,
+          "prompt_tokens": 1480,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P11",
+      "set": "probes",
+      "kind": "human_activity",
+      "technical": false,
+      "available": null,
+      "selected": "استخلاص البيانات",
+      "selected_id": "ab4acb5a-b976-4f8e-991d-646708334a8f",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C12\"}",
+      "decision_calls": [
+        {
+          "latency": 0.938,
+          "prompt_tokens": 1433,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P12",
+      "set": "probes",
+      "kind": "underspecified_ai",
+      "technical": false,
+      "available": null,
+      "selected": "تعلُّم غير موجَّه",
+      "selected_id": "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C27\"}",
+      "decision_calls": [
+        {
+          "latency": 0.943,
+          "prompt_tokens": 1548,
+          "completion_tokens": 9
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P13",
+      "set": "probes",
+      "kind": "underspecified_ai",
+      "technical": false,
+      "available": null,
+      "selected": "بيانات مُخرَجة (أو مخرجات)",
+      "selected_id": "a446b66c-33ad-42b1-8cdb-ce9515b4aefe",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C5\"}",
+      "decision_calls": [
+        {
+          "latency": 0.902,
+          "prompt_tokens": 1284,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P14",
+      "set": "probes",
+      "kind": "underspecified_ai",
+      "technical": false,
+      "available": null,
+      "selected": "إعادة تدريب",
+      "selected_id": "435931d5-0442-4725-b575-d296b4126702",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C7\"}",
+      "decision_calls": [
+        {
+          "latency": 0.899,
+          "prompt_tokens": 1455,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    },
+    {
+      "id": "P15",
+      "set": "probes",
+      "kind": "underspecified_ai",
+      "technical": true,
+      "available": null,
+      "selected": "أداء",
+      "selected_id": "dd10d1b5-db69-48ce-91cf-9bedf6c6609c",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C2\"}",
+      "decision_calls": [
+        {
+          "latency": 0.913,
+          "prompt_tokens": 1560,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": false
+    },
+    {
+      "id": "P16",
+      "set": "probes",
+      "kind": "underspecified_ai",
+      "technical": false,
+      "available": null,
+      "selected": "تحليلات سلوكية",
+      "selected_id": "ae7202bd-22c0-4738-bb22-132fd8c03c61",
+      "expected": null,
+      "correct": null,
+      "raw": "{\"choice\": \"C1\"}",
+      "decision_calls": [
+        {
+          "latency": 0.871,
+          "prompt_tokens": 1290,
+          "completion_tokens": 8
+        }
+      ],
+      "skipped_by_gate": true
+    }
+  ],
+  "prompts": {
+    "selector": "مهمتك أن تقرر هل يعبّر النص عن أحد المفاهيم المرشحة من معجم المصطلحات.\nالقواعد:\n1. اختر مرشحًا فقط إذا كان النص يذكر الخصائص الجوهرية الواردة في وصفه، ولو بألفاظ عامة أو عامية.\n2. لا يكفي اشتراك كلمة أو تقارب الموضوع. الكلمة التي تُستعمل في النص بمعناها العام أو اليومي لا تبرر المصطلح.\n3. إذا انطبق أكثر من مرشح فاختر الأدق: لا تختر مفهومًا أعمّ إذا وُجد مرشح أخصّ تنطبق خصائصه على النص، ولا تختر مفهومًا أخصّ إذا كان النص لا يذكر ما يميّزه.\n4. إذا كان النص مبهمًا أو لا يحدد المفهوم بما يكفي فاختر NONE.\nأعد JSON فقط بالشكل: {\"choice\": \"C1\"} مع رقم المرشح المختار أو NONE.",
+    "joint": "أمامك نص وقائمة مرشحين مسترجعة آليًا من معجم مصطلحات، مرتبة ترتيبًا تقريبيًا وقد يكون المرشح الصحيح في أي موضع منها، وقد لا يكون فيها أصلًا. قيّم المرشحين كلهم مقابل معنى النص، ثم قرر.\nالقواعد:\n1. اختر مرشحًا فقط إذا كان النص يذكر الخصائص الجوهرية الواردة في وصفه، ولو بألفاظ عامة أو عامية.\n2. لا يكفي اشتراك كلمة أو تقارب الموضوع. الكلمة التي تُستعمل في النص بمعناها العام أو اليومي لا تبرر المصطلح.\n3. إذا انطبق أكثر من مرشح فاختر الأدق: لا تختر مفهومًا أعمّ إذا وُجد مرشح أخصّ تنطبق خصائصه على النص، ولا تختر مفهومًا أخصّ إذا كان النص لا يذكر ما يميّزه.\n4. إذا كان النص مبهمًا أو لا يحدد المفهوم بما يكفي فاختر NONE.\nأعد JSON فقط بالشكل: {\"choice\": \"C7\"} مع رقم المرشح الأنسب أو NONE."
+  }
+}
