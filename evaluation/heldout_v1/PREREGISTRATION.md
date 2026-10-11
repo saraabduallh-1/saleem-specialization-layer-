@@ -58,9 +58,73 @@ The chosen `k` per profile is recorded in `K_SELECTION.json` before
 the test split is run. The rule implementation will be committed and its commit hash recorded in
 `RUN_LOG.md` **before** the calibration run.
 
+## 4A. Amendment A1 (2026-10-11) — S2 contrastive decision
+
+Added before any held-out item existed; see `DEVIATIONS.md` (D1). S1 above is unchanged and remains
+the baseline mechanism. S2 targets near-neighbour confusion and is reported separately.
+
+**Position.** S2 *augments* the registered decision call; it does not replace it. It runs after the
+technical gate and the existing decision call, only when that call selected a unit `c*`.
+
+**Competitor set (deterministic, schema-independent).**
+- Similarity = cosine between the units' `dense_unit` E5 embeddings (the engine's unit
+  representation: headword plus definition when the unit has one, headword alone otherwise).
+- Competitors = the **3** units of the whole dictionary most similar to `c*`, excluding `c*`;
+  ties broken by `unit_id`. Redirect handling is already done by the adapter.
+- The contrast set `{c*} ∪ competitors` (4 units) is shown **sorted by `unit_id`**, so the position of
+  `c*` carries no information.
+
+**Candidate rendering.** Only roles the unit has, in this order; missing roles are omitted:
+`المصطلح` (headword) · `أسماء أخرى` (up to 3 aliases) · `المقابل` (first translation) ·
+`التعريف` (definition, first 40 words) · `مثال` (first example, first 25 words).
+
+**Prompt (verbatim; system message).**
+
+```
+أمامك نص ومجموعة صغيرة من المفاهيم المتقاربة من معجم مصطلحات. هذه المفاهيم متشابهة عمدًا، والمطلوب التمييز بينها.
+لكل مفهوم، حدّد ما يميّزه عن بقية المفاهيم في المجموعة، ثم ابحث في النص عن دليل على هذه الخاصية المميّزة تحديدًا.
+اختر مفهومًا فقط إذا كان النص يحتوي على دليل يدعمه هو دون المفاهيم الأخرى في المجموعة.
+إذا كان النص ينطبق على أكثر من مفهوم بالقدر نفسه، أو لا يذكر ما يميّز أيًّا منها، أو لا يعبّر عن أيٍّ منها، فاختر NONE.
+أعد JSON فقط بالشكل: {"choice": "C2", "evidence": "عبارة منقولة حرفيًا من النص تدل على الخاصية المميّزة"} أو {"choice": "NONE", "evidence": ""}.
+```
+
+User message: `النص:\n<text>\n\nالمفاهيم:\n\n` followed by the rendered units `C1` … `C4`
+separated by blank lines. Same model and settings as the rest of the pipeline (temperature 0,
+thinking disabled), `max_tokens` = 150.
+
+**Output rule (deterministic).** The S2 result is the chosen unit, or NONE if **any** of:
+1. `choice` is `NONE`, missing, unparseable, or not one of `C1`–`C4`;
+2. `evidence` is empty;
+3. after normalization (diacritics removed, alef/ya/ta-marbuta unified, whitespace collapsed),
+   `evidence` is **not** a substring of the user text;
+4. normalized `evidence` is the entire normalized user text (it must be a proper part of it).
+
+If S2 chooses a competitor rather than `c*`, the competitor is the output (S2 may correct a
+near-neighbour error as well as abstain). No other post-processing; no further LLM call.
+
+**No tunable parameter.** Competitor count (3), rendering limits and the rules above are fixed here;
+nothing in S2 is selected on calibration data.
+
+**Cost.** +1 call per query that reaches a selection (≈ 4 short candidates, expected ≈ 600–900
+prompt tokens, ≈ 1 s). Queries stopped by the gate or with no selection incur no extra call.
+
+**Behaviour by dictionary profile.** With headword + definition, units are contrasted on their
+definitions. With richer metadata, aliases / translations / examples are added to each rendering,
+giving more distinguishing text; nothing else changes. With headword only, the contrast relies on the
+headwords and model knowledge; the evidence rules still apply, so weak cases fall to NONE.
+
+**Freezing.** Before any run of S2 (including the development sanity check):
+implement exactly this specification, commit, and record the commit hash in `RUN_LOG.md`.
+The development sanity check on the old development data (dev36 / gold50 / probes) is run **once**;
+its results are reported but **no change** to S2 is permitted afterwards. Any change creates a new
+mechanism version that requires a new held-out set.
+
 ## 5. Comparisons (all on the same test split, same calls)
-- **S1** (frozen rule, chosen `k`) — primary.
-- **Baseline** — identical pipeline without S1 (gate only).
+- **S1** (frozen rule, chosen `k`) — primary (as originally registered).
+- **S2** (contrastive decision, A1) — primary for near-neighbour confusion, reported separately.
+- **S1 + S2** (accept only if S2 outputs a unit that also passes S1 with the same `k`) — exploratory.
+- **Baseline** — identical pipeline without S1/S2 (gate only).
+Results are additionally broken down for `near_neighbour` and `ambiguous` items.
 
 ## 6. Metrics (implemented in `scripts/heldout_score.py`)
 Per profile and split; overall and per item type:
@@ -71,22 +135,26 @@ FS rate = FS / negatives (also per negative type), abstention rate, and candidat
 95 % percentile bootstrap CIs, 10,000 item-level resamples, seed 20261013.
 Annotator agreement (κ, preferred-in-set rate, Jaccard) reported with the results.
 
-## 7. Success criteria (test split, S1, each profile separately)
+## 7. Success criteria (test split; evaluated for S1 and for S2 separately, each profile separately)
 - **SC1** accepted precision ≥ 0.85 **and** its 95 % CI lower bound ≥ 0.75.
 - **SC2** FS rate on all negatives ≤ 0.05.
 - Coverage has no threshold; it is reported with the baseline's coverage and precision.
 
-Interpretation fixed in advance:
-- SC1 and SC2 pass in both profiles → adopt S1 as the default abstention rule.
-- Pass in P-full only → adopt S1 for dictionaries with translations; flag the Arabic-only path.
+Interpretation fixed in advance (applied to each mechanism):
+- SC1 and SC2 pass in both profiles → the mechanism is adopted as a default abstention rule.
+- Pass in P-full only → adopt for dictionaries with translations; flag the Arabic-only path.
 - Fail → report as a negative result. **No re-tuning on the test split.** Any new rule requires a
   new held-out set.
+- If both S1 and S2 pass, prefer the one with higher test coverage; if within 0.03 coverage, prefer S1
+  (no extra call).
 
 ## 8. Run protocol
 1. Writers and annotators complete `items.json`; `validate` passes; `freeze`; `split`.
-2. Implement S1; commit; record hash in `RUN_LOG.md`.
-3. Run calibration once per profile; select `k` automatically; write `K_SELECTION.json`; commit.
-4. Run test once per profile (S1 and baseline from the same calls); score; commit predictions and scores.
+2. Implement S1 and S2 (S2 exactly per §4A); commit; record hash in `RUN_LOG.md`.
+   (S2 is implemented and its single development sanity check is run before step 1 may finish;
+   see §4A Freezing.)
+3. Run calibration once per profile; select `k` for S1 automatically; write `K_SELECTION.json`; commit.
+4. Run test once per profile (baseline, S1, S2, S1 + S2 from the same calls); score; commit predictions and scores.
 5. Report everything, including failures, drops, skips and deviations.
 
 The specialization system must not be run on any held-out item before step 1 is complete.
