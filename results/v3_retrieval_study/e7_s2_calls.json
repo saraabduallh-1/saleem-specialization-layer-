@@ -1,0 +1,2270 @@
+{
+  "9f318a4ae3d38bed0f8c151c": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"معلومات تبدو صحيحة ومقنعة، لكن بعضها مختلق وما له أي مصدر\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 457,
+        "total_tokens": 489,
+        "completion_tokens": 32,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.565
+    }
+  },
+  "a141980fb3e86f889b35aeeb": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"المودل صار ممتاز على البيانات اللي تدرب عليها، لكن إذا جربناه على بيانات جديدة يطيح أداؤه بشكل واضح\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 459,
+        "total_tokens": 501,
+        "completion_tokens": 42,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.924
+    }
+  },
+  "e4d76339f0833d0d59d0f022": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"كيان ذاتي التحكم يدرك بيئته ويقوم بأفعال لتحقيق أهداف محددة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 429,
+        "total_tokens": 460,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.509
+    }
+  },
+  "925653af62a287c13a62504d": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"مررنا مجموعة البيانات كاملة على النموذج خمس مرات متتالية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 394,
+        "total_tokens": 422,
+        "completion_tokens": 28,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.433
+    }
+  },
+  "e30acd0f9f68dd527cefb76f": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تعليمات نصية مُصاغة يدويًا تُعطى للنموذج\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 484,
+        "total_tokens": 516,
+        "completion_tokens": 32,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.55
+    }
+  },
+  "4379e990a6f74770280a2c9f": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تعتمد هذه المعمارية على الانتباه الذاتي لمعالجة الكلمات في التسلسل وربط كل كلمة ببقية السياق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 483,
+        "total_tokens": 522,
+        "completion_tokens": 39,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.795
+    }
+  },
+  "e4ad96fb7be36c00285af20b": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"توضح جودة ذلك الفعل\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 469,
+        "total_tokens": 488,
+        "completion_tokens": 19,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.098
+    }
+  },
+  "95e24fdf2254b5857e2c32a7": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"في كل حالة، يحتفظ النظام بتوزيع احتمالي يحدد أي الأفعال يرجح أن يختارها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 433,
+        "total_tokens": 470,
+        "completion_tokens": 37,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.816
+    }
+  },
+  "362f702c6c1509bba527b3fe": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"نعدّل معاملات النموذج\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 391,
+        "total_tokens": 411,
+        "completion_tokens": 20,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.3
+    }
+  },
+  "a1468a80e47ea83ac89c9e3b": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"شبكة عصبية تحتوي عدة طبقات مخفية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 489,
+        "total_tokens": 514,
+        "completion_tokens": 25,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.307
+    }
+  },
+  "e6e7b1f1c4f5879258bbe456": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"نبي النظام يتعلم منها عشان يتوقع إجابات لأمثلة جديدة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 456,
+        "total_tokens": 487,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.619
+    }
+  },
+  "b82376c206b7fed97a00d00c": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"البيانات لا تحتوي أي تسميات، ونريد من النظام أن يكتشف التجمعات والأنماط الموجودة فيها بنفسه\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 468,
+        "total_tokens": 510,
+        "completion_tokens": 42,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.91
+    }
+  },
+  "93dbba87a88824d1cbeea070": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"نعيد الإشارة عبر طبقات الشبكة إلى الخلف لحساب مقدار تعديل الأوزان\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 472,
+        "total_tokens": 503,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.522
+    }
+  },
+  "4cb06da1aeb50aa5914f4fa0": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"نوع من الذكاء الاصطناعي يمكنه إنشاء محتوى جديد، مثل: النصوص والصور والأصوات والفيديوهات والأكواد البرمجية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 513,
+        "total_tokens": 560,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.091
+    }
+  },
+  "b6a16046f2397b59f8a8f9d5": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"حتى يستطيع النظام تمثيلها ومعالجتها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 448,
+        "total_tokens": 472,
+        "completion_tokens": 24,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.272
+    }
+  },
+  "c7e42d4262af42346ea84502": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"نريد تصنيف مراجعات العملاء تلقائيًا لمعرفة إن كان الرأي إيجابيًا أو سلبيًا أو محايدًا\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 446,
+        "total_tokens": 484,
+        "completion_tokens": 38,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.871
+    }
+  },
+  "30c6eb0266e063b993d8997a": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"النظام يحول الجملة تلقائيًا من العربية إلى الإنجليزية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 446,
+        "total_tokens": 473,
+        "completion_tokens": 27,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.362
+    }
+  },
+  "7ccaa722d2356c550c2dc3e7": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"لدينا ملايين السجلات ونبحث فيها لاكتشاف علاقات وأنماط مخفية يمكن الاستفادة منها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 447,
+        "total_tokens": 482,
+        "completion_tokens": 35,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.655
+    }
+  },
+  "f64eeaaab88f3d6b91ce08b7": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"مجموعة بيانات كبيرة تتطلب تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها؛ نظرًا لخصائص حجمها وتنوعها وسرعتها وتباينها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 470,
+        "total_tokens": 527,
+        "completion_tokens": 57,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.426
+    }
+  },
+  "41ccd2d6c9047ea58d744486": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"بدل أن نكتب قاعدة برمجية لكل حالة، نجعل النظام يستفيد من البيانات السابقة لتحسين أدائه في المهمة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 507,
+        "total_tokens": 548,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.872
+    }
+  },
+  "8f393080da8f71457431d437": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"فرع من فروع الذكاء الاصطناعي يهتم بفهم أو توليد اللغة البشرية سواءٌ كانت على شكل نص أو كلام\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 410,
+        "total_tokens": 451,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.859
+    }
+  },
+  "bc74a11162e253bb09a6fc98": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"نستخدم نموذجًا لغويًا يحتوي على عدد هائل من المعاملات\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 442,
+        "total_tokens": 472,
+        "completion_tokens": 30,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.481
+    }
+  },
+  "e0dbfcc2fbf1ac5243bc8cc8": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"البنية الحوسبية تتكون من وحدات مترابطة على شكل طبقات\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 494,
+        "total_tokens": 525,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.554
+    }
+  },
+  "8bf557eb5d03929683e0d057": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"إطار للذكاء الاصطناعي يدمج بين استرجاع المعلومات الخارجية والنماذج التوليدية لإنتاج استجابات أكثر دقة وملاءمة للسياق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 537,
+        "total_tokens": 590,
+        "completion_tokens": 53,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.382
+    }
+  },
+  "a18a7041a74edb536431a123": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"إزالة تكرار المعلومات وتقليل خصائص مجموعة البيانات إلى مُكوِّناتها الرئيسة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 456,
+        "total_tokens": 490,
+        "completion_tokens": 34,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.662
+    }
+  },
+  "beeccf7dacf664147dd3dfe4": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"نقيّم التنبؤات بحساب الفرق بينها وبين القيم الحقيقية، ثم نربّع كل فرق ونأخذ متوسط هذه القيم\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 486,
+        "total_tokens": 527,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.922
+    }
+  },
+  "694f23aebb0e83a632986fe3": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"مجال في الذكاء الاصطناعي يركز على تحليل البيانات المرئية (صور وفيديوهات) وفهم محتواها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 491,
+        "total_tokens": 530,
+        "completion_tokens": 39,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.796
+    }
+  },
+  "fc86fc3f2043d04cc3ad8f47": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"دالة تُستخدم لتحديد الخطأ بين مخرجات الخوارزمية والقيمة المستهدفة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 511,
+        "total_tokens": 547,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.73
+    }
+  },
+  "bb4396ecbcf10ca715f3b43a": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"نريد من النظام أن يحدد داخل الخبر أسماء الأشخاص والشركات والمدن\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 441,
+        "total_tokens": 470,
+        "completion_tokens": 29,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.469
+    }
+  },
+  "7eef0867df27278c80857f5d": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"تستخدم الشبكة مرشحات صغيرة تتحرك فوق مناطق الصورة لاستخراج الأنماط المرئية تدريجيًا\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 484,
+        "total_tokens": 520,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.697
+    }
+  },
+  "f5eeac7a80ba19171f8d4964": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"نختبر النسخة الجديدة في بيئة منفصلة عن النظام المستخدم فعليًا.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 461,
+        "total_tokens": 492,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.516
+    }
+  },
+  "b07b015dfe4d84d426b81d1f": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"عملية استخدام نموذج مُدرَّب للتنبؤ أو اتخاذ القرارات بناءً على بيانات جديدة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 452,
+        "total_tokens": 484,
+        "completion_tokens": 32,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.564
+    }
+  },
+  "497c7f3c37ce6b4c7f7eab36": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"كيان ذاتي التحكم يدرك بيئته ويقوم بأفعال لتحقيق أهداف محددة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 434,
+        "total_tokens": 465,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.535
+    }
+  },
+  "61355557c48450020e335908": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"ما لها مصدر\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 460,
+        "total_tokens": 477,
+        "completion_tokens": 17,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.082
+    }
+  },
+  "f1cba7d4c709ac5d59276136": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"يتعلم الكيان المستقل من التفاعل مع العالم الذي يعمل داخله\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 497,
+        "total_tokens": 526,
+        "completion_tokens": 29,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.46
+    }
+  },
+  "713ce2d78ca768276439896c": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"تربط آلية اتخاذ القرار الحالات التي يلاحظها النظام بالإجراءات التي يختارها في كل حالة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 432,
+        "total_tokens": 468,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.78
+    }
+  },
+  "2a2b2752a551e837ddf436f0": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"تنتقل الإشارات في البنية العصبية من وحدات الإدخال عبر مستويات وسيطة من الخلايا قبل الوصول إلى المخرجات\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 509,
+        "total_tokens": 550,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.868
+    }
+  },
+  "02d0ebb715068f9910cb3e48": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يملك كل اتصال بين خليتين معاملًا قابلًا للتعديل يحدد مقدار تأثير الإشارة القادمة في الحساب اللاحق\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 454,
+        "total_tokens": 493,
+        "completion_tokens": 39,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.824
+    }
+  },
+  "3dd977493710c83e8b53d968": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تضيف الخلية العصبية ثابتًا قابلًا للتعلم إلى مجموع المدخلات المضروبة في معاملاتها قبل التحويل غير الخطي\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 504,
+        "total_tokens": 549,
+        "completion_tokens": 45,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.071
+    }
+  },
+  "b587cb9f338bba2d12cb2328": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"يتلقى النظام قيمة عددية بعد تنفيذ إجراء ما\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 436,
+        "total_tokens": 460,
+        "completion_tokens": 24,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.301
+    }
+  },
+  "6e18e6adbde201073fb5190c": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"مرور ثاني عشان يحسّن المعاملات مرة ثانية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 463,
+        "total_tokens": 490,
+        "completion_tokens": 27,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.374
+    }
+  },
+  "1bc35b6c1df4c81b187c0ed6": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"عولجت مجموعة صغيرة من أمثلة التعلم معًا قبل إجراء تحديث واحد لمعاملات الخوارزمية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 436,
+        "total_tokens": 473,
+        "completion_tokens": 37,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.749
+    }
+  },
+  "3ec8550f45e346437039d410": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"كتبت للـAI تعليمات فيها المهمة والسياق والقيود عشان يطلع لي استجابة أدق\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 453,
+        "total_tokens": 490,
+        "completion_tokens": 37,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.817
+    }
+  },
+  "179b9d4a197141da4872d05a": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"معمارية شبكة عصبية لمعالجة البيانات المتسلسلة بالاعتماد على آلية الانتباه الذاتي\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 524,
+        "total_tokens": 559,
+        "completion_tokens": 35,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.72
+    }
+  },
+  "7407c855ed2ec049424afdbe": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"في بنية تنافسية تنشئ إحدى الشبكتين عينات اصطناعية تحاول محاكاة البيانات الحقيقية، بينما تقيّمها شبكة أخرى.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 489,
+        "total_tokens": 536,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.133
+    }
+  },
+  "baf24e75a39eeb2550d572bf": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"يقيّم النظام مسار القرارات من خلال القيمة التراكمية للإشارات المستقبلية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 437,
+        "total_tokens": 467,
+        "completion_tokens": 30,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.479
+    }
+  },
+  "0bd3dfad2a1759224e233548": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"في مسألة تصنيف خاضعة للإشراف، يقترن كل مثال تدريبي بفئة صحيحة تمثل المخرج المرجعي المطلوب تعلمه.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 478,
+        "total_tokens": 522,
+        "completion_tokens": 44,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.054
+    }
+  },
+  "dd7f4753687e980f82b48e19": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"النظام وسّع البعد الأصغر تلقائيًا عشان يقدر يسوي الحساب بينهم\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 479,
+        "total_tokens": 512,
+        "completion_tokens": 33,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.947
+    }
+  },
+  "fce5ebecd3540724491514b8": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"إجابة النظام\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 538,
+        "total_tokens": 555,
+        "completion_tokens": 17,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.186
+    }
+  },
+  "52d4e4e044a658226f06bc39": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"أقرب إلى القيم والنوايا البشرية المقصودة وأكثر أمانًا وموثوقية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 483,
+        "total_tokens": 517,
+        "completion_tokens": 34,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.715
+    }
+  },
+  "6fcbfe56e1cea1cad949f65f": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"تُعدَّل معاملات الخوارزمية بصورة متكررة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 459,
+        "total_tokens": 487,
+        "completion_tokens": 28,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.507
+    }
+  },
+  "dea9c177cc5aeace0bc5ef60": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تُختزل الصيغ المصرفة المختلفة للكلمة إلى شكل مبسط مشترك\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 423,
+        "total_tokens": 456,
+        "completion_tokens": 33,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.579
+    }
+  },
+  "0f8f17eb66b76eee4bd76d69": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تعتمد الطريقة على شبكة عصبية متعددة المستويات تتعلم تمثيلات متدرجة للبيانات بدل الاكتفاء بطبقة حسابية بسيطة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 494,
+        "total_tokens": 539,
+        "completion_tokens": 45,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.019
+    }
+  },
+  "5aaa715657dfa81e4fcb27ae": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تتعلم الخوارزمية من مجموعة أمثلة يرافق كل منها المخرج الصحيح المعروف مسبقًا\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 480,
+        "total_tokens": 516,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.752
+    }
+  },
+  "8b611cc896b8e3b18d3dd540": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تبحث الخوارزمية عن أنماط وتجميعات داخل بيانات لا تحتوي على فئات صحيحة محددة مسبقًا\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 466,
+        "total_tokens": 506,
+        "completion_tokens": 40,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.827
+    }
+  },
+  "1fe904900a90c9cf8bac6cc0": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"أول ما نجربه على بيانات جديدة يطيح أداؤه بشكل واضح\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 455,
+        "total_tokens": 485,
+        "completion_tokens": 30,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.498
+    }
+  },
+  "ee7524d054bd10fadb3fa463": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"مثل ReLU\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 504,
+        "total_tokens": 521,
+        "completion_tokens": 17,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.106
+    }
+  },
+  "5fce5d6198bf2672eee2e989": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"خوارزمية تُستخدم عند تدريب الشبكات العصبية الاصطناعية لتقليل الأخطاء عن طريق إيجاد قيمة التدرج المطلوب لحساب أوزان الشبكة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 477,
+        "total_tokens": 528,
+        "completion_tokens": 51,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.216
+    }
+  },
+  "3470b18727706a970a6277b5": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يستطيع النظام إنشاء محتوى جديد مثل النصوص أو الصور\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 465,
+        "total_tokens": 490,
+        "completion_tokens": 25,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.304
+    }
+  },
+  "5e836aa251567d2ccc7d642e": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"نوع من الذكاء الاصطناعي يمكنه إنشاء محتوى جديد، مثل: النصوص والصور والأصوات والفيديوهات والأكواد البرمجية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 524,
+        "total_tokens": 571,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.118
+    }
+  },
+  "69a750179db30208bae19a19": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"عملية استخدام الخوارزميات الإحصائية أو خوارزميات تعلُّم الآلة لتحديد المشاعر والآراء المضمنة في نص أو صورة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 449,
+        "total_tokens": 496,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.149
+    }
+  },
+  "ad38ac8d78789d5487242ac0": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"يحوّل النظام النص تلقائيًا من لغة مصدر إلى لغة هدف\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 450,
+        "total_tokens": 478,
+        "completion_tokens": 28,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.511
+    }
+  },
+  "8fcccb26975b04f709679111": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يصل المصنف إلى النتيجة عبر سلسلة من الشروط المتفرعة على السمات حتى ينتهي إلى قرار في عقدة نهائية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 424,
+        "total_tokens": 466,
+        "completion_tokens": 42,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.917
+    }
+  },
+  "9890adee69b7ebaced7dcc9f": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"عملية فحص كمية كبيرة من البيانات المتنوعة؛ لاكتشاف الأنماط والارتباطات والاتجاهات التي تُقدِّم رؤى وتدعم اتخاذ القرار.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 473,
+        "total_tokens": 522,
+        "completion_tokens": 49,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.144
+    }
+  },
+  "4635c82a95306513c6492b3e": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"مجموعة بيانات كبيرة تتطلب تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها؛ نظرًا لخصائص حجمها وتنوعها وسرعتها وتباينها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 474,
+        "total_tokens": 531,
+        "completion_tokens": 57,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.422
+    }
+  },
+  "ad9359d52b0ea87b8606e661": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تمكّن التقنية الحواسيب والآلات من محاكاة قدرات مثل الفهم والتعلم وحل المشكلات واتخاذ القرارات بدرجات متفاوتة من الاستقلالية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 447,
+        "total_tokens": 495,
+        "completion_tokens": 48,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.115
+    }
+  },
+  "0bb3c4c97183ca5169bbc5fc": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"الخوارزمية تتعلم من أمثلة قديمة، وبعدها نجربها على بيانات ما شافتها قبل عشان تتنبأ بالنتيجة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 483,
+        "total_tokens": 531,
+        "completion_tokens": 48,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.141
+    }
+  },
+  "ee9d92d021a8dcfbd857504e": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"تستخدم الحواسيب تقنيات لتحليل اللغة البشرية وفهم النصوص وتنفيذ مهام لغوية مثل التصنيف واستخراج المعلومات\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 414,
+        "total_tokens": 453,
+        "completion_tokens": 39,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.796
+    }
+  },
+  "e231977f0550208ad9481dfc": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"النظام اللغوي فيه عدد ضخم من parameters وتعلّم أنماط اللغة من كمية كبيرة جدًا من النصوص.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 441,
+        "total_tokens": 482,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.938
+    }
+  },
+  "9b193dc3f7791ddef2f8e1f6": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"نوع من الشبكات العصبية الاصطناعية يشتمل على عدة طبقات بين طبقتي المُدْخَلات والمخرجات\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 492,
+        "total_tokens": 539,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.078
+    }
+  },
+  "d0b079431ec9f70fb322a5a6": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"استخدمنا filters تتحرك على أجزاء صغيرة من الصورة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 456,
+        "total_tokens": 481,
+        "completion_tokens": 25,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.306
+    }
+  },
+  "3a08c92245e3269044a0982a": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تعالج البنية عناصر التسلسل بالتتابع مع تمرير حالة داخلية تحمل معلومات من الخطوات السابقة إلى اللاحقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 484,
+        "total_tokens": 525,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.973
+    }
+  },
+  "9016ded356e028d56fc5c3bf": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تستخدم البنية بوابات تتحكم فيما يُحفظ ويُنسى من الحالة الداخلية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 464,
+        "total_tokens": 497,
+        "completion_tokens": 33,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.597
+    }
+  },
+  "dcc89cb4ad250fe9a5d7bd9d": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"تؤثر أقرب نقاط إلى هذا الحد في تحديده\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 478,
+        "total_tokens": 504,
+        "completion_tokens": 26,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.345
+    }
+  },
+  "bc4b1bbddad46bebb92d26fb": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يستخرج النظام من النص إشارات إلى الأشخاص والمنظمات والأماكن وغيرها، ثم يصنف كل إشارة بحسب نوعها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 444,
+        "total_tokens": 484,
+        "completion_tokens": 40,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.89
+    }
+  },
+  "8dbfd5fe588fb2b50e4f143d": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"النظام يسوي retrieval من قاعدة معرفة خارجية أول، وبعدها يمرر المعلومات للمكوّن التوليدي عشان يبني جوابه عليها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 541,
+        "total_tokens": 587,
+        "completion_tokens": 46,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.129
+    }
+  },
+  "585ead7bbbedc1e212ed1ad2": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"تُحوَّل المتغيرات المترابطة إلى محاور جديدة غير مترابطة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 457,
+        "total_tokens": 489,
+        "completion_tokens": 32,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.549
+    }
+  },
+  "25622921e76b7c1b07dcfa76": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يُقاس أداء التنبؤ بأخذ متوسط مربعات الفروق بين القيم المتوقعة والقيم الحقيقية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 480,
+        "total_tokens": 515,
+        "completion_tokens": 35,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.682
+    }
+  },
+  "576fcae8a3facb3419d7f2ef": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"مجال في الذكاء الاصطناعي يركز على تحليل البيانات المرئية (صور وفيديوهات) وفهم محتواها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 494,
+        "total_tokens": 533,
+        "completion_tokens": 39,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.8
+    }
+  },
+  "d3d4962dd230718286fdce6c": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"المودل يحسب رقم يوضح قد إيش ناتجه بعيد عن القيمة الصحيحة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 512,
+        "total_tokens": 544,
+        "completion_tokens": 32,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.56
+    }
+  },
+  "de937a15da93390a7f796e32": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"نبي نحسن أداء النظام قبل ما نطلقه للمستخدمين\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 472,
+        "total_tokens": 499,
+        "completion_tokens": 27,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.471
+    }
+  },
+  "646c2ab69f8e5a380d41b56b": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"معلومات تبدو صحيحة ومقنعة، لكن بعضها مختلق وما له أي مصدر\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 424,
+        "total_tokens": 456,
+        "completion_tokens": 32,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.656
+    }
+  },
+  "711a08123dc49c6bb48dd614": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"المودل صار ممتاز على البيانات اللي تدرب عليها، لكن إذا جربناه على بيانات جديدة يطيح أداؤه بشكل واضح\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 432,
+        "total_tokens": 474,
+        "completion_tokens": 42,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.926
+    }
+  },
+  "4f3172138871f5eaf5883ea4": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"وكلاء ذكاء اصطناعي يكيفون استدلالهم وأفعالهم ديناميكيًّا بناءً على معلومات سياقية آنية عن بيئتهم ومستخدميهم.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 441,
+        "total_tokens": 493,
+        "completion_tokens": 52,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.252
+    }
+  },
+  "79773d1cd3fb07a6b626e0d7": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"مررنا مجموعة البيانات كاملة على النموذج خمس مرات متتالية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 361,
+        "total_tokens": 389,
+        "completion_tokens": 28,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.498
+    }
+  },
+  "cc48447f070fc6c8fadcc8fc": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"الكلام اللي نعطيه للنموذج في البداية هو اللي يحدد له المهمة وطريقة الرد المطلوبة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 402,
+        "total_tokens": 437,
+        "completion_tokens": 35,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.65
+    }
+  },
+  "cbe188eb6e80626c226764bd": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"معمارية شبكة عصبية لمعالجة البيانات المتسلسلة بالاعتماد على آلية الانتباه الذاتي\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 458,
+        "total_tokens": 493,
+        "completion_tokens": 35,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.696
+    }
+  },
+  "2979d22e7dc576fdaa2187f1": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"ترسل له البيئة قيمة عددية موجبة أو سالبة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 413,
+        "total_tokens": 439,
+        "completion_tokens": 26,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.416
+    }
+  },
+  "c53be6cee38ecc3840b7c083": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"يحتفظ النظام بتوزيع احتمالي يحدد أي الأفعال يرجح أن يختارها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 413,
+        "total_tokens": 446,
+        "completion_tokens": 33,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.624
+    }
+  },
+  "4d54f1494ca612e2d3f16c04": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"نعدّل معاملات النموذج اعتمادًا على أمثلة البيانات حتى تتحسن قدرته على أداء المهمة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 410,
+        "total_tokens": 444,
+        "completion_tokens": 34,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.722
+    }
+  },
+  "ef72bbe961eb3c621f3664f7": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"شبكة عصبية تحتوي عدة طبقات مخفية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 492,
+        "total_tokens": 517,
+        "completion_tokens": 25,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.416
+    }
+  },
+  "e50b87a918b291d640f21dae": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"نبي النظام يتعلم منها عشان يتوقع إجابات لأمثلة جديدة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 445,
+        "total_tokens": 476,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.518
+    }
+  },
+  "7c9cb5b2c1beabbb338ed65b": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"البيانات لا تحتوي أي تسميات\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 435,
+        "total_tokens": 458,
+        "completion_tokens": 23,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.317
+    }
+  },
+  "bde8489f5a80d04129a7883d": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"حساب الخطأ عند المخرج، نعيد الإشارة عبر طبقات الشبكة إلى الخلف لحساب مقدار تعديل الأوزان\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 442,
+        "total_tokens": 481,
+        "completion_tokens": 39,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.823
+    }
+  },
+  "1091c21076cf32488a4fdb87": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"النص: قادرة على إنشاء نصوص وصور وصوت جديد\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 475,
+        "total_tokens": 502,
+        "completion_tokens": 27,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.384
+    }
+  },
+  "81f3269be14cc43514efea86": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"حتى يستطيع النظام تمثيلها ومعالجتها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 409,
+        "total_tokens": 433,
+        "completion_tokens": 24,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.264
+    }
+  },
+  "4303ce163f5467b98facd2cd": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"عملية استخدام الخوارزميات الإحصائية أو خوارزميات تعلُّم الآلة لتحديد المشاعر والآراء المضمنة في نص أو صورة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 418,
+        "total_tokens": 465,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.066
+    }
+  },
+  "bf02c2e04663bb5f8af81bd9": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"النظام يحول الجملة تلقائيًا من العربية إلى الإنجليزية مع محاولة الحفاظ على معناها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 419,
+        "total_tokens": 452,
+        "completion_tokens": 33,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.67
+    }
+  },
+  "18d0c570048029f86f825d6d": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"لدينا ملايين السجلات ونبحث فيها لاكتشاف علاقات وأنماط مخفية يمكن الاستفادة منها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 406,
+        "total_tokens": 441,
+        "completion_tokens": 35,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.715
+    }
+  },
+  "50050236e0493f15b8d8fb08": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"مجموعة بيانات كبيرة تتطلب تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها؛ نظرًا لخصائص حجمها وتنوعها وسرعتها وتباينها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 444,
+        "total_tokens": 501,
+        "completion_tokens": 57,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.439
+    }
+  },
+  "e22adecd4c027a7616325656": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"بدل أن نكتب قاعدة برمجية لكل حالة، نجعل النظام يستفيد من البيانات السابقة لتحسين أدائه في المهمة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 481,
+        "total_tokens": 522,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.923
+    }
+  },
+  "04ef90dc3ca1b6b0132bb005": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"يفهم النصوص\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 383,
+        "total_tokens": 401,
+        "completion_tokens": 18,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.052
+    }
+  },
+  "98c21b4f9a577500218b5a06": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"نستخدم نموذجًا لغويًا يحتوي على عدد هائل من المعاملات وقد دُرّب على كميات كبيرة من النصوص.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 409,
+        "total_tokens": 451,
+        "completion_tokens": 42,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.979
+    }
+  },
+  "06d17ecfb17e746c823f33e9": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"البنية الحوسبية تتكون من وحدات مترابطة على شكل طبقات\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 451,
+        "total_tokens": 482,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.509
+    }
+  },
+  "a55b1e95a4e143014ad3987f": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"يبحث في قاعدة معرفة خارجية عن المقاطع المرتبطة بالسؤال ثم يستخدمها عند توليد الإجابة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 499,
+        "total_tokens": 535,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.732
+    }
+  },
+  "2e97488628c068449425021c": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"تمثيل البيانات بعدد أقل من الخصائص\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 408,
+        "total_tokens": 431,
+        "completion_tokens": 23,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.228
+    }
+  },
+  "cd31b15b50942e97cf23873f": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"نقيّم التنبؤات بحساب الفرق بينها وبين القيم الحقيقية، ثم نربّع كل فرق ونأخذ متوسط هذه القيم\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 430,
+        "total_tokens": 471,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.911
+    }
+  },
+  "1e3d9210cdd2121c8effdf69": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"النظام يحلل الصور والفيديو ليتعرف على الأشياء الظاهرة فيها ويفهم محتواها المرئي\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 438,
+        "total_tokens": 473,
+        "completion_tokens": 35,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.658
+    }
+  },
+  "be91e90e59d6a19e1fd5e4da": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"قيمة عددية تعبّر عن مقدار اختلاف مخرجاته عن القيمة المستهدفة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 452,
+        "total_tokens": 483,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.514
+    }
+  },
+  "dd91b180f405d37c08c49ce5": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"نريد من النظام أن يحدد داخل الخبر أسماء الأشخاص والشركات والمدن\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 414,
+        "total_tokens": 443,
+        "completion_tokens": 29,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.443
+    }
+  },
+  "e4b2316faf539e4b881878ec": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تستخدم الشبكة مرشحات صغيرة تتحرك فوق مناطق الصورة لاستخراج الأنماط المرئية تدريجيًا\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 438,
+        "total_tokens": 474,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.777
+    }
+  },
+  "ad273ae53adfe1a13739085a": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"نختبر النسخة الجديدة في بيئة منفصلة عن النظام المستخدم فعليًا.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 443,
+        "total_tokens": 474,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.625
+    }
+  },
+  "11b117f99fc32c2a63212a6e": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"الناتج المتعلَّم\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 407,
+        "total_tokens": 428,
+        "completion_tokens": 21,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.218
+    }
+  },
+  "c32196cbb463676718f8c19c": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"كيان ذاتي التحكم يدرك بيئته ويقوم بأفعال لتحقيق أهداف محددة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 415,
+        "total_tokens": 446,
+        "completion_tokens": 31,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.515
+    }
+  },
+  "df618d808e2d559012c440fb": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"ما لها مصدر\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 427,
+        "total_tokens": 444,
+        "completion_tokens": 17,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.024
+    }
+  },
+  "0ac4742d824878fa2b0a5894": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"يتعلم الكيان المستقل من التفاعل مع العالم الذي يعمل داخله، حيث تتغير الحالة بعد كل إجراء يتخذه.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 473,
+        "total_tokens": 514,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.862
+    }
+  },
+  "b0b24ca983192aeddaad8016": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"تربط آلية اتخاذ القرار الحالات التي يلاحظها النظام بالإجراءات التي يختارها في كل حالة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 412,
+        "total_tokens": 448,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.683
+    }
+  },
+  "ce3ae9f31e5a7c512ac607f6": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"من خلال مستويات وسيطة من الخلايا\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 453,
+        "total_tokens": 474,
+        "completion_tokens": 21,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.203
+    }
+  },
+  "6f91ff178b1f1c5e46b33dce": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يملك كل اتصال بين خليتين معاملًا قابلًا للتعديل يحدد مقدار تأثير الإشارة القادمة في الحساب اللاحق\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 410,
+        "total_tokens": 449,
+        "completion_tokens": 39,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.833
+    }
+  },
+  "7e3c4bae64cbc652c6912f04": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تضيف الخلية العصبية ثابتًا قابلًا للتعلم إلى مجموع المدخلات المضروبة في معاملاتها قبل التحويل غير الخطي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 478,
+        "total_tokens": 524,
+        "completion_tokens": 46,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.068
+    }
+  },
+  "dc7bbc81faff66c72210f4f2": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"يتلقى النظام قيمة عددية بعد تنفيذ إجراء ما\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 414,
+        "total_tokens": 438,
+        "completion_tokens": 24,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.27
+    }
+  },
+  "4c24fd6751580fea87ebef07": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"مرور كامل على كل بيانات التدريب\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 370,
+        "total_tokens": 391,
+        "completion_tokens": 21,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.148
+    }
+  },
+  "06daa2f6c942564b5a621d68": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"تحديث واحد لمعاملات الخوارزمية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 374,
+        "total_tokens": 398,
+        "completion_tokens": 24,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.267
+    }
+  },
+  "0f58090804b617f3360d6a3a": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"كتبت للـAI تعليمات فيها المهمة والسياق والقيود عشان يطلع لي استجابة أدق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 436,
+        "total_tokens": 474,
+        "completion_tokens": 38,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.844
+    }
+  },
+  "dc830ba055e064fd47daf59c": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تعالج هذه البنية عناصر التسلسل بالاعتماد على الانتباه لتحديد العلاقات بينها بدل الاعتماد على المعالجة المتكررة خطوة بخطوة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 457,
+        "total_tokens": 503,
+        "completion_tokens": 46,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.131
+    }
+  },
+  "ac18a85351ae8614a40e2a43": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"في بنية تنافسية تنشئ إحدى الشبكتين عينات اصطناعية تحاول محاكاة البيانات الحقيقية، بينما تقيّمها شبكة أخرى.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 454,
+        "total_tokens": 501,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.09
+    }
+  },
+  "bc65b2361cfc4f1a9431fb8e": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يقيّم النظام مسار القرارات من خلال القيمة التراكمية للإشارات المستقبلية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 435,
+        "total_tokens": 465,
+        "completion_tokens": 30,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.477
+    }
+  },
+  "c31a78f62b6a81943faf4c1f": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"في مسألة تصنيف خاضعة للإشراف، يقترن كل مثال تدريبي بفئة صحيحة تمثل المخرج المرجعي المطلوب تعلمه.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 445,
+        "total_tokens": 489,
+        "completion_tokens": 44,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.011
+    }
+  },
+  "97087aa8903ed39d361919c7": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"النظام وسّع البعد الأصغر تلقائيًا عشان يقدر يسوي الحساب بينهم\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 452,
+        "total_tokens": 485,
+        "completion_tokens": 33,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.587
+    }
+  },
+  "d551ebb9019f29ac3a83cd47": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تُدعَّم إجابة النظام بمعلومات مسترجعة من قاعدة معرفة خارجية حتى تعتمد الاستجابة على سياق موثوق ذي صلة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 500,
+        "total_tokens": 543,
+        "completion_tokens": 43,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.964
+    }
+  },
+  "f3d930848da9aacb7bb8214a": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"أقرب إلى القيم والنوايا البشرية المقصودة وأكثر أمانًا وموثوقية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 457,
+        "total_tokens": 491,
+        "completion_tokens": 34,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.626
+    }
+  },
+  "7e34f063e2b7bbc54e0c8a92": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"تُعدَّل معاملات الخوارزمية بصورة متكررة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 422,
+        "total_tokens": 450,
+        "completion_tokens": 28,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.512
+    }
+  },
+  "8022919ed7691a66ecd31806": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"تُختزل الصيغ المصرفة المختلفة للكلمة إلى شكل مبسط مشترك\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 398,
+        "total_tokens": 431,
+        "completion_tokens": 33,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.623
+    }
+  },
+  "a03d6c140506a7fa0b8d5eaa": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تعتمد الطريقة على شبكة عصبية متعددة المستويات تتعلم تمثيلات متدرجة للبيانات بدل الاكتفاء بطبقة حسابية بسيطة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 451,
+        "total_tokens": 496,
+        "completion_tokens": 45,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.027
+    }
+  },
+  "863590bb20bbd1e421d4baa1": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تتعلم الخوارزمية من مجموعة أمثلة يرافق كل منها المخرج الصحيح المعروف مسبقًا\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 447,
+        "total_tokens": 483,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.723
+    }
+  },
+  "6b7761e596b27017598c3b56": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تبحث الخوارزمية عن أنماط وتجميعات داخل بيانات لا تحتوي على فئات صحيحة محددة مسبقًا\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 433,
+        "total_tokens": 473,
+        "completion_tokens": 40,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.834
+    }
+  },
+  "18566a31776f7d11762b630c": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"أول ما نجربه على بيانات جديدة يطيح أداؤه بشكل واضح\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 428,
+        "total_tokens": 458,
+        "completion_tokens": 30,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.473
+    }
+  },
+  "b5ef7059b8919fc4ee900ad9": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"مثل ReLU\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 467,
+        "total_tokens": 484,
+        "completion_tokens": 17,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.029
+    }
+  },
+  "44fba818a596fd175545bc68": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"يبدأ حساب المشتقات من خطأ المخرجات ثم يتحرك عكسيًا عبر الشبكة لتحديد كيفية تعديل كل معامل وتقليل الخطأ.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 447,
+        "total_tokens": 492,
+        "completion_tokens": 45,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.0
+    }
+  },
+  "e70dc1e46bec069b27c6c520": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"يستطيع النظام إنشاء محتوى جديد مثل النصوص أو الصور\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 483,
+        "total_tokens": 508,
+        "completion_tokens": 25,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.358
+    }
+  },
+  "70187f2d7720c8b80e503402": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"جعلت تقنيات حديثة الصور ومقاطع الفيديو المفبركة شديدة الواقعية إلى درجة يصعب معها أحيانًا تمييزها عن المحتوى الحقيقي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 426,
+        "total_tokens": 471,
+        "completion_tokens": 45,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.037
+    }
+  },
+  "a578ff60250bd4e9025b0bae": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"عملية استخدام الخوارزميات الإحصائية أو خوارزميات تعلُّم الآلة لتحديد المشاعر والآراء المضمنة في نص أو صورة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 421,
+        "total_tokens": 468,
+        "completion_tokens": 47,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.133
+    }
+  },
+  "9c7d9931b49ab4eeb6f49c4b": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يحوّل النظام النص تلقائيًا من لغة مصدر إلى لغة هدف مع محاولة الحفاظ على المعنى المقصود.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 423,
+        "total_tokens": 461,
+        "completion_tokens": 38,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.827
+    }
+  },
+  "c2d1f50f3b172330982b425c": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"يصل المصنف إلى النتيجة عبر سلسلة من الشروط المتفرعة على السمات حتى ينتهي إلى قرار في عقدة نهائية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 431,
+        "total_tokens": 472,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.929
+    }
+  },
+  "323f84a750973b70521df71f": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تُحلل مجموعات كبيرة من السجلات لاكتشاف أنماط وعلاقات خفية يمكن استخدامها في التنبؤ ودعم القرار\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 412,
+        "total_tokens": 453,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.858
+    }
+  },
+  "5c4365ac342194b18ae0572b": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"مجموعة بيانات كبيرة تتطلب تقنيات قابلة للتوسع لتخزينها ومعالجتها وإدارتها وتحليلها؛ نظرًا لخصائص حجمها وتنوعها وسرعتها وتباينها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 439,
+        "total_tokens": 496,
+        "completion_tokens": 57,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.51
+    }
+  },
+  "63360c2b6aabe9eb9282383a": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"محاكاة قدرات مثل الفهم والتعلم وحل المشكلات واتخاذ القرارات\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 422,
+        "total_tokens": 452,
+        "completion_tokens": 30,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.475
+    }
+  },
+  "d7c5318198c4524b54d49a53": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تتعلم من أمثلة قديمة، وبعدها نجربها على بيانات ما شافتها قبل عشان تتنبأ بالنتيجة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 415,
+        "total_tokens": 460,
+        "completion_tokens": 45,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.997
+    }
+  },
+  "6ddb568651a6e60336f00a31": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"فرع من فروع الذكاء الاصطناعي يهتم بفهم أو توليد اللغة البشرية سواءٌ كانت على شكل نص أو كلام\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 387,
+        "total_tokens": 428,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.22
+    }
+  },
+  "221376dc94bdbc07ce421000": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"النظام اللغوي فيه عدد ضخم من parameters وتعلّم أنماط اللغة من كمية كبيرة جدًا من النصوص.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 408,
+        "total_tokens": 449,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.918
+    }
+  },
+  "43e7c868776c904cd8d68b6a": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"وتنتقل القيم بينها عبر معاملات تتغير أثناء التعلم\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 374,
+        "total_tokens": 399,
+        "completion_tokens": 25,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.3
+    }
+  },
+  "f5b450ac71bf967ee08cc53f": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"استخدمنا filters تتحرك على أجزاء صغيرة من الصورة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 414,
+        "total_tokens": 439,
+        "completion_tokens": 25,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.318
+    }
+  },
+  "9e1f55543bb5e136d64222dd": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"تعالج البنية عناصر التسلسل بالتتابع مع تمرير حالة داخلية تحمل معلومات من الخطوات السابقة إلى اللاحقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 452,
+        "total_tokens": 493,
+        "completion_tokens": 41,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.116
+    }
+  },
+  "1c45a33a725bff341506c816": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"تستخدم البنية بوابات تتحكم فيما يُحفظ ويُنسى من الحالة الداخلية\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 434,
+        "total_tokens": 467,
+        "completion_tokens": 33,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.599
+    }
+  },
+  "fe5cc0a6730eb02170c954dd": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"يبحث المصنف عن حد فاصل بين الفئات يحقق أكبر هامش ممكن، وتؤثر أقرب نقاط إلى هذا الحد في تحديده.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 397,
+        "total_tokens": 442,
+        "completion_tokens": 45,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.074
+    }
+  },
+  "14b442cfee9b1891aa892222": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يستخرج النظام من النص إشارات إلى الأشخاص والمنظمات والأماكن وغيرها، ثم يصنف كل إشارة بحسب نوعها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 418,
+        "total_tokens": 458,
+        "completion_tokens": 40,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.846
+    }
+  },
+  "1a02c81edbe9bbb9a9abcb1e": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"النظام يسوي retrieval من قاعدة معرفة خارجية أول، وبعدها يمرر المعلومات للمكوّن التوليدي عشان يبني جوابه عليها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 503,
+        "total_tokens": 549,
+        "completion_tokens": 46,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.13
+    }
+  },
+  "d00824b16a125b542ee24470": {
+    "output": "{\"choice\": \"NONE\", \"evidence\": \"\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 436,
+        "total_tokens": 449,
+        "completion_tokens": 13,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 0.904
+    }
+  },
+  "a0f8a815793697f29bf43a7a": {
+    "output": "{\"choice\": \"C1\", \"evidence\": \"يُقاس أداء التنبؤ بأخذ متوسط مربعات الفروق بين القيم المتوقعة والقيم الحقيقية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 424,
+        "total_tokens": 460,
+        "completion_tokens": 36,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.73
+    }
+  },
+  "962418c03ecb59f4a91ad860": {
+    "output": "{\"choice\": \"C3\", \"evidence\": \"مجال في الذكاء الاصطناعي يركز على تحليل البيانات المرئية (صور وفيديوهات) وفهم محتواها\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 441,
+        "total_tokens": 480,
+        "completion_tokens": 39,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.802
+    }
+  },
+  "b0badeb585dfa40cf1d18ac2": {
+    "output": "{\"choice\": \"C4\", \"evidence\": \"المودل يحسب رقم يوضح قد إيش ناتجه بعيد عن القيمة الصحيحة\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 374,
+        "total_tokens": 406,
+        "completion_tokens": 32,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.537
+    }
+  },
+  "75d763a0fafe503bd78973cd": {
+    "output": "{\"choice\": \"C2\", \"evidence\": \"نبي نحسن أداء النظام قبل ما نطلقه للمستخدمين\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 443,
+        "total_tokens": 470,
+        "completion_tokens": 27,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 1.427
+    }
+  }
+}
