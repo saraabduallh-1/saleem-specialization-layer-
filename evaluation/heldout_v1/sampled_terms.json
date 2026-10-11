@@ -1,0 +1,4396 @@
+{
+  "dataset": "heldout_v1",
+  "seed": 20261011,
+  "pair_rule": "mutual nearest neighbours by E5 definition embedding",
+  "dictionary_file": "data/processed/data_ai/terminology_base.json",
+  "dictionary_sha256": "6e10b2069d2ce8e9d7de5be8a4913a2f601417ba70649bdbc519d653ad9a1fe4",
+  "n_canonical_units": 1316,
+  "n_excluded_dev_terms": 199,
+  "n_eligible": 1117,
+  "unresolved_excluded_names": [],
+  "excluded_unit_ids": [
+    "00713a01-8add-47eb-bb34-f3d7c90a481b",
+    "030f7a74-8710-4281-9c2b-8680c38b8efa",
+    "05ef3602-e645-43e5-b61c-7f79beab4ba1",
+    "06a96c80-2510-4c30-8221-04448cca3c96",
+    "0713394d-e7cb-4c62-b4cc-d9c1cc0557de",
+    "078153e7-378b-4112-9b36-864bb4d4a011",
+    "07a64f78-42e0-42c8-bbe2-b6ab60286646",
+    "07d41d6c-dac7-404d-8adc-f4e69b1ee8a6",
+    "08176ed0-a78a-4909-9d97-cfb8ee956bb9",
+    "09131d82-e816-4bc6-a4f1-958b5f5bb79b",
+    "09f1271f-d76e-471c-a05b-426b911ae194",
+    "0acee532-2840-4a67-a98f-2522447757e0",
+    "0ad70fcf-84d2-496d-9816-58a9a0b6837a",
+    "0b865e8e-90fc-474d-b1b7-eb4e834ba476",
+    "0c8ea440-477f-4f83-bc57-63684b9c5c64",
+    "0e5873bc-dec4-4823-9d6e-6368e24b7d3b",
+    "0f092d9c-d092-491c-95fa-497cf1b83a98",
+    "0f1567e4-bd3d-40a9-8325-5aff97d198d1",
+    "10526d45-7a41-440d-b141-b65d4cc50e40",
+    "1216dbb2-a991-48f7-99ba-7e9eb1604d5a",
+    "121ae773-7340-49cb-af8f-cc070f035ffd",
+    "129bbd2c-97f6-46b6-84da-179e936d9188",
+    "133a13a2-669b-4565-bac9-12ed4374ae06",
+    "13c18d83-0fdd-4fad-a06f-8d9f54a7daec",
+    "13f39b3c-8c85-42a9-8766-4198c4139ef6",
+    "140360e1-44eb-4078-a1b3-5a28860b98a8",
+    "155e9e08-b746-4571-80ef-8781d3bb9fb9",
+    "16642413-9352-427b-8056-c528bb4fb4ad",
+    "18d50a0e-b898-45e0-82fe-1e526ed7b095",
+    "1b55e689-95d5-479d-9af0-db7f241bacb9",
+    "1b59800d-49bb-4c9f-bd5d-d8c1b9f38a46",
+    "213a7603-cf98-4f86-8c97-98261de9d461",
+    "2307e7a7-58ec-4dcd-b222-467ad18bf951",
+    "2413effe-d879-49fc-a959-3c35cfdd6789",
+    "244bb766-2a01-4302-aae2-523f223cc92c",
+    "2552ba6c-fab6-441e-b9f9-cb1db53d9d7e",
+    "28c82b94-8d47-4728-b819-1544d54b9103",
+    "2a03a9fb-4b6d-4e75-bd99-c6c3d76d2d2a",
+    "2aab82fa-7139-49e5-8f5a-f5f27a8f1ef9",
+    "2b61d37b-6647-45d7-89e9-4759109d726c",
+    "2c8e4ff2-6754-4017-9a49-a6bb1e5df448",
+    "2d6661f2-d1b1-4dad-92f9-08acdd53953d",
+    "2db9878d-1c0d-4fbc-a3fc-4868e646c58c",
+    "2f2cefca-bf1c-418f-b152-9f0229797e6b",
+    "36b69371-37ef-4145-b219-3f24356df629",
+    "3757fd68-6ec0-42b7-a1b8-b6042346aeb3",
+    "3791d14b-893c-4cc0-bfc6-3ffaa4c83b9e",
+    "37bde43b-0b34-457b-a23b-9aecf4a44fd9",
+    "3ab189dc-93d3-4140-947a-d46677ca17ff",
+    "3ad40dff-4ca4-4a00-bde4-2c6f0c374966",
+    "3b983659-bf84-495f-a283-3801d7814e23",
+    "3c049293-e72e-469e-8416-f5ce0d415c28",
+    "42ee397f-c1db-41bf-b045-abf52bf9da53",
+    "4310bfb2-5046-4a96-8306-cc3504083268",
+    "435931d5-0442-4725-b575-d296b4126702",
+    "4395e3fc-c603-45a8-8f53-47934eea89b3",
+    "43faeea9-d6f9-4d37-b0c9-f55c6dc0ff0e",
+    "446aeed2-33c2-42db-995c-f920067019cd",
+    "4478af2d-bf49-4664-8213-8a8adf8a0a5e",
+    "449ac53b-93d2-4061-a527-199fc01d7e2f",
+    "45590793-f757-41fc-8325-5ed6303f02a8",
+    "47c55d04-cfc8-4883-bcd6-a8d39ed5aee8",
+    "47e03aa2-6f90-4231-b00d-c33b83830e6e",
+    "4876b622-3d03-43eb-ac86-88e282a25898",
+    "4abbbc7a-acc8-4b7d-a95b-916e73417062",
+    "4c0b94be-a4b4-4289-8976-57e1ba892e0e",
+    "4eac205d-3a0a-4d7e-9a53-3917608e2e70",
+    "4f581246-30fe-4570-8605-1c611eaf5d45",
+    "4f71d459-fb94-4437-b188-466e2a6765a1",
+    "51f2785a-f64c-4198-9c18-c93e04853146",
+    "520eefab-ed6d-4e23-9263-ee139aa293d6",
+    "52bc9443-5027-401f-b764-1fc7640e0b5e",
+    "53643d3e-c704-4b97-b6b1-9bec7c32701d",
+    "53a44312-ed5e-4a5d-991f-63faab98da4f",
+    "54e8b2a9-b47a-446f-b711-5636b06223b3",
+    "55d1c592-62a9-47be-8f1f-4f33f3578a06",
+    "565a5980-ec81-434e-bd90-61882ce3f0b0",
+    "56adf094-f0eb-4a22-86b5-1409588249eb",
+    "57b7b9d4-c026-4614-83d8-ee37afe3488f",
+    "58584811-1818-442b-b92f-9dd70f7fb087",
+    "586e5257-0d58-4ad5-8341-cb9f54b8cedd",
+    "5882bfa5-3d27-4a19-877c-6c0cd90a73b3",
+    "58b4bca3-f7c5-4205-b569-7a9de08427ff",
+    "5909e0f9-aea9-4e9b-abe5-a4926530000d",
+    "59f62131-de0e-4147-8f6d-86ab8e229f19",
+    "5c4e66d5-495a-43e3-8b52-65b244ecad64",
+    "5c59c0a2-308d-43b5-a574-ee4e1d1cfbe0",
+    "5ed40f8d-46f3-4220-9e76-6bf9ed48e587",
+    "5fe363f9-4108-4c40-a49f-d01abdb6931c",
+    "605f7542-8289-4637-8cf8-0d6a16592e30",
+    "62c0c0e3-72db-40ae-9cec-616825860e73",
+    "652ebd27-98cc-427e-be5c-c4372e3ff1e5",
+    "65aa8dd1-02af-4cfc-b086-faf8d5be820a",
+    "68e30de0-354e-4b89-9396-2928a1e13b9a",
+    "6bca9082-966a-4b68-b135-db216f6d080d",
+    "6d86e0e1-8b44-4df1-91f8-2ef04a5e1770",
+    "7299ce17-fad9-407b-b0dc-41579c58bbbd",
+    "746ab890-7dd4-4c39-8abc-9eba232dad3a",
+    "74f2514b-7ca7-446f-94ed-e6c6ab06bcc6",
+    "7653197c-feda-4347-8fee-90b5a4448c2e",
+    "76fe0ea7-2108-4e79-a0f3-8618c367cc4b",
+    "784fb957-1319-4ce8-afd7-10fd35512749",
+    "7a3a8e86-4f4c-437c-905d-d7f414c9ec29",
+    "7c0835df-2541-4258-8c26-fdf4a2c9b12b",
+    "7d2a697b-38e8-42e3-bac9-fe6f0c7bb7c7",
+    "7e4b7ba7-d682-409c-988c-aac95c780c15",
+    "80eb8cd6-409b-4c60-8b08-10b5d0189bd1",
+    "85f82148-1d13-40d5-97c5-39fda53af866",
+    "8632929d-665c-4a7c-922f-671eb2cc2dfd",
+    "89ef389d-56bd-4783-ac8e-469e629fc51f",
+    "8a255a69-621d-48f6-9db1-1754e254cfc1",
+    "8b6463ae-bf5e-41bb-a211-cb5742a8061c",
+    "8d4388ba-03db-4d9c-8a22-dd01cc9d33b1",
+    "8deebe90-0a9c-4835-852d-e7ac83a07810",
+    "8e100d7f-97cb-429c-8260-9f0db74bcbb1",
+    "8e6116ba-38fb-43c3-9be5-2dd4fd90ea47",
+    "8f0206cd-6777-4911-bee0-820bd116b6d5",
+    "8f551cb7-f821-4cd0-9da2-59218cda8376",
+    "921a5083-6b01-48fb-a8d9-1d9cafd05926",
+    "94256d7f-e67f-4a9b-bb9e-fdc74e7eeec8",
+    "96e23578-a1b7-4da1-bed7-d86ebf6d66fa",
+    "97bade68-8d59-4e8c-b472-235997382efb",
+    "99686190-8f2a-474a-9159-ace5fd8f07ad",
+    "9983bdf0-0806-4a0a-ae1a-14fbc882cf83",
+    "9995b394-6470-4b9e-9fe1-460def0b1a1b",
+    "9b2995b8-1593-401b-859e-a934ed1f2af0",
+    "9c1a9e5b-0b5c-48e8-a657-f571baeb8303",
+    "9e116c6f-05ce-41e5-9551-77124d9038ad",
+    "9ebb32ca-b471-440e-9a7d-6ea71f6c8a33",
+    "9f6c85ea-15b0-4e40-a494-265a439622f7",
+    "a0d9a98c-409f-4d58-982d-ad62fc7ce732",
+    "a2bf00ac-2352-4441-8a39-2f2754b15f9d",
+    "a338b836-30ee-471a-a164-f09c919243ce",
+    "a446b66c-33ad-42b1-8cdb-ce9515b4aefe",
+    "a46caab0-8974-4c07-a18e-51d8c313387c",
+    "a4e668fa-a99e-41be-9f93-c93643aeb39a",
+    "a7581894-23b7-404b-9bc1-3e38d6c1481b",
+    "aa29a31c-fcc1-4e19-94c3-03175f9d6be1",
+    "aae33486-5e2e-4fc6-8d53-9ced81dad5a5",
+    "ab4acb5a-b976-4f8e-991d-646708334a8f",
+    "ad55e149-01df-4514-99fc-9bac09d0eb06",
+    "ad85f045-5aca-4c45-8992-31c99aa8e1bb",
+    "ae7202bd-22c0-4738-bb22-132fd8c03c61",
+    "af99344a-2fac-496e-a5eb-032a101353c0",
+    "b2e59aa3-7ac6-4a81-8a8f-605739a225f9",
+    "b4db55fb-70d0-49db-9b51-71f3a5db72c6",
+    "b6482543-ee18-448a-96b7-8be6e991cc73",
+    "b814566f-c2a1-46cb-b258-0b56269b8539",
+    "bc3c9b1b-ef70-473f-8ea2-9b70714131d5",
+    "bedfc041-e663-44fe-b599-ad8b6a10dc71",
+    "bfaaf53c-dcd9-4787-abea-9210c57cd5f3",
+    "c1daebbe-f861-4887-96c4-527daa4b4fd0",
+    "c2503af5-cc46-4d9b-a221-3003ef7ff0cd",
+    "c33c453c-367b-452a-8763-7ba23871b01f",
+    "c3fb06db-fc0c-4acd-b18d-1f2d209eb653",
+    "c576d7c8-a1b8-4daa-ac93-7def53a2ec62",
+    "c97b5126-9539-4bf7-b888-c909698fdb1b",
+    "c9a6ef27-e20f-4ced-91e2-6faefa356638",
+    "cc487462-eab8-4078-9e10-703208187a82",
+    "cd950eb2-bfab-4200-a534-9e787a26e99e",
+    "cddea42e-e614-47ba-8275-dedd4c5938a0",
+    "cf46ac8e-2e8e-4d06-a9f3-5f9af58dad2e",
+    "cff959f0-2643-4726-b7db-5e2767439488",
+    "d0d5af23-ed3b-488a-9bbe-ce241af30a90",
+    "d108936e-b111-4d4e-b3fe-b1113d2f11d2",
+    "d1ac3074-c32f-4c37-86d7-dcd2fea077f7",
+    "d3d5364b-e224-4c4f-bc0a-357dbf2b7ff2",
+    "d42d69bd-b83d-4762-902c-7d6284f8dc86",
+    "d48ba16a-3e12-48a7-b693-a56e1b26085c",
+    "d5b5392a-3a3b-4b08-be5d-f313f62dd170",
+    "d77a51fe-d892-4363-80b1-6d1bf230160f",
+    "d7854361-c7e4-47f9-be84-ef93ce0f9d7c",
+    "d7a6c3be-1c19-4fea-b888-4e827a9effbc",
+    "dce34dcc-d009-471f-9954-0b5a83cbf9df",
+    "dd10d1b5-db69-48ce-91cf-9bedf6c6609c",
+    "e260de36-d9da-40b5-b345-58c014062aaa",
+    "e27b5cf6-ae3b-49f2-84ee-36a8584f5363",
+    "e437eb89-d717-42b1-be15-9870b11d5a79",
+    "e4786600-696a-435b-b68e-0274930151b0",
+    "e85d7639-c02f-4522-be39-0f1e925bc5a4",
+    "eaa74f3c-ff03-458e-bdd0-454137d76f32",
+    "ecd0fb05-e7f6-4c47-9459-0287d8c338f0",
+    "ee891205-66ea-47fc-a786-04471aff671a",
+    "ef43e40f-cd78-449c-977a-eaf316619cba",
+    "f123ed65-5cbf-4faa-a769-5cfed8e8e781",
+    "f27193be-3d00-47e3-a426-2f363ce83c4b",
+    "f3a22280-e9e6-460d-ba6b-65ac5c52c21b",
+    "f3a5d7cb-4a01-40fc-a5c1-260d18b0425d",
+    "f3f85a80-199c-4a4b-85fa-8464c23d1c03",
+    "f4261dc3-c3fc-45cd-a43a-07fd087ed0f7",
+    "f4c7c9b4-82c2-4e28-9931-d62e5f72d09f",
+    "f702c4e3-88f9-4e57-be31-228b6512d04c",
+    "f9244497-c14e-49d9-9074-1b431b3aff76",
+    "fa3b369a-2b40-4df7-8906-6d3d72f2234e",
+    "fa65c6dc-40ae-4fbe-8f5d-1721edd83752",
+    "fb384d22-1195-46b5-93dd-658d1e74ef33",
+    "fcdad429-cb32-4b0c-afa9-ce1c96fcb6e0",
+    "fdc1c5b3-63a8-4552-a05c-cfe0d6b972f2",
+    "fec86362-4264-48ba-b467-167fe4867ac2"
+  ],
+  "usage": "Use pools in listed order; skip an entry only for a reason allowed by the authoring guide, record the reason, then take the next reserve entry.",
+  "pools": {
+    "near_neighbour_pairs": {
+      "primary": [
+        {
+          "pair_similarity": 0.9474,
+          "a": {
+            "unit_id": "711407e3-06e8-42e9-b3bc-5a7ffd638244",
+            "headword": "توزيع-تجميع",
+            "definition": "نوع من معالجة البيانات الكبيرة يُوزِّع الحوسبة المطلوبة عبر عُقَد مختلفة، ثم يُجمِّع النتائج الإجمالية من كل عقدة.",
+            "english": "Scatter-Gather",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "ac033038-6e91-4213-a47d-a3445bc4d836",
+            "headword": "معالجة البيانات الموزَّعة",
+            "definition": "شكل من أشكال معالجة البيانات تُوزَّع فيه العمليات بين شبكة من أجهزة الحاسب.",
+            "english": "Distributed Data Processing",
+            "aliases": [],
+            "abbreviations": [
+              "DDP"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9602,
+          "a": {
+            "unit_id": "eccf200a-4386-45d2-a0a2-5cdae6e2af8d",
+            "headword": "استدلال استنباطي",
+            "definition": "عملية استخلاص الاستنتاجات بناءً على بيانات أو حقائق عامة مقبولة على أنها صحيحة. ويُطلق عليها أيضًا \"استنباط\".",
+            "english": "Deductive Reasoning",
+            "aliases": [
+              "استنباط",
+              "استنباط"
+            ],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "fc4d7232-9489-4338-bb5c-0eafd4f8dab7",
+            "headword": "استدلال استخلاصي",
+            "definition": "عملية استنتاج نتائج محتملة بناءً على معلومات معروفة. ويُطلق عليها أيضًا \"استخلاص\".",
+            "english": "Abductive Reasoning",
+            "aliases": [
+              "استخلاص",
+              "استخلاص"
+            ],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9221,
+          "a": {
+            "unit_id": "7d28d91e-fbbf-46df-a372-7ff5c1cf842c",
+            "headword": "مصفوفة العناصر",
+            "definition": "مصفوفة من التضمينات في أنظمة التوصية مُولَّدة بواسطة تحليل المصفوفة إلى عوامل تتضمن إشارات كامنة حول كل عنصر.",
+            "english": "Item Matrix",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "d6995c87-8628-4710-9631-3e91b8a7aa18",
+            "headword": "مصفوفة المستخدم",
+            "definition": "مصفوفة في أنظمة التوصية تشتمل على عوامل كامنة حول تفضيلات المستخدم.",
+            "english": "User Matrix",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9464,
+          "a": {
+            "unit_id": "880680f0-f4a1-4b37-8d1e-cce757c485a4",
+            "headword": "سياسة عشوائية",
+            "definition": "سياسة في التعلُّم التعزيزي تختار الفعل عشوائيًّا.",
+            "english": "Random Policy",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "d975fbcc-4e8b-4114-80b7-42b609d9cf61",
+            "headword": "سياسة إبسيلون الجشعة",
+            "definition": "سياسة في التعلُّم التعزيزي تتبع سياسة عشوائية مع احتمال إبسيلون أو سياسة الجشع.",
+            "english": "Epsilon Greedy Policy",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9457,
+          "a": {
+            "unit_id": "4271f0cd-cf1f-42e2-ba8d-61b5228f35e6",
+            "headword": "تكامل دون استخراج وتحويل وتحميل",
+            "definition": "طريقة لتكامل البيانات، تتيح مشاركة البيانات ومزامنتها مباشرةً بين الأنظمة، مع تقليل الحاجة إلى خطوط الاستخراج والتحويل والتحميل.",
+            "english": "Zero Extract, Transform, and Load",
+            "aliases": [],
+            "abbreviations": [
+              "Zero-ETL"
+            ]
+          },
+          "b": {
+            "unit_id": "798acb47-8671-47ce-92c7-ccdc41062901",
+            "headword": "افتراضية البيانات",
+            "definition": "طريقة لتكامل البيانات تُتيح الوصول في الوقت الآني إلى مصادر البيانات الموزعة دون نقلها أو نسخها فعلياً.",
+            "english": "Data Virtualization",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9375,
+          "a": {
+            "unit_id": "0e1b6281-3614-4cb2-9f61-b97d5221e6c8",
+            "headword": "إستديو الوكيل",
+            "definition": "منصة تطوير تُتيح واجهات مرئية وأداوات متكاملة تُمكّن المستخدمين من تصميم الوكلاء وبنائهم واختبارهم ونشرهم.",
+            "english": "Agent Studio",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "63c9ed80-6849-4886-ba9c-bb19c0d2cb86",
+            "headword": "سوق الوكيل",
+            "definition": "منصة رقمية تتيح للمطورين والمؤسسات نشر الوكلاء واكتشافهم ومشاركتهم وتشغيلهم في تطبيقات واستخدامات متنوعة.",
+            "english": "Agent Marketplace",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9457,
+          "a": {
+            "unit_id": "7a67367b-833b-4808-820a-af9a5fa9b4ba",
+            "headword": "نوع البيانات",
+            "definition": "مجموعة محددة من البيانات التي لها هياكل محددة ومجموعة من العمليات المُتاحة.",
+            "english": "Datatype (or Data Type)",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "a7bf1341-f0fd-4418-8ed1-da9c415cf1c0",
+            "headword": "بيانات مهيكلة",
+            "definition": "بيانات منظمة بطريقة محددة سابقًا، وفقًا لمجموعة من القواعد.",
+            "english": "Structured Data",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9337,
+          "a": {
+            "unit_id": "a7e53c89-e6d1-418f-95a0-c1451bb72243",
+            "headword": "مهمة ذرائعية",
+            "definition": "مهمة في التعلُّم الذاتي التوجيه مصممة لإنشاء تمثيل مفيد للبيانات، دون الحاجة إلى أمثلة مُسمَّاة.",
+            "english": "Pretext Task",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "d2496cbe-8a80-4144-b358-0827caebda44",
+            "headword": "تدريب ذاتي",
+            "definition": "طريقة تعلُّم ذاتي التوجيه تُستخدم في التصنيف عندما تكون البيانات غير المُسمَّاة أكثر من البيانات المُسمَّاة.",
+            "english": "Self-Training",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9206,
+          "a": {
+            "unit_id": "736826a6-1499-4721-8558-d3a007287aeb",
+            "headword": "ذكاء محيطي",
+            "definition": "بيئة رقمية مراعية للأشخاص، وداعمة لحياتهم اليومية.",
+            "english": "Ambient Intelligence",
+            "aliases": [],
+            "abbreviations": [
+              "AmI"
+            ]
+          },
+          "b": {
+            "unit_id": "e94f02d2-611a-4e0e-b4d1-7f48e9fc7e00",
+            "headword": "معرفة بديهية",
+            "definition": "المعلومات التي تساعد البشر على فهم الأنشطة اليومية.",
+            "english": "Commonsense Knowledge",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9261,
+          "a": {
+            "unit_id": "6fc0c1d3-adcd-4378-839a-fa00615cd02c",
+            "headword": "تحليل الحساسية",
+            "definition": "عملية تقييم كيفية تأثر مخرجات النموذج بالتغيرات في المُعامِلات المُدْخَلة.",
+            "english": "Sensitivity Analysis",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "cc991b1f-89ce-45b7-a7e4-1fec99308d0d",
+            "headword": "معالجة لاحقة",
+            "definition": "معالجة مخرجات النموذج بعد تشغيل النموذج.",
+            "english": "Post-Processing",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9693,
+          "a": {
+            "unit_id": "026baca9-5e48-468e-9a7f-2e68f0d11e0c",
+            "headword": "شكل تينسر",
+            "definition": "عدد العناصر الموجودة في أبعاد تينسر.",
+            "english": "Tensor Shape",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "997cd808-f8f1-4f48-807d-fba008806c47",
+            "headword": "حجم تينسر",
+            "definition": "العدد الإجمالي للعناصر في تينسر.",
+            "english": "Tensor Size",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9555,
+          "a": {
+            "unit_id": "e4e31213-82f6-47d6-82ea-21ce7009a5c7",
+            "headword": "تخزين البيانات النشطة",
+            "definition": "بيانات مخزَّنة يمكن الوصول إليها بسرعة للاستخدام الفوري.",
+            "english": "Hot Data Storage",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "e5ccdd40-8804-4e43-93d2-13b5b5ee55d4",
+            "headword": "بيانات آنية",
+            "definition": "البيانات التي يمكن الوصول إليها فور توليدها.",
+            "english": "Real-Time Data",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9339,
+          "a": {
+            "unit_id": "8a3d0517-a6a2-4cec-ae21-dc10ed143658",
+            "headword": "استدلال بديهي",
+            "definition": "قدرة أنظمة الذكاء الاصطناعي على فهم المواقف اليومية، والاستنتاج منها بطريقة مشابهة للبديهة البشرية.",
+            "english": "Commonsense Reasoning",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "d43d4839-6cdc-4794-a08a-a56c9692afa9",
+            "headword": "منظور الآلة",
+            "definition": "قدرة النظام على تلقي البيانات من البيئة الخارجية وتفسيرها بطريقة مماثلة لكيفية استخدام البشر حواسهم.",
+            "english": "Machine Perception",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9239,
+          "a": {
+            "unit_id": "d383a326-a01e-499b-bf46-c8eea945229b",
+            "headword": "مثال",
+            "definition": "مثال من مجموعة البيانات يتكون من خاصية واحدة أو أكثر وقد يحوي اسمًا أيضًا. ويُطلق عليه أيضًا \"حالة\".",
+            "english": "Example",
+            "aliases": [
+              "حالة",
+              "حالة"
+            ],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "d7429445-860b-4f78-826b-835faf23e214",
+            "headword": "مثال اختبار",
+            "definition": "مثال من بيانات الاختبار يتكون من خاصية واحدة أو أكثر، وقد يحوي اسمًا أيضًا.",
+            "english": "Testing Example",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9524,
+          "a": {
+            "unit_id": "4df7a044-9f1e-4f3b-b986-7125a01d7d42",
+            "headword": "خاصية متناثرة",
+            "definition": "مُتَّجه خصائص تكون أغلب قيمه صفرية أو فارغة.",
+            "english": "Sparse Feature",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "ab448793-7f35-4c21-985c-c8ba2baa3313",
+            "headword": "مُتَّجه متناثر",
+            "definition": "مُتَّجه تكون أغلب قيمه صفرية.",
+            "english": "Sparse Vector",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9072,
+          "a": {
+            "unit_id": "36a617a3-3534-4645-982e-b9aabbc491fd",
+            "headword": "تجميع",
+            "definition": "طريقة في تعلُّم الآلة غير الموجَّه لتجميع الأشياء المتشابهة في مجموعات. ويُطلق عليها أيضًا \"تحليل المجموعات\".",
+            "english": "Clustering",
+            "aliases": [
+              "تحليل المجموعات",
+              "تحليل المجموعات"
+            ],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "c00c145d-79b6-49a3-8131-41d30f51b04c",
+            "headword": "تعلُّم التشابه",
+            "definition": "نوع من تعلُّم الآلة الموجَّه يُدرِّب مقياسًا للعثور على التشابه بين شيئين.",
+            "english": "Similarity Learning",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9247,
+          "a": {
+            "unit_id": "00fe6fdb-373e-417f-8375-21b56e13086f",
+            "headword": "تحقق تقاطعي مُجَزَّأ",
+            "definition": "أسلوب لتقييم النماذج عن طريق تقسيم مجموعة البيانات إلى عدد (ك) مجموعات فرعية لتدريب النماذج واختبارها بصورة تكرارية، ثم حساب متوسط ​​النتائج لتقدير الأداء العام.",
+            "english": "K-Fold Cross-Validation",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "f573b721-6bd8-4340-be81-313770dd1c77",
+            "headword": "تحقق تقاطعي",
+            "definition": "آلية لتقييم تعميم النموذج على البيانات الجديدة؛ عن طريق اختبار النموذج على مجموعة فرعية واحدة أو أكثر، مأخوذة من مجموعة التدريب.",
+            "english": "Cross-Validation",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9433,
+          "a": {
+            "unit_id": "034c1e0b-2d53-460b-aa62-a79dc59854d2",
+            "headword": "تقسيم الأشياء",
+            "definition": "مهمة في رؤية الحاسب تتضمن تحديد وتوضيح كل شيء مُميَّز داخل الصورة، وتُعيِّن حدودًا دقيقة واسمًا فريدًا لكل الأشياء فيها.",
+            "english": "Instance Segmentation",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "dc68f807-67da-444f-b391-6fb512d2dfb4",
+            "headword": "تقسيم شامل",
+            "definition": "مهمة في رؤية الحاسب تجمع بين التقسيم الدلالي وتقسيم الأشياء لتقديم فهم كامل ومفصل للصورة.",
+            "english": "Panoptic Segmentation",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9195,
+          "a": {
+            "unit_id": "a68c8ef9-43c3-425c-ace3-e16150cc4975",
+            "headword": "منحنى الإحكام-الاستدعاء",
+            "definition": "رسم بياني يمثل الإحكام مقابل الاستدعاء عند حدود تصنيف مختلفة.",
+            "english": "Precision-Recall Curve",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "ba201545-22a0-4f61-9baa-33c1b2126ab5",
+            "headword": "سطح الخسارة",
+            "definition": "رسم بياني يمثل الأوزان مقابل الخسارة.",
+            "english": "Loss Surface",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9558,
+          "a": {
+            "unit_id": "6837b4e2-bdd7-4767-b4b3-63274308f9e8",
+            "headword": "سايكيت-ليرن",
+            "definition": "مكتبة شهيرة مفتوحة المصدر تُستخدم في تعلُّم الآلة، مكتوبة بلغة بايثون.",
+            "english": null,
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "9e126234-72d3-4337-bd63-16f8837aa0c2",
+            "headword": "ماتبلوتليب",
+            "definition": "مكتبة رسومية مفتوحة المصدر بلغة بايثون تُستخدم لتصوير جوانب مختلفة من تعلُّم الآلة.",
+            "english": null,
+            "aliases": [],
+            "abbreviations": []
+          }
+        }
+      ],
+      "reserve": [
+        {
+          "pair_similarity": 0.9415,
+          "a": {
+            "unit_id": "d9cdc93d-2b29-4d21-95fb-5ee358130260",
+            "headword": "كفاءة خوارزمية",
+            "definition": "مقياس لحساب متوسط الوقت اللازم للخوارزمية لتنفذ العمل كاملًا على مجموعة من البيانات.",
+            "english": "Algorithmic Efficiency",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "e6a3935f-7f8f-4d55-9c87-08af223cc327",
+            "headword": "رمز (أُو) الكبرى",
+            "definition": "مقياس نظري للوقت أو الذاكرة اللازمين لتنفيذ الخوارزمية بالنظر إلى حجم المشكلة.",
+            "english": "Big O Notation",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9246,
+          "a": {
+            "unit_id": "545f85b1-641e-4887-a3ed-0d5264d0b125",
+            "headword": "طبقة مُدْخَلات",
+            "definition": "الطبقة الأولى في الشبكة العصبية التي تتلقى البيانات المُدْخَلة.",
+            "english": "Input Layer",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "bcdd516e-4322-4a3c-812c-1a1a25661a75",
+            "headword": "طبقة مخرجات",
+            "definition": "الطبقة الأخيرة في الشبكة العصبية التي تشتمل على النتيجة.",
+            "english": "Output Layer",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.915,
+          "a": {
+            "unit_id": "0481edc1-3c99-499a-9774-91ba47cff98e",
+            "headword": "انتشار عكسي عبر الزمن",
+            "definition": "طريقة لتطبيق الانتشار العكسي على الشبكات العصبية التكرارية.",
+            "english": "Backpropagation Through Time",
+            "aliases": [],
+            "abbreviations": [
+              "BPTT"
+            ]
+          },
+          "b": {
+            "unit_id": "b8e00d28-9db0-4740-a9d3-d538cbbf3f55",
+            "headword": "شبكة عصبية ترشيحية عكسية",
+            "definition": "شبكة عصبية تعمل بطريقة معاكسة لطريقة عمل الشبكة العصبية الترشيحية.",
+            "english": "Deconvolutional Neural Network",
+            "aliases": [],
+            "abbreviations": [
+              "DNN"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9553,
+          "a": {
+            "unit_id": "2ebb8e15-e853-4342-9cf4-7932997d83ba",
+            "headword": "ارتباك",
+            "definition": "مقياس للإشارة إلى مدى فاعلية النموذج في تحقيق مهمته.",
+            "english": "Perplexity",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "4c576cdf-1d08-41b8-83a0-ed95fa553e36",
+            "headword": "مقياس",
+            "definition": "مقياس لتقييم أداء النموذج أثناء التدريب أو الاختبار.",
+            "english": "Metric",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9175,
+          "a": {
+            "unit_id": "58bd8fa7-8e1e-400a-93dc-7d583dd870e1",
+            "headword": "تعرُّف على الكلام",
+            "definition": "عملية تحويل الكلام إلى نص باستخدام الخوارزميات. ويُطلق عليها أيضًا \"تعرُّف تلقائي على الكلام\" أو \"تحويل الكلام إلى نص\".",
+            "english": "Speech Recognition",
+            "aliases": [
+              "تعرُّف تلقائي على الكلام",
+              "تحويل الكلام إلى نص",
+              "تحويل الكلام إلى نص",
+              "تعرُّف تلقائي على الكلام"
+            ],
+            "abbreviations": [
+              "STT",
+              "ASR"
+            ]
+          },
+          "b": {
+            "unit_id": "baab7af4-b8e7-41d6-a554-e01c38f2bc61",
+            "headword": "توليد الكلام",
+            "definition": "عملية توليد الكلام البشري بطريقة اصطناعية. ويُطلق عليها أيضًا \"تحويل النص إلى كلام\".",
+            "english": "Speech Synthesis",
+            "aliases": [
+              "تحويل النص إلى كلام",
+              "تحويل النص إلى كلام"
+            ],
+            "abbreviations": [
+              "TTS"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9136,
+          "a": {
+            "unit_id": "42b9b5f9-593d-4d93-a3ac-bb9a6c79db1f",
+            "headword": "خاصية مُركَّبة",
+            "definition": "خاصية مصطنعة تُنشأ عن طريق ضرب خاصيتين أو أكثر.",
+            "english": "Feature Cross",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "c06ec871-0869-41a0-8176-deeb826f5d2b",
+            "headword": "خاصية مصطنعة",
+            "definition": "خاصية ولَّدتها واحدة أو أكثر من خصائص المُدْخَلات.",
+            "english": "Synthetic Feature",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9723,
+          "a": {
+            "unit_id": "08ae126c-1168-420b-827c-3e96284f7b0f",
+            "headword": "تصنيف سلبي صحيح",
+            "definition": "نتيجة تنبأ النموذج بأنها سلبية بصورة صحيحة.",
+            "english": "True Negative",
+            "aliases": [],
+            "abbreviations": [
+              "TN"
+            ]
+          },
+          "b": {
+            "unit_id": "9914b3fd-04ad-426b-a962-fcf9c4eca209",
+            "headword": "تصنيف إيجابي صحيح",
+            "definition": "نتيجة تنبأ النموذج بأنها إيجابية بصورة صحيحة.",
+            "english": "True Positive",
+            "aliases": [],
+            "abbreviations": [
+              "TP"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9421,
+          "a": {
+            "unit_id": "27a0e4f2-9708-4887-8728-7d64ec108e3e",
+            "headword": "تجميع هرمي",
+            "definition": "نوع من خوارزميات التجميع المناسبة للبيانات الهرمية لتوليد شجرة من المجموعات.",
+            "english": "Hierarchical Clustering",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "e79a3548-8357-416a-bd63-0519ea5f98ea",
+            "headword": "تجميع انقسامي",
+            "definition": "نوع من التجميع الهرمي تُجمَّع فيه جميع الأمثلة أولًا في مجموعة، ثم تُقسَّم المجموعة بصورة تكرارية إلى شجرة هرمية.",
+            "english": "Divisive Clustering",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9808,
+          "a": {
+            "unit_id": "14495a9f-2df3-4ca2-a1ea-ddd1eb07ec78",
+            "headword": "تصفية قائمة على المحتوى",
+            "definition": "أسلوب يُستخدم في أنظمة التوصية للتنبؤ باهتمامات المستخدم بناءً على إعجاباته وخصائص العناصر.",
+            "english": "Content-Based Filtering",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "b03d6df7-59f5-4c9b-a1cc-91aafbf2c78c",
+            "headword": "تصفية تعاونية",
+            "definition": "أسلوب يُستخدم في أنظمة التوصية للتنبؤ باهتمامات المستخدم بناءً على اهتمامات المستخدمين الآخرين.",
+            "english": "Collaborative Filtering",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9849,
+          "a": {
+            "unit_id": "5d49125f-70ec-4527-95c5-153988fba38f",
+            "headword": "توازي البيانات",
+            "definition": "أسلوب يُستخدم لتسريع التدريب أو الاستنتاج عن طريق تكرار النموذج على عدة أجهزة، ثم تقسيم البيانات المُدْخَلة على هذه الأجهزة.",
+            "english": "Data Parallelism",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "94f6552d-1bfe-4191-b515-3f73635f9c57",
+            "headword": "توازي النموذج",
+            "definition": "أسلوب يُستخدم لتسريع التدريب أو الاستنتاج بتقسيم النموذج على أجهزة متعددة.",
+            "english": "Model Parallelism",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9292,
+          "a": {
+            "unit_id": "22eacc5c-6cee-4372-8784-8be9002fae6a",
+            "headword": "مسترجع متعدد المتجهات",
+            "definition": "أسلوب لاسترجاع المعلومات يُمثِّل المستند الواحد باستخدام عدة تضمينات متجهية؛ لتحسين دقة البحث وملاءمته للسياق.",
+            "english": "Multi-Vector Retriever",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "80f3e801-ea63-435f-8eea-db0850e1bc47",
+            "headword": "استرجاع متناثر",
+            "definition": "طريقة لاسترجاع المعلومات تُمثّل المستندات والاستعلامات على شكل متجهات متناثرة تكون معظم خصائصها ذات قيم صفرية؛ لتحسين كفاءة المطابقة والترتيب.",
+            "english": "Sparse Retrieval",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9374,
+          "a": {
+            "unit_id": "64ffc696-faae-464a-a6ab-83df56c69e30",
+            "headword": "معالجة متباينة",
+            "definition": "حالة تُحلَل فيها السمات الحساسة للأشخاص في العملية الخوارزمية لاتخاذ القرار بطريقة لا تُعامل فيها المجموعات الفرعية المختلفة على حد سواء.",
+            "english": "Disparate Treatment",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "dec477e9-bcaa-4642-9042-39c1b1e1cb32",
+            "headword": "تأثير متباين",
+            "definition": "حالة تُفيد فيها العملية الخوارزمية لاتخاذ القرار، أو تضر مجموعات فرعية معينة أكثر من غيرها.",
+            "english": "Disparate Impact",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9484,
+          "a": {
+            "unit_id": "778f7cc6-65a2-43f2-a10b-8f6a7f953175",
+            "headword": "تعلُّم متعدد المهام",
+            "definition": "أسلوب لتدريب النموذج على مهام متعددة في وقت واحد لتحسين أدائه.",
+            "english": "Multi-Task Learning",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "cb03be04-2228-44be-8388-2964abe7cdc9",
+            "headword": "ضبط الأوامر المتعددة المهام",
+            "definition": "أسلوب لتكييف نموذج ما لمهام متعددة، عن طريق تعلُّم أمر واحد يمكن نقله إلى المهام المستهدفة.",
+            "english": "Multitask Prompt Tuning",
+            "aliases": [],
+            "abbreviations": [
+              "MPT"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9235,
+          "a": {
+            "unit_id": "096ef9ce-21d9-4720-8d96-cee74d96d813",
+            "headword": "لغويات حوسبية",
+            "definition": "مجال علمي يهتم بفهم لغة الإنسان من منظور حوسبي.",
+            "english": "Computational Linguistics",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "fb9674ba-c47b-402d-93df-d3e9112fef24",
+            "headword": "حوسبة دلالية",
+            "definition": "مجال حوسبي يركز على فهم البيانات وتمثيلها ومعالجتها بناءً على معناها وسياقها.",
+            "english": "Semantic Computing",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.942,
+          "a": {
+            "unit_id": "2031b92e-393b-4f9e-8161-dea60507d512",
+            "headword": "تحليلات تنبؤية",
+            "definition": "نوع من تحليلات البيانات، يستخدم البيانات التاريخية والحالية لتقديم تنبؤات مستنيرة حول الأحداث المستقبلية.",
+            "english": "Predictive Analytics",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "b3a0f4ad-0cc1-4a3e-8b30-952833994e56",
+            "headword": "انحدار خطي",
+            "definition": "نوع من التحليل الإحصائي يوضح العلاقة بين عدة متغيرات لإنشاء نموذج تنبؤي وتوضيح الاتجاهات في البيانات.",
+            "english": "Linear Regression",
+            "aliases": [],
+            "abbreviations": []
+          }
+        }
+      ]
+    },
+    "ambiguous_pairs": {
+      "primary": [
+        {
+          "pair_similarity": 0.8972,
+          "a": {
+            "unit_id": "0939e169-17a2-438d-832e-18f02ac4a1cc",
+            "headword": "خاصية ماركوف",
+            "definition": "مفهوم يصف عملية عشوائية يعتمد فيها احتمال الحالات المستقبلية على الحالة الحالية فقط، وليس على تسلسل من الأحداث التي قبلها.",
+            "english": "Markov Property",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "0e0e431c-31f5-48e5-86db-a944c34bb518",
+            "headword": "سلسلة ماركوف",
+            "definition": "نموذج عشوائي يصف تسلسل من الأحداث المحتملة التي يعتمد فيها احتمال كل حدث على الحدث السابق فقط. ويُطلق عليه أيضًا \"عملية ماركوف\".",
+            "english": "Markov Chain",
+            "aliases": [
+              "عملية ماركوف",
+              "عملية ماركوف"
+            ],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9061,
+          "a": {
+            "unit_id": "6c17894b-bd54-44e1-ad46-ce222532234b",
+            "headword": "خسارة لوغاريثمية",
+            "definition": "مقياس أداء يُستخدم لتقييم نماذج التصنيف، عن طريق تحديد الفرق بين الاحتمالات المتوقعة والأسماء الفعلية. ويُطلق عليه أيضًا \"خسارة الإنتروبيا التقاطعية\".",
+            "english": "Log Loss",
+            "aliases": [
+              "خسارة الإنتروبيا التقاطعية",
+              "خسارة الإنتروبيا التقاطعية"
+            ],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "b7121928-e390-4bce-bdb6-780c9990d356",
+            "headword": "مساحة تحت منحنى دقّة الأداء",
+            "definition": "مقياس أداء يُستخدم لتقييم قدرة نموذج التصنيف الثنائي على التمييز بين الأصناف الإيجابية والسلبية عبر جميع حدود التصنيف.",
+            "english": "Area under the ROC Curve",
+            "aliases": [],
+            "abbreviations": [
+              "AUC"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9298,
+          "a": {
+            "unit_id": "32dec78d-ef93-4466-b265-8801383352e1",
+            "headword": "تحليلات متعددة الهياكل",
+            "definition": "عملية تحليل البيانات ذات الأشكال المختلفة، بما في ذلك الصيغ المهيكلة وشبه المهيكلة وغير المهيكلة.",
+            "english": "Multi-structured Analytics",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "f711d7df-ae15-458a-89c5-61c3b9561ba2",
+            "headword": "تنوُّع البيانات",
+            "definition": "اختلاف أنواع البيانات وصيَغها، مثل: البيانات المهيكلة وشبه المهيكلة وغير المهيكلة.",
+            "english": "Data Variety",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9643,
+          "a": {
+            "unit_id": "65765cc4-ef2d-44dd-b9c0-efeac7d1a2d9",
+            "headword": "وحدات ثنائية",
+            "definition": "تسلسل من عنصرين في نص ما.",
+            "english": "Bigram",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "8f2792e4-1770-4739-a702-ae328ab695eb",
+            "headword": "وحدات ثلاثية",
+            "definition": "تسلسل من ثلاثة عناصر في نص.",
+            "english": "Trigram",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9352,
+          "a": {
+            "unit_id": "49e5f5ad-6b21-4d3e-9806-4b53b6bcb524",
+            "headword": "ذكاء خارق",
+            "definition": "ذكاء اصطناعي افتراضي يمكنه تجاوز القدرات البشرية. ويُطلق عليه أيضًا \"ذكاء اصطناعي خارق\".",
+            "english": "Artificial Superintelligence",
+            "aliases": [
+              "ذكاء اصطناعي خارق",
+              "ذكاء اصطناعي خارق"
+            ],
+            "abbreviations": [
+              "ASI"
+            ]
+          },
+          "b": {
+            "unit_id": "f18a997b-0daa-445a-846a-8ee18a379a5d",
+            "headword": "تفوق",
+            "definition": "حالة افتراضية يتفوق فيها الذكاء الاصطناعي على الذكاء البشري، وقد يؤدي إلى قدرات تتجاوز بكثير الفهم البشري أو السيطرة عليه.",
+            "english": "Transcendence",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.91,
+          "a": {
+            "unit_id": "110cf868-3aa1-4076-ad31-eb696029c3cd",
+            "headword": "سقوط",
+            "definition": "انظر \"المعدل الإيجابي الخاطئ\".",
+            "english": "Fall-Out",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "7ab599df-d692-407e-b7a4-6480dde87700",
+            "headword": "بيانات التقييم",
+            "definition": "انظر \"بيانات الاختبار\".",
+            "english": "Evaluation Data",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9589,
+          "a": {
+            "unit_id": "745af523-525d-4f64-9b0e-c99eb5b460ed",
+            "headword": "تَكَيُّف منخفض الرتبة",
+            "definition": "أسلوب تدريبي لتكييف النماذج مع مهام جديدة عن طريق تقديم عدد صغير من المُعامِلات القابلة للتدريب بدلًا من تعديل جميع المعاملات الأصلية.",
+            "english": "Low Rank Adaptation",
+            "aliases": [],
+            "abbreviations": [
+              "LoRA"
+            ]
+          },
+          "b": {
+            "unit_id": "d0ebbfec-feed-4e71-9f9e-3f0600d78e51",
+            "headword": "ضبط دقيق فاعل للمُعامِلات",
+            "definition": "أسلوب لتكييف النماذج المُدرَّبة سابقًا على مهام محددة، عن طريق تحديث مجموعة فرعية صغيرة من المُعامِلات.",
+            "english": "Parameter Efficient Fine-Tuning",
+            "aliases": [],
+            "abbreviations": [
+              "PEFT"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9589,
+          "a": {
+            "unit_id": "8353d48f-be98-4557-9668-ac185aef995d",
+            "headword": "تعلُّم ذاتي التوجيه",
+            "definition": "نوع من تعلُّم الآلة يستخدم بيانات غير مُسمَّاة لتعلُّم الخصائص؛ وذلك بالاعتماد على أسماء مستعارة محددة بصورة ذاتية في عملية التوجيه.",
+            "english": "Self-Supervised Learning",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "bb9f2139-fe55-4642-bc08-1eef25331b72",
+            "headword": "تعلُّم شبه موجَّه",
+            "definition": "نوع من تعلُّم الآلة يستفيد من البيانات المُسمَّاة وغير المُسمَّاة للتدريب.",
+            "english": "Semi-Supervised Learning",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9589,
+          "a": {
+            "unit_id": "6d3ae3e3-047f-4c9f-9f32-9f14adf0b006",
+            "headword": "معالجة الإشارات الصوتية",
+            "definition": "مجال فرعي من معالجة الإشارات يركز على تحليل الإشارات الصوتية ومعالجتها.",
+            "english": "Audio Signal Processing",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "8ba1a85b-5199-4d48-9261-5975427c73bb",
+            "headword": "معالجة الإشارات الرقمية",
+            "definition": "مجال فرعي من معالجة الإشارات يركز على استخدام أجهزة الحاسب لتحليل الإشارات الرقمية ومعالجتها.",
+            "english": "Digital Signal Processing",
+            "aliases": [],
+            "abbreviations": [
+              "DSP"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9362,
+          "a": {
+            "unit_id": "07666f59-bd1b-4601-84af-4ad6b75e3636",
+            "headword": "استعلام باللغة الطبيعية",
+            "definition": "استخدام اللغة الطبيعية لصياغة الاستعلامات التي يمكن لأنظمة الحاسب معالجتها وفهمها.",
+            "english": "Natural Language Query",
+            "aliases": [],
+            "abbreviations": [
+              "NLQ"
+            ]
+          },
+          "b": {
+            "unit_id": "3e4860b0-8b0b-4544-b292-99139983b406",
+            "headword": "نظام حوار",
+            "definition": "نظام حاسب يمكنه التحدث مع الإنسان بلغة طبيعية.",
+            "english": "Dialogue System",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.971,
+          "a": {
+            "unit_id": "55ae4aae-ffb1-43d5-b598-152761b3a0f0",
+            "headword": "أوامر الاتساق الذاتي",
+            "definition": "أسلوب في هندسة الأوامر يُحسِّن دقة النماذج، عن طريق إنشاء استجابات متعددة لنفس الأمر، واختيار الإجابة الأكثر تكرارًا أو اتساقًا لتكون الإجابة النهائية.",
+            "english": "Self-Consistency Prompting",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "a5157f97-7d25-4393-85bc-f8e464eff9f0",
+            "headword": "أوامر تكرارية",
+            "definition": "أسلوب في هندسة الأوامر تُحسِّن الأوامر وتُعدِّلها بناءً على استجابات النموذج، عبر تكرارات متعددة للحصول على نتائج مرغوبة وأكثر دقة.",
+            "english": "Iterative Prompting",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9567,
+          "a": {
+            "unit_id": "1d657802-b8a7-43dd-a40d-8767f7458b82",
+            "headword": "قدرة على التنبؤ",
+            "definition": "قدرة النموذج على توقع النتائج أو تقديرها بدقة استنادًا إلى البيانات المُدْخَلة.",
+            "english": "Predictability",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "b72ea52c-5698-4be7-ac01-490ffca14486",
+            "headword": "انعدام تأثير الإزاحة",
+            "definition": "قدرة النموذج على التعرُّف على الأنماط أو معالجتها في البيانات المُدْخَلة بغض النظر عن موقعها.",
+            "english": "Translational Invariance",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9342,
+          "a": {
+            "unit_id": "1e1f2fc0-1232-4484-950a-f7facca3eff3",
+            "headword": "سجل الأوامر",
+            "definition": "مستودع لتخزين قوالب الأوامر المستخدمة في تطبيقات الذكاء الاصطناعي، وإدارتها وتوسيمها، وإدارة إصداراتها؛ مما يتيح استرجاعها وتحديثها بصورة منضبطة أثناء التشغيل.",
+            "english": "Prompt Registry",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "85d51f78-2f3b-4ddb-8670-0b85a2acc16f",
+            "headword": "مكتبة الأوامر",
+            "definition": "مستودع يضم مجموعة مُنقّاة من الأوامر والقوالب المكتوبة مسبقًا، المختَبِرَة والمحسِّنَة لمهام وتطبيقات متنوعة.",
+            "english": "Prompt Library",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.922,
+          "a": {
+            "unit_id": "95478a12-ef89-4051-9196-cd980064dcc0",
+            "headword": "خوارزمية تخفيف التحيز",
+            "definition": "خوارزمية مصممة لتقليل التحيزات داخل مجموعات البيانات أو نماذج الذكاء الاصطناعي.",
+            "english": "Bias Mitigation Algorithm",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "da5780a0-425a-4cae-8a49-4b7b9f61fdf2",
+            "headword": "مربعات صغرى موزونة تناوبيًّا",
+            "definition": "خوارزمية تُستخدم في أنظمة التوصية؛ لتقليل دالة الهدف أثناء تحليل المصفوفة إلى عوامل.",
+            "english": "Weighted Alternating Least Squares",
+            "aliases": [],
+            "abbreviations": [
+              "WALS"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9366,
+          "a": {
+            "unit_id": "0532b11c-26ea-434c-94f6-12018511c48e",
+            "headword": "هدف",
+            "definition": "قياس تحاول الخوارزمية تحسينه.",
+            "english": "Objective",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "7f68fd64-967c-4394-8a9c-93a57951c5e8",
+            "headword": "دالة الهدف",
+            "definition": "دالة يحاول النموذج تحسينها.",
+            "english": "Objective Function",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9613,
+          "a": {
+            "unit_id": "4d0f64f0-a458-4a5b-a129-423089f3f4d6",
+            "headword": "لغة آر",
+            "definition": "لغة برمجة عالية المستوى تُستخدم على نطاق واسع للتحليل الإحصائي وتعلُّم الآلة.",
+            "english": "R Language",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "7ea2d82d-33fe-4e6e-be67-bb30676bd3d0",
+            "headword": "بايثون",
+            "definition": "لغة برمجة عالية المستوى تُستخدم لأغراض متعددة، وقد لقيت رواجًا متزايدًا في علم البيانات وتعلُّم الآلة.",
+            "english": null,
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9328,
+          "a": {
+            "unit_id": "a78b97b8-d657-4a90-9802-aa905b0a1f80",
+            "headword": "شبكة سيامية",
+            "definition": "شبكة عصبية تُستخدم لتصنيف الصور عن طريق تدريب شبكتين عصبيتين في وقت واحد لتعلُّم التشابه بين الصور.",
+            "english": "Siamese Network",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "fe91d556-87b3-4a5c-9cfe-4bd86f15299e",
+            "headword": "تدريب سابق تبايني للنصوص والصور",
+            "definition": "نموذج شبكة عصبية يتعلم ربط الصور بأوصاف نصية عن طريق التدريب على مجموعة بيانات ضخمة من أزواج الصور والنصوص.",
+            "english": "Contrastive Language-Image Pre-training",
+            "aliases": [],
+            "abbreviations": [
+              "CLIP"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9774,
+          "a": {
+            "unit_id": "f75c7a95-fe40-4432-ab08-7b98eed0f076",
+            "headword": "عمليات النماذج اللغوية الكبيرة",
+            "definition": "مجموعة من الممارسات والأدوات لإدارة دورة حياة النماذج اللغوية الكبيرة.",
+            "english": "Large Language Model Operations",
+            "aliases": [],
+            "abbreviations": [
+              "LLMOps"
+            ]
+          },
+          "b": {
+            "unit_id": "fd92feb1-8a3e-4940-bd92-9645ef9aa485",
+            "headword": "عمليات لغوية",
+            "definition": "مجموعة من الممارسات والأدوات التي تمكِّن المؤسسات من إدارة دورة حياة النماذج اللغوية.",
+            "english": "Language Operations",
+            "aliases": [],
+            "abbreviations": [
+              "LangOps"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.903,
+          "a": {
+            "unit_id": "89f439c2-19d0-4ce1-a9d2-69036452776d",
+            "headword": "تحليل المصفوفة إلى عوامل",
+            "definition": "آلية لإيجاد المصفوفات التي يقترب حاصل ضربها النقطي من المصفوفة المستهدفة.",
+            "english": "Matrix Factorization",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "ee72b3db-2eef-43d4-a366-501d3aa26226",
+            "headword": "عملية ترشيحية",
+            "definition": "عملية حسابية لضرب شريحة من مصفوفة المُدْخَلات والمُرشِّح، ثم جمع كل القيم في المصفوفة الناتجة.",
+            "english": "Convolutional Operation",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9412,
+          "a": {
+            "unit_id": "cb12a060-8bfb-4b4f-bf50-6cb7daee1c45",
+            "headword": "خوارزمية تطورية",
+            "definition": "خوارزمية مستوحاة من التطور البيولوجي لحل مشكلات التحسين والبحث.",
+            "english": "Evolutionary Algorithm",
+            "aliases": [],
+            "abbreviations": [
+              "EA"
+            ]
+          },
+          "b": {
+            "unit_id": "e135caef-a3f8-4ad0-9872-412524c2aa66",
+            "headword": "خوارزمية جينية",
+            "definition": "نوع من الخوارزميات التطورية الذي يستخدم مبادئ الانتقاء الطبيعي لإيجاد حلول مناسبة لمشكلات التحسين.",
+            "english": "Genetic Algorithm",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9484,
+          "a": {
+            "unit_id": "8634df71-14da-404a-ad96-0448bf844c85",
+            "headword": "أخذ عيِّنات سهلة",
+            "definition": "طريقة لجمع البيانات من مصادر يمكن الوصول إليها بسهولة.",
+            "english": "Convenience Sampling",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "88c96bf3-c761-48da-8398-38954f8581eb",
+            "headword": "تغذية البيانات",
+            "definition": "طريقة لتزويد المستخدمين ببيانات مُحَدَّثة من مصادر البيانات.",
+            "english": "Data Feed",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9675,
+          "a": {
+            "unit_id": "146dbc9f-2029-4634-9509-8507d4dd44df",
+            "headword": "تجميع بوتستراب",
+            "definition": "طريقة تعلُّم تجميعي تُستخدم لتحسين الاستقرار والدقة في نماذج التصنيف والانحدار.",
+            "english": "Bootstrap Aggregating (Bagging)",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "8f37c121-f717-46cf-99a8-f0ee60d6ef0d",
+            "headword": "تعزيز",
+            "definition": "طريقة تعلُّم تجميعي تُستخدم في تعلُّم الآلة لتحسين دقة النماذج التنبؤية.",
+            "english": "Boosting",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9236,
+          "a": {
+            "unit_id": "0933b58b-5860-46f0-b323-ecec4790f950",
+            "headword": "ضوابط حماية",
+            "definition": "قيود وآليات للأمان تُطبَّق على أنظمة الذكاء الاصطناعي، لمنع المخرجات الضارة أو المتحيزة أو غير المقصودة أثناء النشر.",
+            "english": "Guardrails",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "3dc7a9e6-a41d-4011-b505-4904100f5a50",
+            "headword": "جدار حماية الأوامر",
+            "definition": "آلية أمنية تقوم بمراقبة وتصفية وحماية أنظمة الذكاء الاصطناعي من الأوامر الضارة، أو غير الآمنة، أو غير المصرّح بها.",
+            "english": "Prompt Firewall",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9205,
+          "a": {
+            "unit_id": "1c59bc19-0ce2-44f9-86a8-7062e41ab5a0",
+            "headword": "مُرَمِّز تلقائي متغير",
+            "definition": "شبكة عصبية تتعلم ضغط البيانات إلى تمثيل قليل الأبعاد، ثم إعادة بناء البيانات الأصلية من التمثيل المضغوط.",
+            "english": "Variational Autoencoder",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "1d5a23d7-3617-43a4-a273-29b8778b4de0",
+            "headword": "مُرمِّزات تلقائية متناثرة",
+            "definition": "شبكات عصبية تتعلم تمثيلات متناثرة للبيانات بتقييد عدد محدود من الخصائص لتكون نشطة في الوقت نفسه؛ مما يتيح استخلاص خصائص ذات معنى وقابلة للتفسير.",
+            "english": "Sparse Autoencoders",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.954,
+          "a": {
+            "unit_id": "0d97d14c-9f9a-428f-b64c-f8197af62f1c",
+            "headword": "معدل إيجابي خاطئ",
+            "definition": "نسبة الأمثلة السلبية الفعلية التي يُتنبأ بأنها إيجابية. ويُطلق عليها أيضًا \"سقوط\".",
+            "english": "False Positive Rate",
+            "aliases": [
+              "سقوط"
+            ],
+            "abbreviations": [
+              "FPR"
+            ]
+          },
+          "b": {
+            "unit_id": "dbd139d3-354b-4c07-aeb3-5fcb7b6ba35a",
+            "headword": "معدل سلبي خاطئ",
+            "definition": "نسبة الأمثلة الإيجابية الفعلية التي يُتنبأ بأنها سلبية. ويُطلق عليها أيضًا \"معدل الخطأ\".",
+            "english": "False Negative Rate",
+            "aliases": [
+              "معدل الخطأ",
+              "معدل الخطأ"
+            ],
+            "abbreviations": [
+              "FNR"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9091,
+          "a": {
+            "unit_id": "af18b6a3-c723-4e1c-bf5a-dcc231b3291e",
+            "headword": "كيان",
+            "definition": "شيء مادي أو غير مادي يمكن التعرُّف عليه وتمييزه بوضوح.",
+            "english": "Entity",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "ecf52b52-d657-443e-8aed-c50e6b882f9d",
+            "headword": "شيء",
+            "definition": "كيان مادي أو مفاهيمي قد يكون له سمة واحدة أو أكثر.",
+            "english": "Object",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9745,
+          "a": {
+            "unit_id": "ce5b1347-6ff8-45e0-9fdc-06437c31fd65",
+            "headword": "مُرمِّز",
+            "definition": "نظام تعلُّم آلة يُحوِّل التمثيل الأولي إلى تمثيل معالَج.",
+            "english": "Encoder",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "d254dba1-925d-46fa-a518-1842ba50946f",
+            "headword": "مفكِّك ترميز",
+            "definition": "نظام تعلُّم آلة يُحوِّل التمثيل المعالَج إلى تمثيل خام.",
+            "english": "Decoder",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9364,
+          "a": {
+            "unit_id": "cb30072a-8504-496f-9060-6a73ae030a91",
+            "headword": "إطار البيانات",
+            "definition": "نوع بيانات يُستخدم لتمثيل مجموعات البيانات.",
+            "english": null,
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "e613fa1c-f7e5-493c-9b46-9a4c563ba18b",
+            "headword": "عينة بيانات",
+            "definition": "تحديد عنصر بيانات من نوع بيانات أو مجموعة بيانات.",
+            "english": "Data Instance",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9151,
+          "a": {
+            "unit_id": "b575899b-b720-4dcf-9894-b9700e354b24",
+            "headword": "أخذ عيِّنات أعلى (ب)",
+            "definition": "طريقة لتوليد النصوص تختار الكلمة التالية من الكلمات الأكثر احتمالًا، التي مجموع احتمالاتها تقارب القيمة (ب). ويُطلق عليها أيضًا \"أخذ عيِّنات نيوكليوس\".",
+            "english": "Top-P Sampling",
+            "aliases": [
+              "أخذ عيِّنات نيوكليوس",
+              "أخذ عيِّنات نيوكليوس"
+            ],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "bf50ef8f-356a-4632-a01f-227db2eac5e8",
+            "headword": "أخذ عيِّنات أعلى (ك)",
+            "definition": "طريقة لتوليد النصوص تختار الكلمة التالية من عدد (ك) من الكلمات الأكثر احتمالًا.",
+            "english": "Top-K Sampling",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9286,
+          "a": {
+            "unit_id": "b12dc753-efa8-4c07-98ff-8a077eefc6e8",
+            "headword": "تعلُّم الآلة العدائي",
+            "definition": "مجال يركز على تصميم خوارزميات فاعلة لتعلُّم الآلة؛ لأجل مواجهة التحديات الأمنية.",
+            "english": "Adversarial Machine Learning",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "ed8c6cde-06dd-4a2c-b236-e04aedb29c51",
+            "headword": "برمجة استقرائية",
+            "definition": "مجال يهتم بتصميم خوارزميات لبرامج حاسب ذات تحكم معقد من مواصفات غير كاملة.",
+            "english": "Inductive Programming",
+            "aliases": [],
+            "abbreviations": []
+          }
+        }
+      ],
+      "reserve": [
+        {
+          "pair_similarity": 0.9548,
+          "a": {
+            "unit_id": "24641b37-b815-4029-8eb3-26fd9032b6f1",
+            "headword": "زيادة العيِّنات",
+            "definition": "أسلوب يُستخدم لموازنة البيانات غير المتوازنة الأصناف، عن طريق تكرار أمثلة من صنف الأقلية. ويُطلق عليه ايضًا \"رفع العيِّنات\".",
+            "english": "Oversampling",
+            "aliases": [
+              "رفع العيِّنات",
+              "رفع العيِّنات"
+            ],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "9ac6de1d-94dc-4216-b217-5382727eef15",
+            "headword": "تقليل العيِّنات",
+            "definition": "أسلوب يُستخدم لموازنة البيانات غير المتوازنة الأصناف، عن طريق حذف أمثلة من صنف الأغلبية. ويُطلق عليه أيضًا \"خفض العيِّنات\".",
+            "english": "Downsampling",
+            "aliases": [
+              "خفض العيِّنات",
+              "خفض العيِّنات"
+            ],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9344,
+          "a": {
+            "unit_id": "2436ab7a-2019-408a-a202-4ecb9322a87f",
+            "headword": "مُتَّجه الخصائص",
+            "definition": "مجموعة من قيم الخصائص التي تُمثِّل عينة تُمَرر إلى نموذج.",
+            "english": "Feature Vector",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "8b7e5613-7dbc-47bf-9e53-1cfd26fa1d36",
+            "headword": "مجموعة الخصائص",
+            "definition": "مجموعة من الخصائص التي يتدرب عليها نموذج تعلُّم الآلة.",
+            "english": "Feature Set",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.933,
+          "a": {
+            "unit_id": "52681003-dae5-482e-89a2-ebb0d682a5dc",
+            "headword": "مدير قاعدة البيانات",
+            "definition": "شخص يُدير قواعد البيانات وأنظمتها، وهو مسؤول عن صيانتها.",
+            "english": "Database Administrator",
+            "aliases": [],
+            "abbreviations": [
+              "DBA"
+            ]
+          },
+          "b": {
+            "unit_id": "eac3eb1a-3791-40a1-ba65-0bf31172e45c",
+            "headword": "أمين البيانات",
+            "definition": "شخص أو مؤسسة مسؤولة عن توفير البنية التحتية لتقنية المعلومات وحماية البيانات وفقًا لسياسات حوكمة البيانات وممارساتها.",
+            "english": "Data Custodian",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9378,
+          "a": {
+            "unit_id": "2389d568-505a-4feb-90ac-cfef09d4d79c",
+            "headword": "نظام خبير",
+            "definition": "نظام حاسب يحاكي قدرة الخبير البشري على اتخاذ القرارات في مجال معين بناءً على قاعدة معرفة تتضمن حقائق وقواعد.",
+            "english": "Expert System",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "36ff4e27-1a00-4be7-9817-b6e74c56ed97",
+            "headword": "نظام قائم على قاعدة معرفة",
+            "definition": "نظام حاسب يستخدم قاعدة معرفة لتخزين معرفة الخبراء البشريين، إضافة إلى مُحَرِّك استنتاج لحل المشكلات.",
+            "english": "Knowledge-Based System",
+            "aliases": [],
+            "abbreviations": [
+              "KBS"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9225,
+          "a": {
+            "unit_id": "43e731bf-38b1-4a41-b96c-f4cb1a04a088",
+            "headword": "استرجاع كثيف",
+            "definition": "طريقة استرجاع تستخدم تمثيلات متجهية كثيفة للعثور على مستندات متشابهة دلالياً تتجاوز المطابقة الحرفية للكلمات المفتاحية.",
+            "english": "Dense Retrieval",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "f19a20a2-b195-4b42-8bad-528e61519fa3",
+            "headword": "تضمين المستندات الافتراضي",
+            "definition": "أسلوب استرجاع يُنشئ تضمينات افتراضية للمستندات، ثم يستخدمها لاسترداد مستندات مماثلة من نفس مساحة التضمين.",
+            "english": "Hypothetical Document Embeddings",
+            "aliases": [],
+            "abbreviations": [
+              "HyDE"
+            ]
+          }
+        },
+        {
+          "pair_similarity": 0.9361,
+          "a": {
+            "unit_id": "a715227b-09c3-4402-b5e6-d725b7719aea",
+            "headword": "متانة ضد الهجمات العدائية",
+            "definition": "قدرة نظام الذكاء الاصطناعي على الحفاظ على أدائه الموثوق في مواجهة المدخلات المصمَّمة لتضليله أو إضعاف نتائجه.",
+            "english": "Adversarial Robustness",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "c230b8c7-566f-4a4d-8d04-8e6d7c1da0c9",
+            "headword": "اتساق زمني",
+            "definition": "قدرة نظام الذكاء الاصطناعي على الحفاظ على مخرجات مترابطة ومستقرة ومتسقة منطقياً عبر نقاط زمنية متعاقبة أو بيانات متسلسلة.",
+            "english": "Temporal Consistency",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9129,
+          "a": {
+            "unit_id": "27437451-87a6-4563-b81a-12ea1fd68075",
+            "headword": "تسلسل أمامي",
+            "definition": "طريقة استدلال تبدأ بمجموعة من الحقائق المعروفة، وتطبق قواعد الاستنتاج لاستخلاص حقائق جديدة للوصول إلى هدف أو استنتاج محدد.",
+            "english": "Forward Chaining",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "c70b231f-9ece-41f9-8ee1-fa969e39839a",
+            "headword": "تسلسل خلفي",
+            "definition": "طريقة استدلال منطقي تعمل بطريقة عكسية؛ من الهدف إلى تحديد البيانات أو الإثباتات المؤيِّدة لذلك الهدف.",
+            "english": "Backward Chaining",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9455,
+          "a": {
+            "unit_id": "61b560b4-5ae5-4a6c-bec7-04c73fc641a2",
+            "headword": "نسيج البيانات",
+            "definition": "معمارية لإدارة البيانات وتكاملها، توفر إمكانات متسقة عبر بيئات متعددة.",
+            "english": "Data Fabric",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "b17ec594-227a-4b6f-a61b-3d0f46bc8dfd",
+            "headword": "مستودع بحيرة البيانات",
+            "definition": "معمارية بيانات تجمع بين أفضل ميزات بحيرة البيانات ومستودع البيانات في منصة واحدة.",
+            "english": null,
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9716,
+          "a": {
+            "unit_id": "533d043d-19ce-4294-a299-792973420839",
+            "headword": "صنف سلبي",
+            "definition": "صنف من صنفي التصنيف الثنائي يمثل الاحتمال الآخر للاختبار.",
+            "english": "Negative Class",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "a77e8975-1887-40aa-8402-200ae6615c57",
+            "headword": "صنف إيجابي",
+            "definition": "صنف من صنفي التصنيف الثنائي يمثل ما يسعى الاختبار للعثور عليه.",
+            "english": "Positive Class",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9469,
+          "a": {
+            "unit_id": "16056efa-ce69-48e5-9864-f69822924218",
+            "headword": "هيكلة دلالية",
+            "definition": "عملية إنشاء علاقات وروابط ذات معنى بين عناصر البيانات من مصادر مختلفة.",
+            "english": "Semantic Mapping",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "39812a28-ed26-4055-ae29-0c8f9cd0d058",
+            "headword": "استنتاج سببي",
+            "definition": "عملية تحديد علاقات السبب والنتيجة بين المتغيرات داخل البيانات.",
+            "english": "Causal Inference",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9703,
+          "a": {
+            "unit_id": "aad5f29b-8036-4a76-93b0-67c3569f9e33",
+            "headword": "نموذج لغوي",
+            "definition": "نموذج يحدد احتمالية وجود تسلسل معين من كلمات في جملة.",
+            "english": "Language Model",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "d8e88120-37ed-4b4f-90fe-3a41b6077867",
+            "headword": "نموذج لغوي ثنائي الاتجاه",
+            "definition": "نموذج يحدد احتمالية وجود كلمة في نص ما بناءً على النص الذي يأتي قبلها وبعدها.",
+            "english": "Bidirectional Language Model",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9558,
+          "a": {
+            "unit_id": "78d53ed3-c0d8-434b-9e28-eef4fe5cef9d",
+            "headword": "ذاكرة قصيرة المدى",
+            "definition": "ذاكرة تُتيح للنموذج الاحتفاظ بالمعلومات واستخدامها في سياق محادثة أو جلسة واحدة.",
+            "english": "Short-Term Memory",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "dcbf1889-907d-46a4-93ac-64b4e5ad7db9",
+            "headword": "ذاكرة طويلة المدى",
+            "definition": "ذاكرة تسمح للنموذج بتخزين المعلومات لفترة ممتدة واستخدامها عند توليد الاستجابات.",
+            "english": "Long-Term Memory",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.891,
+          "a": {
+            "unit_id": "0a1c91a7-abeb-4137-8db6-08ca0c312461",
+            "headword": "ذاكرة مؤقتة دلالية",
+            "definition": "آلية تحسين تخزّن استجابات النموذج السابقة وتسترجعها بناءً على التشابه الدلالي بين الاستعلامات، بدلاً من التطابق الدقيق، بهدف تقليل الحسابات المتكررة والتكلفة وزمن الاستجابة.",
+            "english": "Semantic Cache",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "792ee8f2-5fd6-4c3c-80fe-3821958df7fb",
+            "headword": "فك الترميز التخميني",
+            "definition": "أسلوب تحسين يُسرِّع الاستنتاج، عن طريق التنبؤ بالوحدات اللغوية والتحقق من صحتها بالتوازي.",
+            "english": "Speculative Decoding",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9269,
+          "a": {
+            "unit_id": "94c5ec24-20d8-468a-a539-6d1133592774",
+            "headword": "نموذج مُدرَّب سابقًا",
+            "definition": "نموذج أو مُكوِّن من نموذج دُرّب باستخدام مجموعة بيانات أخرى.",
+            "english": "Pre-Trained Model",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "a3b5f00f-32a9-4871-81cf-959942042b6d",
+            "headword": "نموذج متعدد الصيغ",
+            "definition": "نموذج له مُدْخَلات أو مخرجات بصيغ متعددة.",
+            "english": "Multimodal Model",
+            "aliases": [],
+            "abbreviations": []
+          }
+        },
+        {
+          "pair_similarity": 0.9553,
+          "a": {
+            "unit_id": "00ccde50-6f9a-46b2-9fd3-a483cac20430",
+            "headword": "نافذة السياق",
+            "definition": "الحد الأقصى لكمية المعلومات التي يمكن لنموذج الذكاء الاصطناعي معالجتها في وقت واحد، ويُقاس عادةً بالوحدات اللغوية.",
+            "english": "Context Window",
+            "aliases": [],
+            "abbreviations": []
+          },
+          "b": {
+            "unit_id": "d40e4839-e129-400d-a312-59f76b54b622",
+            "headword": "طول السياق",
+            "definition": "الحد الأقصى لعدد الوحدات اللغوية التي يمكن للنموذج اللغوي معالجتها وتذكرها في نفس الوقت.",
+            "english": "Context Leng-English      th",
+            "aliases": [],
+            "abbreviations": []
+          }
+        }
+      ]
+    },
+    "everyday_candidates": {
+      "primary": [
+        {
+          "unit_id": "3f92c1a9-07d5-4432-b6c2-fed64e521dab",
+          "headword": "أتمتة",
+          "definition": "عملية أو نظام يعمل دون تدخل بشري.",
+          "english": "Automation",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "a9753a54-3f09-4935-a920-1d39d94cf205",
+          "headword": "بيانات",
+          "definition": "تمثيل للمعلومات بصيغة مناسبة للتخزين أو المعالجة أو النقل.",
+          "english": "Data",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "0133feb1-4339-4d5e-aba7-3b1ba0a06b0d",
+          "headword": "خصوصية",
+          "definition": "الحق في التحكم في الوصول إلى العناصر المادية والمعلومات الشخصية واستخدامها.",
+          "english": "Privacy",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "16f8fc16-e9b0-47fb-b97b-fe6202eb7527",
+          "headword": "ضبط",
+          "definition": "عملية تُستخدم لمنع فرط التخصيص عن طريق إضافة معلومات إضافية.",
+          "english": "Regularization",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "6bafe327-eed3-4d60-8adc-110d2cee140a",
+          "headword": "خاصية",
+          "definition": "صفة أو ميزة للبيانات يمكن استخدامها مُدخَلًا لعملية التنبؤ، وغالبًا ما تُستخدم مُرادِفًا لكلمة \"سمة\".",
+          "english": "Feature",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "ea2ca20a-ab57-4e92-a8d0-b2572004a0ca",
+          "headword": "مُعامِل",
+          "definition": "متغير في نموذج يمكن تدريبه بصورة تكرارية بواسطة نظام تعلُّم الآلة.",
+          "english": "Parameter",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "27b141f1-6322-4059-86a3-4e85ad05dfaf",
+          "headword": "تقارب",
+          "definition": "الحالة التي يصل إليها النموذج عندما لا يحقق التدريب الإضافي على البيانات الموجودة تحسينًا كبيرًا في النموذج.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "60ae8e5f-dc1b-4deb-8023-041af1846241",
+          "headword": "بوت",
+          "definition": "برنامج مؤتمت يؤدي مهامَّ متكررة؛ لمحاكاة النشاط البشري.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "8e7142eb-c7da-49ad-a24e-691f8ced8a03",
+          "headword": "تخصيص",
+          "definition": "عملية تحليل توجهات المستخدمين وأنماطهم لتخصيص المنتجات للمستخدمين الأفراد.",
+          "english": "Personalization",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "5fca6dba-bf1d-4659-ab16-feb71ab38391",
+          "headword": "إكسيبشن",
+          "definition": "معمارية شبكة عصبية ترشيحية تعتمد على طبقات ترشيحية قابلة للفصل عمقًا.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "98539a43-19d4-4449-9b59-33db2bd024f5",
+          "headword": "اعتمادية",
+          "definition": "خاصية الاتساق المقصود في السلوك والنتائج.",
+          "english": "Reliability",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "173862ed-ca94-47a7-a0fb-f1dca4d45147",
+          "headword": "تورتش",
+          "definition": "إطار للحوسبة العلمية مفتوح المصدر، مع دعم واسع لخوارزميات تعلُّم الآلة، مكتوب بلغات البرمجة سي و لوا.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "25d2e556-8786-491c-b0b9-7ddba57b290e",
+          "headword": "برولوج",
+          "definition": "لغة برمجة منطقية تُستخدم بصورة أساسية في الذكاء الاصطناعي واللغويات الحوسبية.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "65da5c79-e30e-49d4-a869-3e543c62bc49",
+          "headword": "تنبؤ",
+          "definition": "المُخرَج من نموذج تعلُّم الآلة.",
+          "english": "Prediction",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "659ad3d6-ecb7-4add-ae42-604d3a17f4a9",
+          "headword": "موثوقية",
+          "definition": "القدرة على تلبية توقعات أصحاب المصلحة بطريقة يمكن التحقق منها.",
+          "english": "Trustworthiness",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "62303468-514b-4640-9f42-77df5743cd44",
+          "headword": "تينسرفلو",
+          "definition": "منصة مفتوحة المصدر طورتها شركة جوجل لتطبيقات تعلُّم الآلة.",
+          "english": "Tensorflow",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "9870db8d-2e1e-429d-a37d-6c3f80508609",
+          "headword": "إطار",
+          "definition": "هيكل بيانات يُمثِّل الحالات النمطية لتقسيم المعرفة إلى بُنى فرعية.",
+          "english": "Frame",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "23832543-0edc-4811-a2e1-506ca18ea1d6",
+          "headword": "وحدة",
+          "definition": "أصغر وحدة بيانات يعالجها النموذج.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "f1ed760e-c0c8-4417-aaf3-319c9725983b",
+          "headword": "احتمال",
+          "definition": "رقم يمثل فرصة حدوث حدث معين.",
+          "english": "Probability",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "43e6ec6a-14d1-49c9-84af-3a3f497ffcf3",
+          "headword": "برمجيات",
+          "definition": "مجموعة من التعليمات التي تُوجِّه الحاسب لأداء مهام محددة.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "86d9be6b-1d95-4e71-8282-49defa4ea5a9",
+          "headword": "ترشيح",
+          "definition": "عملية ترشيح لتدريب الأوزان عن طريق خلط المُرشِّح ومصفوفة المُدْخَلات.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "81625583-7838-4dee-9e25-5bff762b6b87",
+          "headword": "مجموعة",
+          "definition": "مجموعة من الأشياء المتشابهة في خصائصها، والمنظَّمة حسب أوجه التشابه بينها.",
+          "english": "Cluster",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "71c39a75-8301-4408-8951-c34d43ae2623",
+          "headword": "تجريد",
+          "definition": "عملية إعادة الكلمات إلى شكلها الأساسي الموجود في القاموس.",
+          "english": "Lemmatization",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "69280c34-5b88-4d26-b59e-20fa3bd961a6",
+          "headword": "تناثر",
+          "definition": "مفهوم في تعلُّم الآلة يصف مجموعة بيانات أو مصفوفة أكثر قيمها صفرية.",
+          "english": "Sparsity",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "8660bc5f-eafc-42f8-857e-35866420dba3",
+          "headword": "كوبويب",
+          "definition": "خوارزمية تجميع تدريجية وغير موجَّهة، تُولِّد تصنيفًا هرميًّا للأصناف.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "cf928c6e-a34f-4504-93ff-2b8bd69f1025",
+          "headword": "انعكاس",
+          "definition": "إطار مُصمَّم لتحسين تعلُّم وأداء النماذج اللغوية، عن طريق التغذية الراجعة.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "307d3147-c451-42a7-bf3a-b838ec09371a",
+          "headword": "حِمل",
+          "definition": "مجموعة من المهام المشغَّلة على نظام حاسب معين.",
+          "english": "Workload",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "dcaf4392-4356-4bc0-8adc-a5c3fc658a9c",
+          "headword": "تحقق",
+          "definition": "عملية تُستخدم أثناء التدريب لتقييم جودة نموذج تعلُّم الآلة وأدائه باستخدام مجموعة تحقق.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "ed9cffd5-370c-4476-a7ea-08173f1f0bad",
+          "headword": "مُقدِّر",
+          "definition": "معادلة في تعلُّم الآلة تُستخدم لاختيار أفضل نموذج بيانات بناءً على المشاهدات الحقيقية.",
+          "english": "Estimator",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "4fd3ee4a-3b14-4dcc-b3e6-842b5af68dff",
+          "headword": "لوجيت",
+          "definition": "مُتَّجه للتنبؤات بدون تسوية ينشئها نموذج التصنيف.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "91832903-6791-4692-9611-3b13f726631d",
+          "headword": "مستخدِم",
+          "definition": "شخص أو مجموعة تتفاعل مع نظام أو تستفيد منه.",
+          "english": "User",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "934510ff-23db-4300-985c-cfdae238b640",
+          "headword": "سمة",
+          "definition": "صفة أو ميزة لشيء ما بمقدور البشر أو الطُّرُق المؤتمتة التعرُّف عليها، وغالبًا ما تستخدم كمرادف لكلمة \"خاصية\".",
+          "english": "Attribute",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "484fc7d8-a8b7-4e88-8bd0-2c339264e1d0",
+          "headword": "رتبة",
+          "definition": "الموضع الترتيبي لصنف في نموذج تعلُّم الآلة الذي يرتب الأصناف من الأعلى إلى الأدنى.",
+          "english": "Rank",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "ae383360-3fa9-4108-93bf-2f679f2cebbb",
+          "headword": "ثبات",
+          "definition": "خاصية بيانات لها توزيع ثابت على بُعد واحد أو أكثر.",
+          "english": "Stationarity",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "3e5a6727-8a45-4c38-8047-bdf310dd5cd4",
+          "headword": "تشذيب",
+          "definition": "عملية تنظيف الأكواد أو النماذج لإزالة الحلول غير المرغوب فيها، وتسهيل صيانة الكود.",
+          "english": "Pruning",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "f68ecb7b-b524-4cce-8ace-b1d5e4394417",
+          "headword": "عُمق",
+          "definition": "عدد الطبقات التي تتعلَّم الأوزان في شبكة عصبية.",
+          "english": "Depth",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "8f2b54d3-dd9b-4ded-87e7-78b781c78a93",
+          "headword": "مُوَصِّف",
+          "definition": "عامل يساعد في تسمية البيانات (مثل الصور) عند الطلب. يُطلق عليه أيضًا \"مُسمِّي\" أو \"مُقيِّم\".",
+          "english": "Annotator",
+          "aliases": [
+            "مُسمِّي",
+            "مُقيِّم",
+            "مُسَمِّي",
+            "مُقيِّم"
+          ],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "315ed08a-0072-485f-bd21-3db1be20b65d",
+          "headword": "استدعاء",
+          "definition": "مقياس لتحديد نسبة القيم الإيجابية الفعلية التي حُددت تحديدًا صحيحًا. ويُطلق عليه أيضًا \"معدل إيجابي صحيح\".",
+          "english": "Recall",
+          "aliases": [
+            "معدل إيجابي صحيح",
+            "معدل إيجابي صحيح"
+          ],
+          "abbreviations": [
+            "TPR"
+          ]
+        },
+        {
+          "unit_id": "8f122dca-6b89-4d9d-99a5-8fe0517f5b26",
+          "headword": "عينة",
+          "definition": "عنصر بيانات يمكن لخوارزمية تعلُّم الآلة معالجته.",
+          "english": "Sample",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "c05e3f4d-804a-42a3-8a6f-57689ec1ebb3",
+          "headword": "مدونة",
+          "definition": "مجموعة كبيرة مهيكلة من البيانات النصية أو الصوتية.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "16003af8-2620-43e9-86bb-b26eaae34f87",
+          "headword": "تقليم",
+          "definition": "أسلوب تسوية يُستخدم للتعامل مع القيم الشاذة؛ عن طريق وضع حد أقصى بقيمة ثابتة لجميع قيم الخصائص التي تكون أعلى أو أقل من قيمة محددة.",
+          "english": "Clipping",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "d200173e-77fe-46b5-a7fc-81b62a2f88c1",
+          "headword": "أمن",
+          "definition": "الدرجة التي يحمي بها النظام البيانات والمعلومات، عن طريق السماح بالوصول المناسب إلى البيانات بناءً على مستويات التفويض.",
+          "english": "Security",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "3ca68682-a265-4d33-802f-596e44b88bbf",
+          "headword": "تشابكية",
+          "definition": "نوع من النمذجة الإدراكية يستخدم الشبكات العصبية الاصطناعية؛ لشرح القدرات الفكرية.",
+          "english": "Connectionism",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "fa41dbe8-7de7-4c57-b345-e08d9905294b",
+          "headword": "نمباي",
+          "definition": "مكتبة مفتوحة المصدر بلغة البايثون مصممة لإجراء الحسابات العددية والعلمية.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "db61acda-57c2-4833-b7a9-d7e5af940313",
+          "headword": "زخم",
+          "definition": "أسلوب تحسين للنزول التدرجي يُسرِّع عملية التعلُّم، عن طريق إضافة نسبة مئوية من متجه التحديث السابق إلى متجه التحديث الحالي.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "b489b4cb-4f39-4cd4-a59c-74e79dd95986",
+          "headword": "تبطين",
+          "definition": "عملية إضافة بيانات إضافية حول حدود البيانات المُدْخَلة.",
+          "english": "Padding",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "22f0309e-1ced-433c-b9bf-246f3d0da782",
+          "headword": "بانداز",
+          "definition": "أداة مفتوحة المصدر لتحليل البيانات ومعالجتها مبنية على لغة برمجة بايثون.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "9a9ffb3b-651c-4dc2-86e3-9c32eb93f9dc",
+          "headword": "سباركل",
+          "definition": "لغة استعلام للوصول إلى بيانات إطار وصف الموارد ومعالجتها.",
+          "english": "SPARQL Protocol and RDF Query Language",
+          "aliases": [],
+          "abbreviations": [
+            "SPARQL"
+          ]
+        },
+        {
+          "unit_id": "85094147-b2f6-48e3-9bd8-5e26ba621fb0",
+          "headword": "مُميِّز",
+          "definition": "جزء من شبكة توليدية تنافسية يفحص ما إذا كان المثال الذي أنشأه المُولِّد حقيقيًّا أم مزيفًا.",
+          "english": "Discriminator",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "71d27d29-1219-41a6-8b1f-1d9d8b262463",
+          "headword": "تقييم",
+          "definition": "جزء من نظام التوصية يُعيّن ترتيبًا لكل عنصر أُنشئ بواسطة عملية توليد الترشيحات.",
+          "english": "Scoring",
+          "aliases": [],
+          "abbreviations": []
+        }
+      ],
+      "reserve": [
+        {
+          "unit_id": "fc7af15b-883f-4d01-9930-b2c9ac16114e",
+          "headword": "نظام",
+          "definition": "مجموعة من العناصر التي تتفاعل مع بعضها لتحقيق أهداف محددة.",
+          "english": "System",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "cbdf25be-5324-40a7-84ac-33b588354899",
+          "headword": "سلامة",
+          "definition": "الخلو من المخاطر غير المقبولة.",
+          "english": "Safety",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "7a9a78f6-92ef-4366-91b9-378d0da8a44f",
+          "headword": "فعل",
+          "definition": "آلية في التعلُّم التعزيزي، ينتقل بها الوكيل بين حالات البيئة.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "c8e3f3e7-c1d6-4eeb-996b-e884ded000d6",
+          "headword": "تدرُّج",
+          "definition": "مُتَّجه للمشتقات الجزئية في دالة النموذج، يقيس التغير في الأوزان بالنظر إلى التغير في الخطأ.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "fcde8f81-2dcd-4b8a-9a2e-b8d1bf2f635a",
+          "headword": "انتشار",
+          "definition": "نسبة عدد المرات التي تظهر فيها حالة \"نعم\" في عينة.",
+          "english": "Prevalence",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "edfa74ed-fd61-482e-b719-378db6980947",
+          "headword": "أرجحية",
+          "definition": "احتمال حدوث حدث ما ضمن فئة أو صنف معين.",
+          "english": "Likelihood",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "e1ee5286-ca83-4f16-8123-1c3399e4bdf3",
+          "headword": "بيرسبترون",
+          "definition": "خلية عصبية اصطناعية مصممة لإجراء تصنيفات ثنائية عن طريق معالجة البيانات المُدْخَلة وإنتاج مخرجات بناءً على الأوزان المُتعلَّمة.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "4fbd150b-75e1-4465-87fb-7e9c7ac25475",
+          "headword": "إحكام",
+          "definition": "مقياس لتحديد نسبة القيم الإيجابية المحدَّدة التي كانت صحيحة فعلًا.",
+          "english": "Precision",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "2226b8ed-e968-4bf2-b217-dabe56ab54fa",
+          "headword": "تصنيف",
+          "definition": "نوع من خوارزميات تعلُّم الآلة، تحدد الفئة التي ينتمي إليها مُدْخَل معين. ويُطلق عليه أيضًا \"تصنيف قياسي\".",
+          "english": "Standard Classification",
+          "aliases": [
+            "تصنيف قياسي",
+            "تصنيف قياسي"
+          ],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "776af1d0-33aa-4c9c-b033-c896293d2395",
+          "headword": "ثقة",
+          "definition": "مستوى الثقة لدى المستخدم أو صاحب المصلحة في أن النظام أو المنتج سيعمل بالشكل المطلوب.",
+          "english": "Trust",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "779603ce-e11f-49fa-bd7e-9f6681949b17",
+          "headword": "معلومات",
+          "definition": "بيانات معالجة لها معنى في سياق معين.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "bdb5d599-1557-4f33-9450-0542ae66d0b1",
+          "headword": "تحسين",
+          "definition": "عملية اختيار أفضل عنصر من جميع البدائل الممكنة. ويُطلق عليها أيضًا \"تحسين رياضي\".",
+          "english": "Optimization",
+          "aliases": [
+            "تحسين رياضي",
+            "تحسين رياضي"
+          ],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "bc62788f-58e5-4549-b7e2-efc1713a212b",
+          "headword": "دقة",
+          "definition": "معدل التنبؤات الصحيحة التي يقدمها نموذج التصنيف.",
+          "english": "Accuracy",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "7604dd16-b942-495a-b7e9-5b1712eb5335",
+          "headword": "صنف",
+          "definition": "اسم يُمثل إحدى الفئات المحددة للتصنيف.",
+          "english": "Class",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "5c63661d-0ced-4977-8836-f1d18f6f18aa",
+          "headword": "فرضية",
+          "definition": "فكرة أو تنبؤ بحاجة إلى بحث واختبار عن طريق التجربة.",
+          "english": "Hypothesis",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "3101d1da-7b3c-423e-b1bb-77a001cc8abb",
+          "headword": "نُطْق",
+          "definition": "أي مُدْخَل من مستخدم بشري إلى نظام ذكاء اصطناعي تحاوري، مثل: بوت المحادثة، وأنظمة التعرُّف على الكلام.",
+          "english": "Utterance",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "583a81dc-7cec-4200-a1ec-6e95c4b041c1",
+          "headword": "شفافية",
+          "definition": "خاصية في النظام لإيصال المعلومات المناسبة حوله إلى أصحاب المصلحة، وتشمل الميزات والمُكوِّنات والإجراءات.",
+          "english": "Transparency",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "06b45439-629c-458b-b467-d7cd39798193",
+          "headword": "هدوب",
+          "definition": "إطار مفتوح المصدر يوفر معالجة موزَّعة لمجموعات كبيرة من البيانات عبر مجموعات من أجهزة الحاسب.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "dd38aa57-2f7b-4cce-be75-1002504e781b",
+          "headword": "كيراس",
+          "definition": "واجهة برمجة تطبيقات بلغة البايثون تُستخدم في تعلُّم الآلة، وتعمل على عدد من أُطر التعلُّم العميق.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "f062d7c0-a5bf-4735-b6c4-791973377885",
+          "headword": "مامبا",
+          "definition": "معمارية شبكات عصبية تعتمد على نماذج فضاء الحالة الانتقائية، تعالِج التسلسلات الطويلة بكفاءة.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "702aa618-8dc1-43e4-908a-bcbba3dacb31",
+          "headword": "مُرشِّح",
+          "definition": "مُرشِّح يقوم بعمليات الترشيح عن طريق فحص المُدْخَلات مع مراعاة أبعادها. ويُطلق عليه أيضًا \"نواة\" أو \"كاشف الخصائص\".",
+          "english": "Convolutional Filter",
+          "aliases": [
+            "نواة",
+            "كاشف الخصائص",
+            "كاشف الخصائص",
+            "نواة"
+          ],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "efb5a6bc-289f-4218-9275-a7690c649f2c",
+          "headword": "تينسر",
+          "definition": "مصفوفة متعددة الأبعاد من القيم الرقمية المستخدمة لتمثيل البيانات.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "f4bfe12b-cb45-4cea-902d-e4d2b3f317c5",
+          "headword": "ارتباط",
+          "definition": "مقياس إحصائي لمدى الارتباط الرياضي بين متغيرين.",
+          "english": "Correlation",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "454200be-5586-4b5a-9a4f-431f2ea5e814",
+          "headword": "مسار",
+          "definition": "تسلسل من المجموعات التي تُمثِّل تسلسلًا من انتقالات حالة الوكيل أثناء حلقة التفاعل.",
+          "english": "Trajectory",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "2cfd2794-4feb-44f0-ad31-933fbcfc5fe7",
+          "headword": "ربط كامل",
+          "definition": "طريقة تجميع تُعرِّف المسافة بين مجموعتين عن طريق أقصى مسافة بين أي زوج من نقاط البيانات من كل مجموعة.",
+          "english": "Complete Linkage",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "e77cb2f7-e7d1-4ef3-870f-3d0acde9d100",
+          "headword": "قاعدة ضبابية",
+          "definition": "قاعدة في المنطق الضبابي مكتوبة على شكل جملة شرطية.",
+          "english": "Fuzzy Rule",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "6b55f73b-f373-437c-b1a2-6a4f86d6e0a9",
+          "headword": "معالجة متوازية",
+          "definition": "طريقة للتعامل مع الحوسبة العالية عن طريق تقسيم مهام البرنامج وتشغيلها في الوقت نفسه على معالجات متعددة.",
+          "english": "Parallel Processing",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "8fbb982d-ff4f-41a9-b3ce-182253c51a72",
+          "headword": "مخزن المتجهات",
+          "definition": "نظام تخزين متخصص، مصمم لتخزين التضمينات المتجهية عالية الأبعاد، وفهرستها، واسترجاعها.",
+          "english": "Vector Store",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "d10a1ba1-6862-421d-b669-49f1df0b32a3",
+          "headword": "ضغط السياق",
+          "definition": "أسلوب يقلل حجم المعلومات السياقية مع الحفاظ على المحتوى الأساسي، ويهدف إلى تحسين كفاءة المعالجة والتعامل مع قيود نافذة السياق.",
+          "english": "Context Compression",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "a23838ea-8c37-42c8-ac51-81db9e6986be",
+          "headword": "إرشاد فائق",
+          "definition": "منهجية بحث عالية المستوى تعمل على أتمتة عملية اختيار الأساليب الإرشادية، أو دمجها لحل مشكلات البحث المعقدة.",
+          "english": "Hyper-Heuristic",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "2ee6f386-69f3-44ad-ba8a-795adf7f5c0f",
+          "headword": "تعزيز تَكَيُّفيّ",
+          "definition": "أسلوب تعزيز يجمع بين عدد من المصنِّفات الضعيفة؛ لإنشاء مصنِّف قوي.",
+          "english": "Adaptive Boosting",
+          "aliases": [],
+          "abbreviations": [
+            "AdaBoost"
+          ]
+        },
+        {
+          "unit_id": "2b694ae9-608a-4a4c-a238-7413371ca050",
+          "headword": "مثال مُسمًّى",
+          "definition": "مثال يشتمل على اسم.",
+          "english": "Labeled Example",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "e851ec78-8be4-477b-85f2-d4041801db09",
+          "headword": "تسميم النموذج",
+          "definition": "هجوم خبيث يتلاعب بمعاملات النموذج، أو تحديثاته، أو المساهمات المستخدمة في تدريبه؛ لتغيير سلوكه، أو إدخال ثغرات مستهدفة، أو تدهور أدائه.",
+          "english": "Model Poisoning",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "4bc48a1f-c052-4b3d-bde0-228a8dd2a59a",
+          "headword": "مشكلة الإطار",
+          "definition": "مشكلة تحديد ما يبقى دون تغيير نتيجة الأفعال أو الأحداث.",
+          "english": "Frame Problem",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "3118350c-8dd8-43bb-b3eb-71ef1f301e6f",
+          "headword": "طبقة تجميع",
+          "definition": "عملية اختزال مصفوفة أُنشئت بواسطة طبقة ترشيحية إلى مصفوفة أصغر.",
+          "english": "Pooling Layer",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "d9226876-780b-4783-bb22-e49482abd33d",
+          "headword": "تفسير لاحق",
+          "definition": "طرق تُستخدم لفهم وتفسير القرارات أو التنبؤات التي تقدمها النماذج المدربة.",
+          "english": "Post-Hoc Explanation",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "e6867dd4-97b3-466f-829e-f7e734dfb398",
+          "headword": "أتمتة إدراكية",
+          "definition": "استخدام تقنيات الذكاء الاصطناعي لأتمتة المهام التي تتطلب قدرات إدراكية بشرية.",
+          "english": "Cognitive Automation",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "24901c18-1914-4e09-b304-1b568ead05a0",
+          "headword": "اختبار تورينج",
+          "definition": "اختبار طوَّره ألان تورينج لتقييم قدرة الآلة على إظهار سلوك ذكي لا يمكن تمييزه عن سلوك الإنسان.",
+          "english": "Turing Test",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "c4e9c86e-7f54-4d84-a878-352ee6582f96",
+          "headword": "فهرس البيانات",
+          "definition": "مخزن مركزي للبيانات الوصفية، يُفهرس أصول البيانات في المؤسسة، ويصفها، ويُنَظِّمُها، مِمّا يتيح اكتشافها وحوكمتها وإعادة استخدامها.",
+          "english": "Data Catalog",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "bdd0c2dd-fbf5-471d-80b3-2af508b65ae9",
+          "headword": "نموذج تصنيف",
+          "definition": "نموذج تعلُّم آلة يميز بين صنفين منفصلين أو أكثر.",
+          "english": "Classification Model",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "bc6d1bcd-a695-45cd-85c7-1824f5170c77",
+          "headword": "خوارزمية تَكَيُّفيَّة",
+          "definition": "خوارزمية تغير سلوكها في وقت التشغيل بناءً على المعلومات المتاحة، والمعايير المحددة سابقًا.",
+          "english": "Adaptive Algorithm",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "19ac2648-9874-491b-af9b-9479dbcf31a7",
+          "headword": "مراقبة الوكيل",
+          "definition": "المراقبة والتقويم المستمران لسلوك الوكيل وأدائه ومخرجاته؛ لضمان الموثوقية، والكشف عن الحالات الشاذة.",
+          "english": "Agent Monitoring",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "2d35a48e-54c3-4006-b990-01467f7d70a7",
+          "headword": "ضبط الإسقاط",
+          "definition": "أسلوب يُستخدم في تدريب الشبكات العصبية لمنع فرط التخصيص، عن طريق إلغاء تنشيط مجموعة فرعية من الخلايا العصبية بشكل عشوائي أثناء تكرار التدريب.",
+          "english": "Dropout Regularization",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "cd6d6ded-100e-47d7-a24a-b6ce7fcc97ad",
+          "headword": "تحيُّز تنبؤي",
+          "definition": "قيمة تقيس الفرق بين متوسط التنبؤات ومتوسط الأسماء الفعلية في مجموعة البيانات.",
+          "english": "Prediction Bias",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "39c7ed68-6903-42c2-8e97-f23752fd29a7",
+          "headword": "اكتشاف الانحراف",
+          "definition": "عملية تحديد التغييرات الإحصائية في توزيع البيانات أو سلوك النموذج التي تُشير إلى تراجع أداء الذكاء الاصطناعي بمرور الوقت.",
+          "english": "Drift Detection",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "2da67804-eb39-440e-a49c-73de8d5f440a",
+          "headword": "استرجاع تَكَيُّفيّ",
+          "definition": "آلية استرجاع تُعدِّل استراتيجية البحث تعديلاً ديناميكياً استناداً إلى السياق واحتياجات المستخدم والفجوات المعرفية، بهدف تحسين ملاءمة النتائج وجودتها.",
+          "english": "Adaptive Retrieval",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "ec4ec691-b8b1-4251-a33d-9c3482b2f02c",
+          "headword": "معالجة العمليات",
+          "definition": "نوع من الحوسبة يُقسِّم العمل إلى عمليات فردية وغير قابلة للتجزئة لدعم التطبيقات التفاعلية.",
+          "english": "Transaction Processing",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "9e771956-230a-48e5-92b8-9d43dac465b1",
+          "headword": "تجميع بالمنوال",
+          "definition": "خوارزمية تجميع تستخدم المنوال لتصنيف البيانات إلى عدد (ك) من المجموعات بناءً على تشابه خصائصها.",
+          "english": "K-Modes (or K-Modes Clustering)",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "40167809-373a-43a2-bb6c-4a04dc5cb9d7",
+          "headword": "حوكمة توكيلية",
+          "definition": "الأطر والسياسات والضوابط التي تضمن عمل الوكلاء الذاتيين عملاً أخلاقيّاً آمناً وضمن الحدود المحددة.",
+          "english": "Agentic Governance",
+          "aliases": [],
+          "abbreviations": []
+        },
+        {
+          "unit_id": "68a7d3b7-eb41-419b-af8e-7683a94469f6",
+          "headword": "توصيف معرفي",
+          "definition": "تمثيل معرفي يتضمن مجموعة من الأصناف والسمات والعلاقات لنمذجة المجالات المعرفية.",
+          "english": "Ontology",
+          "aliases": [],
+          "abbreviations": []
+        }
+      ]
+    },
+    "plain_positive": {
+      "primary": [
+        {
+          "unit_id": "bb4aa465-1be1-48bf-a5ae-42c1fb89a526",
+          "headword": "نموذج طرفي",
+          "definition": "نموذج يعمل على الأجهزة الطرفية، مثل أجهزة الاستشعار وأجهزة إنترنت الأشياء، ويتيح معالجة البيانات محليًّا.",
+          "english": "Edge Model",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "838842cd-c2ae-4dec-8e80-347936eae5d5",
+          "headword": "حوسبة طرفية",
+          "definition": "طريقة حوسبية تُنفَّذ فيها عمليات الحوسبة في طرف الشبكة، مثل: أجهزة استشعار إنترنت الأشياء أو الأجهزة المحلية، بدلًا من مراكز البيانات.",
+          "english": "Edge Computing",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "d95f7612-2930-4dbc-8f43-386c7e42b492",
+          "headword": "خطوة ترشيحية",
+          "definition": "حجم خطوة تحريك المُرشِّحات.",
+          "english": "Convolutional Stride",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "8a174175-1e31-4ecd-bed3-4cf647cbd92e",
+          "headword": "قاعدة معرفة",
+          "definition": "قاعدة بيانات تتضمن قواعد الاستنتاج ومعلومات حول الخبرة البشرية في مجال ما.",
+          "english": "Knowledge Base",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "47ae1ce0-1d47-4a64-a628-8daca59adba5",
+          "headword": "تعزيز تدرجي",
+          "definition": "أسلوب في تعلُّم الآلة يُستخدم في التصنيف والانحدار لإنشاء نموذج تنبؤ قوي من نماذج تنبؤ ضعيفة.",
+          "english": "Gradient Boosting",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "b08d84dd-07de-4add-ab57-4d6e46bef873",
+          "headword": "تشذيب النموذج",
+          "definition": "أسلوب لتحسين النماذج يزيل المعاملات غير الضرورية، بهدف تقليل حجم النموذج والتكلفة الحسابية، مع الحفاظ على الدقة ما أمكن.",
+          "english": "Model Pruning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "0cf12fe9-d3ef-4101-a4a2-fa2f92bff1be",
+          "headword": "جهاز روبوتي",
+          "definition": "آلية مشغلة تحقق خصائص الروبوت الصناعي أو الخدمي، ولكنها تفتقد المحاور القابلة للبرمجة أو درجة التحكم الذاتي.",
+          "english": "Robotic Device",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "c27d8105-8f54-4a96-a5e5-8445501ca358",
+          "headword": "خوارزمية كيو",
+          "definition": "خوارزمية تعلُّم تعزيزي تُتيح للوكيل التعلُّم والعمل على النحو الأمثل في مجالات محكومة.",
+          "english": "Q-Learning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "63a982f8-88c7-410d-93ff-b03d88d93af5",
+          "headword": "انحراف الخصائص",
+          "definition": "تغير في الخصائص الإحصائية أو توزيع خصائص الإدخال بمرور الوقت قد يؤثر في أداء النموذج المنشور.",
+          "english": "Feature Drift",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "a47fa5bc-b0f7-4173-abba-748af77e99ca",
+          "headword": "بيانات ديموغرافية",
+          "definition": "بيانات اجتماعية واقتصادية حول السكان، مثل: الجنس والعمر والتعليم والدخل والعمل.",
+          "english": "Demographic Data",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "639f34a0-09e9-435c-a94a-ed6a65195f5f",
+          "headword": "أوامر نشطة",
+          "definition": "طريقة لتكييف نموذج على مهام محددة عن طريق اختيار الأسئلة الأكثر غموضًا، وتوصيفها باستخدام أوامر متعلقة بالمهام وتسلسل الأفكار.",
+          "english": "Active Prompting",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "a3a74fc0-4ab3-4579-9858-18a202d16c8a",
+          "headword": "دالة المكافأة",
+          "definition": "آلية تحفيز في التعلُّم التعزيزي تُحدد الكيفية التي يلزم الوكيل اتباعها للقيام بأفعال في بيئة ما.",
+          "english": "Reward Function",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "427f93fb-452b-449a-b62e-f613f5e52827",
+          "headword": "تهيئة الأوزان",
+          "definition": "عملية تحديد الأوزان الأولية للشبكة العصبية.",
+          "english": "Weight Initialization",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "058024d6-7517-415d-a391-1bda4a83903e",
+          "headword": "إعادة ترتيب",
+          "definition": "خطوة أخيرة في نظام التوصيات تأخذ في الاعتبار المعايير أو القيود الإضافية لإعادة ترتيب العناصر المسجلة.",
+          "english": "Re-Ranking",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "4e23a21f-1c60-4655-b843-cbd4c1c3d674",
+          "headword": "تعلُّم الخصائص",
+          "definition": "مجموعة من الأساليب للعثور تلقائيًّا على التمثيلات المطلوبة لاكتشاف الخصائص أو تصنيفها من البيانات الأولية.",
+          "english": "Feature Learning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "482e8559-65a8-4d5c-a7b5-d56cd25f7012",
+          "headword": "تحيُّز المُختبِر",
+          "definition": "نوع من التحيُّز التأكيدي الذي يواصل فيه المختبر تدريب النموذج إلى أن تُؤكَّد الفرضية المطروحة سابقًا.",
+          "english": "Experimenter's Bias",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "646845a4-3ca8-42e8-bc0c-cc7e440903bf",
+          "headword": "اكتشاف الشذوذ",
+          "definition": "عملية تحديد المشاهدات غير المعتادة أو غير الطبيعية في البيانات؛ نظرًا لخصائصها المختلفة عن غالبية البيانات المعالجة.",
+          "english": "Anomaly Detection",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "838a8e97-ca0e-4b28-bca5-c5ed33b54b57",
+          "headword": "كسر القيود",
+          "definition": "التلاعب في نظام الذكاء الاصطناعي بمدخلات أو أوامر مُصمَّمة بعناية؛ لتجاوز آليات الأمان، أو القيود، أو الضوابط السلوكية المقصودة للنظام.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "70422fbe-61ea-44ba-9fc6-d8960e070b97",
+          "headword": "إدارة الحوار",
+          "definition": "عملية اختيار الخطوة التالية الأنسب في حوار ما لتحقيق الهدف المنشود.",
+          "english": "Dialog Management",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "cc10f74d-9a16-437c-b57f-a8ee72b41704",
+          "headword": "استماع الآلة",
+          "definition": "استخدام معالجة الإشارة وتعلُّم الآلة لتمكين الآلة من فهم الأصوات. ويُطلق عليه أيضًا \"سماع الآلة\".",
+          "english": "Machine Listening",
+          "aliases": [
+            "سماع الآلة",
+            "سماع الآلة"
+          ],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "497f0b28-c18b-4beb-b6e7-61c23df80e9c",
+          "headword": "تعلُّم منقول",
+          "definition": "أسلوب في تعلُّم الآلة تتعلَّم فيه الخوارزمية أداء مهمة محددة، ثم تستخدم تلك المعرفة في أداء مهام أخرى.",
+          "english": "Transfer Learning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "7e930c3e-47ea-4b6b-9577-4195446dc4fc",
+          "headword": "قابلية الرصد",
+          "definition": "القدرة على فهم الحالة الداخلية للنظام وسلوكه وتشخيصهما بالإشارات المتاحة، مثل: السجلات، والمقاييس، وآثار التتبع.",
+          "english": "Observability",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "1800a261-be90-463a-996d-3cfee8fdeca6",
+          "headword": "سيادة البيانات",
+          "definition": "مبدأ يقضي بخضوع البيانات للقوانين وأطر الحوكمة في الدولة التي تُجمع أو تُخزَّن أو تُعالَج فيها.",
+          "english": "Data Sovereignty",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "1eea54c8-caea-4852-9a91-28b195469a43",
+          "headword": "بحث مُعزَّز",
+          "definition": "تطبيق الذكاء الاصطناعي في تحليل البيانات واختبار الفرضيات؛ لدعم البحث في المجالات المختلفة.",
+          "english": "Augmented Research",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "23864499-5ee2-467e-a1b5-6bd1ba49c4e1",
+          "headword": "هندسة حلَقية",
+          "definition": "ممارسة لتصميم حلقات تغذية راجعة تمكّن وكلاء الذكاء الاصطناعي من التخطيط والتنفيذ وتقييم النتائج وتعديل نهجها بصورة متكررة.",
+          "english": "Loop eng-English      ineering",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "eae00852-9beb-4d88-9811-6544eb2ac95e",
+          "headword": "مقياس روج",
+          "definition": "مجموعة من المقاييس المستخدمة لتقييم جودة التلخيص التلقائي وترجمة الآلة، عن طريق قياس التداخل بين المخرجات التي ينشئها النظام والمراجع التي ينشئها الإنسان.",
+          "english": "Recall-Oriented Understudy for Gisting Evaluation",
+          "aliases": [],
+          "abbreviations": [
+            "ROUGE"
+          ],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "40beca41-4595-4779-8a94-977c70fbcc7a",
+          "headword": "منحنى الخسارة",
+          "definition": "رسم بياني يوضح خطأ النموذج في تكرارات التدريب.",
+          "english": "Loss Curve",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "9f04fe69-2074-4c69-8591-6879581c3c90",
+          "headword": "تجزئة النموذج",
+          "definition": "أسلوب يقوم بتقسيم نموذج ذكاء اصطناعي كبير على عدة أجهزة أو خوادم؛ لتوزيع عبء الذاكرة والحوسبة.",
+          "english": "Model Sharding",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "9afb0d69-698e-4fd7-af1b-95206b1a3f19",
+          "headword": "تحسين عشوائي",
+          "definition": "مجموعة من الطُّرُق لتقليل دالة الهدف أو تعظيمها باستخدام متغيرات عشوائية.",
+          "english": "Stochastic Optimization",
+          "aliases": [],
+          "abbreviations": [
+            "SO"
+          ],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "9472b519-5085-464e-b954-b6adf5823269",
+          "headword": "تباين نصي",
+          "definition": "التباين في طول الجُمَل وبنيتها في النص.",
+          "english": "Burstiness",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "56882c1a-6319-4905-a97d-1803da3d962a",
+          "headword": "تفسير مغاير",
+          "definition": "طريقة تُستخدم لشرح القرارات التي تتخذها نماذج تعلُّم الآلة؛ عن طريق وصف التغييرات في البيانات المُدْخَلة التي من الممكن أن تؤدي إلى نتائج مختلفة.",
+          "english": "Counterfactual Explanation",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "e4d3ec95-ec6a-4748-a6a3-c9b314b37b10",
+          "headword": "قصور ذاتي",
+          "definition": "مقياس لمدى نجاح خوارزمية التجميع في تجميع نقاط البيانات.",
+          "english": "Inertia",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "42bfdef9-0b58-4a23-addb-a6a054023f6b",
+          "headword": "خاصية مستمرة",
+          "definition": "خاصية لها عدد لانهائي من القيم الممكنة.",
+          "english": "Continuous Feature",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "3f533a90-08aa-445d-977c-d9ab187eb811",
+          "headword": "روبوت ذكي",
+          "definition": "روبوت يمكنه تنفيذ المهام عن طريق استشعار محيطه، والتفاعل مع المصادر الخارجية، وتكييف سلوكه وفقًا لذلك.",
+          "english": "Intelligent Robot",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "e4a03cf9-212e-4fec-b9c1-1bd6e3c92d78",
+          "headword": "استعلام متواز",
+          "definition": "طريقة لتقسيم جملة الاستعلام إلى عمليات متعددة تُنفَّذ بطريقة متوازية لزيادة سرعة الاستعلام.",
+          "english": "Parallel Query",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "9b5d9828-dd80-4f7a-8a1f-8e1545a123ca",
+          "headword": "درجة العشوائية",
+          "definition": "معامل في النموذج يتحكم في مستوى العشوائية والتنوع وقابلية التنبؤ في المخرجات المُولَّدة بتعديل احتمالات اختيار الوحدات اللغوية.",
+          "english": "Temperature",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "6328f6c1-0b01-483c-b51c-541e886530a7",
+          "headword": "عامل التفرع",
+          "definition": "عدد العُقَد الفرعية التي تُولِّدها العقدة.",
+          "english": "Branching Factor",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "95630516-24c0-4178-887f-bff5e3a35791",
+          "headword": "تَكَيُّف مشترك",
+          "definition": "مشكلة في الشبكات العصبية تحدث عندما تعتمد الخلايا العصبية بصورة كبيرة على خلايا عصبية محددة بدلًا من اعتمادها على السلوك العام للشبكة.",
+          "english": "Co-Adaptation",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "5fd1cc86-309b-4135-9205-fa4406ea0911",
+          "headword": "تحليلات توليدية",
+          "definition": "طريقة تحليلية تستخدم الذكاء الاصطناعي التوليدي لإنتاج الرؤى والسرديات والتصورات تلقائيّاً من البيانات الأولية.",
+          "english": "Generative Analytics",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "6da45b29-d72c-4fa7-af5b-220c6041539c",
+          "headword": "وكيل مُجسَّد",
+          "definition": "وكيل يتفاعل مع بيئة عبر جسم مادي أو افتراضي.",
+          "english": "Embodied Agent",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "28e57712-3591-4a25-b0ad-ed0a0e408337",
+          "headword": "دافع داخلي",
+          "definition": "آلية تشجع الوكيل على أداء سلوك معين نابع من طبيعته، ومن دون تغذية راجعة مباشرة من البيئة.",
+          "english": "Intrinsic Motivation",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "22e9eac6-a4e1-44ad-a5cd-e9eff44495a6",
+          "headword": "تجميع بالمتوسط",
+          "definition": "خوارزمية تجميع تستخدم المتوسط لتصنيف البيانات إلى عدد (ك) من المجموعات بناءً على تشابه خصائصها.",
+          "english": "K-Means (or K-Means Clustering)",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "7444dced-666d-4d16-a6c0-f4814cf2bf43",
+          "headword": "مُحرِّك استنتاج",
+          "definition": "مُكوِّن من مُكوِّنات النُّظُم الخبيرة يقوم بعملية الاستدلال لاستنتاج معلومات جديدة من الحقائق والقواعد المخزنة في قاعدة المعرفة.",
+          "english": "Inference eng-English      ine",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "8c2c9fa6-016f-4bf1-8c9d-1c77b34cc145",
+          "headword": "مواءمة ذاتية",
+          "definition": "طريقة يَستخدِم فيها نموذج الذكاء الاصطناعي قدراته التوليدية والاستدلالية؛ لمواءمة سلوكه مع مبادئ محددة، أو قيم بشرية، مع تقليل الاعتماد على الإشراف البشري.",
+          "english": "Self-Alignment",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "88da850c-12c5-4771-be5b-6c5db3d36fc9",
+          "headword": "جدول مرحلي",
+          "definition": "جدول مؤقت يُستخدم للاحتفاظ بالبيانات الوسيطة قبل معالجتها أو تحميلها إلى جدول أو نظام مستهدف.",
+          "english": "Staging Table",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "5e389810-8182-41e7-8b08-9d535e5ec907",
+          "headword": "جبر خطي",
+          "definition": "فرع من فروع الرياضيات يختص بمعالجة المعادلات الخطية.",
+          "english": "Linear Algebra",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "02121525-c125-4ca0-bb68-741de7bcf969",
+          "headword": "بيانات وصفيّة",
+          "definition": "البيانات التي تُعرِّف بيانات أخرى أو تصفها.",
+          "english": "Metadata",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "48911e49-a44c-4989-93a2-1aee22e138b8",
+          "headword": "استرجاع سياقي",
+          "definition": "أسلوب استرجاع يُثري مقاطع المستندات بالسياق المحيط بها قبل الفهرسة؛ لتحسين الصلة والدقة.",
+          "english": "Contextual Retrieval",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "82c31571-5ce2-4d55-bf93-c3bea5746aea",
+          "headword": "مخزن الخصائص",
+          "definition": "مستودع مركزي لتخزين الخصائص وإدارتها ومشاركتها.",
+          "english": "Feature Store",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "f37d7fd3-d6f0-4277-8500-c037da3bce9d",
+          "headword": "نموذج ثابت",
+          "definition": "نموذج يُدرَّب مرة واحدة على مجموعة بيانات ثابتة ثم يظل دون تغيير.",
+          "english": "Static Model",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "c4933439-4d02-4ba8-8f16-532591c24438",
+          "headword": "تغيُّر المجال",
+          "definition": "تغيير في توزيع البيانات بين المجال المصدر (مثل بيانات التدريب) والمجال الهدف (مثل بيانات الاختبار).",
+          "english": "Domain Shift",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "3333c9da-653f-48b0-9dc9-5cfc5ea1666c",
+          "headword": "تلخيص تلقائي",
+          "definition": "عملية اختصار جزء من اللغات الطبيعية مع الحفاظ على الدلالات المهمة.",
+          "english": "Automatic Summarization",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "24fe271b-61bb-4015-acbf-7ab13cd7f8ab",
+          "headword": "بيانات مظلمة",
+          "definition": "البيانات التي تجمعها المؤسسات وتعالجها وتخزنها أثناء أنشطة الأعمال العادية، ولكنها لا تستخدمها في أغراض أخرى.",
+          "english": "Dark Data",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "ba03960f-a6cb-4aa0-a8c6-75f9e4132597",
+          "headword": "موجّه النماذج",
+          "definition": "نظام يختار نموذج الذكاء الاصطناعي الأنسب لمعالجة الطلب ديناميكيّاً، بناءً على عوامل مثل: التكلفة، والأداء، والقدرة، ومتطلبات زمن الاستجابة.",
+          "english": "Model Router",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "4cc32c89-a9cd-46c0-a148-5b9a854a8df1",
+          "headword": "تحديد المرجع",
+          "definition": "مهمة في معالجة اللغات الطبيعية تتضمن تحديد كل التعبيرات التي تشير إلى نفس الكيان في النص.",
+          "english": "Coreference Resolution",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "b772fbff-3e12-4d7d-a23d-8f9bd853efaf",
+          "headword": "بحث دلالي",
+          "definition": "أسلوب بحث يفهم المعنى السياقي لاستعلام المستخدم لتقديم نتائج أكثر صلة ودقة.",
+          "english": "Semantic Search",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "1697c12d-5c43-4a1b-b1fb-ad9425896456",
+          "headword": "ذكاء السرب",
+          "definition": "مجال يركز على السلوك الجماعي للعناصر التي تتفاعل فيما بينها، باستخدام أنظمة لا مركزية وذاتية التنظيم.",
+          "english": "Swarm Intelligence",
+          "aliases": [],
+          "abbreviations": [
+            "SI"
+          ],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "a60e8697-6c82-4910-bbd5-3368d6857180",
+          "headword": "ذكاء المستندات",
+          "definition": "قدرة مدعومة بالذكاء الاصطناعي على استخراج المعلومات المهيكلة وغير المهيكلة من المستندات وتصنيفها وفهمها تلقائيًا.",
+          "english": "Document Intelligence",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "c57f2e8a-5c2b-43c0-89e4-4b4dc26939ea",
+          "headword": "بحيرة البيانات",
+          "definition": "مستودع لتخزين كميات كبيرة من البيانات الأولية بصيغ مختلفة.",
+          "english": "Data Lake",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "d82ac27c-9ac7-4304-a0d8-f5d3939d25f1",
+          "headword": "انحدار لوجستي",
+          "definition": "نموذج إحصائي يستخدم دالة لوجستية لتحويل تنبؤ النموذج الخطي إلى قيمة بين 0 و 1. ويُطلق عليه أيضًا \"نموذج لوجيت\".",
+          "english": "Logistic Regression",
+          "aliases": [
+            "نموذج لوجيت",
+            "نموذج لوجيت"
+          ],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "59a2e18e-562d-41da-9828-41632f001bea",
+          "headword": "أخلاقيات البيانات",
+          "definition": "المبادئ والمعايير التي تحكم جمع البيانات ومعالجتها ومشاركتها واستخدامها.",
+          "english": "Data Ethics",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "0c90806a-74b1-4984-af61-835a987f96b9",
+          "headword": "إنصاف فردي",
+          "definition": "مقياس إنصاف لفحص ما إذا كان الأفراد المتشابهون قد صُنِّفوا بنفس الطريقة.",
+          "english": "Individual Fairness",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "e4b87976-2303-42ff-b3bb-fa66336929e2",
+          "headword": "صيغة جيسون",
+          "definition": "صيغة خفيفة لتبادل البيانات يمكن للإنسان قراءتها، وتُستخدم على نطاق واسع لهيكلة البيانات ونقلها بين الأنظمة.",
+          "english": "JavaScript Object Notation",
+          "aliases": [],
+          "abbreviations": [
+            "JSON"
+          ],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "2819e549-58ee-4f36-99e8-0ae9e4143911",
+          "headword": "إم نيست",
+          "definition": "مجموعة بيانات عامة تشتمل على صور لأرقام مكتوبة بخط اليد تُستخدم لتدريب خوارزميات تعلُّم الآلة الموجَّه واختبارها.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "c2236ec2-dd77-4c61-8959-a47b68b971d6",
+          "headword": "تكامل البيانات",
+          "definition": "عملية دمج لبيانات من مصادر مختلفة، في عرض موحد وواضح للمستخدمين.",
+          "english": "Data Integration",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "fceb8348-1b3e-4b96-ac64-a3c4e1e9ada4",
+          "headword": "إطار تحديد",
+          "definition": "إحداثيات تحدد إطارًا مستطيلًا يحيط بمنطقة معينة أو شيء ما.",
+          "english": "Bounding Box",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "f9529bea-9f9d-4698-b248-7bb9b821578d",
+          "headword": "مؤشر راند",
+          "definition": "مقياس لتقييم التشابه بين طريقتين للتجميع.",
+          "english": "Rand Index",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "72ced25a-a769-4d85-8471-c1fd1da74b7a",
+          "headword": "تعلُّم تدريجي",
+          "definition": "طريقة من طُرُق تعلُّم الآلة يكون التدريب والتعلُّم فيها مستمرًّا كلما ظهرت أمثلة جديدة.",
+          "english": "Incremental Learning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "f1e2cf7e-7d59-44b5-94e4-6238679838c8",
+          "headword": "خسارة مفصلية",
+          "definition": "دالة خسارة للتصنيف الذي يهدف إلى تعظيم الهامش، من خلال زيادة قيمة الخسارة للتنبؤات الخاطئة أو القريبة جدًا من حدّ القرار.",
+          "english": "Hinge Loss",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "85a23ce0-fda0-4823-ac37-c2494832e0d5",
+          "headword": "تقطير النموذج",
+          "definition": "أسلوب لضغط النماذج يُدرَّب فيه نموذج أصغر على محاكاة سلوك نموذج أكبر، مع تقليل المتطلبات الحسابية.",
+          "english": "Model Distillation",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "73b05304-5621-4edf-ac92-c3529b3092bc",
+          "headword": "سياسة الاحتفاظ بالبيانات",
+          "definition": "قواعد تنظيمية تُحدد مدة تخزين البيانات، ووقت حذفها، والمعايير القانونية أو التشغيلية التي تحكم هذه القواعد.",
+          "english": "Data Retention Policy",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "40ca0f94-66c8-483e-8a53-e24184f8c096",
+          "headword": "ذكاء اصطناعي ضار",
+          "definition": "ذكاء عام اصطناعي افتراضي قد يكون مضرًّا بالإنسانية بدلًا من أن يكون مفيدًا.",
+          "english": "Unfriendly Artificial Intelligence",
+          "aliases": [],
+          "abbreviations": [
+            "UFAI"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "09f4cb55-3a26-4f27-a58e-db0a8c174eeb",
+          "headword": "تشويش (أو بيانات مشوِّشة)",
+          "definition": "بيانات لا معنى لها تؤثِّر في تحليل البيانات.",
+          "english": "Noise (or Noisy Data)",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "afb8fb4b-3e5c-4183-9306-4135552bdd36",
+          "headword": "هندسة بيئة التشغيل",
+          "definition": "ممارسة هندسية لتصميم منظومة التشغيل المحيطة بنماذج الذكاء الاصطناعي، بما يشمل إدارة السياق والحالة، وتنسيق استخدام الأدوات، والضوابط، وحلقات المراجعة؛ لتمكين وكيل الذكاء الاصطناعي من أداء المهام أداء موثوقاً.",
+          "english": "Harness Engineering",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "a04ce3b3-f526-4fc5-bbc7-80337cb3d113",
+          "headword": "نظام متعدد الوكلاء",
+          "definition": "نظام يتكون من عدة وكلاء يتفاعلون في بيئة مشتركة لتحقيق أهداف محددة.",
+          "english": "Multi-Agent System",
+          "aliases": [],
+          "abbreviations": [
+            "MAS"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "d7f95e06-1872-4285-9db7-acb4c2469b10",
+          "headword": "مخطط عند القراءة",
+          "definition": "طريقة لإدارة البيانات تُخزَّن فيه البيانات بصيغتها الأصلية، ويُطبَّق عليها المخطط عند الوصول إليها أو الاستعلام عنها فقط.",
+          "english": "Schema-on-Read",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "dad12f54-60af-4ad8-8375-e9e5b4d6dc9d",
+          "headword": "انعدام تأثير الحجم",
+          "definition": "قدرة النموذج على الحفاظ على سلوك متسق بغض النظر عن حجم المُدْخَلات.",
+          "english": "Scale Invariance",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "7dea932e-24fe-4136-9745-16369386000e",
+          "headword": "تقاطع على الاتحاد",
+          "definition": "مقياس لتحديد دقة مهام اكتشاف الأشياء أو الصور عن طريق مقارنة إطار التحديد المتوقع مع إطار التحديد الفعلي.",
+          "english": "Intersection over Union",
+          "aliases": [],
+          "abbreviations": [
+            "IoU"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "add9ed44-b427-4f2e-b217-3f61bca2a878",
+          "headword": "مخزن الخصائص الآني",
+          "definition": "مستودع مركزي يُستخدم لتخزين قيم الخصائص، وتوفير وصول آني إليها؛ لدعم عمليات الاستنتاج الآني في نماذج تعلّم الآلة.",
+          "english": "Online Feature Store",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "f8973c50-b928-4057-bfc3-7c22afe892ee",
+          "headword": "ضبط تسوية أقصى",
+          "definition": "نوع من الضبط يُقيِّد المعيار الأقصى لمتجهات الوزن في كل طبقة من الشبكة العصبية.",
+          "english": "Max-Norm Regularization",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "57801488-fae3-4330-9653-5a0b3034a2d8",
+          "headword": "ذكاء اصطناعي تحاوري",
+          "definition": "التقنيات التي تستخدم تعلُّم الآلة ومعالجة اللغات الطبيعية لتوفير تفاعل نصي أو صوتي مع المستخدمين يشبه التفاعل الإنساني.",
+          "english": "Conversational Artificial Intelligence",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "0f79a865-533e-4dd8-9316-323cb4dd8239",
+          "headword": "حوكمة البيانات المُتَّحِدة",
+          "definition": "نموذج حوكمة يوزِّع ملكية البيانات وإدارتها على فرق لامركزية، مع الحفاظ على معايير موحدة على مستوى المؤسسة.",
+          "english": "Federated Data Governance",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "a105dc64-1b48-47d6-8787-f2266248673d",
+          "headword": "ذكاء ضيق اصطناعي",
+          "definition": "نوع من أنظمة الذكاء الاصطناعي قادر على تنفيذ مهام محددة فقط. ويُطلق عليه أيضًا \"ذكاء اصطناعي ضيق\" أو \"ذكاء اصطناعي ضعيف\".",
+          "english": "Artificial Narrow Intelligence",
+          "aliases": [
+            "ذكاء اصطناعي ضيق",
+            "ذكاء اصطناعي ضعيف",
+            "ذكاء اصطناعي ضعيف",
+            "ذكاء اصطناعي ضيق"
+          ],
+          "abbreviations": [
+            "ANI",
+            "NAI"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "76b92c0c-b517-4933-a735-9c7e07ae80e5",
+          "headword": "علامة مائية للمحتوى المولد بالذكاء الاصطناعي",
+          "definition": "طريقة لتضمين علامات غير مرئية وقابلة للكشف آلياً في المحتوى المُولَّد بالذكاء الاصطناعي؛ للإشارة إلى مصدره أو أصالته أو ملكيته.",
+          "english": "Artificial Intelligence Watermarking",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "aadcff25-b864-4f8f-8ecf-75599f94625d",
+          "headword": "تَعرُّف على الوجوه",
+          "definition": "نظام حاسب قادر على التعرُّف على شخص ما عن طريق صورة أو فيديو.",
+          "english": "Face Recognition (or Facial Recognition)",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "20b3f35b-6fc9-4e0b-af59-4b76cdb3becf",
+          "headword": "ترجمة الآلة العصبية",
+          "definition": "طريقة في ترجمة الآلة تستخدم شبكة عصبية اصطناعية كبيرة للتنبؤ باحتمالية تسلسل من الكلمات، وغالبًا ما تكون في جمل كاملة.",
+          "english": "Neural Machine Translation",
+          "aliases": [],
+          "abbreviations": [
+            "NMT"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "252bf876-5d46-4bef-a87c-e457057353fb",
+          "headword": "نموذج خطي مُعمَّم",
+          "definition": "توسيع للانحدار الخطي يُتيح لدوال توزيع المخرجات المختلفة تحديد التباين بين المشاهدات والقيم التنبؤية.",
+          "english": "Generalized Linear Model",
+          "aliases": [],
+          "abbreviations": [
+            "GLM"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "25543613-5385-4e2a-93a6-8db58e977de0",
+          "headword": "وحدة خطية مصححة (ريلو)",
+          "definition": "دالة تنشيط تُعطي القيمة صفرًا إذا كان المُدْخَل سالبًا أو صفرًا، وتعطي القيمة نفسها إذا كان المُدْخَل موجبًا.",
+          "english": "Rectified Linear Unit",
+          "aliases": [],
+          "abbreviations": [
+            "ReLU"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "3bbe8639-9abc-4a9d-b04b-f747b22d02bf",
+          "headword": "تعلُّم الآلة المستمر",
+          "definition": "مجال فرعي من تعلُّم الآلة يتعلَّم فيه النموذج تدريجيًّا من البيانات الجديدة بطريقة متسلسلة.",
+          "english": "Online Machine Learning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "bf2a295f-6fff-4e31-b04f-3c055d967e5b",
+          "headword": "مربع الخسارة المفصلية",
+          "definition": "مربع مُخرَج دالة الخسارة المفصلية الذي يتعامل مع القيم الشاذة بطريقة أكثر صرامة من دالة الخسارة المفصلية.",
+          "english": "Squared Hinge Loss",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "bcfab591-3c12-4722-a983-bc7fd69ebb2e",
+          "headword": "انحدار المربعات الصغرى",
+          "definition": "انحدار خطي مُدرَّب، عن طريق تقليل دالة خسارة إل 2.",
+          "english": "Least Squares Regression",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "8571e4ed-6d66-40cd-a7e4-42d7289cfbac",
+          "headword": "قاعدة بيانات تشغيلية",
+          "definition": "قاعدة بيانات تُستخدم لتخزين البيانات ومعالجتها في الوقت الآني.",
+          "english": "Operational Database",
+          "aliases": [],
+          "abbreviations": [
+            "ODB"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "58625c69-2d8c-48f6-9742-cdd312b4d72b",
+          "headword": "تخزين البيانات غير النشطة",
+          "definition": "تخزين البيانات التي لا تُستخدم إلا نادرًا.",
+          "english": "Cold Data Storage",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "b44bb55d-464f-4583-afb2-f75164b8f33a",
+          "headword": "حوكمة الذكاء الاصطناعي",
+          "definition": "السياسات والمبادئ والممارسات التي تضمن التطوير والاستخدام المسؤول والأخلاقي والآمن للذكاء الاصطناعي.",
+          "english": "Artificial Intelligence Governance",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "762ead50-c726-451f-b00e-b465c32dac96",
+          "headword": "تعلُّم التوصيف المعرفي",
+          "definition": "أساليب مبنية على البيانات لبناء توصيف معرفي باستخدام طُرُق تلقائية أو شبه تلقائية تعتمد على التنقيب في النصوص أو تعلُّم الآلة.",
+          "english": "Ontology Learning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "343e266c-19dd-4870-b3c0-ea3b331c136f",
+          "headword": "تواصل بين الوكلاء",
+          "definition": "الآليات التي تمكّن وكلاء الذكاء الاصطناعي المختلفين من تبادل المعلومات وتنسيق الأفعال عبر الأنظمة.",
+          "english": "Cross-Agent Communication",
+          "aliases": [],
+          "abbreviations": [
+            "CAC"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "058cd871-5406-4a5f-b049-057d949e5b9a",
+          "headword": "ذكاء اصطناعي مرتكز على الإنسان",
+          "definition": "طريقة في الذكاء الاصطناعي تضع القيم الإنسانية والرفاهية والأخلاقيات والتعاون في المقدمة، لضمان أن أنظمة الذكاء الاصطناعي تعزز قدرات الإنسان وتمكّنه بدلًا من استبداله.",
+          "english": "Human-Centric Artificial Intelligence",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "2b4f630a-6873-4825-870f-b658b31c9444",
+          "headword": "نفور من الخوارزميات",
+          "definition": "الميل البشري إلى تجنب استخدام الخوارزميات أو عدم الثقة فيها؛ حتى عندما تتفوق على الأداء البشري.",
+          "english": "Algorithmic Aversion",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "c2f366b3-a9e8-4c08-982b-6810580e330e",
+          "headword": "نموذج غير علائقي",
+          "definition": "نموذج بيانات منطقي يخزن البيانات ويعالجها دون اتباع نموذج علائقي.",
+          "english": "Non-Relational Model",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "cb03eae1-9b15-433f-a8d0-394b6d39ef98",
+          "headword": "شبكة عصبية ترشيحية قابلة للفصل عمقًا",
+          "definition": "معمارية شبكة عصبية ترشيحية يحل فيها الترشيح القابل للفصل عمقًا محل وحدات إنسيبشن.",
+          "english": "Depthwise Separable Convolutional Neural Network",
+          "aliases": [],
+          "abbreviations": [
+            "sepCNN"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "ed7ed024-7374-4845-9912-c41eedf85405",
+          "headword": "تقليل المخاطر التجريبي",
+          "definition": "عملية اختيار نموذج يقلل من الخسارة المتوسطة لمجموعة معينة من بيانات التدريب.",
+          "english": "Empirical Risk Minimization",
+          "aliases": [],
+          "abbreviations": [
+            "ERM"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "35c30040-d6c8-458c-81e0-acb323c24058",
+          "headword": "متغيرات مستقلة ومتطابقة التوزيع",
+          "definition": "متغيرات عشوائية مستقلة عن بعضها البعض، ولها نفس التوزيع الاحتمالي.",
+          "english": "Independent and Identically Distributed (IID) Random Variables",
+          "aliases": [],
+          "abbreviations": [
+            "IID"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "46110dad-1733-4b16-bc63-3a631b7ac376",
+          "headword": "بوابة الذكاء الاصطناعي",
+          "definition": "طبقة وسيطة تدير تدفقات الطلبات بين التطبيقات ونماذج الذكاء الاصطناعي؛ وذلك بتوجيهها، وتأمينها، ومراقبتها.",
+          "english": "AI Gateway",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "71fa100a-f0e1-4bab-86aa-a748359dd310",
+          "headword": "تحقق تقاطعي عن طريق عزل نقطة",
+          "definition": "حالة خاصة من التحقق التقاطعي المُجَزَّأ يكون فيها عدد المجموعات مساويًا لعدد المشاهدات.",
+          "english": "Leave-One-Out Cross-Validation",
+          "aliases": [],
+          "abbreviations": [
+            "LOOCV"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "949d0058-ffbc-4506-a647-6576c9bd3edd",
+          "headword": "ذكاء اصطناعي تركيبي",
+          "definition": "نمط تصميم للذكاء الاصطناعي تُجمَّع فيه المكونات والنماذج المستقلة، ويُعاد استخدامها لإنشاء تطبيقات ذكاء اصطناعي قابلة للتكيف.",
+          "english": "Composable Artificial Intelligence",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "a8eeea3c-cbab-42fb-ae46-714be48fb331",
+          "headword": "دالة القاعدة الشعاعية",
+          "definition": "دالة تشتمل على قيم تعتمد على المسافات من المركز.",
+          "english": "Radial Basis Function",
+          "aliases": [],
+          "abbreviations": [
+            "RBF"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "d1e279be-d9a1-4132-b52d-6834657d50a7",
+          "headword": "نموذج لغوي مدعوم بالبرمجة",
+          "definition": "نموذج لغوي يحل المشكلات بتوليد برامج تُعَدُّ خطوات وسيطة للاستدلال، وتفويض تنفيذها إلى بيئة تشغيل؛ للحصول على الإجابة النهائية.",
+          "english": "Program-Aided Language Model",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "c010787d-6c97-4e92-ad85-f2238ea2e1e8",
+          "headword": "تعرُّف آلي على الحروف",
+          "definition": "برنامج يتعرَّف على النصوص الموجودة في الصور ويُحوّلها إلى نصوص يمكن قراءتها عن طريق الآلة.",
+          "english": "Optical Character Recognition",
+          "aliases": [],
+          "abbreviations": [
+            "OCR"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "772bf66e-d203-4e54-a0fb-d3d0a39966bd",
+          "headword": "قاعدة بيانات طرفية",
+          "definition": "قاعدة بيانات تُنشر عند طرف الشبكة لتخزين البيانات ومعالجتها بالقرب من مكان توليدها أو استخدامها؛ مما يتيح الوصول والمعالجة في زمن استجابة قصير.",
+          "english": "Edge Database",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "e0f5c820-25fc-4e60-a300-f5aee71edc1f",
+          "headword": "تخطيط الذكاء الاصطناعي",
+          "definition": "فرع من فروع الذكاء الاصطناعي يهتم باختيار مجموعة من الأفعال المناسبة لتحقيق هدف معين. ويُطلق عليه أيضًا \"تخطيط وجدولة مؤتمتة\".",
+          "english": "Artificial Intelligence Planning",
+          "aliases": [
+            "تخطيط وجدولة مؤتمتة",
+            "تخطيط وجدولة مؤتمتة"
+          ],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "da7bc50a-05b8-47e9-8f31-dcd585a5e0ad",
+          "headword": "صاحب البيانات الشخصية",
+          "definition": "الفرد الذي تتعلق به البيانات الشخصية.",
+          "english": "Data Subject",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "edb25865-a3f0-49bd-b24c-fc18fcb13790",
+          "headword": "نظرية التعلُّم الحوسبي",
+          "definition": "مجال في الذكاء الاصطناعي يركز على جميع جوانب التصميم لخوارزميات تعلُّم الآلة وتحليلها؛ لتحديد المشكلات التي يمكن تعلُّمها. ويُطلق عليه أيضًا \"نظرية التعلُّم\".",
+          "english": "Computational Learning Theory",
+          "aliases": [
+            "نظرية التعلُّم",
+            "نظرية التعلُّم"
+          ],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "64dac3b5-9f62-4370-af81-2647f37c1055",
+          "headword": "نموذج إضافي مُعمَّم",
+          "definition": "نموذج إحصائي يُتيح علاقات مرنة وغير خطية بين المتغير التابع والمتغيرات المستقلة، عن طريق الجمع بين النماذج الخطية والدوال السلسة.",
+          "english": "Generalized Additive Model",
+          "aliases": [],
+          "abbreviations": [
+            "GAM"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "d81b5ebe-ab04-4d26-a16c-91a5fb9c27da",
+          "headword": "وحدة معالجة الرسوميات",
+          "definition": "دائرة إلكترونية تقوم بحوسبة متوازية لتسريع إنشاء الصور لعرضها على جهاز إلكتروني.",
+          "english": "Graphics Processing Unit",
+          "aliases": [],
+          "abbreviations": [
+            "GPU"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "339e5bf5-f214-449b-9a0a-74d406cbe0cb",
+          "headword": "استرجاع المقاطع النصية",
+          "definition": "أسلوب لاسترجاع المعلومات يحدد المقاطع النصية ذات الصلة من مدونة كبيرة ويرتبها استجابةً لاستعلام معين.",
+          "english": "Passage Retrieval",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "031b912f-51a7-460d-9abb-82dda3bca8f7",
+          "headword": "مشكلة انفجار التدرج",
+          "definition": "مشكلة تحدث في تدريب الشبكات العصبية عندما تتراكم تدرجات خطأ كبير، وهو ما يؤدي إلى نموذج غير مستقر بسبب التحديثات الكبيرة جدًّا للأوزان.",
+          "english": "Exploding Gradient Problem",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "efb99493-ab92-4a9a-ab03-227e6a68aa42",
+          "headword": "واحد مقابل الكل",
+          "definition": "طريقة تصنيف للتعامل مع المشكلات المتعددة الأصناف باستخدام مصنِّفات ثنائية متعددة، بمقدار مُصنِّف ثنائي واحد لكل نتيجة محتملة.",
+          "english": "One-vs-All",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "1b30f62c-da1e-4173-8a60-2bf4dc92dc50",
+          "headword": "تعرُّف على الأنماط",
+          "definition": "مجال من مجالات تعلُّم الآلة يركز على تحديد أنماط البيانات أو انتظامها.",
+          "english": "Pattern Recognition",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "32581a8a-b99e-42ef-904c-50240c4da25a",
+          "headword": "تعلُّم عميق هندسي",
+          "definition": "مجال فرعي من التعلُّم العميق يركز على تصميم الشبكات العصبية التي يمكنها معالجة البيانات ذات الهياكل الهندسية، مثل الرسوم البيانية والشبكات.",
+          "english": "Geometric Deep Learning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "4aa85559-6117-4071-aa27-5e94b35b20bd",
+          "headword": "نموذج فضاء الحالة",
+          "definition": "إطار نمذجة رياضي يمثل النظام بحالات خفية تتطور بمرور الوقت؛ مما يتيح نمذجة البيانات المتسلسلة ومعالجتها بكفاءة.",
+          "english": "State Space Model",
+          "aliases": [],
+          "abbreviations": [
+            "SSM"
+          ],
+          "stratum": "3+_token"
+        }
+      ],
+      "reserve": [
+        {
+          "unit_id": "fecda830-36ed-4153-a594-b19f8932f0cd",
+          "headword": "بوت محادثة",
+          "definition": "برنامج ذكاء اصطناعي يستخدم أساليب معالجة اللغات الطبيعية للتفاعل مع المستخدمين عن طريق المحادثات الصوتية أو النصية.",
+          "english": null,
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "54831396-dbd2-40d6-a888-451a41b18389",
+          "headword": "ويب دلالي",
+          "definition": "امتداد لشبكة الويب العالمية لتمكين مشاركة البيانات وإعادة استخدامها عبر التطبيقات، عن طريق تحديد مخازن البيانات والمفردات وقواعد التعامل مع البيانات.",
+          "english": "Semantic Web",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "8d7a9cb5-be22-46e3-ac95-b7404c8b7890",
+          "headword": "استدلال مؤتمت",
+          "definition": "عملية توفر إطارًا منظمًا لخوارزميات تعلُّم الآلة؛ لأجل تحديد المشكلات وحلها.",
+          "english": "Automated Reasoning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "4f00a9c6-31ad-4856-b18e-1661820a312c",
+          "headword": "نقطة مهمة",
+          "definition": "موقع الخصائص ذات الأهمية في الصورة. ويُطلق عليه أيضًا \"مَعلَم\".",
+          "english": "Keypoint",
+          "aliases": [
+            "مَعلَم",
+            "مَعلَم"
+          ],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "68945f28-2c4c-4f0e-80eb-6474f512113c",
+          "headword": "تكافؤ الفرص",
+          "definition": "مقياس إنصاف لفحص ما إذا كان المُصنِّف يتنبأ باسم مفضل بطريقة متساوية لجميع قيم السمة.",
+          "english": "Equality of Opportunity",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "4a8b90cc-0398-4088-835d-696496efa441",
+          "headword": "تدريب مشترك",
+          "definition": "طريقة تعلُّم شبه موجَّه، تُستخدم في التصنيف عندما تكون البيانات غير المُسمَّاة أكثر من البيانات المُسمَّاة، وتشتمل مجموعة البيانات على مجموعتين مستقلتين ومتكاملتين من الخصائص.",
+          "english": "Co-Training",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "96bbb172-d7ba-45f2-96e7-9d5eb3821d19",
+          "headword": "بيانات فئوية",
+          "definition": "الخصائص التي تشتمل على مجموعة منفصلة من القيم المحتملة.",
+          "english": "Categorical Data",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "0dbe3438-d9e8-4c1e-b527-ae9a9c9f087b",
+          "headword": "توسيع عمودي",
+          "definition": "طريقة لزيادة أداء معالجة البيانات، عن طريق تحسين المعالجات أو الذاكرة أو التخزين.",
+          "english": "Vertical Scaling",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "3360c11e-b930-4450-8104-51e0777795ea",
+          "headword": "تحيُّز التغطية",
+          "definition": "نوع من تحيُّز الاختيار لا تُمثِّل فيه البيانات المختارة مجموعة العينة المستهدفة.",
+          "english": "Coverage Bias",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "2a8dc963-a8f2-44e5-9a24-abcad1660736",
+          "headword": "معرفة مرنة",
+          "definition": "طريقة توظف وكلاء الذكاء الاصطناعي؛ لتمكين تدفق المعرفة المؤسسية الملائمة والموثوقة بسلاسة بين البشر وأنظمة الحاسب.",
+          "english": "Fluid Knowledge",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "11c3a0e9-5647-4543-af5b-f9f217a1c13b",
+          "headword": "قابلية التدقيق",
+          "definition": "القدرة على مراجعة البيانات والعمليات واتخاذ القرارات في نظام الذكاء الاصطناعي وتقييمها؛ لضمان الشفافية والمساءلة.",
+          "english": "Auditability",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "f0de982f-9a96-4b4c-85b0-9e219e089e2d",
+          "headword": "تعلُّم سياقي",
+          "definition": "أسلوب في هندسة الأوامر يتعلم فيه النموذج أداء المهام، عن طريق تزويده ببعض الأمثلة في سياق مُدْخَلات الأمر. يُطلق عليه أيضًا \"تعلُّم قائم على الأوامر\".",
+          "english": "In-Context Learning",
+          "aliases": [
+            "تعلُّم قائم على الأوامر",
+            "تعلُّم قائم على الأوامر"
+          ],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "8418197a-1dfd-4721-a7ad-28bd07a885ae",
+          "headword": "هياكل البيانات",
+          "definition": "طريقة لتنظيم البيانات وتخزينها في ذاكرة الحاسب للوصول إليها ومعالجتها بكفاءة.",
+          "english": "Data Structure",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "85c1c3cb-e9f1-4c83-afb9-8493a22ca8b0",
+          "headword": "ناقل عصبي",
+          "definition": "الرابط بين الخلايا العصبية (العقد) في الشبكة العصبية الاصطناعية. يُطلق عليه أيضًا \"ناقل عصبي اصطناعي\".",
+          "english": "Artificial Synapse",
+          "aliases": [
+            "ناقل عصبي اصطناعي",
+            "ناقل عصبي اصطناعي"
+          ],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "ae484b59-52f0-4131-8fa0-826d34894233",
+          "headword": "معالجة البيانات",
+          "definition": "مجموعة واسعة من العمليات التي يمكن إجراؤها على البيانات بوسائل يدوية أو مؤتمتة.",
+          "english": "Data Processing",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "33af8d7d-6c37-444a-8e62-f6d3e600d367",
+          "headword": "قيد الإنصاف",
+          "definition": "شرط أو مجموعة من الشروط لضمان أن لا تُنتِج خوارزميات تعلم الآلة نتائج متحيزة أو تمييزية.",
+          "english": "Fairness Constraint",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "ade0f966-c7f9-4555-93af-e11a44457c4a",
+          "headword": "حوكمة البيانات",
+          "definition": "السياسات والعمليات والهياكل التنظيمية التي تحدد حقوق اتخاذ القرار ومسؤوليات دعم إدارة البيانات.",
+          "english": "Data Governance",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "9d442a62-7fa7-4ee0-be52-b80a8c1f31d0",
+          "headword": "تدريب مستمر",
+          "definition": "ممارسة في تعلم الآلة تُحدَّث فيها النماذج تحديثًا مستمرًّا ببيانات جديدة، للحفاظ على الدقة والتكيف مع الأنماط المتغيرة.",
+          "english": "Continuous Training",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "9de16400-0d3b-4225-996f-3f1527856277",
+          "headword": "نموذج البيانات",
+          "definition": "مجموعة من الطُّرُق المفاهيمية لوصف البيانات، ودلالاتها، والعلاقات بينها، وقيود الاتساق.",
+          "english": "Data Model",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "a55f947d-e517-4c58-af13-6e9b667e0e4c",
+          "headword": "موجِّه الوكيل",
+          "definition": "مكوّن في النظام يوجّه المهام أو الاستعلامات الواردة إلى الوكيل الأنسب، بناءً على القدرات وعبء العمل.",
+          "english": "Agent Router",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "3271ca90-d099-4068-b21a-90fd31ab4427",
+          "headword": "نصل أوكام",
+          "definition": "مبدأ لحل المشكلات يفضّل النماذج الأبسط على النماذج المعقدة.",
+          "english": "Occam's Razor",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "57a9d198-6342-44de-b531-2dc92bd8362f",
+          "headword": "مجموعة مُحَدَّبة",
+          "definition": "مجموعة فرعية من الفضاء الإقليدي، يظل الخط المرسوم بين أي نقطتين فيها داخل المجموعة الفرعية.",
+          "english": "Convex Set",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "fe6724a6-bf6f-4d5d-9b68-608673463e77",
+          "headword": "سرعة البيانات",
+          "definition": "معدل سرعة إنشاء البيانات أو إرسالها أو تخزينها أو تحليلها أو تصويرها.",
+          "english": "Data Velocity",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "930e82ce-e716-4c40-bef3-f40f334e19c9",
+          "headword": "إصدارات دلالية",
+          "definition": "نظام لترقيم إصدارات البرمجيات يوضّح نطاق التغييرات وتأثيرها باستخدام أرقام إصدارات مُهيكلة.",
+          "english": "Semantic Versioning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "4b98847f-9cc4-4e9c-a446-8fd4a83be722",
+          "headword": "علوم إدراكية",
+          "definition": "مجال يركز على دراسة العقل وعملياته وكيف يمكن محاكاتها في الآلات.",
+          "english": "Cognitive Science",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "ab244f14-cdfa-4055-ab6c-72b7ad5d9a69",
+          "headword": "جودة البيانات",
+          "definition": "مقياس لمدى فائدة البيانات وملاءمتها للغرض المقصود، ويشمل الاكتمال والاتساق والدقة.",
+          "english": "Data Quality",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "736bbbbf-bb47-47ee-8850-90a24ca58bb6",
+          "headword": "روبوت متنقل",
+          "definition": "روبوت قادر على التحرك في بيئته، وليس مثبتًا في مكان واحد.",
+          "english": "Mobile Robot",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "3f7a3812-36dc-43eb-a7fa-b15e8e728f6d",
+          "headword": "اسم بالوكالة",
+          "definition": "البيانات الخاصة بتقريب الأسماء غير المتوفرة مباشرة في مجموعة البيانات.",
+          "english": "Proxy Label",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "67205515-2a1c-4dc6-a81c-cbb1cc0a4d54",
+          "headword": "توزيع هندسي",
+          "definition": "توزيع احتمالي يوضح عدد التجارب اللازمة لتحقيق أول نجاح في تجربة برنولي.",
+          "english": "Geometric Distribution",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "8e57ebb1-93ff-4729-830c-e0a415b6c6a4",
+          "headword": "تباين البيانات",
+          "definition": "التغيُّرات في مجموعات البيانات من جانب معدل الإرسال أو الصيغة أو الدلالات أو الجودة.",
+          "english": "Data Variability",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "20e2da13-8626-4c3b-8efd-d8c7106ea324",
+          "headword": "احتمالات متكافئة",
+          "definition": "مقياس إنصاف لفحص ما إذا كان المُصنِّف يتنبأ باسم ما بطريقة متساوية لجميع قيم السمة.",
+          "english": "Equalized Odds",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "fd361e2f-b74e-40f0-afc5-74909cfa95d2",
+          "headword": "فضاء الخصائص",
+          "definition": "مجموعة من الخصائص ذات الصلة بميزات معينة لشيء، أو حدث قيد الدراسة.",
+          "english": "Feature Space",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "d7809be8-0a3f-428a-9e8b-0df7d06da2a6",
+          "headword": "سمة حساسة",
+          "definition": "سمة بشرية لها اعتبار خاص لبعض الأسباب.",
+          "english": "Sensitive Attribute",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "5b1753e4-7a28-4fb7-8b66-e601099a5316",
+          "headword": "تعزيز البشر",
+          "definition": "مجال يركز على تعزيز قدرات الإنسان باستخدام التقنية كأنها جزء متكامل مع جسم الإنسان.",
+          "english": "Human Augmentation",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "3da22ea9-97ba-4bf3-beac-41f5a4990c85",
+          "headword": "معايرة النموذج",
+          "definition": "عملية تعديل تنبؤات النموذج لتتناسب مع النتائج الفعلية بصورة أفضل، وتحسين الدقة والموثوقية.",
+          "english": "Model Calibration",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "2_token"
+        },
+        {
+          "unit_id": "b56b9410-4083-408f-b876-938e6f299eb5",
+          "headword": "قاعدة بيانات مرحلية",
+          "definition": "قاعدة بيانات مؤقتة ووسيطة تُستخدم لاستقبال البيانات وتحويلها والتحقق منها قبل تحويلها أو تحميلها إلى النظام المستهدف.",
+          "english": "Staging Database",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "fdce1e79-dc98-41ae-a3be-3e1da9356c91",
+          "headword": "بيانات وصفية نشطة",
+          "definition": "بيانات وصفية تُجمع تلقائياً وتُحدَّث باستمرار في الوقت الآني من الأنظمة والأحداث، ثم تُستخدم  استخداماً نَشطاً لتفعيل الإجراءات، وأتمتة العمليات، ودعم الوظائف التشغيلية والحوكمية.",
+          "english": "Active Metadata",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "ad7a3b0b-8864-4595-bfd1-453f13a775da",
+          "headword": "تقدير الأرجحية الأعلى",
+          "definition": "طريقة لتحديد قيم المُعامِلات التي تزيد من احتمالية البيانات المرصودة.",
+          "english": "Maximum Likelihood Estimation",
+          "aliases": [],
+          "abbreviations": [
+            "MLE"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "8adcac41-572e-4bae-aa17-e98502035362",
+          "headword": "قاعدة بيانات في الذاكرة",
+          "definition": "قاعدة بيانات تخزن البيانات في الذاكرة الرئيسة بدلًا من مُحرِّك الأقراص لتسريع أوقات الاستجابة.",
+          "english": "In-Memory Database",
+          "aliases": [],
+          "abbreviations": [
+            "IMDB"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "e550426b-cabb-4572-b314-f0e2985cc965",
+          "headword": "ذكاء اصطناعي تعاوني",
+          "definition": "ذكاء اصطناعي مصمم للعمل مع البشر لتحقيق أهداف مشتركة.",
+          "english": "Collaborative Artificial Intelligence",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "5d9f0d71-4550-4f32-92be-5df0d1cbd3f5",
+          "headword": "شجرة سريعة ومقتصدة",
+          "definition": "شجرة قرار بسيطة تُستخدم لمشكلات التصنيف ذات المعلومات المحدودة.",
+          "english": "Fast-and-Frugal Tree",
+          "aliases": [],
+          "abbreviations": [
+            "FFT"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "7d46a272-6516-489d-b5db-9745454dfc2c",
+          "headword": "مساعد شخصي ذكي",
+          "definition": "وكيل برمجيات يستخدم الذكاء الاصطناعي لمساعدة الأشخاص في المهام الأساسية.",
+          "english": "Intelligent Personal Assistant",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "41dedc04-d73d-4204-ab65-4df8c529d7cc",
+          "headword": "تحسين سرب الجسيمات",
+          "definition": "خوارزمية تحسين مستوحاة من حركة سرب الطيور لإيجاد الحل الأمثل في مساحة الحل.",
+          "english": "Particle Swarm Optimization",
+          "aliases": [],
+          "abbreviations": [
+            "PSO"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "466432b4-4d30-430e-8c73-ae929b244d12",
+          "headword": "صيغة جداول مفتوحة",
+          "definition": "مواصفة مفتوحة لتخزين مجموعات البيانات الجدولية واسعة النطاق وبياناتها الوصفية، وإدارتها.",
+          "english": "Open Table Format",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "ddf4005f-fd3e-4148-a605-715e84b14761",
+          "headword": "تحيُّز الذكاء الاصطناعي",
+          "definition": "تفضيل أو انحياز نظام الذكاء الاصطناعي لمجموعات ما على حساب مجموعات أخرى. ويُطلق عليه أيضًا \"تحيُّز خوارزمي\".",
+          "english": "Artificial Intelligence Bias",
+          "aliases": [
+            "تحيُّز خوارزمي",
+            "تحيُّز خوارزمي"
+          ],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "51805b1d-14ab-42af-9062-8a2f3273cf76",
+          "headword": "محو تعلم الآلة",
+          "definition": "عملية محو تأثير بيانات تدريبية معينة انتقائيّاً من نموذج تعلم آلة مُدرَّب، من دون الحاجة إلى إعادة تدريبه بالكامل من الصفر.",
+          "english": "Machine Unlearning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "975188e6-a69d-4456-bc29-98a8a1fc3efc",
+          "headword": "نموذج رؤية لغوي",
+          "definition": "نموذج متعدد الصيغ يجمع بين البيانات المرئية والنصية لأداء المهام التي تتطلب فهم الصور واللغات.",
+          "english": "Vision Language Model",
+          "aliases": [],
+          "abbreviations": [
+            "VLM"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "5bf3d040-6114-45a3-9bd9-20aa713806bd",
+          "headword": "إجابة الأسئلة المرئية",
+          "definition": "مهمة الإجابة على أسئلة معينة تتعلق بصورة مُدْخَلة.",
+          "english": "Visual Question Answering",
+          "aliases": [],
+          "abbreviations": [
+            "VQA"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "1ff696fc-8092-4d99-b87c-d94b13f5ac76",
+          "headword": "تقييم ثنائي اللغة",
+          "definition": "مقياس لتقييم جودة النص المترجم تلقائيًّا عن طريق مقارنته بترجمة مرجعية بشرية.",
+          "english": "Bilingual Evaluation Understudy",
+          "aliases": [],
+          "abbreviations": [
+            "BLEU"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "7d760cf6-c4ab-4907-bf52-4a8aac2a4014",
+          "headword": "بروتوكول سياق النموذج",
+          "definition": "بروتوكول مفتوح يهدف إلى توحيد طريقة ربط نماذج الذكاء الاصطناعي بالأدوات الخارجية ومصادر البيانات والتطبيقات، مع الحفاظ على واجهة تفاعل موحّدة ومتسقة.",
+          "english": "Model Context Protocol",
+          "aliases": [],
+          "abbreviations": [
+            "MCP"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "48f8dd0d-f57d-48cb-842c-b55c618a85a6",
+          "headword": "تعلُّم عميق تناظري",
+          "definition": "طريقة تستخدم الحوسبة والأجهزة التناظرية لإجراء العمليات الحسابية المطلوبة لمهام التعلُّم العميق.",
+          "english": "Analog Deep Learning",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "5b5e2e45-1be6-4f47-b1d9-55b385e1d8d6",
+          "headword": "أوامر بأمثلة قليلة",
+          "definition": "أسلوب لهندسة الأوامر يُعطى فيه النموذج تعليمات وبعض الأمثلة لتوجيه استجاباته.",
+          "english": "Few-Shot Prompting",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "48649748-dfe0-4145-8f6d-df1c28f4661b",
+          "headword": "وحدة الخطأ الخطي الجاوسي (جيلو)",
+          "definition": "دالة تنشيط تطبق تحويلًا سلسًا غير خطي على المُدْخَلات، عن طريق الاحتمال التراكمي للتوزيع الطبيعي.",
+          "english": "Gaussian Error Linear Unit",
+          "aliases": [],
+          "abbreviations": [
+            "GeLU"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "b8ffc136-99b6-43c1-8fca-19f80a6d7f88",
+          "headword": "نموذج الانحدار الذاتي",
+          "definition": "نموذج يتنبأ بالقيمة المستقبلية لمتغير ما، بناءً على قِيَمه السابقة.",
+          "english": "Autoregressive Model",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "aef8bfcc-6266-49ad-9a9b-278bdde6284b",
+          "headword": "معدل خطأ التصنيف",
+          "definition": "مقياس لتحديد عدد المرات التي تكون فيها تنبؤات النموذج غير صحيحة.",
+          "english": "Misclassification Rate",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "b3095ac1-6be5-4ecd-8663-89b4fa3bea03",
+          "headword": "برمجة مجموعة الإجابات",
+          "definition": "نوع من البرمجة التصريحية لحل مشكلات البحث المعقدة.",
+          "english": "Answer Set Programming",
+          "aliases": [],
+          "abbreviations": [
+            "ASP"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "2f436598-3c90-4200-81c0-30f72e71d78a",
+          "headword": "خزنة خصوصية البيانات",
+          "definition": "نظام تخزين آمن يعزل البيانات الشخصية الحساسة ويحميها،  ويتيحُ وصولاً خاضعاً للرقابة إلى العمليات المصرح بها.",
+          "english": "Data Privacy Vault",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "b064501f-066b-4806-b590-fa76fbca5c74",
+          "headword": "تعلُّم الآلة العلائقي",
+          "definition": "نوع من تعلُّم الآلة يركز على التعلُّم من البيانات ذات العلاقات والهياكل المعقدة.",
+          "english": "Relational Machine Learning",
+          "aliases": [],
+          "abbreviations": [
+            "RML"
+          ],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "cccddd0e-0b0f-4937-b3d4-f52bc7a51692",
+          "headword": "روبوت متعدد الوظائف",
+          "definition": "نظام روبوتي مُصمَّم لأداء مهام متعددة ومختلفة، مع القدرة على تكييف وظائفه بما يتناسب مع سياقات تشغيلية مختلفة.",
+          "english": "Polyfunctional Robot",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        },
+        {
+          "unit_id": "21760723-724e-43ce-9ad7-b98c0db2df3b",
+          "headword": "مشكلة تلاشي التدرج",
+          "definition": "حالة تظهر عندما تنخفض قيمة تدرجات الطبقات المخفية في بداية الشبكة العصبية العميقة.",
+          "english": "Vanishing Gradient Problem",
+          "aliases": [],
+          "abbreviations": [],
+          "stratum": "3+_token"
+        }
+      ]
+    }
+  }
+}
