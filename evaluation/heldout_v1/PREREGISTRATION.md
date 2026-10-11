@@ -31,7 +31,13 @@ loss of coverage?
 - First stage: `Engine` with signals dense_unit, dense_def, lexical on the text; dense_unit,
   dense_def on `concept_ar`; lexical on `keywords`; plus translation_lex and translation_dense on
   `concept_en` **only in P-full**. Fusion: RRF, neutral missing-field policy.
-- Decision: one call over the first-stage top-30 (`decision.JOINT_SYSTEM`).
+- Decision (amended, D2), per profile:
+  - **P-full**: one call over the first-stage top-30 (`decision.JOINT_SYSTEM`).
+  - **P-def**: Qwen listwise reranker over the first-stage top-50
+    (`engine.rerank.LLMListwiseReranker`) → selector over the reranked top-10
+    (`decision.SELECTOR_SYSTEM`).
+  Candidate availability (§6) refers to the candidates shown to the final decision call
+  (30 in P-full, 10 in P-def).
 - Profiles: **P-def** (headword + definition; Arabic-only) and **P-full** (all Siwar roles),
   simulated by role masking (`schema.restrict_roles`).
 
@@ -131,7 +137,7 @@ Per profile and split; overall and per item type:
 correct, wrong, NONE, false specialization (FS), accepted precision = correct / (correct + wrong + FS),
 accepted accuracy = correct / (correct + wrong), coverage = correct / positives,
 FS rate = FS / negatives (also per negative type), abstention rate, and candidate availability
-(an acceptable entry among the 30 candidates shown to the decision call).
+(an acceptable entry among the candidates shown to the final decision call; see §3).
 95 % percentile bootstrap CIs, 10,000 item-level resamples, seed 20261013.
 Annotator agreement (κ, preferred-in-set rate, Jaccard) reported with the results.
 
