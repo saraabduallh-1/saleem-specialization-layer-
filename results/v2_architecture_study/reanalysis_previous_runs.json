@@ -1,0 +1,168 @@
+{
+  "note": "Re-scoring of stored outputs only; dev/ablation evidence on the 36 repeatedly examined items.",
+  "runs": {
+    "top5_writer/T1_terminology": {
+      "n_positive": 30,
+      "expected_term_naive": 5,
+      "expected_term_morph": 8,
+      "meta_leak_outputs": 0,
+      "definitional_framing_outputs": 0
+    },
+    "top5_writer/T2_terminology_domain": {
+      "n_positive": 30,
+      "expected_term_naive": 8,
+      "expected_term_morph": 12,
+      "meta_leak_outputs": 0,
+      "definitional_framing_outputs": 0
+    },
+    "top1_writer/T1_terminology": {
+      "n_positive": 30,
+      "expected_term_naive": 8,
+      "expected_term_morph": 10,
+      "meta_leak_outputs": 0,
+      "definitional_framing_outputs": 1,
+      "selected_correct": 22,
+      "selected_correct_and_used_morph": 10,
+      "selected_wrong_and_wrong_term_used": 2
+    },
+    "top1_writer/T2_terminology_domain": {
+      "n_positive": 30,
+      "expected_term_naive": 9,
+      "expected_term_morph": 13,
+      "meta_leak_outputs": 0,
+      "definitional_framing_outputs": 0,
+      "selected_correct": 22,
+      "selected_correct_and_used_morph": 13,
+      "selected_wrong_and_wrong_term_used": 2
+    },
+    "top3_selector_writer/S1_selected_term": {
+      "n_positive": 30,
+      "expected_term_naive": 11,
+      "expected_term_morph": 14,
+      "meta_leak_outputs": 9,
+      "definitional_framing_outputs": 4,
+      "selected_correct": 23,
+      "selected_correct_and_used_morph": 13,
+      "selected_wrong_and_wrong_term_used": 4
+    },
+    "top3_selector_writer/S2_selected_term_domain": {
+      "n_positive": 30,
+      "expected_term_naive": 8,
+      "expected_term_morph": 10,
+      "meta_leak_outputs": 0,
+      "definitional_framing_outputs": 3,
+      "selected_correct": 23,
+      "selected_correct_and_used_morph": 10,
+      "selected_wrong_and_wrong_term_used": 2
+    },
+    "forced_rewrite/attempt1": {
+      "n_positive": 30,
+      "expected_term_naive": 11,
+      "expected_term_morph": 15,
+      "meta_leak_outputs": 0,
+      "definitional_framing_outputs": 1,
+      "selected_correct": 23,
+      "selected_correct_and_used_morph": 13,
+      "selected_wrong_and_wrong_term_used": 4
+    },
+    "forced_rewrite/final": {
+      "n_positive": 30,
+      "expected_term_naive": 13,
+      "expected_term_morph": 14,
+      "meta_leak_outputs": 0,
+      "definitional_framing_outputs": 1,
+      "selected_correct": 23,
+      "selected_correct_and_used_morph": 13,
+      "selected_wrong_and_wrong_term_used": 1
+    }
+  },
+  "forced_rewrite_validator_audit": {
+    "items_with_forced_term": 29,
+    "term_dropped_on_retry": 16,
+    "dropped_although_selection_correct": 10,
+    "attempt1_term_present_morph_but_lexical_check_false": 4,
+    "validator_fit_false_when_term_absent": 9,
+    "dropped_ids": [
+      [
+        "F01",
+        "هلوسة",
+        true
+      ],
+      [
+        "F04",
+        "دورة",
+        true
+      ],
+      [
+        "F07",
+        "مكافأة",
+        true
+      ],
+      [
+        "F08",
+        "سياسة",
+        true
+      ],
+      [
+        "F10",
+        "شبكة عصبية ترشيحية",
+        false
+      ],
+      [
+        "F11",
+        "اسم",
+        false
+      ],
+      [
+        "F14",
+        "ذكاء اصطناعي توليدي",
+        true
+      ],
+      [
+        "F15",
+        "تقسيم النصوص",
+        true
+      ],
+      [
+        "F17",
+        "معالجة اللغات الطبيعية",
+        false
+      ],
+      [
+        "F20",
+        "توليد مُعَزَّز بالاسترجاع",
+        false
+      ],
+      [
+        "F22",
+        "نموذج لغوي كبير",
+        true
+      ],
+      [
+        "F23",
+        "طبقة",
+        false
+      ],
+      [
+        "F24",
+        "توليد مُعَزَّز بالاسترجاع",
+        true
+      ],
+      [
+        "F26",
+        "متوسط الخطأ التربيعي",
+        true
+      ],
+      [
+        "F28",
+        "دالة الخسارة",
+        true
+      ],
+      [
+        "C02",
+        "بيئة",
+        false
+      ]
+    ]
+  }
+}

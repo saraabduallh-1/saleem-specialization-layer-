@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "ai_abstention_probes_v1",
+  "status": "development_probe_authored_by_assistant_not_expert_reviewed",
+  "language": "ar",
+  "domain_id": "artificial_intelligence",
+  "purpose": "Measure false specialization on inputs where NO Siwar term should be introduced. The 36-item development set has only 6 everyday-sense controls and no AI-context-but-underspecified inputs, so it cannot measure over-specialization of vague technical text.",
+  "construction_rules": [
+    "Written before any v2 model run; frozen at commit time and never edited after seeing outputs.",
+    "Expected behaviour for every item: no dictionary term is selected/introduced (NONE).",
+    "everyday_sense: a word with an AI-dictionary sense used in its general meaning.",
+    "human_activity: a human performs an activity whose automated counterpart is a dictionary term.",
+    "underspecified_ai: AI context is present but the text does not state the defining features of any specific concept."
+  ],
+  "items": [
+    {"id": "P01", "kind": "everyday_sense", "text": "احترق المحول الكهربائي في الحي بسبب ارتفاع الجهد."},
+    {"id": "P02", "kind": "everyday_sense", "text": "حصل الموظف على مكافأة مالية بعد نهاية المشروع."},
+    {"id": "P03", "kind": "everyday_sense", "text": "شغّلنا المولد الكهربائي وقت انقطاع الكهرباء عن المبنى."},
+    {"id": "P04", "kind": "everyday_sense", "text": "الطبقة الخارجية من الطلاء تحمي الجدار من الرطوبة."},
+    {"id": "P05", "kind": "everyday_sense", "text": "انقطعت الشبكة في المكتب وما قدرنا نفتح البريد."},
+    {"id": "P06", "kind": "everyday_sense", "text": "جهزنا النموذج الأولي للمنتج حتى نعرضه على العميل الأسبوع الجاي."},
+    {"id": "P07", "kind": "everyday_sense", "text": "كان تحيز الحكم واضحًا في المباراة لصالح الفريق المضيف."},
+    {"id": "P08", "kind": "everyday_sense", "text": "استلمنا حزمة الأوراق المطلوبة من الإدارة صباح اليوم."},
+    {"id": "P09", "kind": "human_activity", "text": "ترجمت المقال بنفسي من الإنجليزية إلى العربية قبل نشره."},
+    {"id": "P10", "kind": "human_activity", "text": "قسمت النص إلى فقرات قصيرة حتى تسهل قراءته على الطلاب."},
+    {"id": "P11", "kind": "human_activity", "text": "قرأ المحلل آراء العملاء واحدًا واحدًا وكتب ملخصًا لانطباعاتهم."},
+    {"id": "P12", "kind": "underspecified_ai", "text": "المودل ما يتعلم زي ما نبي."},
+    {"id": "P13", "kind": "underspecified_ai", "text": "النتائج اللي طلعت من النظام اليوم كانت غريبة شوي."},
+    {"id": "P14", "kind": "underspecified_ai", "text": "صار النموذج أبطأ في الرد بعد التحديث الأخير."},
+    {"id": "P15", "kind": "underspecified_ai", "text": "نبي نحسن أداء النظام قبل ما نطلقه للمستخدمين."},
+    {"id": "P16", "kind": "underspecified_ai", "text": "جمعنا بيانات من المستخدمين ونفكر كيف نستفيد منها."}
+  ]
+}
