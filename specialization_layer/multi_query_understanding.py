@@ -38,7 +38,7 @@ def _clean_list(v, n):
 
 
 def parse(raw: str, max_concepts: int = 8) -> dict:
-    s = raw.strip().replace("~~~json", "").replace("~~~", "").strip()
+    s = raw.strip().replace("```json", "").replace("```", "").strip()
     try:
         obj = json.loads(s)
     except Exception:
