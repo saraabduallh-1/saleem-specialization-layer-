@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import subprocess
 from pathlib import Path
 
@@ -23,8 +24,8 @@ def git_version() -> str:
 
 @st.cache_resource(show_spinner=False)
 def load_layer(version: str) -> SpecializationRuntime:
-    # The git version is part of the cache key. After git pull, the next rerun
-    # builds a fresh runtime from the updated code/data.
+    # Git version participates in the cache key. After git pull + rerun, the
+    # updated runtime/data are loaded into a fresh layer instance.
     return SpecializationRuntime()
 
 
@@ -39,13 +40,13 @@ st.markdown(
     """
     <style>
       html, body, [class*="css"] { direction: rtl; }
-      .block-container { max-width: 820px; padding-top: 3rem; }
+      .block-container { max-width: 860px; padding-top: 3rem; }
       h1 { text-align: center; }
       .stTextArea textarea {
         direction: rtl !important;
         text-align: right !important;
-        min-height: 180px !important;
-        font-size: 1.05rem !important;
+        min-height: 220px !important;
+        font-size: 1.08rem !important;
         line-height: 1.9 !important;
       }
       .result-card {
@@ -55,17 +56,28 @@ st.markdown(
         border-radius: 14px;
         padding: 22px 24px;
         margin-top: 20px;
-        font-size: 1.1rem;
       }
-      .result-term {
-        font-size: 1.55rem;
-        font-weight: 700;
-        margin-top: 8px;
+      .result-label {
+        font-size: .9rem;
+        opacity: .62;
+        margin-bottom: 10px;
+      }
+      .result-text {
+        font-size: 1.12rem;
+        line-height: 2;
+        white-space: pre-wrap;
+      }
+      .terms-line {
+        direction: rtl;
+        text-align: right;
+        font-size: .88rem;
+        opacity: .68;
+        margin-top: 12px;
       }
       .muted {
-        opacity: .58;
+        opacity: .5;
         text-align: center;
-        font-size: .78rem;
+        font-size: .76rem;
         margin-top: 2rem;
       }
     </style>
@@ -77,39 +89,38 @@ st.title("طبقة سليم")
 
 text = st.text_area(
     "النص",
-    placeholder="اكتب النص هنا...",
+    placeholder="اكتب النص الذي تبي تخصصه وتحسنه...",
     label_visibility="collapsed",
 )
 
-run = st.button("حلّل النص", type="primary", use_container_width=True)
+run = st.button("خصّص النص", type="primary", use_container_width=True)
 
 if run:
     if not text.strip():
         st.warning("اكتب نصًا أولًا.")
     else:
         version = git_version()
-        with st.spinner("جاري التحليل..."):
+        with st.spinner("جاري تخصيص النص..."):
             layer = load_layer(version)
             result = layer.analyze(text)
 
-        if result["status"] == "SPECIALIZED":
+        output = html.escape(result.get("output") or text)
+        st.markdown(
+            f"""
+            <div class="result-card">
+              <div class="result-label">النص بعد التخصيص</div>
+              <div class="result-text">{output}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        terms = [x["term"] for x in result.get("terms", []) if x.get("term")]
+        if terms:
             st.markdown(
-                f"""
-                <div class="result-card">
-                  <div>المصطلح التخصصي الأنسب</div>
-                  <div class="result-term">{result["term"]}</div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-        else:
-            st.markdown(
-                """
-                <div class="result-card">
-                  <div>النتيجة</div>
-                  <div class="result-term">لا يوجد مصطلح تخصصي مؤكد</div>
-                </div>
-                """,
+                '<div class="terms-line">المصطلحات التي اعتمدتها الطبقة: '
+                + "، ".join(html.escape(x) for x in terms)
+                + "</div>",
                 unsafe_allow_html=True,
             )
 
