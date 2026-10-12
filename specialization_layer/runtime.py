@@ -11,7 +11,6 @@ The research experiments E8-E10 remain unchanged.
 
 from __future__ import annotations
 
-import re
 import sys
 from pathlib import Path
 
@@ -20,12 +19,12 @@ SCRIPTS = ROOT / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
-from exp3_common import Engine, load_units  # noqa: E402
-from exp3_e2_query_understanding import AR, EN, TEXT3  # noqa: E402
-from specialization_layer import decision, multi_query_understanding  # noqa: E402
-from specialization_layer.abstention import view_ranks  # noqa: E402
-from specialization_layer.engine import query_understanding as qu_mod  # noqa: E402
-from spec_layer_v2 import Qwen, term_present  # noqa: E402
+from exp3_common import Engine, load_units
+from exp3_e2_query_understanding import AR, EN, TEXT3
+from specialization_layer import decision, multi_query_understanding
+from specialization_layer.abstention import view_ranks
+from specialization_layer.engine import query_understanding as qu_mod
+from spec_layer_v2 import Qwen, term_present
 
 DOMAIN = "الذكاء الاصطناعي"
 ACTIVE_PROFILE = "P-full"
@@ -34,15 +33,17 @@ DECISION_TOP_N = 30
 MAX_CONCEPTS = 8
 
 WRITER_SYSTEM = (
-    "أنت طبقة كتابة عربية تخصصية. أعد صياغة النص كاملًا ليصبح أوضح وأدق تخصصيًا مع الحفاظ الكامل على معناه ونبرته قدر الإمكان.\n"
-    "ستصلك تخصيصات دلالية معتمدة، كل تخصيص يربط عبارة من النص بمصطلح عربي معتمد.\n"
+    "أنت طبقة كتابة عربية تخصصية. أعد صياغة النص كاملًا ليصبح أوضح وأدق تخصصيًا مع الحفاظ الكامل على معناه ونبرته ونوع الكتابة.\n"
+    "ستصلك هوية الكتابة المستخرجة من النص، وتخصيصات دلالية معتمدة من المعجم.\n"
     "القواعد:\n"
-    "1. استخدم كل مصطلح معتمد في الموضع الذي يعبّر عن معناه، ولا تستبدله بمصطلح آخر.\n"
-    "2. لا تضف حقائق أو أسبابًا أو علاقات أو درجة يقين غير موجودة في النص.\n"
-    "3. لا تضف تعريفات معجمية ولا تشرح المصطلح إلا إذا كان الشرح موجودًا أصلًا في النص.\n"
-    "4. حسّن بقية الصياغة بقدر الحاجة فقط لتكون عربية طبيعية وتخصصية، من غير تغيير المقصود.\n"
-    "5. لا تذكر المعجم أو الطبقة أو المرشحين أو عملية الاختيار.\n"
-    "6. أعد النص النهائي فقط، بلا مقدمة أو شرح."
+    "1. حافظ على نوع النص: التقرير يبقى تقريرًا، السؤال يبقى سؤالًا، والمنشور الاجتماعي يبقى طبيعيًا وغير أكاديمي.\n"
+    "2. حافظ على السجل اللغوي والغرض ما لم تكن هناك ضرورة لغوية بسيطة.\n"
+    "3. استخدم كل مصطلح معتمد في الموضع الذي يعبّر عن معناه، ولا تستبدله بمصطلح آخر.\n"
+    "4. لا تضف حقائق أو أسبابًا أو علاقات أو درجة يقين غير موجودة في النص.\n"
+    "5. لا تضف تعريفات معجمية ولا تشرح المصطلح إلا إذا كان الشرح موجودًا أصلًا في النص.\n"
+    "6. حسّن بقية الصياغة بقدر الحاجة فقط لتكون عربية طبيعية وتخصصية.\n"
+    "7. لا تذكر المعجم أو الطبقة أو المرشحين أو عملية الاختيار.\n"
+    "8. أعد النص النهائي فقط، بلا مقدمة أو شرح."
 )
 
 
@@ -63,7 +64,12 @@ def _usable_span(span: str, full_text: str) -> str:
     return full_text
 
 
-def _writer_messages(text: str, accepted: list[dict], retry: bool = False) -> list[dict]:
+def _writer_messages(
+    text: str,
+    accepted: list[dict],
+    writing_profile: dict,
+    retry: bool = False,
+) -> list[dict]:
     if accepted:
         mappings = "\n".join(
             f"- العبارة: {x['evidence_span'] or x['concept_ar']}\n  المصطلح المعتمد: {x['term']}"
@@ -72,13 +78,23 @@ def _writer_messages(text: str, accepted: list[dict], retry: bool = False) -> li
     else:
         mappings = "- لا توجد مصطلحات معتمدة؛ حسّن الصياغة فقط من غير اختراع مصطلحات تخصصية."
 
+    style_context = (
+        "نوع الكتابة: " + writing_profile.get("writing_type", "أخرى")
+        + "\nالسجل اللغوي: " + writing_profile.get("register", "محايد")
+        + "\nالغرض: " + writing_profile.get("purpose", "أخرى")
+    )
+    if writing_profile.get("style_note"):
+        style_context += "\nملاحظة الأسلوب: " + writing_profile["style_note"]
+
     extra = (
         "\nتنبيه: المحاولة السابقة لم تستخدم كل المصطلحات المعتمدة. "
         "يجب أن تظهر المصطلحات المعتمدة نفسها في النص النهائي ما دام معناها موجودًا."
         if retry else ""
     )
+
     user = (
         "النص الأصلي:\n" + text
+        + "\n\nهوية الكتابة التي يجب الحفاظ عليها:\n" + style_context
         + "\n\nالتخصيصات المعتمدة:\n" + mappings
         + extra
     )
@@ -151,8 +167,10 @@ class SpecializationRuntime:
             "reason": "accepted",
         }
 
-    def _rewrite(self, text: str, accepted: list[dict]) -> str:
-        raw, _ = self.writer_llm(_writer_messages(text, accepted, retry=False))
+    def _rewrite(self, text: str, accepted: list[dict], writing_profile: dict) -> str:
+        raw, _ = self.writer_llm(
+            _writer_messages(text, accepted, writing_profile, retry=False)
+        )
         output = raw.strip()
 
         missing = [
@@ -160,7 +178,9 @@ class SpecializationRuntime:
             if x.get("term") and not term_present(output, x["term"])
         ]
         if missing:
-            raw, _ = self.writer_llm(_writer_messages(text, accepted, retry=True))
+            raw, _ = self.writer_llm(
+                _writer_messages(text, accepted, writing_profile, retry=True)
+            )
             output = raw.strip()
         return output or text
 
@@ -171,6 +191,13 @@ class SpecializationRuntime:
                 "status": "NONE",
                 "input": "",
                 "output": "",
+                "domain": DOMAIN,
+                "writing_profile": {
+                    "writing_type": "أخرى",
+                    "register": "محايد",
+                    "purpose": "أخرى",
+                    "style_note": "",
+                },
                 "terms": [],
                 "concepts": [],
                 "reason": "empty_input",
@@ -181,13 +208,18 @@ class SpecializationRuntime:
         )
         qu = multi_query_understanding.parse(qu_raw, max_concepts=MAX_CONCEPTS)
 
+        writing_profile = {
+            "writing_type": qu.get("writing_type", "أخرى"),
+            "register": qu.get("register", "محايد"),
+            "purpose": qu.get("purpose", "أخرى"),
+            "style_note": qu.get("style_note", ""),
+        }
+
         concept_results = []
         if qu["technical"]:
             for concept in qu["concepts"]:
                 concept_results.append(self._specialize_concept(text, concept))
 
-        # Deduplicate the same dictionary unit if two extracted concepts collapse
-        # to one canonical term.
         accepted = []
         seen_units = set()
         for x in concept_results:
@@ -198,12 +230,14 @@ class SpecializationRuntime:
             seen_units.add(x["unit_id"])
             accepted.append(x)
 
-        output = self._rewrite(text, accepted)
+        output = self._rewrite(text, accepted, writing_profile)
 
         return {
             "status": "SPECIALIZED" if accepted else "REWRITTEN",
             "input": text,
             "output": output,
+            "domain": DOMAIN,
+            "writing_profile": writing_profile,
             "terms": [
                 {
                     "term": x["term"],
