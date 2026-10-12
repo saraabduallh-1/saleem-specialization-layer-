@@ -24,8 +24,6 @@ def git_version() -> str:
 
 @st.cache_resource(show_spinner=False)
 def load_layer(version: str) -> SpecializationRuntime:
-    # Git version participates in the cache key. After git pull + rerun, the
-    # updated runtime/data are loaded into a fresh layer instance.
     return SpecializationRuntime()
 
 
@@ -40,7 +38,7 @@ st.markdown(
     """
     <style>
       html, body, [class*="css"] { direction: rtl; }
-      .block-container { max-width: 860px; padding-top: 3rem; }
+      .block-container { max-width: 900px; padding-top: 3rem; }
       h1 { text-align: center; }
       .stTextArea textarea {
         direction: rtl !important;
@@ -49,13 +47,13 @@ st.markdown(
         font-size: 1.08rem !important;
         line-height: 1.9 !important;
       }
-      .result-card {
+      .result-card, .meta-card {
         direction: rtl;
         text-align: right;
         border: 1px solid rgba(128,128,128,.22);
         border-radius: 14px;
-        padding: 22px 24px;
-        margin-top: 20px;
+        padding: 20px 22px;
+        margin-top: 18px;
       }
       .result-label {
         font-size: .9rem;
@@ -67,18 +65,36 @@ st.markdown(
         line-height: 2;
         white-space: pre-wrap;
       }
-      .terms-line {
-        direction: rtl;
-        text-align: right;
-        font-size: .88rem;
-        opacity: .68;
-        margin-top: 12px;
+      .meta-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 12px 18px;
+      }
+      .meta-item {
+        border-bottom: 1px solid rgba(128,128,128,.12);
+        padding-bottom: 9px;
+      }
+      .meta-key {
+        font-size: .78rem;
+        opacity: .55;
+        margin-bottom: 3px;
+      }
+      .meta-value {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .terms {
+        font-size: 1rem;
+        line-height: 2;
       }
       .muted {
         opacity: .5;
         text-align: center;
         font-size: .76rem;
         margin-top: 2rem;
+      }
+      @media (max-width: 650px) {
+        .meta-grid { grid-template-columns: 1fr; }
       }
     </style>
     """,
@@ -100,29 +116,75 @@ if run:
         st.warning("اكتب نصًا أولًا.")
     else:
         version = git_version()
-        with st.spinner("جاري تخصيص النص..."):
+        with st.spinner("جاري تحليل النص وتخصيصه..."):
             layer = load_layer(version)
             result = layer.analyze(text)
 
-        output = html.escape(result.get("output") or text)
+        profile = result.get("writing_profile") or {}
+        domain = html.escape(result.get("domain") or "غير محدد")
+        writing_type = html.escape(profile.get("writing_type") or "غير محدد")
+        register = html.escape(profile.get("register") or "غير محدد")
+        purpose = html.escape(profile.get("purpose") or "غير محدد")
+        style_note = html.escape(profile.get("style_note") or "—")
+
         st.markdown(
             f"""
-            <div class="result-card">
-              <div class="result-label">النص بعد التخصيص</div>
-              <div class="result-text">{output}</div>
+            <div class="meta-card">
+              <div class="result-label">تحليل النص</div>
+              <div class="meta-grid">
+                <div class="meta-item">
+                  <div class="meta-key">المجال التخصصي</div>
+                  <div class="meta-value">{domain}</div>
+                </div>
+                <div class="meta-item">
+                  <div class="meta-key">نوع الكتابة</div>
+                  <div class="meta-value">{writing_type}</div>
+                </div>
+                <div class="meta-item">
+                  <div class="meta-key">الأسلوب اللغوي</div>
+                  <div class="meta-value">{register}</div>
+                </div>
+                <div class="meta-item">
+                  <div class="meta-key">الغرض من النص</div>
+                  <div class="meta-value">{purpose}</div>
+                </div>
+              </div>
+              <div style="margin-top:14px">
+                <div class="meta-key">طريقة الحفاظ على الأسلوب</div>
+                <div>{style_note}</div>
+              </div>
             </div>
             """,
             unsafe_allow_html=True,
         )
 
         terms = [x["term"] for x in result.get("terms", []) if x.get("term")]
-        if terms:
-            st.markdown(
-                '<div class="terms-line">المصطلحات التي اعتمدتها الطبقة: '
-                + "، ".join(html.escape(x) for x in terms)
-                + "</div>",
-                unsafe_allow_html=True,
-            )
+        terms_html = (
+            "، ".join(html.escape(x) for x in terms)
+            if terms
+            else "لم تعتمد الطبقة مصطلحًا من المعجم في هذا النص."
+        )
+
+        st.markdown(
+            f"""
+            <div class="meta-card">
+              <div class="result-label">المصطلحات التي اعتمدتها الطبقة</div>
+              <div class="terms">{terms_html}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        output = html.escape(result.get("output") or text)
+        st.markdown(
+            f"""
+            <div class="result-card">
+              <div class="result-label">النص بعد التخصيص والتحسين</div>
+              <div class="result-text">{output}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
 st.markdown(
     f'<div class="muted">نسخة النظام: {git_version()}</div>',
