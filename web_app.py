@@ -28,8 +28,8 @@ def load_layer(version: str) -> SpecializationRuntime:
 
 
 st.set_page_config(
-    page_title="طبقة سليم",
-    page_icon="س",
+    page_title="خصّص",
+    page_icon="خ",
     layout="centered",
     initial_sidebar_state="collapsed",
 )
@@ -38,6 +38,7 @@ st.markdown(
     """
     <style>
       html, body, [class*="css"] { direction: rtl; }
+      .stApp { background: #f8fafc; color: #1f2937; }
       .block-container { max-width: 900px; padding-top: 3rem; }
       h1 { text-align: center; }
       .stTextArea textarea {
@@ -46,11 +47,14 @@ st.markdown(
         min-height: 220px !important;
         font-size: 1.08rem !important;
         line-height: 1.9 !important;
+        background: #ffffff !important;
+        color: #1f2937 !important;
       }
       .result-card, .meta-card {
         direction: rtl;
         text-align: right;
-        border: 1px solid rgba(128,128,128,.22);
+        background: #ffffff;
+        border: 1px solid rgba(31,41,55,.12);
         border-radius: 14px;
         padding: 20px 22px;
         margin-top: 18px;
@@ -101,7 +105,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("طبقة سليم")
+st.title("خصّص")
 
 text = st.text_area(
     "النص",
