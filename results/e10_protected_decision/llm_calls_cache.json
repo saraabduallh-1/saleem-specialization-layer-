@@ -1,0 +1,3002 @@
+{
+  "9414989ee34f60f8068985af": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C21\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تشغيل المودل على الحساس (طرف الشبكة) بدلاً من السيرفر، وهو ما يطابق تعريف نموذج طرفي (Edge Model) بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2054,
+        "total_tokens": 2123,
+        "completion_tokens": 69,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.206
+    }
+  },
+  "8da1c090f102098853ca69d1": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تنفيذ جزء من المعالجة بالقرب من أجهزة المصنع بدل ترحيل جميع البيانات إلى مركز البيانات\",\"reason\":\"النص يصف تنفيذ المعالجة بالقرب من الأجهزة بدلاً من مراكز البيانات، وهو التعريف الدقيق لحوسبة الطرفية (Edge Computing).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1967,
+        "total_tokens": 2053,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.795
+    }
+  },
+  "9cc48861f3493bba7dab94ac": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"عملية اختزال مصفوفة أُنشئت بواسطة طبقة ترشيحية إلى مصفوفة أصغر\",\"reason\":\"النص يصف تغييرًا في أبعاد المخرجات بعد طبقة الالتفاف، وهو تعريف دقيق لطبقة التجميع (Pooling) التي تقلل الأبعاد.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2137,
+        "total_tokens": 2230,
+        "completion_tokens": 93,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.981
+    }
+  },
+  "e0299753e09ec99911022775": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C5\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"يعتمد على حقائق وقواعد مرتبة عن المجال ويرجع لها قبل ما يستنتج الإجابة\",\"reason\":\"النص يصف نظامًا يعتمد على قاعدة معرفة (حقائق وقواعد) لاستنتاج الإجابة، وهو تعريف دقيق لنظام قائم على قاعدة معرفة (C5).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2092,
+        "total_tokens": 2183,
+        "completion_tokens": 91,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.888
+    }
+  },
+  "17f81659f4400a3dd3b4cbee": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C6\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية إضافة weak learners واحدًا وراء الآخر لتحسين الأخطاء السابقة، وهو التعريف الدقيق لتعزيز تكيفي (Adaptive Boosting) وليس مجرد تعزيز عام.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2266,
+        "total_tokens": 2338,
+        "completion_tokens": 72,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.271
+    }
+  },
+  "5ef33bfd7ecf414a88f40285": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C19\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تقليل حجم النموذج مع الحفاظ على الدقة، وهو التعريف الدقيق لـ Model Pruning.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2007,
+        "total_tokens": 2068,
+        "completion_tokens": 61,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.815
+    }
+  },
+  "de123dfab6482db329dc7177": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"ذراع ميكانيكية مشغلة... لا يرقى إلى تعريف الروبوت الكامل\",\"reason\":\"النص يصف نظامًا ميكانيكيًا مشغلاً يفتقر إلى مستوى الاستقلالية ليعتبر روبوتًا كاملاً، وهو ما يطابق تعريف C2 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2050,
+        "total_tokens": 2144,
+        "completion_tokens": 94,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.984
+    }
+  },
+  "a219fae94dcc963b0b834e3d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تحديث قيمة كل state-action وتحديد الحركة ذات العائد الأعلى، وهو ما يصفه تعريف دالة كيو (Q-Function) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2236,
+        "total_tokens": 2309,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.283
+    }
+  },
+  "40f8e7cf33432f403e7d299c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تغير توزيع بعض متغيرات الإدخال... تراجع ملحوظ في جودة التنبؤ\",\"reason\":\"النص يصف تغير توزيع متغيرات الإدخال (Feature Drift) وتزامن ذلك مع تراجع الأداء، وهو ما يطابق تعريف C14 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2001,
+        "total_tokens": 2086,
+        "completion_tokens": 85,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.683
+    }
+  },
+  "f62ae4eee79b4416dae5e0f2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C23\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف توزيع المشاركين حسب العمر والجنس والتعليم والدخل والحالة العملية، وهو ما يطابق تعريف بيانات ديموغرافية (الجنس والعمر والتعليم والدخل والعمل) بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2003,
+        "total_tokens": 2079,
+        "completion_tokens": 76,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.356
+    }
+  },
+  "758273e695b6716325e5746e": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C9\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"أخذت الحالات اللي كان متردد فيها أكثر وكتبت لها أمثلة بشرية\",\"reason\":\"النص يصف بوضوح دمج المدخلات البشرية في دورة تحسين النموذج عبر الملاحظات، وهو تعريف دقيق لـ Human-in-the-Loop.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2039,
+        "total_tokens": 2125,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.698
+    }
+  },
+  "b56ef17d0c454cd3cbd8674d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C19\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تمنح الوكيل قيمة أعلى عند تحقيق الهدف وتخفضها عند السلوك غير المرغوب\",\"reason\":\"النص يصف آلية تحديد قيمة (مكافأة) تحفز السلوك المطلوب وتثبيط غير المرغوب، وهو التعريف الدقيق لدالة المكافأة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2175,
+        "total_tokens": 2269,
+        "completion_tokens": 94,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.035
+    }
+  },
+  "00487f8118d6e9c19bb9708a": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C6\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يتحدث تحديدًا عن تحديد القيم الأولية للـ weights قبل البدء بالتدريب، وهو ما يطابق تعريف تهيئة الأوزان (Weight Initialization) في C6 بدقة تامة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1950,
+        "total_tokens": 2022,
+        "completion_tokens": 72,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.181
+    }
+  },
+  "e14a56e950def4571c578711": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"مرحلة نهائية لتعديل ترتيب العناصر وفق معايير إضافية\",\"reason\":\"النص يصف خطوة إعادة ترتيب نهائية بناءً على معايير إضافية، وهو ما يطابق تعريف C2 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2105,
+        "total_tokens": 2175,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.159
+    }
+  },
+  "ac723d1df191fc726f180b56": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C10\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"أبي الشبكة تطلع التمثيلات المهمة من البيانات الخام بنفسها\",\"reason\":\"النص يصف تحديدًا عملية اكتشاف الخصائص تلقائيًا من البيانات الخام دون تدخل بشري، وهو ما يطابق تعريف Feature Learning بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2211,
+        "total_tokens": 2291,
+        "completion_tokens": 80,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.519
+    }
+  },
+  "9a842a2cc5a7db167976bdb1": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C26\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية إعادة التجربة للحصول على نتيجة متوقعة، وهو ما يتطابق مع تعريف اختبار النموذج (تقييم أداء نموذج مدرب باستخدام بيانات جديدة) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1910,
+        "total_tokens": 1983,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.242
+    }
+  },
+  "6bff67423472acc324928555": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C13\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تحديد القراءات التي تنحرف بدرجة كبيرة عن النمط المعتاد\",\"reason\":\"النص يصف عملية تحديد مشاهدات غير معتادة تنحرف عن النمط، وهو التعريف الدقيق لاكتشاف الشذوذ.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2043,
+        "total_tokens": 2127,
+        "completion_tokens": 84,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.644
+    }
+  },
+  "3793e2bc46d940d38ef251a2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف محاولة تجاوز ضوابط الأمان ودفع النموذج لسلوك يرفضه، وهو التعريف الدقيق لـ 'كسر القيود' (C15) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2370,
+        "total_tokens": 2449,
+        "completion_tokens": 79,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.508
+    }
+  },
+  "748ea098b2685ae9a70daec8": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C13\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية اتخاذ الخطوة التالية (يسأل، ينفذ، يرد) بناءً على السياق، وهو تعريف دقيق لـ إدارة الحوار (Dialog Management) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2257,
+        "total_tokens": 2332,
+        "completion_tokens": 75,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.351
+    }
+  },
+  "d2991cfaaf38352c908a04d5": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C12\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف الهدف كـ 'تحليل الإشارة الصوتية'، وهو ما يطابق تعريف C12 (معالجة الإشارات الصوتية) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2066,
+        "total_tokens": 2138,
+        "completion_tokens": 72,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.217
+    }
+  },
+  "6048805c264d45045d12cd4d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C21\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية أخذ نموذج مُدرَّب وتكييفه لمهمة جديدة دون البدء من الصفر، وهو التعريف الدقيق لضبط دقيق (Fine Tuning).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2175,
+        "total_tokens": 2245,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.158
+    }
+  },
+  "6ae0c4bd3773a92db91f1295": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C18\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية جمع logs وmetrics وtraces لفهم الحالة الداخلية للنظام، وهو التعريف الدقيق لـ Observability (C18).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1927,
+        "total_tokens": 1995,
+        "completion_tokens": 68,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.037
+    }
+  },
+  "6ccd7d366b02cda899f1d41e": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف مبدأ خضوع البيانات للقوانين المحلية، وهو التعريف الدقيق لسيادة البيانات (Data Sovereignty) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1976,
+        "total_tokens": 2042,
+        "completion_tokens": 66,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.998
+    }
+  },
+  "e6b149a9c59156b2c9ecaa17": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"مقارنته مع ملخص بشري\",\"reason\":\"النص يصف عملية تقييم ملخصات تلقائية بمقارنتها بملخصات بشرية، وهو التعريف الدقيق لـ Bilingual Evaluation Understudy (C8).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2091,
+        "total_tokens": 2175,
+        "completion_tokens": 84,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.639
+    }
+  },
+  "778f1ff81012b8a84156f0ef": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"الخطأ ينزل بسرعة... تقريبًا يثبت\",\"reason\":\"النص يصف انخفاض الخطأ وتثبيته عبر الـ epochs، وهو ما يصفه منحنى الخسارة بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2041,
+        "total_tokens": 2115,
+        "completion_tokens": 74,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.286
+    }
+  },
+  "96ab2f5fc77810d7b77ec2d4": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C18\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"فوزعت أجزاء من الـparameters على عدة كروت\",\"reason\":\"النص يصف تقسيم النموذج على عدة كروت لتوزيع الذاكرة، وهو تعريف دقيق لتجزئة النموذج (Model Sharding).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1976,
+        "total_tokens": 2054,
+        "completion_tokens": 78,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.402
+    }
+  },
+  "8254b1d6505183b88a1ad094": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف استخدام جزء عشوائي واحد (حجم حزمة 1) لتحديث النموذج، وهو التعريف الدقيق لـ Stochastic Gradient Descent (C14) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2180,
+        "total_tokens": 2259,
+        "completion_tokens": 79,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.498
+    }
+  },
+  "0a2ee4aa0639f45542e584e9": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تقييم تأثير تغيير المدخلات (الدخل) على القرار، وهو ما يتطابق تمامًا مع تعريف تحليل الحساسية (تقييم كيفية تأثر المخرجات بالتغيرات في المعاملات المدخلة).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1922,
+        "total_tokens": 2005,
+        "completion_tokens": 83,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.589
+    }
+  },
+  "43f1e7af0664fa6d34134b31": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C26\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يسأل عن كيفية استخدام 'قيمة عالية' بعد التجميع لاختيار عدد المجموعات، وهو ما يشير مباشرة إلى مقياس القصور الذاتي (Inertia) المستخدم في خوارزميات مثل K-Means، حيث تشير القيم المنخفضة إلى تجميع جيد. لا يوجد مرشح آخر في القائمة يصف هذا المفهوم بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2181,
+        "total_tokens": 2289,
+        "completion_tokens": 108,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.509
+    }
+  },
+  "022582986c35673bc1b7b843": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C7\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف متغيرًا يأخذ قيمًا كثيرة جدًا وبها كسور، وهو تعريف دقيق لـ 'خاصية مستمرة' (Continuous Feature) الذي يسمح بعدًا لا نهائيًا من القيم، بينما الخيارات الأخرى إما أعم (مثل بيانات عددية) أو أخص ولا تنطبق (مثل اشتقاق جزئي).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1914,
+        "total_tokens": 2019,
+        "completion_tokens": 105,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.381
+    }
+  },
+  "678d24f3bd227ece1179340b": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C10\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف الروبوت الذي يقرأ الحساسات ويغيّر تصرفه حسب البيئة، وهو ما يطابق تعريف 'الروبوت الذكي' (C10) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2072,
+        "total_tokens": 2151,
+        "completion_tokens": 79,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.473
+    }
+  },
+  "df87db517630938bbcebc5be": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"أجزاء من الطلب عولجت بواسطة عدة عمليات في الوقت نفسه\",\"reason\":\"النص يصف تقسيم المهام لتشغيلها في وقت واحد، وهو تعريف دقيق لمعالجة متوازية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2102,
+        "total_tokens": 2175,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.256
+    }
+  },
+  "9c71a9df416ab827d57acee1": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C13\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"إذا رفعت الإعداد هذا، الردود تصير متنوعة ومفاجئة أكثر، وإذا نزلته تصير الإجابات ثابتة ومتوقعة\",\"reason\":\"النص يصف تأثير معامل يتحكم في التنوع مقابل الثبات، وهو ما يتطابق تمامًا مع تعريف درجة العشوائية (Temperature) كعامل للتحكم في مستوى العشوائية والتنوع وقابلية التنبؤ.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2152,
+        "total_tokens": 2265,
+        "completion_tokens": 113,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.688
+    }
+  },
+  "dbb3cadcb6c5a13f79ec0d1a": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C5\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف هيكلًا شجريًا ينتج حالات متعددة (تفرع)، وهو ما يتطابق تمامًا مع تعريف شجرة الأفكار (Tree of Thoughts) كإطار استدلال متعدد المسارات، ولا يوجد مرشح آخر في القائمة يصف هذا المفهوم بدقة متساوية مع وجود تفاصيل إضافية غير موجودة في النص.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2041,
+        "total_tokens": 2144,
+        "completion_tokens": 103,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.301
+    }
+  },
+  "6c542f4ba412dcfd192156bc": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"بعض الـneurons كأنها متعودة على بعض؛ إذا عطلت جزء بسيط منها يطيح الأداء أكثر من المتوقع\",\"reason\":\"النص يصف اعتماد الخلايا العصبية المتبادلة الذي يؤدي لانهيار الأداء عند عطل جزئي، وهو تعريف دقيق لـ Co-Adaptation.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2307,
+        "total_tokens": 2405,
+        "completion_tokens": 98,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.178
+    }
+  },
+  "a9c67290177f8ba83b1ebd9a": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف الوكيل بأنه ليس مجرد شات بل له 'جسم افتراضي' يتحرك ويتعلم، وهو ما يطابق تعريف C14 (وكيل مُمجسَّد) بدقة دون الحاجة لتغييره ليشمل مفاهيم أوسع مثل C12 أو أخص مثل C5.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2148,
+        "total_tokens": 2248,
+        "completion_tokens": 100,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.241
+    }
+  },
+  "81da02d9725087463f4ff910": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C6\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"آلية داخلية شجعته على الفضول\",\"reason\":\"النص يصف آلية داخلية تشجع الوكيل دون مكافأة خارجية، وهو تعريف دقيق لـ الدافع الداخلي (Intrinsic Motivation).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2104,
+        "total_tokens": 2179,
+        "completion_tokens": 75,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.328
+    }
+  },
+  "f2e72be2c77f91bb774cf331": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تقسيم بيانات غير مسمّاة (بدون labels) إلى مجموعات بناءً على القرب من مراكز، وهو التعريف الدقيق لخوارزمية التجميع (Clustering) التي يغطيها C8، ولا يوجد مرشح آخر في القائمة يصف هذه العملية بشكل أدق أو أكثر شمولاً.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2106,
+        "total_tokens": 2210,
+        "completion_tokens": 104,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.354
+    }
+  },
+  "124fd7fe9b824703b2f06481": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C11\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"يقارن المكوّن الحقائق المتاحة بالقواعد المخزنة ثم يطبق منطق الاستدلال لاستخلاص نتائج جديدة\",\"reason\":\"النص يصف عملية استنتاج معلومات جديدة من الحقائق والقواعد المخزنة، وهو التعريف الدقيق لمُحرِّك الاستنتاج (Inference Engine) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2202,
+        "total_tokens": 2302,
+        "completion_tokens": 100,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.248
+    }
+  },
+  "84c559bb81405722d46a0d83": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C7\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تنظيف وتحويل وتنظيم البيانات قبل النقل، وهو التعريف الدقيق لـ Data Wrangling (C7).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1891,
+        "total_tokens": 1953,
+        "completion_tokens": 62,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.84
+    }
+  },
+  "99b843d62a08a05f83d6cb03": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يذكر الحاجة الماسة لمراجعة 'الأساس الرياضي' بعد التعامل مع المصفوفات والمتجهات، وهو ما يصفه C15 (جبر خطي) بدقة تامة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2028,
+        "total_tokens": 2109,
+        "completion_tokens": 81,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.527
+    }
+  },
+  "e56ae3b0f789f99fa05a8289": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف البيانات التي تسهل فهم وتنظيم الملفات دون أن تكون المحتوى نفسه، وهو التعريف الدقيق لـ Metadata (البيانات الوصفية) الذي يصف بيانات أخرى.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2080,
+        "total_tokens": 2154,
+        "completion_tokens": 74,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.272
+    }
+  },
+  "0f95b8b154fa37af11c08786": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف العملية بوضوح بأنها إضافة 'وصف'، وهو ما يطابق تعريف البيانات الوصفية (Metadata) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2042,
+        "total_tokens": 2109,
+        "completion_tokens": 67,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.024
+    }
+  },
+  "d97f33108c577504e807ff9f": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C10\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف مخزنًا مركزيًا لتخزين القيم وتعريفات الخصائص للاستخدام المشترك، وهو التعريف الدقيق لمخزن الخصائص (Feature Store) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2137,
+        "total_tokens": 2214,
+        "completion_tokens": 77,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.413
+    }
+  },
+  "b872866b7b7e1490749e4857": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C27\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"النسخة الحالية تدربت مرة واحدة... وما تتحدث تلقائيًا حتى لو تغيرت البيانات\",\"reason\":\"النص يصف نموذجًا يُدرَّب مرة واحدة ويظل ثابتًا دون تحديث، وهو تعريف دقيق لنموذج ثابت (Static Model).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1955,
+        "total_tokens": 2040,
+        "completion_tokens": 85,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.643
+    }
+  },
+  "4b4efd80d24ef578b528bc35": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C23\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"توزيع البيانات هناك مختلف بوضوح عن توزيع التدريب\",\"reason\":\"النص يصف تغيرًا في توزيع البيانات بين المصدر والبيئة الجديدة، وهو تعريف دقيق لـ Domain Shift (تغيُّر المجال).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2071,
+        "total_tokens": 2147,
+        "completion_tokens": 76,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.342
+    }
+  },
+  "b4b6f69b360e816a16253a2b": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"نسخة قصيرة تحافظ على الأفكار الأساسية\",\"reason\":\"النص يصف عملية اختصار تلقائي للمستندات الطويلة مع الحفاظ على الأفكار الرئيسية، وهو ما يطابق تعريف تلخيص النصوص (Text Summarization) بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2147,
+        "total_tokens": 2227,
+        "completion_tokens": 80,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.512
+    }
+  },
+  "e61471c207c4fbef2fe966f6": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C7\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تبقى مخزنة لسنوات دون أن تدخل في أي تحليل أو قرار\",\"reason\":\"النص يصف بيانات مخزنة لسنوات دون استخدام، وهو التعريف الدقيق لـ Dark Data\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1967,
+        "total_tokens": 2037,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.111
+    }
+  },
+  "56491bd7971227e96ee211c6": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C27\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية اختيار نموذج ديناميكي بناءً على التكلفة والأداء وزمن الاستجابة، وهو ما يطابق تعريف موجّه النماذج (Model Router) بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2031,
+        "total_tokens": 2104,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.232
+    }
+  },
+  "28ea293d859b88e143f73b61": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C9\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تحديد أن 'إنها' تشير إلى سارة، وهو تعريف دقيق لمهمة تحديد المرجع (Coreference Resolution) دون الحاجة لتغيير القرار.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1944,
+        "total_tokens": 2013,
+        "completion_tokens": 69,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.074
+    }
+  },
+  "580a845782ec4901b33274eb": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف البحث عن منتجات بناءً على معنى الجملة وليس الحروف، وهو تعريف دقيق لـ بحث دلالي (Semantic Search) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2055,
+        "total_tokens": 2124,
+        "completion_tokens": 69,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.093
+    }
+  },
+  "ad695a9276936dd4ca27c133": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تعتمد الآلية على عدد كبير من العناصر البسيطة التي تتخذ قرارات محلية وتتبادل الإشارات، بينما يظهر السلوك المنظم على مستوى المجموعة.\",\"reason\":\"النص يصف بدقة آلية تعتمد على عناصر بسيطة تتفاعل محليًا لتوليد سلوك جماعي منظم، وهو التعريف الدقيق لـ ذكاء السرب (Swarm Intelligence) دون الحاجة لتغيير القرار.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2123,
+        "total_tokens": 2235,
+        "completion_tokens": 112,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.646
+    }
+  },
+  "75a69ee8c5e0a0d749ede532": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"السيستم يستخرج النص والجداول والحقول المهمة ويرجعها لنا بشكل منظم\",\"reason\":\"النص يصف بوضوح أتمتة استخراج البيانات من مستندات (فاتورة/نموذج) وتنظيمها، وهو التعريف الدقيق لمعالجة ذكية للوثائق (IDP).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2062,
+        "total_tokens": 2161,
+        "completion_tokens": 99,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.171
+    }
+  },
+  "aa2f5cd499270f942604580b": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C24\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تخزين البيانات الخام بصيغ مختلفة، وهو التعريف الدقيق لحيرة البيانات (Data Lake) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1861,
+        "total_tokens": 1925,
+        "completion_tokens": 64,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.892
+    }
+  },
+  "f65dd586d4f345ed4a281fac": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يطلب 'نموذجًا بسيطًا' للتصنيف الثنائي، وهو ما يصفه C22 بدقة دون افتراض تفاصيل تقنية غير موجودة في السؤال.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2094,
+        "total_tokens": 2165,
+        "completion_tokens": 71,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.173
+    }
+  },
+  "c7388177576ebc210a677bb7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C26\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية مراجعة الفريق لسياسات وممارسات جمع ومشاركة واستخدام البيانات لضمان الخصوصية والعدالة، وهو ما يتطابق تمامًا مع تعريف حوكمة الذكاء الاصطناعي كسياسات وممارسات تضمن الاستخدام المسؤول.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2253,
+        "total_tokens": 2340,
+        "completion_tokens": 87,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.776
+    }
+  },
+  "075ae0939d04fb1ab3e36db5": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تقييم تشابه القرارات للأفراد المتشابهين، وهو التعريف الدقيق لإنصاف فردي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2115,
+        "total_tokens": 2176,
+        "completion_tokens": 61,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.856
+    }
+  },
+  "1efa2066ff8b8a99d50699f8": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C24\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"كائنات نصية فيها مفاتيح وقيم وأقواس متداخلة\",\"reason\":\"النص يصف بنية البيانات (مفاتيح، قيم، أقواس) التي تتطابق تمامًا مع تعريف صيغة جيسون.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2085,
+        "total_tokens": 2170,
+        "completion_tokens": 85,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.664
+    }
+  },
+  "207ba2a49eee358b57fc5236": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C9\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تدريب نموذج على بيانات مسمّاة (أرقام مكتوبة) للتنبؤ والتصنيف، وهو ما يتطابق تمامًا مع تعريف تعلُّم موجَّه (Supervised Learning) في C9 دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2000,
+        "total_tokens": 2086,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.698
+    }
+  },
+  "0d3303865a0ce78ea86c8e50": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية توحيد سجلات من مصادر متعددة (قاعدة بيانات، نظام مبيعات، ملفات) في عرض واحد، وهو التعريف الدقيق لعملية ETL (استخراج وتحويل وتحميل) التي تشمل الجمع والتحويل والتخزين الموحد.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1983,
+        "total_tokens": 2072,
+        "completion_tokens": 89,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.796
+    }
+  },
+  "b784b99271c304c76c2f7368": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C30\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف خروج إحداثيات حول السيارة لرسم مستطيل، وهو تعريف دقيق لـ Bounding Box (C30) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1929,
+        "total_tokens": 1998,
+        "completion_tokens": 69,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.094
+    }
+  },
+  "331135e52c432c44bf1af47c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C30\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية مقارنة نتائج تجميع مختلفتين لقياس الاتفاق، وهو ما يصفه تعريف مؤشر راند (C30) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2224,
+        "total_tokens": 2295,
+        "completion_tokens": 71,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.223
+    }
+  },
+  "54ac3d8542d7f2d3fb4ca5a7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C20\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تحديث النموذج على الدفعات الجديدة بالتتابع دون إعادة تدريب كامل، وهو التعريف الدقيق لتدريب مستمر (Continuous Training) في C20، بينما C14 (Incremental Learning) قد يتضمن تحديثًا تدريجيًا لكنه لا يركز بالضرورة على \"الدفعات الجديدة\" بشكل متتابع كما في C20، والفرق غير محسوم بوضوح في النص.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2032,
+        "total_tokens": 2153,
+        "completion_tokens": 121,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.934
+    }
+  },
+  "ef2fc39c8c6f14cb59853d01": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C29\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"حتى التنبؤ الصحيح القريب جدًا من حد القرار يأخذ عقوبة\",\"reason\":\"النص يصف آلية زيادة عقوبة التنبؤات القريبة من حد القرار، وهو التعريف الدقيق لخسارة مفصلية (Hinge Loss) التي تعاقب التنبؤات الخاطئة أو القريبة من الحد.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2037,
+        "total_tokens": 2137,
+        "completion_tokens": 100,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.191
+    }
+  },
+  "4ba8622846ad50f8fab8caf2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"درّبنا نسخة أصغر لتقلد مخرجات النموذج الكبير\",\"reason\":\"النص يصف عملية تدريب نموذج أصغر لمحاكاة نموذج أكبر، وهو التعريف الدقيق لتقطير النموذج (Model Distillation).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2057,
+        "total_tokens": 2138,
+        "completion_tokens": 81,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.528
+    }
+  },
+  "17ec21d4e45238984e4a54df": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تحديد مدة البقاء والحذف وفق متطلبات قانونية وتشغيلية، وهو التعريف الدقيق لسياسة الاحتفاظ بالبيانات (Data Retention Policy) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2030,
+        "total_tokens": 2107,
+        "completion_tokens": 77,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.387
+    }
+  },
+  "f7ab7ba78eba25b73563fd2a": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C3\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"قيم عشوائية وأخطاء قياس كثيرة\",\"reason\":\"النص يصف البيانات العشوائية والأخطاء كمشكلة تضرّ بالإشارة، وهو ما يتطابق تمامًا مع تعريف C3 (التشويش/البيانات المشوَّشة) الذي يصف بيانات لا معنى لها تؤثِّر في التحليل.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1995,
+        "total_tokens": 2093,
+        "completion_tokens": 98,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.116
+    }
+  },
+  "a68220d93b5e27bbcc6b7be6": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"الثالث ينسق النتيجة، وكلهم يتبادلون المعلومات\",\"reason\":\"النص يصف عملية تنسيق بين وكلاء متعددة لتنفيذ مهمة مع تبادل معلومات، وهو ما يطابق تعريف C8 (تنسيق الوكيل) بدقة دون الحاجة لتعديلات.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2238,
+        "total_tokens": 2324,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.749
+    }
+  },
+  "723819f64d18a0c5b5214ca8": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C25\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"نخزن الملفات أولًا بصيغتها الخام، وما نفرض بنية ثابتة عليها إلا وقت الاستعلام\",\"reason\":\"النص يصف بوضوح تخزين البيانات بصيغتها الخام وتطبيق البنية عند الاستعلام، وهو التعريف الدقيق لمخطط عند القراءة (Schema-on-Read).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1943,
+        "total_tokens": 2040,
+        "completion_tokens": 97,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.064
+    }
+  },
+  "4d8aa39b53f3aed4e87c44df": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C26\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"رغم اختلاف الحجم داخل الإطار\",\"reason\":\"النص يصف قدرة النموذج على الحفاظ على استجابة متقاربة رغم تغيير حجم المدخلات، وهو تعريف دقيق لمصطلح Scale Invariance.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1869,
+        "total_tokens": 1945,
+        "completion_tokens": 76,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.322
+    }
+  },
+  "1dada4d076fd3298cb8ea0c5": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"مساحة التداخل بين المستطيل المتوقع والحقيقي\",\"reason\":\"النص يصف تحديدًا مقياس التداخل بين مستطيلين (متوقع وحقيقي)، وهو التعريف الدقيق لمصطلح Intersection over Union (C16).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2009,
+        "total_tokens": 2095,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.69
+    }
+  },
+  "88a56936fb60d6ca1cbe1039": {
+    "stage": "s4",
+    "output": "{\"action\":\"CHANGE\",\"choice\":\"C21\",\"baseline_relation\":\"BROADER\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"مو بس محفوظة لاستخدام التدريب الدفعي\",\"reason\":\"النص يحدد بوضوح أن البيانات محفوظة للاستخدام الدفعي (Offline)، بينما C21 (Online Feature Store) مخصص للاستخدام الآني.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1953,
+        "total_tokens": 2031,
+        "completion_tokens": 78,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.396
+    }
+  },
+  "260bbe06cacc4124ae7f376d": {
+    "stage": "s4",
+    "output": "{\"action\":\"CHANGE\",\"choice\":\"C15\",\"baseline_relation\":\"BROADER\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"يُعاد ضبطه بعد التحديث\",\"reason\":\"النص يصف آلية قص التدرج (Gradient Clipping) تحديدًا عبر وضع حد أقصى للقيم وإعادة ضبطها، وهو ما يتطابق تمامًا مع تعريف C15، بينما C2 (تقليم) عام ولا يحدد سياق التدرج.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2134,
+        "total_tokens": 2232,
+        "completion_tokens": 98,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.153
+    }
+  },
+  "9f15937b798f639e095f3287": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C7\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف الخدمة بدقة كـ 'تفاعل نصي أو صوتي' مع 'فهم المقصد والسياق' وإنتاج 'ردود طبيعية تشبه الحوار البشري'، وهو ما يطابق تعريف C7 (ذكاء اصطناعي تحاوري) الذي يغطي نفس الخصائص الثلاثة (التفاعل، الفهم، التشبيه الإنساني) دون إضافة شروط إضافية أو تضييق نطاق المفهوم.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2150,
+        "total_tokens": 2271,
+        "completion_tokens": 121,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.965
+    }
+  },
+  "3a423653924267d619e1978d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تظل كل وحدة أعمال مسؤولة عن معلوماتها محليًا، مع التزام جميع الوحدات بمعايير مشتركة\",\"reason\":\"النص يصف نموذج حوكمة لامركزية تحافظ على المسؤولية المحلية مع معايير موحدة، وهو تعريف دقيق لـ Federated Data Governance.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2000,
+        "total_tokens": 2091,
+        "completion_tokens": 91,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.864
+    }
+  },
+  "99815e52355eeacd11f6a35a": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C18\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"نظام ممتاز في مهمة محددة جدًا\",\"reason\":\"النص يصف قدرة النظام على أداء مهام محددة دون التعميم، وهو التعريف الدقيق لـ الذكاء الضيق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2351,
+        "total_tokens": 2422,
+        "completion_tokens": 71,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.239
+    }
+  },
+  "251ab46df920a2ae17d85464": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"إشارة خفية... داخل الصورة المنشأة آليًا... لإثبات مصدر المحتوى أو تتبع أصله\",\"reason\":\"النص يصف بدقة علامة مائية خفية في محتوى AI لتتبع المصدر، وهو مطابق لتعريف C14\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2096,
+        "total_tokens": 2180,
+        "completion_tokens": 84,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.627
+    }
+  },
+  "7691bbf1031a3a05d49c1e97": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C17\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية مقارنة ملامح الوجه لتحديد الهوية، وهو التعريف الدقيق لـ Face Recognition (C17) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2103,
+        "total_tokens": 2171,
+        "completion_tokens": 68,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.076
+    }
+  },
+  "9750f2603aa7119a2213454c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تتنبأ بتسلسل الكلمات في اللغة الهدف بدل ترجمة كل عبارة بشكل منفصل\",\"reason\":\"النص يصف عملية التنبؤ بتسلسل كامل بدلاً من الترجمة الجزئية، وهو التعريف الدقيق لـ ترجمة الآلة العصبية (Neural Machine Translation) المذكور في C4.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2159,
+        "total_tokens": 2258,
+        "completion_tokens": 99,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.212
+    }
+  },
+  "3a0008900350cf220a45636b": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف نموذجًا يسمح بتوزيعات مختلفة للمتغير الناتج ويربط المتوسط بالمتغيرات عبر دالة ربط، وهو التعريف الدقيق لنموذج الانحدار الخطي المُعمَّم (Generalized Linear Model) المذكور في C4.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2078,
+        "total_tokens": 2166,
+        "completion_tokens": 88,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.791
+    }
+  },
+  "9ba834a624875cb524e539cb": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C5\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تُعطي القيمة صفرًا إذا كان المُدْخَل سالبًا أو صفرًا، وتعطي القيمة نفسها إذا كان المُدْخَل موجبًا\",\"reason\":\"النص يصف بدقة نفس السلوك: صفر للقيم السالبة والموجبة كما هي، مما يجعل C5 هو التعريف الدقيق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2238,
+        "total_tokens": 2339,
+        "completion_tokens": 101,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.264
+    }
+  },
+  "7357ae8843f38fed490c1e72": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف التعلم التدريجي من أمثلة جديدة دون انتظار دورة كاملة، وهو التعريف الدقيق لتعلّم الآلة المستمر (Online Machine Learning) في C4.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2131,
+        "total_tokens": 2201,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.162
+    }
+  },
+  "3a9e530773c027eb49531ca7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C24\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تطبيق عقوبة أكبر على الأمثلة البعيدة عن الحد المطلوب، وهو ما يتطابق تمامًا مع تعريف مربع الخسارة المفصلية الذي يزيد الخسارة للتنبؤات الخاطئة أو القريبة من حد القرار.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2149,
+        "total_tokens": 2233,
+        "completion_tokens": 84,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.682
+    }
+  },
+  "d1a5d53f85afeffa2fc89064": {
+    "stage": "s4",
+    "output": "{\"action\":\"CHANGE\",\"choice\":\"C21\",\"baseline_relation\":\"BROADER\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"باختيار القيم التي تقلل مجموع مربعات الفروق\",\"reason\":\"النص يصف آلية التدريب (تقليل مجموع مربعات الفروق) بدقة، وهو تعريف خاص للانحدار المربعات الصغرى، بينما الانحدار الخطي أعم ولا يشترط هذه الآلية بالضرورة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2144,
+        "total_tokens": 2241,
+        "completion_tokens": 97,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.115
+    }
+  },
+  "f1312453c0344cd9a7bce8c3": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف قاعدة بيانات تشغيلية (C14) بدقة من خلال خصائصها المميزة: تحديثات لحظية، وقراءات/كتابات يومية سريعة، مع استبعاد التحليلات الثقيلة، وهو ما يطابق التعريف تمامًا دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1943,
+        "total_tokens": 2036,
+        "completion_tokens": 93,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.926
+    }
+  },
+  "054a4f8750913a387a8de13c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C13\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"ننقل الملفات... إلى طبقة أرخص؛ الوصول لها أبطأ لكن تكلفة الاحتفاظ الطويل تنخفض كثير\",\"reason\":\"النص يصف بدقة معمارية تخزين منخفضة التكلفة وبطيئة الوصول للبيانات قليلة الاستخدام، وهو تعريف مطابق لـ Near-line Storage.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2041,
+        "total_tokens": 2133,
+        "completion_tokens": 92,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.923
+    }
+  },
+  "8499fa56c21116ee424aa93e": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"اعتمدت المؤسسة سياسات وأدوارًا وضوابط لمراجعة المخاطر والشفافية والسلامة والمسؤوليات طوال دورة حياة أنظمة الذكاء الاصطناعي\",\"reason\":\"النص يصف تطبيق سياسات وضوابط طوال دورة حياة أنظمة الذكاء الاصطناعي لضمان الشفافية والمساءلة، وهو تعريف دقيق لـ حوكمة الذكاء الاصطناعي (C22) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2370,
+        "total_tokens": 2488,
+        "completion_tokens": 118,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.891
+    }
+  },
+  "f14d8b7ef7edfae1d9e4c0d2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"استخراج المفاهيم والعلاقات واقتراح بنية معرفية منظمة بصورة آلية وشبه آلية\",\"reason\":\"النص يصف عملية بناء بنية معرفية آلياً وشبه آلياً، وهو ما يتطابق تماماً مع تعريف تعلّم التوصيف المعرفي (Ontology Learning) الذي يشمل بناء توصيف معرفي بطرق تلقائية أو شبه تلقائية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2182,
+        "total_tokens": 2292,
+        "completion_tokens": 110,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.579
+    }
+  },
+  "10dad4b61577f7bea913484a": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تعزز قدرات المستخدم وتحافظ على رفاهيته وقيمه وحقوقه\",\"reason\":\"النص يصف بدقة فلسفة وضع القيم الإنسانية والرفاهية في المقدمة لضمان تعزيز الإنسان وتمكينه، وهو ما يطابق تعريف C1 تمامًا دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2259,
+        "total_tokens": 2347,
+        "completion_tokens": 88,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.812
+    }
+  },
+  "95023750ef9623dfed680cf2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C6\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"كثير منهم ظل يفضل حكم الموظف البشري\",\"reason\":\"النص يصف رفض الثقة في الخوارزميات رغم أدائها الأفضل، وهو تعريف دقيق لـ Algorithmic Aversion.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2263,
+        "total_tokens": 2334,
+        "completion_tokens": 71,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.236
+    }
+  },
+  "d0ea36a61f2a902531227430": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف البيانات بأنها مرنة ومتشعبة ولا تناسب الجداول التقليدية، وهو التعريف الدقيق لقاعدة البيانات غير العلائقية (Non-Relational Database) التي لا تعتمد على نموذج الجداول.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1951,
+        "total_tokens": 2030,
+        "completion_tokens": 79,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.445
+    }
+  },
+  "df0a3fd75f5396e815c2c090": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C9\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"عملية على كل قناة بشكل مستقل ثم مزج القنوات\",\"reason\":\"النص يصف عملية دمج قنوات متعددة في خطوة واحدة، وهو التعريف الدقيق لـ Broadcasting في سياق تعلم الآلة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2079,
+        "total_tokens": 2152,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.241
+    }
+  },
+  "085acd0258540f1ce2a528df": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C28\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"أقل متوسط خسارة ممكن على العينة التدريبية المتاحة\",\"reason\":\"النص يصف عملية اختيار النموذج بناءً على تقليل متوسط الخسارة على بيانات التدريب، وهو التعريف الدقيق لتقليل المخاطر التجريبي (Empirical Risk Minimization).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2085,
+        "total_tokens": 2172,
+        "completion_tokens": 87,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.749
+    }
+  },
+  "58e3ef9456888bc9ada96cf2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C23\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف شرطًا إحصائيًا (استقلالية العينات وتوزيعها) وهو تعريف دقيق لـ أخذ عينات البيانات (Data Sampling) في سياق التحقق من افتراضات IID، ولا يوجد مرشح آخر EXACT يوضح هذا المفهوم المحدد.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1993,
+        "total_tokens": 2085,
+        "completion_tokens": 92,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.905
+    }
+  },
+  "e35ff1fd65a3224f8126d7bd": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"نبي نقطة وسيطة واحدة تمر عبرها طلبات النماذج عشان نراقب التكلفة والأخطاء\",\"reason\":\"النص يصف طبقة وسيطة تدير تدفق الطلبات بين التطبيقات والنماذج مع مراقبة التكلفة والأخطاء، وهو ما يتطابق تمامًا مع تعريف AI Gateway.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2029,
+        "total_tokens": 2124,
+        "completion_tokens": 95,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.012
+    }
+  },
+  "819b1d73cb0fdf88562bca78": {
+    "stage": "s4",
+    "output": "{\"action\":\"CHANGE\",\"choice\":\"C1\",\"baseline_relation\":\"BROADER\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"كل مرة أدرب على 79 وأختبر على العينة المتبقية\",\"reason\":\"النص يصف تدريبًا على 79 عينة واختبارًا على واحدة فقط، وهو التعريف الدقيق للتحقق التقاطعي عن طريق عزل نقطة (Leave-One-Out)، بينما BASELINE عام جداً.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1970,
+        "total_tokens": 2068,
+        "completion_tokens": 98,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.111
+    }
+  },
+  "2bcce118b31490ca891f266f": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C19\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف دالة تعتمد على المسافة من المركز وتنخفض مع زيادة المسافة، وهو التعريف الدقيق لدالة القاعدة الشعاعية (RBF) دون الحاجة لتعديلات أخرى.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2094,
+        "total_tokens": 2171,
+        "completion_tokens": 77,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.38
+    }
+  },
+  "88ee0d5adea215d994a1e445": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C13\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية استخراج كلمات من صور فواتير (مستندات) لتحويلها لنص قابل للمعالجة، وهو ما يتطابق تمامًا مع تعريف معالجة ذكية للوثائق (IDP) المتمثل في أتمتة استخراج البيانات من المستندات باستخدام الذكاء الاصطناعي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2063,
+        "total_tokens": 2161,
+        "completion_tokens": 98,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.142
+    }
+  },
+  "eb45667b35b75b02133d3833": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C28\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"عتادًا ينفذ عددًا كبيرًا من العمليات بالتوازي... يسرّع تدريب الشبكات ومعالجة المصفوفات\",\"reason\":\"النص يصف معالجًا متخصصًا للعمليات المتوازية في تدريب الشبكات، وهو ما يتطابق تمامًا مع تعريف شريحة الذكاء الاصطناعي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2090,
+        "total_tokens": 2191,
+        "completion_tokens": 101,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.232
+    }
+  },
+  "a13fe9b9fb513b35beb2582e": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف انفجار التدرج وارتفاع قيمه التحديثات مما يؤدي لفقد الاستقرار، وهو التعريف الدقيق لـ C1\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2096,
+        "total_tokens": 2160,
+        "completion_tokens": 64,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.92
+    }
+  },
+  "d67906978c9fdea04907591e": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف نقل المعالجة من السيرفر إلى الحساس (طرف الشبكة)، وهو ما يطابق تعريف حوسبة طرفية بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1863,
+        "total_tokens": 1927,
+        "completion_tokens": 64,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.902
+    }
+  },
+  "5845d73a08d876cb01531f22": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تنفيذ جزء من المعالجة بالقرب من أجهزة المصنع بدل ترحيل جميع البيانات إلى مركز البيانات\",\"reason\":\"النص يصف تنفيذ المعالجة بالقرب من الأجهزة بدلاً من مراكز البيانات، وهو التعريف الدقيق لحوسبة طرفية (C15).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1762,
+        "total_tokens": 1849,
+        "completion_tokens": 87,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.681
+    }
+  },
+  "a1bc6f783fe64a2cce6ee12d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تغييرًا في أبعاد المخرجات (أصغر) نتيجة تعديل في طبقة الالتفاف، وهو ما يتطابق تمامًا مع تعريف طبقة التجميع (C8) كعملية اختزال المصفوفات، ولا يوجد مرشح آخر في القائمة يصف هذا السلوك بدقة أكبر.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1897,
+        "total_tokens": 1997,
+        "completion_tokens": 100,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.164
+    }
+  },
+  "de0db920fe2d12bd7ee8e5c5": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C3\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية استدلال تبدأ بالاعتماد على حقائق وقواعد مرتبة لاستنتاج الإجابة، وهو ما يطابق تعريف تسلسل أمامي (C3) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1896,
+        "total_tokens": 1973,
+        "completion_tokens": 77,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.356
+    }
+  },
+  "7e73293ee7ad84c46ed64728": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف بوضوح تجميع نماذج ضعيفة (weak learners) بشكل متتابع لتكوين نموذج قوي، وهو التعريف الدقيق لتعزيز تدرجي (Boosting) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2057,
+        "total_tokens": 2135,
+        "completion_tokens": 78,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.433
+    }
+  },
+  "b002e87e3af214141ecb2339": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C19\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تقليل حجم النموذج مع الحفاظ على الدقة، وهو التعريف الدقيق لـ 'تشذيب النموذج' (C19).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1798,
+        "total_tokens": 1866,
+        "completion_tokens": 68,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.021
+    }
+  },
+  "a26f157978a219c0b1426a33": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف النظام كذراع ميكانيكي تفتقر إلى مستوى الاستقلالية ليعتبر روبوتًا كاملاً، وهو ما يطابق تعريف C2 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1865,
+        "total_tokens": 1937,
+        "completion_tokens": 72,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.181
+    }
+  },
+  "c58971f0dd65cf05ce355a37": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تحديث قيمة كل state-action، وهو التعريف الدقيق لدالة كيو (Q-function) التي تربط بين الحالة والفعل والقيمة المتوقعة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1963,
+        "total_tokens": 2034,
+        "completion_tokens": 71,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.15
+    }
+  },
+  "965bac485eba6b1e01443593": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تغير توزيع المدخلات وتزامن ذلك مع تراجع جودة التنبؤ، وهو التعريف الدقيق لـ 'انحراف النموذج' (C2) الذي يجمع بين تغير التوزيع وتدهور الأداء بمرور الوقت.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1811,
+        "total_tokens": 1898,
+        "completion_tokens": 87,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.692
+    }
+  },
+  "3f46323af1f7ac1189a373d7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C24\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"بيانات اجتماعية واقتصادية حول السكان، مثل: الجنس والعمر والتعليم والدخل والعمل\",\"reason\":\"النص يذكر بالضبط نفس الخصائص المذكورة في تعريف C24 دون ذكر أي عملية تحليل أو تصنيف.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1774,
+        "total_tokens": 1851,
+        "completion_tokens": 77,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.352
+    }
+  },
+  "44ca40eccfff6b87c1f9802a": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C10\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تفاعلية حيث يقوم المستخدم بتزويد النماذج بأمثلة بشرية لتحسين أدائها، وهو ما يتطابق تمامًا مع تعريف 'إنسان في الحلقة' (C10) كطريقة لدمج المدخلات البشرية في دورة حياة أنظمة الذكاء الاصطناعي. لا يوجد مرشح آخر في القائمة يصف هذه العملية بدقة أكبر أو بشكل مختلف.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1834,
+        "total_tokens": 1952,
+        "completion_tokens": 118,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.792
+    }
+  },
+  "d8b497b0b8af0e0ff86ad3ca": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية تقييم تعتمد على المكافأة والعقاب لتوجيه التعلم، وهو التعريف الدقيق لتعلم التعزيزي (C4) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1993,
+        "total_tokens": 2063,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.144
+    }
+  },
+  "84c135f3e2007ed48b9e5da8": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C5\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تحديد القيم الأولية للـ weights قبل التدريب، وهو تعريف دقيق لـ تهيئة الأوزان (C5).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1745,
+        "total_tokens": 1806,
+        "completion_tokens": 61,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.763
+    }
+  },
+  "67fd8e64056d53bef84cb6d3": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"مرحلة نهائية لتعديل ترتيب العناصر\",\"reason\":\"النص يصف عملية إعادة ترتيب نهائية بناءً على معايير إضافية، وهو ما يطابق تعريف C2 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1848,
+        "total_tokens": 1915,
+        "completion_tokens": 67,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.003
+    }
+  },
+  "d1d68d89d004fcea0f648a1c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C13\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تعلم الشبكة التمثيلات من البيانات الخام لاستخدامها في التصنيف، وهو ما يتطابق تمامًا مع تعريف تعلّم عميق (C13) الذي يركز على تحديد الخصائص الأساسية عبر الشبكات العصبية متعددة الطبقات.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2029,
+        "total_tokens": 2119,
+        "completion_tokens": 90,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.84
+    }
+  },
+  "b5f41a09841d0a364dda6d5e": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C11\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تعديل الإعدادات وإعادة التجربة لتحسين التقييم، وهو ما يتطابق مع تعريف معايرة النموذج (تعديل تنبؤات النموذج لتتناسب مع النتائج الفعلية) دون أن يشير إلى إعادة تدريب كاملة أو تقاطع.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1698,
+        "total_tokens": 1788,
+        "completion_tokens": 90,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.782
+    }
+  },
+  "cb2c56b43423e411f2c19dfc": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C12\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية تحديد القراءات غير المألوفة (شذوذ) دون ذكر تفاصيل تقنية مثل إعادة التدريب أو نوع خوارزمية محددة، مما يجعل C12 (اكتشاف الشذوذ) هو المفهوم الدقيق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1837,
+        "total_tokens": 1924,
+        "completion_tokens": 87,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.709
+    }
+  },
+  "c2fae63d8fb0e1aecb30b816": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C23\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"رصد الفريق محاولات متكررة لصياغة مدخلات ملتوية بهدف تجاوز ضوابط الأمان\",\"reason\":\"النص يصف عملية رصد محاولات للتجاوز، وهو ما يتطابق تمامًا مع تعريف اختبار الفريق الأحمر (اختبار منهجي لاكتشاف الثغرات وفشل الضوابط)، بينما لا يصف النص عملية الهجوم نفسها بل عملية الاختبار عليها.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2144,
+        "total_tokens": 2252,
+        "completion_tokens": 108,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.507
+    }
+  },
+  "d5193362ceb2fcc2ec1b13e4": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف المشكلة بدقة كـ 'كيف يقرر الخطوة الجاية' (يسأل؟ ينفذ؟ يرد؟)، وهو ما يطابق تعريف 'إدارة الحوار' (اختيار الخطوة التالية الأنسب) بشكل تام دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2012,
+        "total_tokens": 2101,
+        "completion_tokens": 89,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.795
+    }
+  },
+  "49435fcdf4cdb36a024f953d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C25\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف الهدف العام (تحليل الإشارة الصوتية والتعرف على طبيعة الصوت) وهو ما يغطيه تعريف استماع الآلة (فهم الأصوات) بشكل دقيق دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1870,
+        "total_tokens": 1946,
+        "completion_tokens": 76,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.319
+    }
+  },
+  "81270db06b394a1451206612": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C9\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية نقل معرفة من مهمة قريبة إلى مهمة جديدة دون البدء من الصفر، وهو التعريف الدقيق لتعلم النقل (Transfer Learning) في C9.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1899,
+        "total_tokens": 1968,
+        "completion_tokens": 69,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.069
+    }
+  },
+  "6141c617a6516a5cffe23569": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C18\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية جمع logs وmetrics وtraces لفهم الحالة الداخلية للنظام، وهو التعريف الدقيق لـ 'قابلية الرصد' (C18) الذي يشمل السجلات والمقاييس وآثار التتبع.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1745,
+        "total_tokens": 1831,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.65
+    }
+  },
+  "fe05b2383cc6aa8925258a0d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف مبدأ خضوع البيانات لقوانين الدولة، وهو تعريف دقيق لسيادة البيانات دون الحاجة لتعديلات.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1755,
+        "total_tokens": 1816,
+        "completion_tokens": 61,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.765
+    }
+  },
+  "eb98779d36bc5d5f323bc112": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C27\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"قياس التداخل بين المخرجات التي ينشئها النظام والمراجع التي ينشئها الإنسان\",\"reason\":\"النص يصف عملية المقارنة بناءً على تداخل الكلمات والعبارات، وهو التعريف الدقيق لمقياس روج.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1915,
+        "total_tokens": 2000,
+        "completion_tokens": 85,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.665
+    }
+  },
+  "6e614dbc7d5e5aa6d0c70352": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C7\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف رسمًا بيانيًا يوضح تغير الخطأ عبر الـ epochs، وهو تعريف دقيق لمنحنى الخسارة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1858,
+        "total_tokens": 1924,
+        "completion_tokens": 66,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.964
+    }
+  },
+  "4c1122cb565227c5b2f390e6": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C19\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"فوزعت أجزاء من الـparameters على عدة كروت\",\"reason\":\"النص يصف تقسيم النموذج على عدة كروت لتوزيع العبء، وهو تعريف دقيق لـ تجزئة النموذج.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1744,
+        "total_tokens": 1820,
+        "completion_tokens": 76,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.297
+    }
+  },
+  "ecc099320f7761b4e24e21b1": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف استخدام جزء عشوائي للبيانات في كل خطوة لتحديث النموذج، وهو التعريف الدقيق لنزول تدرجي عشوائي (Stochastic Gradient Descent) حيث يكون حجم الحزمة (batch size) واحدًا، مما يتطابق مع C14 دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2000,
+        "total_tokens": 2099,
+        "completion_tokens": 99,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.145
+    }
+  },
+  "570560c06b20838a6bac2909": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C11\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تغيير المدخلات (الانحراف المغاير) وتأثيرها على القرار، وهو ما يتطابق تمامًا مع تعريف 'تفسير مغاير' كطريقة لشرح القرارات عبر وصف تغييرات البيانات.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1827,
+        "total_tokens": 1913,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.662
+    }
+  },
+  "72399b09f7b02696bc4a2269": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C10\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يسأل عن مفهوم التجميع العام (عدد المجموعات، نقاط بعيدة عن مراكزها) ولا يحدد خوارزمية محددة، لذا C10 هو التعريف الدقيق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1982,
+        "total_tokens": 2057,
+        "completion_tokens": 75,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.299
+    }
+  },
+  "1a779c8bd4cdbb02bc693886": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C7\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف متغيرًا يأخذ قيمًا كثيرة جدًا وبها كسور، وهو ما يطابق تعريف خاصية مستمرة (عدد لانهائي من القيم) بدقة، ولا يوجد مرشح آخر في القائمة يصف هذا المفهوم بخصائصه المميزة دون توسيع أو تضييق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1726,
+        "total_tokens": 1824,
+        "completion_tokens": 98,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.072
+    }
+  },
+  "53266e383a06a09239a2370c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C11\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تعلم وتكيف ديناميكي عبر التفاعل مع البيئة، وهو جوهر تعريف الذكاء الاصطناعي المُجسَّد.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1891,
+        "total_tokens": 1957,
+        "completion_tokens": 66,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.986
+    }
+  },
+  "97e81f3e0156e0784faaccf2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تقسيم الطلبات لتشغيلها في وقت واحد على عدة عمليات، وهو التعريف الدقيق لمعالجة متوازية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1882,
+        "total_tokens": 1946,
+        "completion_tokens": 64,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.915
+    }
+  },
+  "c40cea6fc8e84d3f593c8de6": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C23\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف رفع/نزل قيمة لتغيير مستوى التنوع والتوقع، وهو التعريف الدقيق لمُعامل الحرارة (Temperature) الذي يتحكم في العشوائية في النماذج التوليدية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2066,
+        "total_tokens": 2145,
+        "completion_tokens": 79,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.472
+    }
+  },
+  "b0bef00239994b5d5f9e3543": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C19\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف هيكلًا شجريًا ينتج حالات متعددة (عندئذ 5) مما يطابق تعريف 'أوامر شجرة الأفكار' لاستكشاف مسارات استدلال متعددة ومتفرعة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1898,
+        "total_tokens": 1979,
+        "completion_tokens": 81,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.495
+    }
+  },
+  "5fea5ced3a4decfebba65452": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"بعض الـneurons كأنها متعودة على بعض؛ إذا عطلت جزء بسيط منها يطيح الأداء أكثر من المتوقع\",\"reason\":\"النص يصف اعتماد الخلايا العصبية على بعضها بشكل مفرط يؤدي لانهيار الأداء عند عطل جزء صغير، وهو التعريف الدقيق لـ 'تكيّف مشترك' (C16) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2053,
+        "total_tokens": 2165,
+        "completion_tokens": 112,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.627
+    }
+  },
+  "a9c720a0248affef06a5d0f7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف الوكيل الذي له 'جسم افتراضي' يتحرك ويتعلم، وهو ما يطابق تعريف C15 (جسم مادي أو افتراضي) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1961,
+        "total_tokens": 2038,
+        "completion_tokens": 77,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.364
+    }
+  },
+  "b94b375d932217d8875f0c62": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C7\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية داخلية تشجع الفضول دون مكافأة خارجية، وهو ما يطابق تعريف 'دافع داخلي' في C7 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1911,
+        "total_tokens": 1978,
+        "completion_tokens": 67,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.005
+    }
+  },
+  "4c7298fae74866cc36a961cc": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تقسيم البيانات بناءً على القرب من مراكز تتحدث مع كل دورة، وهو ما يطابق تعريف تجميع تمحوري (C22) الذي يركز على تمثيل البيانات بمجموعات غير هرمية تمثّلها بؤرة أو متجه مركزي، ولا يوجد مرشح آخر في القائمة يصف هذه الآلية بدقة أكبر.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1877,
+        "total_tokens": 1988,
+        "completion_tokens": 111,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.555
+    }
+  },
+  "52db864807b171bc28180d26": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C12\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تطبيق قواعد واستخلاص نتائج من حقائق، وهو التعريف الدقيق لمُحرِّك الاستنتاج (Inference Engine) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1989,
+        "total_tokens": 2061,
+        "completion_tokens": 72,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.222
+    }
+  },
+  "2791ead1bdbf8727062e25e3": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C20\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية وضع البيانات في مكان مؤقت قبل المعالجة والنقل، وهو ما يتطابق تمامًا مع تعريف 'جدول مرحلي' كجدول مؤقت للاحتفاظ بالبيانات الوسيطة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1803,
+        "total_tokens": 1882,
+        "completion_tokens": 79,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.428
+    }
+  },
+  "3fccad6f56f7fc4dbb098bad": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C13\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يذكر 'الأساس الرياضي' بشكل عام، ولا يحدد نوعًا رياضيًا محددًا مثل الجبر الخطي، لذا لا يوجد دليل كافٍ في النص لتمييز C13 عن غيره.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1873,
+        "total_tokens": 1954,
+        "completion_tokens": 81,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.494
+    }
+  },
+  "d4d91e98b89f05a2443ee2a8": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف الملفات كـ 'معلومات عن النوع والتاريخ والمالك' التي 'تسهّل فهمه وتنظيمه'، وهو ما يطابق تعريف البيانات الوصفية (التي تصف بيانات أخرى) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1841,
+        "total_tokens": 1927,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.691
+    }
+  },
+  "7a15cdabc4ff8ef9d29c77ed": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C11\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"البحث المتجهي والكلمات المفتاحية\",\"reason\":\"النص يصف دمج البحث الدلالي (المتجهات) مع البحث التقليدي (الكلمات المفتاحية) بدقة متطابقة مع تعريف البحث الهجين.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1844,
+        "total_tokens": 1926,
+        "completion_tokens": 82,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.531
+    }
+  },
+  "fe94620962614854f203d902": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C12\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف مخزنًا مركزيًا لقيم وخصائص الـ features لتجنب إعادة بنائها، وهو ما يطابق تعريف C12 (مخزن الخصائص) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1879,
+        "total_tokens": 1959,
+        "completion_tokens": 80,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.454
+    }
+  },
+  "c30ad87312ffc906309167fb": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C30\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تدربت مرة واحدة... ما تتحدث تلقائيًا حتى لو تغيرت البيانات\",\"reason\":\"النص يصف نموذجًا مدربًا مرة واحدة لا يتغير تلقائيًا، وهو تعريف دقيق لنموذج ثابت (C28) أو نموذج مجمّد (C31)، بينما C30 (التعلم التكيفي) يتطلب تحديثًا مستمرًا يتعارض مع وصف النص.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1795,
+        "total_tokens": 1909,
+        "completion_tokens": 114,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.647
+    }
+  },
+  "deac2ee6eb14609b334518b1": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"توزيع البيانات هناك مختلف بوضوح عن توزيع التدريب\",\"reason\":\"النص يصف تغير التوزيع بين المصدر والبيئة الجديدة بدقة متطابقة مع تعريف تغيّر المجال\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1831,
+        "total_tokens": 1900,
+        "completion_tokens": 69,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.059
+    }
+  },
+  "2bbcff76d7bf322c47f4b8a3": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"نسخة قصيرة تحافظ على الأفكار الأساسية\",\"reason\":\"النص يصف عملية اختصار تلقائي للمستندات الطويلة مع الحفاظ على الأفكار الأساسية، وهو ما يطابق تعريف تلخيص النصوص (C8) بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1920,
+        "total_tokens": 1998,
+        "completion_tokens": 78,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.409
+    }
+  },
+  "cfab397d5fa7c5b50b9564c6": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C12\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تخزين كميات كبيرة من المعلومات لسنوات دون تحليل، وهو تعريف دقيق لتخزين البيانات غير النشطة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1762,
+        "total_tokens": 1823,
+        "completion_tokens": 61,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.784
+    }
+  },
+  "1d8e2e7740595b51e8bd6019": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C26\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية اختيار نموذج ديناميكي بناءً على التكلفة والأداء وزمن الاستجابة، وهو ما يطابق تعريف C26 (موجّه النماذج) بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1837,
+        "total_tokens": 1912,
+        "completion_tokens": 75,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.269
+    }
+  },
+  "682373e931543f0b71d51e0d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C12\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تحديد مرجع ضمير ('إنها') إلى كيان سابق ('سارة')، وهو التعريف الدقيق لـ 'تحديد المرجع' في C12.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1742,
+        "total_tokens": 1817,
+        "completion_tokens": 75,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.261
+    }
+  },
+  "e09215a04aa97c0835e51acf": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف البحث عن منتجات بناءً على المعنى السياقي (\\\"بطاريته تعيش طويل\\\") رغم عدم وجود الكلمات حرفيًا، وهو تعريف دقيق لـ بحث دلالي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1822,
+        "total_tokens": 1895,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.198
+    }
+  },
+  "9ad2035443402794800ea070": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تعتمد الآلية على عدد كبير من العناصر البسيطة التي تتخذ قرارات محلية وتتبادل الإشارات، بينما يظهر السلوك المنظم على مستوى المجموعة\",\"reason\":\"النص يصف بدقة آلية تعتمد على تفاعل عناصر بسيطة محليًا لتوليد سلوك منظم جماعيًا، وهو التعريف الدقيق لـ ذكاء السرب (C4).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1927,
+        "total_tokens": 2033,
+        "completion_tokens": 106,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.383
+    }
+  },
+  "d9e1153bfbb471cd91f36264": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C13\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية رفع مستندات واستخراج بيانات منها بشكل منظم، وهو ما يتطابق تمامًا مع تعريف C13 (معالجة ذكية للوثائق) الذي يشمل أتمتة استخراج البيانات من المستندات المختلفة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1856,
+        "total_tokens": 1940,
+        "completion_tokens": 84,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.614
+    }
+  },
+  "2f195349dab2d1c466304d92": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تخزين البيانات الخام أولاً ثم التحليل لاحقاً، وهو التعريف الدقيق لحيرة البيانات (Data Lake) الذي يخزن البيانات الأولية بصيغ مختلفة دون معالجة مسبقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1692,
+        "total_tokens": 1767,
+        "completion_tokens": 75,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.252
+    }
+  },
+  "f904a74635d971e36f4fde00": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C23\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يطلب نموذجًا يحول القيمة إلى احتمال بين 0 و 1، وهو تعريف دقيق للانحدار اللوجستي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1851,
+        "total_tokens": 1913,
+        "completion_tokens": 62,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.824
+    }
+  },
+  "5a710d3d3b5049595b0430a2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يذكر مراجعة 'أسئلة الخصوصية والعدالة والشفافية ومدى ملاءمة جمع المعلومات ومشاركتها واستخدامها'، وهو ما يطابق تعريف 'أخلاقيات البيانات' (المبادئ التي تحكم جمع البيانات ومعالجتها ومشاركتها واستخدامها) بشكل شامل ودقيق دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1984,
+        "total_tokens": 2086,
+        "completion_tokens": 102,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.257
+    }
+  },
+  "e8f12035b0267419b28d19d0": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية فحص تشابه القرارات للأفراد المتشابهين، وهو التعريف الدقيق لإنصاف فردي (Individual Fairness) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1882,
+        "total_tokens": 1952,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.129
+    }
+  },
+  "27e39f6c9a60938a752c8b26": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C25\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف بنية البيانات (مفاتيح، قيم، أقواس متداخلة) وهي السمة المميزة لصيغة JSON، بينما C2 هو تعريف عام لـ API لا يصف البنية الداخلية للكائنات النصية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1870,
+        "total_tokens": 1956,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.694
+    }
+  },
+  "0a5b40544ea929c50c66dabf": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C20\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف استخدام مجموعة بيانات للتدريب والاختبار، وقرار C20 (بيانات التدريب) يطابق تعريفه في النص بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1824,
+        "total_tokens": 1894,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.092
+    }
+  },
+  "40dd1cb10170262e5f8dac2d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C12\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية توحيد سجلات من مصادر متعددة (قاعدة بيانات، نظام مبيعات، ملفات) في عرض واحد، وهو ما يتطابق تمامًا مع تعريف 'تحميل البيانات' (C12) كعملية استيراد أو نقل أو دمج البيانات من مصادر مختلفة في نظام تخزين واحد.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1838,
+        "total_tokens": 1937,
+        "completion_tokens": 99,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.118
+    }
+  },
+  "10d31c7babb97d1bf2d0b4d9": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C30\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف خروج إحداثيات لاستخدامها في رسم مستطيل، وهو ما يتطابق تمامًا مع تعريف 'إطار تحديد' في C30 دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1733,
+        "total_tokens": 1807,
+        "completion_tokens": 74,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.222
+    }
+  },
+  "d72866876ea98646f2e574d7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C30\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية مقارنة نتائج تجميع مختلفتين لقياس مدى اتفاقهما، وهو ما يتطابق تمامًا مع تعريف مؤشر راند (C30) كمقياس لتقييم التشابه بين طريقتين للتجميع.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1939,
+        "total_tokens": 2023,
+        "completion_tokens": 84,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.633
+    }
+  },
+  "5e22b7cb67f34ee739f613bf": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تحديث النموذج تلقائيًا على الدفعات الجديدة بالتتابع دون إعادة تدريب كامل، وهو ما يطابق تعريف تعلُّم تدريجي (C15) بدقة، بينما C21 (تدريب مستمر) يركز على الحفاظ على الدقة والتكيف مع الأنماط المتغيرة بشكل عام، ولا يلتقط الجانب الزمني المتتابع (tumbling stream) المذكور في النص بوضوح.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1783,
+        "total_tokens": 1904,
+        "completion_tokens": 121,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.89
+    }
+  },
+  "3191465eb51578b2abba4f1a": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C26\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية زيادة عقوبة التنبؤات القريبة من حد القرار، وهو التعريف الدقيق لخسارة مفصلية (Margin Loss) المذكورة في C26.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1860,
+        "total_tokens": 1933,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.225
+    }
+  },
+  "fc0f357f4299b25e696c98c5": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"درّبنا نسخة أصغر لتقلد مخرجات النموذج الكبير\",\"reason\":\"النص يصف عملية تدريب نموذج أصغر لمحاكاة نموذج أكبر، وهو التعريف الدقيق لتقطير النموذج (C16) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1840,
+        "total_tokens": 1926,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.656
+    }
+  },
+  "4a022ae6186b2c90ae909161": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C15\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تحديد مدة بقاء المعلومات ووقت حذفها وفق متطلبات قانونية وتشغيلية، وهو التعريف الدقيق لسياسة الاحتفاظ بالبيانات.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1801,
+        "total_tokens": 1871,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.113
+    }
+  },
+  "391c0d09837ac74910c23a64": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C3\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف البيانات العشوائية والأخطاء كـ 'تشويش' يخرب الإشارة، وهو التعريف الدقيق لـ C3.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1827,
+        "total_tokens": 1891,
+        "completion_tokens": 64,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.895
+    }
+  },
+  "600c775dcadfcb097bdd34a7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C6\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تبادل المعلومات والتنسيق بين وكلاء متعددة، وهو ما يغطيه تعريف C6 (تواصل بين الوكلاء) بدقة دون الحاجة لتعريفات أعم مثل C19 أو أخص مثل C21.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1985,
+        "total_tokens": 2068,
+        "completion_tokens": 83,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.583
+    }
+  },
+  "6f50f06f9b2111c21c61ae8d": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C24\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف بوضوح تخزين الملفات بصيغتها الخام مع تطبيق البنية فقط وقت الاستعلام، وهو التعريف الدقيق لمخطط عند القراءة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1752,
+        "total_tokens": 1820,
+        "completion_tokens": 68,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.016
+    }
+  },
+  "b09ee82fedde57d2381438f8": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C26\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"ظلّت استجابة النموذج متقاربة رغم اختلاف الحجم داخل الإطار\",\"reason\":\"النص يصف قدرة النموذج على الحفاظ على سلوك متسق رغم اختلاف حجم المدخلات، وهو ما يطابق تعريف انعدام تأثير الحجم بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1724,
+        "total_tokens": 1805,
+        "completion_tokens": 81,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.47
+    }
+  },
+  "3d5eb9e7a8017ad85ce13f25": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C18\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف مقياسًا يعتمد على مقارنة مساحة التداخل بين المستطيل المتوقع والحقيقي لمساحة تغطيتهما الكلية، وهو التعريف الدقيق لـ 'تقاطع على الاتحاد' (C18) المستخدم في اكتشاف الأشياء، ولا يوجد مرشح آخر في القائمة يصف هذه الآلية الرياضية المحددة بدقة متساوية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1811,
+        "total_tokens": 1918,
+        "completion_tokens": 107,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.403
+    }
+  },
+  "b81563983c3914b226da64ed": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف الحاجة إلى تخزين قيم الخصائص (features) للوصول إليها بسرعة (زمن منخفض) عند الطلب، وهو ما يتطابق تمامًا مع تعريف 'مخزن الخصائص الآني' في C22.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1745,
+        "total_tokens": 1826,
+        "completion_tokens": 81,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.473
+    }
+  },
+  "67fbc9859a2c894f1674f5cc": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C29\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"يُقيِّد المعيار الأقصى لمتجهات الوزن\",\"reason\":\"النص يصف تحديد حد أقصى لمتجه الأوزان، وهو التعريف الدقيق لضبط تسوية أقصى.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1959,
+        "total_tokens": 2032,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.219
+    }
+  },
+  "4a6fe675b29e4812b21ced22": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C29\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"التفاعل نصيًا أو صوتيًا مع النظام... وإنتاج ردود طبيعية تشبه الحوار البشري\",\"reason\":\"النص يصف بوت محادثة بالتفاعل النصي/الصوتي والردود الطبيعية، وهو ما يطابق تعريف C29 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1959,
+        "total_tokens": 2046,
+        "completion_tokens": 87,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.718
+    }
+  },
+  "8c895bb15808d5910934de8c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف توزيع المسؤولية محليًا مع معايير موحدة، وهو تعريف دقيق لـ حوكمة البيانات المُتَّحِدة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1833,
+        "total_tokens": 1903,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.093
+    }
+  },
+  "bb6f6254650e53e370360122": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C17\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"مهمة محددة جدًا\",\"reason\":\"النص يصف النظام بقدرته على أداء مهمة واحدة فقط دون تعميم، وهو التعريف الدقيق لـ ذكاء ضيق.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2010,
+        "total_tokens": 2080,
+        "completion_tokens": 70,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.144
+    }
+  },
+  "6a6f0fa219b9044c37a753f1": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"إشارة خفية... داخل الصورة المنشأة آليًا... لإثبات مصدر المحتوى أو تتبع أصله\",\"reason\":\"النص يصف بدقة علامة مائية غير مرئية قابلة للكشف آليًا في محتوى مولد بالذكاء الاصطناعي، وهو ما يطابق تعريف C14 تمامًا دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1947,
+        "total_tokens": 2047,
+        "completion_tokens": 100,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.186
+    }
+  },
+  "5e4b0ff2463a84636c9ea8b2": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية مقارنة ملامح الوجه لتحديد الهوية، وهو ما يغطيه تعريف C16 (تعرُّف على الوجوه) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1952,
+        "total_tokens": 2025,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.216
+    }
+  },
+  "6e6d9286f31b1c2816f20279": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C3\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تتنبأ بتسلسل الكلمات في اللغة الهدف\",\"reason\":\"النص يصف عملية التنبؤ بتسلسل الكلمات باستخدام شبكة عميقة، وهو التعريف الدقيق لـ ترجمة الآلة العصبية (C3) دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1920,
+        "total_tokens": 2007,
+        "completion_tokens": 87,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.707
+    }
+  },
+  "1343114010f9e47ab0a033c0": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف إطارًا يسمح بتوزيعات مختلفة للمتغير الناتج ويربط المتوسط بالمتغيرات التفسيرية عبر دالة ربط، وهو التعريف الدقيق لنموذج الانحدار الموزَّع (Generalized Linear Model) الذي يغطي C4 دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1893,
+        "total_tokens": 1987,
+        "completion_tokens": 94,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.974
+    }
+  },
+  "ee089771d68ad5720f25d084": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C4\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف دالة تنشيط تحديداً (صفر للقيم السالبة، نفس القيمة للموجبة) وهو التعريف الدقيق لـ ReLU المذكور في C4، ولا يوجد مرشح آخر في القائمة يصف هذه الخاصية بدقة متطابقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2003,
+        "total_tokens": 2095,
+        "completion_tokens": 92,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.9
+    }
+  },
+  "03e7f55f66db7a45bf7056cd": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C12\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تدريب مستمرة تدريجية مع ظهور أمثلة جديدة، وهو التعريف الدقيق لتعلّم تدريجي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1885,
+        "total_tokens": 1947,
+        "completion_tokens": 62,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.824
+    }
+  },
+  "40f0e0ace111b5f4720d86b7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C28\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف آلية تعديل عقوبة الهامش للبيانات المخالفة، وهو ما يتطابق تمامًا مع تعريف خسارة مفصلية (C28) التي تزيد قيمة الخسارة للتنبؤات الخاطئة أو القريبة من حد القرار.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1886,
+        "total_tokens": 1975,
+        "completion_tokens": 89,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.791
+    }
+  },
+  "1d5687a7440bacadc3ab591e": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C22\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية تقليل مجموع مربعات الفروق، وهو التعريف الدقيق للانحدار المربعات الصغرى (C22) الذي يعتمد على تقليل دالة خسارة إل 2 (مجموع المربعات).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1909,
+        "total_tokens": 1994,
+        "completion_tokens": 85,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.653
+    }
+  },
+  "c8e8849ec10ab36fa46ce5f7": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"تخدم قراءات وكتابات التطبيق اليومية بزمن قصير\",\"reason\":\"النص يصف قاعدة بيانات تشغيلية (C16) بأنها تخدم قراءات وكتابات التطبيقات بزمن قصير، وهو ما يتطابق تمامًا مع التعريف المعطى في النص دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1793,
+        "total_tokens": 1890,
+        "completion_tokens": 97,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.072
+    }
+  },
+  "f09bcb335f682d6212742900": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C14\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"طبقة أرخص؛ الوصول لها أبطأ لكن تكلفة الاحتفاظ الطويل تنخفض كثير\",\"reason\":\"النص يصف طبقة أرخص تكلفة احتفاظ طويل مع وصول أبطأ، وهو التعريف الدقيق لتخزين شبه المتصل (C14) الذي يجمع بين التكلفة المنخفضة والوصول المتوسط بين المتصل والأرشيفي، بينما C16 يركز فقط على ندرة الاستخدام دون ذكر التكلفة أو مستوى الوصول المحدد.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1803,
+        "total_tokens": 1933,
+        "completion_tokens": 130,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 5.227
+    }
+  },
+  "0bac6a5de5e1daaba8afd0b1": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C19\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف اعتماد سياسات وضوابط لمراجعة المخاطر والشفافية طوال دورة الحياة، وهو تعريف دقيق لـ حوكمة الذكاء الاصطناعي دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2131,
+        "total_tokens": 2204,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.269
+    }
+  },
+  "ef91304c919a32e1c3c36422": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C16\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"استخراج المفاهيم والعلاقات واقتراح بنية معرفية منظمة بصورة آلية وشبه آلية\",\"reason\":\"النص يصف العملية بدقة متطابقة مع تعريف تعلُّم التوصيف المعرفي (بناء تمثيل معرفي آلياً/شبه آلياً من النصوص).\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1937,
+        "total_tokens": 2030,
+        "completion_tokens": 93,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.923
+    }
+  },
+  "5c55622f233e15bbd415a537": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف فلسفة تصميم تضع الإنسان في المقدمة وتعزز قدراته، وهو ما يطابق تعريف C1 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2026,
+        "total_tokens": 2085,
+        "completion_tokens": 59,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.756
+    }
+  },
+  "40b6acddae074edf66f47403": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C6\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"كثير منهم ظل يفضل حكم الموظف البشري\",\"reason\":\"النص يصف رفض الثقة في النظام رغم دقته، وهو ما يتطابق تمامًا مع تعريف نفور من الخوارزميات.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1982,
+        "total_tokens": 2056,
+        "completion_tokens": 74,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.264
+    }
+  },
+  "fec4a0af05b5924e8f35da2f": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف البيانات بأنها مرنة ومتشعبة ولا تناسب الجداول التقليدية، وهو التعريف الدقيق لقاعدة البيانات متعددة النماذج (C1) التي تدعم صيغًا متعددة مثل المستندات والشبكات، بينما C2 و C22 يصفان النماذج التقليدية التي تم رفضها صراحة في النص.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1765,
+        "total_tokens": 1869,
+        "completion_tokens": 104,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.288
+    }
+  },
+  "cff8faa17a769b765642d22b": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C2\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"عملية على كل قناة بشكل مستقل ثم مزج القنوات\",\"reason\":\"النص يصف عملية تجميع ديناميكي (مزج القنوات بعد معالجة منفصلة) مما يطابق تعريف C2 بدقة.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1916,
+        "total_tokens": 1989,
+        "completion_tokens": 73,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.214
+    }
+  },
+  "ba12f192c2c273842f715d0c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C28\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية اختيار النموذج بناءً على أقل متوسط خسارة على بيانات التدريب، وهو ما يطابق تعريف 'تقليل المخاطر التجريبي' (C28) بدقة دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1812,
+        "total_tokens": 1892,
+        "completion_tokens": 80,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.448
+    }
+  },
+  "cfc5b23cbdc38b0ba7ed361c": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C9\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"كل عينة لا تعتمد على الأخرى... جميع العينات سُحبت من التوزيع الاحتمالي نفسه\",\"reason\":\"النص يصف بالضبط متغيرات مستقلة ومتطابقة التوزيع\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1803,
+        "total_tokens": 1877,
+        "completion_tokens": 74,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.26
+    }
+  },
+  "936f6698da4905edf2ae0a15": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C7\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"نبي نقطة وسيطة واحدة تمر عبرها طلبات النماذج\",\"reason\":\"النص يصف طبقة وسيطة تدير تدفق الطلبات وتراقب التكلفة والأخطاء، وهو ما يتطابق تمامًا مع تعريف بوابة الذكاء الاصطناعي.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1883,
+        "total_tokens": 1969,
+        "completion_tokens": 86,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.695
+    }
+  },
+  "e0d69c46d16358f0ea3303da": {
+    "stage": "s4",
+    "output": "{\"action\":\"CHANGE\",\"choice\":\"C30\",\"baseline_relation\":\"BROADER\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"أختبر على العينة المتبقية... وأكرر العملية حتى تمر كل عينة مرة كاختبار\",\"reason\":\"النص يصف عملية تقسيم العينة إلى تدريب واختبار وتكرارها حتى تمر كل عينة كاختبار، وهو التعريف الدقيق للتحقق التقاطعي المجزأ (C30) بينما C1 عام جداً ولا يحدد آلية التكرار أو التقسيم.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1750,
+        "total_tokens": 1870,
+        "completion_tokens": 120,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 4.875
+    }
+  },
+  "d18b3d1d8dfd72b679a0398b": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C18\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف دالة تعتمد على المسافة من المركز وتنخفض بسلاسة، وهو ما يتطابق تمامًا مع تعريف دالة القاعدة الشعاعية (Radial Basis Function) في المرشح C18 دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1891,
+        "total_tokens": 1975,
+        "completion_tokens": 84,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.62
+    }
+  },
+  "fe91b75418e5be9b6690fad5": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C20\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف عملية استخراج نصوص من صور فواتير، وهو التعريف الدقيق لـ 'تعرُّف آلي على الحروف' (OCR) المذكور في C20، بينما C12 عام جداً ولا يحدد آلية التحويل من صورة إلى نص.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1835,
+        "total_tokens": 1929,
+        "completion_tokens": 94,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.946
+    }
+  },
+  "b9d5380d6e36d26159da1e16": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C8\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف تقسيم المهام وتشغيلها بالتوازي على معالجات متعددة، وهو تعريف دقيق لمعالجة متوازية.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1905,
+        "total_tokens": 1968,
+        "completion_tokens": 63,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 2.866
+    }
+  },
+  "e51c254c8672bbf6f545a0e8": {
+    "stage": "s4",
+    "output": "{\"action\":\"KEEP\",\"choice\":\"C1\",\"baseline_relation\":\"EXACT\",\"choice_relation\":\"EXACT\",\"ambiguous\":false,\"evidence_span\":\"\",\"reason\":\"النص يصف انفجار التدرج بدقة عبر ذكر تكبر قيم التدرجات وتضخم تحديثات الأوزان وفقدان الاستقرار، وهو ما يطابق تعريف C1 تماماً دون الحاجة لتغيير.\"}",
+    "meta": {
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1876,
+        "total_tokens": 1954,
+        "completion_tokens": 78,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "elapsed_seconds": 3.395
+    }
+  }
+}

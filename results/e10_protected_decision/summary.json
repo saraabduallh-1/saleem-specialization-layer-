@@ -1,0 +1,178 @@
+{
+  "P-full": {
+    "n": 100,
+    "first_stage": {
+      "hit@1": 0.53,
+      "hit@3": 0.76,
+      "hit@5": 0.8,
+      "hit@10": 0.84,
+      "hit@30": 0.93,
+      "mrr": 0.6504
+    },
+    "gold_in_s4_pool": 93,
+    "s4_resolutions": {
+      "keep_baseline": 96,
+      "validated_change": 4
+    },
+    "s4_evidence_valid": 21,
+    "settings": {
+      "baseline_E8": {
+        "correct": 67,
+        "wrong": 33,
+        "none": 0,
+        "precision": 0.67,
+        "coverage": 0.67
+      },
+      "S4": {
+        "correct": 68,
+        "wrong": 32,
+        "none": 0,
+        "precision": 0.68,
+        "coverage": 0.68,
+        "corrected_wrong": 2,
+        "correct_to_wrong": 1,
+        "correct_to_none": 0,
+        "wrong_to_none": 0
+      },
+      "S3_E9_reference": {
+        "correct": 70,
+        "wrong": 27,
+        "none": 3,
+        "precision": 0.722,
+        "coverage": 0.7
+      },
+      "S4+S1@k=1": {
+        "correct": 30,
+        "wrong": 3,
+        "none": 67,
+        "precision": 0.909,
+        "coverage": 0.3,
+        "corrected_wrong": 0,
+        "correct_to_wrong": 0,
+        "correct_to_none": 37,
+        "wrong_to_none": 30
+      },
+      "S4+S1@k=3": {
+        "correct": 52,
+        "wrong": 5,
+        "none": 43,
+        "precision": 0.912,
+        "coverage": 0.52,
+        "corrected_wrong": 1,
+        "correct_to_wrong": 0,
+        "correct_to_none": 16,
+        "wrong_to_none": 27
+      },
+      "S4+S1@k=5": {
+        "correct": 57,
+        "wrong": 10,
+        "none": 33,
+        "precision": 0.851,
+        "coverage": 0.57,
+        "corrected_wrong": 1,
+        "correct_to_wrong": 0,
+        "correct_to_none": 11,
+        "wrong_to_none": 22
+      },
+      "S4+S1@k=10": {
+        "correct": 61,
+        "wrong": 15,
+        "none": 24,
+        "precision": 0.803,
+        "coverage": 0.61,
+        "corrected_wrong": 2,
+        "correct_to_wrong": 1,
+        "correct_to_none": 7,
+        "wrong_to_none": 17
+      }
+    }
+  },
+  "P-def": {
+    "n": 100,
+    "first_stage": {
+      "hit@1": 0.44,
+      "hit@3": 0.68,
+      "hit@5": 0.75,
+      "hit@10": 0.83,
+      "hit@30": 0.92,
+      "mrr": 0.5792
+    },
+    "gold_in_s4_pool": 95,
+    "s4_resolutions": {
+      "keep_baseline": 99,
+      "blocked_change_keep_baseline": 1
+    },
+    "s4_evidence_valid": 11,
+    "settings": {
+      "baseline_E8": {
+        "correct": 67,
+        "wrong": 33,
+        "none": 0,
+        "precision": 0.67,
+        "coverage": 0.67
+      },
+      "S4": {
+        "correct": 67,
+        "wrong": 33,
+        "none": 0,
+        "precision": 0.67,
+        "coverage": 0.67,
+        "corrected_wrong": 0,
+        "correct_to_wrong": 0,
+        "correct_to_none": 0,
+        "wrong_to_none": 0
+      },
+      "S3_E9_reference": {
+        "correct": 68,
+        "wrong": 26,
+        "none": 6,
+        "precision": 0.723,
+        "coverage": 0.68
+      },
+      "S4+S1@k=1": {
+        "correct": 28,
+        "wrong": 1,
+        "none": 71,
+        "precision": 0.966,
+        "coverage": 0.28,
+        "corrected_wrong": 0,
+        "correct_to_wrong": 0,
+        "correct_to_none": 39,
+        "wrong_to_none": 32
+      },
+      "S4+S1@k=3": {
+        "correct": 49,
+        "wrong": 7,
+        "none": 44,
+        "precision": 0.875,
+        "coverage": 0.49,
+        "corrected_wrong": 0,
+        "correct_to_wrong": 0,
+        "correct_to_none": 18,
+        "wrong_to_none": 26
+      },
+      "S4+S1@k=5": {
+        "correct": 51,
+        "wrong": 10,
+        "none": 39,
+        "precision": 0.836,
+        "coverage": 0.51,
+        "corrected_wrong": 0,
+        "correct_to_wrong": 0,
+        "correct_to_none": 16,
+        "wrong_to_none": 23
+      },
+      "S4+S1@k=10": {
+        "correct": 55,
+        "wrong": 17,
+        "none": 28,
+        "precision": 0.764,
+        "coverage": 0.55,
+        "corrected_wrong": 0,
+        "correct_to_wrong": 0,
+        "correct_to_none": 12,
+        "wrong_to_none": 16
+      }
+    }
+  }
+}
